@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+*.tmp
+checkins_cache.json
+checkins_cache.backup.json
+output/
