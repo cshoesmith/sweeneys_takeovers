@@ -316,6 +316,10 @@ def load_takeover_data():
             return []
 
     members = load_members_data()
+    # On Vercel, checkins_cache.json is ignored so raw_checkins is empty.
+    # We bake member_results into deploy_takeovers.json to avoid runtime computation.
+    if not raw_checkins and takeovers and "member_results" in takeovers[0]:
+        return takeovers
     return compute_member_results_for_takeovers(takeovers, raw_checkins, members)
 
 

@@ -1,0 +1,35 @@
+    selected_proxy = None
+    for proxy in OAUTH_PROXIES:
+        print(f"  Checking {proxy['label']}...")
+        if check_proxy_health(proxy["base_url"]):
+            selected_proxy = proxy
+            print(f"  Using {proxy['label']}")
+            break
+
+    if selected_proxy:
+        auth_url = (
+            f"{selected_proxy['base_url']}/login"
+            f"?next_url={LOCAL_CALLBACK_URL}"
+        )
+    else:
+        # Fall back to standard Untappd OAuth
+        client_id = os.getenv("UNTAPPD_CLIENT_ID", DEFAULT_CLIENT_ID)
+        auth_url = (
+            f"https://untappd.com/oauth/authenticate/"
+            f"?client_id={client_id}"
+            f"&response_type=token"
+            f"&redirect_url={LOCAL_CALLBACK_URL}"
+        )
+        print("  No proxy available, using standard Untappd OAuth")
+
+    # Start local server to receive the callback
+    server = http.server.HTTPServer(("localhost", LOCAL_CALLBACK_PORT), CallbackHandler)
+
+    print(f"\nOpening browser for Untappd login...")
+    print(f"  (If browser doesn't open, visit: {auth_url})")
+    webbrowser.open(auth_url)
+
+    print("Waiting for authentication callback...")
+    server.handle_request()  # Handle the callback
+    # Give time for hash-fragment redirect
+    server.timeout = 10

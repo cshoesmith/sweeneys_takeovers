@@ -1,0 +1,98 @@
+(utpd-oauth.craftbeers.app). Run with --login to authenticate.
+
+Usage:
+    # Authenticate via OAuth (opens browser)
+    python fetch_checkins.py --login
+
+    # Search for a venue to find its ID
+    python fetch_checkins.py --search "Hotel Sweeneys"
+
+    # Fetch all checkins (resumable, handles rate limits)
+    python fetch_checkins.py
+
+    # Fetch checkins going back to a specific date
+    python fetch_checkins.py --since 2023-03-01
+"""
+
+import argparse
+import http.server
+import json
+import os
+import shutil
+import sys
+import time
+import tempfile
+import threading
+import webbrowser
+from datetime import datetime, timezone
+from pathlib import Path
+from urllib.parse import urlparse, parse_qs
+
+import requests
+from dotenv import load_dotenv
+
+load_dotenv()
+
+API_BASE = "https://api.untappd.com/v4"
+CACHE_FILE = Path(__file__).parent / "checkins_cache.json"
+CACHE_BACKUP = Path(__file__).parent / "checkins_cache.backup.json"
+ENV_FILE = Path(__file__).parent / ".env"
+USER_AGENT = "SweeneysTakeoverLog (Untappd Venue Checkin Fetcher)"
+
+# Same Client ID as the Friendmap app
+DEFAULT_CLIENT_ID = "1F3B736E6C0A2FEF7D8C8C75879E93424F2B73FA"
+
+# OAuth proxy services (same as Friendmap)
+OAUTH_PROXIES = [
+    {"id": "shoeys", "label": "Shoeys Proxy", "base_url": "https://utpd-oauth.craftbeers.app"},
+    {"id": "wardy", "label": "Wardy Proxy", "base_url": "https://utpd-oauth.wardy.au"},
+]
+
+# Rate-limit: 100 calls/hour = 1 call every 36s to be safe
+RATE_LIMIT_DELAY = 37  # seconds between API calls
+
+# Last known rate limit remaining (updated by api_get)
+last_rate_limit_remaining = None
+last_request_url = None
+
+LOCAL_CALLBACK_PORT = 8907
+LOCAL_CALLBACK_URL = f"http://localhost:{LOCAL_CALLBACK_PORT}/callback"
+
+
+def get_access_token():
+    """Get the stored access token from .env."""
+    token = os.getenv("UNTAPPD_ACCESS_TOKEN")
+    if not token or token.startswith("your_"):
+        return None
+    return token
+
+
+def save_token_to_env(token):
+    """Save or update the access token in .env file."""
+    if ENV_FILE.exists():
+        content = ENV_FILE.read_text(encoding="utf-8")
+        lines = content.splitlines()
+        found = False
+        for i, line in enumerate(lines):
+            if line.startswith("UNTAPPD_ACCESS_TOKEN="):
+                lines[i] = f"UNTAPPD_ACCESS_TOKEN={token}"
+                found = True
+                break
+        if not found:
+            lines.append(f"UNTAPPD_ACCESS_TOKEN={token}")
+        ENV_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    else:
+        ENV_FILE.write_text(f"UNTAPPD_ACCESS_TOKEN={token}\nVENUE_ID=26498\n", encoding="utf-8")
+    os.environ["UNTAPPD_ACCESS_TOKEN"] = token
+
+
+def check_proxy_health(base_url):
+    """Check if an OAuth proxy service is reachable."""
+    try:
+        resp = requests.get(f"{base_url}/health", timeout=5, headers={"User-Agent": USER_AGENT})
+        return resp.ok
+    except Exception:
+        return False
+
+
+def login_oauth():

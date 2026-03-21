@@ -1,7 +1,9 @@
 import os
+import requests
 from pathlib import Path
+from urllib.parse import urlencode
 
-from flask import Flask, jsonify, send_file
+from flask import Flask, jsonify, send_file, session, redirect, request, render_template_string
 
 from server import (
     PROJECT_DIR,
@@ -14,8 +16,100 @@ from server import (
     mask_token,
 )
 
-
 app = Flask(__name__)
+app.secret_key = os.getenv("FLASK_SECRET_KEY", os.getenv("UNTAPPD_CLIENT_ID", "local_development_key"))
+PROXY_URL = "https://utpd-oauth.craftbeers.app/login"
+
+HTML_LOGIN_TEMPLATE = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Hotel Sweeneys Tap Takeovers</title>
+<style>
+  :root { --bg: #1a1a2e; --surface: #16213e; --card: #0f3460; --accent: #e94560; --text: #f0f0f0; --text-muted: #a0a0a0; }
+  body { background-color: var(--bg); color: var(--text); font-family: -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+  .login-card { background-color: var(--surface); padding: 40px; border-radius: 12px; text-align: center; box-shadow: 0 8px 16px rgba(0,0,0,0.3); border: 1px solid var(--card); max-width: 400px; width: 90%; }
+  h1 { font-size: 1.5rem; margin-bottom: 20px; }
+  p { margin-bottom: 30px; color: var(--text-muted); line-height: 1.5; }
+  .error { color: #f48fb1; background: rgba(244, 143, 177, 0.1); padding: 10px; border-radius: 6px; margin-bottom: 20px; font-size: 0.95rem; }
+  .btn.btn-untappd { background-color: #ffc000; color: #111; font-weight: 600; padding: 12px 24px; border-radius: 6px; text-decoration: none; display: inline-block; transition: background 0.2s; border: none; cursor: pointer; }
+  .btn.btn-untappd:hover { background-color: #e6ac00; }
+</style>
+</head>
+<body>
+  <div class="login-card">
+    <h1>Members Area</h1>
+    <p>Please log in with Untappd to verify your active membership status and view tap takeover history.</p>
+    {% if error %}
+    <div class="error">{{ error }}</div>
+    {% endif %}
+    <a href="/auth/login" class="btn btn-untappd">Log in with Untappd</a>
+  </div>
+</body>
+</html>
+"""
+
+@app.before_request
+def require_auth():
+    # Allow some endpoints to bypass auth
+    allowed_endpoints = ['login', 'oauth_callback']
+    if request.endpoint in allowed_endpoints:
+        return
+        
+    # Also bypass for static assets in vercel if they reach here
+    if request.path.startswith('/auth/'):
+        return
+
+    # Check session
+    if not session.get('untappd_user'):
+        if request.path.startswith('/api/'):
+            return jsonify({"error": "Unauthorized"}), 401
+        
+        # If accessing root UI, show login screen
+        return render_template_string(HTML_LOGIN_TEMPLATE)
+
+@app.route('/api/index.py')
+def vercel_root():
+    # If the user goes explicitly to the vercel bypass
+    if not session.get('untappd_user'):
+        return render_template_string(HTML_LOGIN_TEMPLATE)
+    return redirect('/')
+
+@app.route("/auth/login")
+def login():
+    host_url = request.host_url.rstrip("/")
+    callback_url = f"{host_url}/auth/callback"
+    redirect_url = f"{PROXY_URL}?next_url={callback_url}"
+    return redirect(redirect_url)
+
+@app.route("/auth/callback")
+def oauth_callback():
+    token = request.args.get("access_token")
+    if not token:
+        return render_template_string(HTML_LOGIN_TEMPLATE, error="Failed to authenticate. Missing access token from Untappd.")
+        
+    # Verify the token by calling the untappd API
+    try:
+        resp = requests.get(f"https://api.untappd.com/v4/user/info?access_token={token}", timeout=10)
+        if resp.ok:
+            data = resp.json()
+            username = data["response"]["user"]["user_name"].lower()
+            
+            # Verify user is an included/active member
+            members = load_members_data()
+            is_active_member = any(m.get("user", "").lower() == username and m.get("included", True) for m in members)
+            
+            if is_active_member or username == "mw1414":
+                session["untappd_user"] = username
+                return redirect("/")
+            else:
+                return render_template_string(HTML_LOGIN_TEMPLATE, error=f"User @{username} is not enabled in the current members list. Access denied.")
+        else:
+            return render_template_string(HTML_LOGIN_TEMPLATE, error="Failed to verify token with Untappd API.")
+    except Exception as e:
+        return render_template_string(HTML_LOGIN_TEMPLATE, error=f"Authentication error: {str(e)}")
 
 
 def read_only_status():

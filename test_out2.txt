@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from api.index import app; print(app.test_client().get('/api/status').status_code)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chris\sweeneys_takeover_log\api\index.py", line 77
+    return render_template_string(HTML_LOGIN_TEMPLATE)
+    ^^^^^^
+IndentationError: expected an indented block after 'if' statement on line 76

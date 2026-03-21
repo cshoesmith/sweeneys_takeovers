@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hotel Sweeneys — Tap Takeover History</title>
+<script>
+  // Fast pre-flight check to see if user is authenticated
+  fetch('/api/status').then(r => {
+    if (r.status === 401 || r.status === 403) {
+      window.location.href = '/api/index.py';
+    }
+  }).catch(()=>{});
+</script>
 <style>
   :root {
     --bg: #1a1a2e;

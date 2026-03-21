@@ -1,0 +1,6 @@
+./fetch_checkins.py:(utpd-oauth.craftbeers.app). Run with --login to authenticate.
+./fetch_checkins.py:    {"id": "shoeys", "label": "Shoeys Proxy", "base_url": "https://utpd-oauth.craftbeers.app"},
+./fetch_checkins.py:    {"id": "wardy", "label": "Wardy Proxy", "base_url": "https://utpd-oauth.wardy.au"},
+./README.md:Uses the same OAuth proxy as the Friendmap app (`utpd-oauth.craftbeers.app`):
+Binary file ./__pycache__/fetch_checkins.cpython-313.pyc matches
+Binary file ./__pycache__/fetch_checkins.cpython-315.pyc matches

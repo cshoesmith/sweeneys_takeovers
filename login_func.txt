@@ -1,0 +1,81 @@
+def login_oauth():
+    """
+    Run the OAuth login flow using the same proxy services as Friendmap.
+    Opens a browser for the user to authenticate, then captures the token
+    via a local callback server.
+    """
+    captured_token = {"value": None}
+
+    class CallbackHandler(http.server.BaseHTTPRequestHandler):
+        def do_GET(self):
+            parsed = urlparse(self.path)
+            params = parse_qs(parsed.query)
+
+            # Handle token_code from Wardy proxy
+            if "token_code" in params:
+                token_code = params["token_code"][0]
+                print(f"  Received token_code, exchanging...")
+                try:
+                    resp = requests.post(
+                        f"{selected_proxy['base_url']}/get-token",
+                        json={"token_code": token_code},
+                        timeout=10,
+                        headers={"User-Agent": USER_AGENT},
+                    )
+                    if resp.ok:
+                        data = resp.json()
+                        captured_token["value"] = data.get("access_token")
+                    else:
+                        print(f"  Token exchange failed: {resp.status_code} {resp.text[:200]}")
+                except Exception as e:
+                    print(f"  Token exchange failed: {e}")
+
+            # Handle direct access_token in fragment (via hash redirect)
+            if "access_token" in params:
+                captured_token["value"] = params["access_token"][0]
+
+            # Serve a page that extracts token from URL hash fragment
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html")
+            self.end_headers()
+            html = """
+            <html><body>
+            <h2>Untappd Authentication</h2>
+            <p id="status">Processing...</p>
+            <script>
+            const hash = window.location.hash;
+            if (hash && hash.includes('access_token')) {
+                const token = new URLSearchParams(hash.substring(1)).get('access_token');
+                if (token) {
+                    fetch('/save_token?access_token=' + token).then(() => {
+                        document.getElementById('status').textContent = 'Token saved! You can close this tab.';
+                    });
+                }
+            } else {
+                const params = new URLSearchParams(window.location.search);
+                if (params.get('token_code') || params.get('access_token')) {
+                    document.getElementById('status').textContent = 'Token received! You can close this tab.';
+                } else {
+                    document.getElementById('status').textContent = 'No token found. Try again.';
+                }
+            }
+            </script>
+            </body></html>
+            """
+            self.wfile.write(html.encode())
+
+            if captured_token["value"]:
+                threading.Thread(target=self.server.shutdown, daemon=True).start()
+
+        def log_message(self, format, *args):
+            pass  # Suppress HTTP logs
+
+    # Find a working OAuth proxy
+    selected_proxy = None
+    for proxy in OAUTH_PROXIES:
+        print(f"  Checking {proxy['label']}...")
+        if check_proxy_health(proxy["base_url"]):
+            selected_proxy = proxy
+            print(f"  Using {proxy['label']}")
+            break
+

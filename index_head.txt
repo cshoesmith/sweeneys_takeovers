@@ -1,0 +1,20 @@
+import os
+from pathlib import Path
+
+from flask import Flask, jsonify, send_file
+
+from server import (
+    PROJECT_DIR,
+    get_beer_info,
+    get_build_info,
+    get_cache_summary_data,
+    load_members_data,
+    load_current_events_data,
+    load_takeover_data,
+    mask_token,
+)
+
+
+app = Flask(__name__)
+
+

@@ -1,0 +1,15 @@
+diff --git a/server.py b/server.py
+index 3b9d0e3..dd38cbf 100644
+--- a/server.py
++++ b/server.py
+@@ -316,6 +316,10 @@ def load_takeover_data():
+             return []
+ 
+     members = load_members_data()
++    # On Vercel, checkins_cache.json is ignored so raw_checkins is empty.
++    # We bake member_results into deploy_takeovers.json to avoid runtime computation.
++    if not raw_checkins and takeovers and "member_results" in takeovers[0]:
++        return takeovers
+     return compute_member_results_for_takeovers(takeovers, raw_checkins, members)
+ 
+ 

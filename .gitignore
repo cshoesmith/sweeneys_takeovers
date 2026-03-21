@@ -6,3 +6,5 @@ checkins_cache.json
 checkins_cache.backup.json
 beer_info_cache.json
 output/
+.vercel
+.env*.local

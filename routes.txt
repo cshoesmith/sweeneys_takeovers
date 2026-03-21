@@ -1,0 +1,1 @@
+['def read_only_status():', 'def root():', 'def api_status():', 'def api_meta():', 'def api_cache_summary():', 'def api_members():', 'def api_takeovers():', 'def api_current_events():', 'def api_beer_info(beer_id: int):', 'def api_read_only_mutation():']

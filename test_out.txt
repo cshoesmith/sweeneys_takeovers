@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from api.index import app; app.test_client().get('/api/status')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chris\sweeneys_takeover_log\api\index.py", line 6, in <module>
+    from flask import Flask, jsonify, send_file, session, redirect, request, render_to_string
+ImportError: cannot import name 'render_to_string' from 'flask' (C:\Users\chris\insta-beer-aggregator\.venv\Lib\site-packages\flask\__init__.py)

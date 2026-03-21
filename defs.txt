@@ -1,0 +1,13 @@
+def get_access_token():
+def save_token_to_env(token):
+def check_proxy_health(base_url):
+def login_oauth():
+        def do_GET(self):
+        def log_message(self, format, *args):
+def api_get(endpoint, params=None):
+def search_venue(query):
+def load_cache():
+def save_cache(cache):
+def merge_checkin_record(existing, item):
+def fetch_checkins(venue_id, since_date=None):
+def main():
