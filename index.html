@@ -719,6 +719,20 @@ let lastStatus = null;
 let pollInterval = null;
 let deploymentMeta = null;
 
+function getFallbackBuildLabel() {
+  var raw = document.lastModified || '';
+  var parsed = raw ? new Date(raw) : null;
+  if (parsed && !isNaN(parsed.getTime())) {
+    return parsed.getFullYear().toString()
+      + String(parsed.getMonth() + 1).padStart(2, '0')
+      + String(parsed.getDate()).padStart(2, '0')
+      + '-'
+      + String(parsed.getHours()).padStart(2, '0')
+      + String(parsed.getMinutes()).padStart(2, '0');
+  }
+  return 'embedded';
+}
+
 function inferReadOnlyDeployment() {
   var host = (window.location.hostname || '').toLowerCase();
   return !!host && host !== 'localhost' && host !== '127.0.0.1';
@@ -730,6 +744,7 @@ function getEffectiveDeploymentMeta() {
   return {
     version: 'v1.0',
     build_unix: null,
+    build_label: getFallbackBuildLabel(),
     read_only: true,
     deployment_target: 'remote',
     supports_collector: false
@@ -888,9 +903,9 @@ function loadBuildInfo() {
       var el = document.getElementById('buildInfo');
       if (!el) return;
       var version = meta.version || 'v1.0';
-      var buildUnix = meta.build_unix != null ? String(meta.build_unix) : '—';
+      var buildLabel = meta.build_label || (meta.build_unix != null ? String(meta.build_unix) : getFallbackBuildLabel());
       var mode = meta.read_only ? ' · <strong>Mode</strong> Read-only' : '';
-      el.innerHTML = '<strong>Version</strong> ' + esc(version) + ' · <strong>Build</strong> ' + esc(buildUnix) + mode;
+      el.innerHTML = '<strong>Version</strong> ' + esc(version) + ' · <strong>Build</strong> ' + esc(buildLabel) + mode;
       if (meta.build_iso) {
         el.title = 'Built: ' + meta.build_iso;
       }
@@ -900,7 +915,7 @@ function loadBuildInfo() {
       deploymentMeta = inferReadOnlyDeployment() ? getEffectiveDeploymentMeta() : null;
       var el = document.getElementById('buildInfo');
       if (el) {
-        el.innerHTML = '<strong>Version</strong> v1.0 · <strong>Build</strong> —' +
+        el.innerHTML = '<strong>Version</strong> v1.0 · <strong>Build</strong> ' + esc(getFallbackBuildLabel()) +
           (isReadOnlyDeployment() ? ' · <strong>Mode</strong> Read-only' : '');
       }
       applyDeploymentMode(getEffectiveDeploymentMeta());
