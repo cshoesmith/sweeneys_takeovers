@@ -73,8 +73,9 @@ def require_auth():
 @app.route('/api/index.py')
 def vercel_root():
     # If the user goes explicitly to the vercel bypass
+    error = request.args.get("error")
     if not session.get('untappd_user'):
-        return render_template_string(HTML_LOGIN_TEMPLATE)
+        return render_template_string(HTML_LOGIN_TEMPLATE, error=error)
     return redirect('/')
 
 @app.route("/auth/login")
@@ -87,8 +88,49 @@ def login():
 @app.route("/auth/callback")
 def oauth_callback():
     token = request.args.get("access_token")
+    token_code = request.args.get("token_code")
+    
+    # Handle token_code to access_token swap if proxy provides token_code
+    if token_code and not token:
+        try:
+            resp = requests.post(
+                "https://utpd-oauth.craftbeers.app/get-token",
+                json={"token_code": token_code},
+                timeout=10,
+                headers={"User-Agent": "Untappd-Takeovers Vercel"}
+            )
+            if resp.ok:
+                token = resp.json().get("access_token")
+        except Exception:
+            pass
+
+    # If no token is provided in the query string, it might be hiding in the URL hash fragment.
+    # The browser does not send hash fragments to the server, so we send a tiny JS snippet to 
+    # extract it and reload the page with the token passed as a query parameter.
     if not token:
-        return render_template_string(HTML_LOGIN_TEMPLATE, error="Failed to authenticate. Missing access token from Untappd.")
+        return """
+        <!DOCTYPE html>
+        <html>
+        <head><title>Processing Login...</title></head>
+        <body style="background-color:#1a1a2e; color:white; font-family:sans-serif; text-align:center; padding-top:100px;">
+        <h3>Processing Authentication...</h3>
+        <script>
+            const hash = window.location.hash;
+            if (hash && hash.includes('access_token')) {
+                const params = new URLSearchParams(hash.substring(1));
+                const token = params.get('access_token');
+                if (token) {
+                    window.location.href = "/auth/callback?access_token=" + token;
+                } else {
+                    window.location.href = "/api/index.py?error=Failed+to+parse+token";
+                }
+            } else {
+                window.location.href = "/api/index.py?error=Failed+to+authenticate.+Missing+access+token+from+Untappd.";
+            }
+        </script>
+        </body>
+        </html>
+        """
         
     # Verify the token by calling the untappd API
     try:
