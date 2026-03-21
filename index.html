@@ -1295,12 +1295,6 @@ function openBeerModal(beerId) {
     return;
   }
 
-  if (isReadOnlyDeployment() && takeoverInfo) {
-    beerInfoCache[beerId] = takeoverInfo;
-    renderBeerModal(takeoverInfo);
-    return;
-  }
-
   fetch('/api/beer-info/' + beerId)
     .then(function(resp) {
       if (!resp.ok) throw new Error('Beer info request failed.');

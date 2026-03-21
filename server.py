@@ -144,6 +144,118 @@ def fetch_public_html(url):
         return response.read().decode("utf-8", errors="replace")
 
 
+def fetch_public_page(url):
+    request = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urlopen(request, timeout=30) as response:
+        final_url = response.geturl()
+        html_text = response.read().decode("utf-8", errors="replace")
+    return final_url, html_text
+
+
+def first_regex_group(pattern, text, flags=0):
+    match = re.search(pattern, text, flags)
+    if not match:
+        return ""
+    group_value = match.group(1) if match.lastindex else match.group(0)
+    return html.unescape(group_value).strip()
+
+
+def scrape_beer_info_from_page(beer_id):
+    page_url, html_text = fetch_public_page(f"https://untappd.com/beer/{beer_id}")
+
+    info = {
+        "beer_id": beer_id,
+        "beer_page_url": page_url,
+        "beer_name": "",
+        "beer_label": "",
+        "beer_label_hd": "",
+        "beer_style": "",
+        "beer_abv": None,
+        "beer_ibu": None,
+        "beer_description": "",
+        "rating_score": None,
+        "rating_count": None,
+        "brewery_name": "",
+        "brewery_label": "",
+        "brewery_label_hd": "",
+        "brewery_country": "",
+    }
+
+    info["beer_label_hd"] = first_regex_group(
+        r'(https://assets\.untappd\.com/site/beer_logos_hd/[^"\']+)',
+        html_text,
+        re.I,
+    )
+    info["beer_label"] = first_regex_group(
+        r'(https://assets\.untappd\.com/site/beer_logos/[^"\']+)',
+        html_text,
+        re.I,
+    )
+
+    title_text = first_regex_group(r'<title>(.*?)</title>', html_text, re.S | re.I)
+    if title_text and ' - ' in title_text:
+        title_parts = [part.strip() for part in title_text.split(' - ') if part.strip()]
+        if title_parts:
+            info["beer_name"] = title_parts[0]
+        if len(title_parts) > 1:
+            info["brewery_name"] = title_parts[1]
+
+    json_ld_match = re.search(r'<script type="application/ld\+json">(.*?)</script>', html_text, re.S | re.I)
+    if json_ld_match:
+        try:
+            json_ld = json.loads(html.unescape(json_ld_match.group(1)))
+            product_name = json_ld.get("name", "")
+            if product_name and not info["beer_name"]:
+                info["beer_name"] = product_name
+            info["beer_description"] = json_ld.get("description", "") or info["beer_description"]
+            brand = json_ld.get("brand", {}) or {}
+            info["brewery_name"] = brand.get("name", "") or info["brewery_name"]
+            aggregate = json_ld.get("aggregateRating", {}) or {}
+            rating_value = aggregate.get("ratingValue")
+            review_count = aggregate.get("reviewCount")
+            if rating_value not in (None, ""):
+                info["rating_score"] = float(rating_value)
+            if review_count not in (None, ""):
+                info["rating_count"] = int(float(review_count))
+        except Exception:
+            pass
+
+    if not info["beer_name"]:
+        info["beer_name"] = strip_html(first_regex_group(r'<h1[^>]*>(.*?)</h1>', html_text, re.S | re.I))
+
+    og_description = first_regex_group(r'<meta\s+property="og:description"\s+content="([^"]+)"', html_text, re.I)
+    if og_description:
+        style_match = re.search(r' is a (.*?) which has a rating of ', og_description)
+        rating_match = re.search(r'rating of ([0-9]+\.?[0-9]*) out of 5, with ([0-9,]+) ratings', og_description)
+        if style_match and not info["beer_style"]:
+            info["beer_style"] = style_match.group(1).strip()
+        if rating_match:
+            if info["rating_score"] is None:
+                info["rating_score"] = float(rating_match.group(1))
+            if info["rating_count"] is None:
+                info["rating_count"] = int(rating_match.group(2).replace(",", ""))
+
+    keywords = first_regex_group(r'<meta\s+name="keywords"\s+content="([^"]+)"', html_text, re.I)
+    if keywords:
+        parts = [part.strip() for part in keywords.split(",") if part.strip()]
+        if len(parts) >= 3 and not info["beer_style"]:
+            info["beer_style"] = parts[2]
+        if len(parts) >= 4 and not info["brewery_country"]:
+            info["brewery_country"] = parts[3]
+
+    if info["beer_abv"] is None:
+        abv_match = re.search(r'([0-9]+\.?[0-9]*)%\s*ABV', html_text, re.I)
+        if abv_match:
+            info["beer_abv"] = float(abv_match.group(1))
+
+    if info["beer_ibu"] is None:
+        ibu_match = re.search(r'([0-9]+\.?[0-9]*)\s*IBU', html_text, re.I)
+        if ibu_match:
+            info["beer_ibu"] = float(ibu_match.group(1))
+
+    return info
+
+
 def scrape_event_detail(event_url):
     try:
         html_text = fetch_public_html(event_url)
@@ -323,27 +435,43 @@ def get_beer_info(beer_id):
         save_beer_info_cache(cache)
         return cached_info
 
-    data = api_get(f"beer/info/{beer_id_str}")
-    response = data.get("response", {})
-    beer = response.get("beer", {})
-    brewery = response.get("brewery", {})
+    info = cached_info or {"beer_id": beer_id}
 
-    info = {
-        "beer_id": beer.get("bid") or beer_id,
-        "beer_name": beer.get("beer_name", ""),
-        "beer_label": beer.get("beer_label", ""),
-        "beer_label_hd": beer.get("beer_label_hd", ""),
-        "beer_style": beer.get("beer_style", ""),
-        "beer_abv": beer.get("beer_abv"),
-        "beer_ibu": beer.get("beer_ibu"),
-        "beer_description": beer.get("beer_description", ""),
-        "rating_score": beer.get("rating_score"),
-        "rating_count": beer.get("rating_count"),
-        "brewery_name": brewery.get("brewery_name", ""),
-        "brewery_label": brewery.get("brewery_label", ""),
-        "brewery_label_hd": brewery.get("brewery_label_hd", ""),
-        "brewery_country": brewery.get("country_name", ""),
-    }
+    try:
+        data = api_get(f"beer/info/{beer_id_str}")
+        response = data.get("response", {})
+        beer = response.get("beer", {})
+        brewery = response.get("brewery", {})
+
+        info.update({
+            "beer_id": beer.get("bid") or beer_id,
+            "beer_name": beer.get("beer_name", "") or info.get("beer_name", ""),
+            "beer_label": beer.get("beer_label", "") or info.get("beer_label", ""),
+            "beer_label_hd": beer.get("beer_label_hd", "") or info.get("beer_label_hd", ""),
+            "beer_style": beer.get("beer_style", "") or info.get("beer_style", ""),
+            "beer_abv": beer.get("beer_abv") if beer.get("beer_abv") not in (None, "") else info.get("beer_abv"),
+            "beer_ibu": beer.get("beer_ibu") if beer.get("beer_ibu") not in (None, "") else info.get("beer_ibu"),
+            "beer_description": beer.get("beer_description", "") or info.get("beer_description", ""),
+            "rating_score": beer.get("rating_score") if beer.get("rating_score") not in (None, "") else info.get("rating_score"),
+            "rating_count": beer.get("rating_count") if beer.get("rating_count") not in (None, "") else info.get("rating_count"),
+            "brewery_name": brewery.get("brewery_name", "") or info.get("brewery_name", ""),
+            "brewery_label": brewery.get("brewery_label", "") or info.get("brewery_label", ""),
+            "brewery_label_hd": brewery.get("brewery_label_hd", "") or info.get("brewery_label_hd", ""),
+            "brewery_country": brewery.get("country_name", "") or info.get("brewery_country", ""),
+        })
+    except Exception:
+        pass
+
+    if not has_usable_beer_info(info) or not info.get("beer_description") or not info.get("beer_label"):
+        try:
+            scraped_info = scrape_beer_info_from_page(beer_id)
+            info.update({
+                key: value
+                for key, value in scraped_info.items()
+                if value not in (None, "") or key not in info
+            })
+        except Exception:
+            pass
 
     cache[beer_id_str] = info
     save_beer_info_cache(cache)
