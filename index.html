@@ -862,6 +862,21 @@ function loadCurrentEvents() {
     .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
     .then(function(data) {
       currentEvents = Array.isArray(data) ? data : [];
+      if (!currentEvents.length) {
+        return loadCurrentEventsSnapshot();
+      }
+      renderCurrentEvents();
+    })
+    .catch(function() {
+      loadCurrentEventsSnapshot();
+    });
+}
+
+function loadCurrentEventsSnapshot() {
+  return fetch('/data/deploy_current_events.json')
+    .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
+    .then(function(data) {
+      currentEvents = Array.isArray(data) ? data : [];
       renderCurrentEvents();
     })
     .catch(function() {
@@ -1122,6 +1137,8 @@ window.addEventListener('DOMContentLoaded', function() {
           ? 'API metadata loaded, but cache summary is unavailable in this deployment.'
           : 'Server not responding — run: python server.py', 'error');
       });
+
+    loadCurrentEvents();
   });
   document.getElementById('adminPasswordInput').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') submitAdminUnlock();
@@ -1129,7 +1146,6 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 
   loadTakeovers();
-  loadCurrentEvents();
   if (adminUnlocked) startPolling();
 });
 </script>
