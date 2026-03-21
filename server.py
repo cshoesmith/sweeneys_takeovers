@@ -42,6 +42,7 @@ MONITOR_INTERVAL_SECONDS = 7 * 24 * 60 * 60
 BEER_INFO_CACHE_FILE = PROJECT_DIR / "beer_info_cache.json"
 DEPLOY_DATA_DIR = PROJECT_DIR / "data"
 DEPLOY_TAKEOVERS_FILE = DEPLOY_DATA_DIR / "deploy_takeovers.json"
+DEPLOY_BEER_INFO_FILE = DEPLOY_DATA_DIR / "deploy_beer_info.json"
 DEPLOY_CACHE_SUMMARY_FILE = DEPLOY_DATA_DIR / "deploy_cache_summary.json"
 DEPLOY_CURRENT_EVENTS_FILE = DEPLOY_DATA_DIR / "deploy_current_events.json"
 APP_VERSION = os.getenv("APP_VERSION", "v1.0")
@@ -116,11 +117,11 @@ def load_takeover_data():
     takeover_file = PROJECT_DIR / "output" / "takeovers.json"
     takeover_data = load_json_file(takeover_file)
     if isinstance(takeover_data, list):
-        return takeover_data
+        return enrich_takeovers_with_beer_data(takeover_data)
 
     snapshot_data = load_json_file(DEPLOY_TAKEOVERS_FILE)
     if isinstance(snapshot_data, list):
-        return snapshot_data
+        return enrich_takeovers_with_beer_data(snapshot_data)
 
     cache = load_cache()
     checkins = cache.get("checkins", [])
@@ -130,7 +131,53 @@ def load_takeover_data():
     from analyze_takeovers import detect_takeovers
 
     takeovers = detect_takeovers(checkins)
-    return [{k: v for k, v in t.items() if k not in ("details",)} for t in takeovers]
+    return enrich_takeovers_with_beer_data([
+        {k: v for k, v in t.items() if k not in ("details",)} for t in takeovers
+    ])
+
+
+def merge_beer_info_record(base_info, extra_info):
+    merged = dict(base_info or {})
+    for key, value in (extra_info or {}).items():
+        if value not in (None, ""):
+            merged[key] = value
+    return merged
+
+
+def get_deploy_beer_info_lookup():
+    deploy_lookup = load_json_file(DEPLOY_BEER_INFO_FILE)
+    return deploy_lookup if isinstance(deploy_lookup, dict) else {}
+
+
+def get_combined_beer_info_lookup():
+    combined = {}
+    deploy_lookup = get_deploy_beer_info_lookup()
+    runtime_lookup = load_beer_info_cache()
+
+    for source_lookup in (deploy_lookup, runtime_lookup):
+        for beer_id, info in source_lookup.items():
+            combined[str(beer_id)] = merge_beer_info_record(combined.get(str(beer_id), {}), info)
+
+    return combined
+
+
+def enrich_takeovers_with_beer_data(takeovers):
+    beer_lookup = get_combined_beer_info_lookup()
+    if not beer_lookup:
+        return takeovers
+
+    enriched = []
+    for takeover in takeovers:
+        takeover_copy = dict(takeover)
+        beer_details = []
+        for beer_detail in takeover.get("beer_details", []) or []:
+            beer_id = beer_detail.get("beer_id")
+            lookup_entry = beer_lookup.get(str(beer_id)) if beer_id is not None else None
+            beer_details.append(merge_beer_info_record(beer_detail, lookup_entry))
+        if beer_details:
+            takeover_copy["beer_details"] = beer_details
+        enriched.append(takeover_copy)
+    return enriched
 
 
 def strip_html(value):
