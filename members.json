@@ -1,62 +1,79 @@
 [
-	{
-		"username": "lightbeerking",
-		"display_name": "LightBeerking",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/lightbeerking"
-	},
-	{
-		"username": "mw1414",
-		"display_name": "mw1414",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/mw1414"
-	},
-	{
-		"username": "dapitz",
-		"display_name": "dapitz",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/dapitz"
-	},
-	{
-		"username": "redbhoy",
-		"display_name": "Redbhoy",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/redbhoy"
-	},
-	{
-		"username": "papicool",
-		"display_name": "Papicool",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/papicool"
-	},
-	{
-		"username": "timhenstridge",
-		"display_name": "timhenstridge",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/timhenstridge"
-	},
-	{
-		"username": "ossie1972",
-		"display_name": "Ossie1972",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/ossie1972"
-	},
-	{
-		"username": "jimmy-swings",
-		"display_name": "jimmy-swings",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/jimmy-swings"
-	},
-	{
-		"username": "docta",
-		"display_name": "docta",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/docta"
-	},
-	{
-		"username": "pivo_king",
-		"display_name": "Pivo_king",
-		"avatar_url": "",
-		"profile_url": "https://untappd.com/user/pivo_king"
-	}
+  {
+    "username": "dapitz",
+    "display_name": "dapitz",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/dapitz",
+    "included": true
+  },
+  {
+    "username": "docta",
+    "display_name": "docta",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/docta",
+    "included": true
+  },
+  {
+    "username": "hiriser",
+    "display_name": "hiriser",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/hiriser",
+    "included": true
+  },
+  {
+    "username": "jimmy-swings",
+    "display_name": "jimmy-swings",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/jimmy-swings",
+    "included": true
+  },
+  {
+    "username": "lightbeerking",
+    "display_name": "LightBeerking",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/lightbeerking",
+    "included": true
+  },
+  {
+    "username": "mw1414",
+    "display_name": "mw1414",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/mw1414",
+    "included": true
+  },
+  {
+    "username": "ossie1972",
+    "display_name": "Ossie1972",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/ossie1972",
+    "included": true
+  },
+  {
+    "username": "papicool",
+    "display_name": "Papicool",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/papicool",
+    "included": true
+  },
+  {
+    "username": "pivo_king",
+    "display_name": "Pivo_king",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/pivo_king",
+    "included": true
+  },
+  {
+    "username": "redbhoy",
+    "display_name": "Redbhoy",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/redbhoy",
+    "included": true
+  },
+  {
+    "username": "timhenstridge",
+    "display_name": "timhenstridge",
+    "avatar_url": "",
+    "profile_url": "https://untappd.com/user/timhenstridge",
+    "included": true
+  }
 ]

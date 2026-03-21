@@ -369,6 +369,16 @@
     display: flex; justify-content: space-between; align-items: center; gap: 0.9rem;
     background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 0.85rem;
   }
+  .member-row.excluded {
+    opacity: 0.68;
+    border-style: dashed;
+  }
+  .member-row.pending { border-color: var(--orange); }
+  .member-save-bar {
+    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+    padding: 0.55rem 0.1rem; margin-top: 0.5rem; border-top: 1px solid var(--border);
+  }
+  .member-save-note { flex: 1; font-size: 0.78rem; color: var(--orange); }
   .member-row-main { display: flex; align-items: center; gap: 0.75rem; min-width: 0; flex: 1; }
   .member-avatar {
     width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex: 0 0 40px;
@@ -386,7 +396,42 @@
   .member-row-actions {
     display: flex; align-items: center; gap: 0.55rem; flex-wrap: wrap; justify-content: flex-end;
   }
+  .member-toggle {
+    display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text-dim);
+    font-size: 0.78rem; white-space: nowrap;
+  }
+  .member-toggle input {
+    accent-color: var(--green);
+    width: 15px; height: 15px;
+  }
   .btn-small { padding: 0.35rem 0.7rem; font-size: 0.78rem; }
+
+  /* ── Member completion results (per takeover) ─────────────────── */
+  .member-results { margin-top: 1rem; border-top: 1px solid var(--border); padding-top: 0.85rem; }
+  .member-results-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-dim); margin-bottom: 0.8rem; }
+  .member-podium { display: flex; justify-content: center; align-items: flex-end; gap: 0.6rem; margin-bottom: 1rem; }
+  .podium-slot { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 0 0 80px; }
+  .podium-slot.podium-gold { order: 2; }
+  .podium-slot.podium-silver { order: 1; }
+  .podium-slot.podium-bronze { order: 3; }
+  .podium-avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--surface); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; overflow: hidden; margin-bottom: 0.25rem; border: 1px solid var(--border); }
+  .podium-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .podium-name { font-size: 0.7rem; font-weight: 600; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 78px; }
+  .podium-pct { font-size: 0.95rem; font-weight: 700; }
+  .podium-count { font-size: 0.65rem; color: var(--text-dim); }
+  .podium-medal { font-size: 1.3rem; margin-top: 0.15rem; }
+  .podium-gold .podium-pct { color: var(--gold); }
+  .podium-silver .podium-pct { color: #a8b2c0; }
+  .podium-bronze .podium-pct { color: #cd7f32; }
+  .member-results-table { display: flex; flex-direction: column; gap: 0.28rem; }
+  .member-result-row { display: grid; grid-template-columns: 1.4rem 6.5rem 1fr 4.5rem; align-items: center; gap: 0.5rem; font-size: 0.78rem; }
+  .member-result-rank { color: var(--text-dim); text-align: right; font-size: 0.68rem; }
+  .member-result-name { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .member-result-bar-wrap { background: var(--surface); border-radius: 3px; height: 5px; overflow: hidden; border: 1px solid var(--border); }
+  .member-result-bar { height: 100%; background: var(--green); border-radius: 3px; }
+  .member-result-stats { color: var(--text-dim); text-align: right; font-size: 0.7rem; white-space: nowrap; }
+  .member-result-row.zero .member-result-name,
+  .member-result-row.zero .member-result-stats { opacity: 0.4; }
 
   @media (max-width: 700px) {
     header { flex-direction: column; text-align: center; background-position: center top; }
@@ -564,8 +609,12 @@
           </div>
         </div>
         <div class="fetch-card">
-          <h3>Tracked Members</h3>
+          <h3 style="display:flex;justify-content:space-between;align-items:center">
+            Tracked Members
+            <button class="btn btn-small" type="button" id="enrichProfilesBtn" onclick="enrichMemberProfiles()" style="font-size:0.75rem;padding:0.25rem 0.65rem">Enrich Profiles</button>
+          </h3>
           <div class="member-list" id="memberListContainer"></div>
+          <div id="memberSaveBar"></div>
         </div>
       </div>
     </div>
@@ -1423,6 +1472,11 @@ function refreshAdminTabState() {
   var adminBtn = document.getElementById('adminTabBtn');
   var adminLabel = document.getElementById('adminTabLabel');
   if (!adminBtn) return;
+  if (!backendAvailable && !isReadOnlyDeployment()) {
+    adminBtn.classList.add('locked');
+    if (adminLabel) adminLabel.textContent = 'Admin (start local server)';
+    return;
+  }
   if (adminUnlocked) {
     adminBtn.classList.remove('locked');
     if (adminLabel) adminLabel.textContent = 'Admin';
@@ -1469,6 +1523,10 @@ function submitAdminUnlock() {
 
 document.querySelectorAll('.tab-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
+    if (btn.dataset.tab === 'fetcher' && !hasLocalAdminBackend() && !isReadOnlyDeployment()) {
+      addLog(localBackendRequiredMessage(), 'error');
+      return;
+    }
     if (btn.dataset.tab === 'fetcher' && !adminUnlocked) {
       openAdminModal(btn.dataset.tab);
       return;
@@ -1484,6 +1542,16 @@ let lastStatus = null;
 let pollInterval = null;
 let deploymentMeta = null;
 let trackedMembers = [];
+let pendingIncludes = {};
+let backendAvailable = true;
+
+function localBackendRequiredMessage() {
+  return 'Admin features need the local app server. Run: python server.py';
+}
+
+function hasLocalAdminBackend() {
+  return !isReadOnlyDeployment() && backendAvailable;
+}
 
 function getFallbackBuildLabel() {
   if (isReadOnlyDeployment()) {
@@ -1541,6 +1609,7 @@ function renderLog() {
 }
 
 function startPolling() {
+  if (!hasLocalAdminBackend()) return;
   if (pollInterval) return;
   pollInterval = setInterval(pollStatus, 2000);
   pollStatus();
@@ -1551,6 +1620,7 @@ function stopPolling() {
 }
 
 function pollStatus() {
+  if (!hasLocalAdminBackend()) return;
   fetch('/api/status')
     .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
     .then(function(s) { updateDashboard(s); })
@@ -1724,6 +1794,7 @@ function loadBuildInfo() {
   return fetch('/api/meta')
     .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
     .then(function(meta) {
+      backendAvailable = true;
       deploymentMeta = meta || null;
       var el = document.getElementById('buildInfo');
       if (!el) return;
@@ -1737,6 +1808,7 @@ function loadBuildInfo() {
       applyDeploymentMode(meta);
     })
     .catch(function() {
+      backendAvailable = !!inferReadOnlyDeployment();
       deploymentMeta = inferReadOnlyDeployment() ? getEffectiveDeploymentMeta() : null;
       var el = document.getElementById('buildInfo');
       if (el) {
@@ -1751,18 +1823,30 @@ function applyDeploymentMode(meta) {
   var adminBtn = document.getElementById('adminTabBtn');
   var takeoversBtn = document.querySelector('.tab-btn[data-tab="takeovers"]');
   var tabBar = document.querySelector('.tab-bar');
+  var adminLabel = document.getElementById('adminTabLabel');
   var effectiveMeta = meta || getEffectiveDeploymentMeta();
   if (!adminBtn || !effectiveMeta) return;
   if (effectiveMeta.read_only) {
     adminBtn.style.display = 'none';
+    adminBtn.disabled = true;
     if (takeoversBtn) takeoversBtn.style.display = 'none';
     if (tabBar) tabBar.style.display = 'none';
     adminUnlocked = false;
     sessionStorage.removeItem('sweeneysAdminUnlocked');
   } else {
     adminBtn.style.display = '';
+    adminBtn.disabled = !backendAvailable;
+    adminBtn.title = backendAvailable ? '' : localBackendRequiredMessage();
     if (takeoversBtn) takeoversBtn.style.display = '';
     if (tabBar) tabBar.style.display = '';
+    if (!backendAvailable) {
+      adminUnlocked = false;
+      sessionStorage.removeItem('sweeneysAdminUnlocked');
+      if (adminLabel) adminLabel.textContent = 'Admin (start local server)';
+      if (document.getElementById('tab-fetcher').classList.contains('active')) {
+        setActiveTab('takeovers');
+      }
+    }
     refreshAdminTabState();
   }
 }
@@ -1827,37 +1911,168 @@ function renderTrackedMembers() {
     return;
   }
 
-  container.innerHTML = trackedMembers.map(function(member) {
+  var hasPending = Object.keys(pendingIncludes).length > 0;
+  var html = trackedMembers.map(function(member) {
     var avatarHtml = member.avatar_url
       ? '<img class="member-avatar" src="' + esc(member.avatar_url) + '" alt="' + esc(member.display_name || member.username) + '">'
       : '<div class="member-avatar">&#128100;</div>';
     var profileUrl = member.profile_url || ('https://untappd.com/user/' + encodeURIComponent(member.username));
-    return '<div class="member-row">' +
+    var savedIncluded = member.included !== false;
+    var effectiveIncluded = member.username in pendingIncludes ? pendingIncludes[member.username] : savedIncluded;
+    var isPending = member.username in pendingIncludes && pendingIncludes[member.username] !== savedIncluded;
+    return '<div class="member-row' + (effectiveIncluded ? '' : ' excluded') + (isPending ? ' pending' : '') + '">' +
       '<div class="member-row-main">' +
         avatarHtml +
         '<div class="member-copy">' +
           '<div class="member-name">' + esc(member.display_name || member.username) + '</div>' +
-          '<div class="member-handle">@' + esc(member.username) + '</div>' +
+          '<div class="member-handle">@' + esc(member.username) + (effectiveIncluded ? '' : ' · excluded') + (isPending ? ' · unsaved' : '') + '</div>' +
         '</div>' +
       '</div>' +
       '<div class="member-row-actions">' +
-        '<a class="member-profile-link" href="' + esc(profileUrl) + '" target="_blank" rel="noopener">Untappd</a>' +
+        '<label class="member-toggle"><input type="checkbox" ' + (effectiveIncluded ? 'checked ' : '') + 'onchange="toggleMemberIncluded(' + JSON.stringify(member.username) + ', this.checked)"> Include</label>' +
+        '<a class="member-profile-link" href="' + esc(profileUrl) + '" target="_blank" rel="noopener">Profile</a>' +
         '<button class="btn btn-stop btn-small" type="button" onclick="removeTrackedMember(' + JSON.stringify(member.username) + ')">Remove</button>' +
       '</div>' +
     '</div>';
   }).join('');
+
+  container.innerHTML = html;
+
+  var saveBar = document.getElementById('memberSaveBar');
+  if (saveBar) {
+    if (hasPending) {
+      var count = Object.keys(pendingIncludes).length;
+      saveBar.innerHTML = '<div class="member-save-bar">' +
+        '<span class="member-save-note">' + count + ' unsaved change' + (count === 1 ? '' : 's') + '</span>' +
+        '<button class="btn" type="button" onclick="cancelIncludeChanges()" style="background:var(--surface);color:var(--text)">Cancel</button>' +
+        '<button class="btn btn-start" type="button" onclick="saveIncludeChanges()">Save</button>' +
+      '</div>';
+    } else {
+      saveBar.innerHTML = '';
+    }
+  }
+}
+
+function toggleMemberIncluded(username, included) {
+  if (isReadOnlyDeployment()) {
+    addLog('Member management is local-only in the deployed read-only version.', 'warn');
+    renderTrackedMembers();
+    return;
+  }
+  if (!hasLocalAdminBackend()) {
+    setMemberFeedback(localBackendRequiredMessage(), 'error');
+    renderTrackedMembers();
+    return;
+  }
+  var member = trackedMembers.find(function(item) { return item.username === username; });
+  if (!member) { renderTrackedMembers(); return; }
+  var savedIncluded = member.included !== false;
+  if (included === savedIncluded) {
+    delete pendingIncludes[username];
+  } else {
+    pendingIncludes[username] = included;
+  }
+  renderTrackedMembers();
+}
+
+function saveIncludeChanges() {
+  if (!hasLocalAdminBackend()) {
+    setMemberFeedback(localBackendRequiredMessage(), 'error');
+    return;
+  }
+  var entries = Object.keys(pendingIncludes);
+  if (!entries.length) return;
+  setMemberFeedback('Saving ' + entries.length + ' change' + (entries.length === 1 ? '' : 's') + '...');
+  var promises = entries.map(function(username) {
+    var member = trackedMembers.find(function(m) { return m.username === username; });
+    if (!member) return Promise.resolve(null);
+    return fetch('/api/members', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        username: username,
+        display_name: member.display_name,
+        avatar_url: member.avatar_url,
+        profile_url: member.profile_url,
+        included: pendingIncludes[username]
+      })
+    }).then(function(resp) {
+      return resp.text().then(function(text) {
+        var data = {};
+        try { data = text ? JSON.parse(text) : {}; } catch(e) {}
+        if (!resp.ok) throw new Error(data.error || 'Failed to update @' + username);
+        return data;
+      });
+    });
+  });
+  Promise.all(promises)
+    .then(function() {
+      pendingIncludes = {};
+      addLog('Saved include/exclude for ' + entries.length + ' member(s).', 'success');
+      loadTrackedMembers();
+    })
+    .catch(function(err) {
+      setMemberFeedback(err.message || 'Could not save changes.', 'error');
+    });
+}
+
+function cancelIncludeChanges() {
+  pendingIncludes = {};
+  renderTrackedMembers();
+  setMemberFeedback('');
+}
+
+function enrichMemberProfiles() {
+  if (isReadOnlyDeployment()) {
+    addLog('Member management is local-only in the deployed read-only version.', 'warn');
+    return;
+  }
+  if (!hasLocalAdminBackend()) {
+    setMemberFeedback(localBackendRequiredMessage(), 'error');
+    return;
+  }
+  var btn = document.getElementById('enrichProfilesBtn');
+  if (btn) { btn.disabled = true; btn.textContent = 'Enriching\u2026'; }
+  setMemberFeedback('Fetching profiles from Untappd\u2014this may take a moment\u2026');
+  fetch('/api/members/enrich', { method: 'POST' })
+    .then(function(resp) { return resp.json(); })
+    .then(function(data) {
+      if (btn) { btn.disabled = false; btn.textContent = 'Enrich Profiles'; }
+      if (data.error) { setMemberFeedback(data.error, 'error'); return; }
+      var count = data.enriched || 0;
+      setMemberFeedback('Enriched ' + count + ' profile' + (count === 1 ? '' : 's') + '.', 'success');
+      trackedMembers = Array.isArray(data.members) ? data.members : trackedMembers;
+      renderTrackedMembers();
+    })
+    .catch(function(err) {
+      if (btn) { btn.disabled = false; btn.textContent = 'Enrich Profiles'; }
+      setMemberFeedback('Could not enrich profiles: ' + (err.message || err), 'error');
+    });
 }
 
 function loadTrackedMembers() {
+  if (!hasLocalAdminBackend()) {
+    trackedMembers = [];
+    renderTrackedMembers();
+    setMemberFeedback(localBackendRequiredMessage(), 'error');
+    return Promise.resolve([]);
+  }
   return fetch('/api/members')
-    .then(function(resp) { if (!resp.ok) throw new Error('Could not load members.'); return resp.json(); })
+    .then(function(resp) {
+      if (!resp.ok) {
+        throw new Error(resp.status === 404 ? localBackendRequiredMessage() : 'Could not load members.');
+      }
+      return resp.json();
+    })
     .then(function(data) {
       trackedMembers = Array.isArray(data) ? data : [];
+      pendingIncludes = {};
       renderTrackedMembers();
       return trackedMembers;
     })
     .catch(function(err) {
       trackedMembers = [];
+      pendingIncludes = {};
       renderTrackedMembers();
       setMemberFeedback(err.message || 'Could not load members.', 'error');
       return [];
@@ -1867,6 +2082,11 @@ function loadTrackedMembers() {
 function submitMemberForm() {
   if (isReadOnlyDeployment()) {
     addLog('Member management is local-only in the deployed read-only version.', 'warn');
+    return;
+  }
+  if (!hasLocalAdminBackend()) {
+    setMemberFeedback(localBackendRequiredMessage(), 'error');
+    addLog(localBackendRequiredMessage(), 'error');
     return;
   }
 
@@ -1883,9 +2103,17 @@ function submitMemberForm() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username: username })
   })
-    .then(function(resp) { return resp.json().then(function(data) { return { ok: resp.ok, data: data }; }); })
+    .then(function(resp) {
+      return resp.text().then(function(text) {
+        var data = {};
+        try { data = text ? JSON.parse(text) : {}; } catch (err) { data = {}; }
+        return { ok: resp.ok, status: resp.status, data: data };
+      });
+    })
     .then(function(result) {
-      if (!result.ok) throw new Error(result.data && result.data.error ? result.data.error : 'Could not save member.');
+      if (!result.ok) {
+        throw new Error(result.data && result.data.error ? result.data.error : (result.status === 404 ? localBackendRequiredMessage() : 'Could not save member.'));
+      }
       trackedMembers = Array.isArray(result.data.members) ? result.data.members : trackedMembers;
       renderTrackedMembers();
       clearMemberForm();
@@ -1902,12 +2130,25 @@ function removeTrackedMember(username) {
     addLog('Member management is local-only in the deployed read-only version.', 'warn');
     return;
   }
+  if (!hasLocalAdminBackend()) {
+    setMemberFeedback(localBackendRequiredMessage(), 'error');
+    addLog(localBackendRequiredMessage(), 'error');
+    return;
+  }
   if (!confirm('Remove @' + username + ' from the tracked member list?')) return;
 
   fetch('/api/members/' + encodeURIComponent(username), { method: 'DELETE' })
-    .then(function(resp) { return resp.json().then(function(data) { return { ok: resp.ok, data: data }; }); })
+    .then(function(resp) {
+      return resp.text().then(function(text) {
+        var data = {};
+        try { data = text ? JSON.parse(text) : {}; } catch (err) { data = {}; }
+        return { ok: resp.ok, status: resp.status, data: data };
+      });
+    })
     .then(function(result) {
-      if (!result.ok) throw new Error(result.data && result.data.error ? result.data.error : 'Could not remove member.');
+      if (!result.ok) {
+        throw new Error(result.data && result.data.error ? result.data.error : (result.status === 404 ? localBackendRequiredMessage() : 'Could not remove member.'));
+      }
       trackedMembers = Array.isArray(result.data.members) ? result.data.members : [];
       renderTrackedMembers();
       setMemberFeedback('Member removed.', 'success');
@@ -2377,6 +2618,52 @@ function renderTakeovers() {
         });
         html += '</ul>';
       }
+
+      // Member completion results
+      if (t.member_results && t.member_results.length > 0 &&
+          t.member_results.some(function(r) { return r.checked > 0; })) {
+        html += '<div class="member-results">';
+        html += '<div class="member-results-title">Member Completion</div>';
+
+        // Podium — visual order: silver (left), gold (centre), bronze (right)
+        var podiumAll = t.member_results.filter(function(r) { return r.checked > 0; });
+        if (podiumAll.length > 0) {
+          var gold = podiumAll[0];
+          var silver = podiumAll[1] || null;
+          var bronze = podiumAll[2] || null;
+          html += '<div class="member-podium">';
+          [[silver, 'silver', '🥈'], [gold, 'gold', '🥇'], [bronze, 'bronze', '🥉']].forEach(function(entry) {
+            var r = entry[0]; var cls = entry[1]; var medal = entry[2];
+            if (!r) return;
+            var av = r.avatar_url
+              ? '<img src="' + esc(r.avatar_url) + '" alt="">'
+              : '&#128100;';
+            html += '<div class="podium-slot podium-' + cls + '">' +
+              '<div class="podium-avatar">' + av + '</div>' +
+              '<div class="podium-name">' + esc(r.display_name) + '</div>' +
+              '<div class="podium-pct">' + r.pct + '%</div>' +
+              '<div class="podium-count">' + r.checked + '/' + r.total + '</div>' +
+              '<div class="podium-medal">' + medal + '</div>' +
+            '</div>';
+          });
+          html += '</div>';
+        }
+
+        // Full table (all included members)
+        html += '<div class="member-results-table">';
+        t.member_results.forEach(function(r) {
+          var zero = r.checked === 0;
+          html += '<div class="member-result-row' + (zero ? ' zero' : '') + '">' +
+            '<div class="member-result-rank">' + r.rank + '</div>' +
+            '<div class="member-result-name">' + esc(r.display_name) + '</div>' +
+            '<div class="member-result-bar-wrap"><div class="member-result-bar" style="width:' + r.pct + '%"></div></div>' +
+            '<div class="member-result-stats">' + (zero ? '—' : r.checked + '/' + r.total + ' · ' + r.pct + '%') + '</div>' +
+          '</div>';
+        });
+        html += '</div>';
+        html += '</div>';
+      }
+
       html += '</div></div>';
     });
     html += '</div>';

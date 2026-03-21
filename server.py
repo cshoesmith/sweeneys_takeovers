@@ -19,7 +19,7 @@ import threading
 import time
 import unicodedata
 import webbrowser
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
@@ -141,12 +141,18 @@ def normalize_member_record(payload, existing=None):
     display_name = (payload.get("display_name") or payload.get("displayName") or "").strip() or existing.get("display_name") or username
     avatar_url = (payload.get("avatar_url") or payload.get("avatarUrl") or "").strip() or existing.get("avatar_url", "")
     profile_url = (payload.get("profile_url") or payload.get("profileUrl") or "").strip() or existing.get("profile_url") or f"https://untappd.com/user/{username}"
+    included = payload.get("included")
+    if included is None:
+        included = existing.get("included")
+    if included is None:
+        included = False  # new members default to excluded until confirmed
 
     return {
         "username": username,
         "display_name": display_name,
         "avatar_url": avatar_url,
         "profile_url": profile_url,
+        "included": bool(included),
     }
 
 
@@ -210,28 +216,107 @@ def delete_member(username):
     return removed, filtered
 
 
+def compute_member_results_for_takeovers(takeovers, checkins, members):
+    """Attach per-included-member beer completion stats to each takeover."""
+    included = [m for m in members if m.get("included", True)]
+    if not included or not checkins:
+        for t in takeovers:
+            t.setdefault("member_results", [])
+        return takeovers
+
+    parsed = []
+    for c in checkins:
+        try:
+            dt = datetime.strptime(c["created_at"], "%a, %d %b %Y %H:%M:%S %z")
+        except (KeyError, ValueError):
+            continue
+        bid = c.get("beer_id")
+        parsed.append({
+            "d": dt.date(),
+            "user": (c.get("user") or "").lower(),
+            "bid": int(bid) if bid is not None else None,
+            "bname": (c.get("beer_name") or "").lower(),
+        })
+
+    for t in takeovers:
+        try:
+            thu = datetime.fromisoformat(t["date"] + "T00:00:00").date()
+        except (KeyError, ValueError):
+            t["member_results"] = []
+            continue
+
+        beer_details = t.get("beer_details") or []
+        event_beer_ids = set()
+        event_beer_names = set()
+        for b in beer_details:
+            bid = b.get("beer_id")
+            if bid is not None:
+                event_beer_ids.add(int(bid))
+            bname = (b.get("beer_name") or "").lower()
+            if bname:
+                event_beer_names.add(bname)
+
+        total = len(beer_details)
+        if total == 0:
+            t["member_results"] = []
+            continue
+
+        window_end = thu + timedelta(days=7)
+        week_rows = [c for c in parsed if thu <= c["d"] <= window_end]
+        results = []
+        for m in included:
+            uname = m["username"].lower()
+            seen = set()
+            for c in week_rows:
+                if c["user"] != uname:
+                    continue
+                if c["bid"] is not None and c["bid"] in event_beer_ids:
+                    seen.add(("id", c["bid"]))
+                elif c["bname"] in event_beer_names:
+                    seen.add(("n", c["bname"]))
+            checked = len(seen)
+            pct = round(checked / total * 100, 1)
+            results.append({
+                "username": m["username"],
+                "display_name": m.get("display_name") or m["username"],
+                "avatar_url": m.get("avatar_url", ""),
+                "checked": checked,
+                "total": total,
+                "pct": pct,
+            })
+
+        results.sort(key=lambda x: (-x["pct"], -x["checked"], x["username"]))
+        for i, r in enumerate(results):
+            r["rank"] = i + 1
+        t["member_results"] = results
+
+    return takeovers
+
+
 def load_takeover_data():
     """Load cached takeovers or derive them dynamically from the checkin cache."""
     takeover_file = PROJECT_DIR / "output" / "takeovers.json"
     takeover_data = load_json_file(takeover_file)
-    if isinstance(takeover_data, list):
-        return enrich_takeovers_with_beer_data(takeover_data)
-
-    snapshot_data = load_json_file(DEPLOY_TAKEOVERS_FILE)
-    if isinstance(snapshot_data, list):
-        return enrich_takeovers_with_beer_data(snapshot_data)
-
     cache = load_cache()
-    checkins = cache.get("checkins", [])
-    if not checkins:
-        return []
+    raw_checkins = cache.get("checkins", [])
 
-    from analyze_takeovers import detect_takeovers
+    if isinstance(takeover_data, list):
+        takeovers = enrich_takeovers_with_beer_data(takeover_data)
+    else:
+        snapshot_data = load_json_file(DEPLOY_TAKEOVERS_FILE)
+        if isinstance(snapshot_data, list):
+            takeovers = enrich_takeovers_with_beer_data(snapshot_data)
+        elif raw_checkins:
+            from analyze_takeovers import detect_takeovers
+            detected = detect_takeovers(raw_checkins)
+            takeovers = enrich_takeovers_with_beer_data([
+                {k: v for k, v in t.items() if k not in ("details",)} for t in detected
+            ])
+        else:
+            return []
 
-    takeovers = detect_takeovers(checkins)
-    return enrich_takeovers_with_beer_data([
-        {k: v for k, v in t.items() if k not in ("details",)} for t in takeovers
-    ])
+    members = load_members_data()
+    return compute_member_results_for_takeovers(takeovers, raw_checkins, members)
 
 
 def merge_beer_info_record(base_info, extra_info):
@@ -1217,6 +1302,21 @@ class AppHandler(SimpleHTTPRequestHandler):
                     fetcher_state.last_analysis_takeovers = None
                     fetcher_state.last_analysis_error = str(e)
                 self._json_response({"error": str(e)}, 500)
+
+        elif path == "/api/members/enrich":
+            members = load_members_data()
+            enriched_count = 0
+            for index, member in enumerate(members):
+                if not member.get("avatar_url") or member.get("display_name") == member.get("username"):
+                    try:
+                        scraped = scrape_member_profile(member["username"])
+                        members[index] = normalize_member_record(scraped, member)
+                        enriched_count += 1
+                    except Exception:
+                        pass
+            if enriched_count > 0:
+                save_members_data(members)
+            self._json_response({"enriched": enriched_count, "members": members})
 
         elif path == "/api/members":
             content_len = int(self.headers.get("Content-Length", 0))
