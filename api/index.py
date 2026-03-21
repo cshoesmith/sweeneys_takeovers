@@ -8,9 +8,9 @@ from server import (
     get_beer_info,
     get_build_info,
     get_cache_summary_data,
+    load_current_events_data,
     load_takeover_data,
     mask_token,
-    scrape_current_events,
 )
 
 
@@ -76,7 +76,7 @@ def api_takeovers():
 def api_current_events():
     try:
         venue_id = int(os.getenv("VENUE_ID", "107565"))
-        return jsonify(scrape_current_events(venue_id))
+        return jsonify(load_current_events_data(venue_id))
     except Exception as exc:
         return jsonify({"error": mask_token(str(exc))}), 500
 

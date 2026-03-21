@@ -43,6 +43,7 @@ BEER_INFO_CACHE_FILE = PROJECT_DIR / "beer_info_cache.json"
 DEPLOY_DATA_DIR = PROJECT_DIR / "data"
 DEPLOY_TAKEOVERS_FILE = DEPLOY_DATA_DIR / "deploy_takeovers.json"
 DEPLOY_CACHE_SUMMARY_FILE = DEPLOY_DATA_DIR / "deploy_cache_summary.json"
+DEPLOY_CURRENT_EVENTS_FILE = DEPLOY_DATA_DIR / "deploy_current_events.json"
 APP_VERSION = os.getenv("APP_VERSION", "v1.0")
 VENUE_SLUG = os.getenv("VENUE_SLUG", "hotel-sweeneys")
 IS_VERCEL = bool(os.getenv("VERCEL"))
@@ -219,6 +220,21 @@ def scrape_current_events(venue_id):
         })
 
     return events
+
+
+def load_current_events_data(venue_id):
+    try:
+        events = scrape_current_events(venue_id)
+        if events:
+            return events
+    except Exception:
+        pass
+
+    snapshot_events = load_json_file(DEPLOY_CURRENT_EVENTS_FILE)
+    if isinstance(snapshot_events, list):
+        return snapshot_events
+
+    return []
 
 def run_takeover_analysis():
     """Run takeover analysis and export JSON results."""
@@ -702,7 +718,7 @@ class AppHandler(SimpleHTTPRequestHandler):
         elif path == "/api/current-events":
             venue_id = int(os.getenv("VENUE_ID", "107565"))
             try:
-                self._json_response(scrape_current_events(venue_id))
+                self._json_response(load_current_events_data(venue_id))
             except Exception as e:
                 self._json_response({"error": mask_token(str(e))}, 500)
 

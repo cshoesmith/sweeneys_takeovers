@@ -171,6 +171,7 @@ For full collector/admin functionality, run the app locally.
 - Local collection remains the source of truth. Generate fresh data locally, then commit the deploy snapshots in `data/` so Vercel has something to display.
 - `data/deploy_takeovers.json` is the read-only snapshot consumed by the Vercel UI.
 - `data/deploy_cache_summary.json` provides summary stats for the read-only deployment without committing the mutable runtime cache.
+- `data/deploy_current_events.json` provides a fallback when the live event scrape is unavailable in the deployed environment.
 - The mutable runtime files (`checkins_cache.json`, `beer_info_cache.json`, `output/`) stay out of git.
 
 ## Rate limits

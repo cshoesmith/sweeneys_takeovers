@@ -879,10 +879,18 @@ function renderCurrentEvents() {
     return;
   }
 
+  var usingSnapshot = currentEvents.some(function(event) {
+    return event && event.source === 'deploy-snapshot';
+  });
+
   var html = '<div class="current-events-card">' +
     '<div class="current-events-header">' +
       '<h2>Current Untappd Events</h2>' +
-      '<div class="current-events-note">Live scrape from the venue events page. Historical events still come from checkin event data.</div>' +
+      '<div class="current-events-note">' +
+        (usingSnapshot
+          ? 'Showing the latest bundled event snapshot because the live venue scrape is unavailable right now.'
+          : 'Live scrape from the venue events page. Historical events still come from checkin event data.') +
+      '</div>' +
     '</div>';
 
   currentEvents.forEach(function(event) {
@@ -897,6 +905,7 @@ function renderCurrentEvents() {
         (event.date_text ? '<div class="current-event-date">' + esc(event.date_text) + '</div>' : '') +
         (event.meta ? '<div class="current-event-meta">' + esc(event.meta) + '</div>' : '') +
         (event.interest_text ? '<div class="current-event-interest">' + esc(event.interest_text) + '</div>' : '') +
+        (event.where ? '<div class="current-event-meta">' + esc(event.where) + '</div>' : '') +
         (event.description ? '<div class="current-event-desc">' + esc(event.description) + '</div>' : '') +
       '</div>' +
     '</div>';
