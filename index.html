@@ -968,10 +968,37 @@ function findBeerDetail(beerId) {
   for (var i = 0; i < allTakeovers.length; i++) {
     var details = allTakeovers[i].beer_details || [];
     for (var j = 0; j < details.length; j++) {
-      if (Number(details[j].beer_id) === Number(beerId)) return details[j];
+      if (Number(details[j].beer_id) === Number(beerId)) {
+        return Object.assign({ brewery_name: allTakeovers[i].brewery || '' }, details[j]);
+      }
     }
   }
   return null;
+}
+
+function buildBeerFallbackInfo(beerId) {
+  var info = findBeerDetail(beerId);
+  if (!info) return null;
+  var fallback = Object.assign({
+    beer_id: beerId,
+    beer_name: info.beer_name || 'Beer details',
+    beer_label_hd: info.beer_label || '',
+    brewery_label: '',
+    brewery_label_hd: '',
+    beer_ibu: null,
+    beer_description: '',
+    rating_score: info.rating_score != null ? info.rating_score : info.beer_auth_rating,
+    rating_count: null,
+    brewery_country: ''
+  }, info);
+
+  if (!fallback.beer_description) {
+    fallback.beer_description = isReadOnlyDeployment()
+      ? 'Showing bundled takeover data for this beer. Rich Untappd beer details are not available in the read-only deployment for this entry.'
+      : 'Limited beer details are available from the bundled takeover snapshot.';
+  }
+
+  return fallback;
 }
 
 function hasEnoughBeerInfo(info) {
@@ -1235,7 +1262,7 @@ function esc(str) {
 function openBeerModal(beerId) {
   var backdrop = document.getElementById('beerModalBackdrop');
   var body = document.getElementById('beerModalBody');
-  var takeoverInfo = findBeerDetail(beerId);
+  var takeoverInfo = buildBeerFallbackInfo(beerId);
   document.getElementById('beerModalTitle').textContent = takeoverInfo && takeoverInfo.beer_name ? takeoverInfo.beer_name : 'Beer details';
   body.innerHTML = '<div class="beer-modal-loading">Loading beer info...</div>';
   backdrop.classList.add('open');
@@ -1251,14 +1278,32 @@ function openBeerModal(beerId) {
     return;
   }
 
+  if (isReadOnlyDeployment() && takeoverInfo) {
+    beerInfoCache[beerId] = takeoverInfo;
+    renderBeerModal(takeoverInfo);
+    return;
+  }
+
   fetch('/api/beer-info/' + beerId)
-    .then(function(resp) { return resp.json(); })
+    .then(function(resp) {
+      if (!resp.ok) throw new Error('Beer info request failed.');
+      var contentType = resp.headers.get('content-type') || '';
+      if (contentType.indexOf('application/json') === -1) {
+        throw new Error('Beer info endpoint returned non-JSON content.');
+      }
+      return resp.json();
+    })
     .then(function(data) {
       if (data.error) throw new Error(data.error);
       beerInfoCache[beerId] = data;
       renderBeerModal(data);
     })
     .catch(function(err) {
+      if (takeoverInfo) {
+        beerInfoCache[beerId] = takeoverInfo;
+        renderBeerModal(takeoverInfo);
+        return;
+      }
       body.innerHTML = '<div class="beer-modal-loading">Could not load beer info: ' + esc(err.message) + '</div>';
     });
 }
