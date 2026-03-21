@@ -48,6 +48,7 @@
   }
   .tab-btn:hover { border-color: var(--accent); color: var(--text); }
   .tab-btn.active { background: var(--accent); border-color: var(--accent); color: white; }
+  .tab-btn.locked { background: var(--surface); border-style: dashed; }
   .tab-btn .indicator {
     display: inline-block; width: 7px; height: 7px; border-radius: 50%;
     margin-left: 0.4rem; vertical-align: middle;
@@ -64,6 +65,14 @@
 
   /* ── Fetcher Dashboard ── */
   .fetcher-panel { max-width: 1200px; margin: 1.5rem auto; padding: 0 1.5rem; }
+  .section-panel {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;
+  }
+  .section-panel h2 {
+    font-size: 0.95rem; font-weight: 700; letter-spacing: 0.3px;
+    margin-bottom: 0.85rem; color: var(--text);
+  }
   .fetcher-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
   .fetch-card {
     background: var(--surface); border: 1px solid var(--border);
@@ -205,6 +214,11 @@
     background: var(--card); padding: 0.4rem 0.7rem; border-radius: 4px;
     font-size: 0.85rem; display: flex; align-items: center; gap: 0.4rem;
   }
+  .beer-button {
+    width: 100%; background: transparent; color: var(--text); border: none; cursor: pointer;
+    text-align: left; display: flex; align-items: center; gap: 0.4rem; font: inherit; padding: 0;
+  }
+  .beer-button:hover { color: var(--gold); }
   .beer-icon { font-size: 1rem; }
   .detail-stats { display: flex; gap: 1.5rem; margin-top: 0.6rem; font-size: 0.8rem; color: var(--text-dim); }
   .detail-stats span strong { color: var(--text); }
@@ -212,6 +226,50 @@
   .empty-state h2 { font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--text); }
   .chevron { transition: transform 0.2s; font-size: 0.8rem; color: var(--text-dim); }
   .takeover-card.open .chevron { transform: rotate(90deg); }
+  .modal-backdrop {
+    position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); display: none;
+    align-items: center; justify-content: center; padding: 1rem; z-index: 1000;
+  }
+  .modal-backdrop.open { display: flex; }
+  .beer-modal {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    width: min(680px, 100%); box-shadow: 0 12px 40px rgba(0,0,0,0.4); overflow: hidden;
+  }
+  .beer-modal-header {
+    display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .beer-modal-title { font-size: 1.1rem; font-weight: 700; }
+  .beer-modal-close {
+    background: transparent; color: var(--text-dim); border: none; font-size: 1.4rem; cursor: pointer;
+  }
+  .beer-modal-body {
+    display: grid; grid-template-columns: 140px 1fr; gap: 1rem; padding: 1rem 1.2rem 1.2rem;
+  }
+  .beer-modal-image {
+    width: 140px; height: 140px; border-radius: 12px; object-fit: cover; background: var(--card);
+    border: 1px solid var(--border);
+  }
+  .beer-modal-meta {
+    display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 0.6rem 1rem; margin-top: 0.6rem;
+  }
+  .beer-modal-meta div { font-size: 0.85rem; color: var(--text-dim); }
+  .beer-modal-meta strong { display: block; color: var(--text); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.4px; }
+  .beer-modal-desc { margin-top: 0.8rem; font-size: 0.9rem; line-height: 1.5; color: var(--text); }
+  .beer-modal-loading { color: var(--text-dim); font-size: 0.9rem; }
+  .admin-modal {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    width: min(420px, 100%); box-shadow: 0 12px 40px rgba(0,0,0,0.4); overflow: hidden;
+  }
+  .admin-modal-body { padding: 1rem 1.2rem 1.2rem; }
+  .admin-modal-body p { color: var(--text-dim); font-size: 0.9rem; line-height: 1.5; margin-bottom: 0.9rem; }
+  .admin-modal-input {
+    width: 100%; background: var(--card); border: 1px solid var(--border); color: var(--text);
+    padding: 0.7rem 0.8rem; border-radius: 8px; font-size: 0.95rem;
+  }
+  .admin-modal-input:focus { outline: none; border-color: var(--accent); }
+  .admin-modal-error { min-height: 1.2rem; margin-top: 0.65rem; color: var(--orange); font-size: 0.85rem; }
+  .admin-modal-actions { display: flex; justify-content: flex-end; gap: 0.6rem; margin-top: 1rem; }
 
   @media (max-width: 700px) {
     header { flex-direction: column; text-align: center; }
@@ -220,6 +278,8 @@
     .controls { flex-direction: column; }
     .stats-bar { flex-direction: column; }
     .fetcher-grid { grid-template-columns: 1fr; }
+    .beer-modal-body { grid-template-columns: 1fr; }
+    .beer-modal-image { width: 100px; height: 100px; }
   }
 </style>
 </head>
@@ -231,36 +291,82 @@
     <p>Thursday craft beer tap takeovers via Untappd</p>
   </div>
   <div class="tab-bar">
-    <button class="tab-btn active" data-tab="fetcher">
-      Collector <span class="indicator indicator-idle" id="fetcherIndicator"></span>
+    <button class="tab-btn active" data-tab="takeovers">
+      Takeovers
     </button>
-    <button class="tab-btn" data-tab="takeovers">Takeovers</button>
+    <button class="tab-btn locked" data-tab="fetcher" id="adminTabBtn">
+      <span id="adminTabLabel">Admin 🔒</span> <span class="indicator indicator-idle" id="fetcherIndicator"></span>
+    </button>
   </div>
 </header>
 
 <!-- ═══════ FETCHER TAB ═══════ -->
-<div class="tab-page active" id="tab-fetcher">
+<div class="tab-page" id="tab-fetcher">
   <div class="fetcher-panel">
-    <div class="fetcher-controls">
-      <button class="btn btn-start" id="btnStart" onclick="startFetcher()">Start Collecting</button>
-      <button class="btn btn-stop" id="btnStop" onclick="stopFetcher()" disabled>Stop</button>
-      <button class="btn btn-analyze" id="btnAnalyze" onclick="runAnalysis()">Analyze Takeovers</button>
-      <div style="flex:1"></div>
+    <div class="section-panel">
+      <h2>Collecting Info / Status</h2>
+      <div class="fetcher-controls">
+        <button class="btn btn-start" id="btnStart" onclick="startFetcher()">Start Collecting</button>
+        <button class="btn btn-stop" id="btnStop" onclick="stopFetcher()" disabled>Stop</button>
+        <button class="btn" id="btnReset" onclick="resetCache()" style="background:var(--surface);color:var(--text)">Reset &amp; Refetch</button>
+        <div style="flex:1"></div>
+      </div>
+
+      <div class="status-message" id="statusMessage">Connecting...</div>
+      <div class="status-message" id="lastRequestUrl" style="font-size:0.75rem; margin-top:-0.5rem; word-break:break-all; opacity:0.7">—</div>
+
+      <div class="fetcher-grid">
+        <div class="fetch-card">
+          <h3>Collector Activity</h3>
+          <div class="counter-row">
+            <div class="counter">
+              <div class="counter-value" id="batchesFetched">-</div>
+              <div class="counter-label">Batches</div>
+            </div>
+            <div class="counter">
+              <div class="counter-value timer" id="nextReqCountdown">—</div>
+              <div class="counter-label">Next Request</div>
+            </div>
+            <div class="counter">
+              <div class="counter-value timer" id="throttleCountdown" style="color:var(--orange)">—</div>
+              <div class="counter-label">Throttle</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fetch-card">
+          <h3>API / Errors</h3>
+          <div class="gauge-container">
+            <div class="gauge-bar">
+              <div class="gauge-fill" id="rateFill" style="width:100%; background:var(--green)"></div>
+            </div>
+            <div class="gauge-label" id="rateLabel">—</div>
+          </div>
+          <div style="font-size:0.7rem; color:var(--text-dim); margin-top:0.3rem">100 calls/hour per user token</div>
+
+          <div class="counter-row" style="margin-top:1rem">
+            <div class="counter">
+              <div class="counter-value" id="errors400" style="color:var(--orange)">0</div>
+              <div class="counter-label">400 Errors</div>
+            </div>
+            <div class="counter">
+              <div class="counter-value" id="errorsOther" style="color:var(--red)">0</div>
+              <div class="counter-label">Other Errors</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="status-message" id="statusMessage">Connecting...</div>
-
-    <div class="fetcher-grid">
-      <div class="fetch-card">
-        <h3>Collection Progress</h3>
+    <div class="section-panel">
+      <h2>Cache Info / Status</h2>
+      <div class="fetcher-grid">
+        <div class="fetch-card">
+          <h3>Cache Coverage</h3>
         <div class="counter-row">
           <div class="counter">
             <div class="counter-value" id="totalCheckins">-</div>
-            <div class="counter-label">Checkins</div>
-          </div>
-          <div class="counter">
-            <div class="counter-value" id="batchesFetched">-</div>
-            <div class="counter-label">Batches</div>
+            <div class="counter-label">Cached Checkins</div>
           </div>
         </div>
         <div class="progress-bar-container" style="margin-top:0.8rem">
@@ -284,39 +390,19 @@
       </div>
 
       <div class="fetch-card">
-        <h3>API Rate Limit</h3>
-        <div class="gauge-container">
-          <div class="gauge-bar">
-            <div class="gauge-fill" id="rateFill" style="width:100%; background:var(--green)"></div>
-          </div>
-          <div class="gauge-label" id="rateLabel">—</div>
-        </div>
-        <div style="font-size:0.7rem; color:var(--text-dim); margin-top:0.3rem">100 calls/hour per user token</div>
-
-        <h3 style="margin-top:1rem">Errors</h3>
+        <h3>Cache Health</h3>
         <div class="counter-row">
           <div class="counter">
-            <div class="counter-value" id="errors400" style="color:var(--orange)">0</div>
-            <div class="counter-label">400 Errors</div>
+            <div class="counter-value" id="cacheNewestDate">—</div>
+            <div class="counter-label">Newest Cache Date</div>
           </div>
           <div class="counter">
-            <div class="counter-value" id="errorsOther" style="color:var(--red)">0</div>
-            <div class="counter-label">Other Errors</div>
-          </div>
-        </div>
-
-        <h3 style="margin-top:1rem">Timing</h3>
-        <div class="counter-row">
-          <div class="counter">
-            <div class="counter-value timer" id="nextReqCountdown">—</div>
-            <div class="counter-label">Next Request</div>
-          </div>
-          <div class="counter">
-            <div class="counter-value timer" id="throttleCountdown" style="color:var(--orange)">—</div>
-            <div class="counter-label">Throttle</div>
+            <div class="counter-value" id="cacheOldestDate">—</div>
+            <div class="counter-label">Oldest Cache Date</div>
           </div>
         </div>
       </div>
+    </div>
     </div>
 
     <div class="log-panel">
@@ -327,7 +413,7 @@
 </div>
 
 <!-- ═══════ TAKEOVERS TAB ═══════ -->
-<div class="tab-page" id="tab-takeovers">
+<div class="tab-page active" id="tab-takeovers">
   <div class="controls">
     <input type="text" id="searchInput" placeholder="Search brewery or beer name...">
     <select id="yearFilter"><option value="">All Years</option></select>
@@ -341,15 +427,110 @@
   <div class="timeline" id="timeline"></div>
 </div>
 
+<div class="modal-backdrop" id="beerModalBackdrop" onclick="dismissBeerModal(event)">
+  <div class="beer-modal" role="dialog" aria-modal="true" aria-labelledby="beerModalTitle">
+    <div class="beer-modal-header">
+      <div class="beer-modal-title" id="beerModalTitle">Beer details</div>
+      <button class="beer-modal-close" onclick="closeBeerModal()" aria-label="Close">&times;</button>
+    </div>
+    <div class="beer-modal-body" id="beerModalBody">
+      <div class="beer-modal-loading">Loading beer info...</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="adminModalBackdrop" onclick="dismissAdminModal(event)">
+  <div class="admin-modal" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
+    <div class="beer-modal-header">
+      <div class="beer-modal-title" id="adminModalTitle">Admin access</div>
+      <button class="beer-modal-close" onclick="closeAdminModal()" aria-label="Close">&times;</button>
+    </div>
+    <div class="admin-modal-body">
+      <p>Enter the admin password to open the collector dashboard.</p>
+      <input type="password" id="adminPasswordInput" class="admin-modal-input" placeholder="Password" autocomplete="current-password">
+      <div class="admin-modal-error" id="adminModalError"></div>
+      <div class="admin-modal-actions">
+        <button class="btn" type="button" onclick="closeAdminModal()" style="background:var(--surface);color:var(--text)">Cancel</button>
+        <button class="btn btn-start" type="button" onclick="submitAdminUnlock()">Unlock</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 // ═════════ Tab switching ═════════
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-    if (btn.dataset.tab === 'takeovers') loadTakeovers();
+const ADMIN_PASSWORD = 'Wardy123';
+let adminUnlocked = sessionStorage.getItem('sweeneysAdminUnlocked') === 'true';
+let pendingAdminTab = null;
+
+function setActiveTab(tabName) {
+  document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('.tab-page').forEach(function(p) { p.classList.remove('active'); });
+
+  var btn = document.querySelector('.tab-btn[data-tab="' + tabName + '"]');
+  var page = document.getElementById('tab-' + tabName);
+  if (btn) btn.classList.add('active');
+  if (page) page.classList.add('active');
+
+  if (tabName === 'takeovers') loadTakeovers();
+  if (tabName === 'fetcher' && adminUnlocked) startPolling();
+}
+
+function refreshAdminTabState() {
+  var adminBtn = document.getElementById('adminTabBtn');
+  var adminLabel = document.getElementById('adminTabLabel');
+  if (!adminBtn) return;
+  if (adminUnlocked) {
+    adminBtn.classList.remove('locked');
+    if (adminLabel) adminLabel.textContent = 'Admin';
+  } else {
+    adminBtn.classList.add('locked');
+    if (adminLabel) adminLabel.textContent = 'Admin 🔒';
+  }
+}
+
+function openAdminModal(tabName) {
+  pendingAdminTab = tabName || 'fetcher';
+  document.getElementById('adminModalBackdrop').classList.add('open');
+  document.getElementById('adminModalError').textContent = '';
+  var input = document.getElementById('adminPasswordInput');
+  input.value = '';
+  window.setTimeout(function() { input.focus(); }, 0);
+}
+
+function closeAdminModal() {
+  document.getElementById('adminModalBackdrop').classList.remove('open');
+  document.getElementById('adminModalError').textContent = '';
+}
+
+function dismissAdminModal(event) {
+  if (event.target.id === 'adminModalBackdrop') closeAdminModal();
+}
+
+function submitAdminUnlock() {
+  var input = document.getElementById('adminPasswordInput');
+  var error = document.getElementById('adminModalError');
+  if (input.value !== ADMIN_PASSWORD) {
+    error.textContent = 'Incorrect password.';
+    input.focus();
+    input.select();
+    return;
+  }
+  adminUnlocked = true;
+  sessionStorage.setItem('sweeneysAdminUnlocked', 'true');
+  refreshAdminTabState();
+  closeAdminModal();
+  addLog('Admin unlocked for this session.', 'success');
+  setActiveTab(pendingAdminTab || 'fetcher');
+}
+
+document.querySelectorAll('.tab-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    if (btn.dataset.tab === 'fetcher' && !adminUnlocked) {
+      openAdminModal(btn.dataset.tab);
+      return;
+    }
+    setActiveTab(btn.dataset.tab);
   });
 });
 
@@ -404,7 +585,7 @@ function updateDashboard(s) {
 
   document.getElementById('btnStart').disabled = s.running;
   document.getElementById('btnStop').disabled = !s.running;
-  document.getElementById('btnAnalyze').disabled = s.running;
+  document.getElementById('btnReset').disabled = s.running;
 
   document.getElementById('totalCheckins').textContent = s.total_checkins.toLocaleString();
   document.getElementById('batchesFetched').textContent = s.batches_fetched;
@@ -412,6 +593,18 @@ function updateDashboard(s) {
   document.getElementById('errorsOther').textContent = s.errors_other;
 
   document.getElementById('newestDate').textContent = shortDate(s.newest_date) || '—';
+  document.getElementById('cacheNewestDate').textContent = shortDate(s.newest_date) || '—';
+  document.getElementById('cacheOldestDate').textContent = shortDate(s.oldest_date) || '—';
+
+  // Last request URL
+  var urlEl = document.getElementById('lastRequestUrl');
+  if (s.last_request_url) {
+    // Mask the access token for display
+    urlEl.textContent = 'GET ' + s.last_request_url.replace(/access_token=[^&]+/, 'access_token=***');
+    urlEl.style.color = s.status === 'error' ? 'var(--red)' : s.status === 'running' ? 'var(--green)' : 'var(--text-dim)';
+  } else {
+    urlEl.textContent = '—';
+  }
   document.getElementById('oldestDate').textContent = shortDate(s.oldest_date) || '—';
   document.getElementById('targetDate').textContent = s.target_date || '—';
 
@@ -500,21 +693,36 @@ function stopFetcher() {
     .catch(function(e) { addLog('Failed to stop: ' + e.message, 'error'); });
 }
 
-function runAnalysis() {
-  addLog('Running takeover analysis...', '');
-  document.getElementById('btnAnalyze').disabled = true;
-  fetch('/api/analyze', { method: 'POST' })
+function resetCache() {
+  if (!confirm('This will clear all cached checkins and start fresh. Continue?')) return;
+  addLog('Resetting cache...', 'warn');
+  fetch('/api/reset-cache', { method: 'POST' })
     .then(function(resp) { return resp.json(); })
     .then(function(data) {
-      if (data.error) { addLog('Analysis error: ' + data.error, 'error'); }
-      else { addLog('Analysis complete: ' + data.takeovers + ' takeovers detected', 'success'); }
+      if (data.error) { addLog('Reset error: ' + data.error, 'error'); }
+      else { addLog('Cache cleared. Click Start to refetch.', 'success'); }
     })
-    .catch(function(e) { addLog('Analysis failed: ' + e.message, 'error'); })
-    .finally(function() { document.getElementById('btnAnalyze').disabled = false; });
+    .catch(function(e) { addLog('Reset failed: ' + e.message, 'error'); });
 }
 
 // ═════════ Takeovers Tab ═════════
 var allTakeovers = [];
+var beerInfoCache = {};
+
+function findBeerDetail(beerId) {
+  for (var i = 0; i < allTakeovers.length; i++) {
+    var details = allTakeovers[i].beer_details || [];
+    for (var j = 0; j < details.length; j++) {
+      if (Number(details[j].beer_id) === Number(beerId)) return details[j];
+    }
+  }
+  return null;
+}
+
+function hasEnoughBeerInfo(info) {
+  if (!info) return false;
+  return !!(info.beer_label || info.beer_label_hd || info.beer_abv !== undefined && info.beer_abv !== null || info.beer_style);
+}
 
 function loadTakeovers() {
   fetch('/api/takeovers')
@@ -523,7 +731,7 @@ function loadTakeovers() {
       allTakeovers = Array.isArray(data) ? data : [];
       if (allTakeovers.length === 0) {
         document.getElementById('timeline').innerHTML =
-          '<div class="empty-state"><h2>No takeovers yet</h2><p>Run the collector and analysis first.</p></div>';
+          '<div class="empty-state"><h2>No takeovers yet</h2><p>Run the collector first — takeover analysis now runs automatically after collection.</p></div>';
         return;
       }
       var years = [];
@@ -628,8 +836,14 @@ function renderTakeovers() {
         '</div>';
       if (t.beers && t.beers.length) {
         html += '<ul class="beer-list">';
-        t.beers.forEach(function(b) {
-          html += '<li class="beer-item"><span class="beer-icon">&#127866;</span> ' + esc(b) + '</li>';
+        var beerItems = Array.isArray(t.beer_details) && t.beer_details.length ? t.beer_details : (t.beers || []).map(function(b) { return { beer_name: b }; });
+        beerItems.forEach(function(b) {
+          var beerName = b.beer_name || 'Unknown Beer';
+          if (b.beer_id) {
+            html += '<li class="beer-item"><button class="beer-button" onclick="openBeerModal(' + Number(b.beer_id) + '); return false;"><span class="beer-icon">&#127866;</span> ' + esc(beerName) + '</button></li>';
+          } else {
+            html += '<li class="beer-item"><span class="beer-icon">&#127866;</span> ' + esc(beerName) + '</li>';
+          }
         });
         html += '</ul>';
       }
@@ -657,15 +871,85 @@ function esc(str) {
   return el.innerHTML;
 }
 
+function openBeerModal(beerId) {
+  var backdrop = document.getElementById('beerModalBackdrop');
+  var body = document.getElementById('beerModalBody');
+  var takeoverInfo = findBeerDetail(beerId);
+  document.getElementById('beerModalTitle').textContent = takeoverInfo && takeoverInfo.beer_name ? takeoverInfo.beer_name : 'Beer details';
+  body.innerHTML = '<div class="beer-modal-loading">Loading beer info...</div>';
+  backdrop.classList.add('open');
+
+  if (beerInfoCache[beerId]) {
+    renderBeerModal(beerInfoCache[beerId]);
+    return;
+  }
+
+  if (hasEnoughBeerInfo(takeoverInfo)) {
+    beerInfoCache[beerId] = takeoverInfo;
+    renderBeerModal(takeoverInfo);
+    return;
+  }
+
+  fetch('/api/beer-info/' + beerId)
+    .then(function(resp) { return resp.json(); })
+    .then(function(data) {
+      if (data.error) throw new Error(data.error);
+      beerInfoCache[beerId] = data;
+      renderBeerModal(data);
+    })
+    .catch(function(err) {
+      body.innerHTML = '<div class="beer-modal-loading">Could not load beer info: ' + esc(err.message) + '</div>';
+    });
+}
+
+function renderBeerModal(info) {
+  var body = document.getElementById('beerModalBody');
+  var title = info.beer_name || 'Beer details';
+  document.getElementById('beerModalTitle').textContent = title;
+  var image = info.beer_label_hd || info.beer_label || info.brewery_label_hd || info.brewery_label || '';
+  var imageHtml = image
+    ? '<img class="beer-modal-image" src="' + esc(image) + '" alt="' + esc(title) + '">'
+    : '<div class="beer-modal-image" style="display:flex;align-items:center;justify-content:center;color:var(--text-dim)">&#127866;</div>';
+
+  body.innerHTML =
+    '<div>' + imageHtml + '</div>' +
+    '<div>' +
+      '<div style="font-size:1rem;font-weight:700">' + esc(title) + '</div>' +
+      '<div style="margin-top:0.25rem;color:var(--text-dim)">' + esc(info.brewery_name || '') + '</div>' +
+      '<div class="beer-modal-meta">' +
+        '<div><strong>Style</strong>' + esc(info.beer_style || '—') + '</div>' +
+        '<div><strong>ABV</strong>' + (info.beer_abv != null && info.beer_abv !== '' ? esc(String(info.beer_abv)) + '%' : '—') + '</div>' +
+        '<div><strong>IBU</strong>' + (info.beer_ibu != null && info.beer_ibu !== '' ? esc(String(info.beer_ibu)) : '—') + '</div>' +
+        '<div><strong>Rating</strong>' + (info.rating_score != null && info.rating_score !== '' ? esc(String(info.rating_score)) : '—') + '</div>' +
+        '<div><strong>Ratings</strong>' + (info.rating_count != null && info.rating_count !== '' ? esc(String(info.rating_count)) : '—') + '</div>' +
+        '<div><strong>Country</strong>' + esc(info.brewery_country || '—') + '</div>' +
+      '</div>' +
+      '<div class="beer-modal-desc">' + esc(info.beer_description || 'No description available.') + '</div>' +
+    '</div>';
+}
+
+function closeBeerModal() {
+  document.getElementById('beerModalBackdrop').classList.remove('open');
+}
+
+function dismissBeerModal(event) {
+  if (event.target.id === 'beerModalBackdrop') closeBeerModal();
+}
+
 // ═════════ Init ═════════
 window.addEventListener('DOMContentLoaded', function() {
+  refreshAdminTabState();
+  document.getElementById('adminPasswordInput').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') submitAdminUnlock();
+    if (event.key === 'Escape') closeAdminModal();
+  });
   fetch('/api/cache-summary')
     .then(function(r) { return r.json(); })
     .then(function(data) {
       if (data.total_checkins > 0) {
         addLog('Cache: ' + data.total_checkins + ' checkins, ' + shortDate(data.oldest_date) + ' → ' + shortDate(data.newest_date), 'success');
       } else {
-        addLog('No cached checkins. Click "Start Collecting" to begin.', '');
+        addLog('No cached checkins. Click "Start Collecting" to begin. Analysis runs automatically when collection finishes.', '');
       }
       if (!data.has_token) {
         addLog('No Untappd token. Run: python fetch_checkins.py --login', 'error');
@@ -673,7 +957,8 @@ window.addEventListener('DOMContentLoaded', function() {
     })
     .catch(function() { addLog('Server not responding — run: python server.py', 'error'); });
 
-  startPolling();
+  loadTakeovers();
+  if (adminUnlocked) startPolling();
 });
 </script>
 </body>

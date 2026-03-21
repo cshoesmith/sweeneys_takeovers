@@ -90,24 +90,38 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
         weeks[week_key] = weeks.get(week_key, [])
         weeks[week_key].append(c)
 
-    # First pass: count overall brewery frequency to identify "house" breweries
+    # First pass: identify "house" breweries — those that appear consistently
+    # across many weeks, not just dominating a single takeover week.
+    # A true house brewery shows up in most weeks with moderate presence;
+    # a takeover brewery dominates one week but is absent from others.
+    num_weeks = len(weeks)
+    brewery_week_presence = defaultdict(set)  # brewery -> set of week keys
+    for week_key, week_checkins_list in weeks.items():
+        for c in week_checkins_list:
+            brewery = c.get("brewery_name", "Unknown")
+            brewery_week_presence[brewery].add(week_key)
+
     all_brewery_counts = Counter()
     for c in checkins:
         brewery = c.get("brewery_name", "Unknown")
         all_brewery_counts[brewery] += 1
 
     total_checkins = len(checkins)
-    # A brewery appearing in > 15% of ALL checkins is likely a house tap
     house_breweries = set()
+    # Must appear in >50% of weeks AND >15% of total checkins
+    min_week_presence = max(2, num_weeks * 0.5)
     for brewery, count in all_brewery_counts.items():
-        if total_checkins > 0 and count / total_checkins > 0.15:
+        weeks_present = len(brewery_week_presence.get(brewery, set()))
+        high_share = total_checkins > 0 and count / total_checkins > 0.15
+        if high_share and weeks_present >= min_week_presence:
             house_breweries.add(brewery)
 
     if house_breweries:
-        print(f"Detected likely house breweries (>15% of all checkins):")
+        print(f"Detected likely house breweries (>15% of checkins + present in {min_week_presence:.0f}+ weeks):")
         for hb in sorted(house_breweries):
             pct = all_brewery_counts[hb] / total_checkins * 100
-            print(f"  - {hb} ({pct:.1f}%)")
+            wks = len(brewery_week_presence[hb])
+            print(f"  - {hb} ({pct:.1f}%, {wks}/{num_weeks} weeks)")
         print()
 
     # Analyze each week
@@ -116,14 +130,26 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
         week_checkins = weeks[thursday_date]
         brewery_counter = Counter()
         brewery_beers = defaultdict(set)
+        brewery_beer_details = defaultdict(dict)
         brewery_checkin_details = defaultdict(list)
         week_events = {}  # event_name -> {brewery, beers, count, url}
 
         for c in week_checkins:
             brewery = c.get("brewery_name", "Unknown")
             beer = c.get("beer_name", "Unknown")
+            beer_id = c.get("beer_id")
             brewery_counter[brewery] += 1
             brewery_beers[brewery].add(beer)
+            beer_key = beer_id if beer_id is not None else beer
+            if beer_key not in brewery_beer_details[brewery]:
+                brewery_beer_details[brewery][beer_key] = {
+                    "beer_id": beer_id,
+                    "beer_name": beer,
+                    "beer_label": c.get("beer_label", ""),
+                    "beer_style": c.get("beer_style", ""),
+                    "beer_abv": c.get("beer_abv"),
+                    "beer_auth_rating": c.get("beer_auth_rating"),
+                }
             brewery_checkin_details[brewery].append({
                 "beer": beer,
                 "style": c.get("beer_style", ""),
@@ -139,12 +165,21 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
                     week_events[event_name] = {
                         "breweries": Counter(),
                         "beers": set(),
+                        "beer_details": {},
                         "count": 0,
                         "url": c.get("event_url", ""),
                         "event_id": c.get("event_id"),
                     }
                 week_events[event_name]["breweries"][brewery] += 1
                 week_events[event_name]["beers"].add(beer)
+                week_events[event_name]["beer_details"][beer_key] = {
+                    "beer_id": beer_id,
+                    "beer_name": beer,
+                    "beer_label": c.get("beer_label", ""),
+                    "beer_style": c.get("beer_style", ""),
+                    "beer_abv": c.get("beer_abv"),
+                    "beer_auth_rating": c.get("beer_auth_rating"),
+                }
                 week_events[event_name]["count"] += 1
 
         total_week = sum(brewery_counter.values())
@@ -167,6 +202,7 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
                 "total_checkins_that_week": total_week,
                 "share_pct": round(event_info["count"] / total_week * 100, 1),
                 "beers": sorted(event_info["beers"]),
+                "beer_details": sorted(event_info["beer_details"].values(), key=lambda b: b.get("beer_name", "")),
                 "event_name": event_name,
                 "event_url": event_info["url"],
                 "event_id": event_info["event_id"],
@@ -192,6 +228,7 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
                     "total_checkins_that_week": total_week,
                     "share_pct": round(ratio * 100, 1),
                     "beers": sorted(brewery_beers[brewery]),
+                    "beer_details": sorted(brewery_beer_details[brewery].values(), key=lambda b: b.get("beer_name", "")),
                     "source": "heuristic",
                     "details": brewery_checkin_details[brewery],
                 })
@@ -206,6 +243,7 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
                     "total_checkins_that_week": total_week,
                     "share_pct": round(ratio * 100, 1),
                     "beers": sorted(brewery_beers[brewery]),
+                    "beer_details": sorted(brewery_beer_details[brewery].values(), key=lambda b: b.get("beer_name", "")),
                     "source": "heuristic",
                     "details": brewery_checkin_details[brewery],
                 })

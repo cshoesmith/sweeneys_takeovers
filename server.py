@@ -34,6 +34,103 @@ import fetch_checkins
 
 PROJECT_DIR = Path(__file__).parent
 DEFAULT_PORT = 8908
+MONITOR_INTERVAL_SECONDS = 7 * 24 * 60 * 60
+BEER_INFO_CACHE_FILE = PROJECT_DIR / "beer_info_cache.json"
+
+import re
+def mask_token(msg):
+    """Remove access tokens from error messages."""
+    return re.sub(r'access_token=[A-Za-z0-9]+', 'access_token=***', str(msg))
+
+
+def run_takeover_analysis():
+    """Run takeover analysis and export JSON results."""
+    from analyze_takeovers import load_checkins, detect_takeovers, export_json
+
+    checkins = load_checkins()
+    takeovers = detect_takeovers(checkins)
+    output_dir = PROJECT_DIR / "output"
+    output_dir.mkdir(exist_ok=True)
+    export_json(takeovers, output_dir / "takeovers.json")
+    return {"takeovers": len(takeovers)}
+
+
+def load_beer_info_cache():
+    if BEER_INFO_CACHE_FILE.exists():
+        try:
+            with open(BEER_INFO_CACHE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            return {}
+    return {}
+
+
+def save_beer_info_cache(cache):
+    with open(BEER_INFO_CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, indent=2, ensure_ascii=False)
+
+
+def find_cached_beer_info(beer_id):
+    cache = load_cache()
+    for checkin in cache.get("checkins", []):
+        if checkin.get("beer_id") != beer_id:
+            continue
+        return {
+            "beer_id": beer_id,
+            "beer_name": checkin.get("beer_name", ""),
+            "beer_label": checkin.get("beer_label", ""),
+            "beer_label_hd": checkin.get("beer_label", ""),
+            "beer_style": checkin.get("beer_style", ""),
+            "beer_abv": checkin.get("beer_abv"),
+            "beer_ibu": None,
+            "beer_description": "",
+            "rating_score": checkin.get("beer_auth_rating"),
+            "rating_count": None,
+            "brewery_name": checkin.get("brewery_name", ""),
+            "brewery_label": "",
+            "brewery_label_hd": "",
+            "brewery_country": "",
+        }
+    return None
+
+
+def get_beer_info(beer_id):
+    beer_id_str = str(beer_id)
+    cache = load_beer_info_cache()
+    if beer_id_str in cache:
+        return cache[beer_id_str]
+
+    cached_info = find_cached_beer_info(beer_id)
+    if cached_info:
+        cache[beer_id_str] = cached_info
+        save_beer_info_cache(cache)
+        return cached_info
+
+    data = api_get(f"beer/info/{beer_id_str}")
+    response = data.get("response", {})
+    beer = response.get("beer", {})
+    brewery = response.get("brewery", {})
+
+    info = {
+        "beer_id": beer.get("bid") or beer_id,
+        "beer_name": beer.get("beer_name", ""),
+        "beer_label": beer.get("beer_label", ""),
+        "beer_label_hd": beer.get("beer_label_hd", ""),
+        "beer_style": beer.get("beer_style", ""),
+        "beer_abv": beer.get("beer_abv"),
+        "beer_ibu": beer.get("beer_ibu"),
+        "beer_description": beer.get("beer_description", ""),
+        "rating_score": beer.get("rating_score"),
+        "rating_count": beer.get("rating_count"),
+        "brewery_name": brewery.get("brewery_name", ""),
+        "brewery_label": brewery.get("brewery_label", ""),
+        "brewery_label_hd": brewery.get("brewery_label_hd", ""),
+        "brewery_country": brewery.get("country_name", ""),
+    }
+
+    cache[beer_id_str] = info
+    save_beer_info_cache(cache)
+    return info
 
 
 # ── Shared fetcher state (read by the status endpoint) ──────────────────────
@@ -56,6 +153,13 @@ class FetcherState:
         self.message = ""              # human-readable status line
         self.stop_requested = False
         self.throttle_until = None     # datetime when throttle ends
+        self.last_request_url = ""   # last GET URL sent to API
+        self.monitoring_enabled = True
+        self.next_monitor_at = None
+        self.last_analysis_at = ""
+        self.last_analysis_takeovers = None
+        self.last_analysis_error = ""
+        self.last_run_mode = ""
 
     def to_dict(self):
         with self.lock:
@@ -67,6 +171,10 @@ class FetcherState:
             throttle_remaining = 0
             if self.throttle_until:
                 throttle_remaining = max(0, self.throttle_until - now)
+
+            next_monitor = 0
+            if self.monitoring_enabled and self.next_monitor_at:
+                next_monitor = max(0, self.next_monitor_at - now)
 
             return {
                 "running": self.running,
@@ -83,6 +191,14 @@ class FetcherState:
                 "next_request_in": round(next_req, 1),
                 "throttle_remaining": round(throttle_remaining, 1),
                 "message": self.message,
+                "last_request_url": self.last_request_url,
+                "monitoring_enabled": self.monitoring_enabled,
+                "next_monitor_in": round(next_monitor, 1),
+                "next_monitor_at": self.next_monitor_at,
+                "last_analysis_at": self.last_analysis_at,
+                "last_analysis_takeovers": self.last_analysis_takeovers,
+                "last_analysis_error": self.last_analysis_error,
+                "last_run_mode": self.last_run_mode,
             }
 
     def reset(self):
@@ -96,30 +212,42 @@ class FetcherState:
             self.stop_requested = False
             self.throttle_until = None
             self.next_request_at = None
+            self.last_request_url = ""
 
 fetcher_state = FetcherState()
 fetcher_state.next_request_at = None
 
 
 # ── Background fetcher thread ───────────────────────────────────────────────
-def run_fetcher(venue_id, since_date=None):
+def run_fetcher(venue_id, since_date=None, mode="backfill"):
     """Background thread: fetch checkins and update shared state."""
     import requests as req_lib
 
     state = fetcher_state
     state.reset()
+    mode = mode if mode in ("backfill", "monitor") else "backfill"
 
     with state.lock:
         state.running = True
         state.status = "running"
         state.message = "Starting..."
+        state.last_run_mode = mode
 
     cache = load_cache()
     if cache["venue_id"] != venue_id:
         cache = {"venue_id": venue_id, "checkins": [], "oldest_checkin_id": None}
 
     existing_ids = {c["checkin_id"] for c in cache["checkins"]}
-    max_id = cache.get("oldest_checkin_id")
+    if mode == "monitor":
+        max_id = None
+        overlap_streak = 0
+        overlap_stop = 2
+    else:
+        # Resume from the oldest cached cursor so the collector keeps pushing
+        # farther back in history across runs.
+        max_id = cache.get("oldest_checkin_id")
+        overlap_streak = None
+        overlap_stop = None
 
     if since_date:
         cutoff = datetime.strptime(since_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
@@ -133,8 +261,42 @@ def run_fetcher(venue_id, since_date=None):
         if cache["checkins"]:
             state.newest_date = cache["checkins"][0].get("created_at", "")
             state.oldest_date = cache["checkins"][-1].get("created_at", "")
-        if max_id:
-            state.message = f"Resuming from {len(cache['checkins'])} cached checkins"
+        if mode == "monitor":
+            state.message = f"Starting monitoring sync ({len(cache['checkins'])} cached)"
+        elif max_id:
+            state.message = f"Resuming historical backfill ({len(cache['checkins'])} cached)"
+        else:
+            state.message = f"Starting fresh scan ({len(cache['checkins'])} checkins cached)"
+
+    def finish_collection(base_message, run_analysis=True):
+        save_cache(cache)
+
+        analysis_suffix = ""
+        if run_analysis:
+            analysis_at = datetime.now(timezone.utc).isoformat()
+            try:
+                result = run_takeover_analysis()
+                analysis_suffix = f" Auto-analysis complete: {result['takeovers']} takeovers."
+                with state.lock:
+                    state.last_analysis_at = analysis_at
+                    state.last_analysis_takeovers = result["takeovers"]
+                    state.last_analysis_error = ""
+            except Exception as e:
+                analysis_suffix = f" Auto-analysis failed: {e}"
+                with state.lock:
+                    state.last_analysis_at = analysis_at
+                    state.last_analysis_takeovers = None
+                    state.last_analysis_error = str(e)
+
+        with state.lock:
+            state.total_checkins = len(cache["checkins"])
+            state.message = f"{base_message}{analysis_suffix}"
+            state.status = "done"
+            state.running = False
+            if state.monitoring_enabled:
+                state.next_monitor_at = time.time() + MONITOR_INTERVAL_SECONDS
+
+        return
 
     done = False
 
@@ -160,38 +322,28 @@ def run_fetcher(venue_id, since_date=None):
         try:
             data = api_get(f"venue/checkins/{venue_id}", params)
 
-            # Read rate limit from the module-level variable set by api_get
+            # Read rate limit and last URL from module-level variables
+            if fetch_checkins.last_request_url:
+                with state.lock:
+                    state.last_request_url = fetch_checkins.last_request_url
             if fetch_checkins.last_rate_limit_remaining is not None:
                 with state.lock:
                     state.rate_limit_remaining = fetch_checkins.last_rate_limit_remaining
 
         except req_lib.exceptions.HTTPError as e:
-            if e.response is not None and e.response.status_code == 400:
+            status_code = e.response.status_code if e.response is not None else 0
+            # 400 or 500 while paging older history; save what we have and stop.
+            if status_code in (400, 500) and max_id:
                 with state.lock:
                     state.errors_400 += 1
-                    state.status = "paused"
-                    state.message = f"400 error — throttling 20 minutes (error #{state.errors_400})"
-                    state.throttle_until = time.time() + 1200
-                save_cache(cache)
-                # Throttle with interruptible sleep
-                for _ in range(1200):
-                    with state.lock:
-                        if state.stop_requested:
-                            state.message = "Stopped by user"
-                            state.status = "idle"
-                            state.running = False
-                            return
-                        state.throttle_until = state.throttle_until  # keep updated
-                    time.sleep(1)
-                with state.lock:
-                    state.throttle_until = None
-                    state.message = "Resuming after throttle..."
-                continue
+                label = "monitoring" if mode == "monitor" else "paging older history"
+                finish_collection(f"Stopped while {label} at max_id={max_id}. {len(cache['checkins'])} total cached.")
+                return
             else:
                 with state.lock:
                     state.errors_other += 1
                     state.status = "error"
-                    state.message = f"API error: {e}"
+                    state.message = mask_token(f"API error: {e}")
                 save_cache(cache)
                 with state.lock:
                     state.running = False
@@ -201,7 +353,7 @@ def run_fetcher(venue_id, since_date=None):
             with state.lock:
                 state.errors_other += 1
                 state.status = "error"
-                state.message = f"Error: {e}"
+                state.message = mask_token(f"Error: {e}")
                 state.running = False
             save_cache(cache)
             return
@@ -210,13 +362,10 @@ def run_fetcher(venue_id, since_date=None):
         items = checkins_data.get("items", [])
 
         if not items:
-            with state.lock:
-                state.message = "No more checkins — collection complete!"
-                state.status = "done"
-                state.running = False
-            save_cache(cache)
+            finish_collection("No more checkins — collection complete!")
             return
 
+        new_in_batch = 0
         for item in items:
             checkin_id = item["checkin_id"]
             created_at = item.get("created_at", "")
@@ -231,6 +380,7 @@ def run_fetcher(venue_id, since_date=None):
                 break
 
             if checkin_id not in existing_ids:
+                new_in_batch += 1
                 beer = item.get("beer", {})
                 brewery = item.get("brewery", {})
                 event = item.get("event", None)
@@ -240,7 +390,11 @@ def run_fetcher(venue_id, since_date=None):
                     "user": item.get("user", {}).get("user_name", ""),
                     "beer_name": beer.get("beer_name", ""),
                     "beer_id": beer.get("bid"),
+                    "beer_label": beer.get("beer_label", ""),
                     "beer_style": beer.get("beer_style", ""),
+                    "beer_abv": beer.get("beer_abv"),
+                    "beer_auth_rating": beer.get("auth_rating"),
+                    "beer_active": beer.get("beer_active"),
                     "brewery_name": brewery.get("brewery_name", ""),
                     "brewery_id": brewery.get("brewery_id"),
                     "rating": item.get("rating_score", 0),
@@ -267,7 +421,18 @@ def run_fetcher(venue_id, since_date=None):
             done = True
 
         cache["oldest_checkin_id"] = max_id
+
+        # Sort cache by date (newest first) after merging
+        cache["checkins"].sort(key=lambda c: c.get("checkin_id", 0), reverse=True)
         save_cache(cache)
+
+        if mode == "monitor" and new_in_batch == 0 and items:
+            overlap_streak += 1
+            if overlap_streak >= overlap_stop:
+                finish_collection(f"Monitoring sync complete. {len(cache['checkins'])} checkins cached.")
+                return
+        elif mode == "monitor":
+            overlap_streak = 0
 
         with state.lock:
             state.total_checkins = len(cache["checkins"])
@@ -275,7 +440,7 @@ def run_fetcher(venue_id, since_date=None):
                 state.oldest_date = cache["checkins"][-1].get("created_at", "")
                 if not state.newest_date:
                     state.newest_date = cache["checkins"][0].get("created_at", "")
-            state.message = f"Cached {state.total_checkins} checkins — oldest: {state.oldest_date}"
+            state.message = f"Cached {state.total_checkins} checkins ({new_in_batch} new this batch) — oldest: {state.oldest_date}"
 
         if not done:
             with state.lock:
@@ -292,12 +457,34 @@ def run_fetcher(venue_id, since_date=None):
                         return
                 time.sleep(1)
 
-    save_cache(cache)
-    with state.lock:
-        state.total_checkins = len(cache["checkins"])
-        state.message = f"Done! {state.total_checkins} checkins collected."
-        state.status = "done"
-        state.running = False
+    finish_collection(f"Done! {len(cache['checkins'])} checkins collected.")
+
+
+def monitor_loop():
+    """Run a weekly monitoring sync while the server stays alive."""
+    while True:
+        time.sleep(5)
+
+        with fetcher_state.lock:
+            should_run = (
+                fetcher_state.monitoring_enabled
+                and not fetcher_state.running
+                and fetcher_state.next_monitor_at is not None
+                and time.time() >= fetcher_state.next_monitor_at
+            )
+
+        if not should_run:
+            continue
+
+        venue_id = int(os.getenv("VENUE_ID", "107565"))
+        with fetcher_state.lock:
+            if fetcher_state.running:
+                continue
+            fetcher_state.next_monitor_at = time.time() + MONITOR_INTERVAL_SECONDS
+            fetcher_state.message = "Weekly monitoring run starting..."
+
+        t = threading.Thread(target=run_fetcher, args=(venue_id, None, "monitor"), daemon=True)
+        t.start()
 
 
 # ── HTTP Request Handler ────────────────────────────────────────────────────
@@ -333,6 +520,16 @@ class AppHandler(SimpleHTTPRequestHandler):
             else:
                 self._json_response([])
 
+        elif path.startswith("/api/beer-info/"):
+            beer_id = path.rsplit("/", 1)[-1]
+            if not beer_id.isdigit():
+                self._json_response({"error": "Invalid beer id"}, 400)
+                return
+            try:
+                self._json_response(get_beer_info(int(beer_id)))
+            except Exception as e:
+                self._json_response({"error": mask_token(str(e))}, 500)
+
         elif path == "/":
             self.path = "/index.html"
             super().do_GET()
@@ -358,7 +555,8 @@ class AppHandler(SimpleHTTPRequestHandler):
                 except json.JSONDecodeError:
                     pass
             since_date = body.get("since_date")
-            t = threading.Thread(target=run_fetcher, args=(venue_id, since_date), daemon=True)
+            mode = body.get("mode", "backfill")
+            t = threading.Thread(target=run_fetcher, args=(venue_id, since_date, mode), daemon=True)
             t.start()
             self._json_response({"started": True})
 
@@ -367,16 +565,30 @@ class AppHandler(SimpleHTTPRequestHandler):
                 fetcher_state.stop_requested = True
             self._json_response({"stopping": True})
 
+        elif path == "/api/reset-cache":
+            if fetcher_state.running:
+                self._json_response({"error": "Stop the fetcher first"}, 409)
+                return
+            cache = load_cache()
+            cache["oldest_checkin_id"] = None
+            cache["checkins"] = []
+            save_cache(cache)
+            fetcher_state.reset()
+            self._json_response({"reset": True, "message": "Cache cleared. Ready to refetch."})
+
         elif path == "/api/analyze":
             try:
-                from analyze_takeovers import load_checkins, detect_takeovers, export_json
-                checkins = load_checkins()
-                takeovers = detect_takeovers(checkins)
-                output_dir = PROJECT_DIR / "output"
-                output_dir.mkdir(exist_ok=True)
-                export_json(takeovers, output_dir / "takeovers.json")
-                self._json_response({"takeovers": len(takeovers)})
+                result = run_takeover_analysis()
+                with fetcher_state.lock:
+                    fetcher_state.last_analysis_at = datetime.now(timezone.utc).isoformat()
+                    fetcher_state.last_analysis_takeovers = result["takeovers"]
+                    fetcher_state.last_analysis_error = ""
+                self._json_response(result)
             except Exception as e:
+                with fetcher_state.lock:
+                    fetcher_state.last_analysis_at = datetime.now(timezone.utc).isoformat()
+                    fetcher_state.last_analysis_takeovers = None
+                    fetcher_state.last_analysis_error = str(e)
                 self._json_response({"error": str(e)}, 500)
 
         else:
@@ -401,6 +613,16 @@ def main():
     parser.add_argument("--port", type=int, default=DEFAULT_PORT, help=f"Port (default: {DEFAULT_PORT})")
     parser.add_argument("--no-browser", action="store_true", help="Don't open browser on start")
     args = parser.parse_args()
+
+    cache = load_cache()
+    with fetcher_state.lock:
+        if fetcher_state.next_monitor_at is None:
+            if cache.get("checkins"):
+                fetcher_state.next_monitor_at = time.time() + MONITOR_INTERVAL_SECONDS
+            else:
+                fetcher_state.next_monitor_at = time.time() + 15
+
+    threading.Thread(target=monitor_loop, daemon=True).start()
 
     server = HTTPServer(("0.0.0.0", args.port), AppHandler)
     url = f"http://localhost:{args.port}"

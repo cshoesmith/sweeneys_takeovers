@@ -60,6 +60,7 @@ RATE_LIMIT_DELAY = 37  # seconds between API calls
 
 # Last known rate limit remaining (updated by api_get)
 last_rate_limit_remaining = None
+last_request_url = None
 
 LOCAL_CALLBACK_PORT = 8907
 LOCAL_CALLBACK_URL = f"http://localhost:{LOCAL_CALLBACK_PORT}/callback"
@@ -260,6 +261,11 @@ def api_get(endpoint, params=None):
     url = f"{API_BASE}/{endpoint}"
     headers = {"User-Agent": USER_AGENT}
 
+    global last_request_url
+    req = requests.Request("GET", url, params=params, headers=headers)
+    prepared = req.prepare()
+    last_request_url = prepared.url
+
     resp = requests.get(url, params=params, headers=headers, timeout=30)
 
     # Check rate limiting
@@ -370,7 +376,9 @@ def fetch_checkins(venue_id, since_date=None):
         cache = {"venue_id": venue_id, "checkins": [], "oldest_checkin_id": None}
 
     existing_ids = {c["checkin_id"] for c in cache["checkins"]}
-    max_id = cache.get("oldest_checkin_id")  # resume point
+    # Resume from the oldest cached page so each run keeps pushing farther back
+    # in history instead of stopping after overlapping recent pages.
+    max_id = cache.get("oldest_checkin_id")
 
     if since_date:
         cutoff = datetime.strptime(since_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
@@ -381,7 +389,9 @@ def fetch_checkins(venue_id, since_date=None):
 
     print(f"Fetching checkins for venue {venue_id} back to {cutoff.date()}")
     if max_id:
-        print(f"Resuming from checkin ID {max_id} ({len(cache['checkins'])} cached)")
+        print(f"  Resuming historical backfill from max_id={max_id} ({len(cache['checkins'])} cached)")
+    else:
+        print(f"  Starting from newest ({len(cache['checkins'])} cached)")
 
     batch_count = 0
     done = False
@@ -395,12 +405,12 @@ def fetch_checkins(venue_id, since_date=None):
         try:
             data = api_get(f"venue/checkins/{venue_id}", params)
         except requests.exceptions.HTTPError as e:
-            if e.response is not None and e.response.status_code == 400:
-                print(f"  400 error at max_id={max_id}. Throttling for 20 minutes...")
+            status_code = e.response.status_code if e.response is not None else 0
+            if status_code in (400, 500) and max_id:
+                print(f"  {status_code} error while paging older history at max_id={max_id}.")
+                print(f"  Saved {len(cache['checkins'])} total cached checkins so far.")
                 save_cache(cache)
-                time.sleep(1200)
-                print("  Resuming after throttle pause...")
-                continue
+                return cache
             print(f"  API error: {e}")
             print("  Saving progress and stopping.")
             save_cache(cache)
@@ -414,6 +424,7 @@ def fetch_checkins(venue_id, since_date=None):
             done = True
             break
 
+        new_in_batch = 0
         for item in items:
             checkin_id = item["checkin_id"]
             created_at = item.get("created_at", "")
@@ -432,6 +443,7 @@ def fetch_checkins(venue_id, since_date=None):
                 break
 
             if checkin_id not in existing_ids:
+                new_in_batch += 1
                 beer = item.get("beer", {})
                 brewery = item.get("brewery", {})
                 event = item.get("event", None)
@@ -441,7 +453,11 @@ def fetch_checkins(venue_id, since_date=None):
                     "user": item.get("user", {}).get("user_name", ""),
                     "beer_name": beer.get("beer_name", ""),
                     "beer_id": beer.get("bid"),
+                    "beer_label": beer.get("beer_label", ""),
                     "beer_style": beer.get("beer_style", ""),
+                    "beer_abv": beer.get("beer_abv"),
+                    "beer_auth_rating": beer.get("auth_rating"),
+                    "beer_active": beer.get("beer_active"),
                     "brewery_name": brewery.get("brewery_name", ""),
                     "brewery_id": brewery.get("brewery_id"),
                     "rating": item.get("rating_score", 0),
@@ -472,11 +488,14 @@ def fetch_checkins(venue_id, since_date=None):
         cache["oldest_checkin_id"] = max_id
         batch_count += 1
 
+        # Sort cache by checkin_id (newest first) after merging
+        cache["checkins"].sort(key=lambda c: c.get("checkin_id", 0), reverse=True)
+
         # Save progress every batch
         save_cache(cache)
         total = len(cache["checkins"])
         oldest_date = cache["checkins"][-1]["created_at"] if cache["checkins"] else "?"
-        print(f"  Total cached: {total} checkins. Oldest: {oldest_date}")
+        print(f"  Total cached: {total} checkins ({new_in_batch} new). Oldest: {oldest_date}")
 
         if not done:
             print(f"  Waiting {RATE_LIMIT_DELAY}s (rate limit)...")
