@@ -324,7 +324,7 @@
   <div class="title">
     <h1>Hotel <span>Sweeneys</span> — Tap Takeover Log</h1>
     <p>Thursday craft beer tap takeovers via Untappd</p>
-    <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> —</div>
+    <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260321-191646</div>
   </div>
   <div class="tab-bar">
     <button class="tab-btn active" data-tab="takeovers">
@@ -497,6 +497,7 @@
 <script>
 // ═════════ Tab switching ═════════
 const ADMIN_PASSWORD = 'Wardy123';
+const INLINE_DEPLOY_BUILD_LABEL = '20260321-191646';
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -720,6 +721,9 @@ let pollInterval = null;
 let deploymentMeta = null;
 
 function getFallbackBuildLabel() {
+  if (isReadOnlyDeployment()) {
+    return INLINE_DEPLOY_BUILD_LABEL;
+  }
   var raw = document.lastModified || '';
   var parsed = raw ? new Date(raw) : null;
   if (parsed && !isNaN(parsed.getTime())) {
@@ -744,7 +748,7 @@ function getEffectiveDeploymentMeta() {
   return {
     version: 'v1.0',
     build_unix: null,
-    build_label: getFallbackBuildLabel(),
+    build_label: INLINE_DEPLOY_BUILD_LABEL,
     read_only: true,
     deployment_target: 'remote',
     supports_collector: false
