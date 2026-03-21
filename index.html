@@ -1872,13 +1872,20 @@ function buildBeerFallbackInfo(beerId) {
     beer_description: '',
     rating_score: info.rating_score != null ? info.rating_score : info.beer_auth_rating,
     rating_count: null,
-    brewery_country: ''
+    brewery_country: '',
+    fallback_note: ''
   }, info);
 
   if (!fallback.beer_description) {
-    fallback.beer_description = isReadOnlyDeployment()
-      ? 'Showing bundled takeover data for this beer. Rich Untappd beer details are not available in the read-only deployment for this entry.'
-      : 'Limited beer details are available from the bundled takeover snapshot.';
+    fallback.beer_description = '';
+  }
+
+  if (!hasEnoughBeerInfo(fallback)) {
+    fallback.fallback_note = isReadOnlyDeployment()
+      ? 'Showing bundled takeover data for this beer. Extra Untappd metadata is not available for this entry in the read-only deployment.'
+      : 'Showing bundled takeover data for this beer. Extra Untappd metadata is not available for this entry.';
+  } else if (isReadOnlyDeployment() && (!fallback.beer_description || !getBeerLabelUrl(fallback))) {
+    fallback.fallback_note = 'Showing bundled snapshot data for this beer. Some Untappd fields, like label art or description, may be unavailable for this entry.';
   }
 
   return fallback;
@@ -2229,6 +2236,11 @@ function renderBeerModal(info) {
     ? '<img class="beer-modal-image" src="' + esc(image) + '" alt="' + esc(title) + '">'
     : '<div class="beer-modal-image" style="display:flex;align-items:center;justify-content:center;color:var(--text-dim)">&#127866;</div>';
 
+  var descriptionText = info.beer_description || 'No description available.';
+  var fallbackNoteHtml = info.fallback_note
+    ? '<div style="margin-top:0.75rem;font-size:0.82rem;line-height:1.45;color:var(--text-dim)">' + esc(info.fallback_note) + '</div>'
+    : '';
+
   body.innerHTML =
     '<div>' + imageHtml + '</div>' +
     '<div>' +
@@ -2242,7 +2254,8 @@ function renderBeerModal(info) {
         '<div><strong>Ratings</strong>' + (info.rating_count != null && info.rating_count !== '' ? esc(String(info.rating_count)) : '—') + '</div>' +
         '<div><strong>Country</strong>' + esc(info.brewery_country || '—') + '</div>' +
       '</div>' +
-      '<div class="beer-modal-desc">' + esc(info.beer_description || 'No description available.') + '</div>' +
+      '<div class="beer-modal-desc">' + esc(descriptionText) + '</div>' +
+      fallbackNoteHtml +
     '</div>';
 }
 

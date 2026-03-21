@@ -17,6 +17,7 @@ import re
 import sys
 import threading
 import time
+import unicodedata
 import webbrowser
 from datetime import datetime, timezone
 from http.server import HTTPServer, SimpleHTTPRequestHandler
@@ -199,6 +200,39 @@ def fetch_public_page(url):
     return final_url, html_text
 
 
+def slugify_untappd_segment(value):
+    normalized = unicodedata.normalize("NFKD", (value or "").replace("ø", "o").replace("Ø", "O"))
+    ascii_value = normalized.encode("ascii", "ignore").decode("ascii")
+    slug = re.sub(r"[^a-z0-9]+", "-", ascii_value.lower()).strip("-")
+    return re.sub(r"-+", "-", slug)
+
+
+def build_untappd_beer_page_url(beer_id, beer_name="", brewery_name=""):
+    beer_slug = slugify_untappd_segment(beer_name)
+    brewery_slug = slugify_untappd_segment(brewery_name)
+    slug_parts = [part for part in (brewery_slug, beer_slug) if part]
+    if not slug_parts:
+        return ""
+    return f"https://untappd.com/b/{'-'.join(slug_parts)}/{beer_id}"
+
+
+def is_usable_untappd_beer_page(final_url, html_text, beer_id):
+    parsed = urlparse(final_url or "")
+    if parsed.netloc.lower() not in {"untappd.com", "www.untappd.com"}:
+        return False
+
+    hints = [
+        f"/{beer_id}",
+        "ratings",
+        "abv",
+        '<meta property="og:description"',
+        'application/ld+json',
+        'assets.untappd.com/site/beer_logos',
+    ]
+    html_lower = (html_text or "").lower()
+    return any(hint.lower() in html_lower for hint in hints)
+
+
 def first_regex_group(pattern, text, flags=0):
     match = re.search(pattern, text, flags)
     if not match:
@@ -207,8 +241,25 @@ def first_regex_group(pattern, text, flags=0):
     return html.unescape(group_value).strip()
 
 
-def scrape_beer_info_from_page(beer_id):
-    page_url, html_text = fetch_public_page(f"https://untappd.com/beer/{beer_id}")
+def scrape_beer_info_from_page(beer_id, seed_info=None):
+    seed_info = seed_info or {}
+    candidate_urls = [f"https://untappd.com/beer/{beer_id}"]
+    canonical_url = build_untappd_beer_page_url(
+        beer_id,
+        seed_info.get("beer_name", ""),
+        seed_info.get("brewery_name", ""),
+    )
+    if canonical_url and canonical_url not in candidate_urls:
+        candidate_urls.append(canonical_url)
+
+    page_url = candidate_urls[0]
+    html_text = ""
+    for candidate_url in candidate_urls:
+        candidate_page_url, candidate_html_text = fetch_public_page(candidate_url)
+        page_url = candidate_page_url
+        html_text = candidate_html_text
+        if is_usable_untappd_beer_page(candidate_page_url, candidate_html_text, beer_id):
+            break
 
     info = {
         "beer_id": beer_id,
@@ -511,7 +562,7 @@ def get_beer_info(beer_id):
 
     if not has_usable_beer_info(info) or not info.get("beer_description") or not info.get("beer_label"):
         try:
-            scraped_info = scrape_beer_info_from_page(beer_id)
+            scraped_info = scrape_beer_info_from_page(beer_id, info)
             info.update({
                 key: value
                 for key, value in scraped_info.items()
