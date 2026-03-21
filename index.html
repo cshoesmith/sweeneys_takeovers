@@ -38,6 +38,11 @@
   header .title h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; }
   header .title h1 span { color: var(--accent); }
   header .title p { color: var(--text-dim); font-size: 0.85rem; }
+  .header-meta {
+    margin-top: 0.35rem; color: var(--text-dim); font-size: 0.78rem;
+    font-family: 'Consolas','Monaco',monospace;
+  }
+  .header-meta strong { color: var(--text); font-weight: 700; }
 
   /* ── Tab bar ── */
   .tab-bar { display: flex; gap: 0.3rem; }
@@ -176,6 +181,34 @@
   .stat-card .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
   .stat-card .stat-label { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; }
   .timeline { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+  .current-events-panel {
+    max-width: 1200px; margin: 0 auto 1rem; padding: 0 1.5rem;
+  }
+  .current-events-panel.hidden { display: none; }
+  .current-events-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 1rem 1.1rem; margin-bottom: 0.9rem;
+  }
+  .current-events-header {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .current-events-header h2 { font-size: 1rem; margin: 0; }
+  .current-events-note { color: var(--text-dim); font-size: 0.8rem; }
+  .current-event-item {
+    display: grid; grid-template-columns: 120px 1fr; gap: 0.9rem; padding: 0.85rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .current-event-item:first-of-type { border-top: none; padding-top: 0; }
+  .current-event-image {
+    width: 120px; height: 88px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); background: var(--card);
+  }
+  .current-event-title { font-size: 1rem; font-weight: 700; color: var(--text); text-decoration: none; }
+  .current-event-title:hover { color: var(--gold); }
+  .current-event-date, .current-event-meta, .current-event-interest {
+    color: var(--text-dim); font-size: 0.85rem; margin-top: 0.2rem;
+  }
+  .current-event-desc { color: var(--text); font-size: 0.88rem; margin-top: 0.45rem; line-height: 1.45; }
   .year-group { margin-bottom: 1.5rem; }
   .year-header {
     font-size: 1.2rem; font-weight: 700; color: var(--accent);
@@ -278,8 +311,10 @@
     .controls { flex-direction: column; }
     .stats-bar { flex-direction: column; }
     .fetcher-grid { grid-template-columns: 1fr; }
+    .current-event-item { grid-template-columns: 1fr; }
     .beer-modal-body { grid-template-columns: 1fr; }
     .beer-modal-image { width: 100px; height: 100px; }
+    .current-event-image { width: 100%; height: 160px; }
   }
 </style>
 </head>
@@ -289,6 +324,7 @@
   <div class="title">
     <h1>Hotel <span>Sweeneys</span> — Tap Takeover Log</h1>
     <p>Thursday craft beer tap takeovers via Untappd</p>
+    <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> —</div>
   </div>
   <div class="tab-bar">
     <button class="tab-btn active" data-tab="takeovers">
@@ -423,6 +459,7 @@
       <option value="heuristic">Heuristic Only</option>
     </select>
   </div>
+  <div class="current-events-panel hidden" id="currentEventsPanel"></div>
   <div class="stats-bar" id="statsBar"></div>
   <div class="timeline" id="timeline"></div>
 </div>
@@ -539,6 +576,7 @@ let logMessages = [];
 const MAX_LOG = 50;
 let lastStatus = null;
 let pollInterval = null;
+let deploymentMeta = null;
 
 function addLog(msg, type) {
   const now = new Date().toLocaleTimeString();
@@ -606,7 +644,7 @@ function updateDashboard(s) {
     urlEl.textContent = '—';
   }
   document.getElementById('oldestDate').textContent = shortDate(s.oldest_date) || '—';
-  document.getElementById('targetDate').textContent = s.target_date || '—';
+  document.getElementById('targetDate').textContent = shortDate(s.target_date) || '—';
 
   updateProgress(s);
 
@@ -662,7 +700,7 @@ function updateProgress(s) {
   var pctVal = Math.min(100, Math.max(0, (covered / totalRange) * 100));
 
   fill.style.width = pctVal.toFixed(1) + '%';
-  text.textContent = pctVal.toFixed(1) + '% — ' + shortDate(s.oldest_date) + ' → ' + s.target_date;
+  text.textContent = pctVal.toFixed(1) + '% — ' + shortDate(s.oldest_date) + ' → ' + shortDate(s.target_date);
 }
 
 function statusLabel(status) {
@@ -677,6 +715,41 @@ function shortDate(dateStr) {
     if (isNaN(d)) return dateStr;
     return d.toLocaleDateString('en-AU', { year: 'numeric', month: 'short', day: 'numeric' });
   } catch(e) { return dateStr; }
+}
+
+function loadBuildInfo() {
+  fetch('/api/meta')
+    .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
+    .then(function(meta) {
+      deploymentMeta = meta || null;
+      var el = document.getElementById('buildInfo');
+      if (!el) return;
+      var version = meta.version || 'v1.0';
+      var buildUnix = meta.build_unix != null ? String(meta.build_unix) : '—';
+      var mode = meta.read_only ? ' · <strong>Mode</strong> Read-only' : '';
+      el.innerHTML = '<strong>Version</strong> ' + esc(version) + ' · <strong>Build</strong> ' + esc(buildUnix) + mode;
+      if (meta.build_iso) {
+        el.title = 'Built: ' + meta.build_iso;
+      }
+      applyDeploymentMode(meta);
+    })
+    .catch(function() {
+      var el = document.getElementById('buildInfo');
+      if (el) el.innerHTML = '<strong>Version</strong> v1.0 · <strong>Build</strong> —';
+    });
+}
+
+function applyDeploymentMode(meta) {
+  var adminBtn = document.getElementById('adminTabBtn');
+  if (!adminBtn || !meta) return;
+  if (meta.read_only) {
+    adminBtn.style.display = 'none';
+    adminUnlocked = false;
+    sessionStorage.removeItem('sweeneysAdminUnlocked');
+  } else {
+    adminBtn.style.display = '';
+    refreshAdminTabState();
+  }
 }
 
 function startFetcher() {
@@ -708,6 +781,7 @@ function resetCache() {
 // ═════════ Takeovers Tab ═════════
 var allTakeovers = [];
 var beerInfoCache = {};
+var currentEvents = [];
 
 function findBeerDetail(beerId) {
   for (var i = 0; i < allTakeovers.length; i++) {
@@ -721,7 +795,14 @@ function findBeerDetail(beerId) {
 
 function hasEnoughBeerInfo(info) {
   if (!info) return false;
-  return !!(info.beer_label || info.beer_label_hd || info.beer_abv !== undefined && info.beer_abv !== null || info.beer_style);
+  var hasImage = !!(info.beer_label || info.beer_label_hd || info.brewery_label || info.brewery_label_hd);
+  var hasRichDetails = !!(
+    (info.beer_abv !== undefined && info.beer_abv !== null && info.beer_abv !== '') ||
+    (info.rating_score !== undefined && info.rating_score !== null && info.rating_score !== '') ||
+    (info.beer_description && info.beer_description.trim()) ||
+    (info.beer_ibu !== undefined && info.beer_ibu !== null && info.beer_ibu !== '')
+  );
+  return hasImage || hasRichDetails;
 }
 
 function loadTakeovers() {
@@ -751,6 +832,56 @@ function loadTakeovers() {
       renderTakeovers();
     })
     .catch(function() {});
+}
+
+function loadCurrentEvents() {
+  fetch('/api/current-events')
+    .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
+    .then(function(data) {
+      currentEvents = Array.isArray(data) ? data : [];
+      renderCurrentEvents();
+    })
+    .catch(function() {
+      currentEvents = [];
+      renderCurrentEvents();
+    });
+}
+
+function renderCurrentEvents() {
+  var panel = document.getElementById('currentEventsPanel');
+  if (!panel) return;
+  if (!currentEvents.length) {
+    panel.classList.add('hidden');
+    panel.innerHTML = '';
+    return;
+  }
+
+  var html = '<div class="current-events-card">' +
+    '<div class="current-events-header">' +
+      '<h2>Current Untappd Events</h2>' +
+      '<div class="current-events-note">Live scrape from the venue events page. Historical events still come from checkin event data.</div>' +
+    '</div>';
+
+  currentEvents.forEach(function(event) {
+    var imageHtml = event.image_url
+      ? '<img class="current-event-image" src="' + esc(event.image_url) + '" alt="' + esc(event.event_name || 'Event image') + '">'
+      : '<div class="current-event-image"></div>';
+
+    html += '<div class="current-event-item">' +
+      '<div>' + imageHtml + '</div>' +
+      '<div>' +
+        '<a class="current-event-title" href="' + esc(event.event_url || '#') + '" target="_blank" rel="noopener">' + esc(event.event_name || 'Untappd event') + '</a>' +
+        (event.date_text ? '<div class="current-event-date">' + esc(event.date_text) + '</div>' : '') +
+        (event.meta ? '<div class="current-event-meta">' + esc(event.meta) + '</div>' : '') +
+        (event.interest_text ? '<div class="current-event-interest">' + esc(event.interest_text) + '</div>' : '') +
+        (event.description ? '<div class="current-event-desc">' + esc(event.description) + '</div>' : '') +
+      '</div>' +
+    '</div>';
+  });
+
+  html += '</div>';
+  panel.innerHTML = html;
+  panel.classList.remove('hidden');
 }
 
 document.getElementById('searchInput').addEventListener('input', renderTakeovers);
@@ -939,6 +1070,7 @@ function dismissBeerModal(event) {
 // ═════════ Init ═════════
 window.addEventListener('DOMContentLoaded', function() {
   refreshAdminTabState();
+  loadBuildInfo();
   document.getElementById('adminPasswordInput').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') submitAdminUnlock();
     if (event.key === 'Escape') closeAdminModal();
@@ -958,6 +1090,7 @@ window.addEventListener('DOMContentLoaded', function() {
     .catch(function() { addLog('Server not responding — run: python server.py', 'error'); });
 
   loadTakeovers();
+  loadCurrentEvents();
   if (adminUnlocked) startPolling();
 });
 </script>

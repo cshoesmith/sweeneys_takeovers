@@ -128,6 +128,49 @@ Date           Brewery                             Checkins  Beers   Share
 | `output/takeovers.csv` | Exported results (when using `--output`) |
 | `.env` | Your API credentials (not committed to git) |
 
+## Deploying to Vercel
+
+This project can be deployed to **Vercel in read-only mode**.
+
+### What works on Vercel
+
+- Viewing the Takeovers page
+- Viewing current scraped Untappd events
+- Beer detail popups
+- Build/version metadata
+- Dynamic takeover analysis **if** cached checkin data is bundled with the deployment
+
+### What does not work on Vercel
+
+These features rely on local background jobs and persistent writable storage, which
+do not fit Vercel's serverless model:
+
+- Start/stop collector
+- Reset cache
+- Background monitoring thread
+- Persistent local JSON cache updates in the deployed app
+
+For full collector/admin functionality, run the app locally.
+
+### Vercel setup
+
+1. Push this repo to GitHub
+2. Import it into Vercel
+3. Set environment variables in Vercel as needed:
+
+   - `UNTAPPD_ACCESS_TOKEN`
+   - `VENUE_ID=107565`
+   - `VENUE_SLUG=hotel-sweeneys`
+   - `APP_VERSION=v1.0` (optional)
+
+4. Deploy
+
+### Notes
+
+- On Vercel, the app automatically switches to **read-only mode** and hides the Admin tab.
+- If `output/takeovers.json` is present in the deployment, it will be served directly.
+- If not, the app will try to derive takeovers dynamically from any bundled `checkins_cache.json`.
+
 ## Rate limits
 
 The Untappd API allows **100 calls per hour**. Each call returns up to 25

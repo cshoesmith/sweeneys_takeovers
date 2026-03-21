@@ -10,8 +10,10 @@ Usage:
 """
 
 import argparse
+import html
 import json
 import os
+import re
 import sys
 import threading
 import time
@@ -20,6 +22,7 @@ from datetime import datetime, timezone
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
+from urllib.request import Request, urlopen
 
 from dotenv import load_dotenv
 
@@ -28,6 +31,7 @@ load_dotenv()
 # Import fetcher functions
 from fetch_checkins import (
     api_get, load_cache, save_cache, get_access_token,
+    merge_checkin_record,
     CACHE_FILE, RATE_LIMIT_DELAY, login_oauth,
 )
 import fetch_checkins
@@ -36,12 +40,163 @@ PROJECT_DIR = Path(__file__).parent
 DEFAULT_PORT = 8908
 MONITOR_INTERVAL_SECONDS = 7 * 24 * 60 * 60
 BEER_INFO_CACHE_FILE = PROJECT_DIR / "beer_info_cache.json"
+APP_VERSION = os.getenv("APP_VERSION", "v1.0")
+VENUE_SLUG = os.getenv("VENUE_SLUG", "hotel-sweeneys")
+IS_VERCEL = bool(os.getenv("VERCEL"))
 
-import re
 def mask_token(msg):
     """Remove access tokens from error messages."""
     return re.sub(r'access_token=[A-Za-z0-9]+', 'access_token=***', str(msg))
 
+
+def get_build_info():
+    """Return app version metadata with a build number based on latest file mtime."""
+    tracked_files = [
+        PROJECT_DIR / "index.html",
+        PROJECT_DIR / "server.py",
+        PROJECT_DIR / "fetch_checkins.py",
+        PROJECT_DIR / "analyze_takeovers.py",
+    ]
+    latest_mtime = max(
+        (path.stat().st_mtime for path in tracked_files if path.exists()),
+        default=time.time(),
+    )
+    build_unix = int(latest_mtime)
+    return {
+        "version": APP_VERSION,
+        "build_unix": build_unix,
+        "build_iso": datetime.fromtimestamp(build_unix, tz=timezone.utc).isoformat(),
+        "deployment_target": "vercel" if IS_VERCEL else "local",
+        "read_only": IS_VERCEL,
+        "supports_collector": not IS_VERCEL,
+    }
+
+
+def get_cache_summary_data():
+    cache = load_cache()
+    checkins = cache.get("checkins", [])
+    return {
+        "venue_id": cache.get("venue_id"),
+        "total_checkins": len(checkins),
+        "oldest_checkin_id": cache.get("oldest_checkin_id"),
+        "oldest_date": checkins[-1]["created_at"] if checkins else None,
+        "newest_date": checkins[0]["created_at"] if checkins else None,
+        "has_token": get_access_token() is not None,
+    }
+
+
+def load_takeover_data():
+    """Load cached takeovers or derive them dynamically from the checkin cache."""
+    takeover_file = PROJECT_DIR / "output" / "takeovers.json"
+    if takeover_file.exists():
+        with open(takeover_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    cache = load_cache()
+    checkins = cache.get("checkins", [])
+    if not checkins:
+        return []
+
+    from analyze_takeovers import detect_takeovers
+
+    takeovers = detect_takeovers(checkins)
+    return [{k: v for k, v in t.items() if k not in ("details",)} for t in takeovers]
+
+
+def strip_html(value):
+    text = re.sub(r"<[^>]+>", " ", value or "")
+    return " ".join(html.unescape(text).split())
+
+
+def fetch_public_html(url):
+    request = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urlopen(request, timeout=30) as response:
+        return response.read().decode("utf-8", errors="replace")
+
+
+def scrape_event_detail(event_url):
+    try:
+        html_text = fetch_public_html(event_url)
+    except Exception:
+        return {}
+
+    description = ""
+    desc_match = re.search(
+        r'<div class="event-details-desc">\s*<p>(.*?)</p>\s*</div>',
+        html_text,
+        re.S,
+    )
+    if desc_match:
+        description = strip_html(desc_match.group(1))
+
+    where_match = re.search(
+        r'<div class="event-where event-mobile">.*?<p>(.*?)</p>\s*</div>',
+        html_text,
+        re.S,
+    )
+    where_text = strip_html(where_match.group(1)) if where_match else ""
+
+    image_match = re.search(r'<img\s+src="([^"]+utfb-images[^"]+)" alt="event image">', html_text)
+    image_url = html.unescape(image_match.group(1)) if image_match else ""
+
+    return {
+        "description": description,
+        "where": where_text,
+        "image_url": image_url,
+    }
+
+
+def scrape_current_events(venue_id):
+    events_url = f"https://untappd.com/v/{VENUE_SLUG}/{venue_id}/events"
+    html_text = fetch_public_html(events_url)
+
+    pattern = re.compile(
+        r'<div class="event-item"[^>]*data-track-venue-impression="[^"]*event_id-(\d+)[^"]*"[^>]*>(.*?)</div>\s*</div>\s*<script',
+        re.S,
+    )
+    events = []
+    for match in pattern.finditer(html_text):
+        event_id = int(match.group(1))
+        block = match.group(2)
+
+        title_match = re.search(r'<h4 class="name"><a href="([^"]+)">(.*?)</a></h4>', block, re.S)
+        if not title_match:
+            continue
+
+        relative_url = title_match.group(1)
+        event_url = relative_url if relative_url.startswith("http") else f"https://untappd.com{relative_url}"
+        title = strip_html(title_match.group(2))
+
+        date_match = re.search(r'<p class="date"[^>]*>(.*?)</p>', block, re.S)
+        date_text = strip_html(date_match.group(1)) if date_match else ""
+
+        meta_match = re.search(r'<span class="meta">(.*?)</span>', block, re.S)
+        meta_text = strip_html(meta_match.group(1)) if meta_match else ""
+
+        interest_match = re.search(r'<span class="words">(.*?)</span>', block, re.S)
+        interest_text = strip_html(interest_match.group(1)) if interest_match else ""
+
+        image_match = re.search(r'<div class="event-image">\s*<img\s+src="([^"]+)"', block, re.S)
+        image_url = html.unescape(image_match.group(1)) if image_match else ""
+
+        detail = scrape_event_detail(event_url)
+        if detail.get("image_url"):
+            image_url = detail["image_url"]
+
+        events.append({
+            "event_id": event_id,
+            "event_name": title,
+            "event_url": event_url,
+            "date_text": date_text,
+            "meta": meta_text,
+            "interest_text": interest_text,
+            "description": detail.get("description", ""),
+            "where": detail.get("where", ""),
+            "image_url": image_url,
+            "source": "current-events-page",
+        })
+
+    return events
 
 def run_takeover_analysis():
     """Run takeover analysis and export JSON results."""
@@ -68,6 +223,22 @@ def load_beer_info_cache():
 def save_beer_info_cache(cache):
     with open(BEER_INFO_CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(cache, f, indent=2, ensure_ascii=False)
+
+
+def has_usable_beer_info(info):
+    if not info:
+        return False
+    has_image = bool(
+        info.get("beer_label")
+        or info.get("beer_label_hd")
+        or info.get("brewery_label")
+        or info.get("brewery_label_hd")
+    )
+    has_rich_details = any(
+        info.get(field) not in (None, "")
+        for field in ("beer_abv", "beer_ibu", "beer_description", "rating_score", "rating_count")
+    )
+    return has_image or has_rich_details
 
 
 def find_cached_beer_info(beer_id):
@@ -97,11 +268,12 @@ def find_cached_beer_info(beer_id):
 def get_beer_info(beer_id):
     beer_id_str = str(beer_id)
     cache = load_beer_info_cache()
-    if beer_id_str in cache:
-        return cache[beer_id_str]
+    cached_entry = cache.get(beer_id_str)
+    if has_usable_beer_info(cached_entry):
+        return cached_entry
 
     cached_info = find_cached_beer_info(beer_id)
-    if cached_info:
+    if has_usable_beer_info(cached_info):
         cache[beer_id_str] = cached_info
         save_beer_info_cache(cache)
         return cached_info
@@ -131,7 +303,6 @@ def get_beer_info(beer_id):
     cache[beer_id_str] = info
     save_beer_info_cache(cache)
     return info
-
 
 # ── Shared fetcher state (read by the status endpoint) ──────────────────────
 class FetcherState:
@@ -238,6 +409,7 @@ def run_fetcher(venue_id, since_date=None, mode="backfill"):
         cache = {"venue_id": venue_id, "checkins": [], "oldest_checkin_id": None}
 
     existing_ids = {c["checkin_id"] for c in cache["checkins"]}
+    existing_by_id = {c["checkin_id"]: c for c in cache["checkins"]}
     if mode == "monitor":
         max_id = None
         overlap_streak = 0
@@ -405,6 +577,9 @@ def run_fetcher(venue_id, since_date=None, mode="backfill"):
                     record["event_url"] = event.get("event_url", "")
                 cache["checkins"].append(record)
                 existing_ids.add(checkin_id)
+                existing_by_id[checkin_id] = record
+            else:
+                existing_by_id[checkin_id].update(merge_checkin_record(existing_by_id[checkin_id], item))
 
         # Update pagination
         pagination = checkins_data.get("pagination", {})
@@ -499,26 +674,21 @@ class AppHandler(SimpleHTTPRequestHandler):
         if path == "/api/status":
             self._json_response(fetcher_state.to_dict())
 
+        elif path == "/api/meta":
+            self._json_response(get_build_info())
+
+        elif path == "/api/current-events":
+            venue_id = int(os.getenv("VENUE_ID", "107565"))
+            try:
+                self._json_response(scrape_current_events(venue_id))
+            except Exception as e:
+                self._json_response({"error": mask_token(str(e))}, 500)
+
         elif path == "/api/cache-summary":
-            cache = load_cache()
-            checkins = cache.get("checkins", [])
-            summary = {
-                "venue_id": cache.get("venue_id"),
-                "total_checkins": len(checkins),
-                "oldest_checkin_id": cache.get("oldest_checkin_id"),
-                "oldest_date": checkins[-1]["created_at"] if checkins else None,
-                "newest_date": checkins[0]["created_at"] if checkins else None,
-                "has_token": get_access_token() is not None,
-            }
-            self._json_response(summary)
+            self._json_response(get_cache_summary_data())
 
         elif path == "/api/takeovers":
-            takeover_file = PROJECT_DIR / "output" / "takeovers.json"
-            if takeover_file.exists():
-                with open(takeover_file, "r", encoding="utf-8") as f:
-                    self._json_response(json.load(f))
-            else:
-                self._json_response([])
+            self._json_response(load_takeover_data())
 
         elif path.startswith("/api/beer-info/"):
             beer_id = path.rsplit("/", 1)[-1]
@@ -573,8 +743,13 @@ class AppHandler(SimpleHTTPRequestHandler):
             cache["oldest_checkin_id"] = None
             cache["checkins"] = []
             save_cache(cache)
+            takeover_file = PROJECT_DIR / "output" / "takeovers.json"
+            if takeover_file.exists():
+                takeover_file.unlink()
+            if BEER_INFO_CACHE_FILE.exists():
+                BEER_INFO_CACHE_FILE.unlink()
             fetcher_state.reset()
-            self._json_response({"reset": True, "message": "Cache cleared. Ready to refetch."})
+            self._json_response({"reset": True, "message": "Cache, takeover output, and beer info cache cleared. Ready to refetch."})
 
         elif path == "/api/analyze":
             try:

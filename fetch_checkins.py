@@ -360,8 +360,38 @@ def save_cache(cache):
         if CACHE_FILE.exists():
             CACHE_FILE.unlink()
         Path(tmp_path).rename(CACHE_FILE)
+        print(f"Cache saved to {CACHE_FILE}")
     except Exception as e:
         print(f"  Warning: cache save failed ({e}), data is in backup")
+
+def merge_checkin_record(existing, item):
+    """Merge newer API fields into an existing cached checkin record."""
+    beer = item.get("beer", {})
+    brewery = item.get("brewery", {})
+    event = item.get("event", None)
+
+    merged = dict(existing)
+    merged.update({
+        "created_at": existing.get("created_at") or item.get("created_at", ""),
+        "user": existing.get("user") or item.get("user", {}).get("user_name", ""),
+        "beer_name": existing.get("beer_name") or beer.get("beer_name", ""),
+        "beer_id": existing.get("beer_id") or beer.get("bid"),
+        "beer_label": existing.get("beer_label") or beer.get("beer_label", ""),
+        "beer_style": existing.get("beer_style") or beer.get("beer_style", ""),
+        "beer_abv": existing.get("beer_abv") if existing.get("beer_abv") not in (None, "") else beer.get("beer_abv"),
+        "beer_auth_rating": existing.get("beer_auth_rating") if existing.get("beer_auth_rating") not in (None, "") else beer.get("auth_rating"),
+        "beer_active": existing.get("beer_active") if existing.get("beer_active") not in (None, "") else beer.get("beer_active"),
+        "brewery_name": existing.get("brewery_name") or brewery.get("brewery_name", ""),
+        "brewery_id": existing.get("brewery_id") or brewery.get("brewery_id"),
+        "rating": existing.get("rating") if existing.get("rating") not in (None, "") else item.get("rating_score", 0),
+    })
+
+    if event and isinstance(event, dict):
+        merged["event_name"] = existing.get("event_name") or event.get("event_name", "")
+        merged["event_id"] = existing.get("event_id") or event.get("event_id")
+        merged["event_url"] = existing.get("event_url") or event.get("event_url", "")
+
+    return merged
 
 
 def fetch_checkins(venue_id, since_date=None):
@@ -376,6 +406,7 @@ def fetch_checkins(venue_id, since_date=None):
         cache = {"venue_id": venue_id, "checkins": [], "oldest_checkin_id": None}
 
     existing_ids = {c["checkin_id"] for c in cache["checkins"]}
+    existing_by_id = {c["checkin_id"]: c for c in cache["checkins"]}
     # Resume from the oldest cached page so each run keeps pushing farther back
     # in history instead of stopping after overlapping recent pages.
     max_id = cache.get("oldest_checkin_id")
@@ -468,6 +499,9 @@ def fetch_checkins(venue_id, since_date=None):
                     record["event_url"] = event.get("event_url", "")
                 cache["checkins"].append(record)
                 existing_ids.add(checkin_id)
+                existing_by_id[checkin_id] = record
+            else:
+                existing_by_id[checkin_id].update(merge_checkin_record(existing_by_id[checkin_id], item))
 
         # Update pagination cursor
         pagination = checkins_data.get("pagination", {})
