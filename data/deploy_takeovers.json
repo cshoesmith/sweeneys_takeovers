@@ -1,0 +1,374 @@
+[
+  {
+    "date": "2026-03-05",
+    "brewery": "Working Title Brew Co",
+    "checkins": 56,
+    "unique_beers": 12,
+    "total_checkins_that_week": 59,
+    "share_pct": 94.9,
+    "beers": [
+      "Bad Behaviour",
+      "Burnout",
+      "Free Style",
+      "Long Goodbye",
+      "Looper",
+      "Overdrive",
+      "The Asphalt Jungle",
+      "The Pursuit of Happiness 2025",
+      "Two Days In the Valley",
+      "Where the Wild Things Are - Girraween (2025)",
+      "Where the Wild Things Are - Maleny (2025)",
+      "Wild At Heart"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6606356,
+        "beer_name": "Bad Behaviour",
+        "beer_label": "",
+        "beer_style": "Pilsner - New Zealand",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6606352,
+        "beer_name": "Burnout",
+        "beer_label": "",
+        "beer_style": "IPA - Imperial / Double",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6511064,
+        "beer_name": "Free Style",
+        "beer_label": "",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6568562,
+        "beer_name": "Long Goodbye",
+        "beer_label": "",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6568563,
+        "beer_name": "Looper",
+        "beer_label": "",
+        "beer_style": "Sour - Smoothie / Pastry",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6555433,
+        "beer_name": "Overdrive",
+        "beer_label": "",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6301316,
+        "beer_name": "The Asphalt Jungle",
+        "beer_label": "",
+        "beer_style": "Stout - Russian Imperial",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6517143,
+        "beer_name": "The Pursuit of Happiness 2025",
+        "beer_label": "",
+        "beer_style": "IPA - Red",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6568567,
+        "beer_name": "Two Days In the Valley",
+        "beer_label": "",
+        "beer_style": "IPA - American",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6384044,
+        "beer_name": "Where the Wild Things Are - Girraween (2025)",
+        "beer_label": "",
+        "beer_style": "Farmhouse Ale - Saison",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6368606,
+        "beer_name": "Where the Wild Things Are - Maleny (2025)",
+        "beer_label": "",
+        "beer_style": "Wild Ale - Other",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6384049,
+        "beer_name": "Wild At Heart",
+        "beer_label": "",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      }
+    ],
+    "source": "heuristic"
+  },
+  {
+    "date": "2026-03-12",
+    "brewery": "TWØBAYS",
+    "checkins": 37,
+    "unique_beers": 12,
+    "total_checkins_that_week": 39,
+    "share_pct": 94.9,
+    "beers": [
+      "American Cream Ale",
+      "Czech Dark Lager",
+      "GBF Aussie Ale",
+      "Grouse Amber Ale",
+      "IPA",
+      "Japanese Rice Lager",
+      "Lager",
+      "Mexi-Can Cerveza",
+      "Pacific Ale",
+      "Pale Ale",
+      "Raspberry Berliner Weisse",
+      "TWØBAYS Mosaic IPA"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6529344,
+        "beer_name": "American Cream Ale",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6571294,
+        "beer_name": "Czech Dark Lager",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 5912822,
+        "beer_name": "GBF Aussie Ale",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6630600,
+        "beer_name": "Grouse Amber Ale",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 3128526,
+        "beer_name": "IPA",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 5727516,
+        "beer_name": "Japanese Rice Lager",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 4307357,
+        "beer_name": "Lager",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6169060,
+        "beer_name": "Mexi-Can Cerveza",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6189857,
+        "beer_name": "Pacific Ale",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 2978227,
+        "beer_name": "Pale Ale",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6497756,
+        "beer_name": "Raspberry Berliner Weisse",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 4756090,
+        "beer_name": "TWØBAYS Mosaic IPA",
+        "beer_label": "",
+        "beer_style": "Gluten-Free",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      }
+    ],
+    "source": "heuristic"
+  },
+  {
+    "date": "2026-03-19",
+    "brewery": "Boatrocker Brewers & Distillers",
+    "checkins": 70,
+    "unique_beers": 13,
+    "total_checkins_that_week": 72,
+    "share_pct": 97.2,
+    "beers": [
+      "Air Head",
+      "Big Love Hazy IPA",
+      "Bloody Berliner Barrel Aged",
+      "Conehead",
+      "Feijoa & Rhubarb Wild Ale 2020",
+      "Foeder Jaune",
+      "Northern Red",
+      "Pacifica",
+      "Pale Ale",
+      "Pilsner",
+      "Punch Bowl Tropical Sour",
+      "Ramjet (2016/2017)",
+      "Ramjet (2025)"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6574628,
+        "beer_name": "Air Head",
+        "beer_label": "",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 3697568,
+        "beer_name": "Big Love Hazy IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3697568_f82b3_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 6.2,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6548346,
+        "beer_name": "Bloody Berliner Barrel Aged",
+        "beer_label": "",
+        "beer_style": "Sour - Fruited Berliner Weisse",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 4578122,
+        "beer_name": "Conehead",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4578122_af739_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 6.2,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 3787492,
+        "beer_name": "Feijoa & Rhubarb Wild Ale 2020",
+        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": 6.5,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6402682,
+        "beer_name": "Foeder Jaune",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6402682_afa57_sm.jpeg",
+        "beer_style": "Grape Ale - Other",
+        "beer_abv": 9.2,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 5782892,
+        "beer_name": "Northern Red",
+        "beer_label": "",
+        "beer_style": "Red Ale - Other",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6609063,
+        "beer_name": "Pacifica",
+        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_style": "Pale Ale - Australian",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6432036,
+        "beer_name": "Pale Ale",
+        "beer_label": "",
+        "beer_style": "Pale Ale - Other",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 1738911,
+        "beer_name": "Pilsner",
+        "beer_label": "",
+        "beer_style": "Pilsner - Other",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6536075,
+        "beer_name": "Punch Bowl Tropical Sour",
+        "beer_label": "",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 2164712,
+        "beer_name": "Ramjet (2016/2017)",
+        "beer_label": "",
+        "beer_style": "Stout - Russian Imperial",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6341210,
+        "beer_name": "Ramjet (2025)",
+        "beer_label": "",
+        "beer_style": "Stout - Imperial / Double",
+        "beer_abv": null,
+        "beer_auth_rating": null
+      }
+    ],
+    "source": "heuristic"
+  }
+]

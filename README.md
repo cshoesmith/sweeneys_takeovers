@@ -138,7 +138,7 @@ This project can be deployed to **Vercel in read-only mode**.
 - Viewing current scraped Untappd events
 - Beer detail popups
 - Build/version metadata
-- Dynamic takeover analysis **if** cached checkin data is bundled with the deployment
+- Bundled historical takeover data from committed deploy snapshots
 
 ### What does not work on Vercel
 
@@ -168,8 +168,10 @@ For full collector/admin functionality, run the app locally.
 ### Notes
 
 - On Vercel, the app automatically switches to **read-only mode** and hides the Admin tab.
-- If `output/takeovers.json` is present in the deployment, it will be served directly.
-- If not, the app will try to derive takeovers dynamically from any bundled `checkins_cache.json`.
+- Local collection remains the source of truth. Generate fresh data locally, then commit the deploy snapshots in `data/` so Vercel has something to display.
+- `data/deploy_takeovers.json` is the read-only snapshot consumed by the Vercel UI.
+- `data/deploy_cache_summary.json` provides summary stats for the read-only deployment without committing the mutable runtime cache.
+- The mutable runtime files (`checkins_cache.json`, `beer_info_cache.json`, `output/`) stay out of git.
 
 ## Rate limits
 

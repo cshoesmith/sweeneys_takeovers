@@ -40,6 +40,9 @@ PROJECT_DIR = Path(__file__).parent
 DEFAULT_PORT = 8908
 MONITOR_INTERVAL_SECONDS = 7 * 24 * 60 * 60
 BEER_INFO_CACHE_FILE = PROJECT_DIR / "beer_info_cache.json"
+DEPLOY_DATA_DIR = PROJECT_DIR / "data"
+DEPLOY_TAKEOVERS_FILE = DEPLOY_DATA_DIR / "deploy_takeovers.json"
+DEPLOY_CACHE_SUMMARY_FILE = DEPLOY_DATA_DIR / "deploy_cache_summary.json"
 APP_VERSION = os.getenv("APP_VERSION", "v1.0")
 VENUE_SLUG = os.getenv("VENUE_SLUG", "hotel-sweeneys")
 IS_VERCEL = bool(os.getenv("VERCEL"))
@@ -72,9 +75,24 @@ def get_build_info():
     }
 
 
+def load_json_file(path):
+    if not path.exists():
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
 def get_cache_summary_data():
     cache = load_cache()
     checkins = cache.get("checkins", [])
+    if not checkins:
+        snapshot = load_json_file(DEPLOY_CACHE_SUMMARY_FILE)
+        if isinstance(snapshot, dict):
+            snapshot.setdefault("has_token", get_access_token() is not None)
+            return snapshot
     return {
         "venue_id": cache.get("venue_id"),
         "total_checkins": len(checkins),
@@ -88,9 +106,13 @@ def get_cache_summary_data():
 def load_takeover_data():
     """Load cached takeovers or derive them dynamically from the checkin cache."""
     takeover_file = PROJECT_DIR / "output" / "takeovers.json"
-    if takeover_file.exists():
-        with open(takeover_file, "r", encoding="utf-8") as f:
-            return json.load(f)
+    takeover_data = load_json_file(takeover_file)
+    if isinstance(takeover_data, list):
+        return takeover_data
+
+    snapshot_data = load_json_file(DEPLOY_TAKEOVERS_FILE)
+    if isinstance(snapshot_data, list):
+        return snapshot_data
 
     cache = load_cache()
     checkins = cache.get("checkins", [])

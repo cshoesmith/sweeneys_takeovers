@@ -718,7 +718,7 @@ function shortDate(dateStr) {
 }
 
 function loadBuildInfo() {
-  fetch('/api/meta')
+  return fetch('/api/meta')
     .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
     .then(function(meta) {
       deploymentMeta = meta || null;
@@ -736,6 +736,7 @@ function loadBuildInfo() {
     .catch(function() {
       var el = document.getElementById('buildInfo');
       if (el) el.innerHTML = '<strong>Version</strong> v1.0 · <strong>Build</strong> —';
+      deploymentMeta = null;
     });
 }
 
@@ -811,27 +812,49 @@ function loadTakeovers() {
     .then(function(data) {
       allTakeovers = Array.isArray(data) ? data : [];
       if (allTakeovers.length === 0) {
-        document.getElementById('timeline').innerHTML =
-          '<div class="empty-state"><h2>No takeovers yet</h2><p>Run the collector first — takeover analysis now runs automatically after collection.</p></div>';
-        return;
+        return loadTakeoverSnapshot();
       }
-      var years = [];
-      var seen = {};
-      allTakeovers.forEach(function(t) {
-        var y = t.date.slice(0, 4);
-        if (!seen[y]) { seen[y] = true; years.push(y); }
-      });
-      years.sort();
-      var yearSelect = document.getElementById('yearFilter');
-      yearSelect.innerHTML = '<option value="">All Years</option>';
-      years.forEach(function(y) {
-        var opt = document.createElement('option');
-        opt.value = y; opt.textContent = y;
-        yearSelect.appendChild(opt);
-      });
+      populateTakeoverFilters();
       renderTakeovers();
     })
-    .catch(function() {});
+    .catch(function() {
+      loadTakeoverSnapshot();
+    });
+}
+
+function loadTakeoverSnapshot() {
+  return fetch('/data/deploy_takeovers.json')
+    .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
+    .then(function(data) {
+      allTakeovers = Array.isArray(data) ? data : [];
+      populateTakeoverFilters();
+      renderTakeovers();
+    })
+    .catch(function() {
+      allTakeovers = [];
+      populateTakeoverFilters();
+      document.getElementById('timeline').innerHTML =
+        deploymentMeta && deploymentMeta.read_only
+          ? '<div class="empty-state"><h2>No bundled takeover data</h2><p>This read-only deployment needs a fresh local snapshot committed before it can show history.</p></div>'
+          : '<div class="empty-state"><h2>No takeovers yet</h2><p>Run the collector locally — takeover analysis runs automatically after collection.</p></div>';
+    });
+}
+
+function populateTakeoverFilters() {
+  var years = [];
+  var seen = {};
+  allTakeovers.forEach(function(t) {
+    var y = t.date.slice(0, 4);
+    if (!seen[y]) { seen[y] = true; years.push(y); }
+  });
+  years.sort();
+  var yearSelect = document.getElementById('yearFilter');
+  yearSelect.innerHTML = '<option value="">All Years</option>';
+  years.forEach(function(y) {
+    var opt = document.createElement('option');
+    opt.value = y; opt.textContent = y;
+    yearSelect.appendChild(opt);
+  });
 }
 
 function loadCurrentEvents() {
@@ -1070,24 +1093,31 @@ function dismissBeerModal(event) {
 // ═════════ Init ═════════
 window.addEventListener('DOMContentLoaded', function() {
   refreshAdminTabState();
-  loadBuildInfo();
+  loadBuildInfo().finally(function() {
+    fetch('/api/cache-summary')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (data.total_checkins > 0) {
+          addLog('Cache: ' + data.total_checkins + ' checkins, ' + shortDate(data.oldest_date) + ' → ' + shortDate(data.newest_date), 'success');
+        } else if (deploymentMeta && deploymentMeta.read_only) {
+          addLog('Read-only deployment detected. Showing bundled snapshot data when available.', 'warn');
+        } else {
+          addLog('No cached checkins. Click "Start Collecting" to begin. Analysis runs automatically when collection finishes.', '');
+        }
+        if (!data.has_token && !(deploymentMeta && deploymentMeta.read_only)) {
+          addLog('No Untappd token. Run: python fetch_checkins.py --login', 'error');
+        }
+      })
+      .catch(function() {
+        addLog((deploymentMeta && deploymentMeta.read_only)
+          ? 'API metadata loaded, but cache summary is unavailable in this deployment.'
+          : 'Server not responding — run: python server.py', 'error');
+      });
+  });
   document.getElementById('adminPasswordInput').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') submitAdminUnlock();
     if (event.key === 'Escape') closeAdminModal();
   });
-  fetch('/api/cache-summary')
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      if (data.total_checkins > 0) {
-        addLog('Cache: ' + data.total_checkins + ' checkins, ' + shortDate(data.oldest_date) + ' → ' + shortDate(data.newest_date), 'success');
-      } else {
-        addLog('No cached checkins. Click "Start Collecting" to begin. Analysis runs automatically when collection finishes.', '');
-      }
-      if (!data.has_token) {
-        addLog('No Untappd token. Run: python fetch_checkins.py --login', 'error');
-      }
-    })
-    .catch(function() { addLog('Server not responding — run: python server.py', 'error'); });
 
   loadTakeovers();
   loadCurrentEvents();
