@@ -8,6 +8,7 @@ from server import (
     get_beer_info,
     get_build_info,
     get_cache_summary_data,
+    load_members_data,
     load_current_events_data,
     load_takeover_data,
     mask_token,
@@ -67,6 +68,11 @@ def api_cache_summary():
     return jsonify(get_cache_summary_data())
 
 
+@app.get("/api/members")
+def api_members():
+    return jsonify(load_members_data())
+
+
 @app.get("/api/takeovers")
 def api_takeovers():
     return jsonify(load_takeover_data())
@@ -93,5 +99,7 @@ def api_beer_info(beer_id: int):
 @app.post("/api/stop")
 @app.post("/api/reset-cache")
 @app.post("/api/analyze")
+@app.post("/api/members")
+@app.delete("/api/members/<path:username>")
 def api_read_only_mutation():
     return jsonify({"error": "This Vercel deployment is read-only. Run the collector locally for admin features."}), 501

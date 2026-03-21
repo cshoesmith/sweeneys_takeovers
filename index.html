@@ -353,6 +353,40 @@
   .admin-modal-input:focus { outline: none; border-color: var(--accent); }
   .admin-modal-error { min-height: 1.2rem; margin-top: 0.65rem; color: var(--orange); font-size: 0.85rem; }
   .admin-modal-actions { display: flex; justify-content: flex-end; gap: 0.6rem; margin-top: 1rem; }
+  .member-form { display: grid; gap: 0.75rem; }
+  .member-form-help { color: var(--text-dim); font-size: 0.82rem; line-height: 1.45; }
+  .member-feedback { min-height: 1.2rem; font-size: 0.82rem; color: var(--text-dim); }
+  .member-feedback.error { color: var(--orange); }
+  .member-feedback.success { color: var(--green); }
+  .member-list {
+    display: grid; gap: 0.65rem; max-height: 320px; overflow-y: auto; padding-right: 0.2rem;
+  }
+  .member-empty {
+    color: var(--text-dim); font-size: 0.88rem; line-height: 1.5;
+    background: var(--card); border: 1px dashed var(--border); border-radius: 8px; padding: 0.9rem;
+  }
+  .member-row {
+    display: flex; justify-content: space-between; align-items: center; gap: 0.9rem;
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 0.85rem;
+  }
+  .member-row-main { display: flex; align-items: center; gap: 0.75rem; min-width: 0; flex: 1; }
+  .member-avatar {
+    width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex: 0 0 40px;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.08);
+    display: flex; align-items: center; justify-content: center; color: var(--text-dim); font-size: 1rem;
+  }
+  .member-copy { min-width: 0; }
+  .member-name {
+    font-size: 0.92rem; font-weight: 600; color: var(--text);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .member-handle, .member-profile-link { font-size: 0.8rem; color: var(--text-dim); }
+  .member-profile-link { text-decoration: none; }
+  .member-profile-link:hover { color: var(--gold); }
+  .member-row-actions {
+    display: flex; align-items: center; gap: 0.55rem; flex-wrap: wrap; justify-content: flex-end;
+  }
+  .btn-small { padding: 0.35rem 0.7rem; font-size: 0.78rem; }
 
   @media (max-width: 700px) {
     header { flex-direction: column; text-align: center; background-position: center top; }
@@ -455,12 +489,12 @@
 
           <div class="counter-row" style="margin-top:1rem">
             <div class="counter">
-              <div class="counter-value" id="errors400" style="color:var(--orange)">0</div>
-              <div class="counter-label">400 Errors</div>
+              <div class="counter-value" id="errors400" style="color:var(--orange)" title="No 400-series errors recorded yet.">0</div>
+              <div class="counter-label" id="errors400Label" title="No 400-series errors recorded yet.">400 Errors</div>
             </div>
             <div class="counter">
-              <div class="counter-value" id="errorsOther" style="color:var(--red)">0</div>
-              <div class="counter-label">Other Errors</div>
+              <div class="counter-value" id="errorsOther" style="color:var(--red)" title="No non-400 errors recorded yet.">0</div>
+              <div class="counter-label" id="errorsOtherLabel" title="No non-400 errors recorded yet.">Other Errors</div>
             </div>
           </div>
         </div>
@@ -512,6 +546,28 @@
         </div>
       </div>
     </div>
+    </div>
+
+    <div class="section-panel">
+      <h2>Untappd Members</h2>
+      <div class="fetcher-grid">
+        <div class="fetch-card">
+          <h3>Add / Update Member</h3>
+          <div class="member-form-help">Add an Untappd username and the app will fill in the other details later from the API or public profile page where possible.</div>
+          <div class="member-form" style="margin-top:0.9rem">
+            <input class="admin-modal-input" id="memberUsernameInput" type="text" placeholder="Untappd username (e.g. lightbeerking)">
+            <div class="member-feedback" id="memberFeedback"></div>
+            <div class="admin-modal-actions" style="margin-top:0.2rem">
+              <button class="btn" type="button" onclick="clearMemberForm()" style="background:var(--surface);color:var(--text)">Clear</button>
+              <button class="btn btn-start" type="button" onclick="submitMemberForm()">Save Member</button>
+            </div>
+          </div>
+        </div>
+        <div class="fetch-card">
+          <h3>Tracked Members</h3>
+          <div class="member-list" id="memberListContainer"></div>
+        </div>
+      </div>
     </div>
 
     <div class="log-panel">
@@ -1337,7 +1393,8 @@ const INLINE_DEPLOY_CACHE_SUMMARY = {
   "oldest_checkin_id": 1553475293,
   "oldest_date": "Fri, 06 Mar 2026 02:11:58 +0000",
   "newest_date": "Sat, 21 Mar 2026 05:57:15 +0000",
-  "has_token": false
+  "has_token": false,
+  "error_history": []
 };
 let adminUnlocked = sessionStorage.getItem('sweeneysAdminUnlocked') === 'true';
 let pendingAdminTab = null;
@@ -1356,7 +1413,10 @@ function setActiveTab(tabName) {
   if (page) page.classList.add('active');
 
   if (tabName === 'takeovers') loadTakeovers();
-  if (tabName === 'fetcher' && adminUnlocked) startPolling();
+  if (tabName === 'fetcher' && adminUnlocked) {
+    startPolling();
+    loadTrackedMembers();
+  }
 }
 
 function refreshAdminTabState() {
@@ -1423,6 +1483,7 @@ const MAX_LOG = 50;
 let lastStatus = null;
 let pollInterval = null;
 let deploymentMeta = null;
+let trackedMembers = [];
 
 function getFallbackBuildLabel() {
   if (isReadOnlyDeployment()) {
@@ -1515,6 +1576,7 @@ function updateDashboard(s) {
   document.getElementById('batchesFetched').textContent = s.batches_fetched;
   document.getElementById('errors400').textContent = s.errors_400;
   document.getElementById('errorsOther').textContent = s.errors_other;
+  updateErrorTooltips(s);
 
   document.getElementById('newestDate').textContent = shortDate(s.newest_date) || '—';
   document.getElementById('cacheNewestDate').textContent = shortDate(s.newest_date) || '—';
@@ -1563,6 +1625,61 @@ function updateDashboard(s) {
     var type = s.status === 'error' ? 'error' : s.status === 'paused' ? 'warn' : s.status === 'done' ? 'success' : '';
     addLog(s.message, type);
   }
+}
+
+function formatErrorTimestamp(value) {
+  if (!value) return 'Unknown time';
+  try {
+    var date = new Date(value);
+    if (isNaN(date.getTime())) return value;
+    return date.toLocaleString('en-AU', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit'
+    });
+  } catch (err) {
+    return value;
+  }
+}
+
+function buildErrorTooltipText(label, count, entries) {
+  if (!count || !entries.length) {
+    return 'No ' + label.toLowerCase() + ' recorded yet.';
+  }
+
+  var lines = [label + ': ' + count + (count === 1 ? ' occurrence' : ' occurrences')];
+  entries.slice(0, 6).forEach(function(entry) {
+    var summary = formatErrorTimestamp(entry.occurred_at) + ' — ';
+    if (entry.status_code) summary += 'HTTP ' + entry.status_code + ' · ';
+    if (entry.context) summary += entry.context + ' · ';
+    summary += entry.message || 'Unknown error';
+    if (entry.request_url) summary += ' [' + entry.request_url + ']';
+    lines.push(summary);
+  });
+
+  if (entries.length > 6) {
+    lines.push('+' + (entries.length - 6) + ' more recent entries');
+  }
+  return lines.join('\n');
+}
+
+function updateErrorTooltips(s) {
+  var history = Array.isArray(s && s.error_history) ? s.error_history : [];
+  var history400 = history.filter(function(entry) { return entry && entry.category === 'errors_400'; });
+  var historyOther = history.filter(function(entry) { return entry && entry.category === 'errors_other'; });
+  var tooltip400 = buildErrorTooltipText('400 Errors', Number((s && s.errors_400) || 0), history400);
+  var tooltipOther = buildErrorTooltipText('Other Errors', Number((s && s.errors_other) || 0), historyOther);
+
+  ['errors400', 'errors400Label'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.title = tooltip400;
+  });
+  ['errorsOther', 'errorsOtherLabel'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.title = tooltipOther;
+  });
 }
 
 function updateProgress(s) {
@@ -1686,6 +1803,119 @@ function resetCache() {
       else { addLog('Cache cleared. Click Start to refetch.', 'success'); }
     })
     .catch(function(e) { addLog('Reset failed: ' + e.message, 'error'); });
+}
+
+function setMemberFeedback(message, type) {
+  var feedback = document.getElementById('memberFeedback');
+  if (!feedback) return;
+  feedback.textContent = message || '';
+  feedback.className = 'member-feedback' + (type ? ' ' + type : '');
+}
+
+function clearMemberForm() {
+  var usernameInput = document.getElementById('memberUsernameInput');
+  if (usernameInput) usernameInput.value = '';
+  setMemberFeedback('');
+}
+
+function renderTrackedMembers() {
+  var container = document.getElementById('memberListContainer');
+  if (!container) return;
+
+  if (!trackedMembers.length) {
+    container.innerHTML = '<div class="member-empty">No members saved yet. Add an Untappd username here and we can use it later for takeover result tables and podium rankings.</div>';
+    return;
+  }
+
+  container.innerHTML = trackedMembers.map(function(member) {
+    var avatarHtml = member.avatar_url
+      ? '<img class="member-avatar" src="' + esc(member.avatar_url) + '" alt="' + esc(member.display_name || member.username) + '">'
+      : '<div class="member-avatar">&#128100;</div>';
+    var profileUrl = member.profile_url || ('https://untappd.com/user/' + encodeURIComponent(member.username));
+    return '<div class="member-row">' +
+      '<div class="member-row-main">' +
+        avatarHtml +
+        '<div class="member-copy">' +
+          '<div class="member-name">' + esc(member.display_name || member.username) + '</div>' +
+          '<div class="member-handle">@' + esc(member.username) + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="member-row-actions">' +
+        '<a class="member-profile-link" href="' + esc(profileUrl) + '" target="_blank" rel="noopener">Untappd</a>' +
+        '<button class="btn btn-stop btn-small" type="button" onclick="removeTrackedMember(' + JSON.stringify(member.username) + ')">Remove</button>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function loadTrackedMembers() {
+  return fetch('/api/members')
+    .then(function(resp) { if (!resp.ok) throw new Error('Could not load members.'); return resp.json(); })
+    .then(function(data) {
+      trackedMembers = Array.isArray(data) ? data : [];
+      renderTrackedMembers();
+      return trackedMembers;
+    })
+    .catch(function(err) {
+      trackedMembers = [];
+      renderTrackedMembers();
+      setMemberFeedback(err.message || 'Could not load members.', 'error');
+      return [];
+    });
+}
+
+function submitMemberForm() {
+  if (isReadOnlyDeployment()) {
+    addLog('Member management is local-only in the deployed read-only version.', 'warn');
+    return;
+  }
+
+  var username = (document.getElementById('memberUsernameInput').value || '').trim();
+  if (!username) {
+    setMemberFeedback('Untappd username is required.', 'error');
+    document.getElementById('memberUsernameInput').focus();
+    return;
+  }
+
+  setMemberFeedback('Saving member...');
+  fetch('/api/members', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username: username })
+  })
+    .then(function(resp) { return resp.json().then(function(data) { return { ok: resp.ok, data: data }; }); })
+    .then(function(result) {
+      if (!result.ok) throw new Error(result.data && result.data.error ? result.data.error : 'Could not save member.');
+      trackedMembers = Array.isArray(result.data.members) ? result.data.members : trackedMembers;
+      renderTrackedMembers();
+      clearMemberForm();
+      setMemberFeedback(result.data.created ? 'Member added.' : 'Member updated.', 'success');
+      addLog((result.data.created ? 'Added' : 'Updated') + ' member @' + result.data.member.username, 'success');
+    })
+    .catch(function(err) {
+      setMemberFeedback(err.message || 'Could not save member.', 'error');
+    });
+}
+
+function removeTrackedMember(username) {
+  if (isReadOnlyDeployment()) {
+    addLog('Member management is local-only in the deployed read-only version.', 'warn');
+    return;
+  }
+  if (!confirm('Remove @' + username + ' from the tracked member list?')) return;
+
+  fetch('/api/members/' + encodeURIComponent(username), { method: 'DELETE' })
+    .then(function(resp) { return resp.json().then(function(data) { return { ok: resp.ok, data: data }; }); })
+    .then(function(result) {
+      if (!result.ok) throw new Error(result.data && result.data.error ? result.data.error : 'Could not remove member.');
+      trackedMembers = Array.isArray(result.data.members) ? result.data.members : [];
+      renderTrackedMembers();
+      setMemberFeedback('Member removed.', 'success');
+      addLog('Removed member @' + username, 'warn');
+    })
+    .catch(function(err) {
+      setMemberFeedback(err.message || 'Could not remove member.', 'error');
+    });
 }
 
 // ═════════ Takeovers Tab ═════════
@@ -2298,10 +2528,21 @@ window.addEventListener('DOMContentLoaded', function() {
 
     loadCurrentEvents();
     loadDeployBeerInfoSnapshot();
+    if (!isReadOnlyDeployment()) loadTrackedMembers();
   });
   document.getElementById('adminPasswordInput').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') submitAdminUnlock();
     if (event.key === 'Escape') closeAdminModal();
+  });
+  ['memberUsernameInput'].forEach(function(id) {
+    var input = document.getElementById(id);
+    if (!input) return;
+    input.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        submitMemberForm();
+      }
+    });
   });
 
   loadTakeovers();

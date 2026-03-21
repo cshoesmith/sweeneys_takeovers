@@ -40,6 +40,7 @@ import fetch_checkins
 PROJECT_DIR = Path(__file__).parent
 DEFAULT_PORT = 8908
 MONITOR_INTERVAL_SECONDS = 7 * 24 * 60 * 60
+MEMBERS_FILE = PROJECT_DIR / "members.json"
 BEER_INFO_CACHE_FILE = PROJECT_DIR / "beer_info_cache.json"
 DEPLOY_DATA_DIR = PROJECT_DIR / "data"
 DEPLOY_TAKEOVERS_FILE = DEPLOY_DATA_DIR / "deploy_takeovers.json"
@@ -53,6 +54,17 @@ IS_VERCEL = bool(os.getenv("VERCEL"))
 def mask_token(msg):
     """Remove access tokens from error messages."""
     return re.sub(r'access_token=[A-Za-z0-9]+', 'access_token=***', str(msg))
+
+
+def build_error_event(category, status_code=None, message="", request_url="", context=""):
+    return {
+        "category": category,
+        "status_code": status_code,
+        "message": mask_token(message or "Unknown error"),
+        "request_url": mask_token(request_url or ""),
+        "context": context or "",
+        "occurred_at": datetime.now(timezone.utc).isoformat(),
+    }
 
 
 def get_build_info():
@@ -111,6 +123,91 @@ def get_cache_summary_data():
         "newest_date": checkins[0]["created_at"] if checkins else None,
         "has_token": get_access_token() is not None,
     }
+
+
+def normalize_member_username(value):
+    username = (value or "").strip()
+    if username.startswith("@"):
+        username = username[1:]
+    username = re.sub(r"\s+", "", username).lower()
+    if not re.fullmatch(r"[a-z0-9_.-]{2,64}", username):
+        raise ValueError("Member username must be 2-64 characters using letters, numbers, dot, dash, or underscore.")
+    return username
+
+
+def normalize_member_record(payload, existing=None):
+    existing = existing or {}
+    username = normalize_member_username(payload.get("username") or existing.get("username") or "")
+    display_name = (payload.get("display_name") or payload.get("displayName") or "").strip() or existing.get("display_name") or username
+    avatar_url = (payload.get("avatar_url") or payload.get("avatarUrl") or "").strip() or existing.get("avatar_url", "")
+    profile_url = (payload.get("profile_url") or payload.get("profileUrl") or "").strip() or existing.get("profile_url") or f"https://untappd.com/user/{username}"
+
+    return {
+        "username": username,
+        "display_name": display_name,
+        "avatar_url": avatar_url,
+        "profile_url": profile_url,
+    }
+
+
+def load_members_data():
+    data = load_json_file(MEMBERS_FILE)
+    if not isinstance(data, list):
+        return []
+
+    members = []
+    seen = set()
+    for raw_member in data:
+        if not isinstance(raw_member, dict):
+            continue
+        try:
+            member = normalize_member_record(raw_member)
+        except ValueError:
+            continue
+        if member["username"] in seen:
+            continue
+        seen.add(member["username"])
+        members.append(member)
+
+    members.sort(key=lambda item: (item.get("display_name", "").lower(), item.get("username", "")))
+    return members
+
+
+def save_members_data(members):
+    MEMBERS_FILE.write_text(json.dumps(members, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def upsert_member(payload):
+    members = load_members_data()
+    existing = next((member for member in members if member.get("username") == normalize_member_username(payload.get("username", ""))), None)
+    normalized = normalize_member_record(payload, existing)
+
+    if not normalized.get("avatar_url") or normalized.get("display_name") == normalized.get("username"):
+        enriched = scrape_member_profile(normalized["username"])
+        normalized = normalize_member_record({**enriched, **normalized}, existing)
+
+    updated = False
+    for index, member in enumerate(members):
+        if member.get("username") == normalized["username"]:
+            members[index] = normalized
+            updated = True
+            break
+    if not updated:
+        members.append(normalized)
+
+    members.sort(key=lambda item: (item.get("display_name", "").lower(), item.get("username", "")))
+    save_members_data(members)
+    return normalized, members, not updated
+
+
+def delete_member(username):
+    normalized_username = normalize_member_username(username)
+    members = load_members_data()
+    filtered = [member for member in members if member.get("username") != normalized_username]
+    removed = len(filtered) != len(members)
+    if removed:
+        save_members_data(filtered)
+    return removed, filtered
 
 
 def load_takeover_data():
@@ -198,6 +295,58 @@ def fetch_public_page(url):
         final_url = response.geturl()
         html_text = response.read().decode("utf-8", errors="replace")
     return final_url, html_text
+
+
+def scrape_member_profile(username):
+    normalized_username = normalize_member_username(username)
+    profile_url = f"https://untappd.com/user/{normalized_username}"
+
+    if get_access_token() or (os.getenv("UNTAPPD_CLIENT_ID") and os.getenv("UNTAPPD_CLIENT_SECRET")):
+        try:
+            data = api_get(f"user/info/{normalized_username}")
+            user = data.get("response", {}).get("user", {}) or {}
+            api_username = normalize_member_username(user.get("user_name") or normalized_username)
+            display_name = " ".join(
+                part.strip() for part in [user.get("first_name", ""), user.get("last_name", "")] if part and part.strip()
+            ) or user.get("user_name") or normalized_username
+            avatar_url = user.get("user_avatar_hd") or user.get("user_avatar") or ""
+            return {
+                "username": api_username,
+                "display_name": display_name,
+                "avatar_url": avatar_url,
+                "profile_url": f"https://untappd.com/user/{api_username}",
+            }
+        except Exception:
+            pass
+
+    try:
+        final_url, html_text = fetch_public_page(profile_url)
+    except Exception:
+        return {
+            "username": normalized_username,
+            "display_name": normalized_username,
+            "avatar_url": "",
+            "profile_url": profile_url,
+        }
+
+    display_name = first_regex_group(r'<meta\s+property="og:title"\s+content="([^"]+)"', html_text, re.I)
+    if display_name:
+        display_name = re.sub(r"\s*\(Untappd\)\s*$", "", display_name).strip()
+
+    if not display_name:
+        display_name = strip_html(first_regex_group(r'<title>(.*?)</title>', html_text, re.S | re.I))
+        display_name = re.sub(r"\s*\|\s*Untappd.*$", "", display_name).strip()
+
+    avatar_url = first_regex_group(r'<meta\s+property="og:image"\s+content="([^"]+)"', html_text, re.I)
+    if avatar_url and "gravatar" in avatar_url.lower():
+        avatar_url = ""
+
+    return {
+        "username": normalized_username,
+        "display_name": display_name or normalized_username,
+        "avatar_url": avatar_url,
+        "profile_url": final_url or profile_url,
+    }
 
 
 def slugify_untappd_segment(value):
@@ -602,6 +751,12 @@ class FetcherState:
         self.last_analysis_takeovers = None
         self.last_analysis_error = ""
         self.last_run_mode = ""
+        self.error_history = []
+
+    def add_error_event(self, category, status_code=None, message="", request_url="", context=""):
+        with self.lock:
+            self.error_history.insert(0, build_error_event(category, status_code, message, request_url, context))
+            self.error_history = self.error_history[:10]
 
     def to_dict(self):
         with self.lock:
@@ -641,6 +796,7 @@ class FetcherState:
                 "last_analysis_takeovers": self.last_analysis_takeovers,
                 "last_analysis_error": self.last_analysis_error,
                 "last_run_mode": self.last_run_mode,
+                "error_history": list(self.error_history),
             }
 
     def reset(self):
@@ -655,6 +811,7 @@ class FetcherState:
             self.throttle_until = None
             self.next_request_at = None
             self.last_request_url = ""
+            self.error_history = []
 
 fetcher_state = FetcherState()
 fetcher_state.next_request_at = None
@@ -775,11 +932,19 @@ def run_fetcher(venue_id, since_date=None, mode="backfill"):
 
         except req_lib.exceptions.HTTPError as e:
             status_code = e.response.status_code if e.response is not None else 0
+            request_url = fetch_checkins.last_request_url or state.last_request_url
             # 400 or 500 while paging older history; save what we have and stop.
             if status_code in (400, 500) and max_id:
                 with state.lock:
                     state.errors_400 += 1
                 label = "monitoring" if mode == "monitor" else "paging older history"
+                state.add_error_event(
+                    "errors_400",
+                    status_code=status_code,
+                    message=str(e),
+                    request_url=request_url,
+                    context=f"Stopped while {label} at max_id={max_id}",
+                )
                 finish_collection(f"Stopped while {label} at max_id={max_id}. {len(cache['checkins'])} total cached.")
                 return
             else:
@@ -787,6 +952,13 @@ def run_fetcher(venue_id, since_date=None, mode="backfill"):
                     state.errors_other += 1
                     state.status = "error"
                     state.message = mask_token(f"API error: {e}")
+                state.add_error_event(
+                    "errors_other",
+                    status_code=status_code,
+                    message=str(e),
+                    request_url=request_url,
+                    context="Untappd API request failed",
+                )
                 save_cache(cache)
                 with state.lock:
                     state.running = False
@@ -798,6 +970,12 @@ def run_fetcher(venue_id, since_date=None, mode="backfill"):
                 state.status = "error"
                 state.message = mask_token(f"Error: {e}")
                 state.running = False
+            state.add_error_event(
+                "errors_other",
+                message=str(e),
+                request_url=fetch_checkins.last_request_url or state.last_request_url,
+                context="Collector runtime failure",
+            )
             save_cache(cache)
             return
 
@@ -958,6 +1136,9 @@ class AppHandler(SimpleHTTPRequestHandler):
         elif path == "/api/cache-summary":
             self._json_response(get_cache_summary_data())
 
+        elif path == "/api/members":
+            self._json_response(load_members_data())
+
         elif path == "/api/takeovers":
             self._json_response(load_takeover_data())
 
@@ -1037,8 +1218,42 @@ class AppHandler(SimpleHTTPRequestHandler):
                     fetcher_state.last_analysis_error = str(e)
                 self._json_response({"error": str(e)}, 500)
 
+        elif path == "/api/members":
+            content_len = int(self.headers.get("Content-Length", 0))
+            raw = self.rfile.read(content_len) if content_len > 0 else b"{}"
+            try:
+                payload = json.loads(raw.decode("utf-8") or "{}")
+            except json.JSONDecodeError:
+                self._json_response({"error": "Invalid JSON body"}, 400)
+                return
+
+            try:
+                member, members, created = upsert_member(payload)
+                self._json_response({"member": member, "members": members, "created": created})
+            except ValueError as exc:
+                self._json_response({"error": str(exc)}, 400)
+
         else:
             self._json_response({"error": "Not found"}, 404)
+
+    def do_DELETE(self):
+        parsed = urlparse(self.path)
+        path = parsed.path
+
+        if path.startswith("/api/members/"):
+            username = path.rsplit("/", 1)[-1]
+            try:
+                removed, members = delete_member(username)
+            except ValueError as exc:
+                self._json_response({"error": str(exc)}, 400)
+                return
+            if not removed:
+                self._json_response({"error": "Member not found"}, 404)
+                return
+            self._json_response({"removed": True, "members": members})
+            return
+
+        self._json_response({"error": "Not found"}, 404)
 
     def _json_response(self, data, status=200):
         body = json.dumps(data).encode("utf-8")
