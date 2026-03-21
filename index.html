@@ -578,6 +578,28 @@ let lastStatus = null;
 let pollInterval = null;
 let deploymentMeta = null;
 
+function inferReadOnlyDeployment() {
+  var host = (window.location.hostname || '').toLowerCase();
+  return !!host && host !== 'localhost' && host !== '127.0.0.1';
+}
+
+function getEffectiveDeploymentMeta() {
+  if (deploymentMeta) return deploymentMeta;
+  if (!inferReadOnlyDeployment()) return null;
+  return {
+    version: 'v1.0',
+    build_unix: null,
+    read_only: true,
+    deployment_target: 'remote',
+    supports_collector: false
+  };
+}
+
+function isReadOnlyDeployment() {
+  var meta = getEffectiveDeploymentMeta();
+  return !!(meta && meta.read_only);
+}
+
 function addLog(msg, type) {
   const now = new Date().toLocaleTimeString();
   logMessages.unshift({ time: now, msg: msg, type: type || '' });
@@ -734,16 +756,21 @@ function loadBuildInfo() {
       applyDeploymentMode(meta);
     })
     .catch(function() {
+      deploymentMeta = inferReadOnlyDeployment() ? getEffectiveDeploymentMeta() : null;
       var el = document.getElementById('buildInfo');
-      if (el) el.innerHTML = '<strong>Version</strong> v1.0 · <strong>Build</strong> —';
-      deploymentMeta = null;
+      if (el) {
+        el.innerHTML = '<strong>Version</strong> v1.0 · <strong>Build</strong> —' +
+          (isReadOnlyDeployment() ? ' · <strong>Mode</strong> Read-only' : '');
+      }
+      applyDeploymentMode(getEffectiveDeploymentMeta());
     });
 }
 
 function applyDeploymentMode(meta) {
   var adminBtn = document.getElementById('adminTabBtn');
-  if (!adminBtn || !meta) return;
-  if (meta.read_only) {
+  var effectiveMeta = meta || getEffectiveDeploymentMeta();
+  if (!adminBtn || !effectiveMeta) return;
+  if (effectiveMeta.read_only) {
     adminBtn.style.display = 'none';
     adminUnlocked = false;
     sessionStorage.removeItem('sweeneysAdminUnlocked');
@@ -754,6 +781,10 @@ function applyDeploymentMode(meta) {
 }
 
 function startFetcher() {
+  if (isReadOnlyDeployment()) {
+    addLog('Collector actions are disabled in the deployed read-only version. Run the local app to collect or reset data.', 'warn');
+    return;
+  }
   addLog('Starting collector...', 'success');
   fetch('/api/start', { method: 'POST' })
     .then(function(resp) { return resp.json(); })
@@ -762,12 +793,20 @@ function startFetcher() {
 }
 
 function stopFetcher() {
+  if (isReadOnlyDeployment()) {
+    addLog('Collector actions are disabled in the deployed read-only version.', 'warn');
+    return;
+  }
   addLog('Stopping collector...', 'warn');
   fetch('/api/stop', { method: 'POST' })
     .catch(function(e) { addLog('Failed to stop: ' + e.message, 'error'); });
 }
 
 function resetCache() {
+  if (isReadOnlyDeployment()) {
+    addLog('Reset is disabled in the deployed read-only version. Refresh the local snapshot instead.', 'warn');
+    return;
+  }
   if (!confirm('This will clear all cached checkins and start fresh. Continue?')) return;
   addLog('Resetting cache...', 'warn');
   fetch('/api/reset-cache', { method: 'POST' })
@@ -883,6 +922,11 @@ function loadCurrentEventsSnapshot() {
       currentEvents = [];
       renderCurrentEvents();
     });
+}
+
+function loadCacheSummarySnapshot() {
+  return fetch('/data/deploy_cache_summary.json')
+    .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); });
 }
 
 function renderCurrentEvents() {
@@ -1123,19 +1167,25 @@ window.addEventListener('DOMContentLoaded', function() {
       .then(function(data) {
         if (data.total_checkins > 0) {
           addLog('Cache: ' + data.total_checkins + ' checkins, ' + shortDate(data.oldest_date) + ' → ' + shortDate(data.newest_date), 'success');
-        } else if (deploymentMeta && deploymentMeta.read_only) {
+        } else if (isReadOnlyDeployment()) {
           addLog('Read-only deployment detected. Showing bundled snapshot data when available.', 'warn');
         } else {
           addLog('No cached checkins. Click "Start Collecting" to begin. Analysis runs automatically when collection finishes.', '');
         }
-        if (!data.has_token && !(deploymentMeta && deploymentMeta.read_only)) {
+        if (!data.has_token && !isReadOnlyDeployment()) {
           addLog('No Untappd token. Run: python fetch_checkins.py --login', 'error');
         }
       })
       .catch(function() {
-        addLog((deploymentMeta && deploymentMeta.read_only)
-          ? 'API metadata loaded, but cache summary is unavailable in this deployment.'
-          : 'Server not responding — run: python server.py', 'error');
+        loadCacheSummarySnapshot()
+          .then(function(data) {
+            addLog('Snapshot cache: ' + data.total_checkins + ' checkins, ' + shortDate(data.oldest_date) + ' → ' + shortDate(data.newest_date), 'success');
+          })
+          .catch(function() {
+            addLog(isReadOnlyDeployment()
+              ? 'Read-only deployment detected, but bundled cache summary could not be loaded.'
+              : 'Server not responding — run: python server.py', 'error');
+          });
       });
 
     loadCurrentEvents();
