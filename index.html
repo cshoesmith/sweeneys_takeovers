@@ -909,14 +909,20 @@ function loadBuildInfo() {
 
 function applyDeploymentMode(meta) {
   var adminBtn = document.getElementById('adminTabBtn');
+  var takeoversBtn = document.querySelector('.tab-btn[data-tab="takeovers"]');
+  var tabBar = document.querySelector('.tab-bar');
   var effectiveMeta = meta || getEffectiveDeploymentMeta();
   if (!adminBtn || !effectiveMeta) return;
   if (effectiveMeta.read_only) {
     adminBtn.style.display = 'none';
+    if (takeoversBtn) takeoversBtn.style.display = 'none';
+    if (tabBar) tabBar.style.display = 'none';
     adminUnlocked = false;
     sessionStorage.removeItem('sweeneysAdminUnlocked');
   } else {
     adminBtn.style.display = '';
+    if (takeoversBtn) takeoversBtn.style.display = '';
+    if (tabBar) tabBar.style.display = '';
     refreshAdminTabState();
   }
 }
