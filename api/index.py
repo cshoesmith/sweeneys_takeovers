@@ -141,7 +141,10 @@ def oauth_callback():
             
             # Verify user is an included/active member
             members = load_members_data()
-            is_active_member = any(m.get("user", "").lower() == username and m.get("included", True) for m in members)
+            is_active_member = any(
+                (m.get("username", m.get("user", "")).lower() == username) and m.get("included", True) 
+                for m in members
+            )
             
             if is_active_member or username == "mw1414":
                 session["untappd_user"] = username
