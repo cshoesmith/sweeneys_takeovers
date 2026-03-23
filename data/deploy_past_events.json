@@ -1,0 +1,36 @@
+[
+  {
+    "event_id": 949139,
+    "event_name": "Boatrocker Brewing Co. Tap Takeover",
+    "event_url": "https://untappd.com/v/hotel-sweeneys/107565/event/949139",
+    "start_date": "2026-03-19",
+    "end_date": "2026-03-22",
+    "date_text": "Thu, Mar 19th • 12:00 PM AEDT - Sun, Mar 22nd • 10:00 PM AEDT",
+    "checkins_count": 70,
+    "unique_beers": 13,
+    "unique_users": null,
+    "dominant_brewery": "Boatrocker Brewers & Distillers",
+    "breweries": [
+      "Boatrocker Brewers & Distillers"
+    ],
+    "beer_names": [
+      "Air Head",
+      "Big Love Hazy IPA",
+      "Bloody Berliner Barrel Aged",
+      "Conehead",
+      "Feijoa & Rhubarb Wild Ale 2020",
+      "Foeder Jaune",
+      "Northern Red",
+      "Pacifica",
+      "Pale Ale",
+      "Pilsner",
+      "Punch Bowl Tropical Sour",
+      "Ramjet (2016/2017)",
+      "Ramjet (2025)"
+    ],
+    "description": "Join us for a special tap takeover inspired by the journey of Matt, a beer enthusiast whose love for craft beer began in the 80s with \"The Beer Hunter.\" From homebrewing dreams to exploring the beer havens of Brugge, Boulder, Bavaria, and Britain, Matt's passion for brewing took him across the globe. Now, we're bringing a taste of that adventure to Hotel Sweeney's! We'll be tapping some super awesome, exclusive kegs—available until they run dry. Don't miss out; get in early and savour the craft! Tap List:- • Punch Bowl Tropical Sour 4.2% • Air Head Hazy Pale 4.5% • Conehead West Coast IPA 6.2% • Pale Ale 4.5% • Northern Red 4.5% • Big Love Hazy IPA 6.2% • Hoppy Pilsner 4.5% • Pacifica Pacific Ale 4.5% • Foeder Jaune Wild Grape Ale 9.2% • Ramjet 2025 10.7% • Feijoa & Rhubarb Wild Ale 6.5% • Bloody Berliner 5.5%",
+    "where": "236 Clarence St Sydney, NSW",
+    "image_url": "https://utfb-images.untappd.com/oslr9oaogjdf3ztgbgf5g0rhy225?auto=compress%2Cformat&fill=solid&fillcolor=000000&fit=fill&h=320&q=80&w=570",
+    "source": "deploy-snapshot"
+  }
+]

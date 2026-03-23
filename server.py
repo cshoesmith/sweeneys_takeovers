@@ -10,6 +10,7 @@ Usage:
 """
 
 import argparse
+from collections import Counter
 import html
 import json
 import os
@@ -47,6 +48,7 @@ DEPLOY_TAKEOVERS_FILE = DEPLOY_DATA_DIR / "deploy_takeovers.json"
 DEPLOY_BEER_INFO_FILE = DEPLOY_DATA_DIR / "deploy_beer_info.json"
 DEPLOY_CACHE_SUMMARY_FILE = DEPLOY_DATA_DIR / "deploy_cache_summary.json"
 DEPLOY_CURRENT_EVENTS_FILE = DEPLOY_DATA_DIR / "deploy_current_events.json"
+DEPLOY_PAST_EVENTS_FILE = DEPLOY_DATA_DIR / "deploy_past_events.json"
 APP_VERSION = os.getenv("APP_VERSION", "v1.0")
 VENUE_SLUG = os.getenv("VENUE_SLUG", "hotel-sweeneys")
 IS_VERCEL = bool(os.getenv("VERCEL"))
@@ -372,6 +374,15 @@ def strip_html(value):
     return " ".join(html.unescape(text).split())
 
 
+def parse_untappd_datetime(value):
+    if not value:
+        return None
+    try:
+        return datetime.strptime(value, "%a, %d %b %Y %H:%M:%S %z")
+    except (TypeError, ValueError):
+        return None
+
+
 def fetch_public_html(url):
     request = Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urlopen(request, timeout=30) as response:
@@ -677,6 +688,156 @@ def scrape_current_events(venue_id):
     return events
 
 
+def build_past_events_from_checkins(checkins, enrich_details=False):
+    grouped = {}
+
+    for checkin in checkins or []:
+        event_name = (checkin.get("event_name") or "").strip()
+        event_url = (checkin.get("event_url") or "").strip()
+        event_id = checkin.get("event_id")
+
+        if not (event_id or event_url or event_name):
+            continue
+
+        if event_id not in (None, ""):
+            key = f"id:{event_id}"
+        elif event_url:
+            key = f"url:{event_url.lower()}"
+        else:
+            key = "name:" + re.sub(r"[^a-z0-9]+", "-", (event_name or "").strip().lower()).strip("-")
+
+        group = grouped.setdefault(key, {
+            "event_id": event_id,
+            "event_name": event_name,
+            "event_url": event_url,
+            "first_dt": None,
+            "last_dt": None,
+            "checkins_count": 0,
+            "users": set(),
+            "beer_names": set(),
+            "brewery_counts": Counter(),
+        })
+
+        if event_id not in (None, "") and group["event_id"] in (None, ""):
+            group["event_id"] = event_id
+        if event_name and not group["event_name"]:
+            group["event_name"] = event_name
+        if event_url and not group["event_url"]:
+            group["event_url"] = event_url
+
+        group["checkins_count"] += 1
+
+        username = (checkin.get("user") or "").strip().lower()
+        if username:
+            group["users"].add(username)
+
+        beer_name = (checkin.get("beer_name") or "").strip()
+        if beer_name:
+            group["beer_names"].add(beer_name)
+
+        brewery_name = (checkin.get("brewery_name") or "").strip()
+        if brewery_name:
+            group["brewery_counts"][brewery_name] += 1
+
+        dt = parse_untappd_datetime(checkin.get("created_at"))
+        if dt is not None:
+            if group["first_dt"] is None or dt < group["first_dt"]:
+                group["first_dt"] = dt
+            if group["last_dt"] is None or dt > group["last_dt"]:
+                group["last_dt"] = dt
+
+    events = []
+    for group in grouped.values():
+        detail = {}
+        if enrich_details and group["event_url"]:
+            try:
+                detail = scrape_event_detail(group["event_url"])
+            except Exception:
+                detail = {}
+
+        dominant_brewery = ""
+        brewery_names = [name for name, _count in group["brewery_counts"].most_common()]
+        if brewery_names:
+            dominant_brewery = brewery_names[0]
+
+        start_date = group["first_dt"].date().isoformat() if group["first_dt"] else ""
+        end_date = group["last_dt"].date().isoformat() if group["last_dt"] else start_date
+
+        events.append({
+            "event_id": group["event_id"],
+            "event_name": group["event_name"] or dominant_brewery or "Untappd event",
+            "event_url": group["event_url"],
+            "start_date": start_date,
+            "end_date": end_date,
+            "first_checkin_at": group["first_dt"].isoformat() if group["first_dt"] else "",
+            "last_checkin_at": group["last_dt"].isoformat() if group["last_dt"] else "",
+            "checkins_count": group["checkins_count"],
+            "unique_beers": len(group["beer_names"]),
+            "unique_users": len(group["users"]),
+            "dominant_brewery": dominant_brewery,
+            "breweries": brewery_names,
+            "beer_names": sorted(group["beer_names"]),
+            "description": detail.get("description", ""),
+            "where": detail.get("where", ""),
+            "image_url": detail.get("image_url", ""),
+            "source": "checkin-event-history",
+        })
+
+    events.sort(key=lambda item: (item.get("start_date") or "", item.get("first_checkin_at") or ""), reverse=True)
+    return events
+
+
+def build_past_events_from_takeovers(takeovers):
+    events = []
+    seen = set()
+
+    for takeover in takeovers or []:
+        event_name = (takeover.get("event_name") or "").strip()
+        event_url = (takeover.get("event_url") or "").strip()
+        event_id = takeover.get("event_id")
+        if not (event_id or event_url or event_name):
+            continue
+
+        key = event_id or event_url or f"{takeover.get('date', '')}:{event_name}"
+        if key in seen:
+            continue
+        seen.add(key)
+
+        beer_details = takeover.get("beer_details") or []
+        beer_names = [
+            beer.get("beer_name")
+            for beer in beer_details
+            if isinstance(beer, dict) and beer.get("beer_name")
+        ]
+        if not beer_names:
+            beer_names = list(takeover.get("beers") or [])
+
+        brewery = (takeover.get("brewery") or "").strip()
+        date_value = (takeover.get("date") or "").strip()
+        events.append({
+            "event_id": event_id,
+            "event_name": event_name or brewery or "Untappd event",
+            "event_url": event_url,
+            "start_date": date_value,
+            "end_date": date_value,
+            "first_checkin_at": "",
+            "last_checkin_at": "",
+            "checkins_count": takeover.get("checkins"),
+            "unique_beers": takeover.get("unique_beers") if takeover.get("unique_beers") is not None else len(beer_names),
+            "unique_users": None,
+            "dominant_brewery": brewery,
+            "breweries": [brewery] if brewery else [],
+            "beer_names": beer_names,
+            "description": "",
+            "where": "",
+            "image_url": "",
+            "source": "takeover-history",
+        })
+
+    events.sort(key=lambda item: item.get("start_date") or "", reverse=True)
+    return events
+
+
 def load_current_events_data(venue_id):
     try:
         events = scrape_current_events(venue_id)
@@ -690,6 +851,24 @@ def load_current_events_data(venue_id):
         return snapshot_events
 
     return []
+
+
+def load_past_events_data(venue_id=None):
+    cache = load_cache()
+    checkins = cache.get("checkins", [])
+    derived_events = build_past_events_from_checkins(checkins)
+    if derived_events:
+        return derived_events
+
+    snapshot_events = load_json_file(DEPLOY_PAST_EVENTS_FILE)
+    if isinstance(snapshot_events, list) and snapshot_events:
+        return snapshot_events
+
+    takeover_events = build_past_events_from_takeovers(load_takeover_data())
+    if takeover_events:
+        return takeover_events
+
+    return snapshot_events if isinstance(snapshot_events, list) else []
 
 def run_takeover_analysis():
     """Run takeover analysis and export JSON results."""
@@ -1219,6 +1398,13 @@ class AppHandler(SimpleHTTPRequestHandler):
             venue_id = int(os.getenv("VENUE_ID", "107565"))
             try:
                 self._json_response(load_current_events_data(venue_id))
+            except Exception as e:
+                self._json_response({"error": mask_token(str(e))}, 500)
+
+        elif path == "/api/past-events":
+            venue_id = int(os.getenv("VENUE_ID", "107565"))
+            try:
+                self._json_response(load_past_events_data(venue_id))
             except Exception as e:
                 self._json_response({"error": mask_token(str(e))}, 500)
 

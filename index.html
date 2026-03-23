@@ -227,7 +227,15 @@
     max-width: 1200px; margin: 0 auto 1rem; padding: 0 1.5rem;
   }
   .current-events-panel.hidden { display: none; }
+  .past-events-panel {
+    max-width: 1200px; margin: 0 auto 1rem; padding: 0 1.5rem;
+  }
+  .past-events-panel.hidden { display: none; }
   .current-events-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 1rem 1.1rem; margin-bottom: 0.9rem;
+  }
+  .past-events-card {
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
     padding: 1rem 1.1rem; margin-bottom: 0.9rem;
   }
@@ -235,22 +243,49 @@
     display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.75rem;
     flex-wrap: wrap;
   }
+  .past-events-header {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
   .current-events-header h2 { font-size: 1rem; margin: 0; }
+  .past-events-header h2 { font-size: 1rem; margin: 0; }
   .current-events-note { color: var(--text-dim); font-size: 0.8rem; }
   .current-event-item {
     display: grid; grid-template-columns: 120px 1fr; gap: 0.9rem; padding: 0.85rem 0;
     border-top: 1px solid var(--border);
   }
+  .past-event-item {
+    display: grid; grid-template-columns: 120px 1fr; gap: 0.9rem; padding: 0.85rem 0;
+    border-top: 1px solid var(--border);
+  }
   .current-event-item:first-of-type { border-top: none; padding-top: 0; }
+  .past-event-item:first-of-type { border-top: none; padding-top: 0; }
   .current-event-image {
+    width: 120px; height: 88px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); background: var(--card);
+  }
+  .past-event-image {
     width: 120px; height: 88px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); background: var(--card);
   }
   .current-event-title { font-size: 1rem; font-weight: 700; color: var(--text); text-decoration: none; }
   .current-event-title:hover { color: var(--gold); }
+  .past-event-title { font-size: 1rem; font-weight: 700; color: var(--text); text-decoration: none; }
+  .past-event-title:hover { color: var(--gold); }
   .current-event-date, .current-event-meta, .current-event-interest {
     color: var(--text-dim); font-size: 0.85rem; margin-top: 0.2rem;
   }
+  .past-event-date, .past-event-meta, .past-event-stats {
+    color: var(--text-dim); font-size: 0.85rem; margin-top: 0.2rem;
+  }
   .current-event-desc { color: var(--text); font-size: 0.88rem; margin-top: 0.45rem; line-height: 1.45; }
+  .past-event-desc { color: var(--text); font-size: 0.88rem; margin-top: 0.45rem; line-height: 1.45; }
+  .past-event-tags {
+    display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem;
+  }
+  .past-event-tag {
+    display: inline-flex; align-items: center; gap: 0.25rem;
+    padding: 0.18rem 0.48rem; border-radius: 999px; font-size: 0.75rem;
+    background: var(--card); border: 1px solid var(--border); color: var(--text-dim);
+  }
   .year-group { margin-bottom: 1.5rem; }
   .year-header {
     font-size: 1.2rem; font-weight: 700; color: var(--accent);
@@ -473,9 +508,11 @@
     .stats-bar { flex-direction: column; }
     .fetcher-grid { grid-template-columns: 1fr; }
     .current-event-item { grid-template-columns: 1fr; }
+    .past-event-item { grid-template-columns: 1fr; }
     .beer-modal-body { grid-template-columns: 1fr; }
     .beer-modal-image { width: 100px; height: 100px; }
     .current-event-image { width: 100%; height: 160px; }
+    .past-event-image { width: 100%; height: 160px; }
   }
 </style>
 </head>
@@ -656,6 +693,7 @@
     </select>
   </div>
   <div class="current-events-panel hidden" id="currentEventsPanel"></div>
+  <div class="past-events-panel hidden" id="pastEventsPanel"></div>
   <div class="stats-bar" id="statsBar"></div>
   <div class="timeline" id="timeline"></div>
 </div>
@@ -817,6 +855,42 @@ const INLINE_DEPLOY_CURRENT_EVENTS = [
     "date_text": "Thu, Mar 19th • 12:00 PM AEDT - Sun, Mar 22nd • 10:00 PM AEDT",
     "meta": "Hotel Sweeneys • Sydney , NSW",
     "interest_text": "19 people",
+    "description": "Join us for a special tap takeover inspired by the journey of Matt, a beer enthusiast whose love for craft beer began in the 80s with \"The Beer Hunter.\" From homebrewing dreams to exploring the beer havens of Brugge, Boulder, Bavaria, and Britain, Matt's passion for brewing took him across the globe. Now, we're bringing a taste of that adventure to Hotel Sweeney's! We'll be tapping some super awesome, exclusive kegs—available until they run dry. Don't miss out; get in early and savour the craft! Tap List:- • Punch Bowl Tropical Sour 4.2% • Air Head Hazy Pale 4.5% • Conehead West Coast IPA 6.2% • Pale Ale 4.5% • Northern Red 4.5% • Big Love Hazy IPA 6.2% • Hoppy Pilsner 4.5% • Pacifica Pacific Ale 4.5% • Foeder Jaune Wild Grape Ale 9.2% • Ramjet 2025 10.7% • Feijoa & Rhubarb Wild Ale 6.5% • Bloody Berliner 5.5%",
+    "where": "236 Clarence St Sydney, NSW",
+    "image_url": "https://utfb-images.untappd.com/oslr9oaogjdf3ztgbgf5g0rhy225?auto=compress%2Cformat&fill=solid&fillcolor=000000&fit=fill&h=320&q=80&w=570",
+    "source": "deploy-snapshot"
+  }
+];
+const INLINE_DEPLOY_PAST_EVENTS = [
+  {
+    "event_id": 949139,
+    "event_name": "Boatrocker Brewing Co. Tap Takeover",
+    "event_url": "https://untappd.com/v/hotel-sweeneys/107565/event/949139",
+    "start_date": "2026-03-19",
+    "end_date": "2026-03-22",
+    "date_text": "Thu, Mar 19th • 12:00 PM AEDT - Sun, Mar 22nd • 10:00 PM AEDT",
+    "checkins_count": 70,
+    "unique_beers": 13,
+    "unique_users": null,
+    "dominant_brewery": "Boatrocker Brewers & Distillers",
+    "breweries": [
+      "Boatrocker Brewers & Distillers"
+    ],
+    "beer_names": [
+      "Air Head",
+      "Big Love Hazy IPA",
+      "Bloody Berliner Barrel Aged",
+      "Conehead",
+      "Feijoa & Rhubarb Wild Ale 2020",
+      "Foeder Jaune",
+      "Northern Red",
+      "Pacifica",
+      "Pale Ale",
+      "Pilsner",
+      "Punch Bowl Tropical Sour",
+      "Ramjet (2016/2017)",
+      "Ramjet (2025)"
+    ],
     "description": "Join us for a special tap takeover inspired by the journey of Matt, a beer enthusiast whose love for craft beer began in the 80s with \"The Beer Hunter.\" From homebrewing dreams to exploring the beer havens of Brugge, Boulder, Bavaria, and Britain, Matt's passion for brewing took him across the globe. Now, we're bringing a taste of that adventure to Hotel Sweeney's! We'll be tapping some super awesome, exclusive kegs—available until they run dry. Don't miss out; get in early and savour the craft! Tap List:- • Punch Bowl Tropical Sour 4.2% • Air Head Hazy Pale 4.5% • Conehead West Coast IPA 6.2% • Pale Ale 4.5% • Northern Red 4.5% • Big Love Hazy IPA 6.2% • Hoppy Pilsner 4.5% • Pacifica Pacific Ale 4.5% • Foeder Jaune Wild Grape Ale 9.2% • Ramjet 2025 10.7% • Feijoa & Rhubarb Wild Ale 6.5% • Bloody Berliner 5.5%",
     "where": "236 Clarence St Sydney, NSW",
     "image_url": "https://utfb-images.untappd.com/oslr9oaogjdf3ztgbgf5g0rhy225?auto=compress%2Cformat&fill=solid&fillcolor=000000&fit=fill&h=320&q=80&w=570",
@@ -2190,6 +2264,7 @@ function removeTrackedMember(username) {
 var allTakeovers = [];
 var beerInfoCache = {};
 var currentEvents = [];
+var pastEvents = [];
 var deployBeerInfo = cloneInlineData(INLINE_DEPLOY_BEER_INFO);
 var BREWERY_MATCH_STOPWORDS = {
   and: true,
@@ -2494,6 +2569,50 @@ function loadCurrentEventsSnapshot() {
     });
 }
 
+function formatPastEventDate(event) {
+  if (!event) return '';
+  if (event.date_text) return event.date_text;
+  if (event.start_date && event.end_date && event.start_date !== event.end_date) {
+    return formatDate(event.start_date) + ' → ' + formatDate(event.end_date);
+  }
+  if (event.start_date) return formatDate(event.start_date);
+  if (event.first_checkin_at && event.last_checkin_at) {
+    var first = shortDate(event.first_checkin_at);
+    var last = shortDate(event.last_checkin_at);
+    return first === last ? first : first + ' → ' + last;
+  }
+  if (event.first_checkin_at) return shortDate(event.first_checkin_at);
+  return '';
+}
+
+function loadPastEvents() {
+  fetch('/api/past-events')
+    .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
+    .then(function(data) {
+      pastEvents = Array.isArray(data) ? data : [];
+      if (!pastEvents.length) {
+        return loadPastEventsSnapshot();
+      }
+      renderPastEvents();
+    })
+    .catch(function() {
+      loadPastEventsSnapshot();
+    });
+}
+
+function loadPastEventsSnapshot() {
+  return fetch('/data/deploy_past_events.json')
+    .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
+    .then(function(data) {
+      pastEvents = Array.isArray(data) && data.length ? data : cloneInlineData(INLINE_DEPLOY_PAST_EVENTS);
+      renderPastEvents();
+    })
+    .catch(function() {
+      pastEvents = cloneInlineData(INLINE_DEPLOY_PAST_EVENTS);
+      renderPastEvents();
+    });
+}
+
 function loadCacheSummarySnapshot() {
   return fetch('/data/deploy_cache_summary.json')
     .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
@@ -2537,6 +2656,70 @@ function renderCurrentEvents() {
   panel.innerHTML = html;
   panel.classList.remove('hidden');
   if (allTakeovers.length) renderTakeovers();
+}
+
+function renderPastEvents() {
+  var panel = document.getElementById('pastEventsPanel');
+  if (!panel) return;
+  if (!pastEvents.length) {
+    panel.classList.add('hidden');
+    panel.innerHTML = '';
+    return;
+  }
+
+  var html = '<div class="past-events-card">' +
+    '<div class="past-events-header">' +
+      '<h2>Past Untappd Events</h2>' +
+      '<div class="current-events-note">' + pastEvents.length + ' recovered from history</div>' +
+    '</div>';
+
+  pastEvents.forEach(function(event) {
+    var imageHtml = event.image_url
+      ? '<img class="past-event-image" src="' + esc(event.image_url) + '" alt="' + esc(event.event_name || 'Event image') + '">'
+      : '<div class="past-event-image"></div>';
+
+    var stats = [];
+    if (event.checkins_count !== null && event.checkins_count !== undefined && event.checkins_count !== '') {
+      stats.push(event.checkins_count + ' checkins');
+    }
+    if (event.unique_beers !== null && event.unique_beers !== undefined && event.unique_beers !== '') {
+      stats.push(event.unique_beers + ' beers');
+    }
+    if (event.unique_users !== null && event.unique_users !== undefined && event.unique_users !== '') {
+      stats.push(event.unique_users + ' drinkers');
+    }
+
+    var beerNames = Array.isArray(event.beer_names) ? event.beer_names.slice(0, 6) : [];
+    var moreBeerCount = Array.isArray(event.beer_names) && event.beer_names.length > beerNames.length
+      ? event.beer_names.length - beerNames.length
+      : 0;
+    var dateLabel = formatPastEventDate(event);
+    var titleHtml = event.event_url
+      ? '<a class="past-event-title" href="' + esc(event.event_url) + '" target="_blank" rel="noopener">' + esc(event.event_name || 'Untappd event') + '</a>'
+      : '<div class="past-event-title">' + esc(event.event_name || 'Untappd event') + '</div>';
+
+    html += '<div class="past-event-item">' +
+      '<div>' + imageHtml + '</div>' +
+      '<div>' +
+        titleHtml +
+        (dateLabel ? '<div class="past-event-date">' + esc(dateLabel) + '</div>' : '') +
+        (event.dominant_brewery ? '<div class="past-event-meta">Brewery: ' + esc(event.dominant_brewery) + '</div>' : '') +
+        (event.where ? '<div class="past-event-meta">' + esc(event.where) + '</div>' : '') +
+        (stats.length ? '<div class="past-event-stats">' + esc(stats.join(' · ')) + '</div>' : '') +
+        (event.description ? '<div class="past-event-desc">' + esc(event.description) + '</div>' : '') +
+        (beerNames.length
+          ? '<div class="past-event-tags">'
+              + beerNames.map(function(name) { return '<span class="past-event-tag">' + esc(name) + '</span>'; }).join('')
+              + (moreBeerCount ? '<span class="past-event-tag">+' + moreBeerCount + ' more</span>' : '')
+            + '</div>'
+          : '') +
+      '</div>' +
+    '</div>';
+  });
+
+  html += '</div>';
+  panel.innerHTML = html;
+  panel.classList.remove('hidden');
 }
 
 document.getElementById('searchInput').addEventListener('input', renderTakeovers);
@@ -2841,6 +3024,7 @@ window.addEventListener('DOMContentLoaded', function() {
       });
 
     loadCurrentEvents();
+    loadPastEvents();
     loadDeployBeerInfoSnapshot();
     if (!isReadOnlyDeployment()) loadTrackedMembers();
   });
