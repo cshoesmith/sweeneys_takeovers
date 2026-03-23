@@ -2585,6 +2585,43 @@ function formatPastEventDate(event) {
   return '';
 }
 
+function isSameEventRecord(a, b) {
+  if (!a || !b) return false;
+
+  var aId = a.event_id != null && a.event_id !== '' ? String(a.event_id) : '';
+  var bId = b.event_id != null && b.event_id !== '' ? String(b.event_id) : '';
+  if (aId && bId && aId === bId) return true;
+
+  var aUrl = (a.event_url || '').trim().toLowerCase();
+  var bUrl = (b.event_url || '').trim().toLowerCase();
+  if (aUrl && bUrl && aUrl === bUrl) return true;
+
+  var aName = normalizeComparableText(a.event_name || '');
+  var bName = normalizeComparableText(b.event_name || '');
+  var aBrewery = normalizeComparableText(a.dominant_brewery || a.brewery || '');
+  var bBrewery = normalizeComparableText(b.dominant_brewery || b.brewery || '');
+  var aStart = (a.start_date || '').trim();
+  var bStart = (b.start_date || '').trim();
+
+  if (aName && bName && aName === bName) {
+    if (!aStart || !bStart || aStart === bStart) return true;
+    if (aBrewery && bBrewery && aBrewery === bBrewery) return true;
+  }
+
+  return false;
+}
+
+function getVisiblePastEvents() {
+  if (!Array.isArray(pastEvents) || !pastEvents.length) return [];
+  if (!Array.isArray(currentEvents) || !currentEvents.length) return pastEvents.slice();
+
+  return pastEvents.filter(function(pastEvent) {
+    return !currentEvents.some(function(currentEvent) {
+      return isSameEventRecord(pastEvent, currentEvent);
+    });
+  });
+}
+
 function loadPastEvents() {
   fetch('/api/past-events')
     .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
@@ -2655,13 +2692,15 @@ function renderCurrentEvents() {
   html += '</div>';
   panel.innerHTML = html;
   panel.classList.remove('hidden');
+  renderPastEvents();
   if (allTakeovers.length) renderTakeovers();
 }
 
 function renderPastEvents() {
   var panel = document.getElementById('pastEventsPanel');
   if (!panel) return;
-  if (!pastEvents.length) {
+  var visiblePastEvents = getVisiblePastEvents();
+  if (!visiblePastEvents.length) {
     panel.classList.add('hidden');
     panel.innerHTML = '';
     return;
@@ -2670,10 +2709,10 @@ function renderPastEvents() {
   var html = '<div class="past-events-card">' +
     '<div class="past-events-header">' +
       '<h2>Past Untappd Events</h2>' +
-      '<div class="current-events-note">' + pastEvents.length + ' recovered from history</div>' +
+      '<div class="current-events-note">' + visiblePastEvents.length + ' recovered from history</div>' +
     '</div>';
 
-  pastEvents.forEach(function(event) {
+  visiblePastEvents.forEach(function(event) {
     var imageHtml = event.image_url
       ? '<img class="past-event-image" src="' + esc(event.image_url) + '" alt="' + esc(event.event_name || 'Event image') + '">'
       : '<div class="past-event-image"></div>';

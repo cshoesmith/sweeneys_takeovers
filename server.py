@@ -1388,7 +1388,11 @@ class AppHandler(SimpleHTTPRequestHandler):
         parsed = urlparse(self.path)
         path = parsed.path
 
-        if path == "/api/status":
+        if path == "/favicon.ico":
+            self.send_response(204)
+            self.end_headers()
+
+        elif path == "/api/status":
             self._json_response(fetcher_state.to_dict())
 
         elif path == "/api/meta":
@@ -1555,7 +1559,9 @@ class AppHandler(SimpleHTTPRequestHandler):
 
     def log_message(self, format, *args):
         # Quieter logs — only show API/POST requests, not static file serves
-        if "/api/" in (args[0] if args else ""):
+        first_arg = args[0] if args else ""
+        first_arg_text = first_arg if isinstance(first_arg, str) else str(first_arg)
+        if "/api/" in first_arg_text:
             super().log_message(format, *args)
 
 
