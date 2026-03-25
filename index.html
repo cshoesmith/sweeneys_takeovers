@@ -524,7 +524,7 @@
     <div class="title-copy">
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
-      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260321-191646</div>
+      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260325-220923</div>
     </div>
   </div>
   <div class="tab-bar">
@@ -731,7 +731,7 @@
 <script>
 // ═════════ Tab switching ═════════
 const ADMIN_PASSWORD = 'Wardy123';
-const INLINE_DEPLOY_BUILD_LABEL = '20260321-191646';
+const INLINE_DEPLOY_BUILD_LABEL = '20260325-220923';
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -2310,45 +2310,258 @@ function getComparableTokens(value) {
     });
 }
 
+function eventMatchesBrewery(event, breweryName) {
+  if (!event || !breweryName) return false;
+
+  var breweryText = normalizeComparableText(breweryName);
+  var breweryTokens = getComparableTokens(breweryName);
+  var breweryKey = breweryTokens.join(' ');
+
+  if (!breweryText && !breweryTokens.length) return false;
+
+  var eventSearchText = [event.event_name, event.description, event.meta, event.where].filter(Boolean).join(' ');
+  var eventText = normalizeComparableText(eventSearchText);
+  var eventNameText = normalizeComparableText(event.event_name || '');
+  var eventTokens = getComparableTokens(eventSearchText);
+  var eventTokenSet = {};
+
+  eventTokens.forEach(function(token) { eventTokenSet[token] = true; });
+
+  var overlapCount = breweryTokens.filter(function(token) { return !!eventTokenSet[token]; }).length;
+
+  if (breweryKey && (eventText.indexOf(breweryKey) !== -1 || eventNameText.indexOf(breweryKey) !== -1)) {
+    return true;
+  }
+
+  if (breweryTokens.length >= 2 && overlapCount >= breweryTokens.length - 1) {
+    return true;
+  }
+
+  if (breweryTokens.length === 1 && breweryTokens[0].length >= 5 && overlapCount === 1) {
+    return true;
+  }
+
+  if (!breweryTokens.length && breweryText && eventNameText.indexOf(breweryText) !== -1) {
+    return true;
+  }
+
+  return false;
+}
+
 function getMatchingCurrentEvent(takeover) {
   if (!takeover || !takeover.brewery || !currentEvents.length) return null;
 
-  var breweryText = normalizeComparableText(takeover.brewery);
-  var breweryTokens = getComparableTokens(takeover.brewery);
-  var breweryKey = breweryTokens.join(' ');
-
-  if (!breweryText && !breweryTokens.length) return null;
-
   for (var i = 0; i < currentEvents.length; i++) {
     var event = currentEvents[i] || {};
-    var eventSearchText = [event.event_name, event.description, event.meta, event.where].filter(Boolean).join(' ');
-    var eventText = normalizeComparableText(eventSearchText);
-    var eventNameText = normalizeComparableText(event.event_name || '');
-    var eventTokens = getComparableTokens(eventSearchText);
-    var eventTokenSet = {};
-
-    eventTokens.forEach(function(token) { eventTokenSet[token] = true; });
-
-    var overlapCount = breweryTokens.filter(function(token) { return !!eventTokenSet[token]; }).length;
-
-    if (breweryKey && (eventText.indexOf(breweryKey) !== -1 || eventNameText.indexOf(breweryKey) !== -1)) {
-      return event;
-    }
-
-    if (breweryTokens.length >= 2 && overlapCount >= breweryTokens.length - 1) {
-      return event;
-    }
-
-    if (breweryTokens.length === 1 && breweryTokens[0].length >= 5 && overlapCount === 1) {
-      return event;
-    }
-
-    if (!breweryTokens.length && breweryText && eventNameText.indexOf(breweryText) !== -1) {
+    if (eventMatchesBrewery(event, takeover.brewery)) {
       return event;
     }
   }
 
   return null;
+}
+
+function getMatchingPastEvent(takeover) {
+  if (!takeover || !takeover.brewery || !Array.isArray(pastEvents) || !pastEvents.length) return null;
+
+  var takeoverDateMs = takeover.date ? new Date(takeover.date + 'T00:00:00').getTime() : NaN;
+
+  for (var i = 0; i < pastEvents.length; i++) {
+    var event = pastEvents[i] || {};
+
+    if (isSameEventRecord(takeover, event)) {
+      return event;
+    }
+
+    if (!eventMatchesBrewery(event, takeover.brewery)) {
+      continue;
+    }
+
+    var eventDate = event.start_date || parseCurrentEventStartDate(event);
+    var eventDateMs = eventDate ? new Date(eventDate + 'T00:00:00').getTime() : NaN;
+
+    if (isNaN(takeoverDateMs) || isNaN(eventDateMs)) {
+      return event;
+    }
+
+    if (Math.abs(takeoverDateMs - eventDateMs) <= 4 * 24 * 60 * 60 * 1000) {
+      return event;
+    }
+  }
+
+  return null;
+}
+
+function getMatchingKnownEvent(takeover) {
+  return getMatchingCurrentEvent(takeover) || getMatchingPastEvent(takeover) || null;
+}
+
+function enrichTakeoverWithKnownEventMeta(takeover) {
+  var copy = Object.assign({}, takeover || {});
+  var matchingEvent = getMatchingKnownEvent(copy);
+
+  if (!matchingEvent) {
+    return copy;
+  }
+
+  if (!copy.event_name && matchingEvent.event_name) {
+    copy.event_name = matchingEvent.event_name;
+  }
+  if ((copy.event_id === null || copy.event_id === undefined || copy.event_id === '') && matchingEvent.event_id != null && matchingEvent.event_id !== '') {
+    copy.event_id = matchingEvent.event_id;
+  }
+  if (!copy.event_url && matchingEvent.event_url) {
+    copy.event_url = matchingEvent.event_url;
+  }
+
+  return copy;
+}
+
+function parseCurrentEventStartDate(event) {
+  if (!event) return '';
+  if (event.start_date) return event.start_date;
+
+  var rawText = (event.date_text || '').split('•')[0].trim();
+  if (!rawText) return '';
+
+  rawText = rawText
+    .replace(/^[A-Za-z]{3},\s*/, '')
+    .replace(/(\d+)(st|nd|rd|th)\b/gi, '$1')
+    .trim();
+
+  var parts = rawText.match(/^([A-Za-z]+)\s+(\d{1,2})$/);
+  if (!parts) return '';
+
+  var monthName = parts[1];
+  var day = Number(parts[2]);
+  if (!monthName || !day) return '';
+
+  var now = new Date();
+  var candidateYears = [now.getFullYear() - 1, now.getFullYear(), now.getFullYear() + 1];
+  var bestIso = '';
+  var bestDistance = Infinity;
+
+  candidateYears.forEach(function(year) {
+    var candidate = new Date(monthName + ' ' + day + ', ' + year + ' 12:00:00');
+    if (isNaN(candidate.getTime())) return;
+    var distance = Math.abs(candidate.getTime() - now.getTime());
+    if (distance < bestDistance) {
+      bestDistance = distance;
+      bestIso = candidate.getFullYear()
+        + '-' + String(candidate.getMonth() + 1).padStart(2, '0')
+        + '-' + String(candidate.getDate()).padStart(2, '0');
+    }
+  });
+
+  return bestIso;
+}
+
+function extractBreweryNameFromEvent(event) {
+  if (!event) return '';
+
+  var preferred = [event.dominant_brewery, event.brewery, event.brewery_name].find(function(value) {
+    return value && String(value).trim();
+  });
+  if (preferred) return String(preferred).trim();
+
+  var eventName = String(event.event_name || '').trim();
+  if (!eventName) return '';
+
+  var stripped = eventName
+    .replace(/\s*[-–—|:].*$/, '')
+    .replace(/\s+tap\s+takeover\b.*$/i, '')
+    .replace(/\s+takeover\b.*$/i, '')
+    .replace(/\s+showcase\b.*$/i, '')
+    .trim();
+
+  return stripped || eventName;
+}
+
+function getMatchingTakeoverForEvent(event, takeovers) {
+  if (!event) return null;
+
+  var eventDate = parseCurrentEventStartDate(event);
+  var eventDateMs = eventDate ? new Date(eventDate + 'T00:00:00').getTime() : NaN;
+
+  for (var i = 0; i < (takeovers || []).length; i++) {
+    var takeover = takeovers[i];
+    if (!takeover) continue;
+
+    if (isSameEventRecord(takeover, event)) {
+      return takeover;
+    }
+
+    if (!eventMatchesBrewery(event, takeover.brewery || '')) {
+      continue;
+    }
+
+    if (!eventDate || !takeover.date) {
+      return takeover;
+    }
+
+    var takeoverDateMs = new Date(takeover.date + 'T00:00:00').getTime();
+    if (!isNaN(eventDateMs) && !isNaN(takeoverDateMs) && Math.abs(takeoverDateMs - eventDateMs) <= 4 * 24 * 60 * 60 * 1000) {
+      return takeover;
+    }
+  }
+
+  return null;
+}
+
+function buildSyntheticTakeoverFromEvent(event) {
+  if (!event) return null;
+
+  var date = parseCurrentEventStartDate(event);
+  var brewery = extractBreweryNameFromEvent(event);
+  if (!date || !brewery) return null;
+
+  return {
+    date: date,
+    brewery: brewery,
+    checkins: 0,
+    unique_beers: 0,
+    total_checkins_that_week: 0,
+    share_pct: 0,
+    beers: [],
+    beer_details: [],
+    event_id: event.event_id,
+    event_name: event.event_name || '',
+    event_url: event.event_url || '',
+    source: 'event',
+    is_upcoming_event: true
+  };
+}
+
+function getDisplayTakeovers() {
+  var takeovers = Array.isArray(allTakeovers)
+    ? allTakeovers.map(function(takeover) { return enrichTakeoverWithKnownEventMeta(takeover); })
+    : [];
+
+  if (!Array.isArray(currentEvents) || !currentEvents.length) {
+    return takeovers.sort(function(a, b) {
+      return String(b.date || '').localeCompare(String(a.date || ''));
+    });
+  }
+
+  currentEvents.forEach(function(event) {
+    if (getMatchingTakeoverForEvent(event, takeovers)) {
+      return;
+    }
+    var syntheticTakeover = buildSyntheticTakeoverFromEvent(event);
+    if (syntheticTakeover) {
+      takeovers.push(syntheticTakeover);
+    }
+  });
+
+  return takeovers.sort(function(a, b) {
+    return String(b.date || '').localeCompare(String(a.date || ''));
+  });
+}
+
+function getEffectiveTakeoverSource(takeover) {
+  return (takeover && (takeover.source === 'event' || getMatchingKnownEvent(takeover)))
+    ? 'event'
+    : 'heuristic';
 }
 
 function mergeBeerInfoRecord(baseInfo, extraInfo) {
@@ -2525,9 +2738,11 @@ function loadDeployBeerInfoSnapshot() {
 }
 
 function populateTakeoverFilters() {
+  var currentValue = document.getElementById('yearFilter').value;
   var years = [];
   var seen = {};
-  allTakeovers.forEach(function(t) {
+  getDisplayTakeovers().forEach(function(t) {
+    if (!t || !t.date) return;
     var y = t.date.slice(0, 4);
     if (!seen[y]) { seen[y] = true; years.push(y); }
   });
@@ -2539,6 +2754,9 @@ function populateTakeoverFilters() {
     opt.value = y; opt.textContent = y;
     yearSelect.appendChild(opt);
   });
+  if (currentValue && years.indexOf(currentValue) !== -1) {
+    yearSelect.value = currentValue;
+  }
 }
 
 function loadCurrentEvents() {
@@ -2692,6 +2910,7 @@ function renderCurrentEvents() {
   html += '</div>';
   panel.innerHTML = html;
   panel.classList.remove('hidden');
+  populateTakeoverFilters();
   renderPastEvents();
   if (allTakeovers.length) renderTakeovers();
 }
@@ -2699,66 +2918,8 @@ function renderCurrentEvents() {
 function renderPastEvents() {
   var panel = document.getElementById('pastEventsPanel');
   if (!panel) return;
-  var visiblePastEvents = getVisiblePastEvents();
-  if (!visiblePastEvents.length) {
-    panel.classList.add('hidden');
-    panel.innerHTML = '';
-    return;
-  }
-
-  var html = '<div class="past-events-card">' +
-    '<div class="past-events-header">' +
-      '<h2>Past Untappd Events</h2>' +
-      '<div class="current-events-note">' + visiblePastEvents.length + ' recovered from history</div>' +
-    '</div>';
-
-  visiblePastEvents.forEach(function(event) {
-    var imageHtml = event.image_url
-      ? '<img class="past-event-image" src="' + esc(event.image_url) + '" alt="' + esc(event.event_name || 'Event image') + '">'
-      : '<div class="past-event-image"></div>';
-
-    var stats = [];
-    if (event.checkins_count !== null && event.checkins_count !== undefined && event.checkins_count !== '') {
-      stats.push(event.checkins_count + ' checkins');
-    }
-    if (event.unique_beers !== null && event.unique_beers !== undefined && event.unique_beers !== '') {
-      stats.push(event.unique_beers + ' beers');
-    }
-    if (event.unique_users !== null && event.unique_users !== undefined && event.unique_users !== '') {
-      stats.push(event.unique_users + ' drinkers');
-    }
-
-    var beerNames = Array.isArray(event.beer_names) ? event.beer_names.slice(0, 6) : [];
-    var moreBeerCount = Array.isArray(event.beer_names) && event.beer_names.length > beerNames.length
-      ? event.beer_names.length - beerNames.length
-      : 0;
-    var dateLabel = formatPastEventDate(event);
-    var titleHtml = event.event_url
-      ? '<a class="past-event-title" href="' + esc(event.event_url) + '" target="_blank" rel="noopener">' + esc(event.event_name || 'Untappd event') + '</a>'
-      : '<div class="past-event-title">' + esc(event.event_name || 'Untappd event') + '</div>';
-
-    html += '<div class="past-event-item">' +
-      '<div>' + imageHtml + '</div>' +
-      '<div>' +
-        titleHtml +
-        (dateLabel ? '<div class="past-event-date">' + esc(dateLabel) + '</div>' : '') +
-        (event.dominant_brewery ? '<div class="past-event-meta">Brewery: ' + esc(event.dominant_brewery) + '</div>' : '') +
-        (event.where ? '<div class="past-event-meta">' + esc(event.where) + '</div>' : '') +
-        (stats.length ? '<div class="past-event-stats">' + esc(stats.join(' · ')) + '</div>' : '') +
-        (event.description ? '<div class="past-event-desc">' + esc(event.description) + '</div>' : '') +
-        (beerNames.length
-          ? '<div class="past-event-tags">'
-              + beerNames.map(function(name) { return '<span class="past-event-tag">' + esc(name) + '</span>'; }).join('')
-              + (moreBeerCount ? '<span class="past-event-tag">+' + moreBeerCount + ' more</span>' : '')
-            + '</div>'
-          : '') +
-      '</div>' +
-    '</div>';
-  });
-
-  html += '</div>';
-  panel.innerHTML = html;
-  panel.classList.remove('hidden');
+  panel.classList.add('hidden');
+  panel.innerHTML = '';
 }
 
 document.getElementById('searchInput').addEventListener('input', renderTakeovers);
@@ -2769,10 +2930,11 @@ function renderTakeovers() {
   var search = document.getElementById('searchInput').value.toLowerCase();
   var yearFilter = document.getElementById('yearFilter').value;
   var sourceFilter = document.getElementById('sourceFilter').value;
+  var displayTakeovers = getDisplayTakeovers();
 
-  var filtered = allTakeovers.filter(function(t) {
+  var filtered = displayTakeovers.filter(function(t) {
     if (yearFilter && !t.date.startsWith(yearFilter)) return false;
-    if (sourceFilter && t.source !== sourceFilter) return false;
+    if (sourceFilter && getEffectiveTakeoverSource(t) !== sourceFilter) return false;
     if (search) {
       var haystack = [t.brewery, t.event_name || ''].concat(t.beers || []).join(' ').toLowerCase();
       if (haystack.indexOf(search) === -1) return false;
@@ -2786,7 +2948,7 @@ function renderTakeovers() {
   filtered.forEach(function(t) {
     brewSet[t.brewery] = 1;
     (t.beers || []).forEach(function(b) { beerSet[b] = 1; });
-    if (t.source === 'event' || getMatchingCurrentEvent(t)) eventCount++;
+    if (getEffectiveTakeoverSource(t) === 'event') eventCount++;
   });
   bar.innerHTML =
     '<div class="stat-card"><div class="stat-value">' + filtered.length + '</div><div class="stat-label">Takeovers</div></div>' +
@@ -2816,20 +2978,19 @@ function renderTakeovers() {
     byYear[year].forEach(function(t, i) {
       var id = 'card-' + year + '-' + i;
       var matchingCurrentEvent = getMatchingCurrentEvent(t);
+      var matchingKnownEvent = getMatchingKnownEvent(t);
+      var effectiveSource = getEffectiveTakeoverSource(t);
       var sourceBadge = '';
-      if (t.source === 'event') {
+      if (effectiveSource === 'event') {
         sourceBadge = '<span class="badge badge-event">event</span>';
-      } else if (!matchingCurrentEvent) {
+      } else {
         sourceBadge = '<span class="badge badge-heuristic">heuristic</span>';
       }
-      var validEventBadge = matchingCurrentEvent
-        ? '<span class="badge badge-valid-event" title="Matched current Untappd event: ' + esc(matchingCurrentEvent.event_name || 'Untappd event') + '">Valid Event</span>'
-        : '';
       html += '<div class="takeover-card" id="' + id + '">' +
         '<div class="card-header" onclick="toggleCard(\'' + id + '\')">' +
           '<div class="card-date">' + formatDate(t.date) + '</div>' +
           '<div class="card-brewery">' + esc(t.brewery) + '</div>' +
-          '<div class="card-meta">' + sourceBadge + validEventBadge +
+          '<div class="card-meta">' + sourceBadge +
             '<span>' + t.unique_beers + ' beers</span>' +
             '<span>' + t.checkins + ' checkins</span>' +
             '<span>' + t.share_pct + '%</span>' +
@@ -2842,16 +3003,16 @@ function renderTakeovers() {
         html += '<div class="event-banner"><strong>Event:</strong> ' + esc(t.event_name);
         if (t.event_url) html += ' &mdash; <a href="' + esc(t.event_url) + '" target="_blank" rel="noopener">View on Untappd</a>';
         html += '</div>';
-      } else if (matchingCurrentEvent) {
-        html += '<div class="event-banner"><strong>Valid Event:</strong> ' + esc(matchingCurrentEvent.event_name || 'Untappd event');
-        if (matchingCurrentEvent.event_url) html += ' &mdash; <a href="' + esc(matchingCurrentEvent.event_url) + '" target="_blank" rel="noopener">View current event</a>';
+      } else if (matchingKnownEvent) {
+        html += '<div class="event-banner"><strong>Event:</strong> ' + esc(matchingKnownEvent.event_name || 'Untappd event');
+        if (matchingKnownEvent.event_url) html += ' &mdash; <a href="' + esc(matchingKnownEvent.event_url) + '" target="_blank" rel="noopener">View on Untappd</a>';
         html += '</div>';
       }
       html += '<div class="detail-stats">' +
         '<span><strong>' + t.checkins + '</strong> checkins</span>' +
         '<span><strong>' + t.unique_beers + '</strong> unique beers</span>' +
         '<span><strong>' + t.share_pct + '%</strong> of week</span>' +
-        '<span><strong>' + (t.total_checkins_that_week || '') + '</strong> total</span>' +
+        '<span><strong>' + (t.total_checkins_that_week != null ? t.total_checkins_that_week : '') + '</strong> total</span>' +
         '</div>';
       if (t.beers && t.beers.length) {
         html += '<ul class="beer-list">';
