@@ -524,7 +524,7 @@
     <div class="title-copy">
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
-      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260325-220923</div>
+      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260325-222118</div>
     </div>
   </div>
   <div class="tab-bar">
@@ -731,7 +731,7 @@
 <script>
 // ═════════ Tab switching ═════════
 const ADMIN_PASSWORD = 'Wardy123';
-const INLINE_DEPLOY_BUILD_LABEL = '20260325-220923';
+const INLINE_DEPLOY_BUILD_LABEL = '20260325-222118';
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -2477,6 +2477,22 @@ function extractBreweryNameFromEvent(event) {
   return stripped || eventName;
 }
 
+function formatTakeoverEventLabel(eventName) {
+  return String(eventName || '')
+    .replace(/\s+tap\s+takeover\b/i, '')
+    .trim();
+}
+
+function getEventBannerBreweryName(eventLike, fallbackName) {
+  var extracted = extractBreweryNameFromEvent(eventLike || {});
+  if (extracted) return extracted;
+
+  var formattedFallback = formatTakeoverEventLabel(fallbackName || '');
+  if (formattedFallback) return formattedFallback;
+
+  return String(fallbackName || '').trim();
+}
+
 function getMatchingTakeoverForEvent(event, takeovers) {
   if (!event) return null;
 
@@ -2978,6 +2994,7 @@ function renderTakeovers() {
     byYear[year].forEach(function(t, i) {
       var id = 'card-' + year + '-' + i;
       var matchingCurrentEvent = getMatchingCurrentEvent(t);
+      var matchingPastEvent = getMatchingPastEvent(t);
       var matchingKnownEvent = getMatchingKnownEvent(t);
       var effectiveSource = getEffectiveTakeoverSource(t);
       var sourceBadge = '';
@@ -2999,13 +3016,20 @@ function renderTakeovers() {
         '</div>' +
         '<div class="card-details" id="' + id + '-details">';
 
-      if (t.event_name) {
-        html += '<div class="event-banner"><strong>Event:</strong> ' + esc(t.event_name);
-        if (t.event_url) html += ' &mdash; <a href="' + esc(t.event_url) + '" target="_blank" rel="noopener">View on Untappd</a>';
+      if (matchingCurrentEvent) {
+        html += '<div class="event-banner"><strong>Event:</strong> ' + esc(getEventBannerBreweryName(matchingCurrentEvent, t.event_name || matchingCurrentEvent.event_name || 'Untappd event'));
+        if (matchingCurrentEvent.event_url) {
+          html += '<br><a href="' + esc(matchingCurrentEvent.event_url) + '" target="_blank" rel="noopener">View on Untappd</a>';
+        }
+        html += '</div>';
+      } else if (matchingPastEvent) {
+        html += '<div class="event-banner"><strong>Event:</strong> ' + esc(getEventBannerBreweryName(matchingPastEvent, t.event_name || matchingPastEvent.event_name || 'Untappd event'));
+        html += '</div>';
+      } else if (t.event_name) {
+        html += '<div class="event-banner"><strong>Event:</strong> ' + esc(getEventBannerBreweryName(t, t.event_name));
         html += '</div>';
       } else if (matchingKnownEvent) {
-        html += '<div class="event-banner"><strong>Event:</strong> ' + esc(matchingKnownEvent.event_name || 'Untappd event');
-        if (matchingKnownEvent.event_url) html += ' &mdash; <a href="' + esc(matchingKnownEvent.event_url) + '" target="_blank" rel="noopener">View on Untappd</a>';
+        html += '<div class="event-banner"><strong>Event:</strong> ' + esc(getEventBannerBreweryName(matchingKnownEvent, matchingKnownEvent.event_name || 'Untappd event'));
         html += '</div>';
       }
       html += '<div class="detail-stats">' +
