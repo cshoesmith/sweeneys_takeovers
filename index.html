@@ -2894,9 +2894,9 @@ function updateDashboard(s) {
   document.getElementById('errorsOther').textContent = s.errors_other;
   updateErrorTooltips(s);
 
-  document.getElementById('newestDate').textContent = shortDate(s.newest_date) || '—';
-  document.getElementById('cacheNewestDate').textContent = shortDate(s.newest_date) || '—';
-  document.getElementById('cacheOldestDate').textContent = shortDate(s.oldest_date) || '—';
+  document.getElementById('newestDate').textContent = formatAdminDateTime(s.newest_date) || '—';
+  document.getElementById('cacheNewestDate').textContent = formatAdminDateTime(s.newest_date) || '—';
+  document.getElementById('cacheOldestDate').textContent = formatAdminDateTime(s.oldest_date) || '—';
 
   // Last request URL
   var urlEl = document.getElementById('lastRequestUrl');
@@ -2907,7 +2907,7 @@ function updateDashboard(s) {
   } else {
     urlEl.textContent = '—';
   }
-  document.getElementById('oldestDate').textContent = shortDate(s.oldest_date) || '—';
+  document.getElementById('oldestDate').textContent = formatAdminDateTime(s.oldest_date) || '—';
   document.getElementById('targetDate').textContent = shortDate(s.target_date) || '—';
 
   updateProgress(s);
@@ -3034,6 +3034,23 @@ function shortDate(dateStr) {
     if (isNaN(d)) return dateStr;
     return d.toLocaleDateString('en-AU', { year: 'numeric', month: 'short', day: 'numeric' });
   } catch(e) { return dateStr; }
+}
+
+function formatAdminDateTime(dateStr) {
+  if (!dateStr) return '';
+  try {
+    var d = new Date(dateStr);
+    if (isNaN(d)) return dateStr;
+    return d.toLocaleString('en-AU', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  } catch (e) {
+    return dateStr;
+  }
 }
 
 function loadBuildInfo() {
