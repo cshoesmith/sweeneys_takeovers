@@ -68,7 +68,7 @@ HTML_LOGIN_TEMPLATE = """
 @app.before_request
 def require_auth():
     # Allow some endpoints to bypass auth
-    allowed_endpoints = ['login', 'logout', 'oauth_callback']
+    allowed_endpoints = ['login', 'logout', 'oauth_callback', 'vercel_root']
     if request.endpoint in allowed_endpoints:
         return
         
@@ -104,7 +104,7 @@ def logout():
     session.clear()
     if request.method == "POST":
         return jsonify({"ok": True})
-    return redirect("/api/index.py")
+    return redirect("/")
 
 @app.route("/auth/callback")
 def oauth_callback():
