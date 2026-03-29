@@ -83,16 +83,10 @@ def get_build_info():
         default=time.time(),
     )
     build_unix = int(latest_mtime)
-    commit_sha = (
-        os.getenv("VERCEL_GIT_COMMIT_SHA")
-        or os.getenv("GITHUB_SHA")
-        or ""
-    ).strip()
-    build_label = commit_sha[:7] if commit_sha else str(build_unix)
     return {
         "version": APP_VERSION,
         "build_unix": build_unix,
-        "build_label": build_label,
+        "build_label": str(build_unix),
         "build_iso": datetime.fromtimestamp(build_unix, tz=timezone.utc).isoformat(),
         "deployment_target": "vercel" if IS_VERCEL else "local",
         "read_only": IS_VERCEL,

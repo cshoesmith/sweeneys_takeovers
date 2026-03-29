@@ -126,7 +126,7 @@ def replace_inline_constant(source_text: str, constant_name: str, js_literal: st
 
 def update_index_inline_snapshots(takeovers, current_events, past_events, beer_info, cache_summary):
     html = INDEX_HTML_FILE.read_text(encoding="utf-8")
-    build_label = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+    build_label = str(int(datetime.now(timezone.utc).timestamp()))
 
     html = replace_inline_constant(html, "INLINE_DEPLOY_BUILD_LABEL", json.dumps(build_label))
     html = replace_inline_constant(html, "INLINE_DEPLOY_TAKEOVERS", json.dumps(takeovers, indent=2, ensure_ascii=False))

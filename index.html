@@ -589,7 +589,7 @@
     <div class="title-copy">
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
-      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260329-215725</div>
+      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> loading…</div>
     </div>
   </div>
   <div class="header-actions">
@@ -2712,18 +2712,13 @@ function adminStatusPollIntervalMs() {
 }
 
 function getFallbackBuildLabel() {
-  if (isReadOnlyDeployment()) {
-    return INLINE_DEPLOY_BUILD_LABEL;
-  }
   var raw = document.lastModified || '';
   var parsed = raw ? new Date(raw) : null;
   if (parsed && !isNaN(parsed.getTime())) {
-    return parsed.getFullYear().toString()
-      + String(parsed.getMonth() + 1).padStart(2, '0')
-      + String(parsed.getDate()).padStart(2, '0')
-      + '-'
-      + String(parsed.getHours()).padStart(2, '0')
-      + String(parsed.getMinutes()).padStart(2, '0');
+    return String(Math.floor(parsed.getTime() / 1000));
+  }
+  if (isReadOnlyDeployment()) {
+    return INLINE_DEPLOY_BUILD_LABEL;
   }
   return 'embedded';
 }
