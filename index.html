@@ -2552,6 +2552,7 @@ const INLINE_DEPLOY_CACHE_SUMMARY = {
 };
 let adminUnlocked = sessionStorage.getItem('sweeneysAdminUnlocked') === 'true';
 let pendingAdminTab = null;
+const PRIVILEGED_TAB_USERNAME_REMINDER_KEY = 'privilegedTabUsernameReminderShown';
 
 function cloneInlineData(data) {
   return JSON.parse(JSON.stringify(data));
@@ -2691,7 +2692,8 @@ function getEffectiveDeploymentMeta() {
     deployment_target: 'remote',
     supports_collector: false,
     current_user: null,
-    show_admin_tabs: false
+    show_admin_tabs: false,
+    privileged_tab_username_configured: false
   };
 }
 
@@ -2699,6 +2701,19 @@ function canShowPrivilegedTabs(meta) {
   var effectiveMeta = meta || getEffectiveDeploymentMeta() || {};
   if (!effectiveMeta.read_only) return true;
   return !!effectiveMeta.show_admin_tabs;
+}
+
+function maybeShowPrivilegedUsernameReminder(meta) {
+  var effectiveMeta = meta || getEffectiveDeploymentMeta() || {};
+  if (!effectiveMeta.read_only) return;
+  if (!effectiveMeta.show_admin_tabs) return;
+  if (effectiveMeta.privileged_tab_username_configured) return;
+  if (sessionStorage.getItem(PRIVILEGED_TAB_USERNAME_REMINDER_KEY) === 'true') return;
+
+  sessionStorage.setItem(PRIVILEGED_TAB_USERNAME_REMINDER_KEY, 'true');
+  window.setTimeout(function() {
+    alert('Reminder: PRIVILEGED_TAB_USERNAME is not set in the environment, so the deployed site is still using the default admin username. If you want a different admin user to see the extra Takeovers/Admin buttons, update PRIVILEGED_TAB_USERNAME in .env or your Vercel environment settings.');
+  }, 50);
 }
 
 function isReadOnlyDeployment() {
@@ -2919,6 +2934,7 @@ function loadBuildInfo() {
         el.title = 'Built: ' + meta.build_iso;
       }
       applyDeploymentMode(meta);
+      maybeShowPrivilegedUsernameReminder(meta);
     })
     .catch(function() {
       backendAvailable = !!inferReadOnlyDeployment();
@@ -2929,6 +2945,7 @@ function loadBuildInfo() {
           (isReadOnlyDeployment() ? ' · <strong>Mode</strong> Read-only' : '');
       }
       applyDeploymentMode(getEffectiveDeploymentMeta());
+      maybeShowPrivilegedUsernameReminder(getEffectiveDeploymentMeta());
       // Retry once on localhost — server may still be starting up
       if (!isReadOnlyDeployment()) {
         setTimeout(function() {

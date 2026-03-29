@@ -21,7 +21,9 @@ from server import (
 app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_SECRET_KEY", os.getenv("UNTAPPD_CLIENT_ID", "local_development_key"))
 PROXY_URL = "https://utpd-oauth.craftbeers.app/login"
-PRIVILEGED_TAB_USERNAME = os.getenv("PRIVILEGED_TAB_USERNAME", "lightbeerking").strip().lower()
+RAW_PRIVILEGED_TAB_USERNAME = os.getenv("PRIVILEGED_TAB_USERNAME", "")
+PRIVILEGED_TAB_USERNAME = (RAW_PRIVILEGED_TAB_USERNAME or "lightbeerking").strip().lower()
+PRIVILEGED_TAB_USERNAME_CONFIGURED = bool((RAW_PRIVILEGED_TAB_USERNAME or "").strip())
 DEPLOY_DATA_DIR = Path(PROJECT_DIR) / "data"
 DEPLOY_DATA_FILES = {
     "deploy_takeovers.json",
@@ -194,6 +196,7 @@ def read_only_status():
         "read_only": True,
         "current_user": meta.get("current_user"),
         "show_admin_tabs": meta.get("show_admin_tabs", False),
+        "privileged_tab_username_configured": meta.get("privileged_tab_username_configured", False),
     }
 
 
@@ -206,6 +209,7 @@ def get_meta_payload():
     current_user = get_current_username()
     meta["current_user"] = current_user or None
     meta["show_admin_tabs"] = current_user == PRIVILEGED_TAB_USERNAME
+    meta["privileged_tab_username_configured"] = PRIVILEGED_TAB_USERNAME_CONFIGURED
     return meta
 
 
