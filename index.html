@@ -764,7 +764,6 @@
 <script>
 // ═════════ Tab switching ═════════
 const ADMIN_PASSWORD = 'Wardy123';
-const PRIVILEGED_TAB_USERNAME = 'lightbeerking';
 const INLINE_DEPLOY_BUILD_LABEL = "20260329-093158";
 const INLINE_DEPLOY_TAKEOVERS = [
   {
@@ -2699,8 +2698,7 @@ function getEffectiveDeploymentMeta() {
 function canShowPrivilegedTabs(meta) {
   var effectiveMeta = meta || getEffectiveDeploymentMeta() || {};
   if (!effectiveMeta.read_only) return true;
-  var currentUser = String(effectiveMeta.current_user || '').trim().toLowerCase();
-  return !!effectiveMeta.show_admin_tabs || currentUser === PRIVILEGED_TAB_USERNAME;
+  return !!effectiveMeta.show_admin_tabs;
 }
 
 function isReadOnlyDeployment() {

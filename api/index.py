@@ -21,7 +21,7 @@ from server import (
 app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_SECRET_KEY", os.getenv("UNTAPPD_CLIENT_ID", "local_development_key"))
 PROXY_URL = "https://utpd-oauth.craftbeers.app/login"
-PRIVILEGED_TAB_USERNAME = "lightbeerking"
+PRIVILEGED_TAB_USERNAME = os.getenv("PRIVILEGED_TAB_USERNAME", "lightbeerking").strip().lower()
 DEPLOY_DATA_DIR = Path(PROJECT_DIR) / "data"
 DEPLOY_DATA_FILES = {
     "deploy_takeovers.json",
