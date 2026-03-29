@@ -161,7 +161,7 @@ For full collector/admin functionality, run the app locally.
    - `UNTAPPD_ACCESS_TOKEN`
    - `VENUE_ID=107565`
    - `VENUE_SLUG=hotel-sweeneys`
-   - `PRIVILEGED_TAB_USERNAME=lightbeerking` (optional; controls which logged-in user sees the extra `Takeovers` and `Admin` buttons)
+   - `PRIVILEGED_TAB_USERNAME=your_untappd_username` (optional but recommended; controls which logged-in user sees the extra `Takeovers` and `Admin` buttons)
    - `APP_VERSION=v1.0` (optional)
 
 4. Deploy
@@ -169,8 +169,9 @@ For full collector/admin functionality, run the app locally.
 ### Notes
 
 - On Vercel, the app automatically switches to **read-only mode**.
-- By default, only the Untappd user `lightbeerking` sees the extra `Takeovers` and `Admin` tab buttons.
-- You can change that user with the `PRIVILEGED_TAB_USERNAME` environment variable.
+- No fallback admin username is assumed for the deployed site.
+- Until `PRIVILEGED_TAB_USERNAME` is explicitly configured, no login sees the extra `Takeovers` and `Admin` tab buttons.
+- While that setting is missing, every logged-in user gets a reminder popup explaining that the real admin still needs to set `PRIVILEGED_TAB_USERNAME` in `.env` or in Vercel.
 - Everyone else still sees the simpler takeover page, but without the tab bar.
 - A scheduled GitHub Actions workflow can now refresh the deploy snapshots automatically, so the Vercel site no longer depends on a local machine staying online.
 - `data/deploy_takeovers.json` is the read-only snapshot consumed by the Vercel UI.

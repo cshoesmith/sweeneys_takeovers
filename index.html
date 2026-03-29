@@ -557,7 +557,7 @@
     <div class="title-copy">
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
-      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260327-104700</div>
+      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260329-212646</div>
     </div>
   </div>
   <div class="tab-bar">
@@ -764,7 +764,7 @@
 <script>
 // ═════════ Tab switching ═════════
 const ADMIN_PASSWORD = 'Wardy123';
-const INLINE_DEPLOY_BUILD_LABEL = "20260329-093158";
+const INLINE_DEPLOY_BUILD_LABEL = "20260329-212646";
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -2706,13 +2706,12 @@ function canShowPrivilegedTabs(meta) {
 function maybeShowPrivilegedUsernameReminder(meta) {
   var effectiveMeta = meta || getEffectiveDeploymentMeta() || {};
   if (!effectiveMeta.read_only) return;
-  if (!effectiveMeta.show_admin_tabs) return;
   if (effectiveMeta.privileged_tab_username_configured) return;
   if (sessionStorage.getItem(PRIVILEGED_TAB_USERNAME_REMINDER_KEY) === 'true') return;
 
   sessionStorage.setItem(PRIVILEGED_TAB_USERNAME_REMINDER_KEY, 'true');
   window.setTimeout(function() {
-    alert('Reminder: PRIVILEGED_TAB_USERNAME is not set in the environment, so the deployed site is still using the default admin username. If you want a different admin user to see the extra Takeovers/Admin buttons, update PRIVILEGED_TAB_USERNAME in .env or your Vercel environment settings.');
+    alert('Reminder: PRIVILEGED_TAB_USERNAME is not set in the environment, so no login is currently configured to see the extra Takeovers/Admin buttons. The real admin needs to set PRIVILEGED_TAB_USERNAME in .env or in the Vercel environment settings to enable those privileged tabs.');
   }, 50);
 }
 
