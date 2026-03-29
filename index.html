@@ -85,6 +85,50 @@
     font-family: 'Consolas','Monaco',monospace;
   }
   .header-meta strong { color: var(--text); font-weight: 700; }
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+  .session-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .session-user {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(15, 52, 96, 0.78);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .logout-btn {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.18);
+    color: var(--text);
+    padding: 0.45rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: all 0.15s;
+  }
+  .logout-btn:hover {
+    border-color: var(--accent);
+    color: white;
+    background: rgba(233, 69, 96, 0.14);
+  }
+  .logout-btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
 
   /* ── Tab bar ── */
   .tab-bar { display: flex; gap: 0.3rem; position: relative; z-index: 1; }
@@ -557,16 +601,22 @@
     <div class="title-copy">
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
-      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260329-212646</div>
+      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260329-213239</div>
     </div>
   </div>
-  <div class="tab-bar">
-    <button class="tab-btn active" data-tab="takeovers">
-      Takeovers
-    </button>
-    <button class="tab-btn locked" data-tab="fetcher" id="adminTabBtn">
-      <span id="adminTabLabel">Admin 🔒</span> <span class="indicator indicator-idle" id="fetcherIndicator"></span>
-    </button>
+  <div class="header-actions">
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="takeovers">
+        Takeovers
+      </button>
+      <button class="tab-btn locked" data-tab="fetcher" id="adminTabBtn">
+        <span id="adminTabLabel">Admin 🔒</span> <span class="indicator indicator-idle" id="fetcherIndicator"></span>
+      </button>
+    </div>
+    <div class="session-actions">
+      <span class="session-user" id="sessionUserBadge" hidden></span>
+      <button class="logout-btn" id="logoutBtn" type="button" onclick="logoutUser()">Logout</button>
+    </div>
   </div>
 </header>
 
@@ -764,7 +814,7 @@
 <script>
 // ═════════ Tab switching ═════════
 const ADMIN_PASSWORD = 'Wardy123';
-const INLINE_DEPLOY_BUILD_LABEL = "20260329-212646";
+const INLINE_DEPLOY_BUILD_LABEL = "20260329-213239";
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -2592,6 +2642,48 @@ function refreshAdminTabState() {
   }
 }
 
+function clearClientSessionState() {
+  adminUnlocked = false;
+  pendingAdminTab = null;
+  stopPolling();
+  sessionStorage.removeItem('sweeneysAdminUnlocked');
+  sessionStorage.removeItem(PRIVILEGED_TAB_USERNAME_REMINDER_KEY);
+}
+
+function updateSessionControls(meta) {
+  var effectiveMeta = meta || getEffectiveDeploymentMeta() || {};
+  var userBadge = document.getElementById('sessionUserBadge');
+  var logoutBtn = document.getElementById('logoutBtn');
+  if (userBadge) {
+    if (effectiveMeta.current_user) {
+      userBadge.hidden = false;
+      userBadge.textContent = '@' + effectiveMeta.current_user;
+    } else {
+      userBadge.hidden = true;
+      userBadge.textContent = '';
+    }
+  }
+  if (logoutBtn) {
+    logoutBtn.disabled = false;
+  }
+}
+
+function logoutUser() {
+  var logoutBtn = document.getElementById('logoutBtn');
+  if (logoutBtn) logoutBtn.disabled = true;
+  clearClientSessionState();
+  fetch('/auth/logout', {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' }
+  })
+    .catch(function() {
+      return null;
+    })
+    .finally(function() {
+      window.location.href = '/api/index.py';
+    });
+}
+
 function openAdminModal(tabName) {
   pendingAdminTab = tabName || 'fetcher';
   document.getElementById('adminModalBackdrop').classList.add('open');
@@ -2923,6 +3015,7 @@ function loadBuildInfo() {
     .then(function(meta) {
       backendAvailable = true;
       deploymentMeta = meta || null;
+      updateSessionControls(meta);
       var el = document.getElementById('buildInfo');
       if (!el) return;
       var version = meta.version || 'v1.0';
@@ -2938,6 +3031,7 @@ function loadBuildInfo() {
     .catch(function() {
       backendAvailable = !!inferReadOnlyDeployment();
       deploymentMeta = inferReadOnlyDeployment() ? getEffectiveDeploymentMeta() : null;
+      updateSessionControls(getEffectiveDeploymentMeta());
       var el = document.getElementById('buildInfo');
       if (el) {
         el.innerHTML = '<strong>Version</strong> v1.0 · <strong>Build</strong> ' + esc(getFallbackBuildLabel()) +
@@ -2953,6 +3047,7 @@ function loadBuildInfo() {
             .then(function(meta) {
               backendAvailable = true;
               deploymentMeta = meta || null;
+              updateSessionControls(meta);
               var el2 = document.getElementById('buildInfo');
               if (el2) {
                 var version = meta.version || 'v1.0';
