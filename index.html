@@ -589,7 +589,7 @@
     <div class="title-copy">
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
-      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260329-214307</div>
+      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260329-215725</div>
     </div>
   </div>
   <div class="header-actions">
@@ -723,8 +723,8 @@
             <input class="admin-modal-input" id="memberUsernameInput" type="text" placeholder="Untappd username (e.g. lightbeerking)">
             <div class="member-feedback" id="memberFeedback"></div>
             <div class="admin-modal-actions" style="margin-top:0.2rem">
-              <button class="btn" type="button" onclick="clearMemberForm()" style="background:var(--surface);color:var(--text)">Clear</button>
-              <button class="btn btn-start" type="button" onclick="submitMemberForm()">Save Member</button>
+              <button class="btn" id="clearMemberBtn" type="button" onclick="clearMemberForm()" style="background:var(--surface);color:var(--text)">Clear</button>
+              <button class="btn btn-start" id="saveMemberBtn" type="button" onclick="submitMemberForm()">Save Member</button>
             </div>
           </div>
         </div>
@@ -783,7 +783,7 @@
 
 <script>
 // ═════════ Tab switching ═════════
-const INLINE_DEPLOY_BUILD_LABEL = "20260329-214307";
+const INLINE_DEPLOY_BUILD_LABEL = "20260329-215725";
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -2587,7 +2587,7 @@ function setActiveTab(tabName) {
   if (tabName === 'takeovers') loadTakeovers();
   if (tabName === 'fetcher') {
     startPolling();
-    if (!isReadOnlyDeployment()) {
+    if (canReadAdminData()) {
       loadTrackedMembers();
     }
   }
@@ -2609,6 +2609,32 @@ function refreshAdminTabState() {
 function clearClientSessionState() {
   stopPolling();
   sessionStorage.removeItem(PRIVILEGED_TAB_USERNAME_REMINDER_KEY);
+}
+
+function refreshAdminReadOnlyControls() {
+  var readOnly = isReadOnlyDeployment();
+  var title = readOnly ? 'Read-only on Vercel. Edit locally and redeploy to change this.' : '';
+  var memberInput = document.getElementById('memberUsernameInput');
+  var clearMemberBtn = document.getElementById('clearMemberBtn');
+  var saveMemberBtn = document.getElementById('saveMemberBtn');
+  var enrichProfilesBtn = document.getElementById('enrichProfilesBtn');
+
+  if (memberInput) {
+    memberInput.disabled = readOnly;
+    memberInput.title = title;
+  }
+  if (clearMemberBtn) {
+    clearMemberBtn.disabled = readOnly;
+    clearMemberBtn.title = title;
+  }
+  if (saveMemberBtn) {
+    saveMemberBtn.disabled = readOnly;
+    saveMemberBtn.title = title;
+  }
+  if (enrichProfilesBtn) {
+    enrichProfilesBtn.disabled = readOnly;
+    enrichProfilesBtn.title = title;
+  }
 }
 
 function updateSessionControls(meta) {
@@ -2664,6 +2690,7 @@ let deploymentMeta = null;
 let trackedMembers = [];
 let pendingIncludes = {};
 let backendAvailable = true;
+let memberRefreshInterval = null;
 
 function localBackendRequiredMessage() {
   return 'Admin features need the local app server. Run: python server.py';
@@ -2671,6 +2698,17 @@ function localBackendRequiredMessage() {
 
 function hasLocalAdminBackend() {
   return !isReadOnlyDeployment() && backendAvailable;
+}
+
+function canReadAdminData() {
+  if (isReadOnlyDeployment()) {
+    return canShowPrivilegedTabs(getEffectiveDeploymentMeta());
+  }
+  return hasLocalAdminBackend();
+}
+
+function adminStatusPollIntervalMs() {
+  return isReadOnlyDeployment() ? 30000 : 2000;
 }
 
 function getFallbackBuildLabel() {
@@ -2750,18 +2788,31 @@ function renderLog() {
 }
 
 function startPolling() {
-  if (!hasLocalAdminBackend()) return;
+  if (!canReadAdminData()) return;
   if (pollInterval) return;
-  pollInterval = setInterval(pollStatus, 2000);
+  pollInterval = setInterval(pollStatus, adminStatusPollIntervalMs());
   pollStatus();
+  startMemberRefresh();
 }
 
 function stopPolling() {
   if (pollInterval) { clearInterval(pollInterval); pollInterval = null; }
+  if (memberRefreshInterval) { clearInterval(memberRefreshInterval); memberRefreshInterval = null; }
+}
+
+function startMemberRefresh() {
+  if (!canReadAdminData()) return;
+  if (!isReadOnlyDeployment()) return;
+  if (memberRefreshInterval) return;
+  memberRefreshInterval = setInterval(function() {
+    var fetcherTab = document.getElementById('tab-fetcher');
+    if (!fetcherTab || !fetcherTab.classList.contains('active')) return;
+    loadTrackedMembers(true);
+  }, 60000);
 }
 
 function pollStatus() {
-  if (!hasLocalAdminBackend()) return;
+  if (!canReadAdminData()) return;
   fetch('/api/status')
     .then(function(resp) { if (!resp.ok) throw new Error(); return resp.json(); })
     .then(function(s) { updateDashboard(s); })
@@ -2773,15 +2824,19 @@ function pollStatus() {
 function updateDashboard(s) {
   var prev = lastStatus;
   lastStatus = s;
+  var readOnly = !!(s && s.read_only);
 
   document.getElementById('statusMessage').textContent = s.message || statusLabel(s.status);
 
   var ind = document.getElementById('fetcherIndicator');
   ind.className = 'indicator indicator-' + s.status;
 
-  document.getElementById('btnStart').disabled = s.running;
-  document.getElementById('btnStop').disabled = !s.running;
-  document.getElementById('btnReset').disabled = s.running;
+  document.getElementById('btnStart').disabled = readOnly || s.running;
+  document.getElementById('btnStop').disabled = readOnly || !s.running;
+  document.getElementById('btnReset').disabled = readOnly || s.running;
+  document.getElementById('btnStart').title = readOnly ? 'Read-only on Vercel. Run the local app to collect more data.' : '';
+  document.getElementById('btnStop').title = readOnly ? 'Read-only on Vercel. Run the local app to control the collector.' : '';
+  document.getElementById('btnReset').title = readOnly ? 'Read-only on Vercel. Refresh snapshots locally or via GitHub Actions.' : '';
 
   document.getElementById('totalCheckins').textContent = s.total_checkins.toLocaleString();
   document.getElementById('batchesFetched').textContent = s.batches_fetched;
@@ -3004,6 +3059,7 @@ function applyDeploymentMode(meta) {
       }
     }
     refreshAdminTabState();
+    refreshAdminReadOnlyControls();
   } else {
     adminBtn.style.display = '';
     adminBtn.disabled = !backendAvailable;
@@ -3017,6 +3073,7 @@ function applyDeploymentMode(meta) {
       }
     }
     refreshAdminTabState();
+    refreshAdminReadOnlyControls();
   }
 }
 
@@ -3074,9 +3131,12 @@ function clearMemberForm() {
 function renderTrackedMembers() {
   var container = document.getElementById('memberListContainer');
   if (!container) return;
+  var readOnly = isReadOnlyDeployment();
 
   if (!trackedMembers.length) {
-    container.innerHTML = '<div class="member-empty">No members saved yet. Add an Untappd username here and we can use it later for takeover result tables and podium rankings.</div>';
+    container.innerHTML = '<div class="member-empty">' + (readOnly
+      ? 'No tracked members are bundled into this deployment yet.'
+      : 'No members saved yet. Add an Untappd username here and we can use it later for takeover result tables and podium rankings.') + '</div>';
     return;
   }
 
@@ -3089,6 +3149,12 @@ function renderTrackedMembers() {
     var savedIncluded = member.included !== false;
     var effectiveIncluded = member.username in pendingIncludes ? pendingIncludes[member.username] : savedIncluded;
     var isPending = member.username in pendingIncludes && pendingIncludes[member.username] !== savedIncluded;
+    var actionsHtml = readOnly
+      ? '<span class="member-handle">' + (effectiveIncluded ? 'included' : 'excluded') + '</span>' +
+        '<a class="member-profile-link" href="' + esc(profileUrl) + '" target="_blank" rel="noopener">Profile</a>'
+      : "<label class='member-toggle'><input type='checkbox' " + (effectiveIncluded ? "checked " : "") + "onchange='toggleMemberIncluded(" + JSON.stringify(member.username) + ", this.checked)'> Include</label>" +
+        '<a class="member-profile-link" href="' + esc(profileUrl) + '" target="_blank" rel="noopener">Profile</a>' +
+        "<button class='btn btn-stop btn-small' type='button' onclick='removeTrackedMember(" + JSON.stringify(member.username) + ")'>Remove</button>";
     return '<div class="member-row' + (effectiveIncluded ? '' : ' excluded') + (isPending ? ' pending' : '') + '">' +
       '<div class="member-row-main">' +
         avatarHtml +
@@ -3097,11 +3163,7 @@ function renderTrackedMembers() {
           '<div class="member-handle">@' + esc(member.username) + (effectiveIncluded ? '' : ' · excluded') + (isPending ? ' · unsaved' : '') + '</div>' +
         '</div>' +
       '</div>' +
-      '<div class="member-row-actions">' +
-        "<label class='member-toggle'><input type='checkbox' " + (effectiveIncluded ? "checked " : "") + "onchange='toggleMemberIncluded(" + JSON.stringify(member.username) + ", this.checked)'> Include</label>" +
-        '<a class="member-profile-link" href="' + esc(profileUrl) + '" target="_blank" rel="noopener">Profile</a>' +
-        "<button class='btn btn-stop btn-small' type='button' onclick='removeTrackedMember(" + JSON.stringify(member.username) + ")'>Remove</button>" +
-      '</div>' +
+      '<div class="member-row-actions">' + actionsHtml + '</div>' +
     '</div>';
   }).join('');
 
@@ -3109,6 +3171,10 @@ function renderTrackedMembers() {
 
   var saveBar = document.getElementById('memberSaveBar');
   if (saveBar) {
+    if (readOnly) {
+      saveBar.innerHTML = '<div class="member-save-bar"><span class="member-save-note">Read-only on Vercel. This list syncs from the deployed backend; edit locally and redeploy to change it.</span></div>';
+      return;
+    }
     var count = Object.keys(pendingIncludes).length;
     var note = hasPending ? count + ' unsaved change' + (count === 1 ? '' : 's') : 'No unsaved changes';
     var dis = hasPending ? '' : ' disabled';
@@ -3213,10 +3279,12 @@ function enrichMemberProfiles() {
 }
 
 function loadTrackedMembers() {
-  if (!hasLocalAdminBackend()) {
+  if (!canReadAdminData()) {
     trackedMembers = [];
     renderTrackedMembers();
-    setMemberFeedback(localBackendRequiredMessage(), 'error');
+    if (!isReadOnlyDeployment()) {
+      setMemberFeedback(localBackendRequiredMessage(), 'error');
+    }
     return Promise.resolve([]);
   }
   return fetch('/api/members')
@@ -3231,6 +3299,9 @@ function loadTrackedMembers() {
       trackedMembers = Array.isArray(data) ? data : [];
       pendingIncludes = {};
       renderTrackedMembers();
+      if (isReadOnlyDeployment()) {
+        setMemberFeedback('Tracked members loaded from the deployed backend. Changes still need to be made locally.', 'success');
+      }
       return trackedMembers;
     })
     .catch(function(err) {
@@ -4347,6 +4418,7 @@ function dismissBeerModal(event) {
 // ═════════ Init ═════════
 window.addEventListener('DOMContentLoaded', function() {
   refreshAdminTabState();
+  refreshAdminReadOnlyControls();
   loadBuildInfo().finally(function() {
     fetch('/api/cache-summary')
       .then(function(r) { return r.json(); })
@@ -4377,7 +4449,7 @@ window.addEventListener('DOMContentLoaded', function() {
     loadCurrentEvents();
     loadPastEvents();
     loadDeployBeerInfoSnapshot();
-    if (!isReadOnlyDeployment()) loadTrackedMembers();
+    if (canReadAdminData()) loadTrackedMembers();
   });
   ['memberUsernameInput'].forEach(function(id) {
     var input = document.getElementById(id);
