@@ -203,6 +203,8 @@ Add these repository secrets before enabling the workflow:
 - `UNTAPPD_CLIENT_ID` (optional fallback)
 - `UNTAPPD_CLIENT_SECRET` (optional fallback)
 
+The workflow now validates these credentials before it starts the refresh step, so a missing secret fails fast with a clear error instead of a vague snapshot-refresh failure.
+
 `VENUE_ID` is currently pinned to `107565` in `.github/workflows/refresh-deploy-snapshots.yml`.
 
 ### Manual refresh

@@ -52,6 +52,36 @@ INDEX_HTML_FILE = PROJECT_DIR / "index.html"
 OUTPUT_TAKEOVERS_FILE = PROJECT_DIR / "output" / "takeovers.json"
 
 
+def _has_real_secret(value: str | None) -> bool:
+    candidate = (value or "").strip()
+    if not candidate:
+        return False
+    lowered = candidate.lower()
+    return lowered not in {
+        "changeme",
+        "your_access_token_here",
+        "your-client-id",
+        "your-client-secret",
+        "replace-me",
+    }
+
+
+def ensure_refresh_auth_configured():
+    has_access_token = _has_real_secret(os.getenv("UNTAPPD_ACCESS_TOKEN"))
+    has_client_id = _has_real_secret(os.getenv("UNTAPPD_CLIENT_ID"))
+    has_client_secret = _has_real_secret(os.getenv("UNTAPPD_CLIENT_SECRET"))
+
+    if has_access_token:
+        return "UNTAPPD_ACCESS_TOKEN"
+    if has_client_id and has_client_secret:
+        return "UNTAPPD_CLIENT_ID/UNTAPPD_CLIENT_SECRET"
+
+    raise RuntimeError(
+        "Untappd refresh auth is not configured. Set UNTAPPD_ACCESS_TOKEN, or both "
+        "UNTAPPD_CLIENT_ID and UNTAPPD_CLIENT_SECRET. In GitHub Actions, add them as repository secrets."
+    )
+
+
 def write_json(path: Path, payload):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -151,6 +181,8 @@ def refresh_snapshots(skip_fetch=False, skip_beer_refresh=False, since_date=None
     build_unix = int(datetime.now(timezone.utc).timestamp())
 
     if not skip_fetch:
+        auth_source = ensure_refresh_auth_configured()
+        print(f"Using Untappd auth via {auth_source}.")
         print(f"Fetching latest checkins for venue {venue_id}...")
         fetch_checkins.fetch_checkins(venue_id, since_date=since_date)
     else:

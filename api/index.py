@@ -175,18 +175,19 @@ def oauth_callback():
 
 
 def read_only_status():
+    summary = get_cache_summary_data()
     meta = get_meta_payload()
     return {
         "running": False,
         "status": "idle",
-        "total_checkins": get_cache_summary_data().get("total_checkins", 0),
+        "total_checkins": summary.get("total_checkins", 0),
         "batches_fetched": 0,
         "rate_limit_remaining": None,
         "rate_limit_total": 100,
         "errors_400": 0,
         "errors_other": 0,
-        "oldest_date": get_cache_summary_data().get("oldest_date"),
-        "newest_date": get_cache_summary_data().get("newest_date"),
+        "oldest_date": summary.get("oldest_date"),
+        "newest_date": summary.get("newest_date"),
         "target_date": "",
         "next_request_in": 0,
         "throttle_remaining": 0,
@@ -204,6 +205,9 @@ def read_only_status():
         "current_user": meta.get("current_user"),
         "show_admin_tabs": meta.get("show_admin_tabs", False),
         "privileged_tab_username_configured": meta.get("privileged_tab_username_configured", False),
+        "cache_refreshed_at": summary.get("refreshed_at"),
+        "cache_refreshed_at_unix": summary.get("refreshed_at_unix"),
+        "cache_refresh_source": summary.get("refresh_source"),
     }
 
 

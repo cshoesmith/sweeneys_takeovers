@@ -36,6 +36,22 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Validate Untappd refresh credentials
+        shell: bash
+        run: |
+          if [[ -n "${UNTAPPD_ACCESS_TOKEN}" ]]; then
+            echo "Using UNTAPPD_ACCESS_TOKEN for scheduled refreshes."
+            exit 0
+          fi
+
+          if [[ -n "${UNTAPPD_CLIENT_ID}" && -n "${UNTAPPD_CLIENT_SECRET}" ]]; then
+            echo "Using UNTAPPD_CLIENT_ID and UNTAPPD_CLIENT_SECRET for scheduled refreshes."
+            exit 0
+          fi
+
+          echo "::error::Missing Untappd credentials. Configure UNTAPPD_ACCESS_TOKEN, or both UNTAPPD_CLIENT_ID and UNTAPPD_CLIENT_SECRET, in repository secrets."
+          exit 1
+
       - name: Refresh deploy snapshots
         run: python refresh_deploy_snapshots.py
 

@@ -94,6 +94,38 @@ def get_snapshot_refresh_unix(snapshot=None):
             return build_label
     return get_inline_deploy_build_unix()
 
+
+def get_cache_refresh_metadata(snapshot=None, use_local_cache_file=True):
+    snapshot = snapshot if isinstance(snapshot, dict) else load_json_file(DEPLOY_CACHE_SUMMARY_FILE)
+
+    refresh_unix = None
+    refresh_source = None
+
+    if use_local_cache_file and not IS_VERCEL and CACHE_FILE.exists():
+        try:
+            refresh_unix = int(CACHE_FILE.stat().st_mtime)
+            refresh_source = "local-cache-file"
+        except OSError:
+            refresh_unix = None
+
+    if refresh_unix is None:
+        refresh_unix = get_snapshot_refresh_unix(snapshot)
+        if isinstance(snapshot, dict):
+            refresh_source = snapshot.get("refresh_source") or refresh_source
+
+    refresh_iso = None
+    build_label = None
+    if refresh_unix:
+        refresh_iso = datetime.fromtimestamp(refresh_unix, tz=timezone.utc).isoformat()
+        build_label = str(refresh_unix)
+
+    return {
+        "refreshed_at_unix": refresh_unix,
+        "refreshed_at": refresh_iso,
+        "build_label": build_label,
+        "refresh_source": refresh_source or ("github-actions" if IS_VERCEL else "unknown"),
+    }
+
 def mask_token(msg):
     """Remove access tokens from error messages."""
     return re.sub(r'access_token=[A-Za-z0-9]+', 'access_token=***', str(msg))
@@ -154,20 +186,20 @@ def load_json_file(path):
 def get_cache_summary_data():
     cache = load_cache()
     checkins = cache.get("checkins", [])
+    snapshot = load_json_file(DEPLOY_CACHE_SUMMARY_FILE)
     if not checkins:
-        snapshot = load_json_file(DEPLOY_CACHE_SUMMARY_FILE)
         if isinstance(snapshot, dict):
-            fallback_refresh_unix = get_snapshot_refresh_unix(snapshot)
-            if fallback_refresh_unix and not snapshot.get("refreshed_at_unix"):
-                snapshot["refreshed_at_unix"] = fallback_refresh_unix
-            if fallback_refresh_unix and not snapshot.get("refreshed_at"):
-                snapshot["refreshed_at"] = datetime.fromtimestamp(fallback_refresh_unix, tz=timezone.utc).isoformat()
-            if fallback_refresh_unix and not snapshot.get("build_label"):
-                snapshot["build_label"] = str(fallback_refresh_unix)
-            snapshot.setdefault("refresh_source", "github-actions" if IS_VERCEL else "deploy-snapshot")
+            refresh_metadata = get_cache_refresh_metadata(snapshot, use_local_cache_file=False)
+            if refresh_metadata.get("refreshed_at_unix") and not snapshot.get("refreshed_at_unix"):
+                snapshot["refreshed_at_unix"] = refresh_metadata["refreshed_at_unix"]
+            if refresh_metadata.get("refreshed_at") and not snapshot.get("refreshed_at"):
+                snapshot["refreshed_at"] = refresh_metadata["refreshed_at"]
+            if refresh_metadata.get("build_label") and not snapshot.get("build_label"):
+                snapshot["build_label"] = refresh_metadata["build_label"]
+            snapshot.setdefault("refresh_source", refresh_metadata.get("refresh_source") or ("github-actions" if IS_VERCEL else "deploy-snapshot"))
             snapshot.setdefault("has_token", get_access_token() is not None)
             return snapshot
-    return {
+    summary = {
         "venue_id": cache.get("venue_id"),
         "total_checkins": len(checkins),
         "oldest_checkin_id": cache.get("oldest_checkin_id"),
@@ -175,6 +207,8 @@ def get_cache_summary_data():
         "newest_date": checkins[0]["created_at"] if checkins else None,
         "has_token": get_access_token() is not None,
     }
+    summary.update(get_cache_refresh_metadata(snapshot, use_local_cache_file=bool(checkins)))
+    return summary
 
 
 def normalize_access_username(value):
@@ -1191,6 +1225,7 @@ class FetcherState:
 
     def to_dict(self):
         with self.lock:
+            cache_summary = get_cache_summary_data()
             now = time.time()
             next_req = 0
             if self.next_request_at and self.running:
@@ -1228,6 +1263,9 @@ class FetcherState:
                 "last_analysis_error": self.last_analysis_error,
                 "last_run_mode": self.last_run_mode,
                 "error_history": list(self.error_history),
+                "cache_refreshed_at": cache_summary.get("refreshed_at"),
+                "cache_refreshed_at_unix": cache_summary.get("refreshed_at_unix"),
+                "cache_refresh_source": cache_summary.get("refresh_source"),
             }
 
     def reset(self):

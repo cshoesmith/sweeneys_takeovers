@@ -684,15 +684,15 @@
         </div>
         <div class="date-range" style="margin-top:0.6rem">
           <div class="dr-item">
-            <div class="dr-label">Newest</div>
+            <div class="dr-label">Latest Cached Checkin</div>
             <div class="dr-value" id="newestDate">—</div>
           </div>
           <div class="dr-item">
-            <div class="dr-label">Oldest Fetched</div>
+            <div class="dr-label">Oldest Cached Checkin</div>
             <div class="dr-value" id="oldestDate">—</div>
           </div>
           <div class="dr-item">
-            <div class="dr-label">Target</div>
+            <div class="dr-label">Target Cutoff</div>
             <div class="dr-value" id="targetDate">—</div>
           </div>
         </div>
@@ -702,12 +702,12 @@
         <h3>Cache Health</h3>
         <div class="counter-row">
           <div class="counter">
-            <div class="counter-value" id="cacheNewestDate">—</div>
-            <div class="counter-label">Newest Cache Date</div>
+            <div class="counter-value" id="cacheRefreshDate">—</div>
+            <div class="counter-label">Last Successful Refresh</div>
           </div>
           <div class="counter">
-            <div class="counter-value" id="cacheOldestDate">—</div>
-            <div class="counter-label">Oldest Cache Date</div>
+            <div class="counter-value" id="cacheNewestDate">—</div>
+            <div class="counter-label">Latest Cached Checkin</div>
           </div>
         </div>
       </div>
@@ -784,7 +784,7 @@
 
 <script>
 // ═════════ Tab switching ═════════
-const INLINE_DEPLOY_BUILD_LABEL = "1774783287";
+const INLINE_DEPLOY_BUILD_LABEL = "1774784224";
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -2527,12 +2527,12 @@ const INLINE_DEPLOY_CACHE_SUMMARY = {
   "oldest_date": "Fri, 06 Mar 2026 02:11:58 +0000",
   "newest_date": "Sat, 28 Mar 2026 08:59:27 +0000",
   "has_token": false,
-  "error_history": [],
-  "refreshed_at": "2026-03-29T11:21:27+00:00",
-  "refreshed_at_unix": 1774783287,
-  "build_label": "1774783287",
-  "latest_checkin_at": "Sat, 28 Mar 2026 08:59:27 +0000",
+  "refreshed_at_unix": 1774784224,
+  "refreshed_at": "2026-03-29T11:37:04+00:00",
+  "build_label": "1774784224",
   "refresh_source": "manual-refresh-script",
+  "error_history": [],
+  "latest_checkin_at": "Sat, 28 Mar 2026 08:59:27 +0000",
   "warning_after_minutes": 90,
   "stale_after_minutes": 180
 };
@@ -2895,8 +2895,8 @@ function updateDashboard(s) {
   updateErrorTooltips(s);
 
   document.getElementById('newestDate').textContent = formatAdminDateTime(s.newest_date) || '—';
+  document.getElementById('cacheRefreshDate').textContent = formatAdminDateTime(s.cache_refreshed_at) || '—';
   document.getElementById('cacheNewestDate').textContent = formatAdminDateTime(s.newest_date) || '—';
-  document.getElementById('cacheOldestDate').textContent = formatAdminDateTime(s.oldest_date) || '—';
 
   // Last request URL
   var urlEl = document.getElementById('lastRequestUrl');
@@ -3050,6 +3050,18 @@ function formatAdminDateTime(dateStr) {
     });
   } catch (e) {
     return dateStr;
+  }
+}
+
+function updateCacheSummaryDashboard(summary) {
+  if (!summary || typeof summary !== 'object') return;
+  var refreshEl = document.getElementById('cacheRefreshDate');
+  if (refreshEl) {
+    refreshEl.textContent = formatAdminDateTime(summary.refreshed_at) || '—';
+  }
+  var latestCheckinEl = document.getElementById('cacheNewestDate');
+  if (latestCheckinEl) {
+    latestCheckinEl.textContent = formatAdminDateTime(summary.newest_date || summary.latest_checkin_at) || '—';
   }
 }
 
@@ -4491,6 +4503,7 @@ window.addEventListener('DOMContentLoaded', function() {
       .then(function(r) { return r.json(); })
       .then(function(data) {
         updateFreshnessInfo(data);
+        updateCacheSummaryDashboard(data);
         if (data.total_checkins > 0) {
           addLog('Cache: ' + data.total_checkins + ' checkins, ' + shortDate(data.oldest_date) + ' → ' + shortDate(data.newest_date), 'success');
         } else if (isReadOnlyDeployment()) {
@@ -4506,6 +4519,7 @@ window.addEventListener('DOMContentLoaded', function() {
         loadCacheSummarySnapshot()
           .then(function(data) {
             updateFreshnessInfo(data);
+            updateCacheSummaryDashboard(data);
             addLog('Snapshot cache: ' + data.total_checkins + ' checkins, ' + shortDate(data.oldest_date) + ' → ' + shortDate(data.newest_date), 'success');
           })
           .catch(function() {
