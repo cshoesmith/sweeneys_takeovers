@@ -764,6 +764,7 @@
 <script>
 // ═════════ Tab switching ═════════
 const ADMIN_PASSWORD = 'Wardy123';
+const PRIVILEGED_TAB_USERNAME = 'lightbeerking';
 const INLINE_DEPLOY_BUILD_LABEL = "20260329-093158";
 const INLINE_DEPLOY_TAKEOVERS = [
   {
@@ -2689,8 +2690,17 @@ function getEffectiveDeploymentMeta() {
     build_label: INLINE_DEPLOY_BUILD_LABEL,
     read_only: true,
     deployment_target: 'remote',
-    supports_collector: false
+    supports_collector: false,
+    current_user: null,
+    show_admin_tabs: false
   };
+}
+
+function canShowPrivilegedTabs(meta) {
+  var effectiveMeta = meta || getEffectiveDeploymentMeta() || {};
+  if (!effectiveMeta.read_only) return true;
+  var currentUser = String(effectiveMeta.current_user || '').trim().toLowerCase();
+  return !!effectiveMeta.show_admin_tabs || currentUser === PRIVILEGED_TAB_USERNAME;
 }
 
 function isReadOnlyDeployment() {
@@ -2951,13 +2961,20 @@ function applyDeploymentMode(meta) {
   var adminLabel = document.getElementById('adminTabLabel');
   var effectiveMeta = meta || getEffectiveDeploymentMeta();
   if (!adminBtn || !effectiveMeta) return;
+  var showPrivilegedTabs = canShowPrivilegedTabs(effectiveMeta);
   if (effectiveMeta.read_only) {
-    adminBtn.style.display = 'none';
-    adminBtn.disabled = true;
-    if (takeoversBtn) takeoversBtn.style.display = 'none';
-    if (tabBar) tabBar.style.display = 'none';
-    adminUnlocked = false;
-    sessionStorage.removeItem('sweeneysAdminUnlocked');
+    adminBtn.style.display = showPrivilegedTabs ? '' : 'none';
+    adminBtn.disabled = !showPrivilegedTabs;
+    if (takeoversBtn) takeoversBtn.style.display = showPrivilegedTabs ? '' : 'none';
+    if (tabBar) tabBar.style.display = showPrivilegedTabs ? '' : 'none';
+    if (!showPrivilegedTabs) {
+      adminUnlocked = false;
+      sessionStorage.removeItem('sweeneysAdminUnlocked');
+      if (document.getElementById('tab-fetcher').classList.contains('active')) {
+        setActiveTab('takeovers');
+      }
+    }
+    refreshAdminTabState();
   } else {
     adminBtn.style.display = '';
     adminBtn.disabled = !backendAvailable;

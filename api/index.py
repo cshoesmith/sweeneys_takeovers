@@ -21,6 +21,7 @@ from server import (
 app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_SECRET_KEY", os.getenv("UNTAPPD_CLIENT_ID", "local_development_key"))
 PROXY_URL = "https://utpd-oauth.craftbeers.app/login"
+PRIVILEGED_TAB_USERNAME = "lightbeerking"
 DEPLOY_DATA_DIR = Path(PROJECT_DIR) / "data"
 DEPLOY_DATA_FILES = {
     "deploy_takeovers.json",
@@ -165,7 +166,7 @@ def oauth_callback():
 
 
 def read_only_status():
-    meta = get_build_info()
+    meta = get_meta_payload()
     return {
         "running": False,
         "status": "idle",
@@ -191,7 +192,21 @@ def read_only_status():
         "last_run_mode": "",
         "deployment_target": meta.get("deployment_target"),
         "read_only": True,
+        "current_user": meta.get("current_user"),
+        "show_admin_tabs": meta.get("show_admin_tabs", False),
     }
+
+
+def get_current_username() -> str:
+    return str(session.get("untappd_user") or "").strip().lower()
+
+
+def get_meta_payload():
+    meta = dict(get_build_info())
+    current_user = get_current_username()
+    meta["current_user"] = current_user or None
+    meta["show_admin_tabs"] = current_user == PRIVILEGED_TAB_USERNAME
+    return meta
 
 
 @app.get("/")
@@ -214,7 +229,7 @@ def api_status():
 
 @app.get("/api/meta")
 def api_meta():
-    return jsonify(get_build_info())
+    return jsonify(get_meta_payload())
 
 
 @app.get("/api/cache-summary")
