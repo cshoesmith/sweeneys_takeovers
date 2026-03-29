@@ -118,7 +118,7 @@ def replace_inline_constant(source_text: str, constant_name: str, js_literal: st
         re.S,
     )
     replacement = f"const {constant_name} = {js_literal};\n"
-    updated_text, replacements = pattern.subn(replacement, source_text, count=1)
+    updated_text, replacements = pattern.subn(lambda _match: replacement, source_text, count=1)
     if replacements != 1:
         raise RuntimeError(f"Could not update inline constant {constant_name}")
     return updated_text
