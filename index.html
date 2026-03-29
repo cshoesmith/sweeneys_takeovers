@@ -590,7 +590,7 @@
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
       <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> loading…</div>
-      <div class="header-meta" id="freshnessInfo"><strong>Snapshot</strong> checking…</div>
+      <div class="header-meta" id="freshnessInfo"><strong>Last successful GitHub Actions refresh</strong> checking…</div>
     </div>
   </div>
   <div class="header-actions">
@@ -2751,23 +2751,36 @@ function getSummaryRefreshUnix(summary) {
   return Math.floor(parsed / 1000);
 }
 
+function getRefreshSourceLabel(summary) {
+  var source = String((summary && summary.refresh_source) || '').trim().toLowerCase();
+  if (source === 'github-actions') return 'GitHub Actions refresh';
+  if (source === 'manual') return 'manual refresh';
+  if (source) {
+    return source.replace(/[-_]+/g, ' ').replace(/\b\w/g, function(chr) { return chr.toUpperCase(); }) + ' refresh';
+  }
+  return 'snapshot refresh';
+}
+
 function updateFreshnessInfo(summary) {
   var el = document.getElementById('freshnessInfo');
   if (!el) return;
 
+  var sourceLabel = getRefreshSourceLabel(summary);
+  var sourceHeading = sourceLabel.charAt(0).toUpperCase() + sourceLabel.slice(1);
+
   if (!summary) {
-    el.innerHTML = '<strong>Snapshot</strong> status unknown';
+    el.innerHTML = '<strong>Last successful refresh</strong> status unknown';
     el.style.color = 'var(--text-dim)';
-    el.title = 'Snapshot freshness metadata unavailable.';
+    el.title = 'Refresh freshness metadata unavailable.';
     return;
   }
 
   var refreshedUnix = getSummaryRefreshUnix(summary);
   var latestCheckin = summary.latest_checkin_at || summary.newest_date || '';
   if (!refreshedUnix) {
-    el.innerHTML = '<strong>Snapshot</strong> status unknown' + (latestCheckin ? ' · <strong>Latest checkin</strong> ' + esc(shortDate(latestCheckin)) : '');
+    el.innerHTML = '<strong>Last successful ' + esc(sourceLabel) + '</strong> status unknown' + (latestCheckin ? ' · <strong>Latest checkin</strong> ' + esc(shortDate(latestCheckin)) : '');
     el.style.color = 'var(--text-dim)';
-    el.title = 'Snapshot freshness metadata unavailable.';
+    el.title = 'Refresh freshness metadata unavailable.';
     return;
   }
 
@@ -2784,11 +2797,11 @@ function updateFreshnessInfo(summary) {
     color = 'var(--orange)';
   }
 
-  el.innerHTML = '<strong>Snapshot</strong> ' + esc(state) + ' · <strong>Checked</strong> ' + esc(formatFreshnessAge(ageMinutes)) + ' ago' +
+  el.innerHTML = '<strong>Last successful ' + esc(sourceLabel) + '</strong> ' + esc(formatFreshnessAge(ageMinutes)) + ' ago · <strong>Status</strong> ' + esc(state) +
     (latestCheckin ? ' · <strong>Latest checkin</strong> ' + esc(shortDate(latestCheckin)) : '');
   el.style.color = color;
   el.title = [
-    'Last successful snapshot refresh: ' + (summary.refreshed_at || new Date(refreshedUnix * 1000).toISOString()),
+    'Last successful ' + sourceHeading + ': ' + (summary.refreshed_at || new Date(refreshedUnix * 1000).toISOString()),
     latestCheckin ? 'Latest checkin in snapshot: ' + latestCheckin : '',
     summary.refresh_source ? 'Refresh source: ' + summary.refresh_source : ''
   ].filter(Boolean).join('\n');
