@@ -172,6 +172,7 @@ For full collector/admin functionality, run the app locally.
 - No fallback admin username is assumed for the deployed site.
 - Until `PRIVILEGED_TAB_USERNAME` is explicitly configured, no login sees the extra `Takeovers` and `Admin` tab buttons.
 - While that setting is missing, every logged-in user gets a reminder popup explaining that the real admin still needs to set `PRIVILEGED_TAB_USERNAME` in `.env` or in Vercel.
+- Once a user can see the `Admin` tab, there is no separate frontend password prompt; `PRIVILEGED_TAB_USERNAME` is the gate for the deployed site.
 - Everyone else still sees the simpler takeover page, but without the tab bar.
 - A scheduled GitHub Actions workflow can now refresh the deploy snapshots automatically, so the Vercel site no longer depends on a local machine staying online.
 - `data/deploy_takeovers.json` is the read-only snapshot consumed by the Vercel UI.

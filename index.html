@@ -460,18 +460,6 @@
     border-radius: 8px; padding: 0.75rem 0.85rem;
   }
   .beer-modal-loading { color: var(--text-dim); font-size: 0.9rem; }
-  .admin-modal {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
-    width: min(420px, 100%); box-shadow: 0 12px 40px rgba(0,0,0,0.4); overflow: hidden;
-  }
-  .admin-modal-body { padding: 1rem 1.2rem 1.2rem; }
-  .admin-modal-body p { color: var(--text-dim); font-size: 0.9rem; line-height: 1.5; margin-bottom: 0.9rem; }
-  .admin-modal-input {
-    width: 100%; background: var(--card); border: 1px solid var(--border); color: var(--text);
-    padding: 0.7rem 0.8rem; border-radius: 8px; font-size: 0.95rem;
-  }
-  .admin-modal-input:focus { outline: none; border-color: var(--accent); }
-  .admin-modal-error { min-height: 1.2rem; margin-top: 0.65rem; color: var(--orange); font-size: 0.85rem; }
   .admin-modal-actions { display: flex; justify-content: flex-end; gap: 0.6rem; margin-top: 1rem; }
   .member-form { display: grid; gap: 0.75rem; }
   .member-form-help { color: var(--text-dim); font-size: 0.82rem; line-height: 1.45; }
@@ -601,7 +589,7 @@
     <div class="title-copy">
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
-      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260329-213239</div>
+      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260329-213911</div>
     </div>
   </div>
   <div class="header-actions">
@@ -793,28 +781,9 @@
   </div>
 </div>
 
-<div class="modal-backdrop" id="adminModalBackdrop" onclick="dismissAdminModal(event)">
-  <div class="admin-modal" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
-    <div class="beer-modal-header">
-      <div class="beer-modal-title" id="adminModalTitle">Admin access</div>
-      <button class="beer-modal-close" onclick="closeAdminModal()" aria-label="Close">&times;</button>
-    </div>
-    <div class="admin-modal-body">
-      <p>Enter the admin password to open the collector dashboard.</p>
-      <input type="password" id="adminPasswordInput" class="admin-modal-input" placeholder="Password" autocomplete="current-password">
-      <div class="admin-modal-error" id="adminModalError"></div>
-      <div class="admin-modal-actions">
-        <button class="btn" type="button" onclick="closeAdminModal()" style="background:var(--surface);color:var(--text)">Cancel</button>
-        <button class="btn btn-start" type="button" onclick="submitAdminUnlock()">Unlock</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script>
 // ═════════ Tab switching ═════════
-const ADMIN_PASSWORD = 'Wardy123';
-const INLINE_DEPLOY_BUILD_LABEL = "20260329-213239";
+const INLINE_DEPLOY_BUILD_LABEL = "20260329-213911";
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -2600,8 +2569,6 @@ const INLINE_DEPLOY_CACHE_SUMMARY = {
   "has_token": false,
   "error_history": []
 };
-let adminUnlocked = sessionStorage.getItem('sweeneysAdminUnlocked') === 'true';
-let pendingAdminTab = null;
 const PRIVILEGED_TAB_USERNAME_REMINDER_KEY = 'privilegedTabUsernameReminderShown';
 
 function cloneInlineData(data) {
@@ -2618,9 +2585,11 @@ function setActiveTab(tabName) {
   if (page) page.classList.add('active');
 
   if (tabName === 'takeovers') loadTakeovers();
-  if (tabName === 'fetcher' && adminUnlocked) {
+  if (tabName === 'fetcher') {
     startPolling();
-    loadTrackedMembers();
+    if (!isReadOnlyDeployment()) {
+      loadTrackedMembers();
+    }
   }
 }
 
@@ -2633,20 +2602,12 @@ function refreshAdminTabState() {
     if (adminLabel) adminLabel.textContent = 'Admin (start local server)';
     return;
   }
-  if (adminUnlocked) {
-    adminBtn.classList.remove('locked');
-    if (adminLabel) adminLabel.textContent = 'Admin';
-  } else {
-    adminBtn.classList.add('locked');
-    if (adminLabel) adminLabel.textContent = 'Admin 🔒';
-  }
+  adminBtn.classList.remove('locked');
+  if (adminLabel) adminLabel.textContent = 'Admin';
 }
 
 function clearClientSessionState() {
-  adminUnlocked = false;
-  pendingAdminTab = null;
   stopPolling();
-  sessionStorage.removeItem('sweeneysAdminUnlocked');
   sessionStorage.removeItem(PRIVILEGED_TAB_USERNAME_REMINDER_KEY);
 }
 
@@ -2684,49 +2645,10 @@ function logoutUser() {
     });
 }
 
-function openAdminModal(tabName) {
-  pendingAdminTab = tabName || 'fetcher';
-  document.getElementById('adminModalBackdrop').classList.add('open');
-  document.getElementById('adminModalError').textContent = '';
-  var input = document.getElementById('adminPasswordInput');
-  input.value = '';
-  window.setTimeout(function() { input.focus(); }, 0);
-}
-
-function closeAdminModal() {
-  document.getElementById('adminModalBackdrop').classList.remove('open');
-  document.getElementById('adminModalError').textContent = '';
-}
-
-function dismissAdminModal(event) {
-  if (event.target.id === 'adminModalBackdrop') closeAdminModal();
-}
-
-function submitAdminUnlock() {
-  var input = document.getElementById('adminPasswordInput');
-  var error = document.getElementById('adminModalError');
-  if (input.value !== ADMIN_PASSWORD) {
-    error.textContent = 'Incorrect password.';
-    input.focus();
-    input.select();
-    return;
-  }
-  adminUnlocked = true;
-  sessionStorage.setItem('sweeneysAdminUnlocked', 'true');
-  refreshAdminTabState();
-  closeAdminModal();
-  addLog('Admin unlocked for this session.', 'success');
-  setActiveTab(pendingAdminTab || 'fetcher');
-}
-
 document.querySelectorAll('.tab-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
     if (btn.dataset.tab === 'fetcher' && !hasLocalAdminBackend() && !isReadOnlyDeployment()) {
       addLog(localBackendRequiredMessage(), 'error');
-      return;
-    }
-    if (btn.dataset.tab === 'fetcher' && !adminUnlocked) {
-      openAdminModal(btn.dataset.tab);
       return;
     }
     setActiveTab(btn.dataset.tab);
@@ -3077,8 +2999,6 @@ function applyDeploymentMode(meta) {
     if (takeoversBtn) takeoversBtn.style.display = showPrivilegedTabs ? '' : 'none';
     if (tabBar) tabBar.style.display = showPrivilegedTabs ? '' : 'none';
     if (!showPrivilegedTabs) {
-      adminUnlocked = false;
-      sessionStorage.removeItem('sweeneysAdminUnlocked');
       if (document.getElementById('tab-fetcher').classList.contains('active')) {
         setActiveTab('takeovers');
       }
@@ -3091,8 +3011,6 @@ function applyDeploymentMode(meta) {
     if (takeoversBtn) takeoversBtn.style.display = '';
     if (tabBar) tabBar.style.display = '';
     if (!backendAvailable) {
-      adminUnlocked = false;
-      sessionStorage.removeItem('sweeneysAdminUnlocked');
       if (adminLabel) adminLabel.textContent = 'Admin (start local server)';
       if (document.getElementById('tab-fetcher').classList.contains('active')) {
         setActiveTab('takeovers');
@@ -4461,10 +4379,6 @@ window.addEventListener('DOMContentLoaded', function() {
     loadDeployBeerInfoSnapshot();
     if (!isReadOnlyDeployment()) loadTrackedMembers();
   });
-  document.getElementById('adminPasswordInput').addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') submitAdminUnlock();
-    if (event.key === 'Escape') closeAdminModal();
-  });
   ['memberUsernameInput'].forEach(function(id) {
     var input = document.getElementById(id);
     if (!input) return;
@@ -4477,7 +4391,6 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 
   loadTakeovers();
-  if (adminUnlocked) startPolling();
 });
 </script>
 </body>
