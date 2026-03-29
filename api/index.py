@@ -3,15 +3,16 @@ import requests
 from pathlib import Path
 from urllib.parse import urlencode
 
-from flask import Flask, jsonify, send_file, session, redirect, request, render_template_string
+from flask import Flask, abort, jsonify, send_file, send_from_directory, session, redirect, request, render_template_string
 
 from server import (
     PROJECT_DIR,
     get_beer_info,
     get_build_info,
     get_cache_summary_data,
-    load_members_data,
     load_current_events_data,
+    load_allowed_login_usernames,
+    load_members_data,
     load_past_events_data,
     load_takeover_data,
     mask_token,
@@ -20,6 +21,15 @@ from server import (
 app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_SECRET_KEY", os.getenv("UNTAPPD_CLIENT_ID", "local_development_key"))
 PROXY_URL = "https://utpd-oauth.craftbeers.app/login"
+DEPLOY_DATA_DIR = Path(PROJECT_DIR) / "data"
+DEPLOY_DATA_FILES = {
+    "deploy_takeovers.json",
+    "deploy_beer_info.json",
+    "deploy_cache_summary.json",
+    "deploy_current_events.json",
+    "deploy_past_events.json",
+    "deploy_allowed_users.json",
+}
 
 HTML_LOGIN_TEMPLATE = """
 <!DOCTYPE html>
@@ -42,7 +52,7 @@ HTML_LOGIN_TEMPLATE = """
 <body>
   <div class="login-card">
     <h1>Members Area</h1>
-    <p>Please log in with Untappd to verify your active membership status and view tap takeover history.</p>
+        <p>Please log in with Untappd to verify customer access and view tap takeover history.</p>
     {% if error %}
     <div class="error">{{ error }}</div>
     {% endif %}
@@ -139,19 +149,15 @@ def oauth_callback():
         if resp.ok:
             data = resp.json()
             username = data["response"]["user"]["user_name"].lower()
-            
-            # Verify user is an included/active member
-            members = load_members_data()
-            is_active_member = any(
-                (m.get("username", m.get("user", "")).lower() == username) and m.get("included", True) 
-                for m in members
-            )
-            
-            if is_active_member or username == "mw1414":
+
+            allowed_usernames = load_allowed_login_usernames()
+
+            if username in allowed_usernames:
                 session["untappd_user"] = username
                 return redirect("/")
             else:
-                return render_template_string(HTML_LOGIN_TEMPLATE, error=f"User @{username} is not enabled in the current members list. Access denied.")
+                session.pop("untappd_user", None)
+                return render_template_string(HTML_LOGIN_TEMPLATE, error="Access Denied - Website access limited to customers")
         else:
             return render_template_string(HTML_LOGIN_TEMPLATE, error="Failed to verify token with Untappd API.")
     except Exception as e:
@@ -191,6 +197,14 @@ def read_only_status():
 @app.get("/")
 def root():
     return send_file(Path(PROJECT_DIR) / "index.html")
+
+
+@app.get("/data/<path:filename>")
+def deploy_data_file(filename: str):
+    safe_name = Path(filename).name
+    if safe_name not in DEPLOY_DATA_FILES:
+        abort(404)
+    return send_from_directory(DEPLOY_DATA_DIR, safe_name)
 
 
 @app.get("/api/status")

@@ -1,0 +1,52 @@
+name: Refresh deploy snapshots
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-deploy-snapshots
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      UNTAPPD_ACCESS_TOKEN: ${{ secrets.UNTAPPD_ACCESS_TOKEN }}
+      UNTAPPD_CLIENT_ID: ${{ secrets.UNTAPPD_CLIENT_ID }}
+      UNTAPPD_CLIENT_SECRET: ${{ secrets.UNTAPPD_CLIENT_SECRET }}
+      VENUE_ID: '107565'
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh deploy snapshots
+        run: python refresh_deploy_snapshots.py
+
+      - name: Commit and push snapshot updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/deploy_takeovers.json data/deploy_beer_info.json data/deploy_cache_summary.json data/deploy_current_events.json data/deploy_past_events.json data/deploy_allowed_users.json
+          if git diff --cached --quiet; then
+            echo "No snapshot changes detected."
+            exit 0
+          fi
+          git commit -m "chore: refresh deploy snapshots"
+          git push

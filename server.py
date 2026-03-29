@@ -49,6 +49,7 @@ DEPLOY_BEER_INFO_FILE = DEPLOY_DATA_DIR / "deploy_beer_info.json"
 DEPLOY_CACHE_SUMMARY_FILE = DEPLOY_DATA_DIR / "deploy_cache_summary.json"
 DEPLOY_CURRENT_EVENTS_FILE = DEPLOY_DATA_DIR / "deploy_current_events.json"
 DEPLOY_PAST_EVENTS_FILE = DEPLOY_DATA_DIR / "deploy_past_events.json"
+DEPLOY_ALLOWED_USERS_FILE = DEPLOY_DATA_DIR / "deploy_allowed_users.json"
 APP_VERSION = os.getenv("APP_VERSION", "v1.0")
 VENUE_SLUG = os.getenv("VENUE_SLUG", "hotel-sweeneys")
 IS_VERCEL = bool(os.getenv("VERCEL"))
@@ -124,6 +125,47 @@ def get_cache_summary_data():
         "oldest_date": checkins[-1]["created_at"] if checkins else None,
         "newest_date": checkins[0]["created_at"] if checkins else None,
         "has_token": get_access_token() is not None,
+    }
+
+
+def normalize_access_username(value):
+    username = (value or "").strip().lower()
+    if username.startswith("@"):
+        username = username[1:]
+    return username
+
+
+def build_takeover_access_payload(takeovers):
+    usernames = set()
+    for takeover in takeovers or []:
+        for detail in takeover.get("details") or []:
+            username = normalize_access_username(detail.get("user"))
+            if username:
+                usernames.add(username)
+
+    return {
+        "eligible_usernames": sorted(usernames),
+        "eligible_count": len(usernames),
+        "source": "takeover-checkins",
+    }
+
+
+def load_allowed_login_usernames():
+    payload = load_json_file(DEPLOY_ALLOWED_USERS_FILE)
+    usernames = payload.get("eligible_usernames") if isinstance(payload, dict) else None
+    if isinstance(usernames, list):
+        allowed = {
+            normalize_access_username(username)
+            for username in usernames
+            if normalize_access_username(username)
+        }
+        if allowed:
+            return allowed
+
+    return {
+        normalize_access_username(member.get("username"))
+        for member in load_members_data()
+        if member.get("included", True) and normalize_access_username(member.get("username"))
     }
 
 

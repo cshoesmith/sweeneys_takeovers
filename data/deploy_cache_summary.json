@@ -1,8 +1,9 @@
 {
   "venue_id": 107565,
-  "total_checkins": 300,
-  "oldest_checkin_id": 1553475293,
+  "total_checkins": 401,
+  "oldest_checkin_id": 1556952516,
   "oldest_date": "Fri, 06 Mar 2026 02:11:58 +0000",
-  "newest_date": "Sat, 21 Mar 2026 05:57:15 +0000",
-  "has_token": true
+  "newest_date": "Sat, 28 Mar 2026 08:59:27 +0000",
+  "has_token": false,
+  "error_history": []
 }

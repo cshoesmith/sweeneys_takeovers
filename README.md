@@ -168,11 +168,46 @@ For full collector/admin functionality, run the app locally.
 ### Notes
 
 - On Vercel, the app automatically switches to **read-only mode** and hides the Admin tab.
-- Local collection remains the source of truth. Generate fresh data locally, then commit the deploy snapshots in `data/` so Vercel has something to display.
+- A scheduled GitHub Actions workflow can now refresh the deploy snapshots automatically, so the Vercel site no longer depends on a local machine staying online.
 - `data/deploy_takeovers.json` is the read-only snapshot consumed by the Vercel UI.
 - `data/deploy_cache_summary.json` provides summary stats for the read-only deployment without committing the mutable runtime cache.
 - `data/deploy_current_events.json` provides a fallback when the live event scrape is unavailable in the deployed environment.
 - The mutable runtime files (`checkins_cache.json`, `beer_info_cache.json`, `output/`) stay out of git.
+
+## Automated refresh pipeline
+
+To keep the Vercel site current without relying on a local machine, this repo supports a scheduled GitHub Actions refresh.
+
+### How it works
+
+1. GitHub Actions runs `refresh_deploy_snapshots.py` every hour.
+2. The script fetches the latest Untappd venue checkins.
+3. It reruns takeover detection, including heuristic/"secret" takeovers.
+4. It enriches takeover beers with labels, descriptions, and ratings.
+5. It rewrites the committed deploy snapshot files in `data/` and the inline fallback data in `index.html`.
+6. The workflow commits those updates back to the repo, which triggers a fresh Vercel deploy.
+
+### Required GitHub secrets
+
+Add these repository secrets before enabling the workflow:
+
+- `UNTAPPD_ACCESS_TOKEN` (recommended)
+- `UNTAPPD_CLIENT_ID` (optional fallback)
+- `UNTAPPD_CLIENT_SECRET` (optional fallback)
+
+`VENUE_ID` is currently pinned to `107565` in `.github/workflows/refresh-deploy-snapshots.yml`.
+
+### Manual refresh
+
+```bash
+python refresh_deploy_snapshots.py
+```
+
+For a fast local test using the existing cache without refetching Untappd data:
+
+```bash
+python refresh_deploy_snapshots.py --skip-fetch --skip-beer-refresh
+```
 
 ## Rate limits
 
