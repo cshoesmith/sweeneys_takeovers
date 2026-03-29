@@ -177,6 +177,7 @@ For full collector/admin functionality, run the app locally.
 - A scheduled GitHub Actions workflow can now refresh the deploy snapshots automatically, so the Vercel site no longer depends on a local machine staying online.
 - `data/deploy_takeovers.json` is the read-only snapshot consumed by the Vercel UI.
 - `data/deploy_cache_summary.json` provides summary stats for the read-only deployment without committing the mutable runtime cache.
+- The read-only viewer now shows snapshot freshness using the last successful refresh time written into `data/deploy_cache_summary.json`.
 - `data/deploy_current_events.json` provides a fallback when the live event scrape is unavailable in the deployed environment.
 - The visible build label is now an automatic Unix timestamp, so normal releases no longer need a manual build-stamp edit.
 - The mutable runtime files (`checkins_cache.json`, `beer_info_cache.json`, `output/`) stay out of git.

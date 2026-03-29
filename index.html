@@ -590,6 +590,7 @@
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
       <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> loading…</div>
+      <div class="header-meta" id="freshnessInfo"><strong>Snapshot</strong> checking…</div>
     </div>
   </div>
   <div class="header-actions">
@@ -783,7 +784,7 @@
 
 <script>
 // ═════════ Tab switching ═════════
-const INLINE_DEPLOY_BUILD_LABEL = "20260329-215725";
+const INLINE_DEPLOY_BUILD_LABEL = "1774782447";
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -2566,6 +2567,12 @@ const INLINE_DEPLOY_CACHE_SUMMARY = {
   "oldest_checkin_id": 1556952516,
   "oldest_date": "Fri, 06 Mar 2026 02:11:58 +0000",
   "newest_date": "Sat, 28 Mar 2026 08:59:27 +0000",
+  "refreshed_at": "2026-03-29T11:07:27.4088430Z",
+  "refreshed_at_unix": 1774782447,
+  "latest_checkin_at": "Sat, 28 Mar 2026 08:59:27 +0000",
+  "refresh_source": "github-actions",
+  "warning_after_minutes": 90,
+  "stale_after_minutes": 180,
   "has_token": false,
   "error_history": []
 };
@@ -2712,15 +2719,79 @@ function adminStatusPollIntervalMs() {
 }
 
 function getFallbackBuildLabel() {
+  if (isReadOnlyDeployment()) {
+    return INLINE_DEPLOY_BUILD_LABEL;
+  }
   var raw = document.lastModified || '';
   var parsed = raw ? new Date(raw) : null;
   if (parsed && !isNaN(parsed.getTime())) {
     return String(Math.floor(parsed.getTime() / 1000));
   }
-  if (isReadOnlyDeployment()) {
-    return INLINE_DEPLOY_BUILD_LABEL;
-  }
   return 'embedded';
+}
+
+function formatFreshnessAge(totalMinutes) {
+  if (!isFinite(totalMinutes) || totalMinutes <= 0) return 'just now';
+  if (totalMinutes < 60) return totalMinutes + 'm';
+  var hours = Math.floor(totalMinutes / 60);
+  var minutes = totalMinutes % 60;
+  if (hours < 24) return hours + 'h' + (minutes ? ' ' + minutes + 'm' : '');
+  var days = Math.floor(hours / 24);
+  var remainingHours = hours % 24;
+  return days + 'd' + (remainingHours ? ' ' + remainingHours + 'h' : '');
+}
+
+function getSummaryRefreshUnix(summary) {
+  var unix = Number(summary && summary.refreshed_at_unix);
+  if (isFinite(unix) && unix > 0) return unix;
+  var iso = summary && summary.refreshed_at;
+  if (!iso) return null;
+  var parsed = Date.parse(iso);
+  if (isNaN(parsed)) return null;
+  return Math.floor(parsed / 1000);
+}
+
+function updateFreshnessInfo(summary) {
+  var el = document.getElementById('freshnessInfo');
+  if (!el) return;
+
+  if (!summary) {
+    el.innerHTML = '<strong>Snapshot</strong> status unknown';
+    el.style.color = 'var(--text-dim)';
+    el.title = 'Snapshot freshness metadata unavailable.';
+    return;
+  }
+
+  var refreshedUnix = getSummaryRefreshUnix(summary);
+  var latestCheckin = summary.latest_checkin_at || summary.newest_date || '';
+  if (!refreshedUnix) {
+    el.innerHTML = '<strong>Snapshot</strong> status unknown' + (latestCheckin ? ' · <strong>Latest checkin</strong> ' + esc(shortDate(latestCheckin)) : '');
+    el.style.color = 'var(--text-dim)';
+    el.title = 'Snapshot freshness metadata unavailable.';
+    return;
+  }
+
+  var ageMinutes = Math.max(0, Math.floor((Date.now() / 1000 - refreshedUnix) / 60));
+  var warningAfter = Number(summary.warning_after_minutes || 90);
+  var staleAfter = Number(summary.stale_after_minutes || 180);
+  var state = 'Fresh';
+  var color = 'var(--green)';
+  if (ageMinutes >= staleAfter) {
+    state = 'Stale';
+    color = 'var(--red)';
+  } else if (ageMinutes >= warningAfter) {
+    state = 'Aging';
+    color = 'var(--orange)';
+  }
+
+  el.innerHTML = '<strong>Snapshot</strong> ' + esc(state) + ' · <strong>Checked</strong> ' + esc(formatFreshnessAge(ageMinutes)) + ' ago' +
+    (latestCheckin ? ' · <strong>Latest checkin</strong> ' + esc(shortDate(latestCheckin)) : '');
+  el.style.color = color;
+  el.title = [
+    'Last successful snapshot refresh: ' + (summary.refreshed_at || new Date(refreshedUnix * 1000).toISOString()),
+    latestCheckin ? 'Latest checkin in snapshot: ' + latestCheckin : '',
+    summary.refresh_source ? 'Refresh source: ' + summary.refresh_source : ''
+  ].filter(Boolean).join('\n');
 }
 
 function inferReadOnlyDeployment() {
@@ -4418,6 +4489,7 @@ window.addEventListener('DOMContentLoaded', function() {
     fetch('/api/cache-summary')
       .then(function(r) { return r.json(); })
       .then(function(data) {
+        updateFreshnessInfo(data);
         if (data.total_checkins > 0) {
           addLog('Cache: ' + data.total_checkins + ' checkins, ' + shortDate(data.oldest_date) + ' → ' + shortDate(data.newest_date), 'success');
         } else if (isReadOnlyDeployment()) {
@@ -4432,9 +4504,11 @@ window.addEventListener('DOMContentLoaded', function() {
       .catch(function() {
         loadCacheSummarySnapshot()
           .then(function(data) {
+            updateFreshnessInfo(data);
             addLog('Snapshot cache: ' + data.total_checkins + ' checkins, ' + shortDate(data.oldest_date) + ' → ' + shortDate(data.newest_date), 'success');
           })
           .catch(function() {
+            updateFreshnessInfo(null);
             addLog(isReadOnlyDeployment()
               ? 'Read-only deployment detected, but bundled cache summary could not be loaded.'
               : 'Server not responding — run: python server.py', 'error');

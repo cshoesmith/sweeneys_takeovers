@@ -100,8 +100,15 @@ def fallback_json(path: Path, default):
 
 def build_public_cache_summary():
     summary = dict(get_cache_summary_data())
+    refreshed_at = datetime.now(timezone.utc)
     summary["has_token"] = False
     summary["error_history"] = []
+    summary["refreshed_at"] = refreshed_at.isoformat()
+    summary["refreshed_at_unix"] = int(refreshed_at.timestamp())
+    summary["latest_checkin_at"] = summary.get("newest_date")
+    summary["refresh_source"] = "github-actions" if os.getenv("GITHUB_ACTIONS") == "true" else "manual-refresh-script"
+    summary["warning_after_minutes"] = 90
+    summary["stale_after_minutes"] = 180
     return summary
 
 
