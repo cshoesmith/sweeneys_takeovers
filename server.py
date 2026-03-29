@@ -295,6 +295,80 @@ def compute_member_results_for_takeovers(takeovers, checkins, members):
     return takeovers
 
 
+def build_friend_notes_for_beer(beer_id, limit=8):
+    members = load_members_data()
+    included_members = {
+        (member.get("username") or "").strip().lower(): member
+        for member in members
+        if member.get("included", True)
+    }
+
+    if not included_members:
+        return {
+            "friend_notes": [],
+            "friend_notes_loaded": True,
+            "friend_notes_message": "No included tracked members are configured yet.",
+        }
+
+    cache = load_cache()
+    notes = []
+    matching_friend_checkins = 0
+    uncaptured_comment_count = 0
+
+    for checkin in cache.get("checkins", []):
+        if checkin.get("beer_id") != beer_id:
+            continue
+
+        username = (checkin.get("user") or "").strip().lower()
+        member = included_members.get(username)
+        if not member:
+            continue
+
+        matching_friend_checkins += 1
+        if "checkin_comment" not in checkin:
+            uncaptured_comment_count += 1
+
+        comment = (checkin.get("checkin_comment") or "").strip()
+        if not comment:
+            continue
+
+        notes.append({
+            "checkin_id": checkin.get("checkin_id"),
+            "created_at": checkin.get("created_at", ""),
+            "rating": checkin.get("rating"),
+            "comment": comment,
+            "username": member.get("username") or username,
+            "display_name": member.get("display_name") or member.get("username") or username,
+            "avatar_url": member.get("avatar_url", ""),
+            "profile_url": member.get("profile_url", ""),
+        })
+
+    notes.sort(
+        key=lambda item: (
+            parse_untappd_datetime(item.get("created_at")) or datetime.min.replace(tzinfo=timezone.utc),
+            item.get("checkin_id") or 0,
+        ),
+        reverse=True,
+    )
+    notes = notes[:limit]
+
+    message = ""
+    if notes:
+        message = f"Showing the latest {len(notes)} note{'s' if len(notes) != 1 else ''} from included tracked friends."
+    elif matching_friend_checkins == 0:
+        message = "No included tracked friends have checked in this beer yet."
+    elif uncaptured_comment_count == matching_friend_checkins:
+        message = "Tracked friends have checked in this beer, but notes have not been captured in the current cache yet. Run Start Collecting again to refresh recent checkins."
+    else:
+        message = "Tracked friends have checked in this beer, but none of those checkins included a note."
+
+    return {
+        "friend_notes": notes,
+        "friend_notes_loaded": True,
+        "friend_notes_message": message,
+    }
+
+
 def load_takeover_data():
     """Load cached takeovers or derive them dynamically from the checkin cache."""
     takeover_file = PROJECT_DIR / "output" / "takeovers.json"
@@ -941,54 +1015,52 @@ def get_beer_info(beer_id):
     beer_id_str = str(beer_id)
     cache = load_beer_info_cache()
     cached_entry = cache.get(beer_id_str)
-    if has_usable_beer_info(cached_entry):
-        return cached_entry
-
     cached_info = find_cached_beer_info(beer_id)
-    if has_usable_beer_info(cached_info):
-        cache[beer_id_str] = cached_info
-        save_beer_info_cache(cache)
-        return cached_info
+    info = merge_beer_info_record(cached_info or {"beer_id": beer_id}, cached_entry)
 
-    info = cached_info or {"beer_id": beer_id}
-
-    try:
-        data = api_get(f"beer/info/{beer_id_str}")
-        response = data.get("response", {})
-        beer = response.get("beer", {})
-        brewery = response.get("brewery", {})
-
-        info.update({
-            "beer_id": beer.get("bid") or beer_id,
-            "beer_name": beer.get("beer_name", "") or info.get("beer_name", ""),
-            "beer_label": beer.get("beer_label", "") or info.get("beer_label", ""),
-            "beer_label_hd": beer.get("beer_label_hd", "") or info.get("beer_label_hd", ""),
-            "beer_style": beer.get("beer_style", "") or info.get("beer_style", ""),
-            "beer_abv": beer.get("beer_abv") if beer.get("beer_abv") not in (None, "") else info.get("beer_abv"),
-            "beer_ibu": beer.get("beer_ibu") if beer.get("beer_ibu") not in (None, "") else info.get("beer_ibu"),
-            "beer_description": beer.get("beer_description", "") or info.get("beer_description", ""),
-            "rating_score": beer.get("rating_score") if beer.get("rating_score") not in (None, "") else info.get("rating_score"),
-            "rating_count": beer.get("rating_count") if beer.get("rating_count") not in (None, "") else info.get("rating_count"),
-            "brewery_name": brewery.get("brewery_name", "") or info.get("brewery_name", ""),
-            "brewery_label": brewery.get("brewery_label", "") or info.get("brewery_label", ""),
-            "brewery_label_hd": brewery.get("brewery_label_hd", "") or info.get("brewery_label_hd", ""),
-            "brewery_country": brewery.get("country_name", "") or info.get("brewery_country", ""),
-        })
-    except Exception:
-        pass
-
-    if not has_usable_beer_info(info) or not info.get("beer_description") or not info.get("beer_label"):
+    if not (has_usable_beer_info(cached_entry) and cached_entry.get("rating_score") not in (None, "")):
         try:
-            scraped_info = scrape_beer_info_from_page(beer_id, info)
+            data = api_get(f"beer/info/{beer_id_str}")
+            response = data.get("response", {})
+            beer = response.get("beer", {})
+            brewery = response.get("brewery", {})
+
             info.update({
-                key: value
-                for key, value in scraped_info.items()
-                if value not in (None, "") or key not in info
+                "beer_id": beer.get("bid") or beer_id,
+                "beer_name": beer.get("beer_name", "") or info.get("beer_name", ""),
+                "beer_label": beer.get("beer_label", "") or info.get("beer_label", ""),
+                "beer_label_hd": beer.get("beer_label_hd", "") or info.get("beer_label_hd", ""),
+                "beer_style": beer.get("beer_style", "") or info.get("beer_style", ""),
+                "beer_abv": beer.get("beer_abv") if beer.get("beer_abv") not in (None, "") else info.get("beer_abv"),
+                "beer_ibu": beer.get("beer_ibu") if beer.get("beer_ibu") not in (None, "") else info.get("beer_ibu"),
+                "beer_description": beer.get("beer_description", "") or info.get("beer_description", ""),
+                "rating_score": beer.get("rating_score") if beer.get("rating_score") not in (None, "") else info.get("rating_score"),
+                "rating_count": beer.get("rating_count") if beer.get("rating_count") not in (None, "") else info.get("rating_count"),
+                "brewery_name": brewery.get("brewery_name", "") or info.get("brewery_name", ""),
+                "brewery_label": brewery.get("brewery_label", "") or info.get("brewery_label", ""),
+                "brewery_label_hd": brewery.get("brewery_label_hd", "") or info.get("brewery_label_hd", ""),
+                "brewery_country": brewery.get("country_name", "") or info.get("brewery_country", ""),
             })
         except Exception:
             pass
 
-    cache[beer_id_str] = info
+        if not has_usable_beer_info(info) or not info.get("beer_description") or not info.get("beer_label"):
+            try:
+                scraped_info = scrape_beer_info_from_page(beer_id, info)
+                info.update({
+                    key: value
+                    for key, value in scraped_info.items()
+                    if value not in (None, "") or key not in info
+                })
+            except Exception:
+                pass
+
+    info.update(build_friend_notes_for_beer(beer_id))
+    cache[beer_id_str] = {
+        key: value
+        for key, value in info.items()
+        if key not in {"friend_notes", "friend_notes_loaded", "friend_notes_message"}
+    }
     save_beer_info_cache(cache)
     return info
 
@@ -1277,6 +1349,7 @@ def run_fetcher(venue_id, since_date=None, mode="backfill"):
                     "checkin_id": checkin_id,
                     "created_at": created_at,
                     "user": item.get("user", {}).get("user_name", ""),
+                    "checkin_comment": item.get("checkin_comment", ""),
                     "beer_name": beer.get("beer_name", ""),
                     "beer_id": beer.get("bid"),
                     "beer_label": beer.get("beer_label", ""),
@@ -1456,10 +1529,18 @@ class AppHandler(SimpleHTTPRequestHandler):
                 except json.JSONDecodeError:
                     pass
             since_date = body.get("since_date")
-            mode = body.get("mode", "backfill")
+            requested_mode = body.get("mode")
+            cache = load_cache()
+            has_existing_cache = cache.get("venue_id") == venue_id and bool(cache.get("checkins"))
+
+            if requested_mode in ("backfill", "monitor"):
+                mode = requested_mode
+            else:
+                mode = "monitor" if has_existing_cache else "backfill"
+
             t = threading.Thread(target=run_fetcher, args=(venue_id, since_date, mode), daemon=True)
             t.start()
-            self._json_response({"started": True})
+            self._json_response({"started": True, "mode": mode})
 
         elif path == "/api/stop":
             with fetcher_state.lock:

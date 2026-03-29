@@ -384,6 +384,7 @@ def merge_checkin_record(existing, item):
         "brewery_name": existing.get("brewery_name") or brewery.get("brewery_name", ""),
         "brewery_id": existing.get("brewery_id") or brewery.get("brewery_id"),
         "rating": existing.get("rating") if existing.get("rating") not in (None, "") else item.get("rating_score", 0),
+        "checkin_comment": existing.get("checkin_comment") if existing.get("checkin_comment") not in (None, "") else item.get("checkin_comment", ""),
     })
 
     if event and isinstance(event, dict):
@@ -482,6 +483,7 @@ def fetch_checkins(venue_id, since_date=None):
                     "checkin_id": checkin_id,
                     "created_at": created_at,
                     "user": item.get("user", {}).get("user_name", ""),
+                    "checkin_comment": item.get("checkin_comment", ""),
                     "beer_name": beer.get("beer_name", ""),
                     "beer_id": beer.get("bid"),
                     "beer_label": beer.get("beer_label", ""),

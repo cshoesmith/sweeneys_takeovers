@@ -382,6 +382,39 @@
   .beer-modal-meta div { font-size: 0.85rem; color: var(--text-dim); }
   .beer-modal-meta strong { display: block; color: var(--text); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.4px; }
   .beer-modal-desc { margin-top: 0.8rem; font-size: 0.9rem; line-height: 1.5; color: var(--text); }
+  .beer-modal-notes { margin-top: 1rem; }
+  .beer-modal-notes-title {
+    font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--text-dim); margin-bottom: 0.65rem;
+  }
+  .beer-modal-notes-list { display: grid; gap: 0.65rem; }
+  .beer-modal-note {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 0.75rem 0.85rem;
+  }
+  .beer-modal-note-head {
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem;
+  }
+  .beer-modal-note-author { display: flex; align-items: center; gap: 0.65rem; min-width: 0; }
+  .beer-modal-note-avatar {
+    width: 34px; height: 34px; border-radius: 50%; object-fit: cover; flex: 0 0 34px;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.08);
+  }
+  .beer-modal-note-name { font-size: 0.88rem; font-weight: 600; color: var(--text); }
+  .beer-modal-note-date { font-size: 0.76rem; color: var(--text-dim); margin-top: 0.1rem; }
+  .beer-modal-note-rating {
+    color: var(--gold); font-size: 0.8rem; font-weight: 700; white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .beer-modal-note-comment {
+    margin-top: 0.55rem; color: var(--text); font-size: 0.88rem; line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  .beer-modal-notes-empty {
+    color: var(--text-dim); font-size: 0.84rem; line-height: 1.45;
+    background: rgba(255,255,255,0.03); border: 1px dashed var(--border);
+    border-radius: 8px; padding: 0.75rem 0.85rem;
+  }
   .beer-modal-loading { color: var(--text-dim); font-size: 0.9rem; }
   .admin-modal {
     background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
@@ -524,7 +557,7 @@
     <div class="title-copy">
       <h1>Hotel <span>Sweeneys</span> — Weekly Tap Takeovers</h1>
       <p>Weekly craft beer tap takeovers. Powered by Untappd</p>
-      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260325-222118</div>
+      <div class="header-meta" id="buildInfo"><strong>Version</strong> v1.0 · <strong>Build</strong> 20260327-104700</div>
     </div>
   </div>
   <div class="tab-bar">
@@ -731,7 +764,7 @@
 <script>
 // ═════════ Tab switching ═════════
 const ADMIN_PASSWORD = 'Wardy123';
-const INLINE_DEPLOY_BUILD_LABEL = '20260325-222118';
+const INLINE_DEPLOY_BUILD_LABEL = '20260327-104700';
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -2675,7 +2708,10 @@ function buildBeerFallbackInfo(beerId) {
     rating_score: info.rating_score != null ? info.rating_score : info.beer_auth_rating,
     rating_count: null,
     brewery_country: '',
-    fallback_note: ''
+    fallback_note: '',
+    friend_notes: [],
+    friend_notes_loaded: false,
+    friend_notes_message: ''
   }, info);
 
   if (!fallback.beer_description) {
@@ -2703,6 +2739,78 @@ function hasEnoughBeerInfo(info) {
     (info.beer_ibu !== undefined && info.beer_ibu !== null && info.beer_ibu !== '')
   );
   return hasImage || hasRichDetails;
+}
+
+function formatBeerValueRating(value) {
+  return (value != null && value !== '' && !isNaN(Number(value)))
+    ? Number(value).toFixed(2)
+    : '—';
+}
+
+function hasFreshBeerModalInfo(info) {
+  return !!(info && info.friend_notes_loaded);
+}
+
+function formatCheckinDateTime(value) {
+  if (!value) return 'Unknown date';
+  try {
+    var date = new Date(value);
+    if (isNaN(date.getTime())) return value;
+    return date.toLocaleString('en-AU', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit'
+    });
+  } catch (err) {
+    return value;
+  }
+}
+
+function renderFriendNotesSection(info) {
+  var notes = Array.isArray(info && info.friend_notes) ? info.friend_notes : [];
+  var message = (info && info.friend_notes_message) || '';
+  if (!notes.length && !message && !(info && info.friend_notes_loaded)) {
+    return '';
+  }
+
+  var html = '<div class="beer-modal-notes">' +
+    '<div class="beer-modal-notes-title">Friend Notes</div>';
+
+  if (notes.length) {
+    html += '<div class="beer-modal-notes-list">';
+    notes.forEach(function(note) {
+      var avatar = note.avatar_url
+        ? '<img class="beer-modal-note-avatar" src="' + esc(note.avatar_url) + '" alt="' + esc(note.display_name || note.username || 'Friend') + '">'
+        : '<div class="beer-modal-note-avatar" style="display:flex;align-items:center;justify-content:center;color:var(--text-dim)">&#127866;</div>';
+      var authorName = note.profile_url
+        ? '<a href="' + esc(note.profile_url) + '" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">' + esc(note.display_name || note.username || 'Friend') + '</a>'
+        : esc(note.display_name || note.username || 'Friend');
+      var rating = formatBeerValueRating(note.rating);
+      html += '<div class="beer-modal-note">' +
+        '<div class="beer-modal-note-head">' +
+          '<div class="beer-modal-note-author">' +
+            avatar +
+            '<div>' +
+              '<div class="beer-modal-note-name">' + authorName + '</div>' +
+              '<div class="beer-modal-note-date">' + esc(formatCheckinDateTime(note.created_at)) + '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="beer-modal-note-rating">' + esc(rating) + '</div>' +
+        '</div>' +
+        '<div class="beer-modal-note-comment">' + esc(note.comment || '') + '</div>' +
+      '</div>';
+    });
+    html += '</div>';
+  }
+
+  if (message) {
+    html += '<div class="beer-modal-notes-empty"' + (notes.length ? ' style="margin-top:0.65rem"' : '') + '>' + esc(message) + '</div>';
+  }
+
+  html += '</div>';
+  return html;
 }
 
 function loadTakeovers() {
@@ -3126,23 +3234,21 @@ function openBeerModal(beerId) {
   var backdrop = document.getElementById('beerModalBackdrop');
   var body = document.getElementById('beerModalBody');
   var takeoverInfo = buildBeerFallbackInfo(beerId);
+  var seedInfo = beerInfoCache[beerId] || takeoverInfo;
   document.getElementById('beerModalTitle').textContent = takeoverInfo && takeoverInfo.beer_name ? takeoverInfo.beer_name : 'Beer details';
   body.innerHTML = '<div class="beer-modal-loading">Loading beer info...</div>';
   backdrop.classList.add('open');
 
-  if (beerInfoCache[beerId]) {
-    renderBeerModal(beerInfoCache[beerId]);
-    return;
-  }
-
-  if (hasEnoughBeerInfo(takeoverInfo)) {
-    beerInfoCache[beerId] = takeoverInfo;
-    renderBeerModal(takeoverInfo);
+  if (seedInfo) {
+    beerInfoCache[beerId] = seedInfo;
+    renderBeerModal(seedInfo);
     if (allTakeovers.length) {
       allTakeovers = enrichTakeoversWithBeerData(allTakeovers);
       renderTakeovers();
     }
-    return;
+    if (hasFreshBeerModalInfo(seedInfo) && hasEnoughBeerInfo(seedInfo)) {
+      return;
+    }
   }
 
   fetch('/api/beer-info/' + beerId)
@@ -3164,13 +3270,7 @@ function openBeerModal(beerId) {
       }
     })
     .catch(function(err) {
-      if (takeoverInfo) {
-        beerInfoCache[beerId] = takeoverInfo;
-        renderBeerModal(takeoverInfo);
-        if (allTakeovers.length) {
-          allTakeovers = enrichTakeoversWithBeerData(allTakeovers);
-          renderTakeovers();
-        }
+      if (seedInfo) {
         return;
       }
       body.innerHTML = '<div class="beer-modal-loading">Could not load beer info: ' + esc(err.message) + '</div>';
@@ -3181,6 +3281,7 @@ function renderBeerModal(info) {
   var body = document.getElementById('beerModalBody');
   var title = info.beer_name || 'Beer details';
   document.getElementById('beerModalTitle').textContent = title;
+  var modalRating = formatBeerValueRating(info.rating_score);
   var image = info.beer_label_hd || info.beer_label || info.brewery_label_hd || info.brewery_label || '';
   var imageHtml = image
     ? '<img class="beer-modal-image" src="' + esc(image) + '" alt="' + esc(title) + '">'
@@ -3190,6 +3291,7 @@ function renderBeerModal(info) {
   var fallbackNoteHtml = info.fallback_note
     ? '<div style="margin-top:0.75rem;font-size:0.82rem;line-height:1.45;color:var(--text-dim)">' + esc(info.fallback_note) + '</div>'
     : '';
+  var friendNotesHtml = renderFriendNotesSection(info);
 
   body.innerHTML =
     '<div>' + imageHtml + '</div>' +
@@ -3200,11 +3302,12 @@ function renderBeerModal(info) {
         '<div><strong>Style</strong>' + esc(info.beer_style || '—') + '</div>' +
         '<div><strong>ABV</strong>' + (info.beer_abv != null && info.beer_abv !== '' ? esc(String(info.beer_abv)) + '%' : '—') + '</div>' +
         '<div><strong>IBU</strong>' + (info.beer_ibu != null && info.beer_ibu !== '' ? esc(String(info.beer_ibu)) : '—') + '</div>' +
-        '<div><strong>Rating</strong>' + (info.rating_score != null && info.rating_score !== '' ? esc(String(info.rating_score)) : '—') + '</div>' +
+        '<div><strong>Rating</strong>' + esc(modalRating) + '</div>' +
         '<div><strong>Ratings</strong>' + (info.rating_count != null && info.rating_count !== '' ? esc(String(info.rating_count)) : '—') + '</div>' +
         '<div><strong>Country</strong>' + esc(info.brewery_country || '—') + '</div>' +
       '</div>' +
       '<div class="beer-modal-desc">' + esc(descriptionText) + '</div>' +
+      friendNotesHtml +
       fallbackNoteHtml +
     '</div>';
 }
