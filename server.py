@@ -54,6 +54,46 @@ APP_VERSION = os.getenv("APP_VERSION", "v1.0")
 VENUE_SLUG = os.getenv("VENUE_SLUG", "hotel-sweeneys")
 IS_VERCEL = bool(os.getenv("VERCEL"))
 
+
+def coerce_positive_int(value):
+    try:
+        parsed = int(str(value).strip())
+    except (TypeError, ValueError, AttributeError):
+        return None
+    return parsed if parsed > 0 else None
+
+
+def get_inline_deploy_build_unix():
+    index_path = PROJECT_DIR / "index.html"
+    if not index_path.exists():
+        return None
+    try:
+        html_text = index_path.read_text(encoding="utf-8")
+    except OSError:
+        return None
+    match = re.search(r'const\s+INLINE_DEPLOY_BUILD_LABEL\s*=\s*"(\d{9,})"', html_text)
+    if not match:
+        return None
+    return coerce_positive_int(match.group(1))
+
+
+def get_snapshot_refresh_unix(snapshot=None):
+    snapshot = snapshot if isinstance(snapshot, dict) else load_json_file(DEPLOY_CACHE_SUMMARY_FILE)
+    if isinstance(snapshot, dict):
+        unix_value = coerce_positive_int(snapshot.get("refreshed_at_unix"))
+        if unix_value:
+            return unix_value
+        refreshed_at = snapshot.get("refreshed_at")
+        if refreshed_at:
+            try:
+                return int(datetime.fromisoformat(str(refreshed_at).replace("Z", "+00:00")).timestamp())
+            except ValueError:
+                pass
+        build_label = coerce_positive_int(snapshot.get("build_label"))
+        if build_label:
+            return build_label
+    return get_inline_deploy_build_unix()
+
 def mask_token(msg):
     """Remove access tokens from error messages."""
     return re.sub(r'access_token=[A-Za-z0-9]+', 'access_token=***', str(msg))
@@ -72,17 +112,24 @@ def build_error_event(category, status_code=None, message="", request_url="", co
 
 def get_build_info():
     """Return app version metadata with a build number based on latest file mtime."""
-    tracked_files = [
-        PROJECT_DIR / "index.html",
-        PROJECT_DIR / "server.py",
-        PROJECT_DIR / "fetch_checkins.py",
-        PROJECT_DIR / "analyze_takeovers.py",
-    ]
-    latest_mtime = max(
-        (path.stat().st_mtime for path in tracked_files if path.exists()),
-        default=time.time(),
-    )
-    build_unix = int(latest_mtime)
+    build_unix = None
+
+    if IS_VERCEL:
+        build_unix = get_snapshot_refresh_unix()
+
+    if build_unix is None:
+        tracked_files = [
+            PROJECT_DIR / "index.html",
+            PROJECT_DIR / "server.py",
+            PROJECT_DIR / "fetch_checkins.py",
+            PROJECT_DIR / "analyze_takeovers.py",
+        ]
+        latest_mtime = max(
+            (path.stat().st_mtime for path in tracked_files if path.exists()),
+            default=time.time(),
+        )
+        build_unix = int(latest_mtime)
+
     return {
         "version": APP_VERSION,
         "build_unix": build_unix,
@@ -110,6 +157,14 @@ def get_cache_summary_data():
     if not checkins:
         snapshot = load_json_file(DEPLOY_CACHE_SUMMARY_FILE)
         if isinstance(snapshot, dict):
+            fallback_refresh_unix = get_snapshot_refresh_unix(snapshot)
+            if fallback_refresh_unix and not snapshot.get("refreshed_at_unix"):
+                snapshot["refreshed_at_unix"] = fallback_refresh_unix
+            if fallback_refresh_unix and not snapshot.get("refreshed_at"):
+                snapshot["refreshed_at"] = datetime.fromtimestamp(fallback_refresh_unix, tz=timezone.utc).isoformat()
+            if fallback_refresh_unix and not snapshot.get("build_label"):
+                snapshot["build_label"] = str(fallback_refresh_unix)
+            snapshot.setdefault("refresh_source", "github-actions" if IS_VERCEL else "deploy-snapshot")
             snapshot.setdefault("has_token", get_access_token() is not None)
             return snapshot
     return {
@@ -299,7 +354,7 @@ def compute_member_results_for_takeovers(takeovers, checkins, members):
             t["member_results"] = []
             continue
 
-        window_end = thu + timedelta(days=7)
+        window_end = thu + timedelta(days=3)
         week_rows = [c for c in parsed if thu <= c["d"] <= window_end]
         results = []
         for m in included:

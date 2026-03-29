@@ -4,12 +4,13 @@
   "oldest_checkin_id": 1556952516,
   "oldest_date": "Fri, 06 Mar 2026 02:11:58 +0000",
   "newest_date": "Sat, 28 Mar 2026 08:59:27 +0000",
-  "refreshed_at": "2026-03-29T11:07:27.4088430Z",
-  "refreshed_at_unix": 1774782447,
-  "latest_checkin_at": "Sat, 28 Mar 2026 08:59:27 +0000",
-  "refresh_source": "github-actions",
-  "warning_after_minutes": 90,
-  "stale_after_minutes": 180,
   "has_token": false,
-  "error_history": []
+  "error_history": [],
+  "refreshed_at": "2026-03-29T11:21:27+00:00",
+  "refreshed_at_unix": 1774783287,
+  "build_label": "1774783287",
+  "latest_checkin_at": "Sat, 28 Mar 2026 08:59:27 +0000",
+  "refresh_source": "manual-refresh-script",
+  "warning_after_minutes": 90,
+  "stale_after_minutes": 180
 }

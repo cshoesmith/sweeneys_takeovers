@@ -1,8 +1,8 @@
 """
 Analyze cached Untappd checkin data to detect weekly tap takeovers at
-Hotel Sweeneys (Thursdays).
+Hotel Sweeneys.
 
-Looks at checkins on Thursdays and Fridays each week, groups by brewery,
+Looks at checkins from Thursday through Sunday each week, groups by brewery,
 and identifies the dominant brewery — likely the tap takeover guest.
 
 Usage:
@@ -22,6 +22,8 @@ from pathlib import Path
 
 CACHE_FILE = Path(__file__).parent / "checkins_cache.json"
 OUTPUT_DIR = Path(__file__).parent / "output"
+TAKEOVER_WEEKDAYS = (3, 4, 5, 6)  # Thursday -> Sunday
+TAKEOVER_WINDOW_LABEL = "Thursday-Sunday"
 
 
 def load_checkins():
@@ -44,15 +46,15 @@ def parse_date(date_str):
 def get_thursday_week_key(dt):
     """
     Get a week key based on the Thursday of that week.
-    Thursday = weekday 3. If it's Friday (4), go back 1 day to the Thursday.
+    Thursday = weekday 3. Friday/Saturday/Sunday are folded back into the
+    same Thursday-anchored takeover window.
     """
     weekday = dt.weekday()
     if weekday == 3:  # Thursday
         thursday = dt.date()
-    elif weekday == 4:  # Friday
-        thursday = (dt - timedelta(days=1)).date()
     else:
-        # Shouldn't happen if we filter correctly, but handle gracefully
+        # Shouldn't happen if we filter correctly, but handle gracefully.
+        # Saturday/Sunday naturally map back to the same Thursday here.
         days_since_thursday = (weekday - 3) % 7
         thursday = (dt - timedelta(days=days_since_thursday)).date()
     return thursday
@@ -60,32 +62,32 @@ def get_thursday_week_key(dt):
 
 def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
     """
-    Detect tap takeovers by analyzing Thursday/Friday checkin patterns.
+    Detect tap takeovers by analyzing Thursday-Sunday checkin patterns.
 
     A tap takeover is detected when:
-    - A single brewery has >= min_checkins unique checkins on a Thu/Fri
+    - A single brewery has >= min_checkins unique checkins during the Thu-Sun window
     - That brewery represents >= min_ratio of all checkins that day/week
     - The brewery is NOT the venue's usual house taps
 
     Returns a list of detected takeovers sorted by date.
     """
-    # Filter to Thursday (3) and Friday (4) checkins only
-    thu_fri_checkins = []
+    # Filter to Thursday-Sunday takeover checkins only.
+    takeover_window_checkins = []
     for c in checkins:
         dt = parse_date(c.get("created_at", ""))
-        if dt and dt.weekday() in (3, 4):
+        if dt and dt.weekday() in TAKEOVER_WEEKDAYS:
             c["_parsed_date"] = dt
-            thu_fri_checkins.append(c)
+            takeover_window_checkins.append(c)
 
-    if not thu_fri_checkins:
-        print("No Thursday/Friday checkins found in the data.")
+    if not takeover_window_checkins:
+        print(f"No {TAKEOVER_WINDOW_LABEL} checkins found in the data.")
         return []
 
-    print(f"Found {len(thu_fri_checkins)} Thursday/Friday checkins to analyze.\n")
+    print(f"Found {len(takeover_window_checkins)} {TAKEOVER_WINDOW_LABEL} checkins to analyze.\n")
 
     # Group checkins by week (keyed by Thursday date)
     weeks = defaultdict(list)
-    for c in thu_fri_checkins:
+    for c in takeover_window_checkins:
         week_key = get_thursday_week_key(c["_parsed_date"])
         weeks[week_key] = weeks.get(week_key, [])
         weeks[week_key].append(c)
@@ -108,13 +110,16 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
 
     total_checkins = len(checkins)
     house_breweries = set()
-    # Must appear in >50% of weeks AND >15% of total checkins
-    min_week_presence = max(2, num_weeks * 0.5)
-    for brewery, count in all_brewery_counts.items():
-        weeks_present = len(brewery_week_presence.get(brewery, set()))
-        high_share = total_checkins > 0 and count / total_checkins > 0.15
-        if high_share and weeks_present >= min_week_presence:
-            house_breweries.add(brewery)
+    min_week_presence = max(4, int(num_weeks * 0.5 + 0.999))
+    # Only infer "house" breweries when we have enough takeover windows to make
+    # that judgment. On short histories (for example, just the last month), a
+    # single popular takeover can otherwise look like a permanent house tap.
+    if num_weeks >= 8:
+        for brewery, count in all_brewery_counts.items():
+            weeks_present = len(brewery_week_presence.get(brewery, set()))
+            high_share = total_checkins > 0 and count / total_checkins > 0.15
+            if high_share and weeks_present >= min_week_presence:
+                house_breweries.add(brewery)
 
     if house_breweries:
         print(f"Detected likely house breweries (>15% of checkins + present in {min_week_presence:.0f}+ weeks):")
@@ -328,15 +333,15 @@ def show_weekly_breakdown(checkins):
     Show ALL weeks with their brewery breakdown — useful for debugging
     or finding weeks where detection thresholds didn't trigger.
     """
-    thu_fri = []
+    takeover_window_checkins = []
     for c in checkins:
         dt = parse_date(c.get("created_at", ""))
-        if dt and dt.weekday() in (3, 4):
+        if dt and dt.weekday() in TAKEOVER_WEEKDAYS:
             c["_parsed_date"] = dt
-            thu_fri.append(c)
+            takeover_window_checkins.append(c)
 
     weeks = defaultdict(list)
-    for c in thu_fri:
+    for c in takeover_window_checkins:
         week_key = get_thursday_week_key(c["_parsed_date"])
         weeks[week_key].append(c)
 

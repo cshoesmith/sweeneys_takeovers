@@ -3,7 +3,7 @@
 Detects weekly **craft beer tap takeovers** at Hotel Sweeneys, Sydney by analyzing
 Untappd checkin data. Each Thursday the venue features beers from a single guest
 brewery — this tool identifies which brewery was featured each week by looking at
-Thursday and Friday checkin patterns.
+Thursday through Sunday checkin patterns.
 
 ## Setup
 
@@ -65,7 +65,7 @@ python fetch_checkins.py --since 2024-01-01
 python analyze_takeovers.py
 ```
 
-This reads the cached checkins, filters to Thursdays and Fridays, and identifies
+This reads the cached checkins, filters to Thursdays through Sundays, and identifies
 weeks where a single brewery dominated — indicating a tap takeover.
 
 **Options:**
@@ -77,7 +77,7 @@ weeks where a single brewery dominated — indicating a tap takeover.
 | `--output csv` | Export results to `output/takeovers.csv` |
 | `--output json` | Export results to `output/takeovers.json` |
 | `--output both` | Export both CSV and JSON |
-| `--breakdown` | Show brewery breakdown for every Thursday/Friday week |
+| `--breakdown` | Show brewery breakdown for every Thursday-Sunday takeover week |
 
 **Examples:**
 
@@ -94,7 +94,7 @@ python analyze_takeovers.py --breakdown
 
 ## How detection works
 
-1. All checkins are filtered to **Thursdays and Fridays** only
+1. All checkins are filtered to **Thursdays through Sundays** only
 2. Checkins are grouped by week (keyed to the Thursday date)
 3. Breweries appearing in >15% of *all* checkins are flagged as "house breweries"
    and excluded from takeover detection (they're always on tap)

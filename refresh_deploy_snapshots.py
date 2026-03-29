@@ -98,13 +98,14 @@ def fallback_json(path: Path, default):
     return payload if payload is not None else default
 
 
-def build_public_cache_summary():
+def build_public_cache_summary(build_unix: int):
     summary = dict(get_cache_summary_data())
-    refreshed_at = datetime.now(timezone.utc)
+    refreshed_at = datetime.fromtimestamp(build_unix, tz=timezone.utc)
     summary["has_token"] = False
     summary["error_history"] = []
     summary["refreshed_at"] = refreshed_at.isoformat()
-    summary["refreshed_at_unix"] = int(refreshed_at.timestamp())
+    summary["refreshed_at_unix"] = build_unix
+    summary["build_label"] = str(build_unix)
     summary["latest_checkin_at"] = summary.get("newest_date")
     summary["refresh_source"] = "github-actions" if os.getenv("GITHUB_ACTIONS") == "true" else "manual-refresh-script"
     summary["warning_after_minutes"] = 90
@@ -131,9 +132,8 @@ def replace_inline_constant(source_text: str, constant_name: str, js_literal: st
     return updated_text
 
 
-def update_index_inline_snapshots(takeovers, current_events, past_events, beer_info, cache_summary):
+def update_index_inline_snapshots(takeovers, current_events, past_events, beer_info, cache_summary, build_label):
     html = INDEX_HTML_FILE.read_text(encoding="utf-8")
-    build_label = str(int(datetime.now(timezone.utc).timestamp()))
 
     html = replace_inline_constant(html, "INLINE_DEPLOY_BUILD_LABEL", json.dumps(build_label))
     html = replace_inline_constant(html, "INLINE_DEPLOY_TAKEOVERS", json.dumps(takeovers, indent=2, ensure_ascii=False))
@@ -148,6 +148,7 @@ def update_index_inline_snapshots(takeovers, current_events, past_events, beer_i
 
 def refresh_snapshots(skip_fetch=False, skip_beer_refresh=False, since_date=None):
     venue_id = int(os.getenv("VENUE_ID", "107565"))
+    build_unix = int(datetime.now(timezone.utc).timestamp())
 
     if not skip_fetch:
         print(f"Fetching latest checkins for venue {venue_id}...")
@@ -182,7 +183,7 @@ def refresh_snapshots(skip_fetch=False, skip_beer_refresh=False, since_date=None
     if not past_events:
         past_events = fallback_json(DEPLOY_PAST_EVENTS_FILE, [])
 
-    cache_summary = build_public_cache_summary()
+    cache_summary = build_public_cache_summary(build_unix)
 
     write_json(DEPLOY_TAKEOVERS_FILE, public_takeovers)
     write_json(DEPLOY_BEER_INFO_FILE, beer_info_lookup)
@@ -200,6 +201,7 @@ def refresh_snapshots(skip_fetch=False, skip_beer_refresh=False, since_date=None
         past_events=past_events,
         beer_info=beer_info_lookup,
         cache_summary=cache_summary,
+        build_label=str(build_unix),
     )
 
     print("Refresh complete:")
