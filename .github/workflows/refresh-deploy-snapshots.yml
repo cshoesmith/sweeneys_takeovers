@@ -15,6 +15,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    environment: Production
     timeout-minutes: 40
     env:
       UNTAPPD_ACCESS_TOKEN: ${{ secrets.UNTAPPD_ACCESS_TOKEN }}
@@ -49,7 +50,7 @@ jobs:
             exit 0
           fi
 
-          echo "::error::Missing Untappd credentials. Configure UNTAPPD_ACCESS_TOKEN, or both UNTAPPD_CLIENT_ID and UNTAPPD_CLIENT_SECRET, in repository secrets."
+          echo "::error::Missing Untappd credentials. Configure UNTAPPD_ACCESS_TOKEN, or both UNTAPPD_CLIENT_ID and UNTAPPD_CLIENT_SECRET, in repository or environment secrets for the selected job environment."
           exit 1
 
       - name: Refresh deploy snapshots
