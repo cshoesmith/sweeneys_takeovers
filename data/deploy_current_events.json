@@ -1,14 +1,26 @@
 [
   {
-    "event_id": 950759,
-    "event_name": "White Bay Brewery Tap Takeover",
-    "event_url": "https://untappd.com/v/hotel-sweeneys/107565/event/950759",
-    "date_text": "Thu, Mar 26th • 12:00 PM AEDT - Sun, Mar 29th • 10:00 PM AEDT",
+    "event_id": 955271,
+    "event_name": "Tank to Tap - Akasha's Wooden Leg!!! Fresh as F$$K",
+    "event_url": "https://untappd.com/v/hotel-sweeneys/107565/event/955271",
+    "date_text": "Wed, Apr 1st • 10:00 AM AEDT - Wed, Apr 1st • 11:55 PM AEDT",
     "meta": "Hotel Sweeneys • Sydney , NSW",
-    "interest_text": "19 people",
-    "description": "White Bay Brewery is taking over the taps at Hotel Sweeneys Rooftop! One of our favourite breweries, White Bay beers are great representations of style: fresh, balanced, and impossible to resist. These kegs wont last long, so get in quick and grab a pint. See you on the rooftop! Tap List:- - Czech Pilsner - Hazy Pale Ale - XPA - Munich Lager - Main Character WCIPA - Plot Twist Black IPA - Steelworked WCPILS - Dolce Noir - Vinum Sabbathi Imperial Stout - Dog Days Red IPA - Trifecta Hazy IPA - King Peanut Fresh Hop Golden Ale",
+    "interest_text": "4 people",
+    "description": "Hey Sydney — check this out 👀🍺 This Wednesday (ish), we’re doing something seriously special… We’re pouring the exclusive first keg straight from the tank of Wooden Leg — no stops, no delays. Brewed, kegged, driven straight to the pub, and tapped immediately for you to enjoy at its absolute freshest. 🚚 Expected arrival: 10am Wednesday (pending the beer finishing perfectly and being at its best — we won’t rush greatness) - keep an eye on socials for confirmation! We’ll be opening the rooftop early so you can get amongst it — this is as fresh as it gets: tank → keg → tap → your glass. Super limited. Super fun. Something a bit different. We are absolutely pumped to bring this to you — don’t miss it 🍻",
     "where": "236 Clarence St Sydney, NSW",
-    "image_url": "https://utfb-images.untappd.com/jrf4sx4luswrzmudt74p5kwkbcxr?auto=compress%2Cformat&fill=solid&fillcolor=000000&fit=fill&h=320&q=80&w=570",
+    "image_url": "https://utfb-images.untappd.com/cbbiq1ce7laq3nezyjohknzn31dr?auto=compress%2Cformat&fill=solid&fillcolor=000000&fit=fill&h=320&q=80&w=570",
+    "source": "current-events-page"
+  },
+  {
+    "event_id": 955281,
+    "event_name": "Precinct Brewing Co. Tap Takeover",
+    "event_url": "https://untappd.com/v/hotel-sweeneys/107565/event/955281",
+    "date_text": "Thu, Apr 2nd • 12:00 PM AEDT - Sun, Apr 5th • 10:00 PM AEDT",
+    "meta": "Hotel Sweeneys • Sydney , NSW",
+    "interest_text": "2 people",
+    "description": "“We are as passionate about creating first-class craft beer, as we are at building a cool place to enjoy it. From brewing our first batches in the garage of our share house, to carving out our niche in the hospitality industry - we are a small crew of real people with a shared love of crafting exceptionally wonderful beer. We strive to connect with all our ingredients, the land they were grown on, and the people that plant, pick, deliver and pour.”- Precinct Brewing Tap List: - Raspberry Sour - Mango Sour - Pacific Ale - Lager - Pale Ale - Yuzu Wit Bier - Experiment #42 Hazy IPA - Dry Irish Stout - Tropical Fruitburst ALE - WCIPA - Devils Island Tropical Stout - Red",
+    "where": "236 Clarence St Sydney, NSW",
+    "image_url": "https://utfb-images.untappd.com/mft23f3enfafvdgzizja28kos3tn?auto=compress%2Cformat&fill=solid&fillcolor=000000&fit=fill&h=320&q=80&w=570",
     "source": "current-events-page"
   }
 ]
