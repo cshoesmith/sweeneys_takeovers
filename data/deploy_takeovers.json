@@ -2,10 +2,10 @@
   {
     "date": "2026-03-12",
     "brewery": "TWØBAYS",
-    "checkins": 49,
+    "checkins": 37,
     "unique_beers": 12,
-    "total_checkins_that_week": 56,
-    "share_pct": 87.5,
+    "total_checkins_that_week": 43,
+    "share_pct": 86.0,
     "beers": [
       "American Cream Ale",
       "Czech Dark Lager",
@@ -213,31 +213,22 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 3,
-        "total": 12,
-        "pct": 25.0,
-        "rank": 1
-      },
-      {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 2,
         "total": 12,
         "pct": 16.7,
-        "rank": 2
+        "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 2,
         "total": 12,
         "pct": 16.7,
-        "rank": 3
+        "rank": 2
       },
       {
         "username": "lightbeerking",
@@ -246,7 +237,7 @@
         "checked": 1,
         "total": 12,
         "pct": 8.3,
-        "rank": 4
+        "rank": 3
       },
       {
         "username": "mw1414",
@@ -255,6 +246,15 @@
         "checked": 1,
         "total": 12,
         "pct": 8.3,
+        "rank": 4
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 12,
+        "pct": 0.0,
         "rank": 5
       },
       {
