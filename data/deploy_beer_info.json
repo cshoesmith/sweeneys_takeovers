@@ -130,6 +130,20 @@
     "rating_count": 48,
     "brewery_name": "Precinct Brewing Co. "
   },
+  "4268562": {
+    "beer_id": 4268562,
+    "beer_name": "Big Hazy IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5383384_7fcc9_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 7.2,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 2,
+    "brewery_name": "Pilot Batch",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/precinct-brewing-co-big-hazy-ipa-pilot-batch/4268562"
+  },
   "5168633": {
     "beer_id": 5168633,
     "beer_name": "Double Mango Sour",
@@ -183,6 +197,32 @@
     "rating_count": 104,
     "brewery_name": "Precinct Brewing Co. "
   },
+  "6533713": {
+    "beer_id": 6533713,
+    "beer_name": "Fruitburst - Tropical Pale Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6533713_a3210_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6533713_a3210_hd.jpeg",
+    "beer_style": "Pale Ale - Other",
+    "beer_abv": 0,
+    "beer_ibu": 0,
+    "beer_description": "This beer was brewed with breezy summer sessions in mind — crisp, bright, and dangerously drinkable. A clean, lean malt base sets the stage while a cohort of lesser-seen hops bring the fruit fiesta: think ripe peach, juicy citrus, and a pop of tropical sweetness. The result? A little fruitburst in every glass. And at 4.2%, it’s built for one more… and then maybe one more after that.",
+    "rating_score": 3.17692,
+    "rating_count": 13,
+    "brewery_name": "Precinct Brewing Co. "
+  },
+  "5826486": {
+    "beer_id": 5826486,
+    "beer_name": "Maui Wowie West Coast",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5826486_f5f2f_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5826486_f5f2f_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 7,
+    "beer_ibu": 0,
+    "beer_description": "Maauuuuiiii Woowwwwwiiiiieee!\r\n\r\nFinally, another West Coast IPA on tap! This one was inspired by the hop geniuses @freestylehops, who have developed a concentrated liquid hop solution, infused with Pineapple Puree! Maui Nelson it is called. It is very wowie though, if you know what we mean…\r\nAll this hoppy goodness surfs along a backbone of quality pale malts with a bit of crystal thrown in. Dropping in on the Maui hop wave is a piney & cirtusy team of Eclipse, Amarillo and Citra.\r\n\r\nThe result is a citrus forward, pleasantly bitter IPA that finishes neatly on malty sweetness (with a twang of pineapple juice). Very drinkable at 7%, technically into the IIPA range!",
+    "rating_score": 3.93519,
+    "rating_count": 27,
+    "brewery_name": "Precinct Brewing Co. "
+  },
   "4559023": {
     "beer_id": 4559023,
     "beer_name": "Pacific Ale",
@@ -222,5 +262,18 @@
     "brewery_name": "Precinct Brewing Co.",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/precinct-brewing-co-red-means-go/6656387"
+  },
+  "6533712": {
+    "beer_id": 6533712,
+    "beer_name": "Yuzu Wheat Beer",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6533712_7b818_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6533712_7b818_hd.jpeg",
+    "beer_style": "Wheat Beer - Fruited",
+    "beer_abv": 4.8,
+    "beer_ibu": 0,
+    "beer_description": "Crisp wheat beer brightened with Japanese yuzu. Refreshing tartness meets subtle sweetness with notes of lemon, grapefruit and mandarin. Light-bodied and effervescent – sunshine in a glass. ",
+    "rating_score": 3.4425,
+    "rating_count": 20,
+    "brewery_name": "Precinct Brewing Co. "
   }
 }
