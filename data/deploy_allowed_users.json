@@ -1,30 +1,8 @@
 {
   "eligible_usernames": [
-    "ahawli",
-    "ale_n",
-    "arunskariah",
-    "baggymayhem",
-    "barrman",
-    "beerstothemax",
-    "braggistino",
-    "brucechippa",
-    "claydz",
-    "dapitz",
-    "dowlo",
-    "hiriser",
-    "lightbeerking",
-    "mickroc",
-    "mitchm_beer",
-    "mw1414",
-    "naughty_nobby",
-    "ozrazdaz",
-    "papicool",
-    "peterzaluzny",
-    "saul_bunton",
-    "temosh",
-    "thirstyoclock",
-    "virtualpete"
+    "jthasabeerdependency",
+    "raiderdave86"
   ],
-  "eligible_count": 24,
+  "eligible_count": 2,
   "source": "takeover-checkins"
 }
