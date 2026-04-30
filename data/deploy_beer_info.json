@@ -387,5 +387,18 @@
     "brewery_name": "KAIJU! Beer",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/kaiju-beer-dark-lager/6665223"
+  },
+  "251368": {
+    "beer_id": 251368,
+    "beer_name": "Golden Axe",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-251368_b2f91_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-251368_4d41d_hd.jpeg",
+    "beer_style": "Cider - Traditional / Apfelwein",
+    "beer_abv": 5.2,
+    "beer_ibu": 0,
+    "beer_description": "Golden Axe is delicious hand crafted apple cider. A fresh tasting, thirst quenching drop with just enough sweetness.",
+    "rating_score": 3.44383,
+    "rating_count": 1410,
+    "brewery_name": "KAIJU! Beer"
   }
 }

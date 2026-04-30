@@ -4,8 +4,8 @@
     "brewery": "Cypher Brewing Co",
     "checkins": 25,
     "unique_beers": 5,
-    "total_checkins_that_week": 32,
-    "share_pct": 78.1,
+    "total_checkins_that_week": 29,
+    "share_pct": 86.2,
     "beers": [
       "Astral Dive",
       "IIIXIII Pastry Stout",
@@ -638,14 +638,15 @@
   {
     "date": "2026-04-30",
     "brewery": "KAIJU! Beer",
-    "checkins": 4,
-    "unique_beers": 3,
-    "total_checkins_that_week": 4,
-    "share_pct": 100.0,
+    "checkins": 6,
+    "unique_beers": 4,
+    "total_checkins_that_week": 7,
+    "share_pct": 85.7,
     "beers": [
       "Beyond the Black River (Mutation Program #006)",
       "Clovey With A Chance of Banana",
-      "Dark Lager"
+      "Dark Lager",
+      "Golden Axe"
     ],
     "beer_details": [
       {
@@ -691,6 +692,20 @@
         "brewery_name": "KAIJU! Beer",
         "brewery_country": "Australia",
         "beer_page_url": "https://untappd.com/b/kaiju-beer-dark-lager/6665223"
+      },
+      {
+        "beer_id": 251368,
+        "beer_name": "Golden Axe",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-251368_b2f91_sm.jpeg",
+        "beer_style": "Cider - Traditional / Apfelwein",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-251368_4d41d_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Golden Axe is delicious hand crafted apple cider. A fresh tasting, thirst quenching drop with just enough sweetness.",
+        "rating_score": 3.44383,
+        "rating_count": 1410,
+        "brewery_name": "KAIJU! Beer"
       }
     ],
     "source": "heuristic",
@@ -700,7 +715,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 1
       },
@@ -709,7 +724,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 2
       },
@@ -718,7 +733,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 3
       },
@@ -727,7 +742,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 4
       },
@@ -736,7 +751,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 5
       },
@@ -745,7 +760,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 6
       },
@@ -754,7 +769,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 7
       }
