@@ -2,10 +2,10 @@
   {
     "date": "2026-04-09",
     "brewery": "Cypher Brewing Co",
-    "checkins": 18,
+    "checkins": 16,
     "unique_beers": 5,
-    "total_checkins_that_week": 22,
-    "share_pct": 81.8,
+    "total_checkins_that_week": 20,
+    "share_pct": 80.0,
     "beers": [
       "Astral Dive",
       "IIIXIII Pastry Stout",
@@ -638,19 +638,35 @@
   {
     "date": "2026-04-30",
     "brewery": "KAIJU! Beer",
-    "checkins": 10,
-    "unique_beers": 6,
-    "total_checkins_that_week": 14,
-    "share_pct": 71.4,
+    "checkins": 12,
+    "unique_beers": 8,
+    "total_checkins_that_week": 16,
+    "share_pct": 75.0,
     "beers": [
+      "Aftermath",
       "Beyond the Black River (Mutation Program #006)",
       "Cherry BOMG",
       "Clovey With A Chance of Banana",
       "Dark Lager",
       "Golden Axe",
-      "MP#0022 - Imperatrix Hoppy Pils"
+      "MP#0022 - Imperatrix Hoppy Pils",
+      "Metamorphosis West Coast IPA"
     ],
     "beer_details": [
+      {
+        "beer_id": 458300,
+        "beer_name": "Aftermath",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-458300_c9ce3_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double",
+        "beer_abv": 9.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-458300_c51af_hd.jpeg",
+        "beer_ibu": 140,
+        "beer_description": "KAIJU! BEER: Double IPA was our first beer and it’s an ultra-hopped 9.1% alcohol mind-blower that really lives up to it’s name with enough malt backbone to smooth out the assertive bitterness. \r\n\r\nMoments after the demise of the DiatamaticHopzilla, our heroes tap the bitter mystery fuelling its fury. ",
+        "rating_score": 3.90097,
+        "rating_count": 7610,
+        "brewery_name": "KAIJU! Beer"
+      },
       {
         "beer_id": 4498040,
         "beer_name": "Beyond the Black River (Mutation Program #006)",
@@ -736,6 +752,20 @@
         "rating_score": 3.73317,
         "rating_count": 101,
         "brewery_name": "KAIJU! Beer"
+      },
+      {
+        "beer_id": 596462,
+        "beer_name": "Metamorphosis West Coast IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-596462_c90af_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 6.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-596462_b5576_hd.jpeg",
+        "beer_ibu": 70,
+        "beer_description": "A hop-forward profile with aromas of citrus, tropical fruit, and resin, balanced by a clean malt base and refreshing hop bitterness.",
+        "rating_score": 3.69951,
+        "rating_count": 14938,
+        "brewery_name": "KAIJU! Beer"
       }
     ],
     "source": "heuristic",
@@ -745,7 +775,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 8,
         "pct": 0.0,
         "rank": 1
       },
@@ -754,7 +784,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 8,
         "pct": 0.0,
         "rank": 2
       },
@@ -763,7 +793,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 6,
+        "total": 8,
         "pct": 0.0,
         "rank": 3
       },
@@ -772,7 +802,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 8,
         "pct": 0.0,
         "rank": 4
       },
@@ -781,7 +811,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 8,
         "pct": 0.0,
         "rank": 5
       },
@@ -790,7 +820,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 8,
         "pct": 0.0,
         "rank": 6
       },
@@ -799,7 +829,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 8,
         "pct": 0.0,
         "rank": 7
       }
