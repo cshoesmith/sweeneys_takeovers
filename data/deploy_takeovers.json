@@ -2,10 +2,10 @@
   {
     "date": "2026-04-09",
     "brewery": "Cypher Brewing Co",
-    "checkins": 16,
+    "checkins": 15,
     "unique_beers": 5,
-    "total_checkins_that_week": 19,
-    "share_pct": 84.2,
+    "total_checkins_that_week": 18,
+    "share_pct": 83.3,
     "beers": [
       "Astral Dive",
       "IIIXIII Pastry Stout",
@@ -638,10 +638,10 @@
   {
     "date": "2026-04-30",
     "brewery": "KAIJU! Beer",
-    "checkins": 13,
+    "checkins": 14,
     "unique_beers": 8,
-    "total_checkins_that_week": 17,
-    "share_pct": 76.5,
+    "total_checkins_that_week": 18,
+    "share_pct": 77.8,
     "beers": [
       "Aftermath",
       "Beyond the Black River (Mutation Program #006)",
