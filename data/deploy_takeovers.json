@@ -2,10 +2,10 @@
   {
     "date": "2026-04-16",
     "brewery": "Molly Rose Brewing",
-    "checkins": 126,
+    "checkins": 127,
     "unique_beers": 12,
-    "total_checkins_that_week": 134,
-    "share_pct": 94.0,
+    "total_checkins_that_week": 135,
+    "share_pct": 94.1,
     "beers": [
       "Bierchen #1 Altbier",
       "Flash",
@@ -259,17 +259,15 @@
   {
     "date": "2026-04-23",
     "brewery": "Yulli's Brews",
-    "checkins": 35,
-    "unique_beers": 10,
-    "total_checkins_that_week": 65,
-    "share_pct": 53.8,
+    "checkins": 28,
+    "unique_beers": 8,
+    "total_checkins_that_week": 57,
+    "share_pct": 49.1,
     "beers": [
       "'Amanda' Mandarin IPA",
-      "Clarence Hazy Pale Ale",
       "Fat Nerd Vanilla Porter",
       "Kuro Black Rice Lager",
       "Maisie!",
-      "Norman Australian Ale",
       "Ruby Pink Grapefruit IPA",
       "Seabass Mediterranean Lager",
       "Slick Rick's Rampaging Red Ale",
@@ -288,20 +286,6 @@
         "beer_description": "This American style IPA is layered with a range of mandarin flavour from a carefully selected hop bill and a healthy serving of cold pressed mandarins blended with orange peel liqueur. The result is a super drinkable, fruit drivien IPA with an assertive mandarin peel bitterness and a dry mouthfeel. The perfect Winter IPA making use of our favourite seasonal citrus fruit.",
         "rating_score": 3.67386,
         "rating_count": 4564,
-        "brewery_name": "Yulli's Brews"
-      },
-      {
-        "beer_id": 5520651,
-        "beer_name": "Clarence Hazy Pale Ale",
-        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5520651_2e280_sm.jpeg",
-        "beer_style": "Pale Ale - New England / Hazy",
-        "beer_abv": 4.5,
-        "beer_auth_rating": null,
-        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5520651_52d72_hd.jpeg",
-        "beer_ibu": 0,
-        "beer_description": "Clarence Hazy Pale Ale is an easy drinking hazy pale ale. Embracing the obsession with opacity, low bitterness and obscene levels of dry hopping as well as some new technology in the form of Subzero HopKief™ - Clarence combines a full pillowy mouthfeel with an array of fruity hop profiles to bring you a truly modern drinking experience. Pair with your favourite naan pocket for a good time.",
-        "rating_score": 3.5639,
-        "rating_count": 716,
         "brewery_name": "Yulli's Brews"
       },
       {
@@ -344,20 +328,6 @@
         "beer_description": "A collaboration with Maiz restaurant. ",
         "rating_score": 3.45357,
         "rating_count": 42,
-        "brewery_name": "Yulli's Brews"
-      },
-      {
-        "beer_id": 684769,
-        "beer_name": "Norman Australian Ale",
-        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-684769_139dc_sm.jpeg",
-        "beer_style": "Pale Ale - Australian",
-        "beer_abv": 4.9,
-        "beer_auth_rating": null,
-        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-684769_5654a_hd.jpeg",
-        "beer_ibu": 29,
-        "beer_description": "Norman Australian Ale is an approachable session beer made from all local ingredients. A light malt base makes way for an abundance of hop character; showcasing vibrant citrus aromas and hints of apple and pear on the palate before finishing with a crisp, clean bitterness leaving you wanting more. Australian hops Galaxy and Ella shine in this quencher, pairing nicely with our locally sourced malt to create a uniquely Australian Ale.",
-        "rating_score": 3.43285,
-        "rating_count": 2711,
         "brewery_name": "Yulli's Brews"
       },
       {
@@ -422,8 +392,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
-        "total": 10,
-        "pct": 20.0,
+        "total": 8,
+        "pct": 25.0,
         "rank": 1
       },
       {
@@ -431,8 +401,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 2,
-        "total": 10,
-        "pct": 20.0,
+        "total": 8,
+        "pct": 25.0,
         "rank": 2
       },
       {
@@ -440,8 +410,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 2,
-        "total": 10,
-        "pct": 20.0,
+        "total": 8,
+        "pct": 25.0,
         "rank": 3
       },
       {
@@ -449,7 +419,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 8,
         "pct": 0.0,
         "rank": 4
       },
@@ -458,7 +428,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 10,
+        "total": 8,
         "pct": 0.0,
         "rank": 5
       },
@@ -467,7 +437,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 8,
         "pct": 0.0,
         "rank": 6
       },
@@ -476,7 +446,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 8,
         "pct": 0.0,
         "rank": 7
       }
@@ -487,8 +457,8 @@
     "brewery": "KAIJU! Beer",
     "checkins": 57,
     "unique_beers": 11,
-    "total_checkins_that_week": 62,
-    "share_pct": 91.9,
+    "total_checkins_that_week": 63,
+    "share_pct": 90.5,
     "beers": [
       "Aftermath",
       "Beyond the Black River (Mutation Program #006)",
