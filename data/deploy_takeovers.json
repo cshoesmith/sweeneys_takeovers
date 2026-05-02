@@ -485,10 +485,10 @@
   {
     "date": "2026-04-30",
     "brewery": "KAIJU! Beer",
-    "checkins": 52,
+    "checkins": 53,
     "unique_beers": 11,
-    "total_checkins_that_week": 57,
-    "share_pct": 91.2,
+    "total_checkins_that_week": 58,
+    "share_pct": 91.4,
     "beers": [
       "Aftermath",
       "Beyond the Black River (Mutation Program #006)",
@@ -685,9 +685,9 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 2,
+        "checked": 3,
         "total": 11,
-        "pct": 18.2,
+        "pct": 27.3,
         "rank": 3
       },
       {
