@@ -2,10 +2,10 @@
   {
     "date": "2026-04-16",
     "brewery": "Molly Rose Brewing",
-    "checkins": 127,
+    "checkins": 126,
     "unique_beers": 12,
-    "total_checkins_that_week": 135,
-    "share_pct": 94.1,
+    "total_checkins_that_week": 134,
+    "share_pct": 94.0,
     "beers": [
       "Bierchen #1 Altbier",
       "Flash",
@@ -485,10 +485,10 @@
   {
     "date": "2026-04-30",
     "brewery": "KAIJU! Beer",
-    "checkins": 53,
+    "checkins": 57,
     "unique_beers": 11,
-    "total_checkins_that_week": 58,
-    "share_pct": 91.4,
+    "total_checkins_that_week": 62,
+    "share_pct": 91.9,
     "beers": [
       "Aftermath",
       "Beyond the Black River (Mutation Program #006)",
@@ -673,13 +673,22 @@
         "rank": 1
       },
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 4,
+        "total": 11,
+        "pct": 36.4,
+        "rank": 2
+      },
+      {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
         "total": 11,
         "pct": 27.3,
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "mw1414",
@@ -688,15 +697,6 @@
         "checked": 3,
         "total": 11,
         "pct": 27.3,
-        "rank": 3
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 11,
-        "pct": 0.0,
         "rank": 4
       },
       {
