@@ -485,10 +485,10 @@
   {
     "date": "2026-04-30",
     "brewery": "KAIJU! Beer",
-    "checkins": 58,
+    "checkins": 59,
     "unique_beers": 11,
-    "total_checkins_that_week": 64,
-    "share_pct": 90.6,
+    "total_checkins_that_week": 65,
+    "share_pct": 90.8,
     "beers": [
       "Aftermath",
       "Beyond the Black River (Mutation Program #006)",
