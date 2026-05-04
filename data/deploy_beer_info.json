@@ -12,18 +12,6 @@
     "rating_count": 382,
     "brewery_name": "Molly Rose Brewing"
   },
-  "6412315": {
-    "beer_id": 6412315,
-    "beer_name": "Flash",
-    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-374168_d9a4a.jpeg",
-    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
-    "beer_style": "Pale Ale - American",
-    "beer_abv": 5.3,
-    "beer_ibu": 0,
-    "rating_score": 3.62778,
-    "rating_count": 81,
-    "brewery_name": "Molly Rose Brewing"
-  },
   "6525921": {
     "beer_id": 6525921,
     "beer_name": "Gorn Fishin'",
@@ -37,19 +25,6 @@
     "rating_count": 87,
     "brewery_name": "Molly Rose Brewing"
   },
-  "6525923": {
-    "beer_id": 6525923,
-    "beer_name": "Here Fishy Fishy",
-    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6525923_68148_sm.jpeg",
-    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6525923_68148_hd.jpeg",
-    "beer_style": "IPA - American",
-    "beer_abv": 6.2,
-    "beer_ibu": 0,
-    "beer_description": "IPA | 6.2%\r\n\r\nWe went fishing off the West Coast for a big IPA and pulled in two monster beers. This one we have served with a squeeze of extra El Dorado. Crack it fresh to taste the West Coast.",
-    "rating_score": 3.70733,
-    "rating_count": 75,
-    "brewery_name": "Molly Rose Brewing"
-  },
   "6500063": {
     "beer_id": 6500063,
     "beer_name": "Homecamp High Country Ale",
@@ -61,19 +36,6 @@
     "beer_description": "A thoughtful collaboration celebrating life under canvas, campfire yarns and starry nights. With caramel tones, smooth malt and citrus hops, this highland ale is the perfect brew for any camping moment.",
     "rating_score": 3.63625,
     "rating_count": 40,
-    "brewery_name": "Molly Rose Brewing"
-  },
-  "4509802": {
-    "beer_id": 4509802,
-    "beer_name": "Lager #3",
-    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4509802_be1e3_sm.jpeg",
-    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4509802_ee0df_hd.jpeg",
-    "beer_style": "Lager - Helles",
-    "beer_abv": 4.6,
-    "beer_ibu": 0,
-    "beer_description": "German Helles\r\n\r\nThis is a lager made using some of the best Aussie malt and German Hops. It's clean, bright, biscuity and has a ripper hoppy finish.",
-    "rating_score": 3.55159,
-    "rating_count": 408,
     "brewery_name": "Molly Rose Brewing"
   },
   "6615370": {
@@ -102,19 +64,6 @@
     "rating_count": 20,
     "brewery_name": "Molly Rose Brewing"
   },
-  "5250644": {
-    "beer_id": 5250644,
-    "beer_name": "Peach, Peach, Nectarine",
-    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5250644_91cd0_sm.jpeg",
-    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5250644_9db24_hd.jpeg",
-    "beer_style": "Sour - Fruited",
-    "beer_abv": 5,
-    "beer_ibu": 0,
-    "beer_description": "White peaches, yellow peaches and nectarines were dropped into our blended, aged sour and then allowed to slowly ferment and infuse over 12 months.",
-    "rating_score": 3.72318,
-    "rating_count": 151,
-    "brewery_name": "Molly Rose Brewing"
-  },
   "4836154": {
     "beer_id": 4836154,
     "beer_name": "Short & Stout",
@@ -139,19 +88,6 @@
     "beer_description": "This classic West Coast IPA shrines with bright citrus and stone fruit hop aromas and finishes with a dry, clean bitterness.",
     "rating_score": 3.66953,
     "rating_count": 1736,
-    "brewery_name": "Molly Rose Brewing"
-  },
-  "3522797": {
-    "beer_id": 3522797,
-    "beer_name": "When Life Gives You Lemons",
-    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3522797_4da58_sm.jpeg",
-    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3522797_2349b_hd.jpeg",
-    "beer_style": "Farmhouse Ale - Saison",
-    "beer_abv": 4.6,
-    "beer_ibu": 0,
-    "beer_description": "Lemons get a bad wrap but they are delicious in this bright golden ale that is brimming with fruity hops and was brewed with refreshment in mind. Dry hopped and dry lemoned (fresh lemons) farmhouse ale.\r\n\r\nClean and crisp with some specialty malt giving it a biscuity character making the beer reminiscent of a hoppy lemon slice but so much more refreshing and delicious.\r\n\r\nThe unique hop profile Loral, Cascade and Ahtanum pairs wonderfully with Aussie Pale malt, raw wheat, oats and munich malt.",
-    "rating_score": 3.49161,
-    "rating_count": 1550,
     "brewery_name": "Molly Rose Brewing"
   },
   "1681781": {
