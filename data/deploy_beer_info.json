@@ -469,6 +469,19 @@
     "rating_count": 755,
     "brewery_name": "Dad & Dave's Brewing"
   },
+  "5903878": {
+    "beer_id": 5903878,
+    "beer_name": "Crusher Hard Cherry Cola",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5903878_a61af_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5903878_15d7a_hd.jpeg",
+    "beer_style": "Other",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "Crusher Hard Cherry Cola, the blast from the past with a cherry twist!\r\n\r\nUnleash the power of cherry and cola and let the crusher take over.\r\n\r\nIt's not just a drink, it's a lifestyle. Drink responsibly or not at all.",
+    "rating_score": 3.97,
+    "rating_count": 20,
+    "brewery_name": "Dad & Dave's Brewing"
+  },
   "6699565": {
     "beer_id": 6699565,
     "beer_name": "Dragonfruit Sour",

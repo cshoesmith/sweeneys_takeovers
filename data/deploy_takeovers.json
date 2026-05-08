@@ -2,10 +2,10 @@
   {
     "date": "2026-04-16",
     "brewery": "Molly Rose Brewing",
-    "checkins": 94,
+    "checkins": 91,
     "unique_beers": 11,
-    "total_checkins_that_week": 101,
-    "share_pct": 93.1,
+    "total_checkins_that_week": 97,
+    "share_pct": 93.8,
     "beers": [
       "Bierchen #1 Altbier",
       "Flash",
@@ -718,15 +718,16 @@
   {
     "date": "2026-05-07",
     "brewery": "Dad & Dave's Brewing",
-    "checkins": 16,
-    "unique_beers": 9,
-    "total_checkins_that_week": 20,
-    "share_pct": 80.0,
+    "checkins": 20,
+    "unique_beers": 10,
+    "total_checkins_that_week": 24,
+    "share_pct": 83.3,
     "beers": [
       "Banoffee Pie-PA",
       "Belgian IPA",
       "Black Forest Gateau Pastry Stout",
       "Citra & Mosaic IPA",
+      "Crusher Hard Cherry Cola",
       "Dragonfruit Sour",
       "Fraise Lager",
       "Mandarin Sour – Berliner Weisse",
@@ -788,6 +789,20 @@
         "beer_description": "Dad & Dave’s Citra & Mosaic IPA is double dry hopped, delivering a well-balanced malty-sweet, tropical aroma and guava flavour. Deceptively smooth to drink.",
         "rating_score": 3.62901,
         "rating_count": 755,
+        "brewery_name": "Dad & Dave's Brewing"
+      },
+      {
+        "beer_id": 5903878,
+        "beer_name": "Crusher Hard Cherry Cola",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5903878_a61af_sm.jpeg",
+        "beer_style": "Other",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5903878_15d7a_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Crusher Hard Cherry Cola, the blast from the past with a cherry twist!\r\n\r\nUnleash the power of cherry and cola and let the crusher take over.\r\n\r\nIt's not just a drink, it's a lifestyle. Drink responsibly or not at all.",
+        "rating_score": 3.97,
+        "rating_count": 20,
         "brewery_name": "Dad & Dave's Brewing"
       },
       {
@@ -881,7 +896,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 1
       },
@@ -890,7 +905,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 2
       },
@@ -899,7 +914,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 3
       },
@@ -908,7 +923,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 4
       },
@@ -917,7 +932,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 5
       },
@@ -926,7 +941,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 6
       },
@@ -935,7 +950,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 7
       }
