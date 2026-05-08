@@ -2,10 +2,10 @@
   {
     "date": "2026-04-16",
     "brewery": "Molly Rose Brewing",
-    "checkins": 85,
+    "checkins": 64,
     "unique_beers": 11,
-    "total_checkins_that_week": 91,
-    "share_pct": 93.4,
+    "total_checkins_that_week": 70,
+    "share_pct": 91.4,
     "beers": [
       "Bierchen #1 Altbier",
       "Flash",
@@ -188,18 +188,18 @@
         "rank": 1
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 6,
-        "total": 11,
-        "pct": 54.5,
-        "rank": 2
-      },
-      {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 5,
+        "total": 11,
+        "pct": 45.5,
+        "rank": 2
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 5,
         "total": 11,
         "pct": 45.5,
@@ -718,16 +718,18 @@
   {
     "date": "2026-05-07",
     "brewery": "Dad & Dave's Brewing",
-    "checkins": 26,
-    "unique_beers": 10,
-    "total_checkins_that_week": 30,
-    "share_pct": 86.7,
+    "checkins": 43,
+    "unique_beers": 12,
+    "total_checkins_that_week": 51,
+    "share_pct": 84.3,
     "beers": [
       "Banoffee Pie-PA",
       "Belgian IPA",
       "Black Forest Gateau Pastry Stout",
       "Citra & Mosaic IPA",
       "Crusher Hard Cherry Cola",
+      "Crusher Hard Ginger Beer",
+      "Dad's Pils",
       "Dragonfruit Sour",
       "Fraise Lager",
       "Mandarin Sour – Berliner Weisse",
@@ -803,6 +805,34 @@
         "beer_description": "Crusher Hard Cherry Cola, the blast from the past with a cherry twist!\r\n\r\nUnleash the power of cherry and cola and let the crusher take over.\r\n\r\nIt's not just a drink, it's a lifestyle. Drink responsibly or not at all.",
         "rating_score": 3.97,
         "rating_count": 20,
+        "brewery_name": "Dad & Dave's Brewing"
+      },
+      {
+        "beer_id": 5903877,
+        "beer_name": "Crusher Hard Ginger Beer",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5903877_a33d6_sm.jpeg",
+        "beer_style": "Hard Ginger Beer",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5903877_a33d6_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Crusher Hard Ginger Beer is a bold choice for those who dare.\r\n\r\nIt's robust ginger flavour delivers a fiery blend of sweetness and spice, perfect for quenching a mighty thirst.\r\n\r\nIt's a beverage that's as fearless as y0u are.",
+        "rating_score": 3.40909,
+        "rating_count": 11,
+        "brewery_name": "Dad & Dave's Brewing"
+      },
+      {
+        "beer_id": 1280946,
+        "beer_name": "Dad's Pils",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1280946_7cfa0_sm.jpeg",
+        "beer_style": "Pilsner - Czech / Bohemian",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1280946_0ba17_hd.jpeg",
+        "beer_ibu": 30,
+        "beer_description": "This pilsner has a fantastic crisp malt body, and an herbaceous lingering yet light bitterness, making it the perfect session beer for those warm afternoons.",
+        "rating_score": 3.2966,
+        "rating_count": 647,
         "brewery_name": "Dad & Dave's Brewing"
       },
       {
@@ -896,7 +926,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 13,
         "pct": 0.0,
         "rank": 1
       },
@@ -905,7 +935,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 13,
         "pct": 0.0,
         "rank": 2
       },
@@ -914,7 +944,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 11,
+        "total": 13,
         "pct": 0.0,
         "rank": 3
       },
@@ -923,7 +953,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 13,
         "pct": 0.0,
         "rank": 4
       },
@@ -932,7 +962,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 13,
         "pct": 0.0,
         "rank": 5
       },
@@ -941,7 +971,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 13,
         "pct": 0.0,
         "rank": 6
       },
@@ -950,7 +980,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 13,
         "pct": 0.0,
         "rank": 7
       }

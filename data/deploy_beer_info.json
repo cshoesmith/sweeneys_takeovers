@@ -482,6 +482,32 @@
     "rating_count": 20,
     "brewery_name": "Dad & Dave's Brewing"
   },
+  "5903877": {
+    "beer_id": 5903877,
+    "beer_name": "Crusher Hard Ginger Beer",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5903877_a33d6_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5903877_a33d6_hd.jpeg",
+    "beer_style": "Hard Ginger Beer",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "Crusher Hard Ginger Beer is a bold choice for those who dare.\r\n\r\nIt's robust ginger flavour delivers a fiery blend of sweetness and spice, perfect for quenching a mighty thirst.\r\n\r\nIt's a beverage that's as fearless as y0u are.",
+    "rating_score": 3.40909,
+    "rating_count": 11,
+    "brewery_name": "Dad & Dave's Brewing"
+  },
+  "1280946": {
+    "beer_id": 1280946,
+    "beer_name": "Dad's Pils",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1280946_7cfa0_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1280946_0ba17_hd.jpeg",
+    "beer_style": "Pilsner - Czech / Bohemian",
+    "beer_abv": 4.2,
+    "beer_ibu": 30,
+    "beer_description": "This pilsner has a fantastic crisp malt body, and an herbaceous lingering yet light bitterness, making it the perfect session beer for those warm afternoons.",
+    "rating_score": 3.2966,
+    "rating_count": 647,
+    "brewery_name": "Dad & Dave's Brewing"
+  },
   "6699565": {
     "beer_id": 6699565,
     "beer_name": "Dragonfruit Sour",
