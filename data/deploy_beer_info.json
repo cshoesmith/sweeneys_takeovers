@@ -12,6 +12,20 @@
     "rating_count": 385,
     "brewery_name": "Molly Rose Brewing"
   },
+  "6412315": {
+    "beer_id": 6412315,
+    "beer_name": "Flash",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4786887_b3d1a_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Pale Ale - American",
+    "beer_abv": 5.3,
+    "beer_ibu": 0,
+    "rating_score": 3.62619,
+    "rating_count": 84,
+    "brewery_name": "Molly Rose Brewing",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/molly-rose-brewing-flash/6412315"
+  },
   "6525921": {
     "beer_id": 6525921,
     "beer_name": "Gorn Fishin'",
@@ -64,6 +78,19 @@
     "rating_count": 22,
     "brewery_name": "Molly Rose Brewing"
   },
+  "5250644": {
+    "beer_id": 5250644,
+    "beer_name": "Peach, Peach, Nectarine",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5250644_91cd0_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5250644_9db24_hd.jpeg",
+    "beer_style": "Sour - Fruited",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "White peaches, yellow peaches and nectarines were dropped into our blended, aged sour and then allowed to slowly ferment and infuse over 12 months.",
+    "rating_score": 3.72171,
+    "rating_count": 152,
+    "brewery_name": "Molly Rose Brewing"
+  },
   "4836154": {
     "beer_id": 4836154,
     "beer_name": "Short & Stout",
@@ -88,6 +115,19 @@
     "beer_description": "This classic West Coast IPA shrines with bright citrus and stone fruit hop aromas and finishes with a dry, clean bitterness.",
     "rating_score": 3.66981,
     "rating_count": 1739,
+    "brewery_name": "Molly Rose Brewing"
+  },
+  "3522797": {
+    "beer_id": 3522797,
+    "beer_name": "When Life Gives You Lemons",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3522797_4da58_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3522797_2349b_hd.jpeg",
+    "beer_style": "Farmhouse Ale - Saison",
+    "beer_abv": 4.6,
+    "beer_ibu": 0,
+    "beer_description": "Lemons get a bad wrap but they are delicious in this bright golden ale that is brimming with fruity hops and was brewed with refreshment in mind. Dry hopped and dry lemoned (fresh lemons) farmhouse ale.\r\n\r\nClean and crisp with some specialty malt giving it a biscuity character making the beer reminiscent of a hoppy lemon slice but so much more refreshing and delicious.\r\n\r\nThe unique hop profile Loral, Cascade and Ahtanum pairs wonderfully with Aussie Pale malt, raw wheat, oats and munich malt.",
+    "rating_score": 3.49099,
+    "rating_count": 1553,
     "brewery_name": "Molly Rose Brewing"
   },
   "1681781": {
@@ -269,18 +309,6 @@
     "beer_ibu": 0,
     "rating_score": 3.41,
     "rating_count": 10,
-    "brewery_name": "KAIJU! Beer"
-  },
-  "6665223": {
-    "beer_id": 6665223,
-    "beer_name": "Dark Lager",
-    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-43267_c758a.jpeg",
-    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
-    "beer_style": "Lager - Dark",
-    "beer_abv": 4.4,
-    "beer_ibu": 25,
-    "rating_score": 0,
-    "rating_count": 8,
     "brewery_name": "KAIJU! Beer"
   },
   "1843438": {
