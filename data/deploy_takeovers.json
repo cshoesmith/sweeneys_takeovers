@@ -2,10 +2,10 @@
   {
     "date": "2026-04-16",
     "brewery": "Molly Rose Brewing",
-    "checkins": 29,
+    "checkins": 25,
     "unique_beers": 10,
-    "total_checkins_that_week": 34,
-    "share_pct": 85.3,
+    "total_checkins_that_week": 30,
+    "share_pct": 83.3,
     "beers": [
       "Bierchen #1 Altbier",
       "Flash",
@@ -171,31 +171,13 @@
         "rank": 1
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 2,
-        "total": 10,
-        "pct": 20.0,
-        "rank": 2
-      },
-      {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 1,
-        "total": 10,
-        "pct": 10.0,
-        "rank": 3
-      },
-      {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
         "total": 10,
         "pct": 0.0,
-        "rank": 4
+        "rank": 2
       },
       {
         "username": "hiriser",
@@ -204,12 +186,30 @@
         "checked": 0,
         "total": 10,
         "pct": 0.0,
-        "rank": 5
+        "rank": 3
       },
       {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 10,
+        "pct": 0.0,
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 10,
+        "pct": 0.0,
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
         "total": 10,
         "pct": 0.0,
@@ -697,10 +697,10 @@
   {
     "date": "2026-05-07",
     "brewery": "Dad & Dave's Brewing",
-    "checkins": 69,
+    "checkins": 73,
     "unique_beers": 12,
-    "total_checkins_that_week": 87,
-    "share_pct": 79.3,
+    "total_checkins_that_week": 91,
+    "share_pct": 80.2,
     "beers": [
       "Banoffee Pie-PA",
       "Belgian IPA",
