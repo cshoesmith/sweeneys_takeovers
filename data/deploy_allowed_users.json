@@ -2,11 +2,9 @@
   "eligible_usernames": [
     "ale_n",
     "anthonymew",
-    "aphillips801",
     "arunskariah",
     "barrman",
     "beermattg82",
-    "belfieldbrewer",
     "blackers19",
     "bradytj",
     "bscampbell1972",
@@ -17,6 +15,7 @@
     "dgarberg",
     "dmtnny",
     "docta",
+    "gangaji",
     "garethmjones",
     "gra999",
     "gustav88",
@@ -31,9 +30,7 @@
     "liam_carroll",
     "lightbeerking",
     "mhf197",
-    "mrwright57",
     "mw1414",
-    "nger72",
     "numy",
     "ongbark",
     "papicool",
@@ -43,7 +40,6 @@
     "robey2000",
     "sampele",
     "shiftdecimal",
-    "subhamp17",
     "suzukakitaura",
     "tammypointless",
     "thevot",
@@ -52,6 +48,6 @@
     "virtualpete",
     "zacsmith03"
   ],
-  "eligible_count": 51,
+  "eligible_count": 47,
   "source": "takeover-checkins"
 }
