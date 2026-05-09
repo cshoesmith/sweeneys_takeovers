@@ -2,10 +2,10 @@
   {
     "date": "2026-04-16",
     "brewery": "Molly Rose Brewing",
-    "checkins": 25,
+    "checkins": 24,
     "unique_beers": 10,
-    "total_checkins_that_week": 30,
-    "share_pct": 83.3,
+    "total_checkins_that_week": 27,
+    "share_pct": 88.9,
     "beers": [
       "Bierchen #1 Altbier",
       "Flash",
@@ -697,10 +697,10 @@
   {
     "date": "2026-05-07",
     "brewery": "Dad & Dave's Brewing",
-    "checkins": 73,
+    "checkins": 74,
     "unique_beers": 12,
-    "total_checkins_that_week": 91,
-    "share_pct": 80.2,
+    "total_checkins_that_week": 94,
+    "share_pct": 78.7,
     "beers": [
       "Banoffee Pie-PA",
       "Belgian IPA",
