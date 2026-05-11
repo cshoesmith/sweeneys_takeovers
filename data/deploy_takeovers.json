@@ -2,10 +2,10 @@
   {
     "date": "2026-04-16",
     "brewery": "Molly Rose Brewing",
-    "checkins": 18,
-    "unique_beers": 9,
-    "total_checkins_that_week": 19,
-    "share_pct": 94.7,
+    "checkins": 15,
+    "unique_beers": 8,
+    "total_checkins_that_week": 16,
+    "share_pct": 93.8,
     "beers": [
       "Bierchen #1 Altbier",
       "Gorn Fishin'",
@@ -14,8 +14,7 @@
       "Nocino",
       "Peach, Peach, Nectarine",
       "Short & Stout",
-      "Skylight",
-      "When Life Gives You Lemons"
+      "Skylight"
     ],
     "beer_details": [
       {
@@ -129,20 +128,6 @@
         "rating_score": 3.66981,
         "rating_count": 1739,
         "brewery_name": "Molly Rose Brewing"
-      },
-      {
-        "beer_id": 3522797,
-        "beer_name": "When Life Gives You Lemons",
-        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3522797_4da58_sm.jpeg",
-        "beer_style": "Farmhouse Ale - Saison",
-        "beer_abv": 4.6,
-        "beer_auth_rating": null,
-        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3522797_2349b_hd.jpeg",
-        "beer_ibu": 0,
-        "beer_description": "Lemons get a bad wrap but they are delicious in this bright golden ale that is brimming with fruity hops and was brewed with refreshment in mind. Dry hopped and dry lemoned (fresh lemons) farmhouse ale.\r\n\r\nClean and crisp with some specialty malt giving it a biscuity character making the beer reminiscent of a hoppy lemon slice but so much more refreshing and delicious.\r\n\r\nThe unique hop profile Loral, Cascade and Ahtanum pairs wonderfully with Aussie Pale malt, raw wheat, oats and munich malt.",
-        "rating_score": 3.49099,
-        "rating_count": 1553,
-        "brewery_name": "Molly Rose Brewing"
       }
     ],
     "source": "heuristic",
@@ -151,9 +136,9 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 1,
-        "total": 9,
-        "pct": 11.1,
+        "checked": 0,
+        "total": 8,
+        "pct": 0.0,
         "rank": 1
       },
       {
@@ -161,7 +146,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 8,
         "pct": 0.0,
         "rank": 2
       },
@@ -170,7 +155,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 9,
+        "total": 8,
         "pct": 0.0,
         "rank": 3
       },
@@ -179,7 +164,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 8,
         "pct": 0.0,
         "rank": 4
       },
@@ -188,7 +173,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 8,
         "pct": 0.0,
         "rank": 5
       },
@@ -197,7 +182,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 8,
         "pct": 0.0,
         "rank": 6
       },
@@ -206,7 +191,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 8,
         "pct": 0.0,
         "rank": 7
       }
