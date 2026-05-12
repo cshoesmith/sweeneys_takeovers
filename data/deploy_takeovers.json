@@ -2,10 +2,10 @@
   {
     "date": "2026-04-16",
     "brewery": "Molly Rose Brewing",
-    "checkins": 9,
+    "checkins": 8,
     "unique_beers": 7,
-    "total_checkins_that_week": 10,
-    "share_pct": 90.0,
+    "total_checkins_that_week": 9,
+    "share_pct": 88.9,
     "beers": [
       "Bierchen #1 Altbier",
       "Gorn Fishin'",
