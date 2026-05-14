@@ -413,10 +413,10 @@
   {
     "date": "2026-04-30",
     "brewery": "KAIJU! Beer",
-    "checkins": 38,
+    "checkins": 34,
     "unique_beers": 10,
-    "total_checkins_that_week": 39,
-    "share_pct": 97.4,
+    "total_checkins_that_week": 35,
+    "share_pct": 97.1,
     "beers": [
       "Aftermath",
       "Beyond the Black River (Mutation Program #006)",
@@ -594,9 +594,9 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 2,
+        "checked": 1,
         "total": 10,
-        "pct": 20.0,
+        "pct": 10.0,
         "rank": 3
       },
       {
@@ -903,6 +903,144 @@
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
         "total": 13,
+        "pct": 0.0,
+        "rank": 7
+      }
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "brewery": "Cloudwater Brew Co.",
+    "checkins": 4,
+    "unique_beers": 4,
+    "total_checkins_that_week": 7,
+    "share_pct": 57.1,
+    "beers": [
+      "11th Birthday DDH Pale",
+      "11th Birthday Supercharged IPA",
+      "Piccadilly Pilsner",
+      "Take It With You"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6584101,
+        "beer_name": "11th Birthday DDH Pale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6584101_5adc6_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6584101_5adc6_hd.jpeg",
+        "beer_ibu": 20,
+        "beer_description": "We love celebrating with big beers but we also love being able to sit and enjoy a few pints with our mates without worrying about our heads (too much at least) so we’ve replicated our birthday QIPA but in a lower, softer format.\r\n\r\nUsing the same hop grist as our 11th Birthday QIPA this DDH Pale brings you our characteristic (actually double, and not just twice hopped) fuller hop profile to a more sessionable beer using the Clean Fusion ™ process developed by Nick at One Drop Brewing Co. We believe a sessionable beer should be clean, juicy and soft and this 5% DDH Pale delivers on it. White peach tea from the Idaho 7 blends with fresh green grape, ripe melon rind and a slight floral yet peppery aftertaste from the Motueka. A delightfully clean and refreshing sessionable pale.",
+        "rating_score": 3.78042,
+        "rating_count": 1509,
+        "brewery_name": "Cloudwater Brew Co."
+      },
+      {
+        "beer_id": 6584102,
+        "beer_name": "11th Birthday Supercharged IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6584102_8b7e6_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6584102_8b7e6_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Supercharged is a brand new hopping process that takes our beer from dry hop to packaging in less than 24 hours to ensure the freshest of beer profiles for you guys. We’re blessed that we get to sample our beers directly from the tank in their most clean state and we want you guys to get in on this experience too! This Supercharged IPA is one of the softest, juicest, and freshest beers we’ve made, capturing the cleanest form of the hops and canned to ensure the ripest experience. We’ve jam packed this brew with citra, Mosaic, Columbus, Strat CGX and Idaho 7 so there’s no shortage of flavour.",
+        "rating_score": 3.94172,
+        "rating_count": 1364,
+        "brewery_name": "Cloudwater Brew Co."
+      },
+      {
+        "beer_id": 5247841,
+        "beer_name": "Piccadilly Pilsner",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5247841_4a696_sm.jpeg",
+        "beer_style": "Pilsner - Other",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5247841_5ffe2_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "We've created a crisp lager lavishly dry hopped.  While keeping all the refreshing drinkability of a lager.\r\n\r\nThe suns out in Manchester, enjoy. ",
+        "rating_score": 3.56971,
+        "rating_count": 3729,
+        "brewery_name": "Cloudwater Brew Co."
+      },
+      {
+        "beer_id": 6594180,
+        "beer_name": "Take It With You",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6594180_2995b_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6594180_2995b_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Our first collaboration with Finnish brewery Factory is a celebration of the vibrant, expressive character of New Zealand hops.\r\n\r\nA generous dry hop of Nelson, Riwaka, Motueka and Manilita takes centre stage. Nelson and Riwaka bring their hallmark notes of white grape and overripe mango, while Motueka and Manilita layer in softer impressions of red berries and fresh lime. Aromatics are bold and immediate, leaping from the glass in this celebration of hops.",
+        "rating_score": 4.01819,
+        "rating_count": 962,
+        "brewery_name": "Cloudwater Brew Co."
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 4,
         "pct": 0.0,
         "rank": 7
       }
