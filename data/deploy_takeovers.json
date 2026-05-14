@@ -2,14 +2,17 @@
   {
     "date": "2026-04-16",
     "brewery": "Molly Rose Brewing",
-    "checkins": 4,
-    "unique_beers": 4,
-    "total_checkins_that_week": 5,
-    "share_pct": 80.0,
+    "checkins": 9,
+    "unique_beers": 7,
+    "total_checkins_that_week": 10,
+    "share_pct": 90.0,
     "beers": [
       "Bierchen #1 Altbier",
       "Gorn Fishin'",
       "Homecamp High Country Ale",
+      "Majestic Weasel",
+      "Nocino",
+      "Short & Stout",
       "Skylight"
     ],
     "beer_details": [
@@ -56,6 +59,48 @@
         "brewery_name": "Molly Rose Brewing"
       },
       {
+        "beer_id": 6615370,
+        "beer_name": "Majestic Weasel",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-374168_d9a4a.jpeg",
+        "beer_style": "IPA - Other",
+        "beer_abv": 6.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "Cali IPA. With a golden malt backbone and a balanced bitterness this Cali IPA features Nelson Sauvin, Motueka, Centenial and Nectaron.",
+        "rating_score": 3.77836,
+        "rating_count": 67,
+        "brewery_name": "Molly Rose Brewing"
+      },
+      {
+        "beer_id": 6256320,
+        "beer_name": "Nocino",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-374168_d9a4a.jpeg",
+        "beer_style": "Sour - Other",
+        "beer_abv": 6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "Collaboration between Molly Rose and Marrionette, a green walnut sour stout.",
+        "rating_score": 3.87955,
+        "rating_count": 22,
+        "brewery_name": "Molly Rose Brewing"
+      },
+      {
+        "beer_id": 4836154,
+        "beer_name": "Short & Stout",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4836154_27af6_sm.jpeg",
+        "beer_style": "Stout - Other",
+        "beer_abv": 4.3,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4836154_e206d_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "People make fun of stouts too much.\r\nThis one might be short and stout but it's bloody tasty and very easy to drink.\r\nGive stouts a break!",
+        "rating_score": 3.52278,
+        "rating_count": 496,
+        "brewery_name": "Molly Rose Brewing"
+      },
+      {
         "beer_id": 3811788,
         "beer_name": "Skylight",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3811788_1e2f5_sm.jpeg",
@@ -77,7 +122,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 7,
         "pct": 0.0,
         "rank": 1
       },
@@ -86,7 +131,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 7,
         "pct": 0.0,
         "rank": 2
       },
@@ -95,7 +140,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 4,
+        "total": 7,
         "pct": 0.0,
         "rank": 3
       },
@@ -104,7 +149,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 7,
         "pct": 0.0,
         "rank": 4
       },
@@ -113,7 +158,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 7,
         "pct": 0.0,
         "rank": 5
       },
@@ -122,7 +167,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 7,
         "pct": 0.0,
         "rank": 6
       },
@@ -131,7 +176,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 7,
         "pct": 0.0,
         "rank": 7
       }
@@ -368,17 +413,16 @@
   {
     "date": "2026-04-30",
     "brewery": "KAIJU! Beer",
-    "checkins": 60,
-    "unique_beers": 11,
-    "total_checkins_that_week": 66,
-    "share_pct": 90.9,
+    "checkins": 38,
+    "unique_beers": 10,
+    "total_checkins_that_week": 39,
+    "share_pct": 97.4,
     "beers": [
       "Aftermath",
       "Beyond the Black River (Mutation Program #006)",
       "Cherry BOMG",
       "Clovey With A Chance of Banana",
       "Dark Lager",
-      "Golden Axe",
       "KAIJU KRUSH!",
       "Krispy Mid Cerveza",
       "MP#0022 - Imperatrix Hoppy Pils",
@@ -457,20 +501,6 @@
         "beer_page_url": "https://untappd.com/b/kaiju-beer-dark-lager/6665223"
       },
       {
-        "beer_id": 251368,
-        "beer_name": "Golden Axe",
-        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-251368_b2f91_sm.jpeg",
-        "beer_style": "Cider - Traditional / Apfelwein",
-        "beer_abv": 5.2,
-        "beer_auth_rating": null,
-        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-251368_4d41d_hd.jpeg",
-        "beer_ibu": 0,
-        "beer_description": "Golden Axe is delicious hand crafted apple cider. A fresh tasting, thirst quenching drop with just enough sweetness.",
-        "rating_score": 3.44352,
-        "rating_count": 1411,
-        "brewery_name": "KAIJU! Beer"
-      },
-      {
         "beer_id": 1843438,
         "beer_name": "KAIJU KRUSH!",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1843438_70fc1_sm.jpeg",
@@ -547,8 +577,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 5,
-        "total": 11,
-        "pct": 45.5,
+        "total": 10,
+        "pct": 50.0,
         "rank": 1
       },
       {
@@ -556,26 +586,26 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 4,
-        "total": 11,
-        "pct": 36.4,
+        "total": 10,
+        "pct": 40.0,
         "rank": 2
-      },
-      {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 3,
-        "total": 11,
-        "pct": 27.3,
-        "rank": 3
       },
       {
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 3,
-        "total": 11,
-        "pct": 27.3,
+        "checked": 2,
+        "total": 10,
+        "pct": 20.0,
+        "rank": 3
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 10,
+        "pct": 0.0,
         "rank": 4
       },
       {
@@ -583,7 +613,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 11,
+        "total": 10,
         "pct": 0.0,
         "rank": 5
       },
@@ -592,7 +622,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 10,
         "pct": 0.0,
         "rank": 6
       },
@@ -601,7 +631,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 10,
         "pct": 0.0,
         "rank": 7
       }
