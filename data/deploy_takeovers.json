@@ -273,10 +273,10 @@
   {
     "date": "2026-05-14",
     "brewery": "Cloudwater Brew Co.",
-    "checkins": 114,
+    "checkins": 62,
     "unique_beers": 10,
-    "total_checkins_that_week": 181,
-    "share_pct": 63.0,
+    "total_checkins_that_week": 120,
+    "share_pct": 51.7,
     "beers": [
       "11th Birthday DDH Pale",
       "11th Birthday Supercharged IPA",
@@ -435,31 +435,22 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 8,
-        "total": 10,
-        "pct": 80.0,
-        "rank": 1
-      },
-      {
-        "username": "hiriser",
-        "display_name": "Willy",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
-        "checked": 5,
-        "total": 10,
-        "pct": 50.0,
-        "rank": 2
-      },
-      {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 4,
         "total": 10,
         "pct": 40.0,
-        "rank": 3
+        "rank": 1
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 3,
+        "total": 10,
+        "pct": 30.0,
+        "rank": 2
       },
       {
         "username": "mw1414",
@@ -468,6 +459,15 @@
         "checked": 3,
         "total": 10,
         "pct": 30.0,
+        "rank": 3
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 2,
+        "total": 10,
+        "pct": 20.0,
         "rank": 4
       },
       {
