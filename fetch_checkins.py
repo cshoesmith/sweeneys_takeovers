@@ -25,6 +25,7 @@ import argparse
 import http.server
 import json
 import os
+import re
 import shutil
 import sys
 import time
@@ -64,6 +65,11 @@ last_request_url = None
 
 LOCAL_CALLBACK_PORT = 8907
 LOCAL_CALLBACK_URL = f"http://localhost:{LOCAL_CALLBACK_PORT}/callback"
+
+
+def mask_token(value):
+    """Remove access tokens from log/error messages."""
+    return re.sub(r"access_token=[A-Za-z0-9]+", "access_token=***", str(value))
 
 
 def get_access_token():
@@ -472,7 +478,7 @@ def sync_recent_checkins(venue_id, overlap_stop=2):
         try:
             data = api_get(f"venue/checkins/{venue_id}", params)
         except requests.exceptions.HTTPError as e:
-            print(f"  API error during recent sync: {e}")
+            print(f"  API error during recent sync: {mask_token(e)}")
             break
 
         checkins_data = data.get("response", {}).get("checkins", {})
@@ -569,7 +575,7 @@ def fetch_checkins(venue_id, since_date=None, max_batches=None):
                 print(f"  Saved {len(cache['checkins'])} total cached checkins so far.")
                 save_cache(cache)
                 return cache
-            print(f"  API error: {e}")
+            print(f"  API error: {mask_token(e)}")
             print("  Saving progress and stopping.")
             save_cache(cache)
             return cache
