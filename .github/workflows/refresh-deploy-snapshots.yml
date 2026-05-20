@@ -22,6 +22,7 @@ jobs:
       UNTAPPD_CLIENT_ID: ${{ secrets.UNTAPPD_CLIENT_ID }}
       UNTAPPD_CLIENT_SECRET: ${{ secrets.UNTAPPD_CLIENT_SECRET }}
       VENUE_ID: '107565'
+      REFRESH_BACKFILL_BATCHES: '20'
 
     steps:
       - name: Check out repository
@@ -60,7 +61,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html data/deploy_takeovers.json data/deploy_beer_info.json data/deploy_cache_summary.json data/deploy_current_events.json data/deploy_past_events.json data/deploy_allowed_users.json
+          git add index.html data/deploy_takeovers.json data/deploy_beer_info.json data/deploy_cache_summary.json data/deploy_checkins_cache.json data/deploy_current_events.json data/deploy_past_events.json data/deploy_allowed_users.json
           if git diff --cached --quiet; then
             echo "No snapshot changes detected."
             exit 0

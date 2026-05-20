@@ -28,6 +28,7 @@ from server import (
     DEPLOY_ALLOWED_USERS_FILE,
     DEPLOY_BEER_INFO_FILE,
     DEPLOY_CACHE_SUMMARY_FILE,
+    DEPLOY_CHECKINS_CACHE_FILE,
     DEPLOY_CURRENT_EVENTS_FILE,
     DEPLOY_PAST_EVENTS_FILE,
     DEPLOY_TAKEOVERS_FILE,
@@ -128,6 +129,56 @@ def fallback_json(path: Path, default):
     return payload if payload is not None else default
 
 
+def normalize_checkin_cache(cache, venue_id: int):
+    if not isinstance(cache, dict):
+        return {"venue_id": venue_id, "checkins": [], "oldest_checkin_id": None}
+
+    normalized = dict(cache)
+    normalized["venue_id"] = int(normalized.get("venue_id") or venue_id)
+    checkins = normalized.get("checkins")
+    normalized["checkins"] = checkins if isinstance(checkins, list) else []
+    normalized.setdefault("oldest_checkin_id", None)
+    normalized["checkins"].sort(key=lambda c: c.get("checkin_id", 0), reverse=True)
+    return normalized
+
+
+def seed_runtime_cache_from_deploy_snapshot(venue_id: int):
+    """Seed ignored runtime cache from committed deploy cache when it is newer/larger."""
+    deploy_cache = normalize_checkin_cache(load_json_file(DEPLOY_CHECKINS_CACHE_FILE), venue_id)
+    raw_local_cache = fetch_checkins.load_cache()
+    local_venue_id = raw_local_cache.get("venue_id") if isinstance(raw_local_cache, dict) else None
+    local_cache = normalize_checkin_cache(raw_local_cache, venue_id)
+
+    deploy_count = len(deploy_cache.get("checkins", []))
+    local_count = len(local_cache.get("checkins", []))
+    if deploy_count == 0:
+        return local_cache
+
+    if local_venue_id != venue_id or deploy_count > local_count:
+        print(f"Seeding runtime cache from deploy snapshot ({deploy_count} checkins).")
+        fetch_checkins.save_cache(deploy_cache)
+        return deploy_cache
+
+    return local_cache
+
+
+def build_deploy_checkin_cache(cache, venue_id: int):
+    deploy_cache = normalize_checkin_cache(cache, venue_id)
+    public_checkins = []
+    for checkin in deploy_cache.get("checkins", []):
+        public_checkins.append({
+            key: value.isoformat() if isinstance(value, datetime) else value
+            for key, value in checkin.items()
+            if not str(key).startswith("_")
+        })
+
+    return {
+        "venue_id": deploy_cache.get("venue_id"),
+        "checkins": public_checkins,
+        "oldest_checkin_id": deploy_cache.get("oldest_checkin_id"),
+    }
+
+
 def build_public_cache_summary(build_unix: int):
     summary = dict(get_cache_summary_data())
     refreshed_at = datetime.fromtimestamp(build_unix, tz=timezone.utc)
@@ -179,12 +230,17 @@ def update_index_inline_snapshots(takeovers, current_events, past_events, beer_i
 def refresh_snapshots(skip_fetch=False, skip_beer_refresh=False, since_date=None):
     venue_id = int(os.getenv("VENUE_ID", "107565"))
     build_unix = int(datetime.now(timezone.utc).timestamp())
+    max_backfill_batches = int(os.getenv("REFRESH_BACKFILL_BATCHES", "20"))
+    seed_runtime_cache_from_deploy_snapshot(venue_id)
 
     if not skip_fetch:
         auth_source = ensure_refresh_auth_configured()
         print(f"Using Untappd auth via {auth_source}.")
+        existing_cache = fetch_checkins.load_cache()
+        if existing_cache.get("venue_id") == venue_id and existing_cache.get("checkins"):
+            fetch_checkins.sync_recent_checkins(venue_id)
         print(f"Fetching latest checkins for venue {venue_id}...")
-        fetch_checkins.fetch_checkins(venue_id, since_date=since_date)
+        fetch_checkins.fetch_checkins(venue_id, since_date=since_date, max_batches=max_backfill_batches)
     else:
         print("Skipping checkin fetch; using existing local cache.")
 
@@ -219,6 +275,7 @@ def refresh_snapshots(skip_fetch=False, skip_beer_refresh=False, since_date=None
 
     write_json(DEPLOY_TAKEOVERS_FILE, public_takeovers)
     write_json(DEPLOY_BEER_INFO_FILE, beer_info_lookup)
+    write_json(DEPLOY_CHECKINS_CACHE_FILE, build_deploy_checkin_cache(cache, venue_id))
     write_json(DEPLOY_CURRENT_EVENTS_FILE, current_events)
     write_json(DEPLOY_PAST_EVENTS_FILE, past_events)
     write_json(DEPLOY_CACHE_SUMMARY_FILE, cache_summary)
@@ -239,6 +296,7 @@ def refresh_snapshots(skip_fetch=False, skip_beer_refresh=False, since_date=None
     print("Refresh complete:")
     print(f"  Build label: {build_label}")
     print(f"  Checkins: {len(checkins)}")
+    print(f"  Deploy checkin cache: {DEPLOY_CHECKINS_CACHE_FILE.name}")
     print(f"  Takeovers: {len(public_takeovers)}")
     print(f"  Current events: {len(current_events)}")
     print(f"  Past events: {len(past_events)}")
@@ -251,7 +309,11 @@ def main():
     parser.add_argument("--skip-fetch", action="store_true", help="Reuse the existing local checkin cache")
     parser.add_argument("--skip-beer-refresh", action="store_true", help="Do not call Untappd beer enrichment for missing beer details")
     parser.add_argument("--since", type=str, help="Optional cutoff date for fetch_checkins (YYYY-MM-DD)")
+    parser.add_argument("--max-backfill-batches", type=int, help="Maximum older-history API pages to fetch before publishing progress")
     args = parser.parse_args()
+
+    if args.max_backfill_batches is not None:
+        os.environ["REFRESH_BACKFILL_BATCHES"] = str(args.max_backfill_batches)
 
     refresh_snapshots(
         skip_fetch=args.skip_fetch,

@@ -395,7 +395,133 @@ def merge_checkin_record(existing, item):
     return merged
 
 
-def fetch_checkins(venue_id, since_date=None):
+def merge_api_checkin_into_cache(cache, item, existing_ids=None, existing_by_id=None):
+    """Merge one Untappd API checkin item into a cache, returning True if new."""
+    if existing_ids is None:
+        existing_ids = {c["checkin_id"] for c in cache.get("checkins", [])}
+    if existing_by_id is None:
+        existing_by_id = {c["checkin_id"]: c for c in cache.get("checkins", [])}
+
+    checkin_id = item["checkin_id"]
+    if checkin_id in existing_ids:
+        existing_by_id[checkin_id].update(merge_checkin_record(existing_by_id[checkin_id], item))
+        return False
+
+    beer = item.get("beer", {})
+    brewery = item.get("brewery", {})
+    event = item.get("event", None)
+    record = {
+        "checkin_id": checkin_id,
+        "created_at": item.get("created_at", ""),
+        "user": item.get("user", {}).get("user_name", ""),
+        "checkin_comment": item.get("checkin_comment", ""),
+        "beer_name": beer.get("beer_name", ""),
+        "beer_id": beer.get("bid"),
+        "beer_label": beer.get("beer_label", ""),
+        "beer_style": beer.get("beer_style", ""),
+        "beer_abv": beer.get("beer_abv"),
+        "beer_auth_rating": beer.get("auth_rating"),
+        "beer_active": beer.get("beer_active"),
+        "brewery_name": brewery.get("brewery_name", ""),
+        "brewery_id": brewery.get("brewery_id"),
+        "rating": item.get("rating_score", 0),
+    }
+    if event and isinstance(event, dict):
+        record["event_name"] = event.get("event_name", "")
+        record["event_id"] = event.get("event_id")
+        record["event_url"] = event.get("event_url", "")
+
+    cache.setdefault("checkins", []).append(record)
+    existing_ids.add(checkin_id)
+    existing_by_id[checkin_id] = record
+    return True
+
+
+def sync_recent_checkins(venue_id, overlap_stop=2):
+    """
+    Fetch newest pages until they overlap the cache, preserving the old backfill cursor.
+
+    Scheduled deploy refreshes seed the runtime cache from committed snapshots.
+    This step adds new checkins from the front of the feed without moving the
+    historical ``oldest_checkin_id`` cursor that lets backfill continue over time.
+    """
+    cache = load_cache()
+
+    if cache["venue_id"] != venue_id:
+        cache = {"venue_id": venue_id, "checkins": [], "oldest_checkin_id": None}
+
+    if not cache.get("checkins"):
+        return cache
+
+    original_oldest_checkin_id = cache.get("oldest_checkin_id")
+    existing_ids = {c["checkin_id"] for c in cache["checkins"]}
+    existing_by_id = {c["checkin_id"]: c for c in cache["checkins"]}
+    max_id = None
+    overlap_streak = 0
+    batch_count = 0
+    total_new = 0
+
+    print(f"Syncing recent checkins for venue {venue_id} ({len(cache['checkins'])} cached)")
+
+    while overlap_streak < overlap_stop:
+        params = {"limit": 25}
+        if max_id:
+            params["max_id"] = max_id
+
+        print(f"\nFetching recent batch {batch_count + 1}...")
+        try:
+            data = api_get(f"venue/checkins/{venue_id}", params)
+        except requests.exceptions.HTTPError as e:
+            print(f"  API error during recent sync: {e}")
+            break
+
+        checkins_data = data.get("response", {}).get("checkins", {})
+        items = checkins_data.get("items", [])
+        if not items:
+            print("  No recent checkins found.")
+            break
+
+        new_in_batch = 0
+        for item in items:
+            if merge_api_checkin_into_cache(cache, item, existing_ids, existing_by_id):
+                new_in_batch += 1
+
+        total_new += new_in_batch
+        batch_count += 1
+        if new_in_batch == 0:
+            overlap_streak += 1
+        else:
+            overlap_streak = 0
+
+        pagination = checkins_data.get("pagination", {})
+        next_url = pagination.get("next_url", "")
+        if next_url and "max_id=" in next_url:
+            new_max_id = next_url.split("max_id=")[-1].split("&")[0]
+            if new_max_id == str(max_id):
+                break
+            max_id = new_max_id
+        elif items:
+            max_id = min(item["checkin_id"] for item in items) - 1
+        else:
+            break
+
+        cache["oldest_checkin_id"] = original_oldest_checkin_id
+        cache["checkins"].sort(key=lambda c: c.get("checkin_id", 0), reverse=True)
+        save_cache(cache)
+
+        print(f"  Recent sync total cached: {len(cache['checkins'])} ({new_in_batch} new).")
+        if overlap_streak < overlap_stop:
+            print(f"  Waiting {RATE_LIMIT_DELAY}s (rate limit)...")
+            time.sleep(RATE_LIMIT_DELAY)
+
+    cache["oldest_checkin_id"] = original_oldest_checkin_id
+    cache["checkins"].sort(key=lambda c: c.get("checkin_id", 0), reverse=True)
+    save_cache(cache)
+    print(f"Recent sync complete: {total_new} new checkins, {len(cache['checkins'])} total cached.")
+    return cache
+
+
+def fetch_checkins(venue_id, since_date=None, max_batches=None):
     """
     Fetch all checkins for a venue, paging backward from the most recent.
     Resumes from cache if available.
@@ -474,36 +600,8 @@ def fetch_checkins(venue_id, since_date=None):
                 done = True
                 break
 
-            if checkin_id not in existing_ids:
+            if merge_api_checkin_into_cache(cache, item, existing_ids, existing_by_id):
                 new_in_batch += 1
-                beer = item.get("beer", {})
-                brewery = item.get("brewery", {})
-                event = item.get("event", None)
-                record = {
-                    "checkin_id": checkin_id,
-                    "created_at": created_at,
-                    "user": item.get("user", {}).get("user_name", ""),
-                    "checkin_comment": item.get("checkin_comment", ""),
-                    "beer_name": beer.get("beer_name", ""),
-                    "beer_id": beer.get("bid"),
-                    "beer_label": beer.get("beer_label", ""),
-                    "beer_style": beer.get("beer_style", ""),
-                    "beer_abv": beer.get("beer_abv"),
-                    "beer_auth_rating": beer.get("auth_rating"),
-                    "beer_active": beer.get("beer_active"),
-                    "brewery_name": brewery.get("brewery_name", ""),
-                    "brewery_id": brewery.get("brewery_id"),
-                    "rating": item.get("rating_score", 0),
-                }
-                if event and isinstance(event, dict):
-                    record["event_name"] = event.get("event_name", "")
-                    record["event_id"] = event.get("event_id")
-                    record["event_url"] = event.get("event_url", "")
-                cache["checkins"].append(record)
-                existing_ids.add(checkin_id)
-                existing_by_id[checkin_id] = record
-            else:
-                existing_by_id[checkin_id].update(merge_checkin_record(existing_by_id[checkin_id], item))
 
         # Update pagination cursor
         pagination = checkins_data.get("pagination", {})
@@ -533,6 +631,10 @@ def fetch_checkins(venue_id, since_date=None):
         oldest_date = cache["checkins"][-1]["created_at"] if cache["checkins"] else "?"
         print(f"  Total cached: {total} checkins ({new_in_batch} new). Oldest: {oldest_date}")
 
+        if max_batches is not None and batch_count >= max_batches:
+            print(f"  Reached max batch limit ({max_batches}). Saving progress for next run.")
+            done = True
+
         if not done:
             print(f"  Waiting {RATE_LIMIT_DELAY}s (rate limit)...")
             time.sleep(RATE_LIMIT_DELAY)
@@ -558,6 +660,11 @@ def main():
         type=str,
         help="Fetch checkins back to this date (YYYY-MM-DD). Default: 3 years ago",
     )
+    parser.add_argument(
+        "--max-batches",
+        type=int,
+        help="Stop after this many API pages, saving progress for the next run",
+    )
     args = parser.parse_args()
 
     if args.login:
@@ -573,7 +680,7 @@ def main():
         print("ERROR: Set VENUE_ID in .env (run with --search to find it)")
         sys.exit(1)
 
-    fetch_checkins(int(venue_id), since_date=args.since)
+    fetch_checkins(int(venue_id), since_date=args.since, max_batches=args.max_batches)
 
 
 if __name__ == "__main__":

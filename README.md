@@ -177,6 +177,7 @@ For full collector/admin functionality, run the app locally.
 - A scheduled GitHub Actions workflow can now refresh the deploy snapshots automatically, so the Vercel site no longer depends on a local machine staying online.
 - `data/deploy_takeovers.json` is the read-only snapshot consumed by the Vercel UI.
 - `data/deploy_cache_summary.json` provides summary stats for the read-only deployment without committing the mutable runtime cache.
+- `data/deploy_checkins_cache.json` is the committed deploy-side checkin cache used by scheduled refreshes to preserve historical checkins and keep backfilling over time.
 - The read-only viewer now shows `Last successful GitHub Actions refresh` using the last successful refresh time written into `data/deploy_cache_summary.json`.
 - `data/deploy_current_events.json` provides a fallback when the live event scrape is unavailable in the deployed environment.
 - The visible build label is now an automatic Unix timestamp, so normal releases no longer need a manual build-stamp edit.
@@ -190,10 +191,12 @@ To keep the Vercel site current without relying on a local machine, this repo su
 
 1. GitHub Actions runs `refresh_deploy_snapshots.py` every hour.
 2. The script fetches the latest Untappd venue checkins.
-3. It reruns takeover detection, including heuristic/"secret" takeovers.
-4. It enriches takeover beers with labels, descriptions, and ratings.
-5. It rewrites the committed deploy snapshot files in `data/` and the inline fallback data in `index.html`.
-6. The workflow commits those updates back to the repo, which triggers a fresh Vercel deploy.
+3. It seeds from `data/deploy_checkins_cache.json`, syncs new recent checkins, then backfills a bounded number of older pages (`REFRESH_BACKFILL_BATCHES`, currently 20) so each run can publish progress before timing out.
+4. It reruns takeover detection, including heuristic/"secret" takeovers.
+5. It enriches takeover beers with labels, descriptions, and ratings.
+6. It rewrites the committed deploy snapshot files in `data/` and the inline fallback data in `index.html`.
+7. It also commits `data/deploy_checkins_cache.json`, so the next scheduled run starts from the accumulated cache instead of only the latest Untappd page window.
+8. The workflow commits those updates back to the repo, which triggers a fresh Vercel deploy.
 
 ### Required GitHub secrets
 
