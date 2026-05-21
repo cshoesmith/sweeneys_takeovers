@@ -737,5 +737,44 @@
     "rating_score": 4.01414,
     "rating_count": 799,
     "brewery_name": "Cloudwater Brew Co."
+  },
+  "6569029": {
+    "beer_id": 6569029,
+    "beer_name": "Barbarian Robin",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6569029_70943_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6569029_70943_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.2,
+    "beer_ibu": 0,
+    "beer_description": "El Dorado, Nelson Sauvin & Strata\r\n",
+    "rating_score": 4.01448,
+    "rating_count": 815,
+    "brewery_name": "Azvex Brewing Company"
+  },
+  "6516430": {
+    "beer_id": 6516430,
+    "beer_name": "CRUMBLE - Cinnamon Dusted Apple Crumble And Vanilla Ice Cream",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6516430_8b3e4_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6516430_6f6e5_hd.jpeg",
+    "beer_style": "Sour - Smoothie / Pastry",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "Cinnamon Dusted Apple Crumble and Vanilla Ice Cream Smoothie Sour with our sour wizard buddies at Elmeleven",
+    "rating_score": 4.64816,
+    "rating_count": 1088,
+    "brewery_name": "Azvex Brewing Company"
+  },
+  "6489433": {
+    "beer_id": 6489433,
+    "beer_name": "Cacaodemon III",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6489433_31923_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6489433_31923_hd.jpeg",
+    "beer_style": "Stout - Imperial / Double Pastry",
+    "beer_abv": 12,
+    "beer_ibu": 0,
+    "beer_description": "The demon returns in its most indulgent form yet, a colossal 12% imperial stout packed with more Salvadorian cacao than ever before, courtesy of our friends at @tablechocolate . Expect layers dark chocolate, rich caramel, velvety sweetness, deep roasted malt, and a smooth, lingering finish.",
+    "rating_score": 4.35696,
+    "rating_count": 1508,
+    "brewery_name": "Azvex Brewing Company"
   }
 }
