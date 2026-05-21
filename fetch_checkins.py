@@ -288,10 +288,16 @@ def api_get(endpoint, params=None):
         last_rate_limit_remaining = int(remaining)
         print(f"  Rate limit remaining: {remaining}")
         if int(remaining) <= 1:
+            if os.getenv("GITHUB_ACTIONS") == "true":
+                print("  Rate limit nearly exhausted in CI. Exiting to allow retry on next run.")
+                sys.exit(1)
             print("  Rate limit nearly exhausted. Waiting 60 minutes...")
             time.sleep(3600)
 
     if resp.status_code == 429:
+        if os.getenv("GITHUB_ACTIONS") == "true":
+            print("  Untappd API rate limited (429) in CI. Exiting to allow retry on next run.")
+            sys.exit(1)
         print("  Rate limited! Waiting 60 minutes before retrying...")
         time.sleep(3600)
         return api_get(endpoint, params)
