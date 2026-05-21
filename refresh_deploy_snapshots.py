@@ -17,7 +17,7 @@ import argparse
 import json
 import os
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -88,10 +88,21 @@ def write_json(path: Path, payload):
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def collect_takeover_beer_ids(takeovers):
+def collect_takeover_beer_ids(takeovers, since_days=None):
+    cutoff = None
+    if since_days is not None:
+        cutoff = (datetime.now(timezone.utc) - timedelta(days=since_days)).date()
+
     beer_ids = []
     seen = set()
     for takeover in takeovers:
+        if cutoff is not None:
+            try:
+                takeover_date = datetime.strptime(takeover.get("date", ""), "%Y-%m-%d").date()
+                if takeover_date < cutoff:
+                    continue
+            except (ValueError, TypeError):
+                pass
         for beer in takeover.get("beer_details") or []:
             beer_id = beer.get("beer_id")
             if beer_id is None:
@@ -107,9 +118,14 @@ def collect_takeover_beer_ids(takeovers):
 def refresh_beer_details_for_takeovers(takeovers, skip_refresh=False):
     existing_lookup = get_combined_beer_info_lookup()
     beer_ids = collect_takeover_beer_ids(takeovers)
+    # Only hit the API for beers from takeovers within the last 7 days —
+    # completed takeover data is considered locked after that window.
+    refresh_candidates = set(collect_takeover_beer_ids(takeovers, since_days=7))
 
     if not skip_refresh:
         for beer_id in beer_ids:
+            if beer_id not in refresh_candidates:
+                continue
             cached = existing_lookup.get(beer_id, {})
             if has_usable_beer_info(cached) and cached.get("rating_score") not in (None, ""):
                 continue
