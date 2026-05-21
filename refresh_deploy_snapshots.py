@@ -115,7 +115,7 @@ def collect_takeover_beer_ids(takeovers, since_days=None):
     return beer_ids
 
 
-def refresh_beer_details_for_takeovers(takeovers, skip_refresh=False):
+def refresh_beer_details_for_takeovers(takeovers, skip_refresh=False, max_refreshes=None):
     existing_lookup = get_combined_beer_info_lookup()
     beer_ids = collect_takeover_beer_ids(takeovers)
     # Only hit the API for beers from takeovers within the last 7 days —
@@ -123,7 +123,11 @@ def refresh_beer_details_for_takeovers(takeovers, skip_refresh=False):
     refresh_candidates = set(collect_takeover_beer_ids(takeovers, since_days=7))
 
     if not skip_refresh:
+        refreshed = 0
         for beer_id in beer_ids:
+            if max_refreshes is not None and refreshed >= max_refreshes:
+                print(f"  Beer refresh cap ({max_refreshes}) reached; deferring remaining to next run.")
+                break
             if beer_id not in refresh_candidates:
                 continue
             cached = existing_lookup.get(beer_id, {})
@@ -131,6 +135,7 @@ def refresh_beer_details_for_takeovers(takeovers, skip_refresh=False):
                 continue
             print(f"Refreshing beer info for {beer_id}...")
             get_beer_info(int(beer_id))
+            refreshed += 1
 
     combined_lookup = get_combined_beer_info_lookup()
     return {
@@ -247,6 +252,13 @@ def refresh_snapshots(skip_fetch=False, skip_beer_refresh=False, since_date=None
     venue_id = int(os.getenv("VENUE_ID", "107565"))
     build_unix = int(datetime.now(timezone.utc).timestamp())
     max_backfill_batches = int(os.getenv("REFRESH_BACKFILL_BATCHES", "20"))
+    _max_beer_env = os.getenv("REFRESH_MAX_BEER_FETCHES")
+    if _max_beer_env is not None:
+        max_beer_fetches = int(_max_beer_env)
+    elif os.getenv("GITHUB_ACTIONS") == "true":
+        max_beer_fetches = 3
+    else:
+        max_beer_fetches = None  # unlimited locally
     seed_runtime_cache_from_deploy_snapshot(venue_id)
 
     if not skip_fetch:
@@ -268,7 +280,7 @@ def refresh_snapshots(skip_fetch=False, skip_beer_refresh=False, since_date=None
     print(f"Analyzing {len(checkins)} cached checkins...")
     takeovers = detect_takeovers(checkins)
     allowed_users = build_takeover_access_payload(takeovers)
-    beer_info_lookup = refresh_beer_details_for_takeovers(takeovers, skip_refresh=skip_beer_refresh)
+    beer_info_lookup = refresh_beer_details_for_takeovers(takeovers, skip_refresh=skip_beer_refresh, max_refreshes=max_beer_fetches)
     takeovers = enrich_takeovers_with_beer_data(takeovers)
     takeovers = compute_member_results_for_takeovers(takeovers, checkins, load_members_data())
     public_takeovers = strip_internal_takeover_fields(takeovers)
