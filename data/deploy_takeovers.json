@@ -1457,10 +1457,10 @@
   {
     "date": "2026-05-21",
     "brewery": "Azvex Brewing Company",
-    "checkins": 66,
+    "checkins": 81,
     "unique_beers": 7,
-    "total_checkins_that_week": 96,
-    "share_pct": 68.8,
+    "total_checkins_that_week": 130,
+    "share_pct": 62.3,
     "beers": [
       "Barbarian Robin",
       "CRUMBLE - Cinnamon Dusted Apple Crumble And Vanilla Ice Cream",
@@ -1573,13 +1573,22 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 3,
+        "total": 7,
+        "pct": 42.9,
+        "rank": 1
+      },
+      {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 1,
         "total": 7,
         "pct": 14.3,
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "dapitz",
@@ -1588,7 +1597,7 @@
         "checked": 0,
         "total": 7,
         "pct": 0.0,
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "hiriser",
@@ -1597,21 +1606,12 @@
         "checked": 0,
         "total": 7,
         "pct": 0.0,
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 7,
-        "pct": 0.0,
-        "rank": 4
-      },
-      {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
         "total": 7,
         "pct": 0.0,
