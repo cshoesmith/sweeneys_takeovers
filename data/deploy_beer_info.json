@@ -777,6 +777,19 @@
     "rating_count": 1508,
     "brewery_name": "Azvex Brewing Company"
   },
+  "5589453": {
+    "beer_id": 5589453,
+    "beer_name": "Dockers Umbrella",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5589453_533be_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5589453_533be_hd.jpeg",
+    "beer_style": "Lager - Helles",
+    "beer_abv": 4.8,
+    "beer_ibu": 0,
+    "beer_description": "Helles Lager brewed with all German ingredients.",
+    "rating_score": 3.61166,
+    "rating_count": 1059,
+    "brewery_name": "Azvex Brewing Company"
+  },
   "6561905": {
     "beer_id": 6561905,
     "beer_name": "Non-Genuine Ink Cartridges",

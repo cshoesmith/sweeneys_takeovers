@@ -1457,14 +1457,15 @@
   {
     "date": "2026-05-21",
     "brewery": "Azvex Brewing Company",
-    "checkins": 54,
-    "unique_beers": 6,
-    "total_checkins_that_week": 76,
-    "share_pct": 71.1,
+    "checkins": 66,
+    "unique_beers": 7,
+    "total_checkins_that_week": 96,
+    "share_pct": 68.8,
     "beers": [
       "Barbarian Robin",
       "CRUMBLE - Cinnamon Dusted Apple Crumble And Vanilla Ice Cream",
       "Cacaodemon III",
+      "Dockers Umbrella",
       "Non-Genuine Ink Cartridges",
       "Plato's Cave",
       "Strategic Reserve 4"
@@ -1513,6 +1514,20 @@
         "brewery_name": "Azvex Brewing Company"
       },
       {
+        "beer_id": 5589453,
+        "beer_name": "Dockers Umbrella",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5589453_533be_sm.jpeg",
+        "beer_style": "Lager - Helles",
+        "beer_abv": 4.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5589453_533be_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Helles Lager brewed with all German ingredients.",
+        "rating_score": 3.61166,
+        "rating_count": 1059,
+        "brewery_name": "Azvex Brewing Company"
+      },
+      {
         "beer_id": 6561905,
         "beer_name": "Non-Genuine Ink Cartridges",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6561905_89d3d_sm.jpeg",
@@ -1558,20 +1573,20 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 1,
+        "total": 7,
+        "pct": 14.3,
+        "rank": 1
+      },
+      {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 6,
-        "pct": 0.0,
-        "rank": 1
-      },
-      {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "rank": 2
       },
@@ -1580,7 +1595,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "rank": 3
       },
@@ -1589,7 +1604,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "rank": 4
       },
@@ -1598,7 +1613,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "rank": 5
       },
@@ -1607,7 +1622,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "rank": 6
       },
@@ -1616,7 +1631,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "rank": 7
       }
