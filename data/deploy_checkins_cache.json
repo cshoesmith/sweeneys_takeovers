@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1571716251,
+      "created_at": "Fri, 22 May 2026 11:32:57 +0000",
+      "user": "lachjaw53",
+      "checkin_comment": "",
+      "beer_name": "Stairway To Resin",
+      "beer_id": 2667131,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2667131_c6bab_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 7.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1571701028,
       "created_at": "Fri, 22 May 2026 10:22:27 +0000",
       "user": "LightBeerking",
