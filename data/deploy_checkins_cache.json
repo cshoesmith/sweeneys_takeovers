@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1572120658,
+      "created_at": "Sat, 23 May 2026 08:48:02 +0000",
+      "user": "Binnifer",
+      "checkin_comment": "",
+      "beer_name": "Plato's Cave",
+      "beer_id": 6569028,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6569028_3dc54_sm.jpeg",
+      "beer_style": "Stout - American",
+      "beer_abv": 5.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Azvex Brewing Company",
+      "brewery_id": 511472,
+      "rating": 4
+    },
+    {
       "checkin_id": 1572100894,
       "created_at": "Sat, 23 May 2026 06:54:48 +0000",
       "user": "halfeld",
