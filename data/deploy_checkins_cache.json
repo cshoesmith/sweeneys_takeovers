@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1572661067,
+      "created_at": "Sun, 24 May 2026 09:46:34 +0000",
+      "user": "kirkwoodj",
+      "checkin_comment": "",
+      "beer_name": "Cacaodemon III",
+      "beer_id": 6489433,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6489433_31923_sm.jpeg",
+      "beer_style": "Stout - Imperial / Double Pastry",
+      "beer_abv": 12,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Azvex Brewing Company",
+      "brewery_id": 511472,
+      "rating": 4.3
+    },
+    {
+      "checkin_id": 1572660157,
+      "created_at": "Sun, 24 May 2026 09:37:30 +0000",
+      "user": "kirkwoodj",
+      "checkin_comment": "",
+      "beer_name": "Plato's Cave",
+      "beer_id": 6569028,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6569028_3dc54_sm.jpeg",
+      "beer_style": "Stout - American",
+      "beer_abv": 5.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Azvex Brewing Company",
+      "brewery_id": 511472,
+      "rating": 4
+    },
+    {
       "checkin_id": 1572650718,
       "created_at": "Sun, 24 May 2026 07:40:54 +0000",
       "user": "Mr_Jenkins",
