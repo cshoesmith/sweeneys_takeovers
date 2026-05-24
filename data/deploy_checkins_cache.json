@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1572642568,
+      "created_at": "Sun, 24 May 2026 05:27:23 +0000",
+      "user": "Michaeljohn1988",
+      "checkin_comment": "",
+      "beer_name": "Summer Down Under",
+      "beer_id": 6533889,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6533889_64bcd_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Vault City Brewing",
+      "brewery_id": 399292,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1572264106,
       "created_at": "Sat, 23 May 2026 15:12:47 +0000",
       "user": "agor99",
