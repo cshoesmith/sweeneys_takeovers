@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1572650718,
+      "created_at": "Sun, 24 May 2026 07:40:54 +0000",
+      "user": "Mr_Jenkins",
+      "checkin_comment": "",
+      "beer_name": "Gold Standard",
+      "beer_id": 6456610,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6456610_b0175_sm.jpeg",
+      "beer_style": "Stout - Imperial / Double",
+      "beer_abv": 15,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Vault City Brewing",
+      "brewery_id": 399292,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1572647847,
       "created_at": "Sun, 24 May 2026 06:56:53 +0000",
       "user": "Mr_Jenkins",
