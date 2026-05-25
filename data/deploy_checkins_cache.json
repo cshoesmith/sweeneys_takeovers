@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1573005219,
+      "created_at": "Mon, 25 May 2026 03:23:01 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "PEACHOCALYPSE",
+      "beer_id": 6536101,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6536101_362f5_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1572689025,
       "created_at": "Sun, 24 May 2026 12:25:30 +0000",
       "user": "Babotoki",
