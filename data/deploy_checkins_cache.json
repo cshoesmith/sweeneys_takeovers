@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1573243276,
+      "created_at": "Tue, 26 May 2026 10:11:48 +0000",
+      "user": "kurtzinsanebabe",
+      "checkin_comment": "Mango & Passion fruit smoothie, dripping out one drop at a time.",
+      "beer_name": "Summer Down Under",
+      "beer_id": 6533889,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6533889_64bcd_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Vault City Brewing",
+      "brewery_id": 399292,
+      "rating": 4
+    },
+    {
       "checkin_id": 1573239266,
       "created_at": "Tue, 26 May 2026 07:33:59 +0000",
       "user": "OzRazDaz",
