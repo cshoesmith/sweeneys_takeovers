@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1573233640,
+      "created_at": "Tue, 26 May 2026 03:31:36 +0000",
+      "user": "ale_n",
+      "checkin_comment": "‘Merica, fuck yeah!!!",
+      "beer_name": "Pineapple Sculpin",
+      "beer_id": 878028,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-878028_be33c_sm.jpeg",
+      "beer_style": "IPA - Fruited",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Ballast Point Brewing Company",
+      "brewery_id": 68,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1573005219,
       "created_at": "Mon, 25 May 2026 03:23:01 +0000",
       "user": "ale_n",
