@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1573239266,
+      "created_at": "Tue, 26 May 2026 07:33:59 +0000",
+      "user": "OzRazDaz",
+      "checkin_comment": "",
+      "beer_name": "Dragonfruit Sour",
+      "beer_id": 6699565,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Sour - Other",
+      "beer_abv": 4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Dad & Dave's Brewing",
+      "brewery_id": 34849,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1573233640,
       "created_at": "Tue, 26 May 2026 03:31:36 +0000",
       "user": "ale_n",
