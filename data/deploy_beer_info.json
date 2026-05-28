@@ -907,6 +907,19 @@
     "rating_count": 2937,
     "brewery_name": "Hawkers Beer"
   },
+  "3406174": {
+    "beer_id": 3406174,
+    "beer_name": "IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3406174_ec533_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3406174_6fb66_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6,
+    "beer_ibu": 70,
+    "beer_description": "Our IPA is brewed for hop lovers who enjoy bold, complex tropical and citrus characters and a solid malt body. It’s exactly what an IPA should be… rich, robust yet very drinkable.",
+    "rating_score": 3.71707,
+    "rating_count": 3225,
+    "brewery_name": "Hawkers Beer"
+  },
   "966225": {
     "beer_id": 966225,
     "beer_name": "Original Pale Ale",
@@ -983,6 +996,32 @@
     "beer_description": "The West Coast style has never been accused of subtlety—it’s audacious, unruly, and it definitely doesn’t wait around for pleasantries. Unapologetic quantities of American and Kiwi hops deliver punchy floral aromas with notes of citrus, pine, and resin.",
     "rating_score": 3.83788,
     "rating_count": 5362,
+    "brewery_name": "Hawkers Beer"
+  },
+  "6678165": {
+    "beer_id": 6678165,
+    "beer_name": "Whisky Barrel Aged - Black Barleywine (2026)",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6678165_37828_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6678165_37828_hd.jpeg",
+    "beer_style": "Barleywine - Other",
+    "beer_abv": 12.2,
+    "beer_ibu": 0,
+    "beer_description": "A collision of the boundless black depths of imperial stout and the thick, moreish viscosity of a barleywine! Aged in ex-whisky barrels, flavours of coffee, caramel, and toffee come together to knock your boots clean off. Just remember to come back to earth when you’re done.",
+    "rating_score": 4.38636,
+    "rating_count": 22,
+    "brewery_name": "Hawkers Beer"
+  },
+  "6682416": {
+    "beer_id": 6682416,
+    "beer_name": "Whisky Barrel Aged - Imperial Stout (2026)",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6682416_b7d89_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6682416_7a701_hd.jpeg",
+    "beer_style": "Stout - Imperial / Double",
+    "beer_abv": 11.6,
+    "beer_ibu": 0,
+    "beer_description": "Take a journey to the stars with our 2026 Whisky Barrel-Aged Imperial Stout! Every sip is a view into its speckled black depths giving rich, harmonious flavours of whisky with toasty malt aromas and espresso intensity.",
+    "rating_score": 0,
+    "rating_count": 0,
     "brewery_name": "Hawkers Beer"
   }
 }
