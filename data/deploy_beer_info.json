@@ -828,5 +828,44 @@
     "rating_score": 4.3389,
     "rating_count": 1442,
     "brewery_name": "Azvex Brewing Company"
+  },
+  "6603470": {
+    "beer_id": 6603470,
+    "beer_name": "Four Seasons - Autumn (2026)",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6603470_4f9c9_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6603470_4f9c9_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 9,
+    "beer_ibu": 0,
+    "beer_description": "our Seasons is an ongoing project that evolves year on year, defined by a four-part series of seasonal releases that each express the time of year. 2026 is a year of ‘firsts’, every release to feature something that’s never been attempted at Hawkers.\r\nFor the first release of the year, Autumn’s expression is the first wet-hopped beer to come out of the Hawkers brewery, loaded with freshly harvested Melba hop cones from Ellerslie Hop Estate.",
+    "rating_score": 4.14823,
+    "rating_count": 198,
+    "brewery_name": "Hawkers Beer"
+  },
+  "966225": {
+    "beer_id": 966225,
+    "beer_name": "Original Pale Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-966225_22a77_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-966225_e18ba_hd.jpeg",
+    "beer_style": "Pale Ale - American",
+    "beer_abv": 5.2,
+    "beer_ibu": 35,
+    "beer_description": "A quintessential American style pale ale, hop forward and very balanced. This beer is a real thirst quencher.",
+    "rating_score": 3.62457,
+    "rating_count": 3647,
+    "brewery_name": "Hawkers Beer"
+  },
+  "3387459": {
+    "beer_id": 3387459,
+    "beer_name": "Pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3387459_11fc6_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3387459_96899_hd.jpeg",
+    "beer_style": "Pilsner - German",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "The isn’t the average industrial lager. Old world and new world hops deliver floral and spicy aromas, setting the stage for a clean, modern pilsner that nods to its old world roots while bringing a certain mischievous youth to the party. Classic, but far from ordinary.",
+    "rating_score": 3.44995,
+    "rating_count": 3296,
+    "brewery_name": "Hawkers Beer"
   }
 }
