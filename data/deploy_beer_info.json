@@ -1023,5 +1023,31 @@
     "rating_score": 0,
     "rating_count": 0,
     "brewery_name": "Hawkers Beer"
+  },
+  "6633679": {
+    "beer_id": 6633679,
+    "beer_name": "Whisky Barrel Aged - White Stout (2026)",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6633679_9d508_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6633679_9d508_hd.jpeg",
+    "beer_style": "Stout - White / Golden",
+    "beer_abv": 6.4,
+    "beer_ibu": 0,
+    "beer_description": "It’s not just darkness that veils the unknown mysteries of the universe—sometimes they’re obscured in the light. Bright and clear. yet unexpectedly rich, our 2026 White Stout offers surprising depth with a dessert-like malt profile, punctuated with additions of cacao nibs, coffee, and vanilla. Don’t fear the unexplained, pour it in a glass and enjoy it.",
+    "rating_score": 3.9896,
+    "rating_count": 125,
+    "brewery_name": "Hawkers Beer"
+  },
+  "6159937": {
+    "beer_id": 6159937,
+    "beer_name": "X",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6159937_e59a2_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6159937_e59a2_hd.jpeg",
+    "beer_style": "Stout - Imperial / Double",
+    "beer_abv": 12.4,
+    "beer_ibu": 0,
+    "beer_description": "Celebrate ten years of Hawkers with this epic blended Imperial Stout comprising both youth and maturity. A blend of un-aged and 2+ year bourbon barrel matured imperial stouts unite with a fusing rest on amburana wood, nodding to past, present, and years to come. Find complex vanilla, spice, dried fruit, and coffee characters in its inky depths.\r\nAfter a decade of hard work and dedication, this beer is the perfect embodiment of time, experience, and growth.\r\nHere’s to ten years.",
+    "rating_score": 4.36157,
+    "rating_count": 363,
+    "brewery_name": "Hawkers Beer"
   }
 }
