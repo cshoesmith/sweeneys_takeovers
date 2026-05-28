@@ -842,6 +842,32 @@
     "rating_count": 198,
     "brewery_name": "Hawkers Beer"
   },
+  "6455341": {
+    "beer_id": 6455341,
+    "beer_name": "Guava Train",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6455341_3d3a3_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6455341_5924a_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 7,
+    "beer_ibu": 0,
+    "beer_description": "Hawkers and Good Folk have teamed up for a tasty, juicy, fruit-laden collaboration whose love-child is the tropical hop dream inside this can. A star-studded cast of Mosaic Cryo, Krush, Idaho 7, and Citra Cryo on top of a pillowy-soft canvas of an oat cream body makes this a delightful drink. Throw in a gentle addition of guava, and you’ve got yourself perfection.\r\nEnjoy the ride on the guava train.",
+    "rating_score": 3.95618,
+    "rating_count": 259,
+    "brewery_name": "Hawkers Beer"
+  },
+  "3999492": {
+    "beer_id": 3999492,
+    "beer_name": "Hazy Pale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3999492_07327_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3999492_07327_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 4.6,
+    "beer_ibu": 0,
+    "beer_description": "Generously dry-hopped, deliciously hazy, and stunningly approachable. Massive juice characters about from American and New Zealand hops, delivering the best of both worlds between New England style and sessionability.",
+    "rating_score": 3.6522,
+    "rating_count": 2937,
+    "brewery_name": "Hawkers Beer"
+  },
   "966225": {
     "beer_id": 966225,
     "beer_name": "Original Pale Ale",
@@ -853,6 +879,19 @@
     "beer_description": "A quintessential American style pale ale, hop forward and very balanced. This beer is a real thirst quencher.",
     "rating_score": 3.62457,
     "rating_count": 3647,
+    "brewery_name": "Hawkers Beer"
+  },
+  "6576876": {
+    "beer_id": 6576876,
+    "beer_name": "Pico De Cryo",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6576876_29598_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6576876_29598_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 8.5,
+    "beer_ibu": 0,
+    "beer_description": "At Hawkers, we take a firm stance that there’s nothing wrong with having a Cryo into your beer. In fact, with this tasty little double west coast, we did it with a trio of Cryo hops for maximum aromatics to complement the finishing bitterness. Simcoe Cryo, Citra Cryo, and Cascade Cryo for a citrusy, floral, and subtle resinous olfactory experience. So good, it might make you cryo.",
+    "rating_score": 4.06742,
+    "rating_count": 198,
     "brewery_name": "Hawkers Beer"
   },
   "3387459": {

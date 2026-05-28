@@ -1640,17 +1640,22 @@
   {
     "date": "2026-05-28",
     "brewery": "Hawkers Beer",
-    "checkins": 10,
-    "unique_beers": 6,
-    "total_checkins_that_week": 10,
+    "checkins": 28,
+    "unique_beers": 11,
+    "total_checkins_that_week": 28,
     "share_pct": 100.0,
     "beers": [
       "Four Seasons - Autumn (2026)",
+      "Guava Train",
+      "Hazy Pale",
       "Original Pale Ale",
+      "Pico De Cryo",
       "Pilsner",
       "Seeing Red, Feeling Good",
       "Whisky Barrel Aged - Black Barleywine (2026)",
-      "Whisky Barrel Aged - Imperial Stout (2026)"
+      "Whisky Barrel Aged - Imperial Stout (2026)",
+      "Whisky Barrel Aged - White Stout (2026)",
+      "X"
     ],
     "beer_details": [
       {
@@ -1668,6 +1673,34 @@
         "brewery_name": "Hawkers Beer"
       },
       {
+        "beer_id": 6455341,
+        "beer_name": "Guava Train",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6455341_3d3a3_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6455341_5924a_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Hawkers and Good Folk have teamed up for a tasty, juicy, fruit-laden collaboration whose love-child is the tropical hop dream inside this can. A star-studded cast of Mosaic Cryo, Krush, Idaho 7, and Citra Cryo on top of a pillowy-soft canvas of an oat cream body makes this a delightful drink. Throw in a gentle addition of guava, and you’ve got yourself perfection.\r\nEnjoy the ride on the guava train.",
+        "rating_score": 3.95618,
+        "rating_count": 259,
+        "brewery_name": "Hawkers Beer"
+      },
+      {
+        "beer_id": 3999492,
+        "beer_name": "Hazy Pale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3999492_07327_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3999492_07327_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Generously dry-hopped, deliciously hazy, and stunningly approachable. Massive juice characters about from American and New Zealand hops, delivering the best of both worlds between New England style and sessionability.",
+        "rating_score": 3.6522,
+        "rating_count": 2937,
+        "brewery_name": "Hawkers Beer"
+      },
+      {
         "beer_id": 966225,
         "beer_name": "Original Pale Ale",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-966225_22a77_sm.jpeg",
@@ -1679,6 +1712,20 @@
         "beer_description": "A quintessential American style pale ale, hop forward and very balanced. This beer is a real thirst quencher.",
         "rating_score": 3.62457,
         "rating_count": 3647,
+        "brewery_name": "Hawkers Beer"
+      },
+      {
+        "beer_id": 6576876,
+        "beer_name": "Pico De Cryo",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6576876_29598_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double",
+        "beer_abv": 8.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6576876_29598_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "At Hawkers, we take a firm stance that there’s nothing wrong with having a Cryo into your beer. In fact, with this tasty little double west coast, we did it with a trio of Cryo hops for maximum aromatics to complement the finishing bitterness. Simcoe Cryo, Citra Cryo, and Cascade Cryo for a citrusy, floral, and subtle resinous olfactory experience. So good, it might make you cryo.",
+        "rating_score": 4.06742,
+        "rating_count": 198,
         "brewery_name": "Hawkers Beer"
       },
       {
@@ -1718,6 +1765,22 @@
         "beer_style": "Stout - Imperial / Double",
         "beer_abv": 11.6,
         "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6633679,
+        "beer_name": "Whisky Barrel Aged - White Stout (2026)",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6633679_9d508_sm.jpeg",
+        "beer_style": "Stout - White / Golden",
+        "beer_abv": 6.4,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6159937,
+        "beer_name": "X",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6159937_e59a2_sm.jpeg",
+        "beer_style": "Stout - Imperial / Double",
+        "beer_abv": 12.4,
+        "beer_auth_rating": null
       }
     ],
     "source": "heuristic",
@@ -1727,7 +1790,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "rank": 1
       },
@@ -1736,7 +1799,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "rank": 2
       },
@@ -1745,7 +1808,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "rank": 3
       },
@@ -1754,7 +1817,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "rank": 4
       },
@@ -1763,7 +1826,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "rank": 5
       },
@@ -1772,7 +1835,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "rank": 6
       },
@@ -1781,7 +1844,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "rank": 7
       }
