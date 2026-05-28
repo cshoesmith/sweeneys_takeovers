@@ -1640,11 +1640,12 @@
   {
     "date": "2026-05-28",
     "brewery": "Hawkers Beer",
-    "checkins": 37,
-    "unique_beers": 14,
-    "total_checkins_that_week": 37,
+    "checkins": 41,
+    "unique_beers": 16,
+    "total_checkins_that_week": 41,
     "share_pct": 100.0,
     "beers": [
+      "Four Seasons - Autumn (2025)",
       "Four Seasons - Autumn (2026)",
       "Four Seasons - Summer (2025)",
       "Guava Train",
@@ -1655,12 +1656,27 @@
       "Pilsner",
       "Seeing Red, Feeling Good",
       "Stout",
+      "West Coast IPA",
       "Whisky Barrel Aged - Black Barleywine (2026)",
       "Whisky Barrel Aged - Imperial Stout (2026)",
       "Whisky Barrel Aged - White Stout (2026)",
       "X"
     ],
     "beer_details": [
+      {
+        "beer_id": 6201508,
+        "beer_name": "Four Seasons - Autumn (2025)",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6201508_441eb_sm.jpeg",
+        "beer_style": "IPA - Red",
+        "beer_abv": 9,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6201508_c27ea_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "2025’s Four Seasons is a dedication to our much-beloved core West Coast IPA. Every season features one of the four hops that go into our Westy (Southern Cross, Simcoe, Mosaic, and Krush), each one paired with a beer style that will suit both the season and the hop.\r\nAutumn calls for an IPA with a little bit of robustitude—prominent malt with a sassy ABV, featuring Simcoe as the star hop. Pine, citrus, and an assertive bitterness compliment a lush, caramelly malt profile. \r\nAutumn tastes amazing.",
+        "rating_score": 4.14591,
+        "rating_count": 367,
+        "brewery_name": "Hawkers Beer"
+      },
       {
         "beer_id": 6603470,
         "beer_name": "Four Seasons - Autumn (2026)",
@@ -1793,7 +1809,27 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2072960_e9cdd_sm.jpeg",
         "beer_style": "Stout - Irish Dry",
         "beer_abv": 5.4,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2072960_cb9a6_hd.jpeg",
+        "beer_ibu": 35,
+        "beer_description": "Rich aromas of espresso mingle with characters of chocolate and roasted malt atop a pillowy tan head. It’s a seductive dance in the darkness, boasting deep, alluring flavours and a lush, rounded body. Peaceful, dark, and sultry...",
+        "rating_score": 3.65859,
+        "rating_count": 2822,
+        "brewery_name": "Hawkers Beer"
+      },
+      {
+        "beer_id": 2332158,
+        "beer_name": "West Coast IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2332158_f7c63_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 7.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2332158_c0307_hd.jpeg",
+        "beer_ibu": 75,
+        "beer_description": "The West Coast style has never been accused of subtlety—it’s audacious, unruly, and it definitely doesn’t wait around for pleasantries. Unapologetic quantities of American and Kiwi hops deliver punchy floral aromas with notes of citrus, pine, and resin.",
+        "rating_score": 3.83788,
+        "rating_count": 5362,
+        "brewery_name": "Hawkers Beer"
       },
       {
         "beer_id": 6678165,
@@ -1831,38 +1867,38 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 3,
+        "total": 16,
+        "pct": 18.8,
+        "rank": 1
+      },
+      {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 16,
         "pct": 0.0,
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 16,
         "pct": 0.0,
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 14,
-        "pct": 0.0,
-        "rank": 3
-      },
-      {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 14,
+        "total": 16,
         "pct": 0.0,
         "rank": 4
       },
@@ -1871,7 +1907,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 16,
         "pct": 0.0,
         "rank": 5
       },
@@ -1880,7 +1916,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 16,
         "pct": 0.0,
         "rank": 6
       },
@@ -1889,7 +1925,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 16,
         "pct": 0.0,
         "rank": 7
       }

@@ -829,6 +829,19 @@
     "rating_count": 1442,
     "brewery_name": "Azvex Brewing Company"
   },
+  "6201508": {
+    "beer_id": 6201508,
+    "beer_name": "Four Seasons - Autumn (2025)",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6201508_441eb_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6201508_c27ea_hd.jpeg",
+    "beer_style": "IPA - Red",
+    "beer_abv": 9,
+    "beer_ibu": 0,
+    "beer_description": "2025’s Four Seasons is a dedication to our much-beloved core West Coast IPA. Every season features one of the four hops that go into our Westy (Southern Cross, Simcoe, Mosaic, and Krush), each one paired with a beer style that will suit both the season and the hop.\r\nAutumn calls for an IPA with a little bit of robustitude—prominent malt with a sassy ABV, featuring Simcoe as the star hop. Pine, citrus, and an assertive bitterness compliment a lush, caramelly malt profile. \r\nAutumn tastes amazing.",
+    "rating_score": 4.14591,
+    "rating_count": 367,
+    "brewery_name": "Hawkers Beer"
+  },
   "6603470": {
     "beer_id": 6603470,
     "beer_name": "Four Seasons - Autumn (2026)",
@@ -944,6 +957,32 @@
     "beer_description": "The poor colour red gets a bad rap sometimes, but when it comes to a rich, red frothy brew, it’s an absolute delight. Caramel and toffee malt characters take the helm, balanced by an agreeable bitterness and floral aromatics to turn a basic red into a symphony of flavour. Seeing red? Now you can taste it, too.",
     "rating_score": 3.84231,
     "rating_count": 195,
+    "brewery_name": "Hawkers Beer"
+  },
+  "2072960": {
+    "beer_id": 2072960,
+    "beer_name": "Stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2072960_e9cdd_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2072960_cb9a6_hd.jpeg",
+    "beer_style": "Stout - Irish Dry",
+    "beer_abv": 5.4,
+    "beer_ibu": 35,
+    "beer_description": "Rich aromas of espresso mingle with characters of chocolate and roasted malt atop a pillowy tan head. It’s a seductive dance in the darkness, boasting deep, alluring flavours and a lush, rounded body. Peaceful, dark, and sultry...",
+    "rating_score": 3.65859,
+    "rating_count": 2822,
+    "brewery_name": "Hawkers Beer"
+  },
+  "2332158": {
+    "beer_id": 2332158,
+    "beer_name": "West Coast IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2332158_f7c63_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2332158_c0307_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 7.2,
+    "beer_ibu": 75,
+    "beer_description": "The West Coast style has never been accused of subtlety—it’s audacious, unruly, and it definitely doesn’t wait around for pleasantries. Unapologetic quantities of American and Kiwi hops deliver punchy floral aromas with notes of citrus, pine, and resin.",
+    "rating_score": 3.83788,
+    "rating_count": 5362,
     "brewery_name": "Hawkers Beer"
   }
 }
