@@ -920,6 +920,19 @@
     "rating_count": 2937,
     "brewery_name": "Hawkers Beer"
   },
+  "2564793": {
+    "beer_id": 2564793,
+    "beer_name": "IIPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2564793_bfae0_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2564793_7515e_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 9,
+    "beer_ibu": 0,
+    "beer_description": "Hops, more hops, and then more hops again. That’s our approach to this massive IIPA, which is brimming with juicy and fruity hop notes balanced by prominent bitterness and a full and lush body. Proceed cautiously, it’s dangerously drinkable.",
+    "rating_score": 4.00657,
+    "rating_count": 3031,
+    "brewery_name": "Hawkers Beer"
+  },
   "3406174": {
     "beer_id": 3406174,
     "beer_name": "IPA",

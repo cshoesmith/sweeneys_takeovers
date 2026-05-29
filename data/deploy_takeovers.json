@@ -1640,10 +1640,10 @@
   {
     "date": "2026-05-28",
     "brewery": "Hawkers Beer",
-    "checkins": 76,
-    "unique_beers": 18,
-    "total_checkins_that_week": 77,
-    "share_pct": 98.7,
+    "checkins": 84,
+    "unique_beers": 19,
+    "total_checkins_that_week": 85,
+    "share_pct": 98.8,
     "beers": [
       "Double West Coast IPA",
       "Four Seasons - Autumn (2025)",
@@ -1652,6 +1652,7 @@
       "Guava Train",
       "Hazy IPA",
       "Hazy Pale",
+      "IIPA",
       "IPA",
       "Original Pale Ale",
       "Pico De Cryo",
@@ -1761,6 +1762,20 @@
         "beer_description": "Generously dry-hopped, deliciously hazy, and stunningly approachable. Massive juice characters about from American and New Zealand hops, delivering the best of both worlds between New England style and sessionability.",
         "rating_score": 3.6522,
         "rating_count": 2937,
+        "brewery_name": "Hawkers Beer"
+      },
+      {
+        "beer_id": 2564793,
+        "beer_name": "IIPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2564793_bfae0_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double",
+        "beer_abv": 9,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2564793_7515e_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Hops, more hops, and then more hops again. That’s our approach to this massive IIPA, which is brimming with juicy and fruity hop notes balanced by prominent bitterness and a full and lush body. Proceed cautiously, it’s dangerously drinkable.",
+        "rating_score": 4.00657,
+        "rating_count": 3031,
         "brewery_name": "Hawkers Beer"
       },
       {
@@ -1924,18 +1939,18 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 7,
-        "total": 18,
-        "pct": 38.9,
+        "checked": 8,
+        "total": 19,
+        "pct": 42.1,
         "rank": 1
       },
       {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 6,
-        "total": 18,
-        "pct": 33.3,
+        "checked": 7,
+        "total": 19,
+        "pct": 36.8,
         "rank": 2
       },
       {
@@ -1943,8 +1958,8 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 4,
-        "total": 18,
-        "pct": 22.2,
+        "total": 19,
+        "pct": 21.1,
         "rank": 3
       },
       {
@@ -1952,7 +1967,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 18,
+        "total": 19,
         "pct": 0.0,
         "rank": 4
       },
@@ -1961,7 +1976,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 18,
+        "total": 19,
         "pct": 0.0,
         "rank": 5
       },
@@ -1970,7 +1985,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 18,
+        "total": 19,
         "pct": 0.0,
         "rank": 6
       },
@@ -1979,7 +1994,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 18,
+        "total": 19,
         "pct": 0.0,
         "rank": 7
       }
