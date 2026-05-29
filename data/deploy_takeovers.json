@@ -1640,9 +1640,9 @@
   {
     "date": "2026-05-28",
     "brewery": "Hawkers Beer",
-    "checkins": 56,
+    "checkins": 69,
     "unique_beers": 18,
-    "total_checkins_that_week": 56,
+    "total_checkins_that_week": 69,
     "share_pct": 100.0,
     "beers": [
       "Double West Coast IPA",
@@ -1921,30 +1921,30 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 3,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 6,
         "total": 18,
-        "pct": 16.7,
+        "pct": 33.3,
         "rank": 1
       },
       {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 2,
+        "checked": 4,
         "total": 18,
-        "pct": 11.1,
+        "pct": 22.2,
         "rank": 2
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 1,
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 3,
         "total": 18,
-        "pct": 5.6,
+        "pct": 16.7,
         "rank": 3
       },
       {
