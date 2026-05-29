@@ -829,6 +829,19 @@
     "rating_count": 1442,
     "brewery_name": "Azvex Brewing Company"
   },
+  "4093203": {
+    "beer_id": 4093203,
+    "beer_name": "Double West Coast IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4093203_7b1ef_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4093203_38ec7_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 9,
+    "beer_ibu": 0,
+    "beer_description": "This imperialised expression of our well known and dearly beloved West Coast IPA has been amped up to 9.0%, taking us one step closer to our dream of a utopian beer-scape where the clouds are froth, it rains IPA and the trees are giant hops.",
+    "rating_score": 4.07982,
+    "rating_count": 1950,
+    "brewery_name": "Hawkers Beer"
+  },
   "6201508": {
     "beer_id": 6201508,
     "beer_name": "Four Seasons - Autumn (2025)",
