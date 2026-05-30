@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1574085478,
+      "created_at": "Sat, 30 May 2026 03:26:31 +0000",
+      "user": "davidsansome",
+      "checkin_comment": "LCI",
+      "beer_name": "Whisky Barrel Aged - White Stout (2026)",
+      "beer_id": 6633679,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6633679_9d508_sm.jpeg",
+      "beer_style": "Stout - White / Golden",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hawkers Beer",
+      "brewery_id": 184662,
+      "rating": 3.8
+    },
+    {
+      "checkin_id": 1574085080,
+      "created_at": "Sat, 30 May 2026 03:23:18 +0000",
+      "user": "swmiddo",
+      "checkin_comment": "A malty, yet light pumped beer. Easy to drink without being over powering.",
+      "beer_name": "Fursty Ferret",
+      "beer_id": 8932,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8932_a0c9c_sm.jpeg",
+      "beer_style": "Bitter - Session / Ordinary",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badger Brewery (Hall & Woodhouse)",
+      "brewery_id": 1752,
+      "rating": 4
+    },
+    {
       "checkin_id": 1573779402,
       "created_at": "Fri, 29 May 2026 14:20:23 +0000",
       "user": "PhilBrau",
