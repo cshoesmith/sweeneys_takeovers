@@ -1640,10 +1640,10 @@
   {
     "date": "2026-05-28",
     "brewery": "Hawkers Beer",
-    "checkins": 99,
+    "checkins": 105,
     "unique_beers": 19,
-    "total_checkins_that_week": 102,
-    "share_pct": 97.1,
+    "total_checkins_that_week": 108,
+    "share_pct": 97.2,
     "beers": [
       "Double West Coast IPA",
       "Four Seasons - Autumn (2025)",
