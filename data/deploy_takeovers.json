@@ -1640,12 +1640,13 @@
   {
     "date": "2026-05-28",
     "brewery": "Hawkers Beer",
-    "checkins": 105,
-    "unique_beers": 19,
-    "total_checkins_that_week": 108,
-    "share_pct": 97.2,
+    "checkins": 109,
+    "unique_beers": 20,
+    "total_checkins_that_week": 112,
+    "share_pct": 97.3,
     "beers": [
       "Double West Coast IPA",
+      "Four Seasons - Autumn (2024)",
       "Four Seasons - Autumn (2025)",
       "Four Seasons - Autumn (2026)",
       "Four Seasons - Summer (2025)",
@@ -1678,6 +1679,20 @@
         "beer_description": "This imperialised expression of our well known and dearly beloved West Coast IPA has been amped up to 9.0%, taking us one step closer to our dream of a utopian beer-scape where the clouds are froth, it rains IPA and the trees are giant hops.",
         "rating_score": 4.07982,
         "rating_count": 1950,
+        "brewery_name": "Hawkers Beer"
+      },
+      {
+        "beer_id": 5729091,
+        "beer_name": "Four Seasons - Autumn (2024)",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5729091_57491_sm.jpeg",
+        "beer_style": "IPA - Triple",
+        "beer_abv": 10,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5729091_3451c_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Celebrate the changing of the seasons with our first Four Seasons release in 2024, brewed for Autumn! This series is a yearly project that brews four different expressions of a common parent style (in this case, IPA) using the same bill of malts and hops, adjusting only proportions and amounts.\r\nThis time of year calls for the refreshing brightness of a West Coast along with the warming comfort of 10% ABV. Perfect for enjoying a crisp autumn day!",
+        "rating_score": 4.1319,
+        "rating_count": 511,
         "brewery_name": "Hawkers Beer"
       },
       {
@@ -1940,8 +1955,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 8,
-        "total": 19,
-        "pct": 42.1,
+        "total": 20,
+        "pct": 40.0,
         "rank": 1
       },
       {
@@ -1949,8 +1964,8 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 7,
-        "total": 19,
-        "pct": 36.8,
+        "total": 20,
+        "pct": 35.0,
         "rank": 2
       },
       {
@@ -1958,8 +1973,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 7,
-        "total": 19,
-        "pct": 36.8,
+        "total": 20,
+        "pct": 35.0,
         "rank": 3
       },
       {
@@ -1967,8 +1982,8 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 4,
-        "total": 19,
-        "pct": 21.1,
+        "total": 20,
+        "pct": 20.0,
         "rank": 4
       },
       {
@@ -1976,7 +1991,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "rank": 5
       },
@@ -1985,7 +2000,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "rank": 6
       },
@@ -1994,7 +2009,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "rank": 7
       }

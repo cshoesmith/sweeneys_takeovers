@@ -842,6 +842,19 @@
     "rating_count": 1950,
     "brewery_name": "Hawkers Beer"
   },
+  "5729091": {
+    "beer_id": 5729091,
+    "beer_name": "Four Seasons - Autumn (2024)",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5729091_57491_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5729091_3451c_hd.jpeg",
+    "beer_style": "IPA - Triple",
+    "beer_abv": 10,
+    "beer_ibu": 0,
+    "beer_description": "Celebrate the changing of the seasons with our first Four Seasons release in 2024, brewed for Autumn! This series is a yearly project that brews four different expressions of a common parent style (in this case, IPA) using the same bill of malts and hops, adjusting only proportions and amounts.\r\nThis time of year calls for the refreshing brightness of a West Coast along with the warming comfort of 10% ABV. Perfect for enjoying a crisp autumn day!",
+    "rating_score": 4.1319,
+    "rating_count": 511,
+    "brewery_name": "Hawkers Beer"
+  },
   "6201508": {
     "beer_id": 6201508,
     "beer_name": "Four Seasons - Autumn (2025)",
