@@ -1640,10 +1640,10 @@
   {
     "date": "2026-05-28",
     "brewery": "Hawkers Beer",
-    "checkins": 86,
+    "checkins": 99,
     "unique_beers": 19,
-    "total_checkins_that_week": 88,
-    "share_pct": 97.7,
+    "total_checkins_that_week": 102,
+    "share_pct": 97.1,
     "beers": [
       "Double West Coast IPA",
       "Four Seasons - Autumn (2025)",
@@ -1945,13 +1945,22 @@
         "rank": 1
       },
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 7,
+        "total": 19,
+        "pct": 36.8,
+        "rank": 2
+      },
+      {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 7,
         "total": 19,
         "pct": 36.8,
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "jimmy-swings",
@@ -1960,15 +1969,6 @@
         "checked": 4,
         "total": 19,
         "pct": 21.1,
-        "rank": 3
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 19,
-        "pct": 0.0,
         "rank": 4
       },
       {
