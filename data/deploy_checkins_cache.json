@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1574815649,
+      "created_at": "Mon, 01 Jun 2026 02:57:41 +0000",
+      "user": "sjfitzgerald60",
+      "checkin_comment": "",
+      "beer_name": "Hazy Pale",
+      "beer_id": 3999492,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3999492_07327_sm.jpeg",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 4.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hawkers Beer",
+      "brewery_id": 184662,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1574813847,
+      "created_at": "Mon, 01 Jun 2026 02:31:10 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Into the Forest, I Go",
+      "beer_id": 3482354,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3482354_dd0ac_sm.jpeg",
+      "beer_style": "Sour - Fruited",
+      "beer_abv": 4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hawkers Beer",
+      "brewery_id": 184662,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1574145747,
       "created_at": "Sat, 30 May 2026 12:41:05 +0000",
       "user": "Babotoki",
