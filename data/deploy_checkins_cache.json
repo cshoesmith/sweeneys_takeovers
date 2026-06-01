@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1574823600,
+      "created_at": "Mon, 01 Jun 2026 07:01:41 +0000",
+      "user": "SpoonNZ",
+      "checkin_comment": "",
+      "beer_name": "Whisky Barrel Aged - White Stout (2026)",
+      "beer_id": 6633679,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6633679_9d508_sm.jpeg",
+      "beer_style": "Stout - White / Golden",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hawkers Beer",
+      "brewery_id": 184662,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1574815649,
       "created_at": "Mon, 01 Jun 2026 02:57:41 +0000",
       "user": "sjfitzgerald60",
