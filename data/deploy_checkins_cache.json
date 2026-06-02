@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1574950283,
+      "created_at": "Tue, 02 Jun 2026 08:05:17 +0000",
+      "user": "adam_shaw_1519",
+      "checkin_comment": "",
+      "beer_name": "Pico De Cryo",
+      "beer_id": 6576876,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6576876_29598_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hawkers Beer",
+      "brewery_id": 184662,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1574940196,
       "created_at": "Tue, 02 Jun 2026 02:05:03 +0000",
       "user": "ale_n",
