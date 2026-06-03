@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1575091017,
+      "created_at": "Wed, 03 Jun 2026 09:24:17 +0000",
+      "user": "benje",
+      "checkin_comment": "",
+      "beer_name": "Whisky Barrel Aged - Black Barleywine (2026)",
+      "beer_id": 6678165,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6678165_37828_sm.jpeg",
+      "beer_style": "Barleywine - Other",
+      "beer_abv": 12.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hawkers Beer",
+      "brewery_id": 184662,
+      "rating": 4.5
+    },
+    {
+      "checkin_id": 1575090153,
+      "created_at": "Wed, 03 Jun 2026 08:46:46 +0000",
+      "user": "benje",
+      "checkin_comment": "Enjoyed this - maybe a touch fruity but happily went back for a second",
+      "beer_name": "Guava Train",
+      "beer_id": 6455341,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6455341_3d3a3_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hawkers Beer",
+      "brewery_id": 184662,
+      "rating": 4
+    },
+    {
       "checkin_id": 1575087748,
       "created_at": "Wed, 03 Jun 2026 06:44:59 +0000",
       "user": "tawny_frogmouth",
