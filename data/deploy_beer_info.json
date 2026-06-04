@@ -1089,30 +1089,44 @@
     "rating_count": 363,
     "brewery_name": "Hawkers Beer"
   },
-  "6640657": {
-    "beer_id": 6640657,
-    "beer_name": "Jaegar- Fresh Hop 2026",
-    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6640657_20d7c_sm.jpeg",
-    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6640657_d083a_hd.jpeg",
-    "beer_style": "IPA - New Zealand",
+  "726917": {
+    "beer_id": 726917,
+    "beer_name": "Hairy Hop",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-726917_e1ae0_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-726917_098a5_hd.jpeg",
+    "beer_style": "IPA - English",
+    "beer_abv": 6.4,
+    "beer_ibu": 0,
+    "beer_description": "A bold hop forward amber IPA with aromas of fresh summer fruit, citrus and a hint of pine. A smooth not shaggy balanced malt ends with a pop of citrus flavours.",
+    "rating_score": 3.63852,
+    "rating_count": 3601,
+    "brewery_name": "Lakeman Brewing Co"
+  },
+  "6521338": {
+    "beer_id": 6521338,
+    "beer_name": "Rogue Hog",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-52361_8cfd6.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - American",
+    "beer_abv": 6.7,
+    "beer_ibu": 0,
+    "beer_description": "The stuff of legends, the Rogue Hog roams somewhere beyond the black stump - feared, hunted, but never caught. Like its namesake, this West Coast IPA charges with upfront citrus and pine and the wallows in dankness. Too good not to dive in snout-first.",
+    "rating_score": 3.875,
+    "rating_count": 282,
+    "brewery_name": "Lakeman Brewing Co"
+  },
+  "6509094": {
+    "beer_id": 6509094,
+    "beer_name": "Snake Oil",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6509094_0cb36_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6509094_0cb36_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
     "beer_abv": 6.5,
     "beer_ibu": 0,
-    "beer_description": "From the mechanical edge of the Pacific Hop Series - Battle of the Aotearoa Fresh Hops 2026, Jaegar strikes again - precision-engineered for the fresh hop front. This Origins West Coast reloads with seasonal firepower available once per year, so Power Up with this rare hop fuel. Grab both to settle the Kaiju vs Jaegar battle, and wait for the Monarch to arrive.\r\n\r\nFlavours: A clean grist of pilsner and wheat malt, with dextrin for backbone, lets the fresh hops shine. Motueka and NZ Cascade from Clayton Hops deliver fresh-squeezed citrus punch - Motueka's mojito lime and lemon zest meet Cascade's bright grapefruit and tropical fruits, finishing with fresh-hop dank edge and crisp snap. (think the face you make biting a lemon, but without the sour)",
-    "rating_score": 3.89321,
-    "rating_count": 324,
-    "brewery_name": "Double Vision Brewing"
-  },
-  "6663127": {
-    "beer_id": 6663127,
-    "beer_name": "Monarch - Fresh Hop 2026",
-    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6663127_2ad74_sm.jpeg",
-    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6663127_f468a_hd.jpeg",
-    "beer_style": "IPA - Triple New England / Hazy",
-    "beer_abv": 10.2,
-    "beer_ibu": 0,
-    "beer_description": "Crowning the Pacific Hop Series - Battle of the Aotearoa Fresh Hops 2026, Monarch descends as the ultimate Origins mediator - a colossal fresh hop overlord that subdues both Kai Juice's wild fury and Jaegar's tech precision to enforce supreme order. Wielding Superdelic and Nectaron Fresh Hops from NZ Hops as weapons designed to overpower even the biggest rigs, this triple hazy crushes the chaos and completes the set.\r\n\r\nFlavours: Jumbo pilsner malt with triple wheat malt, flaked wheat, and oats, plus maltodextrine for support, builds a warship of softness against the 10.2%. Superdelic and Nectaron form a juicy tropical dankness duo - Superdelic sends red fruit, mango, and sweet berry aromas, while Nectaron detonates pineapple and passionfruit, leveling the playing field.\r\n\r\n",
-    "rating_score": 4.20475,
-    "rating_count": 305,
-    "brewery_name": "Double Vision Brewing"
+    "rating_score": 3.84879,
+    "rating_count": 247,
+    "brewery_name": "Lakeman Brewing Co",
+    "brewery_country": "New Zealand",
+    "beer_page_url": "https://untappd.com/b/lakeman-brewing-co-snake-oil/6509094"
   }
 }
