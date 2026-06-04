@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1575398423,
+      "created_at": "Thu, 04 Jun 2026 22:16:49 +0000",
+      "user": "ale_n",
+      "checkin_comment": "LCI",
+      "beer_name": "Jaegar- Fresh Hop 2026",
+      "beer_id": 6640657,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6640657_20d7c_sm.jpeg",
+      "beer_style": "IPA - New Zealand",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Double Vision Brewing",
+      "brewery_id": 280646,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1575398214,
+      "created_at": "Thu, 04 Jun 2026 22:15:54 +0000",
+      "user": "ale_n",
+      "checkin_comment": "LCI",
+      "beer_name": "Snake Oil",
+      "beer_id": 6509094,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6509094_0cb36_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Lakeman Brewing Co",
+      "brewery_id": 52361,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1575271175,
       "created_at": "Thu, 04 Jun 2026 13:02:40 +0000",
       "user": "PhilBrau",
