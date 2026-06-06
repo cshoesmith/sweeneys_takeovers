@@ -2018,10 +2018,10 @@
   {
     "date": "2026-06-04",
     "brewery": "Double Vision Brewing",
-    "checkins": 27,
+    "checkins": 32,
     "unique_beers": 3,
-    "total_checkins_that_week": 99,
-    "share_pct": 27.3,
+    "total_checkins_that_week": 109,
+    "share_pct": 29.4,
     "beers": [
       "Fresh Drop",
       "Jaegar- Fresh Hop 2026",
@@ -2074,13 +2074,22 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 3,
+        "total": 3,
+        "pct": 100.0,
+        "rank": 1
+      },
+      {
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 3,
         "total": 3,
         "pct": 100.0,
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "lightbeerking",
@@ -2089,15 +2098,6 @@
         "checked": 1,
         "total": 3,
         "pct": 33.3,
-        "rank": 2
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 3,
-        "pct": 0.0,
         "rank": 3
       },
       {
