@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1575782923,
+      "created_at": "Sat, 06 Jun 2026 02:45:30 +0000",
+      "user": "SeamusH",
+      "checkin_comment": "",
+      "beer_name": "Skunk Juice Hazy IPA",
+      "beer_id": 3415098,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3415098_8849d_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Shining Peak Brewing",
+      "brewery_id": 426033,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1575470687,
       "created_at": "Fri, 05 Jun 2026 11:37:46 +0000",
       "user": "LightBeerking",
