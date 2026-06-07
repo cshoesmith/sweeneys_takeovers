@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1576261522,
+      "created_at": "Sun, 07 Jun 2026 10:47:03 +0000",
+      "user": "drareg66",
+      "checkin_comment": "",
+      "beer_name": "Hazy #19",
+      "beer_id": 6546804,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6546804_2a417_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Abandoned Brewery",
+      "brewery_id": 329687,
+      "rating": 3.25
+    },
+    {
+      "checkin_id": 1576259697,
+      "created_at": "Sun, 07 Jun 2026 10:29:05 +0000",
+      "user": "drareg66",
+      "checkin_comment": "",
+      "beer_name": "Betelgeuse",
+      "beer_id": 6237964,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6237964_2991c_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "8 Wired",
+      "brewery_id": 3555,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1576253732,
       "created_at": "Sun, 07 Jun 2026 09:05:30 +0000",
       "user": "dairyfloss",
