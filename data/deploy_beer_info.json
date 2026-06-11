@@ -1141,6 +1141,19 @@
     "rating_count": 167,
     "brewery_name": "Bright "
   },
+  "6622165": {
+    "beer_id": 6622165,
+    "beer_name": "Imperial Hellfire Amber Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6622165_19de7_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6622165_19de7_hd.jpeg",
+    "beer_style": "Red Ale - Imperial / Double",
+    "beer_abv": 8,
+    "beer_ibu": 10,
+    "beer_description": "First brewed 20 years ago, Hellfire Amber Ale is our longest running core range beer and a true constant in our range.\r\n\r\nHellfire is a throwback to classic amber ales built on balance, quality and consistency. It has stood firm through decades of change.\r\n\r\nTo celebrate our 20th anniversary we have trend things up with first ever Imperial Hellfire. Everything you love about the original dialled right up!\r\n\r\nExpect a malt driven amber with rich notes of caramel and toffee finished with a subtle nuttiness.\r\n\r\nMalts: Pale, Chocolate Wheat, Melanoidin, Dextrin, Dark Munich, Special B, Pilsner\r\nHops: Columbus\r\nYeast: AEB AY-4",
+    "rating_score": 3.796,
+    "rating_count": 50,
+    "brewery_name": "Bright "
+  },
   "6587296": {
     "beer_id": 6587296,
     "beer_name": "Infinite Barrel Works American Bourbon Barrel Aged Imperial Stout",
@@ -1167,5 +1180,31 @@
     "brewery_name": "Bright ",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/bright-leaf-peeper/4213669"
+  },
+  "90586": {
+    "beer_id": 90586,
+    "beer_name": "M.I.A I.P.A",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-90586_61480_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-90586_61480_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6.5,
+    "beer_ibu": 65,
+    "beer_description": "Named in honour of our former head brewer Jon—who, on the very afternoon the first batch of this IPA was due to be kegged, went for a “quick” lunchtime paraglide (in true Bright fashion) and ended up missing for eight hours after an emergency landing on nearby Mt Feathertop with no phone.\r\n\r\nMIA IPA stands as one of the first true West Coast IPAs brewed in Australia. It’s a bold celebration of the style, packed with resinous pine, zesty grapefruit, bright citrus, and a hit of passionfruit—all the big hop flavour you’d expect from a classic West Coast.",
+    "rating_score": 3.83516,
+    "rating_count": 3188,
+    "brewery_name": "Bright "
+  },
+  "5993730": {
+    "beer_id": 5993730,
+    "beer_name": "Mountain Juice Juicy Pale Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5993730_e8dad_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5993730_e8dad_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 5.5,
+    "beer_ibu": 20,
+    "beer_description": "First brewed to quench the thirst of a nation, Mountain Juice is Bright in a can. Brewed using a new hop varietal Dolcita, tailor made for hazy beers. Mountain Juice is packed full of real  pineapple and peach juice flavour. Each sip of the juice brewed specifically to transport you to our little slice of paradise.\r\n\r\nBrewer’s Tasting Notes: “Mountain Juice Juicy Pale Ale showcases the new Dolcita hop varietal, delivering layered aromas of peach, pineapple, orange, and tropical cocktail notes. Brewed on a hazy base it offers a soft, pillowy mouthfeel and moderate carbonation. Expect a juicy, fruit-forward palate with low bitterness and a clean finish, perfectly balanced for a refreshing, crushable hazy experience.\"\r\nMalts: Pale, Oat Malt, Wheat Malt\r\nHops: MegaTerps, Dolcita, Cryo Citra\r\nYeast: Pomona\r\n",
+    "rating_score": 3.58586,
+    "rating_count": 350,
+    "brewery_name": "Bright "
   }
 }
