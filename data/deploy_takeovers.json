@@ -2141,10 +2141,10 @@
   {
     "date": "2026-06-11",
     "brewery": "Bright ",
-    "checkins": 25,
+    "checkins": 30,
     "unique_beers": 11,
-    "total_checkins_that_week": 26,
-    "share_pct": 96.2,
+    "total_checkins_that_week": 31,
+    "share_pct": 96.8,
     "beers": [
       "Bright Pale Ale",
       "Decadence Barleywine",
