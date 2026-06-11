@@ -1245,5 +1245,31 @@
     "rating_score": 4.03953,
     "rating_count": 148,
     "brewery_name": "Bright "
+  },
+  "6710992": {
+    "beer_id": 6710992,
+    "beer_name": "Stubborn Imperial Stout 2026",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6710992_2c519_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6710992_2c519_hd.jpeg",
+    "beer_style": "Stout - Russian Imperial",
+    "beer_abv": 10.5,
+    "beer_ibu": 50,
+    "beer_description": "For nearly two decades, Bright Brewery has embraced the darkness by unleashing the beast – Stubborn Imperial Stout. Over the years, our brewers have learnt to expect the unexpected with this brew. But this unpredictable set of circumstances is what sets every vintage of Stubborn Imperial Stout apart from the rest, and imparts its own distinct flavour and character. No two years are the same. Each year, we hold our breath, wondering what the brew will bring.\r\n\r\nLike the mythical Alpine bear that adorns its label, this bold brew for 2026 is not to be taken lightly. Layered with rich expresso and dark chocolate, Stubborn is built for the long haul.\r\n\r\nSip it now for a hint of winter warmth, or let it hibernate for something truly special down the track.\r\n\r\nMalts: Pale, Chocolate, Oat Malt, Munich, Medium Crystal, Dark Crystal, Roast Barley, Dextrose, Maltodextrin\r\nHops: Ella\r\nYeast: AY-4",
+    "rating_score": 3.875,
+    "rating_count": 16,
+    "brewery_name": "Bright "
+  },
+  "6603998": {
+    "beer_id": 6603998,
+    "beer_name": "Terrano Piu Alto Italian Pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6603998_5d239_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6603998_5d239_hd.jpeg",
+    "beer_style": "Pilsner - Italian",
+    "beer_abv": 4.4,
+    "beer_ibu": 15,
+    "beer_description": "Pilsner has long been a brewers quite proving ground, a style defined by clarity, discipline and absolute honesty in the glass. At Bright, we have come to regard pilsners as the brewers moral high ground, a place for tradition and unflinching commitment to quality. There is nowhere to hide in a pilsner, which is exactly why we love it.\r\n\r\nBrewed in the Italian style, Terrano Piu Alto presents a brilliantly clean and crisp lager lifted by expressive hop character, gentle spice and a soft floral note. It is a beer that rewards patience, celebrates precision and stands tall among the purest expressions of our craft.\r\n\r\nMalts: Weyermann Pilsner Malt\r\nHops: Mittelfruh, Tettnanger \r\nYeast: Fermolager W",
+    "rating_score": 3.59531,
+    "rating_count": 64,
+    "brewery_name": "Bright "
   }
 }
