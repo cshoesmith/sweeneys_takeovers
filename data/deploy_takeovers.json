@@ -2141,11 +2141,12 @@
   {
     "date": "2026-06-11",
     "brewery": "Bright ",
-    "checkins": 21,
-    "unique_beers": 10,
-    "total_checkins_that_week": 22,
-    "share_pct": 95.5,
+    "checkins": 22,
+    "unique_beers": 11,
+    "total_checkins_that_week": 23,
+    "share_pct": 95.7,
     "beers": [
+      "Bright Pale Ale",
       "Decadence Barleywine",
       "Imperial Hellfire Amber Ale",
       "Infinite Barrel Works American Bourbon Barrel Aged Imperial Stout",
@@ -2158,6 +2159,20 @@
       "Terrano Piu Alto Italian Pilsner"
     ],
     "beer_details": [
+      {
+        "beer_id": 4718497,
+        "beer_name": "Bright Pale Ale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4718497_1e00b_sm.jpeg",
+        "beer_style": "Pale Ale - Australian",
+        "beer_abv": 4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4718497_5c60c_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Bright Pale Ale is a true taste of home. Brewed with locally grown hops, it’s a light-bodied, fruit-forward pale ale that’s as easy-drinking as it is flavourful. Expect bright notes of pineapple, passionfruit, and juicy citrus.\r\n\r\nAs crisp and refreshing as a plunge into alpine waters, Bright Pale Ale is the perfect expression of the modern Australian pale ale.",
+        "rating_score": 3.46573,
+        "rating_count": 909,
+        "brewery_name": "Bright "
+      },
       {
         "beer_id": 5890217,
         "beer_name": "Decadence Barleywine",
@@ -2249,7 +2264,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6676690_eeeaf_sm.jpeg",
         "beer_style": "Blonde / Golden Ale - Other",
         "beer_abv": 5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6676690_eeeaf_hd.jpeg",
+        "beer_ibu": 25,
+        "beer_description": "Time to open a can of whoop…Freshness.\r\n\r\nThis trash talking SOB takes Golden Ale up a notch with fresh hops thrown in less than two hours after picking, locking in all that just off the bine character.\r\n\r\nExpect big tropical notes backed by a punchy, ultra fresh hop aroma that hits hard and finishes clean.\r\n\r\nBrewer Tasting Notes: “A soft, malt‑driven Pacific‑style golden ale with a gentle sweetness and fresh hop lift. Bright pineapple and passionfruit jump from the glass, courtesy of freshly harvested Vic Secret and Galaxy hops. The palate is smooth and rounded, with light honeyed malt supporting juicy tropical notes and a restrained bitterness. Fresh, vibrant and dangerously easy‑drinking, this is hops at their most expressive and approachable.”\r\n\r\nMalts: Pale, Rolled Wheat, Wheat Malt, Carared\r\nHops: Fresh Hop Vic Secret, Cascade, Galaxy\r\nYeast:  AY-4\r\n",
+        "rating_score": 3.54605,
+        "rating_count": 38,
+        "brewery_name": "Bright "
       },
       {
         "beer_id": 6271878,
@@ -2257,7 +2278,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6271878_b91dd_sm.jpeg",
         "beer_style": "Stout - Imperial / Double",
         "beer_abv": 11.3,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6271878_b91dd_hd.jpeg",
+        "beer_ibu": 45,
+        "beer_description": "For nearly two decades, Bright Brewery has embraced the darkness by unleashing the beast—Stubborn Imperial Stout. Like the mythical Alpine bear that adorns its label, this bold brew is not to be taken lightly. Layered with rich espresso and dark chocolate, Stubborn is built for the long haul. Sip it now for a hit of winter warmth, or let it hibernate for something truly special down the track.\r\nMalts: Pale, Chocolate, Oat Malt, Munich, Medium Crystal, Dark Crystal, Roast Barley, Dextrose\r\nHops: Ella\r\nYeast: AY-4\r\n",
+        "rating_score": 4.03953,
+        "rating_count": 148,
+        "brewery_name": "Bright "
       },
       {
         "beer_id": 6710992,
@@ -2283,7 +2310,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 1
       },
@@ -2292,7 +2319,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 2
       },
@@ -2301,7 +2328,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 3
       },
@@ -2310,7 +2337,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 4
       },
@@ -2319,7 +2346,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 5
       },
@@ -2328,7 +2355,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 6
       },
@@ -2337,7 +2364,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 7
       }
