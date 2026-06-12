@@ -1128,6 +1128,19 @@
     "rating_count": 315,
     "brewery_name": "Double Vision Brewing"
   },
+  "5011219": {
+    "beer_id": 5011219,
+    "beer_name": "Alpine Lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5011219_ba154_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5011219_2b425_hd.jpeg",
+    "beer_style": "Lager - Pale",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "#1 Independent Lager in the 2024 GABS Hottest 100 Craft Beer Poll, Alpine Lager has subtle floral and tropical flavours sourced from our local hop growers.\r\n\r\nBrewed in the modern Australian style, Alpine Lager is crisp, refreshing, and effortlessly drinkable. Subtle tropical notes lift this classic lager, making it the perfect choice for both long-time lager lovers and those discovering the style anew.\r\n\r\nCrafted with pristine mountain water, Alpine Lager has become nationally recognised as the benchmark for new-age Australian lagers—and a true taste of Victoria’s High Country.",
+    "rating_score": 3.47682,
+    "rating_count": 1525,
+    "brewery_name": "Bright "
+  },
   "4718497": {
     "beer_id": 4718497,
     "beer_name": "Bright Pale Ale",
@@ -1180,6 +1193,19 @@
     "rating_count": 12,
     "brewery_name": "Bright "
   },
+  "6381293": {
+    "beer_id": 6381293,
+    "beer_name": "Kuraidesu Japanese Dark Lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6381293_00260_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6381293_00260_hd.jpeg",
+    "beer_style": "Lager - Japanese Rice",
+    "beer_abv": 5,
+    "beer_ibu": 25,
+    "beer_description": "Inspired by our love for the refined brews of the Land of the Rising Sun, Kuraidesu is our tribute to Japan in a glass — a premium Japanese dark lager that captures the spirit of Shibuya’s neon-lit alleys, the powdery peaks of Niseko, and the tireless salarymen unwinding in smoky izakayas. Dark as midnight, crisp and dry as tradition demands — this is lager, the Kuraidesu way.\r\n\r\nBrewer’s Tasting Notes: “Clean, dark, and crisp with minimal malt bitterness. Exceptionally drinkable. Hopped with Akoya — a Sapporo-developed variety delivering bright citrus and earthy spice.”\r\n\r\nMalts:  Pale, Black Rice, Flaked Rice\r\nHops: Akoya\r\nYeast: Fermolager W",
+    "rating_score": 3.57345,
+    "rating_count": 145,
+    "brewery_name": "Bright "
+  },
   "4213669": {
     "beer_id": 4213669,
     "beer_name": "Leaf Peeper",
@@ -1193,6 +1219,19 @@
     "brewery_name": "Bright ",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/bright-leaf-peeper/4213669"
+  },
+  "5776316": {
+    "beer_id": 5776316,
+    "beer_name": "Leaf Peeper Red Rye IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5776316_1d311_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5776316_1d311_hd.jpeg",
+    "beer_style": "IPA - Red",
+    "beer_abv": 6.4,
+    "beer_ibu": 50,
+    "beer_description": "It’s Leaf Peeper but not as you know it! After a short hiatus, Leaf Peeper makes its return – with a rye twist!\r\n\r\nWhen the autumn leaves start to change, all roads lead to Bright! Leaf Peeper Red Rye IPA is bursting with red malt, caramel sweetness, and shades of amber, like the the autumn foliage that makes Bright a leef peepin’ mecca!\r\n\r\nMalts: : Pale, Caramel Red, Caramel Rye, Special W\r\nHops: Cascade, Simcoe, Mosaic\r\nYeast: AEB AY-4\r\nColour: Red/copper\r\n",
+    "rating_score": 3.80691,
+    "rating_count": 275,
+    "brewery_name": "Bright "
   },
   "90586": {
     "beer_id": 90586,
