@@ -2141,10 +2141,10 @@
   {
     "date": "2026-06-11",
     "brewery": "Bright ",
-    "checkins": 64,
+    "checkins": 66,
     "unique_beers": 14,
-    "total_checkins_that_week": 74,
-    "share_pct": 86.5,
+    "total_checkins_that_week": 76,
+    "share_pct": 86.8,
     "beers": [
       "Alpine Lager",
       "Bright Pale Ale",
@@ -2366,18 +2366,18 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 6,
+        "checked": 7,
         "total": 14,
-        "pct": 42.9,
+        "pct": 50.0,
         "rank": 1
       },
       {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 3,
+        "checked": 4,
         "total": 14,
-        "pct": 21.4,
+        "pct": 28.6,
         "rank": 2
       },
       {

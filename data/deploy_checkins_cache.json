@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1577153622,
+      "created_at": "Fri, 12 Jun 2026 13:57:09 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "",
+      "beer_name": "Bright Pale Ale",
+      "beer_id": 4718497,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4718497_1e00b_sm.jpeg",
+      "beer_style": "Pale Ale - Australian",
+      "beer_abv": 4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bright ",
+      "brewery_id": 3678,
+      "rating": 3.7
+    },
+    {
+      "checkin_id": 1577150180,
+      "created_at": "Fri, 12 Jun 2026 13:38:03 +0000",
+      "user": "mw1414",
+      "checkin_comment": "",
+      "beer_name": "Bright Pale Ale",
+      "beer_id": 4718497,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4718497_1e00b_sm.jpeg",
+      "beer_style": "Pale Ale - Australian",
+      "beer_abv": 4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bright ",
+      "brewery_id": 3678,
+      "rating": 3.4
+    },
+    {
       "checkin_id": 1577142641,
       "created_at": "Fri, 12 Jun 2026 12:49:47 +0000",
       "user": "LightBeerking",
