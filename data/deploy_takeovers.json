@@ -2141,10 +2141,10 @@
   {
     "date": "2026-06-11",
     "brewery": "Bright ",
-    "checkins": 45,
+    "checkins": 53,
     "unique_beers": 14,
-    "total_checkins_that_week": 48,
-    "share_pct": 93.8,
+    "total_checkins_that_week": 61,
+    "share_pct": 86.9,
     "beers": [
       "Alpine Lager",
       "Bright Pale Ale",
@@ -2363,13 +2363,22 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 2,
+        "total": 14,
+        "pct": 14.3,
+        "rank": 1
+      },
+      {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
         "total": 14,
         "pct": 0.0,
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "docta",
@@ -2378,7 +2387,7 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "hiriser",
@@ -2387,21 +2396,12 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 14,
-        "pct": 0.0,
-        "rank": 4
-      },
-      {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
         "total": 14,
         "pct": 0.0,
