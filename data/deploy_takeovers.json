@@ -2141,10 +2141,10 @@
   {
     "date": "2026-06-11",
     "brewery": "Bright ",
-    "checkins": 57,
+    "checkins": 62,
     "unique_beers": 14,
-    "total_checkins_that_week": 66,
-    "share_pct": 86.4,
+    "total_checkins_that_week": 72,
+    "share_pct": 86.1,
     "beers": [
       "Alpine Lager",
       "Bright Pale Ale",
@@ -2363,13 +2363,22 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 5,
+        "total": 14,
+        "pct": 35.7,
+        "rank": 1
+      },
+      {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 2,
         "total": 14,
         "pct": 14.3,
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "dapitz",
@@ -2378,7 +2387,7 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "docta",
@@ -2387,7 +2396,7 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "hiriser",
@@ -2396,21 +2405,12 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 14,
-        "pct": 0.0,
-        "rank": 5
-      },
-      {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
         "total": 14,
         "pct": 0.0,
