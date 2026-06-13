@@ -2141,10 +2141,10 @@
   {
     "date": "2026-06-11",
     "brewery": "Bright ",
-    "checkins": 76,
+    "checkins": 83,
     "unique_beers": 14,
-    "total_checkins_that_week": 87,
-    "share_pct": 87.4,
+    "total_checkins_that_week": 94,
+    "share_pct": 88.3,
     "beers": [
       "Alpine Lager",
       "Bright Pale Ale",
@@ -2363,13 +2363,22 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 7,
+        "total": 14,
+        "pct": 50.0,
+        "rank": 1
+      },
+      {
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 7,
         "total": 14,
         "pct": 50.0,
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "lightbeerking",
@@ -2378,15 +2387,6 @@
         "checked": 4,
         "total": 14,
         "pct": 28.6,
-        "rank": 2
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 14,
-        "pct": 0.0,
         "rank": 3
       },
       {
