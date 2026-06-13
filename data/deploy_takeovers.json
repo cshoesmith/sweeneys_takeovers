@@ -2141,10 +2141,10 @@
   {
     "date": "2026-06-11",
     "brewery": "Bright ",
-    "checkins": 70,
+    "checkins": 76,
     "unique_beers": 14,
-    "total_checkins_that_week": 81,
-    "share_pct": 86.4,
+    "total_checkins_that_week": 87,
+    "share_pct": 87.4,
     "beers": [
       "Alpine Lager",
       "Bright Pale Ale",
