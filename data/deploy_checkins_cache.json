@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1578180473,
+      "created_at": "Mon, 15 Jun 2026 07:53:34 +0000",
+      "user": "OzRazDaz",
+      "checkin_comment": "",
+      "beer_name": "Betelgeuse",
+      "beer_id": 6237964,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6237964_2991c_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "8 Wired",
+      "brewery_id": 3555,
+      "rating": 4
+    },
+    {
       "checkin_id": 1578177927,
       "created_at": "Mon, 15 Jun 2026 05:34:14 +0000",
       "user": "Schmoley2",
