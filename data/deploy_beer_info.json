@@ -1310,5 +1310,44 @@
     "rating_score": 3.59531,
     "rating_count": 64,
     "brewery_name": "Bright "
+  },
+  "6628040": {
+    "beer_id": 6628040,
+    "beer_name": "Hop Fuzz",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6628040_44651_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6628040_44651_hd.jpeg",
+    "beer_style": "Pale Ale - English",
+    "beer_abv": 4.2,
+    "beer_ibu": 0,
+    "beer_description": "A lorry full of English Pale Ale kegs has been stolen - and everyone in Hopton-on-the Green is a suspect! But who took this golden brew, full of fruity, citrusy hops*, balanced by traditional Golden Promise malt and fermented with classic British yeast? Can PC Porter follow the clues to the bitter end?\r\n\r\nA modern-style English Pale, the hops in our Hop Fuzz are a blend of Old and New World, with soft stone fruit vibes alongside the more traditional English hop character such as citrusy orange and earthy herbal flavours. All this is underpinned by a firm bitterness befitting an English Pale.",
+    "rating_score": 3.57389,
+    "rating_count": 113,
+    "brewery_name": "Holgate Brewhouse"
+  },
+  "6665130": {
+    "beer_id": 6665130,
+    "beer_name": "Millennium Falcon (2026)",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-313871_24b24_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-313871_a590c_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 9,
+    "beer_ibu": 0,
+    "beer_description": "This intergalactic ‘13th edition’ of our iconic Millennium Falcon Emperial IPA features a star-studded cast of hop favourites.\r\n\r\nGet yours before May 4th and be ready to turn the tropical hop blasters to hyperdrive!\r\n\r\nFirst brewed in 2013 to mark our 1000th brew, Millennium Falcon is made with pale malt and an interstellar hopping rate to produce an “Emperial” IPA that is simply out of this world. For this year’s release, the hopping schedule has again been tweaked and features a star-studded cast of favourites both old and new.\r\n\r\nThis year, the brewers decided to shave a little off the ABV to make this massive beer more drinkable, though they stopped short of calling it a sessionable Imperial IPA! The aroma is chock-full of super-fruity US hop aroma – think juicy pineapple, tart citrus, stone fruit, boiled lollies and bubblegum. On the palate, the fruity mélange is underpinned by a bold, evergreen hop bitterness. Mouthfeel is full and luxurious yet at the same time dangerously drinkable. ",
+    "rating_score": 4.21975,
+    "rating_count": 81,
+    "brewery_name": "Holgate Brewhouse"
+  },
+  "6721164": {
+    "beer_id": 6721164,
+    "beer_name": "X Marks the Spot",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6721164_921b6_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6721164_921b6_hd.jpeg",
+    "beer_style": "Pale Ale - XPA (Extra Pale)",
+    "beer_abv": 5.5,
+    "beer_ibu": 0,
+    "beer_description": "Chart a course for flavour with our X Marks the Spot, an adventurous XPA bursting with tropical treasure. Juicy pineapple leads the charge, backed by bright citrus and a subtle hint of hoppy spice, adding intrigue to every sip. The voyage finishes crisp and dry, leaving a clean, refreshing wake. Ahoy, me hearties. This here be liquid gold.\r\n\r\nShowcasing a blend of US and Australian hops, we used cooler whirlpool temperatures to help lock in the delicate aromatics, delivering lifted citrus and subtle tropical notes. Light-bodied with a crisp finish, firm bitterness and a clean malt base, it’s refreshing, balanced and highly sessionable for everyday drinking appeal.",
+    "rating_score": 3.62614,
+    "rating_count": 44,
+    "brewery_name": "Holgate Brewhouse"
   }
 }
