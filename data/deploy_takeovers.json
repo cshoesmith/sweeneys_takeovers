@@ -2430,16 +2430,33 @@
   {
     "date": "2026-06-18",
     "brewery": "Holgate Brewhouse",
-    "checkins": 3,
-    "unique_beers": 3,
-    "total_checkins_that_week": 3,
-    "share_pct": 100.0,
+    "checkins": 10,
+    "unique_beers": 6,
+    "total_checkins_that_week": 11,
+    "share_pct": 90.9,
     "beers": [
+      "ESB",
       "Hop Fuzz",
       "Millennium Falcon (2026)",
+      "Premium Pilsner",
+      "Wild Berry Sour (ex Blush)",
       "X Marks the Spot"
     ],
     "beer_details": [
+      {
+        "beer_id": 55753,
+        "beer_name": "ESB",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-55753_b7e7b_sm.jpeg",
+        "beer_style": "Bitter - Extra Special / Strong (ESB)",
+        "beer_abv": 5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-55753_97e54_hd.jpeg",
+        "beer_ibu": 40,
+        "beer_description": "One of the two beers that launched the Holgate Brewhouse in 1999, this classic English ESB gives a nod to Paul Holgate’s Lancashire heritage and has been a staple beer at the Holgate Pub and cellar door.\r\nBrewed with English crystal and roast malts this ESB shows a classic copper-red colouring, and a traditional biscuity malt flavour with hints of caramel and toffee. An abundance of East Kent Goldings hops late in the boil gives this ale the classic English profile of earthy and spicy hop aroma and flavour to balance the delicious malt backbone.",
+        "rating_score": 3.54519,
+        "rating_count": 2755,
+        "brewery_name": "Holgate Brewhouse"
+      },
       {
         "beer_id": 6628040,
         "beer_name": "Hop Fuzz",
@@ -2469,6 +2486,34 @@
         "brewery_name": "Holgate Brewhouse"
       },
       {
+        "beer_id": 5580202,
+        "beer_name": "Premium Pilsner",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-3143_22933.jpeg",
+        "beer_style": "Pilsner - German",
+        "beer_abv": 5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "In the 19th century the Bohemian brewers of Plzn invented the world’s most drinkable beer. In true craft style, the 21st century brewers at Holgate have re-created this classic lager, a light bodied and delicately balanced beer with serious flavour. Brewed with 100% imported Bavarian pilsner malt and Czech Saaz hops, the Holgate Pilsner is fermented at a cool 10 degrees and takes much longer to come to fruition, but we think it’s worth the wait.",
+        "rating_score": 3.4241,
+        "rating_count": 83,
+        "brewery_name": "Holgate Brewhouse"
+      },
+      {
+        "beer_id": 2897439,
+        "beer_name": "Wild Berry Sour (ex Blush)",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2897439_466bf_sm.jpeg",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": 4.6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2897439_ae18e_hd.jpeg",
+        "beer_ibu": 13,
+        "beer_description": "Pouring a deep and delicious rose, Wild Berry Sour (ex Blush) has a sweet and inviting forest fruit aroma with a hint of zesty citrus. Across the palate the sweet berry fruits blend beautifully with a light tartness and a lemony hop character. The finish is clean and dry with a refreshing sour edge - a true new world beer, not bound by style but led by the brewers' fancy for a quenching summer ale.",
+        "rating_score": 3.57185,
+        "rating_count": 1849,
+        "brewery_name": "Holgate Brewhouse"
+      },
+      {
         "beer_id": 6721164,
         "beer_name": "X Marks the Spot",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6721164_921b6_sm.jpeg",
@@ -2486,20 +2531,20 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 1,
+        "total": 6,
+        "pct": 16.7,
+        "rank": 1
+      },
+      {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 3,
-        "pct": 0.0,
-        "rank": 1
-      },
-      {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "rank": 2
       },
@@ -2508,7 +2553,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "rank": 3
       },
@@ -2517,7 +2562,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "rank": 4
       },
@@ -2526,7 +2571,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "rank": 5
       },
@@ -2535,7 +2580,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "rank": 6
       },
@@ -2544,7 +2589,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "rank": 7
       }
