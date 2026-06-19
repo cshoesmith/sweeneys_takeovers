@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1578902636,
+      "created_at": "Fri, 19 Jun 2026 10:31:14 +0000",
+      "user": "TigerBuzz",
+      "checkin_comment": "A decent, sessionable amber ale. Dark and malty, minimal sweetness, bitter, with a long nose and lingering malt. Better at the rooftop bar and Hotel Sweeneys. Met a pilot from Woodend near the Grampians in Victoria. the location of Holgate Brewhouse. Nice",
+      "beer_name": "ESB",
+      "beer_id": 55753,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-55753_b7e7b_sm.jpeg",
+      "beer_style": "Bitter - Extra Special / Strong (ESB)",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Holgate Brewhouse",
+      "brewery_id": 3143,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1578896981,
       "created_at": "Fri, 19 Jun 2026 09:16:52 +0000",
       "user": "LightBeerking",

@@ -2430,10 +2430,10 @@
   {
     "date": "2026-06-18",
     "brewery": "Holgate Brewhouse",
-    "checkins": 26,
+    "checkins": 27,
     "unique_beers": 8,
-    "total_checkins_that_week": 31,
-    "share_pct": 83.9,
+    "total_checkins_that_week": 32,
+    "share_pct": 84.4,
     "beers": [
       "ESB",
       "Hop Fuzz",
