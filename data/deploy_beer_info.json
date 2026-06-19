@@ -1390,6 +1390,19 @@
     "rating_count": 1849,
     "brewery_name": "Holgate Brewhouse"
   },
+  "1522653": {
+    "beer_id": 1522653,
+    "beer_name": "Wild Red Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1522653_4b844_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1522653_4daae_hd.jpeg",
+    "beer_style": "Sour - Flanders Red Ale",
+    "beer_abv": 7,
+    "beer_ibu": 0,
+    "beer_description": "This small-batch Flanders style Wild Red Ale is barrel-aged and soured.\r\n\r\nUltra limited release. Perfect for the beer curious and connoisseur alike.\r\n\r\nThe 2021 iteration of Wild Red Ale is the culmination of a slow, 18-month period of souring and maturation in ex-Pinot Noir barrels. A complex malt bill with generous amounts of European specialty malts have produced a beer that pours a rich ruby hue and balances a zesty acidity with residual malt sweetness. The aroma and palate are rich and complex with lashings of dark fruit character: think black plums and tart berries. The fruit character is backed up by creamy oak-derived vanillin. These rounded flavours are balanced by a sharp and tangy acidity with notes of balsamic and sour cherries.",
+    "rating_score": 4.02507,
+    "rating_count": 678,
+    "brewery_name": "Holgate Brewhouse"
+  },
   "6721164": {
     "beer_id": 6721164,
     "beer_name": "X Marks the Spot",
