@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1578922716,
+      "created_at": "Fri, 19 Jun 2026 12:48:12 +0000",
+      "user": "CunningHop",
+      "checkin_comment": "",
+      "beer_name": "Hop Fuzz",
+      "beer_id": 6628040,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6628040_44651_sm.jpeg",
+      "beer_style": "Pale Ale - English",
+      "beer_abv": 4.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Holgate Brewhouse",
+      "brewery_id": 3143,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1578914329,
+      "created_at": "Fri, 19 Jun 2026 11:57:18 +0000",
+      "user": "CunningHop",
+      "checkin_comment": "Beer number 5000!!!",
+      "beer_name": "Millennium Falcon (2026)",
+      "beer_id": 6665130,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-313871_24b24_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Holgate Brewhouse",
+      "brewery_id": 3143,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1578902636,
       "created_at": "Fri, 19 Jun 2026 10:31:14 +0000",
       "user": "TigerBuzz",
