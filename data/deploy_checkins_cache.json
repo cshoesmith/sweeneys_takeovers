@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1579280176,
+      "created_at": "Sat, 20 Jun 2026 04:49:24 +0000",
+      "user": "mas0",
+      "checkin_comment": "",
+      "beer_name": "Irish Stout",
+      "beer_id": 6310266,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Stout - Irish Dry",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Holgate Brewhouse",
+      "brewery_id": 3143,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1578922716,
       "created_at": "Fri, 19 Jun 2026 12:48:12 +0000",
       "user": "CunningHop",
