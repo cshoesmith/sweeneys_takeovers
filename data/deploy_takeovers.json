@@ -2432,8 +2432,8 @@
     "brewery": "Holgate Brewhouse",
     "checkins": 40,
     "unique_beers": 12,
-    "total_checkins_that_week": 45,
-    "share_pct": 88.9,
+    "total_checkins_that_week": 46,
+    "share_pct": 87.0,
     "beers": [
       "American IPA (ex Road Trip)",
       "Australian XPA",
@@ -2540,7 +2540,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-313871_24b24_sm.jpeg",
         "beer_style": "IPA - Imperial / Double",
         "beer_abv": 9,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-313871_a590c_hd.jpeg",
+        "beer_ibu": 100,
+        "beer_description": "Get ready for a tropical hop hit from beyond the stars! May the hops be with you!\r\n\r\nFirst brewed in 2013 to mark our 1000th brew, the Millennium Falcon is made with pale malt and an interstellar hopping rate to produce an \"Emperial\" IPA that is simply out of this world. ",
+        "rating_score": 4.07558,
+        "rating_count": 3274,
+        "brewery_name": "Holgate Brewhouse"
       },
       {
         "beer_id": 6665130,

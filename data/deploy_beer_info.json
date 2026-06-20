@@ -1390,6 +1390,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/holgate-brewhouse-irish-stout/6310266"
   },
+  "313871": {
+    "beer_id": 313871,
+    "beer_name": "Millennium Falcon",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-313871_24b24_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-313871_a590c_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 9,
+    "beer_ibu": 100,
+    "beer_description": "Get ready for a tropical hop hit from beyond the stars! May the hops be with you!\r\n\r\nFirst brewed in 2013 to mark our 1000th brew, the Millennium Falcon is made with pale malt and an interstellar hopping rate to produce an \"Emperial\" IPA that is simply out of this world. ",
+    "rating_score": 4.07558,
+    "rating_count": 3274,
+    "brewery_name": "Holgate Brewhouse"
+  },
   "6665130": {
     "beer_id": 6665130,
     "beer_name": "Millennium Falcon (2026)",

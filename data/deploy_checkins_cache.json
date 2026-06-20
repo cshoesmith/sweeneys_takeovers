@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1579288340,
+      "created_at": "Sat, 20 Jun 2026 07:41:36 +0000",
+      "user": "LaFemmeAd",
+      "checkin_comment": "",
+      "beer_name": "J-Juice",
+      "beer_id": 2071510,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2071510_dc9e1_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 7.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1579287969,
       "created_at": "Sat, 20 Jun 2026 07:33:44 +0000",
       "user": "LaFemmeAd",
