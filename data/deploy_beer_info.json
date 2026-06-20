@@ -1311,6 +1311,32 @@
     "rating_count": 64,
     "brewery_name": "Bright "
   },
+  "28311": {
+    "beer_id": 28311,
+    "beer_name": "American IPA (ex Road Trip)",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-28311_d074b_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-28311_4bd2e_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6,
+    "beer_ibu": 65,
+    "beer_description": "Our American IPA (formerly Road Trip) is our take on a classic Pacific North-West American IPA. Presenting a burnished copper, Road Trip is loaded with multiple additions of Chinook, Centennial, Simcoe, Citra, Amarillo and Mosaic hops resulting in an explosion of piney, citrus and grapefruit flavour and aroma. The palate is rich and full, with the same archetypal American hop flavours dancing over a foundation of rich malt and a firm hop bitterness. The dry finish makes this a dangerously drinkable drop.",
+    "rating_score": 3.71694,
+    "rating_count": 5751,
+    "brewery_name": "Holgate Brewhouse"
+  },
+  "1211972": {
+    "beer_id": 1211972,
+    "beer_name": "Australian XPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1211972_147bf_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1211972_147bf_hd.jpeg",
+    "beer_style": "Pale Ale - XPA (Extra Pale)",
+    "beer_abv": 5.5,
+    "beer_ibu": 50,
+    "beer_description": "Originally named Alpha Crucis after the brightest star in the Southern Cross, this big hoppy extra pale ale celebrates Australian malt and hops. Full of sweet tropical fruit and zingy citrus hop flavour with a moderate bitterness, it’s a session beer for hop lovers!star in the Southern Cross Constellation.",
+    "rating_score": 3.57892,
+    "rating_count": 3746,
+    "brewery_name": "Holgate Brewhouse"
+  },
   "55753": {
     "beer_id": 55753,
     "beer_name": "ESB",
@@ -1322,6 +1348,19 @@
     "beer_description": "One of the two beers that launched the Holgate Brewhouse in 1999, this classic English ESB gives a nod to Paul Holgate’s Lancashire heritage and has been a staple beer at the Holgate Pub and cellar door.\r\nBrewed with English crystal and roast malts this ESB shows a classic copper-red colouring, and a traditional biscuity malt flavour with hints of caramel and toffee. An abundance of East Kent Goldings hops late in the boil gives this ale the classic English profile of earthy and spicy hop aroma and flavour to balance the delicious malt backbone.",
     "rating_score": 3.54519,
     "rating_count": 2755,
+    "brewery_name": "Holgate Brewhouse"
+  },
+  "470596": {
+    "beer_id": 470596,
+    "beer_name": "Hefe Weiss'Bier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-470596_abe1b_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-470596_abe1b_hd.jpeg",
+    "beer_style": "Wheat Beer - Hefeweizen",
+    "beer_abv": 5.3,
+    "beer_ibu": 13,
+    "beer_description": "This is a traditional unfiltered Bavarian Weiss Bier, lightly hopped and brewed with 60% wheat. Yeast-driven spicy clove and sweet banana esters make for a refreshing and easy drinking classic.",
+    "rating_score": 3.53217,
+    "rating_count": 962,
     "brewery_name": "Holgate Brewhouse"
   },
   "6628040": {
