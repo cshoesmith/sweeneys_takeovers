@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1579298029,
+      "created_at": "Sat, 20 Jun 2026 09:51:17 +0000",
+      "user": "livingbeetroot",
+      "checkin_comment": "",
+      "beer_name": "American IPA (ex Road Trip)",
+      "beer_id": 28311,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-28311_d074b_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Holgate Brewhouse",
+      "brewery_id": 3143,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1579288340,
       "created_at": "Sat, 20 Jun 2026 07:41:36 +0000",
       "user": "LaFemmeAd",
