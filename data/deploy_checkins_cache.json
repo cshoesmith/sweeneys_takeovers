@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1579749041,
+      "created_at": "Sun, 21 Jun 2026 08:11:23 +0000",
+      "user": "craigmoro",
+      "checkin_comment": "",
+      "beer_name": "ESB",
+      "beer_id": 55753,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-55753_b7e7b_sm.jpeg",
+      "beer_style": "Bitter - Extra Special / Strong (ESB)",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Holgate Brewhouse",
+      "brewery_id": 3143,
+      "rating": 3.7
+    },
+    {
       "checkin_id": 1579747990,
       "created_at": "Sun, 21 Jun 2026 07:46:24 +0000",
       "user": "craigmoro",
