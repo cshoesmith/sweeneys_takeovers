@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1580034905,
+      "created_at": "Mon, 22 Jun 2026 07:15:05 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Non-Genuine Ink Cartridges",
+      "beer_id": 6561905,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6561905_89d3d_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Azvex Brewing Company",
+      "brewery_id": 511472,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1579749041,
       "created_at": "Sun, 21 Jun 2026 08:11:23 +0000",
       "user": "craigmoro",
