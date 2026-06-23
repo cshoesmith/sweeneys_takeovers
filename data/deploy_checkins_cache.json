@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1580186040,
+      "created_at": "Tue, 23 Jun 2026 11:22:10 +0000",
+      "user": "bdchapma",
+      "checkin_comment": "",
+      "beer_name": "Decadence Barleywine",
+      "beer_id": 5890217,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5890217_3b038_sm.jpeg",
+      "beer_style": "Barleywine - American",
+      "beer_abv": 16,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bright ",
+      "brewery_id": 3678,
+      "rating": 4
+    },
+    {
       "checkin_id": 1580181468,
       "created_at": "Tue, 23 Jun 2026 09:24:23 +0000",
       "user": "fogal",
