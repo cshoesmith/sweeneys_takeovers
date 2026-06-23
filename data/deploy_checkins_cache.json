@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1580186861,
+      "created_at": "Tue, 23 Jun 2026 11:36:33 +0000",
+      "user": "bdchapma",
+      "checkin_comment": "",
+      "beer_name": "Australian XPA",
+      "beer_id": 1211972,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1211972_147bf_sm.jpeg",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Holgate Brewhouse",
+      "brewery_id": 3143,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1580186040,
       "created_at": "Tue, 23 Jun 2026 11:22:10 +0000",
       "user": "bdchapma",
