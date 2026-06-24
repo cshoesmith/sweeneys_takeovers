@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1580346061,
+      "created_at": "Wed, 24 Jun 2026 04:27:04 +0000",
+      "user": "danjamsow",
+      "checkin_comment": "",
+      "beer_name": "Sculpin",
+      "beer_id": 5558,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5558_7d8ea_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Ballast Point Brewing Company",
+      "brewery_id": 68,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1580186861,
       "created_at": "Tue, 23 Jun 2026 11:36:33 +0000",
       "user": "bdchapma",
