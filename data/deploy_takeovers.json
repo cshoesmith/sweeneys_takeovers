@@ -2689,13 +2689,16 @@
   {
     "date": "2026-06-25",
     "brewery": "Reckless Brewing Co.",
-    "checkins": 3,
-    "unique_beers": 2,
-    "total_checkins_that_week": 3,
-    "share_pct": 100.0,
+    "checkins": 10,
+    "unique_beers": 5,
+    "total_checkins_that_week": 11,
+    "share_pct": 90.9,
     "beers": [
       "Black IPA - Sea Legs Brewing X Reckless Brewing Co Collaboration",
-      "New World IPA"
+      "Hazy Pale Vol. 4",
+      "Iced Vanilla Latte Stout",
+      "New World IPA",
+      "Red IPA"
     ],
     "beer_details": [
       {
@@ -2713,6 +2716,35 @@
         "brewery_name": "Reckless Brewing Co."
       },
       {
+        "beer_id": 6451639,
+        "beer_name": "Hazy Pale Vol. 4",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6515633_e349a_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 3.585,
+        "rating_count": 10,
+        "brewery_name": "Reckless Brewing Co.",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/reckless-brewing-co-hazy-pale-vol-4/6451639"
+      },
+      {
+        "beer_id": 6765203,
+        "beer_name": "Iced Vanilla Latte Stout",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6765203_a757a_sm.jpeg",
+        "beer_style": "Stout - Coffee",
+        "beer_abv": 5.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6765203_a757a_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Brewed with coffee roasted from Bathurst legends Black Crow Coffee, this Iced Vanilla Latte Stout is smooth, roasty and dangerously easy to drink. \r\nLayers of cold brewed coffee, dark chocolate and roasted malt roll straight into creamy vanilla sweetness, backed by a silky body and just enough bitterness to keep the whole thing from turning into dessert. Think iced vanilla latte energy just louder, darker and significantly less appropriate before midday.\r\nA breakfast-adjacent stout - contains Lactose.\r\n",
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Reckless Brewing Co."
+      },
+      {
         "beer_id": 6745011,
         "beer_name": "New World IPA",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745011_6f9c2_sm.jpeg",
@@ -2725,6 +2757,20 @@
         "rating_score": 0,
         "rating_count": 7,
         "brewery_name": "Reckless Brewing Co."
+      },
+      {
+        "beer_id": 3704835,
+        "beer_name": "Red IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3704835_1ffd1_sm.jpeg",
+        "beer_style": "IPA - Red",
+        "beer_abv": 6.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3704835_aec7e_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Better red than dead we reckon, which is why we’ve packed this Red IPA fit to burst with Mosaic and Citra hops woven around a full, malty base. An AIBA Gold Medal-winning beer, it’s a flavourful yet well-balanced and aromatic brew that’s just the thing for a mellow night around the fire with your besties chatting about, you know, stuff.\r\nUnfiltered, Unpasteurised, No Preservatives.",
+        "rating_score": 3.82502,
+        "rating_count": 1443,
+        "brewery_name": "Reckless Brewing Co."
       }
     ],
     "source": "heuristic",
@@ -2734,7 +2780,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 2,
+        "total": 5,
         "pct": 0.0,
         "rank": 1
       },
@@ -2743,7 +2789,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 2,
+        "total": 5,
         "pct": 0.0,
         "rank": 2
       },
@@ -2752,7 +2798,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 2,
+        "total": 5,
         "pct": 0.0,
         "rank": 3
       },
@@ -2761,7 +2807,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 2,
+        "total": 5,
         "pct": 0.0,
         "rank": 4
       },
@@ -2770,7 +2816,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 2,
+        "total": 5,
         "pct": 0.0,
         "rank": 5
       },
@@ -2779,7 +2825,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 2,
+        "total": 5,
         "pct": 0.0,
         "rank": 6
       },
@@ -2788,7 +2834,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 2,
+        "total": 5,
         "pct": 0.0,
         "rank": 7
       }
