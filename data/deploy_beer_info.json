@@ -1481,6 +1481,19 @@
     "rating_count": 58,
     "brewery_name": "Reckless Brewing Co."
   },
+  "6381251": {
+    "beer_id": 6381251,
+    "beer_name": "Bloody Mary Gose 2025",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6381251_c7398_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6381251_c7398_hd.jpeg",
+    "beer_style": "Sour - Tomato / Vegetable Gose",
+    "beer_abv": 6.5,
+    "beer_ibu": 0,
+    "beer_description": "RETURN OF THE BLOODY MARY GOSE! We’ve taken the bold, savoury spirit of the Bloody Mary and given it the Reckless twist. Brewed as a tart, refreshing Gose with fresh tomato juice, a dash of Tabasco, and a handful of secret spices, this brew is spicy, salty, and seriously satisfying. Think brunch in a tin — a full-bodied, slightly sour brew that’s equal parts cocktail curiosity and sessionable sipper.",
+    "rating_score": 3.53624,
+    "rating_count": 109,
+    "brewery_name": "Reckless Brewing Co."
+  },
   "6654387": {
     "beer_id": 6654387,
     "beer_name": "Choccy Milk Stout",
