@@ -2689,10 +2689,10 @@
   {
     "date": "2026-06-25",
     "brewery": "Reckless Brewing Co.",
-    "checkins": 24,
-    "unique_beers": 8,
-    "total_checkins_that_week": 25,
-    "share_pct": 96.0,
+    "checkins": 41,
+    "unique_beers": 9,
+    "total_checkins_that_week": 42,
+    "share_pct": 97.6,
     "beers": [
       "Black IPA - Sea Legs Brewing X Reckless Brewing Co Collaboration",
       "Choccy Milk Stout",
@@ -2701,6 +2701,7 @@
       "New World IPA",
       "New World Pale Ale",
       "Red IPA",
+      "VIC IPA",
       "West Coast Pilsner"
     ],
     "beer_details": [
@@ -2804,6 +2805,20 @@
         "brewery_name": "Reckless Brewing Co."
       },
       {
+        "beer_id": 6598204,
+        "beer_name": "VIC IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6598204_837b1_sm.jpeg",
+        "beer_style": "IPA - Australian",
+        "beer_abv": 7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6598204_23958_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This bold IPA is built from the best Victoria has to offer. Featuring Eclipse & VIC Secret - born and bred down in the Garden State, it’s all juicy tropical & pine wrapped up in a crisp, classic finish. From the Yarra to the Murray - you’ll find this beer is best enjoyed anywhere from the high country to the coast. ",
+        "rating_score": 3.84072,
+        "rating_count": 97,
+        "brewery_name": "Reckless Brewing Co."
+      },
+      {
         "beer_id": 6616693,
         "beer_name": "West Coast Pilsner",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6616693_7554c_sm.jpeg",
@@ -2824,53 +2839,53 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 3,
-        "total": 8,
-        "pct": 37.5,
+        "checked": 5,
+        "total": 9,
+        "pct": 55.6,
         "rank": 1
       },
       {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 2,
-        "total": 8,
-        "pct": 25.0,
+        "checked": 4,
+        "total": 9,
+        "pct": 44.4,
         "rank": 2
       },
       {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 1,
-        "total": 8,
-        "pct": 12.5,
+        "checked": 2,
+        "total": 9,
+        "pct": 22.2,
         "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 1,
+        "total": 9,
+        "pct": 11.1,
+        "rank": 4
       },
       {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 8,
-        "pct": 0.0,
-        "rank": 5
-      },
-      {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "rank": 6
       },
@@ -2879,7 +2894,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "rank": 7
       }

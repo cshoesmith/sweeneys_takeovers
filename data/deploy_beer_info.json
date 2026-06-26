@@ -1560,6 +1560,19 @@
     "rating_count": 1443,
     "brewery_name": "Reckless Brewing Co."
   },
+  "6598204": {
+    "beer_id": 6598204,
+    "beer_name": "VIC IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6598204_837b1_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6598204_23958_hd.jpeg",
+    "beer_style": "IPA - Australian",
+    "beer_abv": 7,
+    "beer_ibu": 0,
+    "beer_description": "This bold IPA is built from the best Victoria has to offer. Featuring Eclipse & VIC Secret - born and bred down in the Garden State, it’s all juicy tropical & pine wrapped up in a crisp, classic finish. From the Yarra to the Murray - you’ll find this beer is best enjoyed anywhere from the high country to the coast. ",
+    "rating_score": 3.84072,
+    "rating_count": 97,
+    "brewery_name": "Reckless Brewing Co."
+  },
   "6616693": {
     "beer_id": 6616693,
     "beer_name": "West Coast Pilsner",
