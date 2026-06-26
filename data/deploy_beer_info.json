@@ -1468,6 +1468,19 @@
     "rating_count": 44,
     "brewery_name": "Holgate Brewhouse"
   },
+  "5612070": {
+    "beer_id": 5612070,
+    "beer_name": "Black IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5612070_062e6_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5612070_062e6_hd.jpeg",
+    "beer_style": "IPA - Black / Cascadian Dark Ale",
+    "beer_abv": 6.5,
+    "beer_ibu": 0,
+    "beer_description": "Thronging with balanced New World American hops in a hellishly good taste of the dark side, there's none more black than this Black IPA. An absolute headbanger's ball of citrus and resin characters dancing over roasty bones of malt and coffee. Reckless invites you to crank up the amps and shred the night away with this quality doom fuel.",
+    "rating_score": 3.75683,
+    "rating_count": 703,
+    "brewery_name": "Reckless Brewing Co."
+  },
   "6715805": {
     "beer_id": 6715805,
     "beer_name": "Black IPA - Sea Legs Brewing X Reckless Brewing Co Collaboration",

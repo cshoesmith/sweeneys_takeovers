@@ -2689,11 +2689,12 @@
   {
     "date": "2026-06-25",
     "brewery": "Reckless Brewing Co.",
-    "checkins": 46,
-    "unique_beers": 10,
-    "total_checkins_that_week": 47,
-    "share_pct": 97.9,
+    "checkins": 57,
+    "unique_beers": 11,
+    "total_checkins_that_week": 59,
+    "share_pct": 96.6,
     "beers": [
+      "Black IPA",
       "Black IPA - Sea Legs Brewing X Reckless Brewing Co Collaboration",
       "Bloody Mary Gose 2025",
       "Choccy Milk Stout",
@@ -2706,6 +2707,20 @@
       "West Coast Pilsner"
     ],
     "beer_details": [
+      {
+        "beer_id": 5612070,
+        "beer_name": "Black IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5612070_062e6_sm.jpeg",
+        "beer_style": "IPA - Black / Cascadian Dark Ale",
+        "beer_abv": 6.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5612070_062e6_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Thronging with balanced New World American hops in a hellishly good taste of the dark side, there's none more black than this Black IPA. An absolute headbanger's ball of citrus and resin characters dancing over roasty bones of malt and coffee. Reckless invites you to crank up the amps and shred the night away with this quality doom fuel.",
+        "rating_score": 3.75683,
+        "rating_count": 703,
+        "brewery_name": "Reckless Brewing Co."
+      },
       {
         "beer_id": 6715805,
         "beer_name": "Black IPA - Sea Legs Brewing X Reckless Brewing Co Collaboration",
@@ -2854,18 +2869,18 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 7,
-        "total": 10,
-        "pct": 70.0,
+        "checked": 9,
+        "total": 11,
+        "pct": 81.8,
         "rank": 1
       },
       {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 4,
-        "total": 10,
-        "pct": 40.0,
+        "checked": 6,
+        "total": 11,
+        "pct": 54.5,
         "rank": 2
       },
       {
@@ -2873,8 +2888,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
-        "total": 10,
-        "pct": 20.0,
+        "total": 11,
+        "pct": 18.2,
         "rank": 3
       },
       {
@@ -2882,8 +2897,8 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 1,
-        "total": 10,
-        "pct": 10.0,
+        "total": 11,
+        "pct": 9.1,
         "rank": 4
       },
       {
@@ -2891,7 +2906,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 5
       },
@@ -2900,7 +2915,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 6
       },
@@ -2909,7 +2924,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "rank": 7
       }
