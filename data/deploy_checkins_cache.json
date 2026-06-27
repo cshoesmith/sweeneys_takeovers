@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1581069523,
+      "created_at": "Fri, 26 Jun 2026 23:59:41 +0000",
+      "user": "jimmy-swings",
+      "checkin_comment": "A draw has everyone reaching for calculators, but I’ll take it as a sign of optimism. Meanwhile, this one brings pineapple, tropical fruit, citrus and just enough bitterness to remind you that hope is a dangerous game.",
+      "beer_name": "New World IPA",
+      "beer_id": 6745011,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745011_6f9c2_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 3.9
+    },
+    {
+      "checkin_id": 1581068790,
+      "created_at": "Fri, 26 Jun 2026 05:56:00 +0000",
+      "user": "jimmy-swings",
+      "checkin_comment": "Emergency beer recovery operation successful. Smuggled in￼, rapidly chilled with bar-grade engineering, and rewarded with juicy tropical hops, a hit of pine, and the satisfaction of knowing patience is for people who didn’t bring an ice bucket.",
+      "beer_name": "VIC IPA",
+      "beer_id": 6598204,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6598204_837b1_sm.jpeg",
+      "beer_style": "IPA - Australian",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 4.1
+    },
+    {
       "checkin_id": 1580796047,
       "created_at": "Fri, 26 Jun 2026 12:33:41 +0000",
       "user": "kmnewman",
