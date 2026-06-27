@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1581136927,
+      "created_at": "Sat, 27 Jun 2026 09:50:36 +0000",
+      "user": "coreymch",
+      "checkin_comment": "",
+      "beer_name": "New World IPA",
+      "beer_id": 6745011,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745011_6f9c2_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 4.1
+    },
+    {
+      "checkin_id": 1581134840,
+      "created_at": "Sat, 27 Jun 2026 09:25:10 +0000",
+      "user": "coreymch",
+      "checkin_comment": "",
+      "beer_name": "New World Pale Ale",
+      "beer_id": 6733952,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6733952_ad202_sm.jpeg",
+      "beer_style": "Pale Ale - American",
+      "beer_abv": 5.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 3.7
+    },
+    {
       "checkin_id": 1581124819,
       "created_at": "Sat, 27 Jun 2026 06:07:17 +0000",
       "user": "Ormanm",
