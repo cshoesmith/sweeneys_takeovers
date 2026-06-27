@@ -2689,10 +2689,10 @@
   {
     "date": "2026-06-25",
     "brewery": "Reckless Brewing Co.",
-    "checkins": 64,
+    "checkins": 72,
     "unique_beers": 11,
-    "total_checkins_that_week": 67,
-    "share_pct": 95.5,
+    "total_checkins_that_week": 76,
+    "share_pct": 94.7,
     "beers": [
       "Black IPA",
       "Black IPA - Sea Legs Brewing X Reckless Brewing Co Collaboration",
@@ -2875,13 +2875,22 @@
         "rank": 1
       },
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 7,
+        "total": 11,
+        "pct": 63.6,
+        "rank": 2
+      },
+      {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 6,
         "total": 11,
         "pct": 54.5,
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "jimmy-swings",
@@ -2890,7 +2899,7 @@
         "checked": 3,
         "total": 11,
         "pct": 27.3,
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "docta",
@@ -2899,15 +2908,6 @@
         "checked": 2,
         "total": 11,
         "pct": 18.2,
-        "rank": 4
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 11,
-        "pct": 0.0,
         "rank": 5
       },
       {
