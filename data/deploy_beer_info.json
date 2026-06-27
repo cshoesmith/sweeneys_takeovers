@@ -1520,6 +1520,19 @@
     "rating_count": 86,
     "brewery_name": "Reckless Brewing Co."
   },
+  "6088580": {
+    "beer_id": 6088580,
+    "beer_name": "Hazy Pale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6088580_c3f4c_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6088580_c3f4c_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 4,
+    "beer_ibu": 0,
+    "beer_description": "Supple and silky with a mouthfeel like soft clouds, this hazy pale ale is custom-built to bring on the good times. Packed with oats, wheat and malt, the palate is round and smooth, plush with juicy New World American and Australian hops for that signature tropical and citrus taste sensation. Flavoursome and refreshing in equal measure, in true Reckless style. ",
+    "rating_score": 3.49259,
+    "rating_count": 162,
+    "brewery_name": "Reckless Brewing Co."
+  },
   "6451639": {
     "beer_id": 6451639,
     "beer_name": "Hazy Pale Vol. 4",

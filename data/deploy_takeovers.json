@@ -2689,15 +2689,16 @@
   {
     "date": "2026-06-25",
     "brewery": "Reckless Brewing Co.",
-    "checkins": 72,
-    "unique_beers": 11,
-    "total_checkins_that_week": 76,
-    "share_pct": 94.7,
+    "checkins": 77,
+    "unique_beers": 12,
+    "total_checkins_that_week": 82,
+    "share_pct": 93.9,
     "beers": [
       "Black IPA",
       "Black IPA - Sea Legs Brewing X Reckless Brewing Co Collaboration",
       "Bloody Mary Gose 2025",
       "Choccy Milk Stout",
+      "Hazy Pale",
       "Hazy Pale Vol. 4",
       "Iced Vanilla Latte Stout",
       "New World IPA",
@@ -2761,6 +2762,20 @@
         "beer_description": "This Chocolate Stout is packed with roasted malt, proper chocolate vibes and just enough bitterness to keep it honest. Full-bodied without being heavy, it’s the kind of beer you sip slowly. Pouring dark as a moonless night, and drinking just as easy with rich flavours and an easy finish, it’s the sort of beer you reach for when you’re not in a rush. \r\nThe footy’s on, the fire’s going and the night’s got legs. ",
         "rating_score": 3.91453,
         "rating_count": 86,
+        "brewery_name": "Reckless Brewing Co."
+      },
+      {
+        "beer_id": 6088580,
+        "beer_name": "Hazy Pale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6088580_c3f4c_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6088580_c3f4c_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Supple and silky with a mouthfeel like soft clouds, this hazy pale ale is custom-built to bring on the good times. Packed with oats, wheat and malt, the palate is round and smooth, plush with juicy New World American and Australian hops for that signature tropical and citrus taste sensation. Flavoursome and refreshing in equal measure, in true Reckless style. ",
+        "rating_score": 3.49259,
+        "rating_count": 162,
         "brewery_name": "Reckless Brewing Co."
       },
       {
@@ -2870,17 +2885,17 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 9,
-        "total": 11,
-        "pct": 81.8,
+        "total": 12,
+        "pct": 75.0,
         "rank": 1
       },
       {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 7,
-        "total": 11,
-        "pct": 63.6,
+        "checked": 8,
+        "total": 12,
+        "pct": 66.7,
         "rank": 2
       },
       {
@@ -2888,8 +2903,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 6,
-        "total": 11,
-        "pct": 54.5,
+        "total": 12,
+        "pct": 50.0,
         "rank": 3
       },
       {
@@ -2897,8 +2912,8 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 3,
-        "total": 11,
-        "pct": 27.3,
+        "total": 12,
+        "pct": 25.0,
         "rank": 4
       },
       {
@@ -2906,8 +2921,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
-        "total": 11,
-        "pct": 18.2,
+        "total": 12,
+        "pct": 16.7,
         "rank": 5
       },
       {
@@ -2915,7 +2930,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "rank": 6
       },
@@ -2924,7 +2939,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "rank": 7
       }
