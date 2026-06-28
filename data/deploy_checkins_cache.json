@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1581571311,
+      "created_at": "Sun, 28 Jun 2026 05:06:40 +0000",
+      "user": "MattDT",
+      "checkin_comment": "Slightly sourish, tomato - refreshing while a bit savoury,  better than a normal sour",
+      "beer_name": "Bloody Mary Gose 2025",
+      "beer_id": 6381251,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6381251_c7398_sm.jpeg",
+      "beer_style": "Sour - Tomato / Vegetable Gose",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1581150998,
       "created_at": "Sat, 27 Jun 2026 11:24:51 +0000",
       "user": "tussedrotten",
