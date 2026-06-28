@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1581794917,
+      "created_at": "Sun, 28 Jun 2026 23:10:02 +0000",
+      "user": "MattDT",
+      "checkin_comment": "Light Grassy, slight citrus and overall clean",
+      "beer_name": "West Coast Pilsner",
+      "beer_id": 6616693,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6616693_7554c_sm.jpeg",
+      "beer_style": "Pilsner - American",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 2.75
+    },
+    {
       "checkin_id": 1581575955,
       "created_at": "Sun, 28 Jun 2026 06:56:43 +0000",
       "user": "MattDT",
