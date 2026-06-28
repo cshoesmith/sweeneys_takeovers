@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1581575955,
+      "created_at": "Sun, 28 Jun 2026 06:56:43 +0000",
+      "user": "MattDT",
+      "checkin_comment": "Riasty and crisp with a hint of hoppiness. Still mildish though",
+      "beer_name": "Black IPA - Sea Legs Brewing X Reckless Brewing Co Collaboration",
+      "beer_id": 6715805,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6715805_d81c0_sm.jpeg",
+      "beer_style": "IPA - Black / Cascadian Dark Ale",
+      "beer_abv": 6.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 3
+    },
+    {
+      "checkin_id": 1581573729,
+      "created_at": "Sun, 28 Jun 2026 05:59:27 +0000",
+      "user": "MattDT",
+      "checkin_comment": "Coffee when warming up getting vanilla and milk- smooth and leaving a nice lactose aftertaste",
+      "beer_name": "Iced Vanilla Latte Stout",
+      "beer_id": 6765203,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6765203_a757a_sm.jpeg",
+      "beer_style": "Stout - Coffee",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1581571311,
       "created_at": "Sun, 28 Jun 2026 05:06:40 +0000",
       "user": "MattDT",
