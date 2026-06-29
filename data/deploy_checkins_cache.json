@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1581804096,
+      "created_at": "Mon, 29 Jun 2026 00:00:42 +0000",
+      "user": "MattDT",
+      "checkin_comment": "Very sweet and very raisin. Easy to drink for a barely wine but very sweet",
+      "beer_name": "Decadence Barleywine",
+      "beer_id": 5890217,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5890217_3b038_sm.jpeg",
+      "beer_style": "Barleywine - American",
+      "beer_abv": 16,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bright ",
+      "brewery_id": 3678,
+      "rating": 2.5
+    },
+    {
       "checkin_id": 1581794917,
       "created_at": "Sun, 28 Jun 2026 23:10:02 +0000",
       "user": "MattDT",
