@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1581824444,
+      "created_at": "Mon, 29 Jun 2026 03:14:00 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "XPA",
+      "beer_id": 4260540,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4260540_bedea_sm.jpeg",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 4.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1581820595,
+      "created_at": "Mon, 29 Jun 2026 02:17:49 +0000",
+      "user": "Steven_Wan",
+      "checkin_comment": "",
+      "beer_name": "New World IPA",
+      "beer_id": 6745011,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745011_6f9c2_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 4
+    },
+    {
       "checkin_id": 1581804096,
       "created_at": "Mon, 29 Jun 2026 00:00:42 +0000",
       "user": "MattDT",
