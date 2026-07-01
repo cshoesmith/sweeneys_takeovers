@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1582135059,
+      "created_at": "Wed, 01 Jul 2026 02:19:06 +0000",
+      "user": "fogal",
+      "checkin_comment": "",
+      "beer_name": "Astral Dive",
+      "beer_id": 6367291,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6367291_f7c4d_sm.jpeg",
+      "beer_style": "Winter Warmer",
+      "beer_abv": 9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Cypher Brewing Co",
+      "brewery_id": 534088,
+      "rating": 4
+    },
+    {
       "checkin_id": 1581832307,
       "created_at": "Mon, 29 Jun 2026 06:05:00 +0000",
       "user": "krotus",
