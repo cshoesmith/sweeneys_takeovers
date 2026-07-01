@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1582142599,
+      "created_at": "Wed, 01 Jul 2026 04:16:18 +0000",
+      "user": "fogal",
+      "checkin_comment": "",
+      "beer_name": "Black IPA - Sea Legs Brewing X Reckless Brewing Co Collaboration",
+      "beer_id": 6715805,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6715805_d81c0_sm.jpeg",
+      "beer_style": "IPA - Black / Cascadian Dark Ale",
+      "beer_abv": 6.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1582135059,
       "created_at": "Wed, 01 Jul 2026 02:19:06 +0000",
       "user": "fogal",
