@@ -1703,5 +1703,44 @@
     "rating_score": 3.66376,
     "rating_count": 1050,
     "brewery_name": "BentSpoke Brewing Co"
+  },
+  "1087672": {
+    "beer_id": 1087672,
+    "beer_name": "Grainy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1087672_cdf33_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1087672_656e2_hd.jpeg",
+    "beer_style": "Stout - Foreign / Export",
+    "beer_abv": 7.2,
+    "beer_ibu": 0,
+    "beer_description": "This Nitro Stout is anything but what the name suggests with a velvety smooth palette and roasty, slightly astringent stout characteristics The style originated by the need to supply stout to tropical areas of the world from the UK. These were brewed with higher alcohol and higher quantity of hops to help preserve the beer on its travels. Pale Barley Malt, Roast Barley, Wheat and Oats combine to brew a strong roasty, slightly coffee-like stout.",
+    "rating_score": 3.87813,
+    "rating_count": 391,
+    "brewery_name": "BentSpoke Brewing Co"
+  },
+  "5497667": {
+    "beer_id": 5497667,
+    "beer_name": "Hazee",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5497667_fd5cc_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5497667_fd5cc_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 4.4,
+    "beer_ibu": 30,
+    "beer_description": "This hazy pale ale is light and fruity, sessionable and approachable.",
+    "rating_score": 3.56609,
+    "rating_count": 1187,
+    "brewery_name": "BentSpoke Brewing Co"
+  },
+  "6689625": {
+    "beer_id": 6689625,
+    "beer_name": "Night Shifter",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-134857_58058.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Lager - Dark",
+    "beer_abv": 4,
+    "beer_ibu": 20,
+    "beer_description": "Night Shifter 4.0% Dark Lager clocks on delivering gentle roasted malt notes layered with a crisp, clean edge and an unexpectedly light body. It pours deep and shadowy, yet drinks with effortless ease. A dry, refreshing finish keeps it sharp and sessionable, ready for whatever the day or night throws your way. Dark in the glass but easy on the palate, Night Shifter is the smooth operator for when you’re ready to switch gears to something a little darker.",
+    "rating_score": 3.53906,
+    "rating_count": 32,
+    "brewery_name": "BentSpoke Brewing Co"
   }
 }

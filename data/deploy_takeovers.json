@@ -2948,10 +2948,10 @@
   {
     "date": "2026-07-02",
     "brewery": "BentSpoke Brewing Co",
-    "checkins": 33,
-    "unique_beers": 13,
-    "total_checkins_that_week": 33,
-    "share_pct": 100.0,
+    "checkins": 44,
+    "unique_beers": 14,
+    "total_checkins_that_week": 46,
+    "share_pct": 95.7,
     "beers": [
       "Big Nut",
       "Cluster 10",
@@ -2964,6 +2964,7 @@
       "Night Shifter",
       "Red Nut",
       "Switchback",
+      "Tandem",
       "Yakima Charge",
       "Zappa Saison"
     ],
@@ -3059,7 +3060,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1087672_cdf33_sm.jpeg",
         "beer_style": "Stout - Foreign / Export",
         "beer_abv": 7.2,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1087672_656e2_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This Nitro Stout is anything but what the name suggests with a velvety smooth palette and roasty, slightly astringent stout characteristics The style originated by the need to supply stout to tropical areas of the world from the UK. These were brewed with higher alcohol and higher quantity of hops to help preserve the beer on its travels. Pale Barley Malt, Roast Barley, Wheat and Oats combine to brew a strong roasty, slightly coffee-like stout.",
+        "rating_score": 3.87813,
+        "rating_count": 391,
+        "brewery_name": "BentSpoke Brewing Co"
       },
       {
         "beer_id": 5497667,
@@ -3067,15 +3074,27 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5497667_fd5cc_sm.jpeg",
         "beer_style": "Pale Ale - New England / Hazy",
         "beer_abv": 4.4,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5497667_fd5cc_hd.jpeg",
+        "beer_ibu": 30,
+        "beer_description": "This hazy pale ale is light and fruity, sessionable and approachable.",
+        "rating_score": 3.56609,
+        "rating_count": 1187,
+        "brewery_name": "BentSpoke Brewing Co"
       },
       {
         "beer_id": 6689625,
         "beer_name": "Night Shifter",
-        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-134857_58058.jpeg",
         "beer_style": "Lager - Dark",
         "beer_abv": 4,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 20,
+        "beer_description": "Night Shifter 4.0% Dark Lager clocks on delivering gentle roasted malt notes layered with a crisp, clean edge and an unexpectedly light body. It pours deep and shadowy, yet drinks with effortless ease. A dry, refreshing finish keeps it sharp and sessionable, ready for whatever the day or night throws your way. Dark in the glass but easy on the palate, Night Shifter is the smooth operator for when you’re ready to switch gears to something a little darker.",
+        "rating_score": 3.53906,
+        "rating_count": 32,
+        "brewery_name": "BentSpoke Brewing Co"
       },
       {
         "beer_id": 1374050,
@@ -3091,6 +3110,14 @@
         "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
         "beer_style": "Pale Ale - XPA (Extra Pale)",
         "beer_abv": 4.8,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6762343,
+        "beer_name": "Tandem",
+        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_style": "Sour - Other",
+        "beer_abv": 4.3,
         "beer_auth_rating": null
       },
       {
@@ -3117,8 +3144,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 13,
-        "pct": 23.1,
+        "total": 14,
+        "pct": 21.4,
         "rank": 1
       },
       {
@@ -3126,7 +3153,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 13,
+        "total": 14,
         "pct": 0.0,
         "rank": 2
       },
@@ -3135,7 +3162,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 13,
+        "total": 14,
         "pct": 0.0,
         "rank": 3
       },
@@ -3144,7 +3171,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 13,
+        "total": 14,
         "pct": 0.0,
         "rank": 4
       },
@@ -3153,7 +3180,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 13,
+        "total": 14,
         "pct": 0.0,
         "rank": 5
       },
@@ -3162,7 +3189,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 13,
+        "total": 14,
         "pct": 0.0,
         "rank": 6
       },
@@ -3171,7 +3198,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 13,
+        "total": 14,
         "pct": 0.0,
         "rank": 7
       }
