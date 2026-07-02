@@ -2948,19 +2948,24 @@
   {
     "date": "2026-07-02",
     "brewery": "BentSpoke Brewing Co",
-    "checkins": 11,
-    "unique_beers": 8,
-    "total_checkins_that_week": 11,
+    "checkins": 33,
+    "unique_beers": 13,
+    "total_checkins_that_week": 33,
     "share_pct": 100.0,
     "beers": [
       "Big Nut",
       "Cluster 10",
       "Cluster 8",
+      "Descent 26",
+      "Dick Tracy",
+      "Frenzy",
       "Grainy",
+      "Hazee",
       "Night Shifter",
       "Red Nut",
       "Switchback",
-      "Yakima Charge"
+      "Yakima Charge",
+      "Zappa Saison"
     ],
     "beer_details": [
       {
@@ -3006,11 +3011,62 @@
         "brewery_name": "BentSpoke Brewing Co"
       },
       {
+        "beer_id": 6739927,
+        "beer_name": "Descent 26",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4890816_98651_sm.jpeg",
+        "beer_style": "Stout - Imperial / Double",
+        "beer_abv": 10.0,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 4.06795,
+        "rating_count": 39,
+        "brewery_name": "BentSpoke Brewing Co",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/bentspoke-brewing-co-descent-26/6739927"
+      },
+      {
+        "beer_id": 704580,
+        "beer_name": "Dick Tracy",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-704580_2d6f6_sm.jpeg",
+        "beer_style": "Brown Ale - American",
+        "beer_abv": 6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-704580_2d6f6_hd.jpeg",
+        "beer_ibu": 46,
+        "beer_description": "A legendary return from the brew that started it all. This American-style brown ale is a nod to our very first mash, and it's been a beloved tradition to brew it every Good Friday since. A time capsule that captures the spirit of innovation and nostalgia in every sip. Dick Tracy will charm your palate packed with rich, robust malts and artfully layered with fruity hops. This brew will remind you why some classics are worth revisiting.\r\n\r\nHops: Citra, Fuggles & US Cascade",
+        "rating_score": 3.71999,
+        "rating_count": 1453,
+        "brewery_name": "BentSpoke Brewing Co"
+      },
+      {
+        "beer_id": 869118,
+        "beer_name": "Frenzy",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-869118_a9bbd_sm.jpeg",
+        "beer_style": "Fruit Beer",
+        "beer_abv": 5.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-869118_6a74c_hd.jpeg",
+        "beer_ibu": 24,
+        "beer_description": "Inspired by the zing of a freshly picked raspberry, this juicy raspberry beer is a tad tart, a touch sweet and a whole lot of refreshing. Made with real, juicy raspberries, Frenzy is the perfect beer to enjoy on a scorching Summer to come.",
+        "rating_score": 3.66376,
+        "rating_count": 1050,
+        "brewery_name": "BentSpoke Brewing Co"
+      },
+      {
         "beer_id": 1087672,
         "beer_name": "Grainy",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1087672_cdf33_sm.jpeg",
         "beer_style": "Stout - Foreign / Export",
         "beer_abv": 7.2,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 5497667,
+        "beer_name": "Hazee",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5497667_fd5cc_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.4,
         "beer_auth_rating": null
       },
       {
@@ -3044,6 +3100,14 @@
         "beer_style": "IPA - American",
         "beer_abv": 6.5,
         "beer_auth_rating": null
+      },
+      {
+        "beer_id": 5936149,
+        "beer_name": "Zappa Saison",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5936149_21c4f_sm.jpeg",
+        "beer_style": "Farmhouse Ale - Saison",
+        "beer_abv": 9,
+        "beer_auth_rating": null
       }
     ],
     "source": "heuristic",
@@ -3053,8 +3117,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 8,
-        "pct": 37.5,
+        "total": 13,
+        "pct": 23.1,
         "rank": 1
       },
       {
@@ -3062,7 +3126,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 13,
         "pct": 0.0,
         "rank": 2
       },
@@ -3071,7 +3135,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 8,
+        "total": 13,
         "pct": 0.0,
         "rank": 3
       },
@@ -3080,7 +3144,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 13,
         "pct": 0.0,
         "rank": 4
       },
@@ -3089,7 +3153,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 13,
         "pct": 0.0,
         "rank": 5
       },
@@ -3098,7 +3162,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 13,
         "pct": 0.0,
         "rank": 6
       },
@@ -3107,7 +3171,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 13,
         "pct": 0.0,
         "rank": 7
       }

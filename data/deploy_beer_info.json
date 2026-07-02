@@ -1663,5 +1663,45 @@
     "rating_score": 4.08125,
     "rating_count": 5021,
     "brewery_name": "BentSpoke Brewing Co"
+  },
+  "6739927": {
+    "beer_id": 6739927,
+    "beer_name": "Descent 26",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4890816_98651_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Stout - Imperial / Double",
+    "beer_abv": 10.0,
+    "beer_ibu": 0,
+    "rating_score": 4.06795,
+    "rating_count": 39,
+    "brewery_name": "BentSpoke Brewing Co",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/bentspoke-brewing-co-descent-26/6739927"
+  },
+  "704580": {
+    "beer_id": 704580,
+    "beer_name": "Dick Tracy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-704580_2d6f6_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-704580_2d6f6_hd.jpeg",
+    "beer_style": "Brown Ale - American",
+    "beer_abv": 6,
+    "beer_ibu": 46,
+    "beer_description": "A legendary return from the brew that started it all. This American-style brown ale is a nod to our very first mash, and it's been a beloved tradition to brew it every Good Friday since. A time capsule that captures the spirit of innovation and nostalgia in every sip. Dick Tracy will charm your palate packed with rich, robust malts and artfully layered with fruity hops. This brew will remind you why some classics are worth revisiting.\r\n\r\nHops: Citra, Fuggles & US Cascade",
+    "rating_score": 3.71999,
+    "rating_count": 1453,
+    "brewery_name": "BentSpoke Brewing Co"
+  },
+  "869118": {
+    "beer_id": 869118,
+    "beer_name": "Frenzy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-869118_a9bbd_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-869118_6a74c_hd.jpeg",
+    "beer_style": "Fruit Beer",
+    "beer_abv": 5.1,
+    "beer_ibu": 24,
+    "beer_description": "Inspired by the zing of a freshly picked raspberry, this juicy raspberry beer is a tad tart, a touch sweet and a whole lot of refreshing. Made with real, juicy raspberries, Frenzy is the perfect beer to enjoy on a scorching Summer to come.",
+    "rating_score": 3.66376,
+    "rating_count": 1050,
+    "brewery_name": "BentSpoke Brewing Co"
   }
 }
