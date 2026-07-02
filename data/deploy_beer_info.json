@@ -1742,5 +1742,44 @@
     "rating_score": 3.53906,
     "rating_count": 32,
     "brewery_name": "BentSpoke Brewing Co"
+  },
+  "1374050": {
+    "beer_id": 1374050,
+    "beer_name": "Red Nut",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1374050_c7a77_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1374050_ef50c_hd.jpeg",
+    "beer_style": "IPA - Red",
+    "beer_abv": 7,
+    "beer_ibu": 56,
+    "beer_description": "A red IPA with a resiny hop and rich caramel malt character. Hops: Fortnight, Mosaic, Citra, East Kent Goldings and Amarillo",
+    "rating_score": 3.86405,
+    "rating_count": 5026,
+    "brewery_name": "BentSpoke Brewing Co"
+  },
+  "6543158": {
+    "beer_id": 6543158,
+    "beer_name": "Switchback",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-134857_58058.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Pale Ale - XPA (Extra Pale)",
+    "beer_abv": 4.8,
+    "beer_ibu": 36,
+    "beer_description": "Bursting with intense passionfruit, ripe feijoa, pineapple and fresh dankness. Sublimely sessionable with a light body and smooth finish.\r\n\r\nFrom trails to tastebuds, Switchback is the XPA made for post-adventure refreshment. Whether you’ve been chasing singletrack, summiting a ridge, or just kicking back with mates - this is the beer for the ride home.",
+    "rating_score": 3.72402,
+    "rating_count": 127,
+    "brewery_name": "BentSpoke Brewing Co"
+  },
+  "6762343": {
+    "beer_id": 6762343,
+    "beer_name": "Tandem",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-134857_58058.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Sour - Other",
+    "beer_abv": 4.3,
+    "beer_ibu": 15,
+    "beer_description": "A berry-forward sour ale balancing tart refreshment with juicy fruit character. Dark malt adds depth while Lactobacillus fermentation delivers a bright, tangy sourness, creating a flavour profile reminiscent of sweet-and-sour berries and fruity lollies.",
+    "rating_score": 0,
+    "rating_count": 2,
+    "brewery_name": "BentSpoke Brewing Co"
   }
 }
