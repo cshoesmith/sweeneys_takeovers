@@ -2948,14 +2948,15 @@
   {
     "date": "2026-07-02",
     "brewery": "BentSpoke Brewing Co",
-    "checkins": 47,
-    "unique_beers": 14,
-    "total_checkins_that_week": 49,
-    "share_pct": 95.9,
+    "checkins": 49,
+    "unique_beers": 15,
+    "total_checkins_that_week": 51,
+    "share_pct": 96.1,
     "beers": [
       "Big Nut",
       "Cluster 10",
       "Cluster 8",
+      "Descent 22",
       "Descent 26",
       "Dick Tracy",
       "Frenzy",
@@ -3009,6 +3010,20 @@
         "beer_description": "Rumoured to be the 8th Wonder of the World, our iconic Imperial IPA doesn’t disappoint. Showcasing the best American hop flavours and aromas of tropical mango, pineapple, ripe peaches and grapefruit, perfectly balanced by clean malt body and smooth finish.\r\n\r\nHops: Galaxy, Citra, Mosaic, Centennial, Simcoe, Amarillo",
         "rating_score": 4.08125,
         "rating_count": 5021,
+        "brewery_name": "BentSpoke Brewing Co"
+      },
+      {
+        "beer_id": 4869805,
+        "beer_name": "Descent 22",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4869805_4d68c_sm.jpeg",
+        "beer_style": "Stout - Imperial / Double",
+        "beer_abv": 10,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4869805_854c3_hd.jpeg",
+        "beer_ibu": 72,
+        "beer_description": "Descent 22, our birthday beer, has descended. This Imperial Stout is aged in foeder barrels for 6 months, allowing the immersion of vanilla, oak and wild yeast characters that combine with the roasty, bitter, black malt leather-like esters to complete this winter warmer.",
+        "rating_score": 4.05033,
+        "rating_count": 448,
         "brewery_name": "BentSpoke Brewing Co"
       },
       {
@@ -3141,10 +3156,16 @@
       {
         "beer_id": 6762292,
         "beer_name": "Yakima Charge",
-        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-134857_58058.jpeg",
         "beer_style": "IPA - American",
         "beer_abv": 6.5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "This hard-hitting 6.5% West Coast IPA showcases innovative hops straight out of Yakima, delivering bold aromas of fruity pine, dank resin and subtle geranium. Crisp, refreshing and packed with punchy bitterness, it's everything you want from a classic West Coast IPA.",
+        "rating_score": 4.16667,
+        "rating_count": 12,
+        "brewery_name": "BentSpoke Brewing Co"
       },
       {
         "beer_id": 5936149,
@@ -3152,7 +3173,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5936149_21c4f_sm.jpeg",
         "beer_style": "Farmhouse Ale - Saison",
         "beer_abv": 9,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5936149_e8851_hd.jpeg",
+        "beer_ibu": 52,
+        "beer_description": "Hailing from Wallonia, this beer style was traditionally brewed in the colder months, aged through spring, and ready to quench the thirst of farm workers in the fields. Saisons have roots back to the dawn of agriculture when workers needed a safe-to-drink beverage and lots of it!\r\nBentSpoke’s take on this classic undergoes extended aging in a foeder and barrel. It's the perfect refreshment after a day on the slopes!",
+        "rating_score": 3.79052,
+        "rating_count": 211,
+        "brewery_name": "BentSpoke Brewing Co"
       }
     ],
     "source": "heuristic",
@@ -3162,8 +3189,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 14,
-        "pct": 21.4,
+        "total": 15,
+        "pct": 20.0,
         "rank": 1
       },
       {
@@ -3171,7 +3198,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 15,
         "pct": 0.0,
         "rank": 2
       },
@@ -3180,7 +3207,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 14,
+        "total": 15,
         "pct": 0.0,
         "rank": 3
       },
@@ -3189,7 +3216,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 15,
         "pct": 0.0,
         "rank": 4
       },
@@ -3198,7 +3225,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 15,
         "pct": 0.0,
         "rank": 5
       },
@@ -3207,7 +3234,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 15,
         "pct": 0.0,
         "rank": 6
       },
@@ -3216,7 +3243,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 14,
+        "total": 15,
         "pct": 0.0,
         "rank": 7
       }
