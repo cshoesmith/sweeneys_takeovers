@@ -1624,5 +1624,44 @@
     "rating_score": 3.75959,
     "rating_count": 73,
     "brewery_name": "Reckless Brewing Co."
+  },
+  "743014": {
+    "beer_id": 743014,
+    "beer_name": "Big Nut",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-743014_018aa_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-743014_9cf4e_hd.jpeg",
+    "beer_style": "IPA - Black / Cascadian Dark Ale",
+    "beer_abv": 6.8,
+    "beer_ibu": 45,
+    "beer_description": "A dark ale with roasty coffee, nutty and hoppy flavours and aromas.\r\n\r\nHops: Columbus",
+    "rating_score": 3.86446,
+    "rating_count": 2603,
+    "brewery_name": "BentSpoke Brewing Co"
+  },
+  "5799475": {
+    "beer_id": 5799475,
+    "beer_name": "Cluster 10",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5799475_13f5a_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5799475_13f5a_hd.jpeg",
+    "beer_style": "Pale Ale - XPA (Extra Pale)",
+    "beer_abv": 10,
+    "beer_ibu": 52,
+    "beer_description": "Cluster 10 takes everything you love about XPAs and dials it up a notch—or ten! This brew is a complex symphony of flavours that remains supremely drinkable. A milestone in a glass, perfect for acknowledging the ride we've had and the roads still to explore. Whether you're a long-time fan or just joining us at the bar, here's to ten incredible years and to many more to come. ",
+    "rating_score": 3.9572,
+    "rating_count": 375,
+    "brewery_name": "BentSpoke Brewing Co"
+  },
+  "828339": {
+    "beer_id": 828339,
+    "beer_name": "Cluster 8",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-828339_cda64_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-828339_cda64_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 8.8,
+    "beer_ibu": 65,
+    "beer_description": "Rumoured to be the 8th Wonder of the World, our iconic Imperial IPA doesn’t disappoint. Showcasing the best American hop flavours and aromas of tropical mango, pineapple, ripe peaches and grapefruit, perfectly balanced by clean malt body and smooth finish.\r\n\r\nHops: Galaxy, Citra, Mosaic, Centennial, Simcoe, Amarillo",
+    "rating_score": 4.08125,
+    "rating_count": 5021,
+    "brewery_name": "BentSpoke Brewing Co"
   }
 }
