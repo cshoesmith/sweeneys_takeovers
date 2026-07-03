@@ -2948,10 +2948,10 @@
   {
     "date": "2026-07-02",
     "brewery": "BentSpoke Brewing Co",
-    "checkins": 51,
+    "checkins": 56,
     "unique_beers": 15,
-    "total_checkins_that_week": 53,
-    "share_pct": 96.2,
+    "total_checkins_that_week": 58,
+    "share_pct": 96.6,
     "beers": [
       "Big Nut",
       "Cluster 10",
