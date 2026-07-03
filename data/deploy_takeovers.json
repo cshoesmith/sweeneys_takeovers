@@ -2948,11 +2948,12 @@
   {
     "date": "2026-07-02",
     "brewery": "BentSpoke Brewing Co",
-    "checkins": 63,
-    "unique_beers": 15,
-    "total_checkins_that_week": 66,
-    "share_pct": 95.5,
+    "checkins": 72,
+    "unique_beers": 16,
+    "total_checkins_that_week": 75,
+    "share_pct": 96.0,
     "beers": [
+      "Barley Griffin",
       "Big Nut",
       "Cluster 10",
       "Cluster 8",
@@ -2970,6 +2971,20 @@
       "Zappa Saison"
     ],
     "beer_details": [
+      {
+        "beer_id": 704422,
+        "beer_name": "Barley Griffin",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-704422_5a7c8_sm.jpeg",
+        "beer_style": "Pale Ale - Australian",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-704422_d76ee_hd.jpeg",
+        "beer_ibu": 22,
+        "beer_description": "An easy drinking Canberra pale ale with a subtle hop aroma. Cloudy but fine. Hops: Ekuanot, Mosaic",
+        "rating_score": 3.58557,
+        "rating_count": 6668,
+        "brewery_name": "BentSpoke Brewing Co"
+      },
       {
         "beer_id": 743014,
         "beer_name": "Big Nut",
@@ -3185,30 +3200,30 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 4,
+        "total": 16,
+        "pct": 25.0,
+        "rank": 1
+      },
+      {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 15,
-        "pct": 20.0,
-        "rank": 1
+        "total": 16,
+        "pct": 18.8,
+        "rank": 2
       },
       {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 2,
-        "total": 15,
-        "pct": 13.3,
-        "rank": 2
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 15,
-        "pct": 0.0,
+        "checked": 3,
+        "total": 16,
+        "pct": 18.8,
         "rank": 3
       },
       {
@@ -3216,7 +3231,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 15,
+        "total": 16,
         "pct": 0.0,
         "rank": 4
       },
@@ -3225,7 +3240,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 15,
+        "total": 16,
         "pct": 0.0,
         "rank": 5
       },
@@ -3234,7 +3249,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 15,
+        "total": 16,
         "pct": 0.0,
         "rank": 6
       },
@@ -3243,7 +3258,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 15,
+        "total": 16,
         "pct": 0.0,
         "rank": 7
       }

@@ -1625,6 +1625,19 @@
     "rating_count": 73,
     "brewery_name": "Reckless Brewing Co."
   },
+  "704422": {
+    "beer_id": 704422,
+    "beer_name": "Barley Griffin",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-704422_5a7c8_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-704422_d76ee_hd.jpeg",
+    "beer_style": "Pale Ale - Australian",
+    "beer_abv": 4.2,
+    "beer_ibu": 22,
+    "beer_description": "An easy drinking Canberra pale ale with a subtle hop aroma. Cloudy but fine. Hops: Ekuanot, Mosaic",
+    "rating_score": 3.58557,
+    "rating_count": 6668,
+    "brewery_name": "BentSpoke Brewing Co"
+  },
   "743014": {
     "beer_id": 743014,
     "beer_name": "Big Nut",
