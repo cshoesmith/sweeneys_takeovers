@@ -2948,10 +2948,10 @@
   {
     "date": "2026-07-02",
     "brewery": "BentSpoke Brewing Co",
-    "checkins": 72,
+    "checkins": 74,
     "unique_beers": 16,
-    "total_checkins_that_week": 75,
-    "share_pct": 96.0,
+    "total_checkins_that_week": 77,
+    "share_pct": 96.1,
     "beers": [
       "Barley Griffin",
       "Big Nut",
@@ -3209,18 +3209,18 @@
         "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 3,
-        "total": 16,
-        "pct": 18.8,
-        "rank": 2
-      },
-      {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 4,
+        "total": 16,
+        "pct": 25.0,
+        "rank": 2
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
         "total": 16,
         "pct": 18.8,
