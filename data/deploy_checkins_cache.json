@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1582559833,
+      "created_at": "Fri, 03 Jul 2026 03:16:13 +0000",
+      "user": "fogal",
+      "checkin_comment": "",
+      "beer_name": "Cluster 10",
+      "beer_id": 5799475,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5799475_13f5a_sm.jpeg",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 10,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1582558684,
+      "created_at": "Fri, 03 Jul 2026 03:04:34 +0000",
+      "user": "fogal",
+      "checkin_comment": "",
+      "beer_name": "Yakima Charge",
+      "beer_id": 6762292,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1582355821,
       "created_at": "Thu, 02 Jul 2026 12:22:14 +0000",
       "user": "davidsansome",
