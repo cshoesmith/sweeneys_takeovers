@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1582597486,
+      "created_at": "Fri, 03 Jul 2026 13:21:40 +0000",
+      "user": "coreymch",
+      "checkin_comment": "",
+      "beer_name": "Cluster 10",
+      "beer_id": 5799475,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5799475_13f5a_sm.jpeg",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 10,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 4.4
+    },
+    {
+      "checkin_id": 1582594149,
+      "created_at": "Fri, 03 Jul 2026 12:59:04 +0000",
+      "user": "MickRoc",
+      "checkin_comment": "",
+      "beer_name": "Cluster 8",
+      "beer_id": 828339,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-828339_cda64_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1582593766,
       "created_at": "Fri, 03 Jul 2026 12:56:20 +0000",
       "user": "MickRoc",
