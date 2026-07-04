@@ -2948,10 +2948,10 @@
   {
     "date": "2026-07-02",
     "brewery": "BentSpoke Brewing Co",
-    "checkins": 80,
+    "checkins": 84,
     "unique_beers": 16,
-    "total_checkins_that_week": 83,
-    "share_pct": 96.4,
+    "total_checkins_that_week": 87,
+    "share_pct": 96.6,
     "beers": [
       "Barley Griffin",
       "Big Nut",
@@ -3203,9 +3203,9 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 5,
+        "checked": 9,
         "total": 16,
-        "pct": 31.2,
+        "pct": 56.2,
         "rank": 1
       },
       {
