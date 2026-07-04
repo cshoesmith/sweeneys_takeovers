@@ -2948,10 +2948,10 @@
   {
     "date": "2026-07-02",
     "brewery": "BentSpoke Brewing Co",
-    "checkins": 90,
+    "checkins": 95,
     "unique_beers": 16,
-    "total_checkins_that_week": 93,
-    "share_pct": 96.8,
+    "total_checkins_that_week": 98,
+    "share_pct": 96.9,
     "beers": [
       "Barley Griffin",
       "Big Nut",
