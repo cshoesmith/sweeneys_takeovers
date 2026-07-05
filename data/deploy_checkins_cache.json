@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1583368796,
+      "created_at": "Sun, 05 Jul 2026 06:34:23 +0000",
+      "user": "SeamusH",
+      "checkin_comment": "",
+      "beer_name": "Grainy",
+      "beer_id": 1087672,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1087672_cdf33_sm.jpeg",
+      "beer_style": "Stout - Foreign / Export",
+      "beer_abv": 7.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1583368109,
+      "created_at": "Sun, 05 Jul 2026 06:19:10 +0000",
+      "user": "SeamusH",
+      "checkin_comment": "",
+      "beer_name": "Descent 26",
+      "beer_id": 6739927,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Stout - Imperial / Double",
+      "beer_abv": 10,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1583360366,
       "created_at": "Sun, 05 Jul 2026 03:55:59 +0000",
       "user": "SeamusH",
