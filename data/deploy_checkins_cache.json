@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1583949454,
+      "created_at": "Wed, 08 Jul 2026 08:42:32 +0000",
+      "user": "pierstomin",
+      "checkin_comment": "",
+      "beer_name": "Yakima Charge",
+      "beer_id": 6762292,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 0
+    },
+    {
+      "checkin_id": 1583948702,
+      "created_at": "Wed, 08 Jul 2026 08:09:23 +0000",
+      "user": "brendanth808",
+      "checkin_comment": "Rounded and notes of being at the confectionary shop",
+      "beer_name": "Cluster 10",
+      "beer_id": 5799475,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5799475_13f5a_sm.jpeg",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 10,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 5
+    },
+    {
       "checkin_id": 1583785961,
       "created_at": "Tue, 07 Jul 2026 08:19:13 +0000",
       "user": "oneiamfor",
