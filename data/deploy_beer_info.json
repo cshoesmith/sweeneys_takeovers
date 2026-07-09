@@ -1913,5 +1913,18 @@
     "rating_score": 3.65623,
     "rating_count": 834,
     "brewery_name": "The Grifter Brewing Co."
+  },
+  "392493": {
+    "beer_id": 392493,
+    "beer_name": "The Omen",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-392493_fc8c1_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-392493_eb814_hd.jpeg",
+    "beer_style": "Stout - Oatmeal",
+    "beer_abv": 5.5,
+    "beer_ibu": 0,
+    "beer_description": "A rich, smooth stout with layers of malt complexity. Roast malt, coffee and chocolate flavours & aromas.",
+    "rating_score": 3.76617,
+    "rating_count": 3789,
+    "brewery_name": "The Grifter Brewing Co."
   }
 }

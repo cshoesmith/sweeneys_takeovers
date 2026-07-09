@@ -3267,9 +3267,9 @@
   {
     "date": "2026-07-09",
     "brewery": "The Grifter Brewing Co.",
-    "checkins": 13,
+    "checkins": 16,
     "unique_beers": 7,
-    "total_checkins_that_week": 13,
+    "total_checkins_that_week": 16,
     "share_pct": 100.0,
     "beers": [
       "Big Sur",
@@ -3373,7 +3373,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-392493_fc8c1_sm.jpeg",
         "beer_style": "Stout - Oatmeal",
         "beer_abv": 5.5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-392493_eb814_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A rich, smooth stout with layers of malt complexity. Roast malt, coffee and chocolate flavours & aromas.",
+        "rating_score": 3.76617,
+        "rating_count": 3789,
+        "brewery_name": "The Grifter Brewing Co."
       }
     ],
     "source": "heuristic",
