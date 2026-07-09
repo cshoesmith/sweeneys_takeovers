@@ -3263,5 +3263,130 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-07-09",
+    "brewery": "The Grifter Brewing Co.",
+    "checkins": 4,
+    "unique_beers": 3,
+    "total_checkins_that_week": 4,
+    "share_pct": 100.0,
+    "beers": [
+      "Far Away",
+      "Frosty Fresh",
+      "Marnie's Majority Ale"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6737153,
+        "beer_name": "Far Away",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5011960_26fce_sm.jpeg",
+        "beer_style": "IPA - New Zealand",
+        "beer_abv": 6.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 4.08571,
+        "rating_count": 14,
+        "brewery_name": "The Grifter Brewing Co.",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/the-grifter-brewing-co-far-away/6737153"
+      },
+      {
+        "beer_id": 6674990,
+        "beer_name": "Frosty Fresh",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6411291_50277_sm.jpeg",
+        "beer_style": "Pale Ale - XPA (Extra Pale)",
+        "beer_abv": 4.3,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 3.53889,
+        "rating_count": 54,
+        "brewery_name": "The Grifter Brewing Co.",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/the-grifter-brewing-co-frosty-fresh/6674990"
+      },
+      {
+        "beer_id": 346762,
+        "beer_name": "Marnie's Majority Ale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-346762_4eaa8_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 6.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-346762_ad20d_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This celebration ale embraces the charm of one of our favourite styles, the American IPA, showcasing the newly released hop varieties Bravo and Mosaic. Along with a good dose of bitterness these hops deliver a massive hit of fresh citrus and stone fruit aromas. We’ve also decided to pay homage to Marnie’s UK roots by laying down an all Maris otter (UK malt) base, topped off with a handful of English crystal malts for a balanced mix of a rich biscuity malt backing with a hint of burnt toffee.\n\nThe name ‘Majority’ comes from an old British tradition of brewing a strong ale on or around a child’s birth and storing it away to be enjoyed once the child has reached the age of majority. In our case we’ve opted for a more accessible 6.8% ABV and plan on brewing this beer annually to be shared more regularly in honour of our new family member. So without further ado…. Meet Marnie!",
+        "rating_score": 3.73259,
+        "rating_count": 790,
+        "brewery_name": "The Grifter Brewing Co."
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "rank": 7
+      }
+    ]
   }
 ]
