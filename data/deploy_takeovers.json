@@ -3267,16 +3267,34 @@
   {
     "date": "2026-07-09",
     "brewery": "The Grifter Brewing Co.",
-    "checkins": 4,
-    "unique_beers": 3,
-    "total_checkins_that_week": 4,
+    "checkins": 13,
+    "unique_beers": 7,
+    "total_checkins_that_week": 13,
     "share_pct": 100.0,
     "beers": [
+      "Big Sur",
       "Far Away",
       "Frosty Fresh",
-      "Marnie's Majority Ale"
+      "Katipō NZ Pilsner",
+      "Marnie's Majority Ale",
+      "Old Panther",
+      "The Omen"
     ],
     "beer_details": [
+      {
+        "beer_id": 484287,
+        "beer_name": "Big Sur",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-484287_0ed11_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 6.7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-484287_57ad9_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Originally brewed for Sydney Craft Beer Week (RIP) in 2014. LOADS OF PINEY, CITRUS AND STONE FRUIT FLAVOUR AND AROMA THANKS TO THE USE OF ALL AMERICAN HOPS FOR A NICE CLEAN, LEAN WEST COAST STYLE IPA. A CULT CLASSIC. \r\n\r\n",
+        "rating_score": 3.78889,
+        "rating_count": 4973,
+        "brewery_name": "The Grifter Brewing Co."
+      },
       {
         "beer_id": 6737153,
         "beer_name": "Far Away",
@@ -3308,6 +3326,20 @@
         "beer_page_url": "https://untappd.com/b/the-grifter-brewing-co-frosty-fresh/6674990"
       },
       {
+        "beer_id": 5537166,
+        "beer_name": "Katipō NZ Pilsner",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5537166_d6784_sm.jpeg",
+        "beer_style": "Pilsner - New Zealand",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5537166_100df_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "NEW BEER - KATIPŌ (5.2%) – NEW ZEALAND PILSNER \r\nNamed after NZ’s only venomous spider – an endangered, almost mythical species – this is a new-world lager with some bite! ?️⁠\r\n⁠\r\nShe’s crawling with hops straight from the land of the long white cloud ☁️. The rare Riwaka has a distinct punch; it’s the most expensive hop we’ve ever used due to its scarcity, from a small-town dedicated to growing the hop. Meanwhile, Nelson Sauvin, so called for its Sauvignon Blanc flavours like gooseberry and passionfruit, brings a complexity akin to a good glass of Aeteora white. Together, these heavy-hitters front a uniquely sharp pilsner with a firm bitterness and all the crispness you’d expect, plus tropical notes, citrus and spice to boot.⁠",
+        "rating_score": 3.53958,
+        "rating_count": 72,
+        "brewery_name": "The Grifter Brewing Co."
+      },
+      {
         "beer_id": 346762,
         "beer_name": "Marnie's Majority Ale",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-346762_4eaa8_sm.jpeg",
@@ -3320,6 +3352,28 @@
         "rating_score": 3.73259,
         "rating_count": 790,
         "brewery_name": "The Grifter Brewing Co."
+      },
+      {
+        "beer_id": 4746470,
+        "beer_name": "Old Panther",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4746470_9749b_sm.jpeg",
+        "beer_style": "Schwarzbier",
+        "beer_abv": 4.3,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos/beer-4746470_9749b_sm.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "OLD PANTHER - Our latest release sees us literally pull out the oldest trick in the book, as we revive what is thought to be the oldest style of beer in the world. Schwarzbier (\"black beer\" in German) has to be the most session-able of dark beers. Brewed with a traditional noble hop dating back to the 1800's this crisp lager with restrained chocolate and roasted notes is sure to take you back to the old world... Or to the land of the rising sun as this style is \"big in Japan”",
+        "rating_score": 3.65623,
+        "rating_count": 834,
+        "brewery_name": "The Grifter Brewing Co."
+      },
+      {
+        "beer_id": 392493,
+        "beer_name": "The Omen",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-392493_fc8c1_sm.jpeg",
+        "beer_style": "Stout - Oatmeal",
+        "beer_abv": 5.5,
+        "beer_auth_rating": null
       }
     ],
     "source": "heuristic",
@@ -3329,7 +3383,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 7,
         "pct": 0.0,
         "rank": 1
       },
@@ -3338,7 +3392,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 7,
         "pct": 0.0,
         "rank": 2
       },
@@ -3347,7 +3401,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 3,
+        "total": 7,
         "pct": 0.0,
         "rank": 3
       },
@@ -3356,7 +3410,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 7,
         "pct": 0.0,
         "rank": 4
       },
@@ -3365,7 +3419,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 7,
         "pct": 0.0,
         "rank": 5
       },
@@ -3374,7 +3428,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 7,
         "pct": 0.0,
         "rank": 6
       },
@@ -3383,7 +3437,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 7,
         "pct": 0.0,
         "rank": 7
       }

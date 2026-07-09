@@ -1834,6 +1834,19 @@
     "rating_count": 211,
     "brewery_name": "BentSpoke Brewing Co"
   },
+  "484287": {
+    "beer_id": 484287,
+    "beer_name": "Big Sur",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-484287_0ed11_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-484287_57ad9_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6.7,
+    "beer_ibu": 0,
+    "beer_description": "Originally brewed for Sydney Craft Beer Week (RIP) in 2014. LOADS OF PINEY, CITRUS AND STONE FRUIT FLAVOUR AND AROMA THANKS TO THE USE OF ALL AMERICAN HOPS FOR A NICE CLEAN, LEAN WEST COAST STYLE IPA. A CULT CLASSIC. \r\n\r\n",
+    "rating_score": 3.78889,
+    "rating_count": 4973,
+    "brewery_name": "The Grifter Brewing Co."
+  },
   "6737153": {
     "beer_id": 6737153,
     "beer_name": "Far Away",
@@ -1862,6 +1875,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/the-grifter-brewing-co-frosty-fresh/6674990"
   },
+  "5537166": {
+    "beer_id": 5537166,
+    "beer_name": "Katipō NZ Pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5537166_d6784_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5537166_100df_hd.jpeg",
+    "beer_style": "Pilsner - New Zealand",
+    "beer_abv": 5.2,
+    "beer_ibu": 0,
+    "beer_description": "NEW BEER - KATIPŌ (5.2%) – NEW ZEALAND PILSNER \r\nNamed after NZ’s only venomous spider – an endangered, almost mythical species – this is a new-world lager with some bite! ?️⁠\r\n⁠\r\nShe’s crawling with hops straight from the land of the long white cloud ☁️. The rare Riwaka has a distinct punch; it’s the most expensive hop we’ve ever used due to its scarcity, from a small-town dedicated to growing the hop. Meanwhile, Nelson Sauvin, so called for its Sauvignon Blanc flavours like gooseberry and passionfruit, brings a complexity akin to a good glass of Aeteora white. Together, these heavy-hitters front a uniquely sharp pilsner with a firm bitterness and all the crispness you’d expect, plus tropical notes, citrus and spice to boot.⁠",
+    "rating_score": 3.53958,
+    "rating_count": 72,
+    "brewery_name": "The Grifter Brewing Co."
+  },
   "346762": {
     "beer_id": 346762,
     "beer_name": "Marnie's Majority Ale",
@@ -1873,6 +1899,19 @@
     "beer_description": "This celebration ale embraces the charm of one of our favourite styles, the American IPA, showcasing the newly released hop varieties Bravo and Mosaic. Along with a good dose of bitterness these hops deliver a massive hit of fresh citrus and stone fruit aromas. We’ve also decided to pay homage to Marnie’s UK roots by laying down an all Maris otter (UK malt) base, topped off with a handful of English crystal malts for a balanced mix of a rich biscuity malt backing with a hint of burnt toffee.\n\nThe name ‘Majority’ comes from an old British tradition of brewing a strong ale on or around a child’s birth and storing it away to be enjoyed once the child has reached the age of majority. In our case we’ve opted for a more accessible 6.8% ABV and plan on brewing this beer annually to be shared more regularly in honour of our new family member. So without further ado…. Meet Marnie!",
     "rating_score": 3.73259,
     "rating_count": 790,
+    "brewery_name": "The Grifter Brewing Co."
+  },
+  "4746470": {
+    "beer_id": 4746470,
+    "beer_name": "Old Panther",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4746470_9749b_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos/beer-4746470_9749b_sm.jpeg",
+    "beer_style": "Schwarzbier",
+    "beer_abv": 4.3,
+    "beer_ibu": 0,
+    "beer_description": "OLD PANTHER - Our latest release sees us literally pull out the oldest trick in the book, as we revive what is thought to be the oldest style of beer in the world. Schwarzbier (\"black beer\" in German) has to be the most session-able of dark beers. Brewed with a traditional noble hop dating back to the 1800's this crisp lager with restrained chocolate and roasted notes is sure to take you back to the old world... Or to the land of the rising sun as this style is \"big in Japan”",
+    "rating_score": 3.65623,
+    "rating_count": 834,
     "brewery_name": "The Grifter Brewing Co."
   }
 }
