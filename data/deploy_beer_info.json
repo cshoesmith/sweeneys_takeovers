@@ -1914,6 +1914,19 @@
     "rating_count": 834,
     "brewery_name": "The Grifter Brewing Co."
   },
+  "2485568": {
+    "beer_id": 2485568,
+    "beer_name": "Pink Galah",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2485568_536d2_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2485568_2be5d_hd.jpeg",
+    "beer_style": "Sour - Other",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "'PINK GALAH' is a Pink Lemonade inspired Sour fermented with fresh raspberries & blended with 100% Australian Lemon Juice!",
+    "rating_score": 3.63805,
+    "rating_count": 2908,
+    "brewery_name": "The Grifter Brewing Co."
+  },
   "392493": {
     "beer_id": 392493,
     "beer_name": "The Omen",
@@ -1926,5 +1939,19 @@
     "rating_score": 3.76617,
     "rating_count": 3789,
     "brewery_name": "The Grifter Brewing Co."
+  },
+  "5988572": {
+    "beer_id": 5988572,
+    "beer_name": "XPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5977430_17f10_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Pale Ale - XPA (Extra Pale)",
+    "beer_abv": 4.4,
+    "beer_ibu": 0,
+    "rating_score": 3.56757,
+    "rating_count": 575,
+    "brewery_name": "The Grifter Brewing Co.",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/the-grifter-brewing-co-xpa/5988572"
   }
 }
