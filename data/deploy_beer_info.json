@@ -1888,6 +1888,19 @@
     "rating_count": 72,
     "brewery_name": "The Grifter Brewing Co."
   },
+  "4319130": {
+    "beer_id": 4319130,
+    "beer_name": "Lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4319130_50a04_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4319130_b9c56_hd.jpeg",
+    "beer_style": "Lager - Pale",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "A EUROPEAN INSPIRED LAGER WITH A CLEAN, THIRST QUENCHING FINISH. ",
+    "rating_score": 3.45744,
+    "rating_count": 652,
+    "brewery_name": "The Grifter Brewing Co."
+  },
   "346762": {
     "beer_id": 346762,
     "beer_name": "Marnie's Majority Ale",
