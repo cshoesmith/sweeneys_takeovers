@@ -3267,10 +3267,10 @@
   {
     "date": "2026-07-09",
     "brewery": "The Grifter Brewing Co.",
-    "checkins": 29,
+    "checkins": 33,
     "unique_beers": 9,
-    "total_checkins_that_week": 31,
-    "share_pct": 93.5,
+    "total_checkins_that_week": 37,
+    "share_pct": 89.2,
     "beers": [
       "Big Sur",
       "Far Away",
@@ -3428,9 +3428,9 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 2,
+        "checked": 4,
         "total": 9,
-        "pct": 22.2,
+        "pct": 44.4,
         "rank": 2
       },
       {
