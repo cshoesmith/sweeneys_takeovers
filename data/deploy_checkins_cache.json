@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1584365662,
+      "created_at": "Fri, 10 Jul 2026 07:23:29 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "",
+      "beer_name": "Far Away",
+      "beer_id": 6737153,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - New Zealand",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Grifter Brewing Co.",
+      "brewery_id": 32845,
+      "rating": 4.1
+    },
+    {
+      "checkin_id": 1584364832,
+      "created_at": "Fri, 10 Jul 2026 06:53:24 +0000",
+      "user": "virtualpete",
+      "checkin_comment": "",
+      "beer_name": "Big Sur",
+      "beer_id": 484287,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-484287_0ed11_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Grifter Brewing Co.",
+      "brewery_id": 32845,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1584358362,
       "created_at": "Fri, 10 Jul 2026 03:49:48 +0000",
       "user": "barrman",
