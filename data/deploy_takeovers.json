@@ -3267,10 +3267,10 @@
   {
     "date": "2026-07-09",
     "brewery": "The Grifter Brewing Co.",
-    "checkins": 37,
+    "checkins": 42,
     "unique_beers": 10,
-    "total_checkins_that_week": 49,
-    "share_pct": 75.5,
+    "total_checkins_that_week": 55,
+    "share_pct": 76.4,
     "beers": [
       "Big Sur",
       "Far Away",
