@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1584710944,
+      "created_at": "Sat, 11 Jul 2026 06:10:29 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Pale Ale",
+      "beer_id": 16407,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-16407_ea306_sm.jpeg",
+      "beer_style": "Pale Ale - American",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "4 Pines Brewing Company",
+      "brewery_id": 4254,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1584709325,
+      "created_at": "Sat, 11 Jul 2026 05:32:53 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Frosty Fresh",
+      "beer_id": 6674990,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 4.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Grifter Brewing Co.",
+      "brewery_id": 32845,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1584708227,
       "created_at": "Sat, 11 Jul 2026 05:11:35 +0000",
       "user": "dapitz",

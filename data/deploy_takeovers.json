@@ -3267,10 +3267,10 @@
   {
     "date": "2026-07-09",
     "brewery": "The Grifter Brewing Co.",
-    "checkins": 36,
+    "checkins": 37,
     "unique_beers": 10,
-    "total_checkins_that_week": 47,
-    "share_pct": 76.6,
+    "total_checkins_that_week": 49,
+    "share_pct": 75.5,
     "beers": [
       "Big Sur",
       "Far Away",
@@ -3452,9 +3452,9 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 2,
+        "checked": 3,
         "total": 10,
-        "pct": 20.0,
+        "pct": 30.0,
         "rank": 3
       },
       {
