@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1584708227,
+      "created_at": "Sat, 11 Jul 2026 05:11:35 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Far Away",
+      "beer_id": 6737153,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - New Zealand",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Grifter Brewing Co.",
+      "brewery_id": 32845,
+      "rating": 4.1
+    },
+    {
+      "checkin_id": 1584705979,
+      "created_at": "Sat, 11 Jul 2026 04:32:55 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Katipō NZ Pilsner",
+      "beer_id": 5537166,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5537166_d6784_sm.jpeg",
+      "beer_style": "Pilsner - New Zealand",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Grifter Brewing Co.",
+      "brewery_id": 32845,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1584391234,
       "created_at": "Fri, 10 Jul 2026 13:15:21 +0000",
       "user": "LightBeerking",
