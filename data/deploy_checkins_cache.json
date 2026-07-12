@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1585147531,
+      "created_at": "Sun, 12 Jul 2026 04:47:37 +0000",
+      "user": "GarethMJones",
+      "checkin_comment": "",
+      "beer_name": "Far Away",
+      "beer_id": 6737153,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - New Zealand",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Grifter Brewing Co.",
+      "brewery_id": 32845,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1585146137,
+      "created_at": "Sun, 12 Jul 2026 04:23:45 +0000",
+      "user": "GarethMJones",
+      "checkin_comment": "",
+      "beer_name": "Hofbräu Oktoberfestbier",
+      "beer_id": 40139,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-40139_2d691_sm.jpeg",
+      "beer_style": "Festbier",
+      "beer_abv": 6.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Staatliches Hofbräuhaus München",
+      "brewery_id": 5566,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1584716086,
       "created_at": "Sat, 11 Jul 2026 08:13:22 +0000",
       "user": "Akareece01",
