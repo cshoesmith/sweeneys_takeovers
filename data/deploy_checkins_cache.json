@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1585405742,
+      "created_at": "Mon, 13 Jul 2026 02:25:44 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Big Nut",
+      "beer_id": 743014,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-743014_018aa_sm.jpeg",
+      "beer_style": "IPA - Black / Cascadian Dark Ale",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 4
+    },
+    {
       "checkin_id": 1585147531,
       "created_at": "Sun, 12 Jul 2026 04:47:37 +0000",
       "user": "GarethMJones",
