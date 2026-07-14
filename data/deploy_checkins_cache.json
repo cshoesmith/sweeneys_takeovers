@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1585596391,
+      "created_at": "Tue, 14 Jul 2026 12:17:24 +0000",
+      "user": "DoDa42",
+      "checkin_comment": "",
+      "beer_name": "Wild Red Ale",
+      "beer_id": 1522653,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1522653_4b844_sm.jpeg",
+      "beer_style": "Sour - Flanders Red Ale",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Holgate Brewhouse",
+      "brewery_id": 3143,
+      "rating": 4
+    },
+    {
       "checkin_id": 1585588807,
       "created_at": "Tue, 14 Jul 2026 10:38:30 +0000",
       "user": "DoDa42",
