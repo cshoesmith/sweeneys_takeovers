@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1585585641,
+      "created_at": "Tue, 14 Jul 2026 09:35:39 +0000",
+      "user": "Plonker",
+      "checkin_comment": "Yeah it's ok but not that special. Unusual hop flavour to it though",
+      "beer_name": "Far Away",
+      "beer_id": 6737153,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - New Zealand",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Grifter Brewing Co.",
+      "brewery_id": 32845,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1585405742,
       "created_at": "Mon, 13 Jul 2026 02:25:44 +0000",
       "user": "ale_n",
