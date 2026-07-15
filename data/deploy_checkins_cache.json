@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1585786122,
+      "created_at": "Wed, 15 Jul 2026 10:58:36 +0000",
+      "user": "MickRoc",
+      "checkin_comment": "",
+      "beer_name": "Big Sur",
+      "beer_id": 484287,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-484287_0ed11_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Grifter Brewing Co.",
+      "brewery_id": 32845,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1585783866,
       "created_at": "Wed, 15 Jul 2026 10:27:22 +0000",
       "user": "subhamp17",
