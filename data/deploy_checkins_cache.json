@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1585783866,
+      "created_at": "Wed, 15 Jul 2026 10:27:22 +0000",
+      "user": "subhamp17",
+      "checkin_comment": "",
+      "beer_name": "Black Lager",
+      "beer_id": 6342347,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Lager - Dark",
+      "beer_abv": 5.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Balter Brewing Company",
+      "brewery_id": 256779,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1585783753,
+      "created_at": "Wed, 15 Jul 2026 10:25:31 +0000",
+      "user": "subhamp17",
+      "checkin_comment": "",
+      "beer_name": "Best Bitter",
+      "beer_id": 7766,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7766_fc0d9_sm.jpeg",
+      "beer_style": "Bitter - Best",
+      "beer_abv": 3.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Theakston",
+      "brewery_id": 2070,
+      "rating": 3
+    },
+    {
       "checkin_id": 1585780918,
       "created_at": "Wed, 15 Jul 2026 09:28:31 +0000",
       "user": "subhamp17",
