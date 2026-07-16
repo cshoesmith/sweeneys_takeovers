@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1586004179,
+      "created_at": "Thu, 16 Jul 2026 09:15:16 +0000",
+      "user": "JKLambert",
+      "checkin_comment": "Probably the highest rating I've given a beer in years",
+      "beer_name": "Sticky",
+      "beer_id": 6301377,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6301377_c0e20_sm.jpeg",
+      "beer_style": "Barleywine - Other",
+      "beer_abv": 12,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "8 Wired",
+      "brewery_id": 3555,
+      "rating": 4.5
+    },
+    {
+      "checkin_id": 1586003765,
+      "created_at": "Thu, 16 Jul 2026 09:03:56 +0000",
+      "user": "JKLambert",
+      "checkin_comment": "It's like being in England. Only... not",
+      "beer_name": "Plum Porter",
+      "beer_id": 5746227,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5746227_a2f69_sm.jpeg",
+      "beer_style": "Porter - Other",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hobsons Brewery",
+      "brewery_id": 2944,
+      "rating": 4
+    },
+    {
       "checkin_id": 1586003029,
       "created_at": "Thu, 16 Jul 2026 08:43:12 +0000",
       "user": "ale_n",
