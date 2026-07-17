@@ -3498,10 +3498,10 @@
   {
     "date": "2026-07-16",
     "brewery": "St Austell Brewery",
-    "checkins": 12,
+    "checkins": 13,
     "unique_beers": 3,
-    "total_checkins_that_week": 25,
-    "share_pct": 48.0,
+    "total_checkins_that_week": 26,
+    "share_pct": 50.0,
     "beers": [
       "Big Job",
       "Mena Dhu",
