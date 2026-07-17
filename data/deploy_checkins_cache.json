@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1586260879,
+      "created_at": "Fri, 17 Jul 2026 12:40:53 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "",
+      "beer_name": "Magnificent Tree Frog",
+      "beer_id": 5343532,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5343532_fabc2_sm.jpeg",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 4.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Azvex Brewing Company",
+      "brewery_id": 511472,
+      "rating": 3.3
+    },
+    {
+      "checkin_id": 1586254507,
+      "created_at": "Fri, 17 Jul 2026 11:55:47 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "",
+      "beer_name": "Gold Rush, Imperial Pastry Stout",
+      "beer_id": 5955800,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5955800_d062c_sm.jpeg",
+      "beer_style": "Stout - Imperial / Double Pastry",
+      "beer_abv": 9.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Duncan's Brewing",
+      "brewery_id": 150054,
+      "rating": 3.9
+    },
+    {
       "checkin_id": 1586253117,
       "created_at": "Fri, 17 Jul 2026 11:44:26 +0000",
       "user": "mw1414",
