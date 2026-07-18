@@ -3498,12 +3498,13 @@
   {
     "date": "2026-07-16",
     "brewery": "St Austell Brewery",
-    "checkins": 17,
-    "unique_beers": 3,
-    "total_checkins_that_week": 48,
-    "share_pct": 35.4,
+    "checkins": 19,
+    "unique_beers": 4,
+    "total_checkins_that_week": 53,
+    "share_pct": 35.8,
     "beers": [
       "Big Job",
+      "Korev",
       "Mena Dhu",
       "Proper Job"
     ],
@@ -3520,6 +3521,20 @@
         "beer_description": "Big Job is a BIG beer, 7.2% alcohol, dry as a bone and jammed full of Cornish barley and as many hops as we could get our hands on. It’s not subtle, but if you love the taste of big, powerful hops Big Job will be just the Job for you! ",
         "rating_score": 3.63073,
         "rating_count": 27738,
+        "brewery_name": "St Austell Brewery"
+      },
+      {
+        "beer_id": 32862,
+        "beer_name": "Korev",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-32862_bb684_sm.jpeg",
+        "beer_style": "Lager - Helles",
+        "beer_abv": 4.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-32862_4749c_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Born on Cornish shores, open horizons inspired us and nature’s elements shaped us. Pale gold like the morning sun, fresh and crisp like a coastal breeze, full-on refreshment like waves crashing against our shores: this is the coast in a glass. Drink it all in.",
+        "rating_score": 3.34494,
+        "rating_count": 24110,
         "brewery_name": "St Austell Brewery"
       },
       {
@@ -3554,30 +3569,30 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 2,
+        "total": 4,
+        "pct": 50.0,
+        "rank": 1
+      },
+      {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 2,
-        "total": 3,
-        "pct": 66.7,
-        "rank": 1
+        "total": 4,
+        "pct": 50.0,
+        "rank": 2
       },
       {
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 1,
-        "total": 3,
-        "pct": 33.3,
-        "rank": 2
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 3,
-        "pct": 0.0,
+        "total": 4,
+        "pct": 25.0,
         "rank": 3
       },
       {
@@ -3585,7 +3600,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 4
       },
@@ -3594,7 +3609,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 5
       },
@@ -3603,7 +3618,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 6
       },
@@ -3612,7 +3627,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 4,
         "pct": 0.0,
         "rank": 7
       }

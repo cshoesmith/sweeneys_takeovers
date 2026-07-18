@@ -1980,6 +1980,19 @@
     "rating_count": 27738,
     "brewery_name": "St Austell Brewery"
   },
+  "32862": {
+    "beer_id": 32862,
+    "beer_name": "Korev",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-32862_bb684_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-32862_4749c_hd.jpeg",
+    "beer_style": "Lager - Helles",
+    "beer_abv": 4.8,
+    "beer_ibu": 0,
+    "beer_description": "Born on Cornish shores, open horizons inspired us and nature’s elements shaped us. Pale gold like the morning sun, fresh and crisp like a coastal breeze, full-on refreshment like waves crashing against our shores: this is the coast in a glass. Drink it all in.",
+    "rating_score": 3.34494,
+    "rating_count": 24110,
+    "brewery_name": "St Austell Brewery"
+  },
   "1303018": {
     "beer_id": 1303018,
     "beer_name": "Mena Dhu",
