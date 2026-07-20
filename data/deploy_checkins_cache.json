@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1587329006,
+      "created_at": "Mon, 20 Jul 2026 02:10:34 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Half Cranked",
+      "beer_id": 6482895,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6482895_3dcaa_sm.jpeg",
+      "beer_style": "IPA - Session",
+      "beer_abv": 3.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 3
+    },
+    {
       "checkin_id": 1587044913,
       "created_at": "Sun, 19 Jul 2026 08:20:11 +0000",
       "user": "JockeySprocket",
