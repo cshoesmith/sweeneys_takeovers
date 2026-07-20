@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1587340218,
+      "created_at": "Mon, 20 Jul 2026 06:59:41 +0000",
+      "user": "shunshu",
+      "checkin_comment": "",
+      "beer_name": "Black Lager",
+      "beer_id": 6342347,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Lager - Dark",
+      "beer_abv": 5.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Balter Brewing Company",
+      "brewery_id": 256779,
+      "rating": 4
+    },
+    {
       "checkin_id": 1587329006,
       "created_at": "Mon, 20 Jul 2026 02:10:34 +0000",
       "user": "ale_n",
