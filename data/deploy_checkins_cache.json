@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1587340818,
+      "created_at": "Mon, 20 Jul 2026 07:29:18 +0000",
+      "user": "OzRazDaz",
+      "checkin_comment": "",
+      "beer_name": "Mena Dhu",
+      "beer_id": 1303018,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1303018_6d34e_sm.jpeg",
+      "beer_style": "Stout - English",
+      "beer_abv": 4.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "St Austell Brewery",
+      "brewery_id": 1186,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1587340218,
       "created_at": "Mon, 20 Jul 2026 06:59:41 +0000",
       "user": "shunshu",
