@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1587511654,
+      "created_at": "Tue, 21 Jul 2026 07:59:50 +0000",
+      "user": "Plantman82",
+      "checkin_comment": "",
+      "beer_name": "Frosty Fresh",
+      "beer_id": 6674990,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 4.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Grifter Brewing Co.",
+      "brewery_id": 32845,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1587511389,
+      "created_at": "Tue, 21 Jul 2026 07:45:29 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Golden Curse",
+      "beer_id": 6774136,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6774136_3a645_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1587340818,
       "created_at": "Mon, 20 Jul 2026 07:29:18 +0000",
       "user": "OzRazDaz",
