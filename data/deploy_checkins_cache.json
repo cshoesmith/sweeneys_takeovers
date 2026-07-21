@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1587522826,
+      "created_at": "Tue, 21 Jul 2026 11:42:12 +0000",
+      "user": "bdchapma",
+      "checkin_comment": "",
+      "beer_name": "Old Peculier",
+      "beer_id": 2323,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2323_0c83a_sm.jpeg",
+      "beer_style": "Old / Stock Ale",
+      "beer_abv": 5.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Theakston",
+      "brewery_id": 2070,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1587520052,
+      "created_at": "Tue, 21 Jul 2026 11:10:35 +0000",
+      "user": "bdchapma",
+      "checkin_comment": "",
+      "beer_name": "Golden Curse",
+      "beer_id": 6774136,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6774136_3a645_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1587516571,
       "created_at": "Tue, 21 Jul 2026 10:24:50 +0000",
       "user": "mw1414",
