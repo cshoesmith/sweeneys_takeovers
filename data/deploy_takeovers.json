@@ -3696,7 +3696,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6791853_1a06e_sm.jpeg",
         "beer_style": "IPA - Other",
         "beer_abv": 6.2,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6791853_1a06e_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "We’re lucky to have friends like Future Brewing who gifted us with our very own wizard recovery pool to recuperate after The Gathering Festival. So we invited them back up the Mountain to help us christen it, and we brewed this beer between plunges.\r\n\r\nThis modern California IPA is loaded with Simcoe Cryo, Citra, Nectaron and Nelson Sauvin Cold Pressed. Bursting with passionfruit, white grape, nectarine, peach and citrus zest, it finishes crisp and dry with layers of pine resin and bright hop intensity.\r\n\r\nBright, expressive and dangerously drinkable, this Cali IPA delivers modern hop saturation with a crisp West Coast-inspired finish. Perfect for sharing with your mates around an ice bath, because even wizards need space to rest and recover.\r\n",
+        "rating_score": 3.92547,
+        "rating_count": 53,
+        "brewery_name": "Mountain Culture Beer Co."
       }
     ],
     "source": "heuristic",
