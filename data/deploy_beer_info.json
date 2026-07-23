@@ -2151,5 +2151,18 @@
     "rating_score": 3.92547,
     "rating_count": 53,
     "brewery_name": "Mountain Culture Beer Co."
+  },
+  "3926223": {
+    "beer_id": 3926223,
+    "beer_name": "Yellow Brick Road",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3926223_9fe68_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3926223_8db03_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 8,
+    "beer_ibu": 0,
+    "beer_description": "﻿On a very cold and wintery Katoomba night in July 2020, Harriet and DJ welcomed their baby girl - Dorothy Margaret McCready. The next day, DJ went back to the brewery with the instructions to brew a beer worth waiting nine months and enduring 30 hours of labour for.\r\n\r\n﻿And so Yellow Brick Road, a juicy tropical NEIPA, was also born.\r\n\r\nCritics (Harriet) are calling it some of DJ's finest work.\r\n\r\nYellow Brick Road, ﻿fourth edition, released 2023.",
+    "rating_score": 4.21037,
+    "rating_count": 1910,
+    "brewery_name": "Mountain Culture Beer Co."
   }
 }
