@@ -3636,17 +3636,51 @@
   {
     "date": "2026-07-23",
     "brewery": "Mountain Culture Beer Co.",
-    "checkins": 5,
-    "unique_beers": 4,
-    "total_checkins_that_week": 5,
+    "checkins": 14,
+    "unique_beers": 9,
+    "total_checkins_that_week": 14,
     "share_pct": 100.0,
     "beers": [
+      "Ai Slop",
+      "Cashed Up Bogan",
       "Have A Break",
+      "Note To Self",
       "Preux Chevalier",
+      "Snakes On A Bus",
       "Stone Guardian",
+      "Telescopic",
       "Wizard Well"
     ],
     "beer_details": [
+      {
+        "beer_id": 6800149,
+        "beer_name": "Ai Slop",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6502230_aa207_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 7.3,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Mountain Culture Beer Co.",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/mountain-culture-beer-co-ai-slop/6800149"
+      },
+      {
+        "beer_id": 6757144,
+        "beer_name": "Cashed Up Bogan",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6757144_4a7ae_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 5.6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6757144_4a7ae_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "When two of Australia’s most exciting breweries team up, you know it’s going to be dialled. Mountain Culture bring the juicy haze and expressive hops, while Balter keep it balanced and seriously drinkable. The result is a beer that’s vibrant without being heavy, and easy to come back to.\r\n\r\nBrewed with oats and wheat for a soft, pillowy base, it showcases Amarillo and Mosaic Incognito in the whirlpool, with a dry hop of Mosaic, NZ Cascade and the brand new proprietary hop NZ Rhapsody from Clayton Hops. Expect bright citrus, mango and passionfruit, with a twist of lime.\r\n",
+        "rating_score": 3.81443,
+        "rating_count": 530,
+        "brewery_name": "Mountain Culture Beer Co."
+      },
       {
         "beer_id": 6734913,
         "beer_name": "Have A Break",
@@ -3659,6 +3693,20 @@
         "beer_description": "Reality, hey? Not all it’s cracked up to be if you asked us! So why not have a little break from it every now and then?\r\n\r\nWe’ve taken everyone's favourite break-apart chocolate bar and, through a keen use of magic and a bit of mischief, liquified it. We’ve also made it alcoholic but that’s just an added bonus. What this enchanting tonic really is, is a portal away from the “real world”. You know the real world where everyone is always like “you can’t use the name of the chocolate bar because it’s trademarked even though everyone knows exactly what it is because it has chocolate, wafers and breaks apart. Oh, also you can’t use red on the label”?\r\n\r\nFrom the first sip it’s pure indulgence: waves of milk chocolate melting into wafer biscuit crunch nostalgia, deep roasted cocoa rolling underneath like velvet thunder, and a decadent, silky body that coats everything in comfort. It’s dessert, it’s nostalgia, it’s a trick of the light you can actually drink.\r\n",
         "rating_score": 4.2059,
         "rating_count": 195,
+        "brewery_name": "Mountain Culture Beer Co."
+      },
+      {
+        "beer_id": 6800919,
+        "beer_name": "Note To Self",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800919_78233_sm.jpeg",
+        "beer_style": "Lager - Dark",
+        "beer_abv": 5.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6800919_78233_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Note to self: Stop letting the brewers look at old-school German brewing forums at 3:00 AM.\r\n\r\nFor this traditional dark lager, we did something truly radical for us: we showed restraint. No truckloads of tropical hops here just a beautifully balanced, mahogany hued liquid brewed with premium Munich and dark roasted malts. It hits you with comforting aromas of toasted pumpernickel, dark cocoa and a hint of molasses, finishing crisp, clean and dangerously smooth.\r\n\r\nIt’s an absolute masterpiece of balance and patience. A reminder of the timeless beauty of a well crafted lager.\r\n",
+        "rating_score": 0,
+        "rating_count": 0,
         "brewery_name": "Mountain Culture Beer Co."
       },
       {
@@ -3677,6 +3725,14 @@
         "beer_page_url": "https://untappd.com/b/mountain-culture-beer-co-preux-chevalier/6800153"
       },
       {
+        "beer_id": 6744937,
+        "beer_name": "Snakes On A Bus",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6744937_61ccb_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 6.7,
+        "beer_auth_rating": null
+      },
+      {
         "beer_id": 6747537,
         "beer_name": "Stone Guardian",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6747537_86ee7_sm.jpeg",
@@ -3689,6 +3745,14 @@
         "rating_score": 4.14631,
         "rating_count": 122,
         "brewery_name": "Mountain Culture Beer Co."
+      },
+      {
+        "beer_id": 6791848,
+        "beer_name": "Telescopic",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6791848_f20da_sm.jpeg",
+        "beer_style": "Pilsner - Other",
+        "beer_abv": 5.9,
+        "beer_auth_rating": null
       },
       {
         "beer_id": 6791853,
@@ -3712,7 +3776,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 9,
         "pct": 0.0,
         "rank": 1
       },
@@ -3721,7 +3785,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 9,
         "pct": 0.0,
         "rank": 2
       },
@@ -3730,7 +3794,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 4,
+        "total": 9,
         "pct": 0.0,
         "rank": 3
       },
@@ -3739,7 +3803,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 9,
         "pct": 0.0,
         "rank": 4
       },
@@ -3748,7 +3812,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 9,
         "pct": 0.0,
         "rank": 5
       },
@@ -3757,7 +3821,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 9,
         "pct": 0.0,
         "rank": 6
       },
@@ -3766,7 +3830,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 9,
         "pct": 0.0,
         "rank": 7
       }
