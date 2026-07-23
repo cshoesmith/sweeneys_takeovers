@@ -3636,9 +3636,9 @@
   {
     "date": "2026-07-23",
     "brewery": "Mountain Culture Beer Co.",
-    "checkins": 14,
-    "unique_beers": 9,
-    "total_checkins_that_week": 14,
+    "checkins": 28,
+    "unique_beers": 10,
+    "total_checkins_that_week": 28,
     "share_pct": 100.0,
     "beers": [
       "Ai Slop",
@@ -3649,7 +3649,8 @@
       "Snakes On A Bus",
       "Stone Guardian",
       "Telescopic",
-      "Wizard Well"
+      "Wizard Well",
+      "Yellow Brick Road"
     ],
     "beer_details": [
       {
@@ -3696,6 +3697,21 @@
         "brewery_name": "Mountain Culture Beer Co."
       },
       {
+        "beer_id": 6800147,
+        "beer_name": "Note To Self",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3371627_94d98_sm.jpeg",
+        "beer_style": "Lager - Dark",
+        "beer_abv": 5.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Mountain Culture Beer Co.",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/mountain-culture-beer-co-note-to-self/6800147"
+      },
+      {
         "beer_id": 6800919,
         "beer_name": "Note To Self",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800919_78233_sm.jpeg",
@@ -3730,7 +3746,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6744937_61ccb_sm.jpeg",
         "beer_style": "IPA - New England / Hazy",
         "beer_abv": 6.7,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6744937_61ccb_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A hazy IPA brewed with our mates from Other Half in New York. Hand selected hops create a complex profile overflowing with sweet mango, passionfruit pulp and lime sorbet with a hint of strawberries and cream lollies.\r\n\r\nIt’s true wizardry.\r\n",
+        "rating_score": 4.0358,
+        "rating_count": 581,
+        "brewery_name": "Mountain Culture Beer Co."
       },
       {
         "beer_id": 6747537,
@@ -3752,7 +3774,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6791848_f20da_sm.jpeg",
         "beer_style": "Pilsner - Other",
         "beer_abv": 5.9,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6791848_f20da_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "We were lucky enough to host our mate Bartek from Poland’s legendary Pinta Brewing recently. After navigating his way across the seas to our humble shores, he made the trek to the Blue Mountains to mash in a special collaboration.\r\n\r\nThe result is a crisp, ultra-modern West Coast Pilsner that marries old-world tradition with our obsession for cutting-edge hop technology. We started with a clean, snappy base and layered in classic Saaz hops for that intricate, earthy spice European brewers have mastered for centuries. Then, we hit it with an expressive dry-hop of Citra, Centennial, and Simcoe HyperBoost.\r\n\r\nExpect intense aromas of bright grapefruit, lime zest, and tropical fruits, balanced perfectly by a resinous pine backbone. It delivers a massive, punchy flavour profile before wrapping up with an incredibly clean, snappy finish.\r\n",
+        "rating_score": 3.83171,
+        "rating_count": 41,
+        "brewery_name": "Mountain Culture Beer Co."
       },
       {
         "beer_id": 6791853,
@@ -3767,6 +3795,14 @@
         "rating_score": 3.92547,
         "rating_count": 53,
         "brewery_name": "Mountain Culture Beer Co."
+      },
+      {
+        "beer_id": 3926223,
+        "beer_name": "Yellow Brick Road",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3926223_9fe68_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 8,
+        "beer_auth_rating": null
       }
     ],
     "source": "heuristic",
@@ -3776,7 +3812,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 11,
         "pct": 0.0,
         "rank": 1
       },
@@ -3785,7 +3821,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 11,
         "pct": 0.0,
         "rank": 2
       },
@@ -3794,7 +3830,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 9,
+        "total": 11,
         "pct": 0.0,
         "rank": 3
       },
@@ -3803,7 +3839,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 11,
         "pct": 0.0,
         "rank": 4
       },
@@ -3812,7 +3848,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 11,
         "pct": 0.0,
         "rank": 5
       },
@@ -3821,7 +3857,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 11,
         "pct": 0.0,
         "rank": 6
       },
@@ -3830,7 +3866,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 11,
         "pct": 0.0,
         "rank": 7
       }
