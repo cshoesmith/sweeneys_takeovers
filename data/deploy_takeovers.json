@@ -3636,10 +3636,10 @@
   {
     "date": "2026-07-23",
     "brewery": "Mountain Culture Beer Co.",
-    "checkins": 73,
+    "checkins": 83,
     "unique_beers": 10,
-    "total_checkins_that_week": 74,
-    "share_pct": 98.6,
+    "total_checkins_that_week": 84,
+    "share_pct": 98.8,
     "beers": [
       "Ai Slop",
       "Cashed Up Bogan",
@@ -3817,33 +3817,33 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 7,
+        "checked": 8,
         "total": 11,
-        "pct": 63.6,
+        "pct": 72.7,
         "rank": 1
       },
       {
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 5,
+        "checked": 7,
         "total": 11,
-        "pct": 45.5,
+        "pct": 63.6,
         "rank": 2
-      },
-      {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 4,
-        "total": 11,
-        "pct": 36.4,
-        "rank": 3
       },
       {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 5,
+        "total": 11,
+        "pct": 45.5,
+        "rank": 3
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 4,
         "total": 11,
         "pct": 36.4,
@@ -3853,9 +3853,9 @@
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 1,
+        "checked": 2,
         "total": 11,
-        "pct": 9.1,
+        "pct": 18.2,
         "rank": 5
       },
       {
