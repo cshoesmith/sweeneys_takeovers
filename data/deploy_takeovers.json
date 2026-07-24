@@ -3636,10 +3636,10 @@
   {
     "date": "2026-07-23",
     "brewery": "Mountain Culture Beer Co.",
-    "checkins": 47,
+    "checkins": 55,
     "unique_beers": 10,
-    "total_checkins_that_week": 47,
-    "share_pct": 100.0,
+    "total_checkins_that_week": 56,
+    "share_pct": 98.2,
     "beers": [
       "Ai Slop",
       "Cashed Up Bogan",
@@ -3817,10 +3817,19 @@
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 4,
+        "total": 11,
+        "pct": 36.4,
+        "rank": 1
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 3,
         "total": 11,
         "pct": 27.3,
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "lightbeerking",
@@ -3829,7 +3838,16 @@
         "checked": 2,
         "total": 11,
         "pct": 18.2,
-        "rank": 2
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 1,
+        "total": 11,
+        "pct": 9.1,
+        "rank": 4
       },
       {
         "username": "dapitz",
@@ -3838,30 +3856,12 @@
         "checked": 0,
         "total": 11,
         "pct": 0.0,
-        "rank": 3
+        "rank": 5
       },
       {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
-        "checked": 0,
-        "total": 11,
-        "pct": 0.0,
-        "rank": 4
-      },
-      {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 11,
-        "pct": 0.0,
-        "rank": 5
-      },
-      {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
         "total": 11,
         "pct": 0.0,
