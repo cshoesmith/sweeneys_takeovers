@@ -3636,10 +3636,10 @@
   {
     "date": "2026-07-23",
     "brewery": "Mountain Culture Beer Co.",
-    "checkins": 86,
+    "checkins": 89,
     "unique_beers": 10,
-    "total_checkins_that_week": 91,
-    "share_pct": 94.5,
+    "total_checkins_that_week": 94,
+    "share_pct": 94.7,
     "beers": [
       "Ai Slop",
       "Cashed Up Bogan",
