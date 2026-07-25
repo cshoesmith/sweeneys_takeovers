@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1588562180,
+      "created_at": "Sat, 25 Jul 2026 12:29:42 +0000",
+      "user": "joelgibson",
+      "checkin_comment": "",
+      "beer_name": "Ai Slop",
+      "beer_id": 6800923,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800923_07739_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 7.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Mountain Culture Beer Co.",
+      "brewery_id": 446724,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1588531988,
       "created_at": "Sat, 25 Jul 2026 09:17:15 +0000",
       "user": "Ongbark",
