@@ -3636,10 +3636,10 @@
   {
     "date": "2026-07-23",
     "brewery": "Mountain Culture Beer Co.",
-    "checkins": 89,
+    "checkins": 94,
     "unique_beers": 10,
-    "total_checkins_that_week": 94,
-    "share_pct": 94.7,
+    "total_checkins_that_week": 99,
+    "share_pct": 94.9,
     "beers": [
       "Ai Slop",
       "Cashed Up Bogan",
@@ -3653,6 +3653,20 @@
       "Yellow Brick Road"
     ],
     "beer_details": [
+      {
+        "beer_id": 6800923,
+        "beer_name": "Ai Slop",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800923_07739_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 7.3,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6800923_07739_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Can you write a short description for a New England IPA brewed with whirlpool additions of Centennial and Simcoe and dry hop additions of Citra and Centennial?\r\n\r\n“Sure! That sounds like it's going to be a winning beer. Here is an option for a shorter can-label version:”\r\n\r\n“A juicy, hazy New England IPA loaded with citrus and tropical fruit aromas. Centennial and Simcoe in the whirlpool provide grapefruit, pine, and stone fruit notes, while a Citra and Centennial dry hop bursts with mango, orange, and passionfruit character. Soft, smooth, and highly drinkable with a restrained bitterness.”\r\n\r\n“Or, if you'd like something more creative and brand forward, I can write it in a modern craft brewery style with a bit more personality.”\r\n",
+        "rating_score": 4.08611,
+        "rating_count": 36,
+        "brewery_name": "Mountain Culture Beer Co."
+      },
       {
         "beer_id": 6800149,
         "beer_name": "Ai Slop",
@@ -3697,6 +3711,20 @@
         "brewery_name": "Mountain Culture Beer Co."
       },
       {
+        "beer_id": 6800919,
+        "beer_name": "Note To Self",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800919_78233_sm.jpeg",
+        "beer_style": "Lager - Dark",
+        "beer_abv": 5.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6800919_78233_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Note to self: Stop letting the brewers look at old-school German brewing forums at 3:00 AM.\r\n\r\nFor this traditional dark lager, we did something truly radical for us: we showed restraint. No truckloads of tropical hops here just a beautifully balanced, mahogany hued liquid brewed with premium Munich and dark roasted malts. It hits you with comforting aromas of toasted pumpernickel, dark cocoa and a hint of molasses, finishing crisp, clean and dangerously smooth.\r\n\r\nIt’s an absolute masterpiece of balance and patience. A reminder of the timeless beauty of a well crafted lager.\r\n",
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Mountain Culture Beer Co."
+      },
+      {
         "beer_id": 6800147,
         "beer_name": "Note To Self",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3371627_94d98_sm.jpeg",
@@ -3710,20 +3738,6 @@
         "brewery_name": "Mountain Culture Beer Co.",
         "brewery_country": "Australia",
         "beer_page_url": "https://untappd.com/b/mountain-culture-beer-co-note-to-self/6800147"
-      },
-      {
-        "beer_id": 6800919,
-        "beer_name": "Note To Self",
-        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800919_78233_sm.jpeg",
-        "beer_style": "Lager - Dark",
-        "beer_abv": 5.1,
-        "beer_auth_rating": null,
-        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6800919_78233_hd.jpeg",
-        "beer_ibu": 0,
-        "beer_description": "Note to self: Stop letting the brewers look at old-school German brewing forums at 3:00 AM.\r\n\r\nFor this traditional dark lager, we did something truly radical for us: we showed restraint. No truckloads of tropical hops here just a beautifully balanced, mahogany hued liquid brewed with premium Munich and dark roasted malts. It hits you with comforting aromas of toasted pumpernickel, dark cocoa and a hint of molasses, finishing crisp, clean and dangerously smooth.\r\n\r\nIt’s an absolute masterpiece of balance and patience. A reminder of the timeless beauty of a well crafted lager.\r\n",
-        "rating_score": 0,
-        "rating_count": 0,
-        "brewery_name": "Mountain Culture Beer Co."
       },
       {
         "beer_id": 6800153,
@@ -3818,8 +3832,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 9,
-        "total": 11,
-        "pct": 81.8,
+        "total": 12,
+        "pct": 75.0,
         "rank": 1
       },
       {
@@ -3827,8 +3841,8 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 7,
-        "total": 11,
-        "pct": 63.6,
+        "total": 12,
+        "pct": 58.3,
         "rank": 2
       },
       {
@@ -3836,35 +3850,35 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 7,
-        "total": 11,
-        "pct": 63.6,
+        "total": 12,
+        "pct": 58.3,
         "rank": 3
+      },
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 5,
+        "total": 12,
+        "pct": 41.7,
+        "rank": 4
       },
       {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 4,
-        "total": 11,
-        "pct": 36.4,
-        "rank": 4
+        "total": 12,
+        "pct": 33.3,
+        "rank": 5
       },
       {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 2,
-        "total": 11,
-        "pct": 18.2,
-        "rank": 5
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 11,
-        "pct": 0.0,
+        "total": 12,
+        "pct": 16.7,
         "rank": 6
       },
       {
@@ -3872,7 +3886,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "rank": 7
       }

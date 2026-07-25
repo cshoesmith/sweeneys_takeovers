@@ -2019,6 +2019,19 @@
     "rating_count": 103698,
     "brewery_name": "St Austell Brewery"
   },
+  "6800923": {
+    "beer_id": 6800923,
+    "beer_name": "Ai Slop",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800923_07739_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6800923_07739_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 7.3,
+    "beer_ibu": 0,
+    "beer_description": "Can you write a short description for a New England IPA brewed with whirlpool additions of Centennial and Simcoe and dry hop additions of Citra and Centennial?\r\n\r\n“Sure! That sounds like it's going to be a winning beer. Here is an option for a shorter can-label version:”\r\n\r\n“A juicy, hazy New England IPA loaded with citrus and tropical fruit aromas. Centennial and Simcoe in the whirlpool provide grapefruit, pine, and stone fruit notes, while a Citra and Centennial dry hop bursts with mango, orange, and passionfruit character. Soft, smooth, and highly drinkable with a restrained bitterness.”\r\n\r\n“Or, if you'd like something more creative and brand forward, I can write it in a modern craft brewery style with a bit more personality.”\r\n",
+    "rating_score": 4.08611,
+    "rating_count": 36,
+    "brewery_name": "Mountain Culture Beer Co."
+  },
   "6800149": {
     "beer_id": 6800149,
     "beer_name": "Ai Slop",
@@ -2059,6 +2072,19 @@
     "rating_count": 195,
     "brewery_name": "Mountain Culture Beer Co."
   },
+  "6800919": {
+    "beer_id": 6800919,
+    "beer_name": "Note To Self",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800919_78233_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6800919_78233_hd.jpeg",
+    "beer_style": "Lager - Dark",
+    "beer_abv": 5.1,
+    "beer_ibu": 0,
+    "beer_description": "Note to self: Stop letting the brewers look at old-school German brewing forums at 3:00 AM.\r\n\r\nFor this traditional dark lager, we did something truly radical for us: we showed restraint. No truckloads of tropical hops here just a beautifully balanced, mahogany hued liquid brewed with premium Munich and dark roasted malts. It hits you with comforting aromas of toasted pumpernickel, dark cocoa and a hint of molasses, finishing crisp, clean and dangerously smooth.\r\n\r\nIt’s an absolute masterpiece of balance and patience. A reminder of the timeless beauty of a well crafted lager.\r\n",
+    "rating_score": 0,
+    "rating_count": 0,
+    "brewery_name": "Mountain Culture Beer Co."
+  },
   "6800147": {
     "beer_id": 6800147,
     "beer_name": "Note To Self",
@@ -2072,19 +2098,6 @@
     "brewery_name": "Mountain Culture Beer Co.",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/mountain-culture-beer-co-note-to-self/6800147"
-  },
-  "6800919": {
-    "beer_id": 6800919,
-    "beer_name": "Note To Self",
-    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800919_78233_sm.jpeg",
-    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6800919_78233_hd.jpeg",
-    "beer_style": "Lager - Dark",
-    "beer_abv": 5.1,
-    "beer_ibu": 0,
-    "beer_description": "Note to self: Stop letting the brewers look at old-school German brewing forums at 3:00 AM.\r\n\r\nFor this traditional dark lager, we did something truly radical for us: we showed restraint. No truckloads of tropical hops here just a beautifully balanced, mahogany hued liquid brewed with premium Munich and dark roasted malts. It hits you with comforting aromas of toasted pumpernickel, dark cocoa and a hint of molasses, finishing crisp, clean and dangerously smooth.\r\n\r\nIt’s an absolute masterpiece of balance and patience. A reminder of the timeless beauty of a well crafted lager.\r\n",
-    "rating_score": 0,
-    "rating_count": 0,
-    "brewery_name": "Mountain Culture Beer Co."
   },
   "6800153": {
     "beer_id": 6800153,
