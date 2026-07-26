@@ -3636,10 +3636,10 @@
   {
     "date": "2026-07-23",
     "brewery": "Mountain Culture Beer Co.",
-    "checkins": 106,
+    "checkins": 111,
     "unique_beers": 11,
-    "total_checkins_that_week": 112,
-    "share_pct": 94.6,
+    "total_checkins_that_week": 117,
+    "share_pct": 94.9,
     "beers": [
       "Ai Slop",
       "Cashed Up Bogan",
@@ -3891,9 +3891,9 @@
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 2,
+        "checked": 4,
         "total": 13,
-        "pct": 15.4,
+        "pct": 30.8,
         "rank": 6
       },
       {
