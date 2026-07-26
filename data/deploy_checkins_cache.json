@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1588998985,
+      "created_at": "Sun, 26 Jul 2026 11:47:51 +0000",
+      "user": "Babotoki",
+      "checkin_comment": "Not really much of a flavor, just a lager with dark color..? It’s okay",
+      "beer_name": "Note To Self",
+      "beer_id": 6800919,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800919_78233_sm.jpeg",
+      "beer_style": "Lager - Dark",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Mountain Culture Beer Co.",
+      "brewery_id": 446724,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1588997936,
       "created_at": "Sun, 26 Jul 2026 11:40:20 +0000",
       "user": "Babotoki",
