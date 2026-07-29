@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1589626790,
+      "created_at": "Wed, 29 Jul 2026 07:18:48 +0000",
+      "user": "craigmoro",
+      "checkin_comment": "",
+      "beer_name": "Frenzy",
+      "beer_id": 869118,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-869118_a9bbd_sm.jpeg",
+      "beer_style": "Fruit Beer",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1589626251,
       "created_at": "Wed, 29 Jul 2026 06:50:45 +0000",
       "user": "craigmoro",
