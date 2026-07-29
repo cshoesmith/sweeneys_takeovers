@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1589626251,
+      "created_at": "Wed, 29 Jul 2026 06:50:45 +0000",
+      "user": "craigmoro",
+      "checkin_comment": "",
+      "beer_name": "Preux Chevalier",
+      "beer_id": 6800153,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Other",
+      "beer_abv": 0,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Mountain Culture Beer Co.",
+      "brewery_id": 446724,
+      "rating": 2.75
+    },
+    {
+      "checkin_id": 1589625973,
+      "created_at": "Wed, 29 Jul 2026 06:40:18 +0000",
+      "user": "craigmoro",
+      "checkin_comment": "",
+      "beer_name": "Note To Self",
+      "beer_id": 6800919,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6800919_78233_sm.jpeg",
+      "beer_style": "Lager - Dark",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Mountain Culture Beer Co.",
+      "brewery_id": 446724,
+      "rating": 4
+    },
+    {
       "checkin_id": 1589619382,
       "created_at": "Wed, 29 Jul 2026 03:03:00 +0000",
       "user": "fogal",
