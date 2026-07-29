@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1589637029,
+      "created_at": "Wed, 29 Jul 2026 11:17:24 +0000",
+      "user": "rickyabedi",
+      "checkin_comment": "",
+      "beer_name": "Pure Blonde Ultra Low Carb",
+      "beer_id": 7417,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7417_d5839_sm.jpeg",
+      "beer_style": "Lager - Pale",
+      "beer_abv": 4.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Carlton & United Breweries",
+      "brewery_id": 4045,
+      "rating": 4
+    },
+    {
       "checkin_id": 1589626790,
       "created_at": "Wed, 29 Jul 2026 07:18:48 +0000",
       "user": "craigmoro",
