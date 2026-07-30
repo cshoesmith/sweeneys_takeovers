@@ -2229,5 +2229,44 @@
     "rating_score": 4.03333,
     "rating_count": 18,
     "brewery_name": "One Drop Brewing Co"
+  },
+  "4961798": {
+    "beer_id": 4961798,
+    "beer_name": "Svaki Dan Imperial Pastry Stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4961798_a96cc_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4961798_14286_hd.jpeg",
+    "beer_style": "Stout - Imperial / Double Pastry",
+    "beer_abv": 10.4,
+    "beer_ibu": 0,
+    "beer_description": "Svaki Dan! \r\nA mind melting, brand new Imperial Pastry number with over eight types of specialty malts, a lactose heavy base, loaded with pastry-laden adjuncts. \r\nOozing with buckets of peanut butter and smothered with deconstructed elements of banoffee pie - banana, caramel, cream, and biscuit.\r\nYum. Every Day!",
+    "rating_score": 4.15411,
+    "rating_count": 304,
+    "brewery_name": "One Drop Brewing Co"
+  },
+  "6682751": {
+    "beer_id": 6682751,
+    "beer_name": "THE COUNTDOWN",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6682751_685e1_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6682751_685e1_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 8,
+    "beer_ibu": 0,
+    "beer_description": "\"A fully saturated Hazy DIPA built with a deliberate focus on texture and layered hop expression.\r\nThe hot side is charged at 10 g/L with Freestyle Motueka, Peacharine and Citra, establishing a vibrant foundation of bright citrus and stone fruit. This is followed by a Clean Fusion dry hop of the same trio, preserving aromatic clarity while amplifying intensity.\r\nA composition of Southern Hemisphere character sits at the core, supported by a confident Citra lift that brings definition and energy to the profile.\r\nFermented with london fog yeast and built on a grist of 30% oats and 30% spelt, the result is a beer of generous mouthfeel and soft structure, carrying saturated hop character through to a smooth, persistent finish.\"",
+    "rating_score": 4.05241,
+    "rating_count": 145,
+    "brewery_name": "One Drop Brewing Co"
+  },
+  "6615413": {
+    "beer_id": 6615413,
+    "beer_name": "THE OTHERSIDE",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6615413_5d1eb_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6615413_43b00_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 7.2,
+    "beer_ibu": 0,
+    "beer_description": "\"Big. Bold. Bitter.\nThis one pulls no punches.\nHand-selected Taiheke (NZ Cascade) leads the charge, backed by US Krush and a liquid hop bittering hit that sets the tone from the first sip. Expect classic citrus and berry up front, rolling into pine and a subtle forest-floor earthiness.\nFinished with a fat-as bitterness and a clean, cleansing ale snap, Otherside is built for those who like it dry, sharp and unapologetically firm.\nStep across. Yum.\"",
+    "rating_score": 3.93554,
+    "rating_count": 166,
+    "brewery_name": "One Drop Brewing Co"
   }
 }
