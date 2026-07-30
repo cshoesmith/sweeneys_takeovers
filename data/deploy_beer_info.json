@@ -2243,6 +2243,19 @@
     "rating_count": 18,
     "brewery_name": "One Drop Brewing Co"
   },
+  "5751311": {
+    "beer_id": 5751311,
+    "beer_name": "Join the Dots Ice Cream Sour",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5751311_ee2b7_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5751311_ee2b7_hd.jpeg",
+    "beer_style": "Sour - Smoothie / Pastry",
+    "beer_abv": 6,
+    "beer_ibu": 0,
+    "beer_description": "Join The Dots is a new topped-up-to-the-brim kettle sour that's been given our full Ice-Cream Smoothie Treatment. Starting with a lactose and wheat heavy base soured with our house lacto culture, we’ve then gone and rolled up some mean dots of mango, raspberry, blackcurrant, and marshmallow, with a touch of vanilla ice cream powder. Join it all up and come find the big picture with us. ",
+    "rating_score": 4.27789,
+    "rating_count": 527,
+    "brewery_name": "One Drop Brewing Co"
+  },
   "5996551": {
     "beer_id": 5996551,
     "beer_name": "Summer Baddie*",

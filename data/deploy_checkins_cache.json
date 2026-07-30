@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1589853548,
+      "created_at": "Thu, 30 Jul 2026 10:03:05 +0000",
+      "user": "coreymch",
+      "checkin_comment": "",
+      "beer_name": "Join the Dots Ice Cream Sour",
+      "beer_id": 5751311,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5751311_ee2b7_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 3.9
+    },
+    {
+      "checkin_id": 1589852121,
+      "created_at": "Thu, 30 Jul 2026 09:31:53 +0000",
+      "user": "coreymch",
+      "checkin_comment": "",
+      "beer_name": "Summer Baddie*",
+      "beer_id": 5996551,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5996551_70c92_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 3.6
+    },
+    {
       "checkin_id": 1589849898,
       "created_at": "Thu, 30 Jul 2026 08:23:17 +0000",
       "user": "oneiamfor",

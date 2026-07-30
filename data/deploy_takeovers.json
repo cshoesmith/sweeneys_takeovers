@@ -3910,15 +3910,16 @@
   {
     "date": "2026-07-30",
     "brewery": "One Drop Brewing Co",
-    "checkins": 14,
-    "unique_beers": 8,
-    "total_checkins_that_week": 23,
-    "share_pct": 60.9,
+    "checkins": 16,
+    "unique_beers": 9,
+    "total_checkins_that_week": 25,
+    "share_pct": 64.0,
     "beers": [
       "All Day",
       "Angel Falls - DDH DIPA",
       "DIVIDENDS OATCREAM*",
       "Face Value",
+      "Join the Dots Ice Cream Sour",
       "Summer Baddie*",
       "Svaki Dan Imperial Pastry Stout",
       "THE COUNTDOWN",
@@ -3979,6 +3980,20 @@
         "beer_description": "A saturated hoppy ale built around layers of Krush® and Krush Cryo®, supported by Ryefield's Beedalup and a touch of Motueka. Triple dry hopped and amplified with our Clean Fusion process, delivering waves of tropical fruit, citrus and ripe stone fruit character with a soft, pillowy mouthfeel and a clean, expressive finish.",
         "rating_score": 4.03333,
         "rating_count": 18,
+        "brewery_name": "One Drop Brewing Co"
+      },
+      {
+        "beer_id": 5751311,
+        "beer_name": "Join the Dots Ice Cream Sour",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5751311_ee2b7_sm.jpeg",
+        "beer_style": "Sour - Smoothie / Pastry",
+        "beer_abv": 6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5751311_ee2b7_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Join The Dots is a new topped-up-to-the-brim kettle sour that's been given our full Ice-Cream Smoothie Treatment. Starting with a lactose and wheat heavy base soured with our house lacto culture, we’ve then gone and rolled up some mean dots of mango, raspberry, blackcurrant, and marshmallow, with a touch of vanilla ice cream powder. Join it all up and come find the big picture with us. ",
+        "rating_score": 4.27789,
+        "rating_count": 527,
         "brewery_name": "One Drop Brewing Co"
       },
       {
@@ -4045,8 +4060,8 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 3,
-        "total": 8,
-        "pct": 37.5,
+        "total": 9,
+        "pct": 33.3,
         "rank": 1
       },
       {
@@ -4054,8 +4069,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 3,
-        "total": 8,
-        "pct": 37.5,
+        "total": 9,
+        "pct": 33.3,
         "rank": 2
       },
       {
@@ -4063,7 +4078,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "rank": 3
       },
@@ -4072,7 +4087,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "rank": 4
       },
@@ -4081,7 +4096,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "rank": 5
       },
@@ -4090,7 +4105,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "rank": 6
       },
@@ -4099,7 +4114,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "rank": 7
       }
