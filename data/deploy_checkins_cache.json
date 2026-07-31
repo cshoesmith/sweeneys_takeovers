@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1590142787,
+      "created_at": "Fri, 31 Jul 2026 14:40:01 +0000",
+      "user": "fletcher87",
+      "checkin_comment": "",
+      "beer_name": "Captain Jindong V2",
+      "beer_id": 6720171,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6720171_3b042_sm.jpeg",
+      "beer_style": "IPA - Triple",
+      "beer_abv": 9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4
+    },
+    {
       "checkin_id": 1590131985,
       "created_at": "Fri, 31 Jul 2026 13:54:42 +0000",
       "user": "fletcher87",
