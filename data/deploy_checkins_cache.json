@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1590131985,
+      "created_at": "Fri, 31 Jul 2026 13:54:42 +0000",
+      "user": "fletcher87",
+      "checkin_comment": "",
+      "beer_name": "DIVIDENDS OATCREAM*",
+      "beer_id": 6666449,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6666449_f3dd2_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1590126238,
+      "created_at": "Fri, 31 Jul 2026 13:24:51 +0000",
+      "user": "PhilBrau",
+      "checkin_comment": "",
+      "beer_name": "Angel Falls - DDH DIPA",
+      "beer_id": 6682833,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6682833_79ee7_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 7.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4
+    },
+    {
       "checkin_id": 1590111450,
       "created_at": "Fri, 31 Jul 2026 11:27:47 +0000",
       "user": "mw1414",
