@@ -3910,10 +3910,10 @@
   {
     "date": "2026-07-30",
     "brewery": "One Drop Brewing Co",
-    "checkins": 28,
+    "checkins": 33,
     "unique_beers": 10,
-    "total_checkins_that_week": 49,
-    "share_pct": 57.1,
+    "total_checkins_that_week": 54,
+    "share_pct": 61.1,
     "beers": [
       "All Day",
       "Angel Falls - DDH DIPA",
@@ -4080,13 +4080,22 @@
         "rank": 1
       },
       {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 4,
+        "total": 10,
+        "pct": 40.0,
+        "rank": 2
+      },
+      {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 3,
         "total": 10,
         "pct": 30.0,
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "docta",
@@ -4095,7 +4104,7 @@
         "checked": 1,
         "total": 10,
         "pct": 10.0,
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "dapitz",
@@ -4104,21 +4113,12 @@
         "checked": 0,
         "total": 10,
         "pct": 0.0,
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 10,
-        "pct": 0.0,
-        "rank": 5
-      },
-      {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
         "total": 10,
         "pct": 0.0,
