@@ -2307,5 +2307,18 @@
     "rating_score": 3.93554,
     "rating_count": 166,
     "brewery_name": "One Drop Brewing Co"
+  },
+  "6791042": {
+    "beer_id": 6791042,
+    "beer_name": "WALKTHROUGH",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6791042_557e2_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6791042_557e2_hd.jpeg",
+    "beer_style": "Stout - Imperial / Double Pastry",
+    "beer_abv": 10,
+    "beer_ibu": 0,
+    "beer_description": "Walkthrough to the new.  Layers of rich cacao, dark chocolate (Xocolatl) and a hint of warming chilli unfold across a decadent imperial stout base with over eight types of specialty malts.  Creating a perfect base for a late night mysterious drinking experience.\r\nVelvety waves of chocolate lead the way before a slow-building chilli warmth emerges from the shadows, lingering long after the last sip. Deep, luxurious and unapologetically intense.",
+    "rating_score": 0,
+    "rating_count": 8,
+    "brewery_name": "One Drop Brewing Co"
   }
 }
