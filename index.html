@@ -25,6 +25,10 @@
     --green: #4ecca3;
     --red: #e94560;
     --orange: #f5a623;
+    --day1: #3987e5;
+    --day2: #d95926;
+    --day3: #199e70;
+    --day4: #c98500;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -539,12 +543,22 @@
   .podium-gold .podium-pct { color: var(--gold); }
   .podium-silver .podium-pct { color: #a8b2c0; }
   .podium-bronze .podium-pct { color: #cd7f32; }
+  .member-day-legend { display: flex; flex-wrap: wrap; gap: 0.15rem 0.7rem; margin-bottom: 0.6rem; font-size: 0.68rem; color: var(--text-dim); }
+  .day-legend-item { display: inline-flex; align-items: center; gap: 0.32rem; }
+  .day-dot { width: 7px; height: 7px; border-radius: 50%; flex: 0 0 auto; }
   .member-results-table { display: flex; flex-direction: column; gap: 0.28rem; }
   .member-result-row { display: grid; grid-template-columns: 1.4rem 6.5rem 1fr 4.5rem; align-items: center; gap: 0.5rem; font-size: 0.78rem; }
   .member-result-rank { color: var(--text-dim); text-align: right; font-size: 0.68rem; }
   .member-result-name { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .member-result-bar-wrap { background: var(--surface); border-radius: 3px; height: 5px; overflow: hidden; border: 1px solid var(--border); }
+  .member-result-bar-wrap { background: var(--surface); border-radius: 3px; height: 5px; overflow: hidden; border: 1px solid var(--border); display: flex; gap: 1px; }
   .member-result-bar { height: 100%; background: var(--green); border-radius: 3px; }
+  .member-result-segment { height: 100%; flex: 0 0 auto; }
+  .member-result-segment:first-child { border-top-left-radius: 2px; border-bottom-left-radius: 2px; }
+  .member-result-segment:last-child { border-top-right-radius: 2px; border-bottom-right-radius: 2px; }
+  .day-color-0 { background: var(--day1); }
+  .day-color-1 { background: var(--day2); }
+  .day-color-2 { background: var(--day3); }
+  .day-color-3 { background: var(--day4); }
   .member-result-stats { color: var(--text-dim); text-align: right; font-size: 0.7rem; white-space: nowrap; }
   .member-result-row.zero .member-result-name,
   .member-result-row.zero .member-result-stats { opacity: 0.4; }
@@ -788,7 +802,7 @@
 
 <script>
 // ═════════ Tab switching ═════════
-const INLINE_DEPLOY_BUILD_LABEL = "1785581312";
+const INLINE_DEPLOY_BUILD_LABEL = "1785582227";
 const INLINE_DEPLOY_TAKEOVERS = [
   {
     "date": "2026-03-05",
@@ -992,6 +1006,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 9,
         "total": 12,
         "pct": 75.0,
+        "day_counts": [
+          0,
+          9,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -1001,6 +1021,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 8,
         "total": 12,
         "pct": 66.7,
+        "day_counts": [
+          0,
+          0,
+          8,
+          0
+        ],
         "rank": 2
       },
       {
@@ -1010,6 +1036,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 8,
         "total": 12,
         "pct": 66.7,
+        "day_counts": [
+          0,
+          8,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -1019,6 +1051,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 5,
         "total": 12,
         "pct": 41.7,
+        "day_counts": [
+          0,
+          5,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -1028,6 +1066,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -1037,6 +1081,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -1046,6 +1096,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -1251,6 +1307,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 12,
         "pct": 25.0,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -1260,6 +1322,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          0,
+          0,
+          2,
+          0
+        ],
         "rank": 2
       },
       {
@@ -1269,6 +1337,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -1278,6 +1352,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          2,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -1287,6 +1367,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 1,
         "total": 12,
         "pct": 8.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -1296,6 +1382,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 1,
         "total": 12,
         "pct": 8.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -1305,6 +1397,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -1464,6 +1562,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 7,
         "total": 14,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -1473,6 +1577,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 6,
         "total": 14,
         "pct": 42.9,
+        "day_counts": [
+          6,
+          0,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -1482,6 +1592,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 14,
         "pct": 21.4,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -1491,6 +1607,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 14,
         "pct": 21.4,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -1500,6 +1622,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 14,
         "pct": 21.4,
+        "day_counts": [
+          1,
+          2,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -1509,6 +1637,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 14,
         "pct": 14.3,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -1518,6 +1652,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -1699,6 +1839,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 5,
         "total": 11,
         "pct": 45.5,
+        "day_counts": [
+          5,
+          0,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -1708,6 +1854,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 11,
         "pct": 36.4,
+        "day_counts": [
+          0,
+          0,
+          4,
+          0
+        ],
         "rank": 2
       },
       {
@@ -1717,6 +1869,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 11,
         "pct": 27.3,
+        "day_counts": [
+          3,
+          0,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -1726,6 +1884,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 11,
         "pct": 18.2,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -1735,6 +1899,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 11,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -1744,6 +1914,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 11,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -1753,6 +1929,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 11,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -1973,6 +2155,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 13,
         "pct": 15.4,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -1982,6 +2170,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -1991,6 +2185,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2000,6 +2200,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2009,6 +2215,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2018,6 +2230,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2027,6 +2245,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -2205,6 +2429,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 8,
         "total": 10,
         "pct": 80.0,
+        "day_counts": [
+          8,
+          0,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -2214,6 +2444,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 5,
         "total": 10,
         "pct": 50.0,
+        "day_counts": [
+          5,
+          0,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -2223,6 +2459,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 10,
         "pct": 40.0,
+        "day_counts": [
+          0,
+          0,
+          4,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2232,6 +2474,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 10,
         "pct": 30.0,
+        "day_counts": [
+          3,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2241,6 +2489,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2250,6 +2504,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2259,6 +2519,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -2391,6 +2657,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 7,
         "pct": 42.9,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -2400,6 +2672,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 1,
         "total": 7,
         "pct": 14.3,
+        "day_counts": [
+          0,
+          0,
+          1,
+          0
+        ],
         "rank": 2
       },
       {
@@ -2409,6 +2687,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 1,
         "total": 7,
         "pct": 14.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2418,6 +2702,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 7,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2427,6 +2717,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 7,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2436,6 +2732,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 7,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2445,6 +2747,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 7,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -2772,6 +3080,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 8,
         "total": 20,
         "pct": 40.0,
+        "day_counts": [
+          0,
+          8,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -2781,6 +3095,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 7,
         "total": 20,
         "pct": 35.0,
+        "day_counts": [
+          0,
+          0,
+          7,
+          0
+        ],
         "rank": 2
       },
       {
@@ -2790,6 +3110,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 7,
         "total": 20,
         "pct": 35.0,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2799,6 +3125,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 20,
         "pct": 20.0,
+        "day_counts": [
+          4,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2808,6 +3140,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 20,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2817,6 +3155,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 20,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2826,6 +3170,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 20,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -2898,6 +3248,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 3,
         "pct": 100.0,
+        "day_counts": [
+          0,
+          0,
+          3,
+          0
+        ],
         "rank": 1
       },
       {
@@ -2907,6 +3263,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 3,
         "pct": 100.0,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -2916,6 +3278,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 1,
         "total": 3,
         "pct": 33.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2925,6 +3293,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 3,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2934,6 +3308,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 3,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2943,6 +3323,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 3,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2952,6 +3338,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 3,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -3190,6 +3582,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 7,
         "total": 14,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          0,
+          7,
+          0
+        ],
         "rank": 1
       },
       {
@@ -3199,6 +3597,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 7,
         "total": 14,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -3208,6 +3612,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 14,
         "pct": 28.6,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -3217,6 +3627,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -3226,6 +3642,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -3235,6 +3657,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -3244,6 +3672,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -3452,6 +3886,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 12,
         "pct": 33.3,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -3461,6 +3901,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 12,
         "pct": 33.3,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -3470,6 +3916,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 1,
         "total": 12,
         "pct": 8.3,
+        "day_counts": [
+          1,
+          0,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -3479,6 +3931,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -3488,6 +3946,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -3497,6 +3961,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -3506,6 +3976,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -3714,6 +4190,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 9,
         "total": 12,
         "pct": 75.0,
+        "day_counts": [
+          0,
+          9,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -3723,6 +4205,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 8,
         "total": 12,
         "pct": 66.7,
+        "day_counts": [
+          0,
+          0,
+          8,
+          0
+        ],
         "rank": 2
       },
       {
@@ -3732,6 +4220,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 6,
         "total": 12,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          6,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -3741,6 +4235,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 12,
         "pct": 25.0,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -3750,6 +4250,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -3759,6 +4265,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -3768,6 +4280,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -4036,6 +4554,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 9,
         "total": 16,
         "pct": 56.2,
+        "day_counts": [
+          0,
+          4,
+          5,
+          0
+        ],
         "rank": 1
       },
       {
@@ -4045,6 +4569,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 5,
         "total": 16,
         "pct": 31.2,
+        "day_counts": [
+          0,
+          5,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -4054,6 +4584,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 16,
         "pct": 18.8,
+        "day_counts": [
+          3,
+          0,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -4063,6 +4599,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -4072,6 +4614,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -4081,6 +4629,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -4090,6 +4644,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -4270,6 +4830,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 10,
         "pct": 40.0,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -4279,6 +4845,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 10,
         "pct": 40.0,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -4288,6 +4860,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 3,
         "total": 10,
         "pct": 30.0,
+        "day_counts": [
+          0,
+          0,
+          3,
+          0
+        ],
         "rank": 3
       },
       {
@@ -4297,6 +4875,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -4306,6 +4890,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -4315,6 +4905,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -4324,6 +4920,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -4411,6 +5013,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 4,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          0,
+          2,
+          0
+        ],
         "rank": 1
       },
       {
@@ -4420,6 +5028,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 2,
         "total": 4,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -4429,6 +5043,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 1,
         "total": 4,
         "pct": 25.0,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -4438,6 +5058,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 4,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -4447,6 +5073,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 4,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -4456,6 +5088,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 4,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -4465,6 +5103,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 4,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -4688,6 +5332,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 9,
         "total": 13,
         "pct": 69.2,
+        "day_counts": [
+          0,
+          9,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -4697,6 +5347,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 7,
         "total": 13,
         "pct": 53.8,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -4706,6 +5362,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 7,
         "total": 13,
         "pct": 53.8,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -4715,6 +5377,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 5,
         "total": 13,
         "pct": 38.5,
+        "day_counts": [
+          0,
+          0,
+          5,
+          0
+        ],
         "rank": 4
       },
       {
@@ -4724,6 +5392,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 13,
         "pct": 30.8,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -4733,6 +5407,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 4,
         "total": 13,
         "pct": 30.8,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -4742,6 +5422,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -4992,6 +5678,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 7,
         "total": 16,
         "pct": 43.8,
+        "day_counts": [
+          5,
+          2,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -5001,6 +5693,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 7,
         "total": 16,
         "pct": 43.8,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -5010,6 +5708,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 6,
         "total": 16,
         "pct": 37.5,
+        "day_counts": [
+          0,
+          0,
+          6,
+          0
+        ],
         "rank": 3
       },
       {
@@ -5019,6 +5723,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 6,
         "total": 16,
         "pct": 37.5,
+        "day_counts": [
+          0,
+          4,
+          2,
+          0
+        ],
         "rank": 4
       },
       {
@@ -5028,6 +5738,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 5,
         "total": 16,
         "pct": 31.2,
+        "day_counts": [
+          5,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -5037,6 +5753,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -5046,6 +5768,12 @@ const INLINE_DEPLOY_TAKEOVERS = [
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -7471,10 +8199,10 @@ const INLINE_DEPLOY_CACHE_SUMMARY = {
   "oldest_date": "Fri, 06 Mar 2026 02:11:58 +0000",
   "newest_date": "Sat, 01 Aug 2026 10:27:45 +0000",
   "has_token": false,
-  "refreshed_at_unix": 1785581312,
-  "refreshed_at": "2026-08-01T10:48:32+00:00",
-  "build_label": "1785581312",
-  "refresh_source": "github-actions",
+  "refreshed_at_unix": 1785582227,
+  "refreshed_at": "2026-08-01T11:03:47+00:00",
+  "build_label": "1785582227",
+  "refresh_source": "manual-refresh-script",
   "error_history": [],
   "latest_checkin_at": "Sat, 01 Aug 2026 10:27:45 +0000",
   "warning_after_minutes": 90,
@@ -8820,6 +9548,46 @@ function getBeerRatingValue(beer) {
   return null;
 }
 
+var TAKEOVER_DAY_INFO_CACHE = {};
+
+function getTakeoverDayInfo(dateStr) {
+  if (!dateStr) return [];
+  if (TAKEOVER_DAY_INFO_CACHE[dateStr]) return TAKEOVER_DAY_INFO_CACHE[dateStr];
+  var base = new Date(dateStr + 'T00:00:00');
+  if (isNaN(base.getTime())) return [];
+  var days = [];
+  for (var i = 0; i < 4; i++) {
+    var d = new Date(base.getTime() + i * 86400000);
+    days.push({
+      label: d.toLocaleDateString('en-US', { weekday: 'short' }),
+      dateLabel: d.toLocaleDateString('en-US', { day: 'numeric', month: 'short' })
+    });
+  }
+  TAKEOVER_DAY_INFO_CACHE[dateStr] = days;
+  return days;
+}
+
+// Stacked per-day segments so multi-day attendance is visible at a glance;
+// falls back to a single flat bar if day-level data isn't available yet
+// (e.g. cached takeover data from before day_counts existed).
+function renderMemberResultBar(r, dayInfo) {
+  var dayCounts = Array.isArray(r.day_counts) ? r.day_counts : [];
+  var hasBreakdown = dayCounts.some(function(c) { return c > 0; });
+  if (!hasBreakdown || !r.total) {
+    return '<div class="member-result-bar" style="width:' + r.pct + '%"></div>';
+  }
+  var segs = '';
+  dayCounts.forEach(function(count, idx) {
+    if (!count) return;
+    var widthPct = count / r.total * 100;
+    var info = dayInfo[idx] || {};
+    var dayLabel = (info.label ? info.label + ' ' + info.dateLabel : 'Day ' + (idx + 1));
+    var titleText = dayLabel + ' — ' + count + (count === 1 ? ' beer' : ' beers');
+    segs += '<div class="member-result-segment day-color-' + idx + '" style="width:' + widthPct + '%" title="' + esc(titleText) + '"></div>';
+  });
+  return segs;
+}
+
 function renderBeerRating(beer) {
   var rating = getBeerRatingValue(beer);
   if (rating === null) {
@@ -9332,6 +10100,19 @@ function renderTakeovers() {
         html += '<div class="member-results">';
         html += '<div class="member-results-title">Member Completion</div>';
 
+        var takeoverDayInfo = getTakeoverDayInfo(t.date);
+        var hasDayBreakdown = t.member_results.some(function(r) {
+          return Array.isArray(r.day_counts) && r.day_counts.some(function(c) { return c > 0; });
+        });
+        if (hasDayBreakdown && takeoverDayInfo.length) {
+          html += '<div class="member-day-legend">';
+          takeoverDayInfo.forEach(function(d, idx) {
+            html += '<span class="day-legend-item"><span class="day-dot day-color-' + idx + '"></span>' +
+              esc(d.label) + ' ' + esc(d.dateLabel) + '</span>';
+          });
+          html += '</div>';
+        }
+
         // Podium — visual order: silver (left), gold (centre), bronze (right)
         var podiumAll = t.member_results.filter(function(r) { return r.checked > 0; });
         if (podiumAll.length > 0) {
@@ -9363,7 +10144,7 @@ function renderTakeovers() {
           html += '<div class="member-result-row' + (zero ? ' zero' : '') + '">' +
             '<div class="member-result-rank">' + r.rank + '</div>' +
             '<div class="member-result-name">' + esc(r.display_name) + '</div>' +
-            '<div class="member-result-bar-wrap"><div class="member-result-bar" style="width:' + r.pct + '%"></div></div>' +
+            '<div class="member-result-bar-wrap">' + renderMemberResultBar(r, takeoverDayInfo) + '</div>' +
             '<div class="member-result-stats">' + (zero ? '—' : r.checked + '/' + r.total + ' · ' + r.pct + '%') + '</div>' +
           '</div>';
         });

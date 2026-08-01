@@ -390,18 +390,31 @@ def compute_member_results_for_takeovers(takeovers, checkins, members):
             continue
 
         window_end = thu + timedelta(days=3)
-        week_rows = [c for c in parsed if thu <= c["d"] <= window_end]
+        # Sorted chronologically so a repeat checkin of the same beer on a
+        # later day is attributed to the day it was FIRST checked in.
+        week_rows = sorted(
+            (c for c in parsed if thu <= c["d"] <= window_end),
+            key=lambda c: c["d"],
+        )
         results = []
         for m in included:
             uname = m["username"].lower()
             seen = set()
+            day_counts = [0, 0, 0, 0]
             for c in week_rows:
                 if c["user"] != uname:
                     continue
+                key = None
                 if c["bid"] is not None and c["bid"] in event_beer_ids:
-                    seen.add(("id", c["bid"]))
+                    key = ("id", c["bid"])
                 elif c["bname"] in event_beer_names:
-                    seen.add(("n", c["bname"]))
+                    key = ("n", c["bname"])
+                if key is None or key in seen:
+                    continue
+                seen.add(key)
+                day_index = (c["d"] - thu).days
+                if 0 <= day_index < len(day_counts):
+                    day_counts[day_index] += 1
             checked = len(seen)
             pct = round(checked / total * 100, 1)
             results.append({
@@ -411,6 +424,7 @@ def compute_member_results_for_takeovers(takeovers, checkins, members):
                 "checked": checked,
                 "total": total,
                 "pct": pct,
+                "day_counts": day_counts,
             })
 
         results.sort(key=lambda x: (-x["pct"], -x["checked"], x["username"]))

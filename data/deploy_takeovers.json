@@ -201,6 +201,12 @@
         "checked": 9,
         "total": 12,
         "pct": 75.0,
+        "day_counts": [
+          0,
+          9,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -210,6 +216,12 @@
         "checked": 8,
         "total": 12,
         "pct": 66.7,
+        "day_counts": [
+          0,
+          0,
+          8,
+          0
+        ],
         "rank": 2
       },
       {
@@ -219,6 +231,12 @@
         "checked": 8,
         "total": 12,
         "pct": 66.7,
+        "day_counts": [
+          0,
+          8,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -228,6 +246,12 @@
         "checked": 5,
         "total": 12,
         "pct": 41.7,
+        "day_counts": [
+          0,
+          5,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -237,6 +261,12 @@
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -246,6 +276,12 @@
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -255,6 +291,12 @@
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -460,6 +502,12 @@
         "checked": 3,
         "total": 12,
         "pct": 25.0,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -469,6 +517,12 @@
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          0,
+          0,
+          2,
+          0
+        ],
         "rank": 2
       },
       {
@@ -478,6 +532,12 @@
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -487,6 +547,12 @@
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          2,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -496,6 +562,12 @@
         "checked": 1,
         "total": 12,
         "pct": 8.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -505,6 +577,12 @@
         "checked": 1,
         "total": 12,
         "pct": 8.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -514,6 +592,12 @@
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -673,6 +757,12 @@
         "checked": 7,
         "total": 14,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -682,6 +772,12 @@
         "checked": 6,
         "total": 14,
         "pct": 42.9,
+        "day_counts": [
+          6,
+          0,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -691,6 +787,12 @@
         "checked": 3,
         "total": 14,
         "pct": 21.4,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -700,6 +802,12 @@
         "checked": 3,
         "total": 14,
         "pct": 21.4,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -709,6 +817,12 @@
         "checked": 3,
         "total": 14,
         "pct": 21.4,
+        "day_counts": [
+          1,
+          2,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -718,6 +832,12 @@
         "checked": 2,
         "total": 14,
         "pct": 14.3,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -727,6 +847,12 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -908,6 +1034,12 @@
         "checked": 5,
         "total": 11,
         "pct": 45.5,
+        "day_counts": [
+          5,
+          0,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -917,6 +1049,12 @@
         "checked": 4,
         "total": 11,
         "pct": 36.4,
+        "day_counts": [
+          0,
+          0,
+          4,
+          0
+        ],
         "rank": 2
       },
       {
@@ -926,6 +1064,12 @@
         "checked": 3,
         "total": 11,
         "pct": 27.3,
+        "day_counts": [
+          3,
+          0,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -935,6 +1079,12 @@
         "checked": 2,
         "total": 11,
         "pct": 18.2,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -944,6 +1094,12 @@
         "checked": 0,
         "total": 11,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -953,6 +1109,12 @@
         "checked": 0,
         "total": 11,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -962,6 +1124,12 @@
         "checked": 0,
         "total": 11,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -1182,6 +1350,12 @@
         "checked": 2,
         "total": 13,
         "pct": 15.4,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -1191,6 +1365,12 @@
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -1200,6 +1380,12 @@
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -1209,6 +1395,12 @@
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -1218,6 +1410,12 @@
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -1227,6 +1425,12 @@
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -1236,6 +1440,12 @@
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -1414,6 +1624,12 @@
         "checked": 8,
         "total": 10,
         "pct": 80.0,
+        "day_counts": [
+          8,
+          0,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -1423,6 +1639,12 @@
         "checked": 5,
         "total": 10,
         "pct": 50.0,
+        "day_counts": [
+          5,
+          0,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -1432,6 +1654,12 @@
         "checked": 4,
         "total": 10,
         "pct": 40.0,
+        "day_counts": [
+          0,
+          0,
+          4,
+          0
+        ],
         "rank": 3
       },
       {
@@ -1441,6 +1669,12 @@
         "checked": 3,
         "total": 10,
         "pct": 30.0,
+        "day_counts": [
+          3,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -1450,6 +1684,12 @@
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -1459,6 +1699,12 @@
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -1468,6 +1714,12 @@
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -1600,6 +1852,12 @@
         "checked": 3,
         "total": 7,
         "pct": 42.9,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -1609,6 +1867,12 @@
         "checked": 1,
         "total": 7,
         "pct": 14.3,
+        "day_counts": [
+          0,
+          0,
+          1,
+          0
+        ],
         "rank": 2
       },
       {
@@ -1618,6 +1882,12 @@
         "checked": 1,
         "total": 7,
         "pct": 14.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -1627,6 +1897,12 @@
         "checked": 0,
         "total": 7,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -1636,6 +1912,12 @@
         "checked": 0,
         "total": 7,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -1645,6 +1927,12 @@
         "checked": 0,
         "total": 7,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -1654,6 +1942,12 @@
         "checked": 0,
         "total": 7,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -1981,6 +2275,12 @@
         "checked": 8,
         "total": 20,
         "pct": 40.0,
+        "day_counts": [
+          0,
+          8,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -1990,6 +2290,12 @@
         "checked": 7,
         "total": 20,
         "pct": 35.0,
+        "day_counts": [
+          0,
+          0,
+          7,
+          0
+        ],
         "rank": 2
       },
       {
@@ -1999,6 +2305,12 @@
         "checked": 7,
         "total": 20,
         "pct": 35.0,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2008,6 +2320,12 @@
         "checked": 4,
         "total": 20,
         "pct": 20.0,
+        "day_counts": [
+          4,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2017,6 +2335,12 @@
         "checked": 0,
         "total": 20,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2026,6 +2350,12 @@
         "checked": 0,
         "total": 20,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2035,6 +2365,12 @@
         "checked": 0,
         "total": 20,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -2107,6 +2443,12 @@
         "checked": 3,
         "total": 3,
         "pct": 100.0,
+        "day_counts": [
+          0,
+          0,
+          3,
+          0
+        ],
         "rank": 1
       },
       {
@@ -2116,6 +2458,12 @@
         "checked": 3,
         "total": 3,
         "pct": 100.0,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -2125,6 +2473,12 @@
         "checked": 1,
         "total": 3,
         "pct": 33.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2134,6 +2488,12 @@
         "checked": 0,
         "total": 3,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2143,6 +2503,12 @@
         "checked": 0,
         "total": 3,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2152,6 +2518,12 @@
         "checked": 0,
         "total": 3,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2161,6 +2533,12 @@
         "checked": 0,
         "total": 3,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -2399,6 +2777,12 @@
         "checked": 7,
         "total": 14,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          0,
+          7,
+          0
+        ],
         "rank": 1
       },
       {
@@ -2408,6 +2792,12 @@
         "checked": 7,
         "total": 14,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -2417,6 +2807,12 @@
         "checked": 4,
         "total": 14,
         "pct": 28.6,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2426,6 +2822,12 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2435,6 +2837,12 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2444,6 +2852,12 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2453,6 +2867,12 @@
         "checked": 0,
         "total": 14,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -2661,6 +3081,12 @@
         "checked": 4,
         "total": 12,
         "pct": 33.3,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -2670,6 +3096,12 @@
         "checked": 4,
         "total": 12,
         "pct": 33.3,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -2679,6 +3111,12 @@
         "checked": 1,
         "total": 12,
         "pct": 8.3,
+        "day_counts": [
+          1,
+          0,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2688,6 +3126,12 @@
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2697,6 +3141,12 @@
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2706,6 +3156,12 @@
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2715,6 +3171,12 @@
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -2923,6 +3385,12 @@
         "checked": 9,
         "total": 12,
         "pct": 75.0,
+        "day_counts": [
+          0,
+          9,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -2932,6 +3400,12 @@
         "checked": 8,
         "total": 12,
         "pct": 66.7,
+        "day_counts": [
+          0,
+          0,
+          8,
+          0
+        ],
         "rank": 2
       },
       {
@@ -2941,6 +3415,12 @@
         "checked": 6,
         "total": 12,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          6,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -2950,6 +3430,12 @@
         "checked": 3,
         "total": 12,
         "pct": 25.0,
+        "day_counts": [
+          0,
+          3,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -2959,6 +3445,12 @@
         "checked": 2,
         "total": 12,
         "pct": 16.7,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -2968,6 +3460,12 @@
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -2977,6 +3475,12 @@
         "checked": 0,
         "total": 12,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -3245,6 +3749,12 @@
         "checked": 9,
         "total": 16,
         "pct": 56.2,
+        "day_counts": [
+          0,
+          4,
+          5,
+          0
+        ],
         "rank": 1
       },
       {
@@ -3254,6 +3764,12 @@
         "checked": 5,
         "total": 16,
         "pct": 31.2,
+        "day_counts": [
+          0,
+          5,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -3263,6 +3779,12 @@
         "checked": 3,
         "total": 16,
         "pct": 18.8,
+        "day_counts": [
+          3,
+          0,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -3272,6 +3794,12 @@
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -3281,6 +3809,12 @@
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -3290,6 +3824,12 @@
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -3299,6 +3839,12 @@
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -3479,6 +4025,12 @@
         "checked": 4,
         "total": 10,
         "pct": 40.0,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -3488,6 +4040,12 @@
         "checked": 4,
         "total": 10,
         "pct": 40.0,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -3497,6 +4055,12 @@
         "checked": 3,
         "total": 10,
         "pct": 30.0,
+        "day_counts": [
+          0,
+          0,
+          3,
+          0
+        ],
         "rank": 3
       },
       {
@@ -3506,6 +4070,12 @@
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -3515,6 +4085,12 @@
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -3524,6 +4100,12 @@
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -3533,6 +4115,12 @@
         "checked": 0,
         "total": 10,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -3620,6 +4208,12 @@
         "checked": 2,
         "total": 4,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          0,
+          2,
+          0
+        ],
         "rank": 1
       },
       {
@@ -3629,6 +4223,12 @@
         "checked": 2,
         "total": 4,
         "pct": 50.0,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -3638,6 +4238,12 @@
         "checked": 1,
         "total": 4,
         "pct": 25.0,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -3647,6 +4253,12 @@
         "checked": 0,
         "total": 4,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 4
       },
       {
@@ -3656,6 +4268,12 @@
         "checked": 0,
         "total": 4,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -3665,6 +4283,12 @@
         "checked": 0,
         "total": 4,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -3674,6 +4298,12 @@
         "checked": 0,
         "total": 4,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -3897,6 +4527,12 @@
         "checked": 9,
         "total": 13,
         "pct": 69.2,
+        "day_counts": [
+          0,
+          9,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -3906,6 +4542,12 @@
         "checked": 7,
         "total": 13,
         "pct": 53.8,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -3915,6 +4557,12 @@
         "checked": 7,
         "total": 13,
         "pct": 53.8,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 3
       },
       {
@@ -3924,6 +4572,12 @@
         "checked": 5,
         "total": 13,
         "pct": 38.5,
+        "day_counts": [
+          0,
+          0,
+          5,
+          0
+        ],
         "rank": 4
       },
       {
@@ -3933,6 +4587,12 @@
         "checked": 4,
         "total": 13,
         "pct": 30.8,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -3942,6 +4602,12 @@
         "checked": 4,
         "total": 13,
         "pct": 30.8,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -3951,6 +4617,12 @@
         "checked": 0,
         "total": 13,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
@@ -4201,6 +4873,12 @@
         "checked": 7,
         "total": 16,
         "pct": 43.8,
+        "day_counts": [
+          5,
+          2,
+          0,
+          0
+        ],
         "rank": 1
       },
       {
@@ -4210,6 +4888,12 @@
         "checked": 7,
         "total": 16,
         "pct": 43.8,
+        "day_counts": [
+          0,
+          7,
+          0,
+          0
+        ],
         "rank": 2
       },
       {
@@ -4219,6 +4903,12 @@
         "checked": 6,
         "total": 16,
         "pct": 37.5,
+        "day_counts": [
+          0,
+          0,
+          6,
+          0
+        ],
         "rank": 3
       },
       {
@@ -4228,6 +4918,12 @@
         "checked": 6,
         "total": 16,
         "pct": 37.5,
+        "day_counts": [
+          0,
+          4,
+          2,
+          0
+        ],
         "rank": 4
       },
       {
@@ -4237,6 +4933,12 @@
         "checked": 5,
         "total": 16,
         "pct": 31.2,
+        "day_counts": [
+          5,
+          0,
+          0,
+          0
+        ],
         "rank": 5
       },
       {
@@ -4246,6 +4948,12 @@
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 6
       },
       {
@@ -4255,6 +4963,12 @@
         "checked": 0,
         "total": 16,
         "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
         "rank": 7
       }
     ]
