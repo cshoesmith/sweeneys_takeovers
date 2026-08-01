@@ -2282,6 +2282,32 @@
     "rating_count": 18,
     "brewery_name": "One Drop Brewing Co"
   },
+  "6720169": {
+    "beer_id": 6720169,
+    "beer_name": "Fire V2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6720169_1b37c_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6720169_1b37c_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 8,
+    "beer_ibu": 0,
+    "beer_description": "FIRE | West Coast IIPA | 8.00%\r\n\r\nPowered by the sun, FIRE celebrates the impact of Rocky Ridge’s solar system, which generated over 321,000 kWh of renewable energy last year. Enough to power every Rocky Ridge staff member’s home while keeping 173 tonnes of CO2 out of the atmosphere.\r\n\r\nThis West Coast IIPA leans hard into classic hop character. Pouring amber with a light hop haze, it delivers bold aromas of pine resin, citrus, and dank hop intensity. A touch of malt sweetness upfront quickly gives way to assertive bitterness and layers of old-school US hop flavour that linger long after each sip.",
+    "rating_score": 3.99009,
+    "rating_count": 111,
+    "brewery_name": "Rocky Ridge Brewing Co."
+  },
+  "6720168": {
+    "beer_id": 6720168,
+    "beer_name": "Heart v2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6720168_64e93_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6720168_64e93_hd.jpeg",
+    "beer_style": "Stout - White / Golden",
+    "beer_abv": 6,
+    "beer_ibu": 0,
+    "beer_description": "HEART | Choc Raspberry White Stout | 6.00%\r\n\r\nHEART represents Rocky Ridge’s commitment to brewing with purpose, proudly working toward all 17 United Nations Sustainable Development Goals and proving that great beer and meaningful impact can go hand in hand.\r\n\r\nBrewed with regen-grown certified sustainable Pilsner malt from Tolga Farms in Kulin alongside cacao nibs, raspberry, coffee, chocolate, and vanilla, this White Stout delivers complexity in every sip. A golden body with a subtle pink hue carries aromas of fresh raspberry layered over chocolate, coffee, and vanilla. Rich without becoming overly sweet, the palate balances dessert-like indulgence with just enough bitterness to keep everything in harmony.",
+    "rating_score": 3.73435,
+    "rating_count": 115,
+    "brewery_name": "Rocky Ridge Brewing Co."
+  },
   "5751311": {
     "beer_id": 5751311,
     "beer_name": "Join the Dots Ice Cream Sour",
@@ -2359,5 +2385,18 @@
     "rating_score": 0,
     "rating_count": 8,
     "brewery_name": "One Drop Brewing Co"
+  },
+  "6720165": {
+    "beer_id": 6720165,
+    "beer_name": "Water V2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6720165_22662_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6720165_22662_hd.jpeg",
+    "beer_style": "Sour - Fruited",
+    "beer_abv": 4.2,
+    "beer_ibu": 0,
+    "beer_description": "WATER | Guava Habanero Berliner | 4.20%\r\n\r\nClean, bright, and built with purpose, WATER celebrates Rocky Ridge’s ongoing mission to reduce operational emissions by tackling the two remaining major factors: wastewater and fuel usage.\r\n\r\nPouring a glowing golden hue with a slight haze, this Guava Habanero Berliner leads with vibrant tropical guava before a gradual warmth from habanero builds across the palate. Zingy acidity keeps everything crisp and refreshing, creating a beer that’s lively, layered, and surprisingly drinkable for something carrying a little fire beneath the surface.",
+    "rating_score": 3.59045,
+    "rating_count": 89,
+    "brewery_name": "Rocky Ridge Brewing Co."
   }
 }
