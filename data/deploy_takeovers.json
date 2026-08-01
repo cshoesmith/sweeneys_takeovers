@@ -3910,10 +3910,10 @@
   {
     "date": "2026-07-30",
     "brewery": "One Drop Brewing Co",
-    "checkins": 45,
+    "checkins": 51,
     "unique_beers": 10,
-    "total_checkins_that_week": 75,
-    "share_pct": 60.0,
+    "total_checkins_that_week": 86,
+    "share_pct": 59.3,
     "beers": [
       "All Day",
       "Angel Falls - DDH DIPA",
@@ -4089,21 +4089,21 @@
         "rank": 2
       },
       {
-        "username": "hiriser",
-        "display_name": "Willy",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 3,
         "total": 10,
         "pct": 30.0,
         "rank": 3
       },
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 1,
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 3,
         "total": 10,
-        "pct": 10.0,
+        "pct": 30.0,
         "rank": 4
       },
       {
