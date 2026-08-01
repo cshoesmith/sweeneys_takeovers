@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1590470617,
+      "created_at": "Sat, 01 Aug 2026 09:49:38 +0000",
+      "user": "Plonker",
+      "checkin_comment": "Fantastic. So easy to drink",
+      "beer_name": "Summer Baddie*",
+      "beer_id": 5996551,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5996551_70c92_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4
+    },
+    {
       "checkin_id": 1590466610,
       "created_at": "Sat, 01 Aug 2026 08:50:54 +0000",
       "user": "Plonker",
