@@ -1013,6 +1013,7 @@ def build_past_events_from_takeovers(takeovers):
             beer_names = list(takeover.get("beers") or [])
 
         brewery = (takeover.get("brewery") or "").strip()
+        breweries = [b for b in (takeover.get("breweries") or []) if b] or ([brewery] if brewery else [])
         date_value = (takeover.get("date") or "").strip()
         events.append({
             "event_id": event_id,
@@ -1026,7 +1027,7 @@ def build_past_events_from_takeovers(takeovers):
             "unique_beers": takeover.get("unique_beers") if takeover.get("unique_beers") is not None else len(beer_names),
             "unique_users": None,
             "dominant_brewery": brewery,
-            "breweries": [brewery] if brewery else [],
+            "breweries": breweries,
             "beer_names": beer_names,
             "description": "",
             "where": "",

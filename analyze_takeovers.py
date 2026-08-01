@@ -17,13 +17,18 @@ import csv
 import json
 import sys
 from collections import Counter, defaultdict
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 CACHE_FILE = Path(__file__).parent / "checkins_cache.json"
 OUTPUT_DIR = Path(__file__).parent / "output"
 TAKEOVER_WEEKDAYS = (3, 4, 5, 6)  # Thursday -> Sunday
 TAKEOVER_WINDOW_LABEL = "Thursday-Sunday"
+
+# Weeks before this Thursday keep the legacy single-brewery-per-week heuristic
+# so already-published takeover history doesn't get rewritten. Weeks on or
+# after this date use the joint-takeover-aware heuristic (see detect_takeovers).
+MULTI_BREWERY_HEURISTIC_START_DATE = date(2026, 7, 30)
 
 
 def load_checkins():
@@ -60,7 +65,7 @@ def get_thursday_week_key(dt):
     return thursday
 
 
-def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
+def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4, multi_brewery_since=MULTI_BREWERY_HEURISTIC_START_DATE):
     """
     Detect tap takeovers by analyzing Thursday-Sunday checkin patterns.
 
@@ -68,6 +73,12 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
     - A single brewery has >= min_checkins unique checkins during the Thu-Sun window
     - That brewery represents >= min_ratio of all checkins that day/week
     - The brewery is NOT the venue's usual house taps
+
+    Weeks on or after ``multi_brewery_since`` may combine more than one
+    qualifying non-house brewery into a single joint takeover (e.g. two
+    breweries co-pouring the same weekend). Pass ``None`` to always allow
+    combining, or a date to only enable it from that week onward, keeping
+    earlier weeks on the legacy single-brewery-per-week behavior.
 
     Returns a list of detected takeovers sorted by date.
     """
@@ -197,11 +208,14 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
             best_event = max(week_events.items(), key=lambda x: x[1]["count"])
             event_name = best_event[0]
             event_info = best_event[1]
-            # The dominant brewery in the event
+            # The dominant brewery in the event (label), plus every brewery
+            # that poured during it (an event can be a joint takeover too).
             top_brewery = event_info["breweries"].most_common(1)[0][0]
+            all_event_breweries = [name for name, _count in event_info["breweries"].most_common()]
             takeovers.append({
                 "date": thursday_date.isoformat(),
                 "brewery": top_brewery,
+                "breweries": all_event_breweries,
                 "checkins": event_info["count"],
                 "unique_beers": len(event_info["beers"]),
                 "total_checkins_that_week": total_week,
@@ -216,7 +230,16 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
             })
             continue
 
-        # Priority 2: Fallback to brewery dominance heuristic
+        # Priority 2: Fallback to brewery dominance heuristic.
+        # A single takeover week can feature more than one guest brewery (a
+        # joint takeover), so on/after multi_brewery_since we collect every
+        # non-house brewery that clears the threshold on its own, instead of
+        # stopping at the first (dominant) one. Earlier weeks keep the
+        # original single-brewery-per-week behavior so published history for
+        # those weeks doesn't change.
+        allow_multi_brewery = multi_brewery_since is None or thursday_date >= multi_brewery_since
+
+        qualifying_breweries = []
         for brewery, count in brewery_counter.most_common():
             if brewery in house_breweries:
                 continue
@@ -224,35 +247,35 @@ def detect_takeovers(checkins, min_checkins=3, min_ratio=0.4):
             ratio = count / total_week
             unique_beers = len(brewery_beers[brewery])
 
-            if count >= min_checkins and ratio >= min_ratio:
-                takeovers.append({
-                    "date": thursday_date.isoformat(),
-                    "brewery": brewery,
-                    "checkins": count,
-                    "unique_beers": unique_beers,
-                    "total_checkins_that_week": total_week,
-                    "share_pct": round(ratio * 100, 1),
-                    "beers": sorted(brewery_beers[brewery]),
-                    "beer_details": sorted(brewery_beer_details[brewery].values(), key=lambda b: b.get("beer_name", "")),
-                    "source": "heuristic",
-                    "details": brewery_checkin_details[brewery],
-                })
-                break  # Only take the top non-house brewery per week
-            elif count >= min_checkins and unique_beers >= 3:
-                # Multiple unique beers from same brewery is a strong signal
-                takeovers.append({
-                    "date": thursday_date.isoformat(),
-                    "brewery": brewery,
-                    "checkins": count,
-                    "unique_beers": unique_beers,
-                    "total_checkins_that_week": total_week,
-                    "share_pct": round(ratio * 100, 1),
-                    "beers": sorted(brewery_beers[brewery]),
-                    "beer_details": sorted(brewery_beer_details[brewery].values(), key=lambda b: b.get("beer_name", "")),
-                    "source": "heuristic",
-                    "details": brewery_checkin_details[brewery],
-                })
-                break
+            if count >= min_checkins and (ratio >= min_ratio or unique_beers >= 3):
+                qualifying_breweries.append(brewery)
+                if not allow_multi_brewery:
+                    break  # legacy: only the top qualifying brewery per week
+
+        if qualifying_breweries:
+            combined_beers = set()
+            combined_beer_details = {}
+            combined_details = []
+            combined_checkins = 0
+            for brewery in qualifying_breweries:
+                combined_beers.update(brewery_beers[brewery])
+                combined_beer_details.update(brewery_beer_details[brewery])
+                combined_details.extend(brewery_checkin_details[brewery])
+                combined_checkins += brewery_counter[brewery]
+
+            takeovers.append({
+                "date": thursday_date.isoformat(),
+                "brewery": " & ".join(qualifying_breweries),
+                "breweries": qualifying_breweries,
+                "checkins": combined_checkins,
+                "unique_beers": len(combined_beers),
+                "total_checkins_that_week": total_week,
+                "share_pct": round(combined_checkins / total_week * 100, 1),
+                "beers": sorted(combined_beers),
+                "beer_details": sorted(combined_beer_details.values(), key=lambda b: b.get("beer_name", "")),
+                "source": "heuristic",
+                "details": combined_details,
+            })
 
     return takeovers
 
