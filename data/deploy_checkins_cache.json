@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1590466610,
+      "created_at": "Sat, 01 Aug 2026 08:50:54 +0000",
+      "user": "Plonker",
+      "checkin_comment": "Oh this is great. Another beauty from One Drop. Could drink this all night",
+      "beer_name": "Join the Dots Ice Cream Sour",
+      "beer_id": 5751311,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5751311_ee2b7_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4
+    },
+    {
       "checkin_id": 1590461768,
       "created_at": "Sat, 01 Aug 2026 07:15:58 +0000",
       "user": "SeamusH",
