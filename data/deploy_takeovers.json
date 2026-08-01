@@ -3962,10 +3962,10 @@
       "One Drop Brewing Co",
       "Rocky Ridge Brewing Co."
     ],
-    "checkins": 87,
+    "checkins": 90,
     "unique_beers": 16,
-    "total_checkins_that_week": 91,
-    "share_pct": 95.6,
+    "total_checkins_that_week": 94,
+    "share_pct": 95.7,
     "beers": [
       "All Day",
       "Angel Falls - DDH DIPA",
@@ -4019,7 +4019,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6064928_2d558_sm.jpeg",
         "beer_style": "IPA - Imperial / Double",
         "beer_abv": 8.5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6064928_2d558_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "PLANET RESPONSIBLY. \r\n\r\nSustainability, a word that is so overused. For us here at Rocky Ridge, it is simply an all encompassing commitment to doing the right thing. Thanks to our team of Planeteers and their powers combined, Rocky Ridge Brewing has proudly become Australia’s first Certified Sustainable and Carbon Neutral Brewery. But the work is far from over...Hold onto your beer and join us on our journey to Net Zero, as we strive to tread lightly and deliver f*&^ great beer in the best way possible.\r\n\r\nTHE POWER IS YOURS!\r\n",
+        "rating_score": 4.07601,
+        "rating_count": 321,
+        "brewery_name": "Rocky Ridge Brewing Co."
       },
       {
         "beer_id": 6720171,
@@ -4027,7 +4033,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6720171_3b042_sm.jpeg",
         "beer_style": "IPA - Triple",
         "beer_abv": 9,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6720171_3b042_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "CAPTAIN JINDONG | TDH Cali TIPA | 9.00%\r\n\r\nTHE POWER IS YOURS. CAPTAIN JINDONG brings the full series together, celebrating Rocky Ridge reducing total carbon emissions by almost 40% since 2020 while simultaneously growing production by more than 230%. Bigger output, smaller footprint!\r\n\r\nThis Triple Dry Hopped Cali TIPA combines modern US and New Zealand hop varieties with a clean, crisp malt base designed to let the hops fully shine. Pale gold with a slight haze, it bursts with tropical fruit, berries, melon, and unmistakable Kiwi dankness. Massive hop saturation and assertive bitterness drive through to a long, resinous finish that demands another sip.",
+        "rating_score": 4.14248,
+        "rating_count": 113,
+        "brewery_name": "Rocky Ridge Brewing Co."
       },
       {
         "beer_id": 6666449,
@@ -4049,7 +4061,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6720166_a8cda_sm.jpeg",
         "beer_style": "IPA - New England / Hazy",
         "beer_abv": 5.8,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6720166_a8cda_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "EARTH | NEIPA | 5.80%\r\n\r\nEARTH highlights Rocky Ridge’s commitment to reducing waste by diverting 100% of spent grain away from landfill and into feed for local cattle. Preventing more than 471 tonnes of CO2 emissions annually.\r\n\r\nSoft, hazy, and packed with tropical hop character, this NEIPA pours golden with a thick haze and pillowy body. Pineapple leads the charge alongside coconut, citrus, and melon, while low bitterness keeps the focus firmly on juicy drinkability and saturated hop flavour. ",
+        "rating_score": 3.85634,
+        "rating_count": 134,
+        "brewery_name": "Rocky Ridge Brewing Co."
       },
       {
         "beer_id": 6755623,
@@ -4204,21 +4222,21 @@
         "rank": 3
       },
       {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 6,
+        "total": 16,
+        "pct": 37.5,
+        "rank": 4
+      },
+      {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 5,
         "total": 16,
         "pct": 31.2,
-        "rank": 4
-      },
-      {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 4,
-        "total": 16,
-        "pct": 25.0,
         "rank": 5
       },
       {

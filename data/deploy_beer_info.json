@@ -2217,6 +2217,32 @@
     "rating_count": 56,
     "brewery_name": "One Drop Brewing Co"
   },
+  "6064928": {
+    "beer_id": 6064928,
+    "beer_name": "Captain Jindong",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6064928_2d558_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6064928_2d558_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 8.5,
+    "beer_ibu": 0,
+    "beer_description": "PLANET RESPONSIBLY. \r\n\r\nSustainability, a word that is so overused. For us here at Rocky Ridge, it is simply an all encompassing commitment to doing the right thing. Thanks to our team of Planeteers and their powers combined, Rocky Ridge Brewing has proudly become Australia’s first Certified Sustainable and Carbon Neutral Brewery. But the work is far from over...Hold onto your beer and join us on our journey to Net Zero, as we strive to tread lightly and deliver f*&^ great beer in the best way possible.\r\n\r\nTHE POWER IS YOURS!\r\n",
+    "rating_score": 4.07601,
+    "rating_count": 321,
+    "brewery_name": "Rocky Ridge Brewing Co."
+  },
+  "6720171": {
+    "beer_id": 6720171,
+    "beer_name": "Captain Jindong V2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6720171_3b042_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6720171_3b042_hd.jpeg",
+    "beer_style": "IPA - Triple",
+    "beer_abv": 9,
+    "beer_ibu": 0,
+    "beer_description": "CAPTAIN JINDONG | TDH Cali TIPA | 9.00%\r\n\r\nTHE POWER IS YOURS. CAPTAIN JINDONG brings the full series together, celebrating Rocky Ridge reducing total carbon emissions by almost 40% since 2020 while simultaneously growing production by more than 230%. Bigger output, smaller footprint!\r\n\r\nThis Triple Dry Hopped Cali TIPA combines modern US and New Zealand hop varieties with a clean, crisp malt base designed to let the hops fully shine. Pale gold with a slight haze, it bursts with tropical fruit, berries, melon, and unmistakable Kiwi dankness. Massive hop saturation and assertive bitterness drive through to a long, resinous finish that demands another sip.",
+    "rating_score": 4.14248,
+    "rating_count": 113,
+    "brewery_name": "Rocky Ridge Brewing Co."
+  },
   "6666449": {
     "beer_id": 6666449,
     "beer_name": "DIVIDENDS OATCREAM*",
@@ -2229,6 +2255,19 @@
     "rating_score": 4.01423,
     "rating_count": 123,
     "brewery_name": "One Drop Brewing Co"
+  },
+  "6720166": {
+    "beer_id": 6720166,
+    "beer_name": "Earth V2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6720166_a8cda_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6720166_a8cda_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 5.8,
+    "beer_ibu": 0,
+    "beer_description": "EARTH | NEIPA | 5.80%\r\n\r\nEARTH highlights Rocky Ridge’s commitment to reducing waste by diverting 100% of spent grain away from landfill and into feed for local cattle. Preventing more than 471 tonnes of CO2 emissions annually.\r\n\r\nSoft, hazy, and packed with tropical hop character, this NEIPA pours golden with a thick haze and pillowy body. Pineapple leads the charge alongside coconut, citrus, and melon, while low bitterness keeps the focus firmly on juicy drinkability and saturated hop flavour. ",
+    "rating_score": 3.85634,
+    "rating_count": 134,
+    "brewery_name": "Rocky Ridge Brewing Co."
   },
   "6755623": {
     "beer_id": 6755623,
