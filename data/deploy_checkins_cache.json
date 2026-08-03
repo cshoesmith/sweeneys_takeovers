@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1591182248,
+      "created_at": "Mon, 03 Aug 2026 08:23:57 +0000",
+      "user": "VPop88",
+      "checkin_comment": "",
+      "beer_name": "WALKTHROUGH",
+      "beer_id": 6791042,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6791042_557e2_sm.jpeg",
+      "beer_style": "Stout - Imperial / Double Pastry",
+      "beer_abv": 10,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4.5
+    },
+    {
+      "checkin_id": 1591182231,
+      "created_at": "Mon, 03 Aug 2026 08:23:17 +0000",
+      "user": "VPop88",
+      "checkin_comment": "",
+      "beer_name": "Zappa Saison",
+      "beer_id": 5936149,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5936149_21c4f_sm.jpeg",
+      "beer_style": "Farmhouse Ale - Saison",
+      "beer_abv": 9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 4
+    },
+    {
       "checkin_id": 1591179348,
       "created_at": "Mon, 03 Aug 2026 06:09:08 +0000",
       "user": "HideousCock",
