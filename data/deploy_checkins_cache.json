@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1591546695,
+      "created_at": "Wed, 05 Aug 2026 07:02:04 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Double Dark Red IPA",
+      "beer_id": 2223438,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2223438_ac402_sm.jpeg",
+      "beer_style": "Red Ale - Imperial / Double",
+      "beer_abv": 10,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Six String Brewing Company",
+      "brewery_id": 49352,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1591543617,
       "created_at": "Wed, 05 Aug 2026 04:33:02 +0000",
       "user": "Dunionpfc",
