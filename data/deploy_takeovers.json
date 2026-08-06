@@ -4990,5 +4990,175 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-08-06",
+    "brewery": "Behemoth Brewing Company",
+    "breweries": [
+      "Behemoth Brewing Company"
+    ],
+    "checkins": 10,
+    "unique_beers": 3,
+    "total_checkins_that_week": 31,
+    "share_pct": 32.3,
+    "beers": [
+      "Cordless Bungy",
+      "That Hop Juice - DDH Hazy Double IPA",
+      "Undercover American"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6755640,
+        "beer_name": "Cordless Bungy",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5011960_26fce_sm.jpeg",
+        "beer_style": "IPA - New Zealand",
+        "beer_abv": 6.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 3.85,
+        "rating_count": 112,
+        "brewery_name": "Behemoth Brewing Company",
+        "brewery_country": "New Zealand",
+        "beer_page_url": "https://untappd.com/b/behemoth-brewing-company-cordless-bungy/6755640"
+      },
+      {
+        "beer_id": 3842598,
+        "beer_name": "That Hop Juice - DDH Hazy Double IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3842598_080ea_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double New England / Hazy",
+        "beer_abv": 8.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3842598_b9447_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Damn that is hoppy! \r\nWe juiced a crazy amount of hops into this Hazy Double IPA. This beer does not skimp on the hop bling, loading this beer with Citra, Mosaic, Motueka and [Hort] 4337 [(Nectaron®)].\r\nSo stop reading this, get the beer into a baller ass glass and enjoy that hop juice you crave!",
+        "rating_score": 4.17812,
+        "rating_count": 1408,
+        "brewery_name": "Behemoth Brewing Company"
+      },
+      {
+        "beer_id": 6738192,
+        "beer_name": "Undercover American",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6738192_97e90_sm.jpeg",
+        "beer_style": "IPA - New Zealand",
+        "beer_abv": 6.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6738192_97e90_hd.jpeg",
+        "beer_ibu": 0,
+        "rating_score": 3.89224,
+        "rating_count": 58,
+        "brewery_name": "Behemoth Brewing Company",
+        "brewery_country": "New Zealand",
+        "beer_page_url": "https://untappd.com/b/behemoth-brewing-company-undercover-american/6738192"
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]

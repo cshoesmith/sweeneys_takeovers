@@ -2398,5 +2398,46 @@
     "rating_score": 3.59045,
     "rating_count": 89,
     "brewery_name": "Rocky Ridge Brewing Co."
+  },
+  "6755640": {
+    "beer_id": 6755640,
+    "beer_name": "Cordless Bungy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5011960_26fce_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - New Zealand",
+    "beer_abv": 6.8,
+    "beer_ibu": 0,
+    "rating_score": 3.85,
+    "rating_count": 112,
+    "brewery_name": "Behemoth Brewing Company",
+    "brewery_country": "New Zealand",
+    "beer_page_url": "https://untappd.com/b/behemoth-brewing-company-cordless-bungy/6755640"
+  },
+  "3842598": {
+    "beer_id": 3842598,
+    "beer_name": "That Hop Juice - DDH Hazy Double IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3842598_080ea_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3842598_b9447_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double New England / Hazy",
+    "beer_abv": 8.5,
+    "beer_ibu": 0,
+    "beer_description": "Damn that is hoppy! \r\nWe juiced a crazy amount of hops into this Hazy Double IPA. This beer does not skimp on the hop bling, loading this beer with Citra, Mosaic, Motueka and [Hort] 4337 [(Nectaron®)].\r\nSo stop reading this, get the beer into a baller ass glass and enjoy that hop juice you crave!",
+    "rating_score": 4.17812,
+    "rating_count": 1408,
+    "brewery_name": "Behemoth Brewing Company"
+  },
+  "6738192": {
+    "beer_id": 6738192,
+    "beer_name": "Undercover American",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6738192_97e90_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6738192_97e90_hd.jpeg",
+    "beer_style": "IPA - New Zealand",
+    "beer_abv": 6.8,
+    "beer_ibu": 0,
+    "rating_score": 3.89224,
+    "rating_count": 58,
+    "brewery_name": "Behemoth Brewing Company",
+    "brewery_country": "New Zealand",
+    "beer_page_url": "https://untappd.com/b/behemoth-brewing-company-undercover-american/6738192"
   }
 }
