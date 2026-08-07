@@ -4997,10 +4997,10 @@
     "breweries": [
       "Behemoth Brewing Company"
     ],
-    "checkins": 22,
+    "checkins": 24,
     "unique_beers": 3,
-    "total_checkins_that_week": 79,
-    "share_pct": 27.8,
+    "total_checkins_that_week": 82,
+    "share_pct": 29.3,
     "beers": [
       "Cordless Bungy",
       "That Hop Juice - DDH Hazy Double IPA",
@@ -5070,6 +5070,21 @@
         "rank": 1
       },
       {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 1,
+        "total": 3,
+        "pct": 33.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
@@ -5082,7 +5097,7 @@
           0,
           0
         ],
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "docta",
@@ -5097,7 +5112,7 @@
           0,
           0
         ],
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "hiriser",
@@ -5112,27 +5127,12 @@
           0,
           0
         ],
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 3,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "rank": 5
-      },
-      {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
         "total": 3,
         "pct": 0.0,
