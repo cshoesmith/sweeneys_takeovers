@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1592396512,
+      "created_at": "Sat, 08 Aug 2026 10:56:30 +0000",
+      "user": "baggymayhem",
+      "checkin_comment": "",
+      "beer_name": "Dark Harvest Fresh Hop IPA (2026)",
+      "beer_id": 6649277,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6649277_234c5_sm.jpeg",
+      "beer_style": "IPA - Black / Cascadian Dark Ale",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1592396297,
+      "created_at": "Sat, 08 Aug 2026 10:55:11 +0000",
+      "user": "baggymayhem",
+      "checkin_comment": "",
+      "beer_name": "Hazy Harvest Fresh Hop IPA (2026)",
+      "beer_id": 6649273,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6649273_32591_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1592378432,
       "created_at": "Sat, 08 Aug 2026 07:19:34 +0000",
       "user": "mw1414",
