@@ -4997,10 +4997,10 @@
     "breweries": [
       "Behemoth Brewing Company"
     ],
-    "checkins": 28,
+    "checkins": 30,
     "unique_beers": 3,
-    "total_checkins_that_week": 101,
-    "share_pct": 27.7,
+    "total_checkins_that_week": 105,
+    "share_pct": 28.6,
     "beers": [
       "Cordless Bungy",
       "That Hop Juice - DDH Hazy Double IPA",
@@ -5088,13 +5088,13 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 1,
+        "checked": 2,
         "total": 3,
-        "pct": 33.3,
+        "pct": 66.7,
         "day_counts": [
           0,
           1,
-          0,
+          1,
           0
         ],
         "rank": 3
