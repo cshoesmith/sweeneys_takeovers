@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1592418841,
+      "created_at": "Sat, 08 Aug 2026 12:36:42 +0000",
+      "user": "craigmoro",
+      "checkin_comment": "",
+      "beer_name": "Fallen Leaves Red Rye",
+      "beer_id": 6807977,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807977_476e5_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1592396512,
       "created_at": "Sat, 08 Aug 2026 10:56:30 +0000",
       "user": "baggymayhem",
