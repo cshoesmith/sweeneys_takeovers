@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1593104215,
+      "created_at": "Mon, 10 Aug 2026 09:45:26 +0000",
+      "user": "ale_n",
+      "checkin_comment": "I swear I was there. This is good shit!",
+      "beer_name": "Cordless Bungy",
+      "beer_id": 6755640,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6755640_541ae_sm.jpeg",
+      "beer_style": "IPA - New Zealand",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Behemoth Brewing Company",
+      "brewery_id": 73616,
+      "rating": 4
+    },
+    {
       "checkin_id": 1593094453,
       "created_at": "Mon, 10 Aug 2026 03:36:28 +0000",
       "user": "Chrisrestall",
