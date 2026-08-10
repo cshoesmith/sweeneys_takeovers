@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1593094453,
+      "created_at": "Mon, 10 Aug 2026 03:36:28 +0000",
+      "user": "Chrisrestall",
+      "checkin_comment": "",
+      "beer_name": "That Hop Juice - DDH Hazy Double IPA",
+      "beer_id": 3842598,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3842598_080ea_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Behemoth Brewing Company",
+      "brewery_id": 73616,
+      "rating": 4.75
+    },
+    {
       "checkin_id": 1592418841,
       "created_at": "Sat, 08 Aug 2026 12:36:42 +0000",
       "user": "craigmoro",
