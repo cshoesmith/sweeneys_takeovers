@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1593429005,
+      "created_at": "Wed, 12 Aug 2026 05:57:17 +0000",
+      "user": "jimmy-swings",
+      "checkin_comment": "Alyssa likes Carmen Sandiego. I’ve apparently found her: undercover as an American, hiding in Sydney, speaking with a Kiwi accent. Geography is officially fucked.",
+      "beer_name": "Undercover American",
+      "beer_id": 6738192,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6738192_97e90_sm.jpeg",
+      "beer_style": "IPA - New Zealand",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Behemoth Brewing Company",
+      "brewery_id": 73616,
+      "rating": 4.2
+    },
+    {
       "checkin_id": 1593261460,
       "created_at": "Tue, 11 Aug 2026 10:33:12 +0000",
       "user": "mcjphillips",
