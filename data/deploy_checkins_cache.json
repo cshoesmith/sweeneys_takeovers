@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1593430027,
+      "created_at": "Wed, 12 Aug 2026 06:49:50 +0000",
+      "user": "mcjphillips",
+      "checkin_comment": "",
+      "beer_name": "Space Opera Black IPA",
+      "beer_id": 6700757,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Black / Cascadian Dark Ale",
+      "beer_abv": 5.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Akasha Brewing Company",
+      "brewery_id": 188552,
+      "rating": 4.4
+    },
+    {
       "checkin_id": 1593429005,
       "created_at": "Wed, 12 Aug 2026 05:57:17 +0000",
       "user": "jimmy-swings",
