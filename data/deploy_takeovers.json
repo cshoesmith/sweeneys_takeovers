@@ -5167,9 +5167,9 @@
     "breweries": [
       "Woolshed Brewery"
     ],
-    "checkins": 5,
+    "checkins": 6,
     "unique_beers": 4,
-    "total_checkins_that_week": 5,
+    "total_checkins_that_week": 6,
     "share_pct": 100.0,
     "beers": [
       "Cherax Destructor",
@@ -5226,7 +5226,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4796641_746ca_sm.jpeg",
         "beer_style": "Stout - White / Golden",
         "beer_abv": 6.8,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4796641_45156_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Autumn camping. It’s about the first campfire for the Season. Busting out the marshmallows, and finding the Perfect stick. That one person who sets it on fire and Burns it to a crisp, and has to pretend they like it like That. The perfect stick toasted marshmallow oat cream White choc stout is a combination of biscuit malts, golden Naked oats, and sticky toasted marshmallow. Toast it up!",
+        "rating_score": 3.63364,
+        "rating_count": 214,
+        "brewery_name": "Woolshed Brewery"
       }
     ],
     "source": "heuristic",
