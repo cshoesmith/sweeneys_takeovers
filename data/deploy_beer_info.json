@@ -2439,5 +2439,44 @@
     "brewery_name": "Behemoth Brewing Company",
     "brewery_country": "New Zealand",
     "beer_page_url": "https://untappd.com/b/behemoth-brewing-company-undercover-american/6738192"
+  },
+  "589354": {
+    "beer_id": 589354,
+    "beer_name": "Cherax Destructor",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-589354_cf7b4_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-589354_a514d_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 5.8,
+    "beer_ibu": 50,
+    "beer_description": "We’ve heard that the humble yabby, Cherax Destructor, prefers a vegetarian diet - so we’ve decided to honour the Murray River’s favourite freshwater crustacean by brewing an international pale ale, a beer with loads of hops. This gives the beer punchy tropical fruit flavours with an assertive bitterness that you can really wrap your claws around!",
+    "rating_score": 3.65767,
+    "rating_count": 1649,
+    "brewery_name": "Woolshed Brewery"
+  },
+  "3293879": {
+    "beer_id": 3293879,
+    "beer_name": "Great Southern Trendkiller",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3293879_7cb61_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3293879_1744a_hd.jpeg",
+    "beer_style": "IPA - Black / Cascadian Dark Ale",
+    "beer_abv": 7.2,
+    "beer_ibu": 100,
+    "beer_description": "We do beer differently down south. Dark roasted malts shred into to an aggressive hopping schedule, that sees Simcoe, Chinook & Cascade Hops punch you in the face with a vulgar display of power.",
+    "rating_score": 3.79762,
+    "rating_count": 525,
+    "brewery_name": "Woolshed Brewery"
+  },
+  "2348120": {
+    "beer_id": 2348120,
+    "beer_name": "The Big Orange",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2348120_074a2_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2348120_c3d41_hd.jpeg",
+    "beer_style": "Sour - Other",
+    "beer_abv": 4.1,
+    "beer_ibu": 5,
+    "beer_description": "Using Australian barley and wheat malts, fresh Riverland orange juice, and an over-night souring in the Woolshed’s brewhouse, we have created a juice laden banger to quench any thirst - a light styled wheat beer with a citrus zing!",
+    "rating_score": 3.22348,
+    "rating_count": 1184,
+    "brewery_name": "Woolshed Brewery"
   }
 }
