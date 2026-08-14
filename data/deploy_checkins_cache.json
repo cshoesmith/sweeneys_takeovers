@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1593879185,
+      "created_at": "Fri, 14 Aug 2026 12:28:00 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "real zing.",
+      "beer_name": "Bling Bling Imperial IPA",
+      "beer_id": 3362162,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3362162_b3a41_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1593871596,
+      "created_at": "Fri, 14 Aug 2026 12:37:38 +0000",
+      "user": "craigmoro",
+      "checkin_comment": "",
+      "beer_name": "Judas the Dark",
+      "beer_id": 82275,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-82275_5ee72_sm.jpeg",
+      "beer_style": "Dark Ale",
+      "beer_abv": 4.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Woolshed Brewery",
+      "brewery_id": 14120,
+      "rating": 4
+    },
+    {
       "checkin_id": 1593870068,
       "created_at": "Fri, 14 Aug 2026 12:26:57 +0000",
       "user": "craigmoro",
