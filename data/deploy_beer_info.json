@@ -2440,6 +2440,32 @@
     "brewery_country": "New Zealand",
     "beer_page_url": "https://untappd.com/b/behemoth-brewing-company-undercover-american/6738192"
   },
+  "66346": {
+    "beer_id": 66346,
+    "beer_name": "Amazon Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-66346_d5ef6_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-66346_8dc55_hd.jpeg",
+    "beer_style": "Pale Ale - Australian",
+    "beer_abv": 4.5,
+    "beer_ibu": 25,
+    "beer_description": "The original beer of Woolshed Brewery, Amazon Ale is named after Amazon Creek, which runs upstream of Wilkadene Station in the Riverland of South Australia. This is our original classic Aussie Pale, using Australian malted barley and wheat, and a solid line up of hops.",
+    "rating_score": 3.41274,
+    "rating_count": 789,
+    "brewery_name": "Woolshed Brewery"
+  },
+  "6122632": {
+    "beer_id": 6122632,
+    "beer_name": "Aussie Lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6122632_c16ba_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6122632_c16ba_hd.jpeg",
+    "beer_style": "Lager - Pale",
+    "beer_abv": 4.2,
+    "beer_ibu": 0,
+    "beer_description": "Brewed with 100% Australian-grown malt barley and hops, Aussie Lager delivers the crisp, clean, and refreshing flavours that define a true Aussie classic. Crafted with a lighter body and subtle bitterness, it’s perfect for warm, sunny days.",
+    "rating_score": 3.36875,
+    "rating_count": 40,
+    "brewery_name": "Woolshed Brewery"
+  },
   "589354": {
     "beer_id": 589354,
     "beer_name": "Cherax Destructor",
@@ -2479,6 +2505,19 @@
     "brewery_name": "Woolshed Brewery",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/woolshed-brewery-hazy-pale/6067518"
+  },
+  "82275": {
+    "beer_id": 82275,
+    "beer_name": "Judas the Dark",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-82275_5ee72_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-82275_e0b3a_hd.jpeg",
+    "beer_style": "Dark Ale",
+    "beer_abv": 4.7,
+    "beer_ibu": 20,
+    "beer_description": "The Judas Sheep was used to lead the flock, and its dark undertones have inspired us to make a truly unique beer. Introducing our dark ale with native Australian roasted wattleseed, showcasing nutty and dark chocolate flavours, be careful you are not misled!",
+    "rating_score": 3.64809,
+    "rating_count": 1256,
+    "brewery_name": "Woolshed Brewery"
   },
   "5502712": {
     "beer_id": 5502712,
