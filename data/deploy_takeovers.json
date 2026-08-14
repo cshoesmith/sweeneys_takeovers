@@ -5167,15 +5167,16 @@
     "breweries": [
       "Woolshed Brewery"
     ],
-    "checkins": 9,
-    "unique_beers": 6,
-    "total_checkins_that_week": 9,
+    "checkins": 11,
+    "unique_beers": 7,
+    "total_checkins_that_week": 11,
     "share_pct": 100.0,
     "beers": [
       "Cherax Destructor",
       "Great Southern Trendkiller",
       "Hazy Pale",
       "Outback Amber",
+      "Summer Ale",
       "The Big Orange",
       "The Perfect Stick"
     ],
@@ -5238,6 +5239,20 @@
         "brewery_name": "Woolshed Brewery"
       },
       {
+        "beer_id": 300017,
+        "beer_name": "Summer Ale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-300017_e5744_sm.jpeg",
+        "beer_style": "Blonde / Golden Ale - Other",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-300017_278e9_hd.jpeg",
+        "beer_ibu": 15,
+        "beer_description": "We brewed this beer to celebrate sun filled Riverland summers, and sharing beers with friends. This hand-crafted Australian blonde ale uses all Australian malt, a touch of wheat, and new world hop varieties for a subtle fruity character.",
+        "rating_score": 3.30543,
+        "rating_count": 976,
+        "brewery_name": "Woolshed Brewery"
+      },
+      {
         "beer_id": 2348120,
         "beer_name": "The Big Orange",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2348120_074a2_sm.jpeg",
@@ -5272,12 +5287,12 @@
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 1,
-        "total": 6,
-        "pct": 16.7,
+        "checked": 2,
+        "total": 7,
+        "pct": 28.6,
         "day_counts": [
           0,
-          1,
+          2,
           0,
           0
         ],
@@ -5288,7 +5303,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5303,7 +5318,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5318,7 +5333,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5333,7 +5348,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5348,7 +5363,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5363,7 +5378,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,

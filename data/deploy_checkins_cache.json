@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1593842926,
+      "created_at": "Fri, 14 Aug 2026 03:43:10 +0000",
+      "user": "docta",
+      "checkin_comment": "",
+      "beer_name": "The Perfect Stick",
+      "beer_id": 4796641,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4796641_746ca_sm.jpeg",
+      "beer_style": "Stout - White / Golden",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Woolshed Brewery",
+      "brewery_id": 14120,
+      "rating": 4.25
+    },
+    {
+      "checkin_id": 1593842073,
+      "created_at": "Fri, 14 Aug 2026 03:29:32 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Summer Ale",
+      "beer_id": 300017,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-300017_e5744_sm.jpeg",
+      "beer_style": "Blonde / Golden Ale - Other",
+      "beer_abv": 4.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Woolshed Brewery",
+      "brewery_id": 14120,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1593839362,
       "created_at": "Fri, 14 Aug 2026 02:53:17 +0000",
       "user": "docta",

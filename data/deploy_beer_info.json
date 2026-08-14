@@ -2493,6 +2493,19 @@
     "rating_count": 125,
     "brewery_name": "Woolshed Brewery"
   },
+  "300017": {
+    "beer_id": 300017,
+    "beer_name": "Summer Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-300017_e5744_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-300017_278e9_hd.jpeg",
+    "beer_style": "Blonde / Golden Ale - Other",
+    "beer_abv": 4.2,
+    "beer_ibu": 15,
+    "beer_description": "We brewed this beer to celebrate sun filled Riverland summers, and sharing beers with friends. This hand-crafted Australian blonde ale uses all Australian malt, a touch of wheat, and new world hop varieties for a subtle fruity character.",
+    "rating_score": 3.30543,
+    "rating_count": 976,
+    "brewery_name": "Woolshed Brewery"
+  },
   "2348120": {
     "beer_id": 2348120,
     "beer_name": "The Big Orange",
