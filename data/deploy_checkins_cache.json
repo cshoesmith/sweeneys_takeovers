@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1593843947,
+      "created_at": "Fri, 14 Aug 2026 04:02:55 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Outback Amber",
+      "beer_id": 5502712,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5502712_d1e38_sm.jpeg",
+      "beer_style": "Red Ale - American Amber / Red",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Woolshed Brewery",
+      "brewery_id": 14120,
+      "rating": 4
+    },
+    {
       "checkin_id": 1593842926,
       "created_at": "Fri, 14 Aug 2026 03:43:10 +0000",
       "user": "docta",
