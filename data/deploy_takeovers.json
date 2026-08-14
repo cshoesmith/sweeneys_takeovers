@@ -5167,10 +5167,10 @@
     "breweries": [
       "Woolshed Brewery"
     ],
-    "checkins": 30,
+    "checkins": 33,
     "unique_beers": 10,
-    "total_checkins_that_week": 30,
-    "share_pct": 100.0,
+    "total_checkins_that_week": 35,
+    "share_pct": 94.3,
     "beers": [
       "Amazon Ale",
       "Aussie Lager",
@@ -5377,12 +5377,12 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
+        "checked": 1,
         "total": 10,
-        "pct": 0.0,
+        "pct": 10.0,
         "day_counts": [
           0,
-          0,
+          1,
           0,
           0
         ],
