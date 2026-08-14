@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1593839362,
+      "created_at": "Fri, 14 Aug 2026 02:53:17 +0000",
+      "user": "docta",
+      "checkin_comment": "",
+      "beer_name": "Outback Amber",
+      "beer_id": 5502712,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5502712_d1e38_sm.jpeg",
+      "beer_style": "Red Ale - American Amber / Red",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Woolshed Brewery",
+      "brewery_id": 14120,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1593838253,
+      "created_at": "Fri, 14 Aug 2026 02:41:11 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Hazy Pale",
+      "beer_id": 6067518,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6067518_4b0d5_sm.jpeg",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 4.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Woolshed Brewery",
+      "brewery_id": 14120,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1593629196,
       "created_at": "Thu, 13 Aug 2026 09:53:43 +0000",
       "user": "BelfieldBrewer",

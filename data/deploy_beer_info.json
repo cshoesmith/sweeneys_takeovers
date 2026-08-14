@@ -2466,6 +2466,33 @@
     "rating_count": 525,
     "brewery_name": "Woolshed Brewery"
   },
+  "6067518": {
+    "beer_id": 6067518,
+    "beer_name": "Hazy Pale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6067518_4b0d5_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6067518_4b0d5_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 4.7,
+    "beer_ibu": 0,
+    "rating_score": 3.60802,
+    "rating_count": 81,
+    "brewery_name": "Woolshed Brewery",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/woolshed-brewery-hazy-pale/6067518"
+  },
+  "5502712": {
+    "beer_id": 5502712,
+    "beer_name": "Outback Amber",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5502712_d1e38_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5502712_b8f1a_hd.jpeg",
+    "beer_style": "Red Ale - American Amber / Red",
+    "beer_abv": 5.1,
+    "beer_ibu": 0,
+    "beer_description": "Embark on a flavour-filled journey to the Riverland with our Outback Amber Ale. Showcasing a rich, copper-hued body with luscious caramel sweetness and infused with Australian Eclipse hops, it offers a delightful blend of floral and citrusy aromas.",
+    "rating_score": 3.6852,
+    "rating_count": 125,
+    "brewery_name": "Woolshed Brewery"
+  },
   "2348120": {
     "beer_id": 2348120,
     "beer_name": "The Big Orange",

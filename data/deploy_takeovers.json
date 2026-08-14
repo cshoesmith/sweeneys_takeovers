@@ -5167,13 +5167,15 @@
     "breweries": [
       "Woolshed Brewery"
     ],
-    "checkins": 7,
-    "unique_beers": 4,
-    "total_checkins_that_week": 7,
+    "checkins": 9,
+    "unique_beers": 6,
+    "total_checkins_that_week": 9,
     "share_pct": 100.0,
     "beers": [
       "Cherax Destructor",
       "Great Southern Trendkiller",
+      "Hazy Pale",
+      "Outback Amber",
       "The Big Orange",
       "The Perfect Stick"
     ],
@@ -5204,6 +5206,35 @@
         "beer_description": "We do beer differently down south. Dark roasted malts shred into to an aggressive hopping schedule, that sees Simcoe, Chinook & Cascade Hops punch you in the face with a vulgar display of power.",
         "rating_score": 3.79762,
         "rating_count": 525,
+        "brewery_name": "Woolshed Brewery"
+      },
+      {
+        "beer_id": 6067518,
+        "beer_name": "Hazy Pale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6067518_4b0d5_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6067518_4b0d5_hd.jpeg",
+        "beer_ibu": 0,
+        "rating_score": 3.60802,
+        "rating_count": 81,
+        "brewery_name": "Woolshed Brewery",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/woolshed-brewery-hazy-pale/6067518"
+      },
+      {
+        "beer_id": 5502712,
+        "beer_name": "Outback Amber",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5502712_d1e38_sm.jpeg",
+        "beer_style": "Red Ale - American Amber / Red",
+        "beer_abv": 5.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5502712_b8f1a_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Embark on a flavour-filled journey to the Riverland with our Outback Amber Ale. Showcasing a rich, copper-hued body with luscious caramel sweetness and infused with Australian Eclipse hops, it offers a delightful blend of floral and citrusy aromas.",
+        "rating_score": 3.6852,
+        "rating_count": 125,
         "brewery_name": "Woolshed Brewery"
       },
       {
@@ -5238,26 +5269,26 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 4,
-        "pct": 0.0,
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 1,
+        "total": 6,
+        "pct": 16.7,
         "day_counts": [
           0,
-          0,
+          1,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5272,7 +5303,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 4,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5287,7 +5318,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5302,7 +5333,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5317,7 +5348,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5332,7 +5363,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
