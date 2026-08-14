@@ -5163,25 +5163,29 @@
   },
   {
     "date": "2026-08-13",
-    "brewery": "Woolshed Brewery",
+    "brewery": "Woolshed Brewery & Future Brewing",
     "breweries": [
-      "Woolshed Brewery"
+      "Woolshed Brewery",
+      "Future Brewing"
     ],
-    "checkins": 33,
-    "unique_beers": 10,
-    "total_checkins_that_week": 35,
-    "share_pct": 94.3,
+    "checkins": 39,
+    "unique_beers": 13,
+    "total_checkins_that_week": 40,
+    "share_pct": 97.5,
     "beers": [
       "Amazon Ale",
       "Aussie Lager",
       "Cherax Destructor",
+      "Golden Curse",
       "Great Southern Trendkiller",
       "Hazy Pale",
       "Judas the Dark",
+      "Just Juice 2026",
       "Outback Amber",
       "Summer Ale",
       "The Big Orange",
-      "The Perfect Stick"
+      "The Perfect Stick",
+      "Ton Up"
     ],
     "beer_details": [
       {
@@ -5227,6 +5231,20 @@
         "brewery_name": "Woolshed Brewery"
       },
       {
+        "beer_id": 6774136,
+        "beer_name": "Golden Curse",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6774136_3a645_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 6.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6774136_50f3d_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Triple dry hopped with Nelson and Nectaron, delivering bright passionfruit, ripe peach and fresh white grape aromatics over a lean, crisp body. Bursting with modern hop character, it finishes clean, dry and crushable.",
+        "rating_score": 3.99837,
+        "rating_count": 92,
+        "brewery_name": "Future Brewing"
+      },
+      {
         "beer_id": 3293879,
         "beer_name": "Great Southern Trendkiller",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3293879_7cb61_sm.jpeg",
@@ -5268,6 +5286,20 @@
         "rating_score": 3.64809,
         "rating_count": 1256,
         "brewery_name": "Woolshed Brewery"
+      },
+      {
+        "beer_id": 6735830,
+        "beer_name": "Just Juice 2026",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6735830_c31a3_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 7.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6735830_c31a3_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This Hazy IPA is double dry hopped with Citra, Nelson and Motueka. Fresh mango smoothie and lime mojito. Loaded with passionfruit, mango and lime zest.",
+        "rating_score": 3.86121,
+        "rating_count": 58,
+        "brewery_name": "Future Brewing"
       },
       {
         "beer_id": 5502712,
@@ -5324,47 +5356,61 @@
         "rating_score": 3.63364,
         "rating_count": 214,
         "brewery_name": "Woolshed Brewery"
+      },
+      {
+        "beer_id": 6544285,
+        "beer_name": "Ton Up",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6544285_e13db_sm.jpeg",
+        "beer_style": "IPA - Triple New England / Hazy",
+        "beer_abv": 10,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6544285_e13db_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Our 100th beer is here! This Hazy TIPA was triple dry hopped with Peacharine, Motueka, Nelson and Galaxy. All the tropical fruit and sweet citrus plus even more stonefruit. Big, hop saturated with a soft, lush body.\r\n",
+        "rating_score": 4.32258,
+        "rating_count": 186,
+        "brewery_name": "Future Brewing"
       }
     ],
     "source": "heuristic",
     "member_results": [
       {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 4,
-        "total": 10,
-        "pct": 40.0,
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 5,
+        "total": 13,
+        "pct": 38.5,
         "day_counts": [
           0,
-          4,
+          5,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 3,
-        "total": 10,
-        "pct": 30.0,
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 4,
+        "total": 13,
+        "pct": 30.8,
         "day_counts": [
           0,
-          3,
+          4,
           0,
           0
         ],
         "rank": 2
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 2,
-        "total": 10,
-        "pct": 20.0,
+        "total": 13,
+        "pct": 15.4,
         "day_counts": [
           0,
           2,
@@ -5374,41 +5420,41 @@
         "rank": 3
       },
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 1,
-        "total": 10,
-        "pct": 10.0,
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 2,
+        "total": 13,
+        "pct": 15.4,
         "day_counts": [
           0,
-          1,
+          2,
           0,
           0
         ],
         "rank": 4
       },
       {
-        "username": "hiriser",
-        "display_name": "Willy",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
-        "checked": 0,
-        "total": 10,
-        "pct": 0.0,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 1,
+        "total": 13,
+        "pct": 7.7,
         "day_counts": [
           0,
-          0,
+          1,
           0,
           0
         ],
         "rank": 5
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 10,
+        "total": 13,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5423,7 +5469,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 13,
         "pct": 0.0,
         "day_counts": [
           0,
