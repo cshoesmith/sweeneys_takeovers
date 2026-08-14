@@ -5167,9 +5167,9 @@
     "breweries": [
       "Woolshed Brewery"
     ],
-    "checkins": 28,
+    "checkins": 30,
     "unique_beers": 10,
-    "total_checkins_that_week": 28,
+    "total_checkins_that_week": 30,
     "share_pct": 100.0,
     "beers": [
       "Amazon Ale",
@@ -5344,24 +5344,24 @@
         "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 2,
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 3,
         "total": 10,
-        "pct": 20.0,
+        "pct": 30.0,
         "day_counts": [
           0,
-          2,
+          3,
           0,
           0
         ],
         "rank": 2
       },
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
         "total": 10,
         "pct": 20.0,
