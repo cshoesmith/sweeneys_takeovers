@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1594202977,
+      "created_at": "Sat, 15 Aug 2026 06:23:56 +0000",
+      "user": "RiskyRob",
+      "checkin_comment": "Just had a sip. Mild, nice",
+      "beer_name": "Great Southern Trendkiller",
+      "beer_id": 3293879,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3293879_7cb61_sm.jpeg",
+      "beer_style": "IPA - Black / Cascadian Dark Ale",
+      "beer_abv": 7.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Woolshed Brewery",
+      "brewery_id": 14120,
+      "rating": 0
+    },
+    {
       "checkin_id": 1594198826,
       "created_at": "Sat, 15 Aug 2026 04:52:12 +0000",
       "user": "RiskyRob",
