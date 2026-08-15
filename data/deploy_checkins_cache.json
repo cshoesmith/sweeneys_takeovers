@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1594212106,
+      "created_at": "Sat, 15 Aug 2026 09:21:57 +0000",
+      "user": "jake_lyons_3577",
+      "checkin_comment": "I didn’t have a drink just rating the place. Urban rooftop\nFeel pretty cool",
+      "beer_name": "Crux",
+      "beer_id": 149058,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Belgian Blonde",
+      "beer_abv": 5.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Monkish Brewing Co.",
+      "brewery_id": 21152,
+      "rating": 3
+    },
+    {
       "checkin_id": 1594202977,
       "created_at": "Sat, 15 Aug 2026 06:23:56 +0000",
       "user": "RiskyRob",
