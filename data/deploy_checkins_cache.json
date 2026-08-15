@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1594225911,
+      "created_at": "Sat, 15 Aug 2026 11:15:24 +0000",
+      "user": "BagOfGooner",
+      "checkin_comment": "Quite a rich toffee/caramel flavour but with sweet malt. Easy going, nothing spectacular",
+      "beer_name": "Jaxon Red IPA",
+      "beer_id": 2961957,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2961957_411b3_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 5.9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badlands Brewery",
+      "brewery_id": 4322,
+      "rating": 3
+    },
+    {
+      "checkin_id": 1594220053,
+      "created_at": "Sat, 15 Aug 2026 10:39:01 +0000",
+      "user": "BagOfGooner",
+      "checkin_comment": "Ignored the Hazy IPA warning sign, probably shouldn't have. Not my thing. Fruity with no bitterness. Passionfruit and Pineapple heavy. Can hardly call this beer.",
+      "beer_name": "Friday JR",
+      "beer_id": 6622193,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6622193_ffbab_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bodriggy Brewing Co.",
+      "brewery_id": 222733,
+      "rating": 2
+    },
+    {
       "checkin_id": 1594214999,
       "created_at": "Sat, 15 Aug 2026 09:56:24 +0000",
       "user": "BagOfGooner",
