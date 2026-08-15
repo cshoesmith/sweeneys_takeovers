@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1594214999,
+      "created_at": "Sat, 15 Aug 2026 09:56:24 +0000",
+      "user": "BagOfGooner",
+      "checkin_comment": "Upfront with its earthy flavour with no big malty backbone, it's straight. Makes it easy drinking",
+      "beer_name": "Outback Amber",
+      "beer_id": 5502712,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5502712_d1e38_sm.jpeg",
+      "beer_style": "Red Ale - American Amber / Red",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Woolshed Brewery",
+      "brewery_id": 14120,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1594212106,
       "created_at": "Sat, 15 Aug 2026 09:21:57 +0000",
       "user": "jake_lyons_3577",
