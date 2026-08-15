@@ -2479,6 +2479,19 @@
     "rating_count": 1649,
     "brewery_name": "Woolshed Brewery"
   },
+  "2790132": {
+    "beer_id": 2790132,
+    "beer_name": "Double Destructor",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2790132_980a2_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2790132_47ff8_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 8.3,
+    "beer_ibu": 90,
+    "beer_description": "An amped up version of our Cherax Destructor, this IIPA cranks up the hops and malt, so you can really get your claws into something gutsy.  Cascade, Galaxy, Ella & Amarillo hops are pumped up to 90 IBU, to give you a full but balanced bitterness, with an intense tropical and candied citrus flavour and aroma.  More bite than a yabbie in your trousers!",
+    "rating_score": 3.77273,
+    "rating_count": 308,
+    "brewery_name": "Woolshed Brewery"
+  },
   "6774136": {
     "beer_id": 6774136,
     "beer_name": "Golden Curse",

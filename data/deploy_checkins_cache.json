@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1594232061,
+      "created_at": "Sat, 15 Aug 2026 11:47:23 +0000",
+      "user": "deano77au",
+      "checkin_comment": "",
+      "beer_name": "Double Destructor",
+      "beer_id": 2790132,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2790132_980a2_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Woolshed Brewery",
+      "brewery_id": 14120,
+      "rating": 5
+    },
+    {
       "checkin_id": 1594225911,
       "created_at": "Sat, 15 Aug 2026 11:15:24 +0000",
       "user": "BagOfGooner",
