@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1595036753,
+      "created_at": "Tue, 18 Aug 2026 08:41:44 +0000",
+      "user": "Kenyonluke",
+      "checkin_comment": "",
+      "beer_name": "Former Tenant",
+      "beer_id": 757814,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-757814_18596_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 7.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Modus Brewing",
+      "brewery_id": 145927,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1595036155,
       "created_at": "Tue, 18 Aug 2026 08:11:38 +0000",
       "user": "Ossie1972",
