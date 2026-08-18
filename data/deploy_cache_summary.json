@@ -1,16 +1,16 @@
 {
   "venue_id": 107565,
-  "total_checkins": 2257,
+  "total_checkins": 2258,
   "oldest_checkin_id": 1556952516,
   "oldest_date": "Fri, 06 Mar 2026 02:11:58 +0000",
-  "newest_date": "Tue, 18 Aug 2026 03:08:08 +0000",
+  "newest_date": "Tue, 18 Aug 2026 06:59:13 +0000",
   "has_token": false,
-  "refreshed_at_unix": 1787034473,
-  "refreshed_at": "2026-08-18T06:27:53+00:00",
-  "build_label": "1787034473",
+  "refreshed_at_unix": 1787038109,
+  "refreshed_at": "2026-08-18T07:28:29+00:00",
+  "build_label": "1787038109",
   "refresh_source": "github-actions",
   "error_history": [],
-  "latest_checkin_at": "Tue, 18 Aug 2026 03:08:08 +0000",
+  "latest_checkin_at": "Tue, 18 Aug 2026 06:59:13 +0000",
   "warning_after_minutes": 90,
   "stale_after_minutes": 180
 }

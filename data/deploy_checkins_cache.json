@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1595034997,
+      "created_at": "Tue, 18 Aug 2026 06:59:13 +0000",
+      "user": "1000tastybeers",
+      "checkin_comment": "",
+      "beer_name": "Friday JR",
+      "beer_id": 6622193,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6622193_ffbab_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bodriggy Brewing Co.",
+      "brewery_id": 222733,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1595029510,
       "created_at": "Tue, 18 Aug 2026 03:08:08 +0000",
       "user": "ale_n",
