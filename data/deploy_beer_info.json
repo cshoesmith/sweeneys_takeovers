@@ -2662,5 +2662,47 @@
     "rating_score": 3.67106,
     "rating_count": 254,
     "brewery_name": "La Sirène Brewing"
+  },
+  "6784400": {
+    "beer_id": 6784400,
+    "beer_name": "Raspberry Praline",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3645217_20dd5_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Stout - Other",
+    "beer_abv": 5.8,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 8,
+    "brewery_name": "La Sirène Brewing",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/la-sirene-brewing-raspberry-praline/6784400"
+  },
+  "6655329": {
+    "beer_id": 6655329,
+    "beer_name": "Seville",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6059047_37ee0_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Pale Ale - Fruited",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "rating_score": 3.70476,
+    "rating_count": 21,
+    "brewery_name": "La Sirène Brewing",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/la-sirene-brewing-seville/6655329"
+  },
+  "6086112": {
+    "beer_id": 6086112,
+    "beer_name": "Village Saison",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6086112_7678f_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6086112_7678f_hd.jpeg",
+    "beer_style": "Farmhouse Ale - Saison",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "rating_score": 3.94318,
+    "rating_count": 44,
+    "brewery_name": "La Sirène Brewing",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/la-sirene-brewing-village-saison/6086112"
   }
 }
