@@ -2622,5 +2622,45 @@
     "rating_score": 4.32258,
     "rating_count": 186,
     "brewery_name": "Future Brewing"
+  },
+  "2474952": {
+    "beer_id": 2474952,
+    "beer_name": "Citray Sour",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2474952_ea989_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2474952_59e6e_hd.jpeg",
+    "beer_style": "Farmhouse Ale - Other",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "The Citray Sour is a refreshing Citrus-infused Farmhouse Sour made with our House yeast that showcases fresh local Victorian grown Citrus against a unique base Farmhouse Ale. Initially the heady Citrus aromatics transport you to an orange orchard that then gives way to a welcomed acidity (courtesy of our natural souring process and our own strain of bacteria) that finishes dry, citrusy & refreshingly tart.",
+    "rating_score": 3.73278,
+    "rating_count": 4499,
+    "brewery_name": "La Sirène Brewing"
+  },
+  "6835597": {
+    "beer_id": 6835597,
+    "beer_name": "DDH Pale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5643781_19cf0_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Pale Ale - Other",
+    "beer_abv": 4.8,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 0,
+    "brewery_name": "La Sirène Brewing",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/la-sirene-brewing-ddh-pale/6835597"
+  },
+  "4870144": {
+    "beer_id": 4870144,
+    "beer_name": "Natural Pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4870144_83c00_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4870144_e1ce2_hd.jpeg",
+    "beer_style": "Pilsner - Czech / Bohemian",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "We present NATURAL PILSNER our rustic style Pilsner made with organic malts & hops and Certified Organic.\r\n\r\nOur Natural Pilsner was brewed in January in a Bohemian-style using Organic Barley & Vienna malts from Voyager Craft Malts and wheat from Whispering Pines Organics. We traditionally Lagered it at 0C for 6 weeks+ to create a smooth mouthfeel with a nice snappy bitterness. We resisted filtering this very simple beer as we felt the filtering process would strip the soft subtleties that the organic ingredients showcase in this lager.\r\n\r\nThe NATURAL PILSNER is a nod to those traditional Bohemian-style Pilsners made in Bohemia back in the 1700’s when this style was created. NATURAL PILSNER is smooth drinking and crisp, with subtle cereal and grassy notes it is a welcome addition to our Organic Collection.",
+    "rating_score": 3.67106,
+    "rating_count": 254,
+    "brewery_name": "La Sirène Brewing"
   }
 }
