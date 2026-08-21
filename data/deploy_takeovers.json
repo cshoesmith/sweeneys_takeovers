@@ -5503,10 +5503,10 @@
       "La Sirène Brewing",
       "Azvex Brewing Company"
     ],
-    "checkins": 27,
+    "checkins": 29,
     "unique_beers": 11,
-    "total_checkins_that_week": 28,
-    "share_pct": 96.4,
+    "total_checkins_that_week": 30,
+    "share_pct": 96.7,
     "beers": [
       "Cacaodemon III",
       "Citray Sour",
@@ -5702,12 +5702,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 1,
+        "checked": 2,
         "total": 11,
-        "pct": 9.1,
+        "pct": 18.2,
         "day_counts": [
           0,
-          1,
+          2,
           0,
           0
         ],
@@ -5717,12 +5717,12 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 1,
+        "checked": 2,
         "total": 11,
-        "pct": 9.1,
+        "pct": 18.2,
         "day_counts": [
           0,
-          1,
+          2,
           0,
           0
         ],
