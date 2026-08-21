@@ -5503,10 +5503,10 @@
       "La Sirène Brewing",
       "Azvex Brewing Company"
     ],
-    "checkins": 29,
+    "checkins": 30,
     "unique_beers": 11,
-    "total_checkins_that_week": 30,
-    "share_pct": 96.7,
+    "total_checkins_that_week": 31,
+    "share_pct": 96.8,
     "beers": [
       "Cacaodemon III",
       "Citray Sour",
@@ -5687,12 +5687,12 @@
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 3,
+        "checked": 4,
         "total": 11,
-        "pct": 27.3,
+        "pct": 36.4,
         "day_counts": [
           0,
-          3,
+          4,
           0,
           0
         ],
