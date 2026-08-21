@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1595574281,
+      "created_at": "Fri, 21 Aug 2026 11:16:22 +0000",
+      "user": "ironmanjt",
+      "checkin_comment": "",
+      "beer_name": "Just Juice 2026",
+      "beer_id": 6735830,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6735830_c31a3_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 7.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 3.9
+    },
+    {
       "checkin_id": 1595564562,
       "created_at": "Fri, 21 Aug 2026 08:32:04 +0000",
       "user": "jimmy-swings",
