@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1595562538,
+      "created_at": "Fri, 21 Aug 2026 07:29:34 +0000",
+      "user": "jimmy-swings",
+      "checkin_comment": "An afternoon at Sweeney’s, kicking off light, bright and double-hopped before the stout arrives. This isn’t a beer; it’s the starter course. Things are about to get dark.",
+      "beer_name": "DDH Pale",
+      "beer_id": 6835597,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - Other",
+      "beer_abv": 4.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "La Sirène Brewing",
+      "brewery_id": 20228,
+      "rating": 4.1
+    },
+    {
+      "checkin_id": 1595561823,
+      "created_at": "Fri, 21 Aug 2026 07:07:52 +0000",
+      "user": "fogal",
+      "checkin_comment": "Pretty good",
+      "beer_name": "Village Saison",
+      "beer_id": 6086112,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6086112_7678f_sm.jpeg",
+      "beer_style": "Farmhouse Ale - Saison",
+      "beer_abv": 4.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "La Sirène Brewing",
+      "brewery_id": 20228,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1595558675,
       "created_at": "Fri, 21 Aug 2026 05:17:46 +0000",
       "user": "blancochico",

@@ -5502,10 +5502,10 @@
     "breweries": [
       "La Sirène Brewing"
     ],
-    "checkins": 16,
+    "checkins": 18,
     "unique_beers": 8,
-    "total_checkins_that_week": 19,
-    "share_pct": 84.2,
+    "total_checkins_that_week": 21,
+    "share_pct": 85.7,
     "beers": [
       "Citray Sour",
       "DDH Pale",
@@ -5638,6 +5638,21 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 1,
+        "total": 8,
+        "pct": 12.5,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
@@ -5650,7 +5665,7 @@
           0,
           0
         ],
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "docta",
@@ -5665,27 +5680,12 @@
           0,
           0
         ],
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
-        "checked": 0,
-        "total": 8,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "rank": 3
-      },
-      {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
         "total": 8,
         "pct": 0.0,
