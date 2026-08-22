@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1595899274,
+      "created_at": "Sat, 22 Aug 2026 05:47:01 +0000",
+      "user": "JacobBourke",
+      "checkin_comment": "",
+      "beer_name": "Proper Job",
+      "beer_id": 5513,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5513_6643a_sm.jpeg",
+      "beer_style": "IPA - English",
+      "beer_abv": 4.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "St Austell Brewery",
+      "brewery_id": 1186,
+      "rating": 0.75
+    },
+    {
       "checkin_id": 1595895760,
       "created_at": "Sat, 22 Aug 2026 04:39:58 +0000",
       "user": "dapitz",
