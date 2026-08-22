@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1595951558,
+      "created_at": "Sat, 22 Aug 2026 13:26:47 +0000",
+      "user": "ironmanjt",
+      "checkin_comment": "",
+      "beer_name": "Barbarian Robin",
+      "beer_id": 6569029,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6569029_70943_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Azvex Brewing Company",
+      "brewery_id": 511472,
+      "rating": 4
+    },
+    {
       "checkin_id": 1595913442,
       "created_at": "Sat, 22 Aug 2026 10:07:31 +0000",
       "user": "Chucky_Falcon",
