@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1595905508,
+      "created_at": "Sat, 22 Aug 2026 08:04:51 +0000",
+      "user": "baggymayhem",
+      "checkin_comment": "",
+      "beer_name": "Bling Bling Imperial IPA",
+      "beer_id": 3362162,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3362162_b3a41_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4
+    },
+    {
       "checkin_id": 1595903589,
       "created_at": "Sat, 22 Aug 2026 07:22:53 +0000",
       "user": "Sirgingerbeardman",
