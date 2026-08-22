@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1595895760,
+      "created_at": "Sat, 22 Aug 2026 04:39:58 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Water",
+      "beer_id": 6064948,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6064948_d7613_sm.jpeg",
+      "beer_style": "Sour - Fruited",
+      "beer_abv": 4.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 3.3
+    },
+    {
       "checkin_id": 1595894192,
       "created_at": "Sat, 22 Aug 2026 04:15:57 +0000",
       "user": "dapitz",
