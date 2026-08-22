@@ -2676,6 +2676,19 @@
     "rating_count": 5172,
     "brewery_name": "La Sirène Brewing"
   },
+  "6792104": {
+    "beer_id": 6792104,
+    "beer_name": "Queen Bee",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-20228_9a06a.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Farmhouse Ale - Other",
+    "beer_abv": 3.5,
+    "beer_ibu": 0,
+    "beer_description": "Farmhouse ale with honey",
+    "rating_score": 0,
+    "rating_count": 5,
+    "brewery_name": "La Sirène Brewing"
+  },
   "6835596": {
     "beer_id": 6835596,
     "beer_name": "Raspberry Orange Table Beer",

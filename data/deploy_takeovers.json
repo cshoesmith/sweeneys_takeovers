@@ -5503,10 +5503,10 @@
       "La Sirène Brewing",
       "Azvex Brewing Company"
     ],
-    "checkins": 30,
-    "unique_beers": 11,
-    "total_checkins_that_week": 31,
-    "share_pct": 96.8,
+    "checkins": 34,
+    "unique_beers": 12,
+    "total_checkins_that_week": 35,
+    "share_pct": 97.1,
     "beers": [
       "Cacaodemon III",
       "Citray Sour",
@@ -5514,6 +5514,7 @@
       "Natural Pilsner",
       "Non-Genuine Ink Cartridges",
       "Praline",
+      "Queen Bee",
       "Raspberry Orange Table Beer",
       "Raspberry Praline",
       "Seville",
@@ -5607,6 +5608,20 @@
         "brewery_name": "La Sirène Brewing"
       },
       {
+        "beer_id": 6792104,
+        "beer_name": "Queen Bee",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-20228_9a06a.jpeg",
+        "beer_style": "Farmhouse Ale - Other",
+        "beer_abv": 3.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "Farmhouse ale with honey",
+        "rating_score": 0,
+        "rating_count": 5,
+        "brewery_name": "La Sirène Brewing"
+      },
+      {
         "beer_id": 6835596,
         "beer_name": "Raspberry Orange Table Beer",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4481893_ac4c0_sm.jpeg",
@@ -5684,42 +5699,42 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 4,
+        "total": 12,
+        "pct": 33.3,
+        "day_counts": [
+          0,
+          0,
+          4,
+          0
+        ],
+        "rank": 1
+      },
+      {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 4,
-        "total": 11,
-        "pct": 36.4,
+        "total": 12,
+        "pct": 33.3,
         "day_counts": [
           0,
           4,
           0,
           0
         ],
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 2,
-        "total": 11,
-        "pct": 18.2,
-        "day_counts": [
-          0,
-          2,
-          0,
-          0
-        ],
-        "rank": 2
-      },
-      {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 2,
-        "total": 11,
-        "pct": 18.2,
+        "total": 12,
+        "pct": 16.7,
         "day_counts": [
           0,
           2,
@@ -5729,15 +5744,15 @@
         "rank": 3
       },
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 11,
-        "pct": 0.0,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 2,
+        "total": 12,
+        "pct": 16.7,
         "day_counts": [
           0,
-          0,
+          2,
           0,
           0
         ],
@@ -5748,7 +5763,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5763,7 +5778,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5778,7 +5793,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
