@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1595903589,
+      "created_at": "Sat, 22 Aug 2026 07:22:53 +0000",
+      "user": "Sirgingerbeardman",
+      "checkin_comment": "Giving it a 4 because the chocolate notes are exotic but the pastry is a bit sickly for me",
+      "beer_name": "Cacaodemon III",
+      "beer_id": 6489433,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6489433_31923_sm.jpeg",
+      "beer_style": "Stout - Imperial / Double Pastry",
+      "beer_abv": 12,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Azvex Brewing Company",
+      "brewery_id": 511472,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1595902433,
+      "created_at": "Sat, 22 Aug 2026 06:57:51 +0000",
+      "user": "dakshanb",
+      "checkin_comment": "",
+      "beer_name": "Village Saison",
+      "beer_id": 6086112,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6086112_7678f_sm.jpeg",
+      "beer_style": "Farmhouse Ale - Saison",
+      "beer_abv": 4.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "La Sirène Brewing",
+      "brewery_id": 20228,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1595899274,
       "created_at": "Sat, 22 Aug 2026 05:47:01 +0000",
       "user": "JacobBourke",
