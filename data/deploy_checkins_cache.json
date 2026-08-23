@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1596323710,
+      "created_at": "Sun, 23 Aug 2026 06:50:20 +0000",
+      "user": "noxowl",
+      "checkin_comment": "Went in with low expectations because honey in beer has disappointed me before. This is a nice basic sweet beer. Smells like honey, goes down like a soft drink.",
+      "beer_name": "Queen Bee",
+      "beer_id": 6792104,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Farmhouse Ale - Other",
+      "beer_abv": 3.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "La Sirène Brewing",
+      "brewery_id": 20228,
+      "rating": 4
+    },
+    {
       "checkin_id": 1596322476,
       "created_at": "Sun, 23 Aug 2026 06:20:38 +0000",
       "user": "noxowl",
