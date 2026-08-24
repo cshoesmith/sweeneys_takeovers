@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1596648600,
+      "created_at": "Mon, 24 Aug 2026 20:58:48 +0000",
+      "user": "bockje",
+      "checkin_comment": "",
+      "beer_name": "Queen Bee",
+      "beer_id": 6792104,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Farmhouse Ale - Other",
+      "beer_abv": 3.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "La Sirène Brewing",
+      "brewery_id": 20228,
+      "rating": 4.7
+    },
+    {
       "checkin_id": 1596566670,
       "created_at": "Mon, 24 Aug 2026 09:24:06 +0000",
       "user": "Frank_The_Tank_2014",
