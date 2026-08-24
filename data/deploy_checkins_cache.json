@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1596565263,
+      "created_at": "Mon, 24 Aug 2026 08:19:07 +0000",
+      "user": "Frank_The_Tank_2014",
+      "checkin_comment": "",
+      "beer_name": "Tongue Hammer West Coast IPA",
+      "beer_id": 6630730,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Capital Brewing Co",
+      "brewery_id": 266075,
+      "rating": 4.25
+    },
+    {
+      "checkin_id": 1596564719,
+      "created_at": "Mon, 24 Aug 2026 07:49:20 +0000",
+      "user": "bbailey",
+      "checkin_comment": "",
+      "beer_name": "Golden Curse",
+      "beer_id": 6774136,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6774136_3a645_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 0
+    },
+    {
       "checkin_id": 1596564373,
       "created_at": "Mon, 24 Aug 2026 07:28:20 +0000",
       "user": "luke_naimi_4988",
