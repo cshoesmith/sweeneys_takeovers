@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1596693988,
+      "created_at": "Tue, 25 Aug 2026 08:01:15 +0000",
+      "user": "naazire_ata",
+      "checkin_comment": "Chocolate flavor beer?\nPut it on the tab, mate",
+      "beer_name": "Praline",
+      "beer_id": 665404,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-665404_4d566_sm.jpeg",
+      "beer_style": "Stout - Other",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "La Sirène Brewing",
+      "brewery_id": 20228,
+      "rating": 1.5
+    },
+    {
+      "checkin_id": 1596693499,
+      "created_at": "Tue, 25 Aug 2026 07:31:36 +0000",
+      "user": "spectr",
+      "checkin_comment": "",
+      "beer_name": "Iced Vanilla Latte Stout",
+      "beer_id": 6765203,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6765203_a757a_sm.jpeg",
+      "beer_style": "Stout - Coffee",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 4
+    },
+    {
       "checkin_id": 1596693388,
       "created_at": "Tue, 25 Aug 2026 07:23:39 +0000",
       "user": "spectr",
