@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1596692363,
+      "created_at": "Tue, 25 Aug 2026 06:24:23 +0000",
+      "user": "Pjjm1971",
+      "checkin_comment": "",
+      "beer_name": "Raspberry Praline",
+      "beer_id": 6784400,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Stout - Other",
+      "beer_abv": 5.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "La Sirène Brewing",
+      "brewery_id": 20228,
+      "rating": 4
+    },
+    {
       "checkin_id": 1596687495,
       "created_at": "Tue, 25 Aug 2026 03:02:44 +0000",
       "user": "BeerKnurdBrooks",
