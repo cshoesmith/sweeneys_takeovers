@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1596687495,
+      "created_at": "Tue, 25 Aug 2026 03:02:44 +0000",
+      "user": "BeerKnurdBrooks",
+      "checkin_comment": "I’d say that’s perfect example of a clean Nz IPA I’d share this with my peeps",
+      "beer_name": "Cordless Bungy",
+      "beer_id": 6755640,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6755640_541ae_sm.jpeg",
+      "beer_style": "IPA - New Zealand",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Behemoth Brewing Company",
+      "brewery_id": 73616,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1596686593,
+      "created_at": "Tue, 25 Aug 2026 02:44:04 +0000",
+      "user": "BeerKnurdBrooks",
+      "checkin_comment": "First Brew In Australia couldn’t resist. Reminds me of Weldwerks Taco Gose. They didn’t a legit job in this overall.",
+      "beer_name": "Bloody Mary Gose 2025",
+      "beer_id": 6381251,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6381251_c7398_sm.jpeg",
+      "beer_style": "Sour - Tomato / Vegetable Gose",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Reckless Brewing Co.",
+      "brewery_id": 442086,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1596648600,
       "created_at": "Mon, 24 Aug 2026 20:58:48 +0000",
       "user": "bockje",
