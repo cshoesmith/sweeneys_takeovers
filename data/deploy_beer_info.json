@@ -2824,5 +2824,18 @@
     "brewery_name": "Sailors Grave Brewing",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/sailors-grave-brewing-shiso-yuzu-gose/6671105"
+  },
+  "2363765": {
+    "beer_id": 2363765,
+    "beer_name": "Squid Vs Whale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2363765_63663_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2363765_5e25d_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 7,
+    "beer_ibu": 0,
+    "beer_description": "A maelstrom of hops brawling into a creamy stone fruit and citrus cloud. Best consumed 20,000 leagues under the sea.",
+    "rating_score": 3.83029,
+    "rating_count": 1276,
+    "brewery_name": "Sailors Grave Brewing"
   }
 }
