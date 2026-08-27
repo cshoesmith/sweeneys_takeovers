@@ -5826,17 +5826,18 @@
     "breweries": [
       "Sailors Grave Brewing"
     ],
-    "checkins": 7,
-    "unique_beers": 6,
-    "total_checkins_that_week": 7,
-    "share_pct": 100.0,
+    "checkins": 11,
+    "unique_beers": 7,
+    "total_checkins_that_week": 14,
+    "share_pct": 78.6,
     "beers": [
       "Drowned Man IPA",
       "Honey Bush Braggot",
       "Lemon Meringue Cream Sour",
       "Lighthouse Oatmeal Stout",
       "Return of the Herd",
-      "Shiso Yuzu Gose"
+      "Shiso Yuzu Gose",
+      "Squid Vs Whale"
     ],
     "beer_details": [
       {
@@ -5887,22 +5888,50 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5854481_2a732_sm.jpeg",
         "beer_style": "Stout - Oatmeal",
         "beer_abv": 5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5854481_6ffee_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Lighthouse Oatmeal Stout is dark as the night and rich with robust flavours of roasted malts, chocolate and hints of coffee finishing with a lush, creamy mouthfeel helping to navigate the deep, dark and stormy nights of Winter.",
+        "rating_score": 3.65369,
+        "rating_count": 298,
+        "brewery_name": "Sailors Grave Brewing"
       },
       {
         "beer_id": 6841803,
         "beer_name": "Return of the Herd",
-        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3567534_92629_sm.jpeg",
         "beer_style": "Pale Ale - Australian",
-        "beer_abv": 5,
-        "beer_auth_rating": null
+        "beer_abv": 5.0,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Sailors Grave Brewing",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/sailors-grave-brewing-return-of-the-herd/6841803"
       },
       {
         "beer_id": 6671105,
         "beer_name": "Shiso Yuzu Gose",
-        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3641263_10823_sm.jpeg",
         "beer_style": "Sour - Fruited Gose",
         "beer_abv": 4.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 3.53733,
+        "rating_count": 75,
+        "brewery_name": "Sailors Grave Brewing",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/sailors-grave-brewing-shiso-yuzu-gose/6671105"
+      },
+      {
+        "beer_id": 2363765,
+        "beer_name": "Squid Vs Whale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2363765_63663_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 7,
         "beer_auth_rating": null
       }
     ],
@@ -5913,7 +5942,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5928,7 +5957,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5943,7 +5972,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5958,7 +5987,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5973,7 +6002,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -5988,7 +6017,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6003,7 +6032,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
