@@ -5826,10 +5826,10 @@
     "breweries": [
       "Sailors Grave Brewing"
     ],
-    "checkins": 36,
+    "checkins": 46,
     "unique_beers": 11,
-    "total_checkins_that_week": 40,
-    "share_pct": 90.0,
+    "total_checkins_that_week": 50,
+    "share_pct": 92.0,
     "beers": [
       "Drowned Man IPA",
       "Five Ships Lager",
@@ -6004,6 +6004,21 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 6,
+        "total": 11,
+        "pct": 54.5,
+        "day_counts": [
+          0,
+          6,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
@@ -6016,12 +6031,12 @@
           0,
           0
         ],
-        "rank": 1
+        "rank": 2
       },
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 1,
         "total": 11,
         "pct": 9.1,
@@ -6031,7 +6046,7 @@
           0,
           0
         ],
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "dapitz",
@@ -6046,7 +6061,7 @@
           0,
           0
         ],
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "hiriser",
@@ -6061,27 +6076,12 @@
           0,
           0
         ],
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 11,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "rank": 5
-      },
-      {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
         "total": 11,
         "pct": 0.0,
