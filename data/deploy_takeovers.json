@@ -5826,10 +5826,10 @@
     "breweries": [
       "Sailors Grave Brewing"
     ],
-    "checkins": 46,
+    "checkins": 51,
     "unique_beers": 11,
-    "total_checkins_that_week": 50,
-    "share_pct": 92.0,
+    "total_checkins_that_week": 55,
+    "share_pct": 92.7,
     "beers": [
       "Drowned Man IPA",
       "Five Ships Lager",
@@ -6007,12 +6007,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 6,
+        "checked": 8,
         "total": 11,
-        "pct": 54.5,
+        "pct": 72.7,
         "day_counts": [
           0,
-          6,
+          8,
           0,
           0
         ],
@@ -6037,12 +6037,12 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 1,
+        "checked": 3,
         "total": 11,
-        "pct": 9.1,
+        "pct": 27.3,
         "day_counts": [
           0,
-          1,
+          3,
           0,
           0
         ],
