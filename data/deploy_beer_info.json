@@ -2864,6 +2864,19 @@
     "rating_count": 1326,
     "brewery_name": "Sailors Grave Brewing"
   },
+  "5781038": {
+    "beer_id": 5781038,
+    "beer_name": "Southern Red Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5781038_4f384_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5781038_41399_hd.jpeg",
+    "beer_style": "Red Ale - American Amber / Red",
+    "beer_abv": 4.2,
+    "beer_ibu": 0,
+    "beer_description": "A ruby red session ale with chewy toffee and biscuit notes backed with a smooth and creamy malt-forward body. Brewed with NZ Cascade & Simcoe hops for a piney and citrusy character and a gentle finishing bitterness. ",
+    "rating_score": 3.69903,
+    "rating_count": 463,
+    "brewery_name": "Sailors Grave Brewing"
+  },
   "2363765": {
     "beer_id": 2363765,
     "beer_name": "Squid Vs Whale",
