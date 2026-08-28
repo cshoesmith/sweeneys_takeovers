@@ -2758,6 +2758,19 @@
     "rating_count": 3079,
     "brewery_name": "Sailors Grave Brewing"
   },
+  "6345108": {
+    "beer_id": 6345108,
+    "beer_name": "Five Ships Lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6345108_a56e7_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6345108_a56e7_hd.jpeg",
+    "beer_style": "Lager - Helles",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "A grain-decocted spelt lager brewed with whole cone Centennial hops from Ryefield Hops. Clean and bright, with dough bread crust character and a smooth mouthfeel.",
+    "rating_score": 3.62458,
+    "rating_count": 59,
+    "brewery_name": "Sailors Grave Brewing"
+  },
   "4252330": {
     "beer_id": 4252330,
     "beer_name": "Honey Bush Braggot",
@@ -2811,6 +2824,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/sailors-grave-brewing-return-of-the-herd/6841803"
   },
+  "5557495": {
+    "beer_id": 5557495,
+    "beer_name": "Sea Bird Coastal",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5557495_58d3a_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5557495_5f943_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 5.2,
+    "beer_ibu": 0,
+    "beer_description": "Our Hazy Pale Ale is dry-hopped with new world hops for that bright, creamy and refreshing citrus-forward juiciness.  It's not a Sailors Grave beer without a subtle taste of Gippsland, so we've added a touch of earthy coastal brine with the addition of fresh locally foraged Saltbush from the Gippsland coastline hand-picked by Gab.",
+    "rating_score": 3.66523,
+    "rating_count": 581,
+    "brewery_name": "Sailors Grave Brewing"
+  },
   "6671105": {
     "beer_id": 6671105,
     "beer_name": "Shiso Yuzu Gose",
@@ -2824,6 +2850,19 @@
     "brewery_name": "Sailors Grave Brewing",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/sailors-grave-brewing-shiso-yuzu-gose/6671105"
+  },
+  "2036471": {
+    "beer_id": 2036471,
+    "beer_name": "Sou' East Draught",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2036471_99934_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2036471_334c9_hd.jpeg",
+    "beer_style": "Lager - Pale",
+    "beer_abv": 4.8,
+    "beer_ibu": 0,
+    "beer_description": "Sou’ East Draught is beer that tastes like beer. Brewed with malt, hops, yeast & water. Low bitterness and no showy aromas or additives. Big on easy drinking sessionability with subtle Aussie hop flavours and a crisp finish making this a very crushable tinnie.",
+    "rating_score": 3.41569,
+    "rating_count": 1326,
+    "brewery_name": "Sailors Grave Brewing"
   },
   "2363765": {
     "beer_id": 2363765,
