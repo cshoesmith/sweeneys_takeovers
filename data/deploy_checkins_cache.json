@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1597583559,
+      "created_at": "Sat, 29 Aug 2026 10:19:04 +0000",
+      "user": "Kashing_6",
+      "checkin_comment": "",
+      "beer_name": "Lemon Meringue Cream Sour",
+      "beer_id": 2596036,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2596036_cb13f_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 3.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sailors Grave Brewing",
+      "brewery_id": 296515,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1597562430,
       "created_at": "Sat, 29 Aug 2026 05:06:49 +0000",
       "user": "kegman40",
