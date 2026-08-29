@@ -5826,10 +5826,10 @@
     "breweries": [
       "Sailors Grave Brewing"
     ],
-    "checkins": 53,
+    "checkins": 57,
     "unique_beers": 11,
-    "total_checkins_that_week": 57,
-    "share_pct": 93.0,
+    "total_checkins_that_week": 62,
+    "share_pct": 91.9,
     "beers": [
       "Drowned Man IPA",
       "Five Ships Lager",
@@ -6052,13 +6052,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
+        "checked": 1,
         "total": 11,
-        "pct": 0.0,
+        "pct": 9.1,
         "day_counts": [
           0,
           0,
-          0,
+          1,
           0
         ],
         "rank": 4
