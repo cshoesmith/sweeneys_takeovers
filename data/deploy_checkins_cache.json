@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1597545915,
+      "created_at": "Sat, 29 Aug 2026 02:18:40 +0000",
+      "user": "kegman40",
+      "checkin_comment": "",
+      "beer_name": "Return of the Herd",
+      "beer_id": 6841803,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - Australian",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sailors Grave Brewing",
+      "brewery_id": 296515,
+      "rating": 3
+    },
+    {
+      "checkin_id": 1597544288,
+      "created_at": "Sat, 29 Aug 2026 02:09:09 +0000",
+      "user": "kegman40",
+      "checkin_comment": "",
+      "beer_name": "Squid Vs Whale",
+      "beer_id": 2363765,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2363765_63663_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sailors Grave Brewing",
+      "brewery_id": 296515,
+      "rating": 4
+    },
+    {
       "checkin_id": 1597299548,
       "created_at": "Fri, 28 Aug 2026 12:11:00 +0000",
       "user": "LightBeerking",
