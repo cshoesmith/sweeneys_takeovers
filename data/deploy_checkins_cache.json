@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598268298,
+      "created_at": "Mon, 31 Aug 2026 10:51:04 +0000",
+      "user": "hatstand",
+      "checkin_comment": "",
+      "beer_name": "Berry & Caramel Pie Sour",
+      "beer_id": 6590422,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6590422_530d4_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 4.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Gweilo Beer",
+      "brewery_id": 208109,
+      "rating": 4.1
+    },
+    {
       "checkin_id": 1598267157,
       "created_at": "Mon, 31 Aug 2026 10:24:13 +0000",
       "user": "nsw",
