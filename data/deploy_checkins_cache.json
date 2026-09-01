@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598387355,
+      "created_at": "Tue, 01 Sep 2026 05:23:09 +0000",
+      "user": "drunkenmadman",
+      "checkin_comment": "",
+      "beer_name": "Drowned Man IPA",
+      "beer_id": 1731993,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1731993_39415_sm.jpeg",
+      "beer_style": "IPA - Session",
+      "beer_abv": 4.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sailors Grave Brewing",
+      "brewery_id": 296515,
+      "rating": 4
+    },
+    {
       "checkin_id": 1598273394,
       "created_at": "Mon, 31 Aug 2026 12:15:52 +0000",
       "user": "L666ds",
