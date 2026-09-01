@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598390978,
+      "created_at": "Tue, 01 Sep 2026 08:57:23 +0000",
+      "user": "BieroJak",
+      "checkin_comment": "Sehr lecker. Tropische Geschmacksbombe. Ananasgeschmack dominiert. Süßlich, aber erfrischend. Hopfenbitterkeit versteckt sich im hintergrund. Super.",
+      "beer_name": "Squid Vs Whale",
+      "beer_id": 2363765,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2363765_63663_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sailors Grave Brewing",
+      "brewery_id": 296515,
+      "rating": 4.5
+    },
+    {
+      "checkin_id": 1598390670,
+      "created_at": "Tue, 01 Sep 2026 08:42:43 +0000",
+      "user": "nayla_gabriele",
+      "checkin_comment": "",
+      "beer_name": "iStout Double Espresso",
+      "beer_id": 5926249,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5926249_85050_sm.jpeg",
+      "beer_style": "Stout - Imperial / Double Coffee",
+      "beer_abv": 13.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "8 Wired",
+      "brewery_id": 3555,
+      "rating": 4.75
+    },
+    {
       "checkin_id": 1598389719,
       "created_at": "Tue, 01 Sep 2026 07:50:32 +0000",
       "user": "MisterDanger",
