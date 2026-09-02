@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598513395,
+      "created_at": "Wed, 02 Sep 2026 02:32:54 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Korev",
+      "beer_id": 32862,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-32862_bb684_sm.jpeg",
+      "beer_style": "Lager - Helles",
+      "beer_abv": 4.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "St Austell Brewery",
+      "brewery_id": 1186,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1598392857,
       "created_at": "Tue, 01 Sep 2026 10:08:00 +0000",
       "user": "Kenny_33",
