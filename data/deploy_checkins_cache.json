@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598515569,
+      "created_at": "Wed, 02 Sep 2026 03:13:16 +0000",
+      "user": "fogal",
+      "checkin_comment": "",
+      "beer_name": "Southern Red Ale",
+      "beer_id": 5781038,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5781038_4f384_sm.jpeg",
+      "beer_style": "Red Ale - American Amber / Red",
+      "beer_abv": 4.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sailors Grave Brewing",
+      "brewery_id": 296515,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1598513395,
       "created_at": "Wed, 02 Sep 2026 02:32:54 +0000",
       "user": "ale_n",
