@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598520599,
+      "created_at": "Wed, 02 Sep 2026 06:36:45 +0000",
+      "user": "Paired-With-Beer",
+      "checkin_comment": "",
+      "beer_name": "Honey Bush Braggot",
+      "beer_id": 4252330,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4252330_860d8_sm.jpeg",
+      "beer_style": "Mead - Braggot",
+      "beer_abv": 5.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sailors Grave Brewing",
+      "brewery_id": 296515,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1598520420,
+      "created_at": "Wed, 02 Sep 2026 06:24:31 +0000",
+      "user": "Pjjm1971",
+      "checkin_comment": "Spectacular.\nRich and toasty. Hides the booze (a little too) well…",
+      "beer_name": "iStout Double Espresso",
+      "beer_id": 5926249,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5926249_85050_sm.jpeg",
+      "beer_style": "Stout - Imperial / Double Coffee",
+      "beer_abv": 13.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "8 Wired",
+      "brewery_id": 3555,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1598515569,
       "created_at": "Wed, 02 Sep 2026 03:13:16 +0000",
       "user": "fogal",
