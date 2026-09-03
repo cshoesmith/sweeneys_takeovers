@@ -6116,13 +6116,15 @@
     "breweries": [
       "Hop Nation Brewing Co"
     ],
-    "checkins": 5,
-    "unique_beers": 5,
-    "total_checkins_that_week": 5,
+    "checkins": 9,
+    "unique_beers": 7,
+    "total_checkins_that_week": 9,
     "share_pct": 100.0,
     "beers": [
       "Euro Pilsner",
       "Lazy Hazy",
+      "Melbourne Black",
+      "Melbourne Fog",
       "The Kalash 2026",
       "West Coast IPA",
       "West Coast IPA (2026)"
@@ -6159,6 +6161,34 @@
         "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-lazy-hazy/6852873"
       },
       {
+        "beer_id": 6367202,
+        "beer_name": "Melbourne Black",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6367202_9de02_sm.jpeg",
+        "beer_style": "Stout - Irish Dry",
+        "beer_abv": 4.3,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6367202_8d8fc_hd.jpeg",
+        "beer_ibu": 30,
+        "beer_description": "Dark dry and defiant. A Stout with soul with the quality you expect from a beer by Hop Nation. Brewed in Melbourne, solely for our city that drinks a lot of good draught nitro stout. Taste wise expect a full, creamy, nitro pub stout, with a wonderful depth yet surprising drinkability. A walnut cream / tan coloured head that settles, with a subtle yet enticing aroma of beautiful clean, quality malt.",
+        "rating_score": 3.77414,
+        "rating_count": 725,
+        "brewery_name": "Hop Nation Brewing Co"
+      },
+      {
+        "beer_id": 3565219,
+        "beer_name": "Melbourne Fog",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3565219_09897_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3565219_09897_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Melbourne Fog was originally brewed in collaboration with Whitehart Bar in Melbourne’s CBD. After a popular keg-release, it’s now available in cans! \r\n\r\nFeaturing fruity notes from Nelson Sauvin, Loral and Mosaic hops, it gets its full haze dose thanks to 50% oat malt.\r\n\r\nIt’s everything you love about a NEIPA with full flavour and body, but at only 4.8% ABV. \r\n\r\nA sessionable, easy-drinking, hazy hoppy pale. \r\n ",
+        "rating_score": 3.71827,
+        "rating_count": 3698,
+        "brewery_name": "Hop Nation Brewing Co"
+      },
+      {
         "beer_id": 6740371,
         "beer_name": "The Kalash 2026",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6740371_3e180_sm.jpeg",
@@ -6178,7 +6208,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6263651_e0417_sm.jpeg",
         "beer_style": "IPA - American",
         "beer_abv": 6.5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6263651_ebd67_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Unleash your taste buds with our bold new West Coast IPA — a collaborative brew from the hop pioneers at Hop Nation and the adventurous artisans of Rocky Ridge. This classic-meets-modern IPA is packed with vibrant, resinous hop character and an irresistible dankness that lingers on the palate. From the first crack, its outstanding aroma pulls you in, delivering big flavour, dank vibes, and zero compromise. Two breweries, one bold brew.",
+        "rating_score": 3.90268,
+        "rating_count": 336,
+        "brewery_name": "Hop Nation Brewing Co"
       },
       {
         "beer_id": 6807979,
@@ -6195,11 +6231,11 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 3,
-        "total": 5,
-        "pct": 60.0,
+        "checked": 4,
+        "total": 7,
+        "pct": 57.1,
         "day_counts": [
-          3,
+          4,
           0,
           0,
           0
@@ -6211,7 +6247,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 5,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6226,7 +6262,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 5,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6241,7 +6277,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 5,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6256,7 +6292,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 5,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6271,7 +6307,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 5,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6286,7 +6322,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 5,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
