@@ -6116,15 +6116,16 @@
     "breweries": [
       "Hop Nation Brewing Co"
     ],
-    "checkins": 11,
-    "unique_beers": 8,
-    "total_checkins_that_week": 12,
-    "share_pct": 91.7,
+    "checkins": 13,
+    "unique_beers": 9,
+    "total_checkins_that_week": 14,
+    "share_pct": 92.9,
     "beers": [
       "Euro Pilsner",
       "Lazy Hazy",
       "Melbourne Black",
       "Melbourne Fog",
+      "Rattenhund",
       "The Chop",
       "The Kalash 2026",
       "West Coast IPA",
@@ -6187,6 +6188,20 @@
         "beer_description": "Melbourne Fog was originally brewed in collaboration with Whitehart Bar in Melbourne’s CBD. After a popular keg-release, it’s now available in cans! \r\n\r\nFeaturing fruity notes from Nelson Sauvin, Loral and Mosaic hops, it gets its full haze dose thanks to 50% oat malt.\r\n\r\nIt’s everything you love about a NEIPA with full flavour and body, but at only 4.8% ABV. \r\n\r\nA sessionable, easy-drinking, hazy hoppy pale. \r\n ",
         "rating_score": 3.71827,
         "rating_count": 3698,
+        "brewery_name": "Hop Nation Brewing Co"
+      },
+      {
+        "beer_id": 4227118,
+        "beer_name": "Rattenhund",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4227118_76e92_sm.jpeg",
+        "beer_style": "Pilsner - German",
+        "beer_abv": 4.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4227118_e5c36_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Traditionally brewed using Floor Malted Bohemian Pilsner Malt, partnered with Perle and Spelt Select hops. Rattenhund has been fermented by Bluestone Yeast's Pilsen strain, before an eight week extended lagering. Clear, refreshing with a fluffy, lip smothering head.",
+        "rating_score": 3.67356,
+        "rating_count": 2585,
         "brewery_name": "Hop Nation Brewing Co"
       },
       {
@@ -6253,8 +6268,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 4,
-        "total": 8,
-        "pct": 50.0,
+        "total": 9,
+        "pct": 44.4,
         "day_counts": [
           4,
           0,
@@ -6268,7 +6283,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6283,7 +6298,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6298,7 +6313,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6313,7 +6328,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6328,7 +6343,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6343,7 +6358,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,

@@ -2944,6 +2944,19 @@
     "rating_count": 3698,
     "brewery_name": "Hop Nation Brewing Co"
   },
+  "4227118": {
+    "beer_id": 4227118,
+    "beer_name": "Rattenhund",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4227118_76e92_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4227118_e5c36_hd.jpeg",
+    "beer_style": "Pilsner - German",
+    "beer_abv": 4.8,
+    "beer_ibu": 0,
+    "beer_description": "Traditionally brewed using Floor Malted Bohemian Pilsner Malt, partnered with Perle and Spelt Select hops. Rattenhund has been fermented by Bluestone Yeast's Pilsen strain, before an eight week extended lagering. Clear, refreshing with a fluffy, lip smothering head.",
+    "rating_score": 3.67356,
+    "rating_count": 2585,
+    "brewery_name": "Hop Nation Brewing Co"
+  },
   "1744654": {
     "beer_id": 1744654,
     "beer_name": "The Chop",
