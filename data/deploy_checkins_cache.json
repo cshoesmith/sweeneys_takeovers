@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598683862,
+      "created_at": "Thu, 03 Sep 2026 12:55:57 +0000",
+      "user": "baggymayhem",
+      "checkin_comment": "",
+      "beer_name": "Lazy Hazy",
+      "beer_id": 6852873,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - Australian",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1598683803,
+      "created_at": "Thu, 03 Sep 2026 12:55:09 +0000",
+      "user": "baggymayhem",
+      "checkin_comment": "",
+      "beer_name": "Melbourne Fog",
+      "beer_id": 3565219,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3565219_09897_sm.jpeg",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 4.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1598680665,
       "created_at": "Thu, 03 Sep 2026 12:10:05 +0000",
       "user": "MaAc348",
