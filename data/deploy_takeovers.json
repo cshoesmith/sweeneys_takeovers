@@ -6116,15 +6116,16 @@
     "breweries": [
       "Hop Nation Brewing Co"
     ],
-    "checkins": 9,
-    "unique_beers": 7,
-    "total_checkins_that_week": 10,
-    "share_pct": 90.0,
+    "checkins": 11,
+    "unique_beers": 8,
+    "total_checkins_that_week": 12,
+    "share_pct": 91.7,
     "beers": [
       "Euro Pilsner",
       "Lazy Hazy",
       "Melbourne Black",
       "Melbourne Fog",
+      "The Chop",
       "The Kalash 2026",
       "West Coast IPA",
       "West Coast IPA (2026)"
@@ -6189,6 +6190,20 @@
         "brewery_name": "Hop Nation Brewing Co"
       },
       {
+        "beer_id": 1744654,
+        "beer_name": "The Chop",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1744654_b6bc7_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1744654_e4f07_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Meet the newest member to our line up -  THE CHOP - an American style IPA sitting at 6% ABV.\r\nNot tied to any coast or fixed style, this American IPA is our chopped up take on a variety of IPA's hailing from the USA.\r\nPouring a hazy straw colour THE CHOP carries big citrus and tropical notes, finishing with a mild balanced bitterness.",
+        "rating_score": 3.86307,
+        "rating_count": 7098,
+        "brewery_name": "Hop Nation Brewing Co"
+      },
+      {
         "beer_id": 6740371,
         "beer_name": "The Kalash 2026",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6740371_3e180_sm.jpeg",
@@ -6238,8 +6253,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 4,
-        "total": 7,
-        "pct": 57.1,
+        "total": 8,
+        "pct": 50.0,
         "day_counts": [
           4,
           0,
@@ -6253,7 +6268,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6268,7 +6283,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6283,7 +6298,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6298,7 +6313,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6313,7 +6328,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6328,7 +6343,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,

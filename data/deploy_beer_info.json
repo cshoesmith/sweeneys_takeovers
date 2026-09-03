@@ -2944,6 +2944,19 @@
     "rating_count": 3698,
     "brewery_name": "Hop Nation Brewing Co"
   },
+  "1744654": {
+    "beer_id": 1744654,
+    "beer_name": "The Chop",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1744654_b6bc7_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1744654_e4f07_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6,
+    "beer_ibu": 0,
+    "beer_description": "Meet the newest member to our line up -  THE CHOP - an American style IPA sitting at 6% ABV.\r\nNot tied to any coast or fixed style, this American IPA is our chopped up take on a variety of IPA's hailing from the USA.\r\nPouring a hazy straw colour THE CHOP carries big citrus and tropical notes, finishing with a mild balanced bitterness.",
+    "rating_score": 3.86307,
+    "rating_count": 7098,
+    "brewery_name": "Hop Nation Brewing Co"
+  },
   "6740371": {
     "beer_id": 6740371,
     "beer_name": "The Kalash 2026",
