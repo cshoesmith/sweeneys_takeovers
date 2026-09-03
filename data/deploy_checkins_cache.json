@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598664320,
+      "created_at": "Thu, 03 Sep 2026 03:53:50 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Euro Pilsner",
+      "beer_id": 6852871,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pilsner - Other",
+      "beer_abv": 4.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1598521238,
       "created_at": "Wed, 02 Sep 2026 07:21:03 +0000",
       "user": "JaredTasker",
