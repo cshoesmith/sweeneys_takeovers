@@ -2969,5 +2969,18 @@
     "rating_score": 3.90268,
     "rating_count": 336,
     "brewery_name": "Hop Nation Brewing Co"
+  },
+  "6807979": {
+    "beer_id": 6807979,
+    "beer_name": "West Coast IPA (2026)",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807979_c6706_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6807979_15ca7_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6.5,
+    "beer_ibu": 0,
+    "beer_description": "A modern take on the classic West Coast style.\r\n\r\nAustralian Pale Pilsner malt and Gladfield Supernova build a deep gold tone creating a structure to carry the resinous hop profile.\r\n\r\n\r\nDry hopped with CRYO Idaho 7, Chinook and Motueka: grapefruit, lime and tropical fruit on the nose, with pine and resin behind. A Citra HyperBoost dosage then lifts the citrus and tropical character further.",
+    "rating_score": 3.87879,
+    "rating_count": 33,
+    "brewery_name": "Hop Nation Brewing Co"
   }
 }

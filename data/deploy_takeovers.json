@@ -6118,8 +6118,8 @@
     ],
     "checkins": 9,
     "unique_beers": 7,
-    "total_checkins_that_week": 9,
-    "share_pct": 100.0,
+    "total_checkins_that_week": 10,
+    "share_pct": 90.0,
     "beers": [
       "Euro Pilsner",
       "Lazy Hazy",
@@ -6222,7 +6222,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807979_c6706_sm.jpeg",
         "beer_style": "IPA - American",
         "beer_abv": 6.5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6807979_15ca7_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A modern take on the classic West Coast style.\r\n\r\nAustralian Pale Pilsner malt and Gladfield Supernova build a deep gold tone creating a structure to carry the resinous hop profile.\r\n\r\n\r\nDry hopped with CRYO Idaho 7, Chinook and Motueka: grapefruit, lime and tropical fruit on the nose, with pine and resin behind. A Citra HyperBoost dosage then lifts the citrus and tropical character further.",
+        "rating_score": 3.87879,
+        "rating_count": 33,
+        "brewery_name": "Hop Nation Brewing Co"
       }
     ],
     "source": "heuristic",

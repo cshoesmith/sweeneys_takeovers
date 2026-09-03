@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598671838,
+      "created_at": "Thu, 03 Sep 2026 09:16:01 +0000",
+      "user": "kamenao",
+      "checkin_comment": "",
+      "beer_name": "XPA",
+      "beer_id": 1459461,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1459461_e25c9_sm.jpeg",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Balter Brewing Company",
+      "brewery_id": 256779,
+      "rating": 4
+    },
+    {
       "checkin_id": 1598670618,
       "created_at": "Thu, 03 Sep 2026 08:31:44 +0000",
       "user": "irenejoshy9",
