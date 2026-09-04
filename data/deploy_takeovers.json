@@ -6116,10 +6116,10 @@
     "breweries": [
       "Hop Nation Brewing Co"
     ],
-    "checkins": 27,
+    "checkins": 31,
     "unique_beers": 11,
-    "total_checkins_that_week": 28,
-    "share_pct": 96.4,
+    "total_checkins_that_week": 32,
+    "share_pct": 96.9,
     "beers": [
       "Czech Pilsner",
       "Euro Pilsner",
@@ -6295,6 +6295,21 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 4,
+        "total": 11,
+        "pct": 36.4,
+        "day_counts": [
+          0,
+          4,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
@@ -6307,7 +6322,7 @@
           0,
           0
         ],
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "docta",
@@ -6322,12 +6337,12 @@
           0,
           0
         ],
-        "rank": 2
+        "rank": 3
       },
       {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 1,
         "total": 11,
         "pct": 9.1,
@@ -6337,7 +6352,7 @@
           0,
           0
         ],
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "dapitz",
@@ -6352,27 +6367,12 @@
           0,
           0
         ],
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
-        "checked": 0,
-        "total": 11,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "rank": 5
-      },
-      {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
         "total": 11,
         "pct": 0.0,
