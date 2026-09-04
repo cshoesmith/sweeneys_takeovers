@@ -6116,10 +6116,10 @@
     "breweries": [
       "Hop Nation Brewing Co"
     ],
-    "checkins": 55,
+    "checkins": 57,
     "unique_beers": 13,
-    "total_checkins_that_week": 56,
-    "share_pct": 98.2,
+    "total_checkins_that_week": 58,
+    "share_pct": 98.3,
     "beers": [
       "4:04",
       "Czech Pilsner",
@@ -6359,12 +6359,12 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 4,
+        "checked": 5,
         "total": 13,
-        "pct": 30.8,
+        "pct": 38.5,
         "day_counts": [
           4,
-          0,
+          1,
           0,
           0
         ],

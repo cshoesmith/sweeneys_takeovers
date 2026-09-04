@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598878492,
+      "created_at": "Fri, 04 Sep 2026 13:11:33 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "",
+      "beer_name": "4:04",
+      "beer_id": 6762235,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 4.1
+    },
+    {
+      "checkin_id": 1598874859,
+      "created_at": "Fri, 04 Sep 2026 12:40:34 +0000",
+      "user": "mw1414",
+      "checkin_comment": "Soft",
+      "beer_name": "4:04",
+      "beer_id": 6762235,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 3.9
+    },
+    {
       "checkin_id": 1598870239,
       "created_at": "Fri, 04 Sep 2026 11:54:07 +0000",
       "user": "Kashing_6",
