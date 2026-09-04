@@ -2890,6 +2890,20 @@
     "rating_count": 1276,
     "brewery_name": "Sailors Grave Brewing"
   },
+  "6762235": {
+    "beer_id": 6762235,
+    "beer_name": "4:04",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6515633_e349a_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 4.4,
+    "beer_ibu": 0,
+    "rating_score": 3.64583,
+    "rating_count": 12,
+    "brewery_name": "Hop Nation Brewing Co",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-4-04/6762235"
+  },
   "6622299": {
     "beer_id": 6622299,
     "beer_name": "Czech Pilsner",

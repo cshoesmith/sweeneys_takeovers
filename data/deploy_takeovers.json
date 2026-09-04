@@ -6116,11 +6116,12 @@
     "breweries": [
       "Hop Nation Brewing Co"
     ],
-    "checkins": 47,
-    "unique_beers": 12,
-    "total_checkins_that_week": 48,
-    "share_pct": 97.9,
+    "checkins": 53,
+    "unique_beers": 13,
+    "total_checkins_that_week": 54,
+    "share_pct": 98.1,
     "beers": [
+      "4:04",
       "Czech Pilsner",
       "Euro Pilsner",
       "J-Juice",
@@ -6135,6 +6136,21 @@
       "West Coast IPA (2026)"
     ],
     "beer_details": [
+      {
+        "beer_id": 6762235,
+        "beer_name": "4:04",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6515633_e349a_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 3.64583,
+        "rating_count": 12,
+        "brewery_name": "Hop Nation Brewing Co",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-4-04/6762235"
+      },
       {
         "beer_id": 6622299,
         "beer_name": "Czech Pilsner",
@@ -6313,12 +6329,12 @@
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 5,
-        "total": 12,
-        "pct": 41.7,
+        "checked": 6,
+        "total": 13,
+        "pct": 46.2,
         "day_counts": [
           0,
-          5,
+          6,
           0,
           0
         ],
@@ -6328,12 +6344,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 4,
-        "total": 12,
-        "pct": 33.3,
+        "checked": 5,
+        "total": 13,
+        "pct": 38.5,
         "day_counts": [
           0,
-          4,
+          5,
           0,
           0
         ],
@@ -6344,8 +6360,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 4,
-        "total": 12,
-        "pct": 33.3,
+        "total": 13,
+        "pct": 30.8,
         "day_counts": [
           4,
           0,
@@ -6359,8 +6375,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 12,
-        "pct": 25.0,
+        "total": 13,
+        "pct": 23.1,
         "day_counts": [
           0,
           3,
@@ -6374,7 +6390,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 13,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6389,7 +6405,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 12,
+        "total": 13,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6404,7 +6420,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 13,
         "pct": 0.0,
         "day_counts": [
           0,
