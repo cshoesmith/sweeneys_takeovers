@@ -2918,6 +2918,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-euro-pilsner/6852871"
   },
+  "2071510": {
+    "beer_id": 2071510,
+    "beer_name": "J-Juice",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2071510_dc9e1_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2071510_4c187_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 7.1,
+    "beer_ibu": 0,
+    "beer_description": "One of our most popular and award-winning beers! Hazy, juicy and with a citrusy hop aroma – finishing off with intense flavour and a great mouthfeel. Featuring Riwaka, Nelson Sauvin, Citra and Mosaic hops – this beer will bring out the Jedi in everyone. Unfined and unfiltered, J JUICE pours quite hazy in the glass with a bright orange colour.",
+    "rating_score": 3.92726,
+    "rating_count": 11101,
+    "brewery_name": "Hop Nation Brewing Co"
+  },
   "6852873": {
     "beer_id": 6852873,
     "beer_name": "Lazy Hazy",

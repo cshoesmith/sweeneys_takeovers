@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598852239,
+      "created_at": "Fri, 04 Sep 2026 05:03:29 +0000",
+      "user": "Whoneedstherapy",
+      "checkin_comment": "What a day to have a killer beer on a sunny rooftop.",
+      "beer_name": "J-Juice",
+      "beer_id": 2071510,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2071510_dc9e1_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 7.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 4
+    },
+    {
       "checkin_id": 1598849555,
       "created_at": "Fri, 04 Sep 2026 03:57:38 +0000",
       "user": "Papicool",
