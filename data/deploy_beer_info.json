@@ -2997,6 +2997,19 @@
     "rating_count": 7098,
     "brewery_name": "Hop Nation Brewing Co"
   },
+  "2114779": {
+    "beer_id": 2114779,
+    "beer_name": "The Heart",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2114779_6f620_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2114779_6f620_hd.jpeg",
+    "beer_style": "Pale Ale - American",
+    "beer_abv": 4.6,
+    "beer_ibu": 0,
+    "beer_description": "At the heart of our Footscray brewery is definitely this Pale Ale. Pouring a golden straw colour with a lacing head. Floral and citrus hop aromas make of an inviting and crisp take on this infamous style.",
+    "rating_score": 3.5962,
+    "rating_count": 12108,
+    "brewery_name": "Hop Nation Brewing Co"
+  },
   "6740371": {
     "beer_id": 6740371,
     "beer_name": "The Kalash 2026",
