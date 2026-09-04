@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598915449,
+      "created_at": "Fri, 04 Sep 2026 15:56:27 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "",
+      "beer_name": "Guinness Draught",
+      "beer_id": 4473,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4473_1cbe8_sm.jpeg",
+      "beer_style": "Stout - Irish Dry",
+      "beer_abv": 4.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Guinness",
+      "brewery_id": 49,
+      "rating": 4
+    },
+    {
       "checkin_id": 1598900579,
       "created_at": "Fri, 04 Sep 2026 15:09:17 +0000",
       "user": "szeppa",
