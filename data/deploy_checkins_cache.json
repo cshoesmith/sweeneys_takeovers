@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598880815,
+      "created_at": "Fri, 04 Sep 2026 13:28:25 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "",
+      "beer_name": "West Coast IPA (2026)",
+      "beer_id": 6807979,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807979_c6706_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 4
+    },
+    {
       "checkin_id": 1598878492,
       "created_at": "Fri, 04 Sep 2026 13:11:33 +0000",
       "user": "LightBeerking",
