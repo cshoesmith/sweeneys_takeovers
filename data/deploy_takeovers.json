@@ -6116,11 +6116,12 @@
     "breweries": [
       "Hop Nation Brewing Co"
     ],
-    "checkins": 15,
-    "unique_beers": 9,
-    "total_checkins_that_week": 16,
-    "share_pct": 93.8,
+    "checkins": 19,
+    "unique_beers": 10,
+    "total_checkins_that_week": 20,
+    "share_pct": 95.0,
     "beers": [
+      "Czech Pilsner",
       "Euro Pilsner",
       "Lazy Hazy",
       "Melbourne Black",
@@ -6132,6 +6133,21 @@
       "West Coast IPA (2026)"
     ],
     "beer_details": [
+      {
+        "beer_id": 6622299,
+        "beer_name": "Czech Pilsner",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6591762_5ab2b_sm.jpeg",
+        "beer_style": "Pilsner - Czech / Bohemian",
+        "beer_abv": 4.0,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 3,
+        "brewery_name": "Hop Nation Brewing Co",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-czech-pilsner/6622299"
+      },
       {
         "beer_id": 6852871,
         "beer_name": "Euro Pilsner",
@@ -6268,8 +6284,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 4,
-        "total": 9,
-        "pct": 44.4,
+        "total": 10,
+        "pct": 40.0,
         "day_counts": [
           4,
           0,
@@ -6279,26 +6295,26 @@
         "rank": 1
       },
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 9,
-        "pct": 0.0,
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 3,
+        "total": 10,
+        "pct": 30.0,
         "day_counts": [
           0,
-          0,
+          3,
           0,
           0
         ],
         "rank": 2
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6313,7 +6329,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6328,7 +6344,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6343,7 +6359,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6358,7 +6374,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
