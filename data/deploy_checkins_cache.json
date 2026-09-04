@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1598849555,
+      "created_at": "Fri, 04 Sep 2026 03:57:38 +0000",
+      "user": "Papicool",
+      "checkin_comment": "Yum grape juice",
+      "beer_name": "Melbourne Fog",
+      "beer_id": 3565219,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3565219_09897_sm.jpeg",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 4.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1598849201,
+      "created_at": "Fri, 04 Sep 2026 03:51:08 +0000",
+      "user": "Papicool",
+      "checkin_comment": "Crisp and refreshing",
+      "beer_name": "Czech Pilsner",
+      "beer_id": 6622299,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pilsner - Czech / Bohemian",
+      "beer_abv": 4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1598847419,
       "created_at": "Fri, 04 Sep 2026 03:20:28 +0000",
       "user": "docta",
