@@ -6116,10 +6116,10 @@
     "breweries": [
       "Hop Nation Brewing Co"
     ],
-    "checkins": 64,
+    "checkins": 68,
     "unique_beers": 13,
-    "total_checkins_that_week": 69,
-    "share_pct": 92.8,
+    "total_checkins_that_week": 73,
+    "share_pct": 93.2,
     "beers": [
       "4:04",
       "Czech Pilsner",
@@ -6341,6 +6341,21 @@
         "rank": 1
       },
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 5,
+        "total": 13,
+        "pct": 38.5,
+        "day_counts": [
+          0,
+          0,
+          5,
+          0
+        ],
+        "rank": 2
+      },
+      {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
@@ -6353,7 +6368,7 @@
           0,
           0
         ],
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "mw1414",
@@ -6366,21 +6381,6 @@
           4,
           1,
           0,
-          0
-        ],
-        "rank": 3
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 4,
-        "total": 13,
-        "pct": 30.8,
-        "day_counts": [
-          0,
-          0,
-          4,
           0
         ],
         "rank": 4
