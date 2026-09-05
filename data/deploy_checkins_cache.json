@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1599265989,
+      "created_at": "Sat, 05 Sep 2026 13:59:50 +0000",
+      "user": "cameron759",
+      "checkin_comment": "",
+      "beer_name": "Hofbräu Original",
+      "beer_id": 38001,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-38001_ef2b9_sm.jpeg",
+      "beer_style": "Lager - Helles",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Staatliches Hofbräuhaus München",
+      "brewery_id": 5566,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1599265642,
+      "created_at": "Sat, 05 Sep 2026 13:58:57 +0000",
+      "user": "cameron759",
+      "checkin_comment": "",
+      "beer_name": "Lazy Hazy",
+      "beer_id": 6852873,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - Australian",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 4
+    },
+    {
       "checkin_id": 1599206264,
       "created_at": "Sat, 05 Sep 2026 10:12:21 +0000",
       "user": "cameron759",
