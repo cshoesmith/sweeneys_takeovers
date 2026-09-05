@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1599194564,
+      "created_at": "Sat, 05 Sep 2026 07:23:03 +0000",
+      "user": "PlinyDownUnder",
+      "checkin_comment": "",
+      "beer_name": "4:04",
+      "beer_id": 6762235,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1599194132,
+      "created_at": "Sat, 05 Sep 2026 07:13:21 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Black Lager",
+      "beer_id": 6342347,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6342347_73020_sm.jpeg",
+      "beer_style": "Lager - Dark",
+      "beer_abv": 5.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Balter Brewing Company",
+      "brewery_id": 256779,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1599192083,
       "created_at": "Sat, 05 Sep 2026 06:29:06 +0000",
       "user": "SeamusH",
