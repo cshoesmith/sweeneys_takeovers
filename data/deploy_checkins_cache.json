@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1599640998,
+      "created_at": "Sun, 06 Sep 2026 07:16:10 +0000",
+      "user": "McGibbon93",
+      "checkin_comment": "Nice balance of tart citrus, acidity, touch of salt and juicy sweetness.",
+      "beer_name": "Shiso Yuzu Gose",
+      "beer_id": 6671105,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Sour - Fruited Gose",
+      "beer_abv": 4.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sailors Grave Brewing",
+      "brewery_id": 296515,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1599632768,
       "created_at": "Sun, 06 Sep 2026 04:25:50 +0000",
       "user": "jimmyish",
