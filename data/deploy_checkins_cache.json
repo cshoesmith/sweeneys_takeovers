@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1599642163,
+      "created_at": "Sun, 06 Sep 2026 07:40:19 +0000",
+      "user": "McGibbon93",
+      "checkin_comment": "",
+      "beer_name": "The Chop",
+      "beer_id": 1744654,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1744654_b6bc7_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1599640998,
       "created_at": "Sun, 06 Sep 2026 07:16:10 +0000",
       "user": "McGibbon93",
