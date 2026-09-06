@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1599625096,
+      "created_at": "Sun, 06 Sep 2026 03:04:45 +0000",
+      "user": "fletcher87",
+      "checkin_comment": "",
+      "beer_name": "ALD IPA",
+      "beer_id": 5651288,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5651288_78c2e_sm.jpeg",
+      "beer_style": "IPA - Session",
+      "beer_abv": 4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BrewDog Australia",
+      "brewery_id": 481843,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1599622554,
+      "created_at": "Sun, 06 Sep 2026 02:43:56 +0000",
+      "user": "tammypointless",
+      "checkin_comment": "",
+      "beer_name": "Honey Bush Braggot",
+      "beer_id": 4252330,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4252330_860d8_sm.jpeg",
+      "beer_style": "Mead - Braggot",
+      "beer_abv": 5.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sailors Grave Brewing",
+      "brewery_id": 296515,
+      "rating": 0
+    },
+    {
       "checkin_id": 1599265989,
       "created_at": "Sat, 05 Sep 2026 13:59:50 +0000",
       "user": "cameron759",
