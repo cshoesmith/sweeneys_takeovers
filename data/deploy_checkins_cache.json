@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1599918412,
+      "created_at": "Mon, 07 Sep 2026 03:10:16 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Triple Top Double IPA",
+      "beer_id": 6825169,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Batch Brewing",
+      "brewery_id": 97260,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1599642163,
       "created_at": "Sun, 06 Sep 2026 07:40:19 +0000",
       "user": "McGibbon93",
