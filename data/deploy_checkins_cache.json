@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1600242775,
+      "created_at": "Wed, 09 Sep 2026 13:58:48 +0000",
+      "user": "danjamsow",
+      "checkin_comment": "",
+      "beer_name": "Redline Cypher",
+      "beer_id": 6789762,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6789762_ae840_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "KAIJU! Beer",
+      "brewery_id": 43267,
+      "rating": 4.25
+    },
+    {
+      "checkin_id": 1600242562,
+      "created_at": "Wed, 09 Sep 2026 13:56:14 +0000",
+      "user": "danjamsow",
+      "checkin_comment": "",
+      "beer_name": "Trippy Hippy West Coast IPA",
+      "beer_id": 5516747,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5516747_32e03_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 5.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Batch Brewing",
+      "brewery_id": 97260,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1600239487,
       "created_at": "Wed, 09 Sep 2026 13:13:58 +0000",
       "user": "davidsansome",
