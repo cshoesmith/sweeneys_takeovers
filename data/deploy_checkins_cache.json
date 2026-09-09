@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1600229386,
+      "created_at": "Wed, 09 Sep 2026 10:23:05 +0000",
+      "user": "fogal",
+      "checkin_comment": "",
+      "beer_name": "Triple Top Double IPA",
+      "beer_id": 6825169,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Batch Brewing",
+      "brewery_id": 97260,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1600228708,
+      "created_at": "Wed, 09 Sep 2026 10:05:13 +0000",
+      "user": "fogal",
+      "checkin_comment": "Very nice",
+      "beer_name": "Redline Cypher",
+      "beer_id": 6789762,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6789762_ae840_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "KAIJU! Beer",
+      "brewery_id": 43267,
+      "rating": 4
+    },
+    {
       "checkin_id": 1600223985,
       "created_at": "Wed, 09 Sep 2026 06:23:51 +0000",
       "user": "bizzle14",
