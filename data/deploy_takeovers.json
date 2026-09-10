@@ -6431,5 +6431,173 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-09-10",
+    "brewery": "Wolf Of The Willows",
+    "breweries": [
+      "Wolf Of The Willows"
+    ],
+    "checkins": 4,
+    "unique_beers": 3,
+    "total_checkins_that_week": 4,
+    "share_pct": 100.0,
+    "beers": [
+      "Der Böse Wolf",
+      "Lark Barrel Aged Imperial JSP IV (2021)",
+      "Wolfsrudel Helles"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6440433,
+        "beer_name": "Der Böse Wolf",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6440433_4a7fd_sm.jpeg",
+        "beer_style": "Festbier",
+        "beer_abv": 6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6440433_4a7fd_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "The Big Bad Wolf Festbier is a smooth, clean, and moderately strong pale German lager with a prominent toasty, bready malt flavor and a subtle hop character. Brewed for Oktoberfest and other festivals, known for its deep golden color, persistent foam, and creamy, crisp finish. A collaboration brew with Bad Habits Malting, grown locally on the Mornington Peninsula. ",
+        "rating_score": 3.45937,
+        "rating_count": 16,
+        "brewery_name": "Wolf Of The Willows"
+      },
+      {
+        "beer_id": 4464872,
+        "beer_name": "Lark Barrel Aged Imperial JSP IV (2021)",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4464872_cf691_sm.jpeg",
+        "beer_style": "Porter - Imperial / Double",
+        "beer_abv": 11.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4464872_2654f_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Mark IV of the #barrelexchangeproject with Lark Distillery see’s the release of the 2021 version of the Lark Barrel Aged Imperial Johnny Smoke Porter (JSP). This Imperial Smoke Porter was aged in 100L Lark barrels for an average of 9 months and is weighing in at a hefty 11.8%. The result is an Imperial Smoke Porter rich with whisky barrel aged flavours of dark cocoa, espresso, truffle, vanilla, molasses and a subtle smoke.",
+        "rating_score": 4.26272,
+        "rating_count": 334,
+        "brewery_name": "Wolf Of The Willows"
+      },
+      {
+        "beer_id": 6450758,
+        "beer_name": "Wolfsrudel Helles",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6450758_1eff9_sm.jpeg",
+        "beer_style": "Lager - Helles",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6450758_1eff9_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Raise your steins to your Wolfsrudel aka Wolf Pack! A traditional Munich Helles Lager. Deep golden in colour, with classic malt bready goodness, a touch of floral and spicy hops, before a soft, clean bitterness at the finish. Crisp, smooth, and made for long tables, loud laughter, and one more round with your Wolf pack. Prost!",
+        "rating_score": 3.62095,
+        "rating_count": 74,
+        "brewery_name": "Wolf Of The Willows"
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]
