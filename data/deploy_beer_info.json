@@ -3128,6 +3128,32 @@
     "rating_count": 2804,
     "brewery_name": "Wolf Of The Willows"
   },
+  "5305531": {
+    "beer_id": 5305531,
+    "beer_name": "The Snowball Effect",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-166150_56086.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Stout - Imperial / Double Pastry",
+    "beer_abv": 10.5,
+    "beer_ibu": 0,
+    "beer_description": "Imperial Stout aged in whisky barrels for 9 months, finished on cocoa nibs, vanilla and coconut. Contains lactose.\r\n",
+    "rating_score": 3.98505,
+    "rating_count": 194,
+    "brewery_name": "Wolf Of The Willows"
+  },
+  "6450767": {
+    "beer_id": 6450767,
+    "beer_name": "Wolfsblut Marzen",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6450767_54134_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6450767_54134_hd.jpeg",
+    "beer_style": "Märzen",
+    "beer_abv": 5.5,
+    "beer_ibu": 0,
+    "beer_description": "A traditional malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish.",
+    "rating_score": 0,
+    "rating_count": 8,
+    "brewery_name": "Wolf Of The Willows"
+  },
   "6450758": {
     "beer_id": 6450758,
     "beer_name": "Wolfsrudel Helles",
