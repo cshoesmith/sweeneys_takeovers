@@ -3063,6 +3063,19 @@
     "rating_count": 33,
     "brewery_name": "Hop Nation Brewing Co"
   },
+  "6335242": {
+    "beer_id": 6335242,
+    "beer_name": "Cloudy Apple Cider",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-166150_56086.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Cider - Sweet",
+    "beer_abv": 5.1,
+    "beer_ibu": 0,
+    "beer_description": "Naturally cloudy, moderate sweetness balanced with a light acidity",
+    "rating_score": 0,
+    "rating_count": 3,
+    "brewery_name": "Wolf Of The Willows"
+  },
   "6440433": {
     "beer_id": 6440433,
     "beer_name": "Der Böse Wolf",
@@ -3076,6 +3089,19 @@
     "rating_count": 16,
     "brewery_name": "Wolf Of The Willows"
   },
+  "2883319": {
+    "beer_id": 2883319,
+    "beer_name": "Lark Barrel Aged Imperial JSP",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2883319_f3774_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2883319_1eab3_hd.jpeg",
+    "beer_style": "Porter - Imperial / Double",
+    "beer_abv": 13.9,
+    "beer_ibu": 67,
+    "beer_description": "The Lark whisky barrels were individually hand selected based on their unique sensory characteristics. The brewers and distillers tried samples from countless Lark whisky barrels, discussing which casks would work best for the beer aging process. Once selected, they were emptied of the whisky and shipped directly across the Bass Strait to the brewery. They were then filled within seven days with an imperial version of the Johnny Smoke Porter (JSP) which was left to age. The result is an Imperial Smoked Porter rich with whisky barrel aged flavours of vanilla, mocha, choc orange, citrus, dark chocolate, molasses and espresso. Once the casks were emptied they were returned to Lark Distillery where they were filled with a hand selected single malt whisky to be released as 'The Wolf Release' - a unique whisky that reflects this adventurous and collaborative journey.",
+    "rating_score": 4.12268,
+    "rating_count": 1067,
+    "brewery_name": "Wolf Of The Willows"
+  },
   "4464872": {
     "beer_id": 4464872,
     "beer_name": "Lark Barrel Aged Imperial JSP IV (2021)",
@@ -3087,6 +3113,19 @@
     "beer_description": "Mark IV of the #barrelexchangeproject with Lark Distillery see’s the release of the 2021 version of the Lark Barrel Aged Imperial Johnny Smoke Porter (JSP). This Imperial Smoke Porter was aged in 100L Lark barrels for an average of 9 months and is weighing in at a hefty 11.8%. The result is an Imperial Smoke Porter rich with whisky barrel aged flavours of dark cocoa, espresso, truffle, vanilla, molasses and a subtle smoke.",
     "rating_score": 4.26272,
     "rating_count": 334,
+    "brewery_name": "Wolf Of The Willows"
+  },
+  "3774193": {
+    "beer_id": 3774193,
+    "beer_name": "Pup",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3774193_7dfd3_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3774193_b3c6b_hd.jpeg",
+    "beer_style": "Pale Ale - Australian",
+    "beer_abv": 4,
+    "beer_ibu": 0,
+    "beer_description": "Meet the Wolf PUP - A crisp, easy drinking Australian Pale Ale. Light on the malty, a little hazy, and the perfect amount of fruity hops to round out this tasty,  smashable beer. Hell be your new best mate.",
+    "rating_score": 3.49806,
+    "rating_count": 2804,
     "brewery_name": "Wolf Of The Willows"
   },
   "6450758": {
