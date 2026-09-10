@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1600367235,
+      "created_at": "Thu, 10 Sep 2026 02:28:18 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Der Böse Wolf",
+      "beer_id": 6440433,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6440433_4a7fd_sm.jpeg",
+      "beer_style": "Festbier",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Wolf Of The Willows",
+      "brewery_id": 166150,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1600242775,
       "created_at": "Wed, 09 Sep 2026 13:58:48 +0000",
       "user": "danjamsow",
