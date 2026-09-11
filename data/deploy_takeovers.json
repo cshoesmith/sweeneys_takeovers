@@ -6438,13 +6438,14 @@
     "breweries": [
       "Wolf Of The Willows"
     ],
-    "checkins": 38,
-    "unique_beers": 8,
-    "total_checkins_that_week": 39,
-    "share_pct": 97.4,
+    "checkins": 41,
+    "unique_beers": 9,
+    "total_checkins_that_week": 42,
+    "share_pct": 97.6,
     "beers": [
       "Cloudy Apple Cider",
       "Der Böse Wolf",
+      "IPA - 'Homage'",
       "Lark Barrel Aged Imperial JSP",
       "Lark Barrel Aged Imperial JSP IV (2021)",
       "Pup",
@@ -6479,6 +6480,20 @@
         "beer_description": "The Big Bad Wolf Festbier is a smooth, clean, and moderately strong pale German lager with a prominent toasty, bready malt flavor and a subtle hop character. Brewed for Oktoberfest and other festivals, known for its deep golden color, persistent foam, and creamy, crisp finish. A collaboration brew with Bad Habits Malting, grown locally on the Mornington Peninsula. ",
         "rating_score": 3.45937,
         "rating_count": 16,
+        "brewery_name": "Wolf Of The Willows"
+      },
+      {
+        "beer_id": 1517354,
+        "beer_name": "IPA - 'Homage'",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1517354_2f8fa_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1517354_12387_hd.jpeg",
+        "beer_ibu": 66,
+        "beer_description": "India Pale Ale, or IPA, is the world’s most popular style of craft beer.  To us that’s not surprising considering it’s one of our favourite beers to drink.  As this IPA pays respect to our love of American West Coast IPAs, and of course the humble hop, we have aptly named this beer 'Homage'. Simco, Amarillo, Ella and Cascade ensure this beer bursts with resin and pine, whilst displaying layers of stone fruit. Pale Ale, Wheat, and Biscuit malts provide a solid malt backbone, whilst some acidulated malt provides a lovely brightness on the palate that enhances the hop flavours. Any true IPA needs a firm bitterness and at 66 IBUs this beer delivers.This is all combined into a neat little 6.2% ABV package. Enjoy.",
+        "rating_score": 3.67052,
+        "rating_count": 3424,
         "brewery_name": "Wolf Of The Willows"
       },
       {
@@ -6573,8 +6588,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 8,
-        "pct": 37.5,
+        "total": 9,
+        "pct": 33.3,
         "day_counts": [
           0,
           3,
@@ -6584,26 +6599,26 @@
         "rank": 1
       },
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 8,
-        "pct": 0.0,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 1,
+        "total": 9,
+        "pct": 11.1,
         "day_counts": [
           0,
-          0,
+          1,
           0,
           0
         ],
         "rank": 2
       },
       {
-        "username": "hiriser",
-        "display_name": "Willy",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6614,11 +6629,11 @@
         "rank": 3
       },
       {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6629,11 +6644,11 @@
         "rank": 4
       },
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6644,11 +6659,11 @@
         "rank": 5
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6663,7 +6678,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0.0,
         "day_counts": [
           0,

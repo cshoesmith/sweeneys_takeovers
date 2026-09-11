@@ -3089,6 +3089,19 @@
     "rating_count": 16,
     "brewery_name": "Wolf Of The Willows"
   },
+  "1517354": {
+    "beer_id": 1517354,
+    "beer_name": "IPA - 'Homage'",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1517354_2f8fa_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1517354_12387_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6,
+    "beer_ibu": 66,
+    "beer_description": "India Pale Ale, or IPA, is the world’s most popular style of craft beer.  To us that’s not surprising considering it’s one of our favourite beers to drink.  As this IPA pays respect to our love of American West Coast IPAs, and of course the humble hop, we have aptly named this beer 'Homage'. Simco, Amarillo, Ella and Cascade ensure this beer bursts with resin and pine, whilst displaying layers of stone fruit. Pale Ale, Wheat, and Biscuit malts provide a solid malt backbone, whilst some acidulated malt provides a lovely brightness on the palate that enhances the hop flavours. Any true IPA needs a firm bitterness and at 66 IBUs this beer delivers.This is all combined into a neat little 6.2% ABV package. Enjoy.",
+    "rating_score": 3.67052,
+    "rating_count": 3424,
+    "brewery_name": "Wolf Of The Willows"
+  },
   "2883319": {
     "beer_id": 2883319,
     "beer_name": "Lark Barrel Aged Imperial JSP",
