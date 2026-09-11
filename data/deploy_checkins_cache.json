@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1600554610,
+      "created_at": "Fri, 11 Sep 2026 03:42:59 +0000",
+      "user": "Ggeers",
+      "checkin_comment": "Definite coconut with vanilla notes. Pretty good!",
+      "beer_name": "The Snowball Effect",
+      "beer_id": 5305531,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Stout - Imperial / Double Pastry",
+      "beer_abv": 10.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Wolf Of The Willows",
+      "brewery_id": 166150,
+      "rating": 4
+    },
+    {
       "checkin_id": 1600552940,
       "created_at": "Fri, 11 Sep 2026 03:14:43 +0000",
       "user": "Bradytj",
