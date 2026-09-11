@@ -6438,10 +6438,10 @@
     "breweries": [
       "Wolf Of The Willows"
     ],
-    "checkins": 29,
+    "checkins": 32,
     "unique_beers": 8,
-    "total_checkins_that_week": 30,
-    "share_pct": 96.7,
+    "total_checkins_that_week": 33,
+    "share_pct": 97.0,
     "beers": [
       "Cloudy Apple Cider",
       "Der Böse Wolf",
@@ -6572,12 +6572,12 @@
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 1,
+        "checked": 3,
         "total": 8,
-        "pct": 12.5,
+        "pct": 37.5,
         "day_counts": [
           0,
-          1,
+          3,
           0,
           0
         ],
