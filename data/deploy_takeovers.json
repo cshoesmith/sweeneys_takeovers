@@ -6438,10 +6438,10 @@
     "breweries": [
       "Wolf Of The Willows"
     ],
-    "checkins": 18,
+    "checkins": 23,
     "unique_beers": 8,
-    "total_checkins_that_week": 19,
-    "share_pct": 94.7,
+    "total_checkins_that_week": 24,
+    "share_pct": 95.8,
     "beers": [
       "Cloudy Apple Cider",
       "Der Böse Wolf",
@@ -6569,24 +6569,24 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 1,
         "total": 8,
-        "pct": 0.0,
+        "pct": 12.5,
         "day_counts": [
           0,
-          0,
+          1,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
         "total": 8,
         "pct": 0.0,
