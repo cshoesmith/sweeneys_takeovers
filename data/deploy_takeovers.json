@@ -6577,7 +6577,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2938718_b57c0_sm.jpeg",
         "beer_style": "Sour - Other",
         "beer_abv": 4.1,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2938718_69b89_hd.jpeg",
+        "beer_ibu": 13,
+        "beer_description": "Tropical Sour - Bursting with lush tropical fruit flavours of pineapple, passionfruit, mango and guava, and finishing with a quenching tang from the kettle souring, this session sour keeps you thirst covered. It's easy on the booze yet uncompromising in tropical hop aroma and juicy flavour. Take this wolf to the island bar!\r\n\r\n",
+        "rating_score": 3.46442,
+        "rating_count": 2073,
+        "brewery_name": "Wolf Of The Willows"
       },
       {
         "beer_id": 3774193,
@@ -6641,7 +6647,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-863560_a1843_sm.jpeg",
         "beer_style": "Pale Ale - XPA (Extra Pale)",
         "beer_abv": 4.7,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-863560_c8712_hd.jpeg",
+        "beer_ibu": 30,
+        "beer_description": "Extra pale in colour with Extra hop aroma and flavour. Passionfruit, citrus and tropical fruits are supported by a subtle, biscuity malt and a soft, round bitterness. Easy, flavoursome drinking for the hop lover.",
+        "rating_score": 3.62504,
+        "rating_count": 5799,
+        "brewery_name": "Wolf Of The Willows"
       }
     ],
     "source": "heuristic",
