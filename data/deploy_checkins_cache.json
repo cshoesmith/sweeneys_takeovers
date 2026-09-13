@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1601319129,
+      "created_at": "Sun, 13 Sep 2026 04:38:04 +0000",
+      "user": "ClintLloyd",
+      "checkin_comment": "Beautiful passionfruit note, really natural and transparent. Gentle bitterness with resinous mouth feel, both gorgeously subtle without taking centre stage. Alcohol very well hidden. Gorgeous sweetness coming through as the glass warms. Genius balance.",
+      "beer_name": "Triple Top Double IPA",
+      "beer_id": 6825169,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Batch Brewing",
+      "brewery_id": 97260,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1600898706,
       "created_at": "Sat, 12 Sep 2026 09:06:36 +0000",
       "user": "SeamusH",
