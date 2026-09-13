@@ -6438,20 +6438,25 @@
     "breweries": [
       "Wolf Of The Willows"
     ],
-    "checkins": 52,
-    "unique_beers": 9,
-    "total_checkins_that_week": 55,
-    "share_pct": 94.5,
+    "checkins": 64,
+    "unique_beers": 14,
+    "total_checkins_that_week": 67,
+    "share_pct": 95.5,
     "beers": [
       "Cloudy Apple Cider",
+      "Crisp Lager",
       "Der Böse Wolf",
+      "Ginger Beer",
       "IPA - 'Homage'",
       "Lark Barrel Aged Imperial JSP",
       "Lark Barrel Aged Imperial JSP IV (2021)",
+      "PILS",
+      "Pacific Sour",
       "Pup",
       "The Snowball Effect",
       "Wolfsblut Marzen",
-      "Wolfsrudel Helles"
+      "Wolfsrudel Helles",
+      "XPA -  Extra Pale Ale"
     ],
     "beer_details": [
       {
@@ -6469,6 +6474,20 @@
         "brewery_name": "Wolf Of The Willows"
       },
       {
+        "beer_id": 5056224,
+        "beer_name": "Crisp Lager",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5056224_60c1e_sm.jpeg",
+        "beer_style": "Lager - Pale",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5056224_996d5_hd.jpeg",
+        "beer_ibu": 12,
+        "beer_description": "Authentically Brewed & Lagered, our Crisp Lager is an all-malt brew, unfiltered, unpasteurised, and late hopped for full flavour. Styled on an American Light Lager, it's pale straw in colour with a crystal clear appearance. Subtle citrus hop notes and a light, dry profile.  Made exclusively with Australian and New Zealand ingredients it's a refreshingly crisp Low Carb lager, that’ll keep you coming back for more!\r\n\r\nMalt: Pale\r\n\r\nHops: Motueka (NZ), Ella (NZ)",
+        "rating_score": 3.30743,
+        "rating_count": 350,
+        "brewery_name": "Wolf Of The Willows"
+      },
+      {
         "beer_id": 6440433,
         "beer_name": "Der Böse Wolf",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6440433_4a7fd_sm.jpeg",
@@ -6480,6 +6499,20 @@
         "beer_description": "The Big Bad Wolf Festbier is a smooth, clean, and moderately strong pale German lager with a prominent toasty, bready malt flavor and a subtle hop character. Brewed for Oktoberfest and other festivals, known for its deep golden color, persistent foam, and creamy, crisp finish. A collaboration brew with Bad Habits Malting, grown locally on the Mornington Peninsula. ",
         "rating_score": 3.45937,
         "rating_count": 16,
+        "brewery_name": "Wolf Of The Willows"
+      },
+      {
+        "beer_id": 5601399,
+        "beer_name": "Ginger Beer",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-166150_56086.jpeg",
+        "beer_style": "Hard Ginger Beer",
+        "beer_abv": 4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "Say Hello to our all-new, Ultra Low Sugar Ginger Beer! A wonderfully refreshing, all-natural Ginger Beer with the perfect balance of sweetness & spice, perfect for those sunny summer days. \r\n\r\nBrewed with real Australian ginger, it is smooth and sessionable with a semi-dry body and a gentle Ginger tickle on the back palate, Yellow, lightly cloudy appearance.\r\n\r\nAnd the best bit? It has less than 0.1gm sugar per 100ml!",
+        "rating_score": 2.89359,
+        "rating_count": 78,
         "brewery_name": "Wolf Of The Willows"
       },
       {
@@ -6523,6 +6556,28 @@
         "rating_score": 4.26272,
         "rating_count": 334,
         "brewery_name": "Wolf Of The Willows"
+      },
+      {
+        "beer_id": 2342067,
+        "beer_name": "PILS",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2342067_fe591_sm.jpeg",
+        "beer_style": "Pilsner - Other",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2342067_a33b6_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Lagered to perfection, this Austalian Pilsner has clean stonefuit and floral aromas, a full mouthfeel, and a dry, crisp finish, with a rounded bitterness.",
+        "rating_score": 3.28629,
+        "rating_count": 1207,
+        "brewery_name": "Wolf Of The Willows"
+      },
+      {
+        "beer_id": 2938718,
+        "beer_name": "Pacific Sour",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2938718_b57c0_sm.jpeg",
+        "beer_style": "Sour - Other",
+        "beer_abv": 4.1,
+        "beer_auth_rating": null
       },
       {
         "beer_id": 3774193,
@@ -6579,32 +6634,40 @@
         "rating_score": 3.62095,
         "rating_count": 74,
         "brewery_name": "Wolf Of The Willows"
+      },
+      {
+        "beer_id": 863560,
+        "beer_name": "XPA -  Extra Pale Ale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-863560_a1843_sm.jpeg",
+        "beer_style": "Pale Ale - XPA (Extra Pale)",
+        "beer_abv": 4.7,
+        "beer_auth_rating": null
       }
     ],
     "source": "heuristic",
     "member_results": [
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 3,
-        "total": 9,
-        "pct": 33.3,
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 12,
+        "total": 14,
+        "pct": 85.7,
         "day_counts": [
           0,
-          3,
+          12,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 9,
-        "pct": 33.3,
+        "total": 14,
+        "pct": 21.4,
         "day_counts": [
           0,
           3,
@@ -6614,26 +6677,26 @@
         "rank": 2
       },
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 9,
-        "pct": 0.0,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 3,
+        "total": 14,
+        "pct": 21.4,
         "day_counts": [
           0,
-          0,
+          3,
           0,
           0
         ],
         "rank": 3
       },
       {
-        "username": "hiriser",
-        "display_name": "Willy",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6644,11 +6707,11 @@
         "rank": 4
       },
       {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 9,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6663,7 +6726,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6678,7 +6741,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,
