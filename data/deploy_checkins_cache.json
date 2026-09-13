@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1601333428,
+      "created_at": "Sun, 13 Sep 2026 09:49:23 +0000",
+      "user": "-Gav-",
+      "checkin_comment": "Caramelly and smooth.",
+      "beer_name": "Fursty Ferret",
+      "beer_id": 8932,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8932_ae742_sm.jpeg",
+      "beer_style": "Bitter - Session / Ordinary",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badger and Outland Beers (Hall & Woodhouse)",
+      "brewery_id": 1752,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1601319129,
       "created_at": "Sun, 13 Sep 2026 04:38:04 +0000",
       "user": "ClintLloyd",
