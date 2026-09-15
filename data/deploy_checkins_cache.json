@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1601691508,
+      "created_at": "Tue, 15 Sep 2026 11:52:43 +0000",
+      "user": "RobVonk",
+      "checkin_comment": "",
+      "beer_name": "Lark Barrel Aged Imperial JSP",
+      "beer_id": 2883319,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2883319_f3774_sm.jpeg",
+      "beer_style": "Porter - Imperial / Double",
+      "beer_abv": 13.9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Wolf Of The Willows",
+      "brewery_id": 166150,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1601683242,
       "created_at": "Tue, 15 Sep 2026 08:02:00 +0000",
       "user": "aarontrim",
