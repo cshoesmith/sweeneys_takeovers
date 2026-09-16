@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1601820972,
+      "created_at": "Wed, 16 Sep 2026 07:42:17 +0000",
+      "user": "Whoneedstherapy",
+      "checkin_comment": "Sweet, nearly sherberty. Well carbonated.",
+      "beer_name": "Wolfsblut Marzen",
+      "beer_id": 6450767,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6450767_54134_sm.jpeg",
+      "beer_style": "Märzen",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Wolf Of The Willows",
+      "brewery_id": 166150,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1601820626,
       "created_at": "Wed, 16 Sep 2026 07:21:57 +0000",
       "user": "Whoneedstherapy",
