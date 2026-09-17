@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1601973959,
+      "created_at": "Thu, 17 Sep 2026 06:12:28 +0000",
+      "user": "CFord5312",
+      "checkin_comment": "Enjoyed it. Smooth.",
+      "beer_name": "Pale Ale",
+      "beer_id": 16407,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-16407_ea306_sm.jpeg",
+      "beer_style": "Pale Ale - American",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "4 Pines Brewing Company",
+      "brewery_id": 4254,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1601973859,
+      "created_at": "Thu, 17 Sep 2026 06:06:51 +0000",
+      "user": "CFord5312",
+      "checkin_comment": "Awesome bar! \nBeer was okay. Real tart and citrusy. Maybe a bit too much. With that much it should rather be a sour, but wasn't bad.",
+      "beer_name": "Conditioned",
+      "beer_id": 5433235,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5433235_44154_sm.jpeg",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 5.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 0
+    },
+    {
       "checkin_id": 1601964712,
       "created_at": "Thu, 17 Sep 2026 02:16:21 +0000",
       "user": "ale_n",
