@@ -6771,15 +6771,19 @@
     "breweries": [
       "Slow Lane Brewing"
     ],
-    "checkins": 4,
-    "unique_beers": 4,
-    "total_checkins_that_week": 5,
-    "share_pct": 80.0,
+    "checkins": 12,
+    "unique_beers": 8,
+    "total_checkins_that_week": 13,
+    "share_pct": 92.3,
     "beers": [
       "Clean Lines",
       "Conditioned",
+      "Liquid Bread",
+      "Long Shadow",
       "Refectory",
-      "Ruminator - Rum Barrel Aged Doppelbock"
+      "Ruminator - Rum Barrel Aged Doppelbock",
+      "The Red",
+      "Twofold"
     ],
     "beer_details": [
       {
@@ -6811,6 +6815,34 @@
         "brewery_name": "Slow Lane Brewing"
       },
       {
+        "beer_id": 4506339,
+        "beer_name": "Liquid Bread",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4506339_418ac_sm.jpeg",
+        "beer_style": "Bock - Doppelbock",
+        "beer_abv": 8.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4506339_deece_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Doppelbocks are a strong, rich and malty lager originally brewed by Bavarian monks in the 17th century. Designed to sustain the monks while they abstain from solid foods during the 40 day Lent period, doppelbocks earned the nickname ‘Liquid Bread’. Disclaimer: We do not condone 40 day beer-only diets.",
+        "rating_score": 3.92985,
+        "rating_count": 583,
+        "brewery_name": "Slow Lane Brewing"
+      },
+      {
+        "beer_id": 6828024,
+        "beer_name": "Long Shadow",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6828024_b867f_sm.jpeg",
+        "beer_style": "Farmhouse Ale - Bière de Garde",
+        "beer_abv": 7.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6828024_a059a_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Long Shadow is an amber Biere de Garde inspired by the historic farmhouse ales of French Flanders. Meaning “beer for keeping”, the style was brewed through the cooler months and cellared until the busy days of summer. Our version was long lagered in tank, delivering rich malt character and a smooth, dry finish.",
+        "rating_score": 4.00588,
+        "rating_count": 17,
+        "brewery_name": "Slow Lane Brewing"
+      },
+      {
         "beer_id": 3778880,
         "beer_name": "Refectory",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3778880_38177_sm.jpeg",
@@ -6830,6 +6862,28 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745997_bd4cf_sm.jpeg",
         "beer_style": "Bock - Doppelbock",
         "beer_abv": 9.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6745997_bd4cf_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Our Liquid Bread Doppelbock aged eight months in rum barrels, then blended with fresh Doppelbock to round out the finish. Rich, dark and contemplative. Traditional Doppelbock malt depth meeting the warmth and complexity of rum. Expect toasted bread crust, caramelised malt and dark fruit, with oak, molasses, vanilla and a lingering spirit warmth.",
+        "rating_score": 4.09057,
+        "rating_count": 53,
+        "brewery_name": "Slow Lane Brewing"
+      },
+      {
+        "beer_id": 6674915,
+        "beer_name": "The Red",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6674915_8b50b_sm.jpeg",
+        "beer_style": "Australian Sparkling Ale",
+        "beer_abv": 6,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6342252,
+        "beer_name": "Twofold",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6342252_348c5_sm.jpeg",
+        "beer_style": "Belgian Dubbel",
+        "beer_abv": 7.5,
         "beer_auth_rating": null
       }
     ],
@@ -6840,7 +6894,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6855,7 +6909,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6870,7 +6924,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 4,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6885,7 +6939,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6900,7 +6954,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6915,7 +6969,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6930,7 +6984,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 4,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
