@@ -6764,5 +6764,182 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-09-17",
+    "brewery": "Slow Lane Brewing",
+    "breweries": [
+      "Slow Lane Brewing"
+    ],
+    "checkins": 4,
+    "unique_beers": 4,
+    "total_checkins_that_week": 5,
+    "share_pct": 80.0,
+    "beers": [
+      "Clean Lines",
+      "Conditioned",
+      "Refectory",
+      "Ruminator - Rum Barrel Aged Doppelbock"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6745989,
+        "beer_name": "Clean Lines",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745989_0e388_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 7.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6745989_0e388_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Six years in, we’ve finally brewed a West Coast IPA. A collab with our mates at Kicks Brewing, Clean Lines layers NZ Motueka and Peacharine with US Centennial, Mosaic, Simcoe and Strata. Bright citrus, tropical stonefruit and resinous pine, all with clarity and precision. No haze, no soft edges. Just clean bitterness, drawn straight.",
+        "rating_score": 4.0116,
+        "rating_count": 125,
+        "brewery_name": "Slow Lane Brewing"
+      },
+      {
+        "beer_id": 5433235,
+        "beer_name": "Conditioned",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5433235_44154_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 5.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5433235_dafa2_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Conditioned Hazy Pale Ale uses a combination of our favourite NZ and US hops to create a truly immersive tropical fruit experience.",
+        "rating_score": 3.79586,
+        "rating_count": 749,
+        "brewery_name": "Slow Lane Brewing"
+      },
+      {
+        "beer_id": 3778880,
+        "beer_name": "Refectory",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3778880_38177_sm.jpeg",
+        "beer_style": "Belgian Blonde",
+        "beer_abv": 4.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3778880_07983_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Inspired by the lower strength 'single' beers traditionally produced by Trappist breweries in Belgium. This is a refreshing ale with spicy and fruity yeast and hop driven flavours.",
+        "rating_score": 3.63394,
+        "rating_count": 716,
+        "brewery_name": "Slow Lane Brewing"
+      },
+      {
+        "beer_id": 6745997,
+        "beer_name": "Ruminator - Rum Barrel Aged Doppelbock",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745997_bd4cf_sm.jpeg",
+        "beer_style": "Bock - Doppelbock",
+        "beer_abv": 9.5,
+        "beer_auth_rating": null
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]

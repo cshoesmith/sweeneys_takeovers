@@ -3244,5 +3244,44 @@
     "rating_score": 3.62504,
     "rating_count": 5799,
     "brewery_name": "Wolf Of The Willows"
+  },
+  "6745989": {
+    "beer_id": 6745989,
+    "beer_name": "Clean Lines",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745989_0e388_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6745989_0e388_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 7.5,
+    "beer_ibu": 0,
+    "beer_description": "Six years in, we’ve finally brewed a West Coast IPA. A collab with our mates at Kicks Brewing, Clean Lines layers NZ Motueka and Peacharine with US Centennial, Mosaic, Simcoe and Strata. Bright citrus, tropical stonefruit and resinous pine, all with clarity and precision. No haze, no soft edges. Just clean bitterness, drawn straight.",
+    "rating_score": 4.0116,
+    "rating_count": 125,
+    "brewery_name": "Slow Lane Brewing"
+  },
+  "5433235": {
+    "beer_id": 5433235,
+    "beer_name": "Conditioned",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5433235_44154_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5433235_dafa2_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 5.4,
+    "beer_ibu": 0,
+    "beer_description": "Conditioned Hazy Pale Ale uses a combination of our favourite NZ and US hops to create a truly immersive tropical fruit experience.",
+    "rating_score": 3.79586,
+    "rating_count": 749,
+    "brewery_name": "Slow Lane Brewing"
+  },
+  "3778880": {
+    "beer_id": 3778880,
+    "beer_name": "Refectory",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3778880_38177_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3778880_07983_hd.jpeg",
+    "beer_style": "Belgian Blonde",
+    "beer_abv": 4.8,
+    "beer_ibu": 0,
+    "beer_description": "Inspired by the lower strength 'single' beers traditionally produced by Trappist breweries in Belgium. This is a refreshing ale with spicy and fruity yeast and hop driven flavours.",
+    "rating_score": 3.63394,
+    "rating_count": 716,
+    "brewery_name": "Slow Lane Brewing"
   }
 }
