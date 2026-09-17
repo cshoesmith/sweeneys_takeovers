@@ -6771,10 +6771,10 @@
     "breweries": [
       "Slow Lane Brewing"
     ],
-    "checkins": 12,
+    "checkins": 13,
     "unique_beers": 8,
-    "total_checkins_that_week": 13,
-    "share_pct": 92.3,
+    "total_checkins_that_week": 14,
+    "share_pct": 92.9,
     "beers": [
       "Clean Lines",
       "Conditioned",
@@ -6876,7 +6876,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6674915_8b50b_sm.jpeg",
         "beer_style": "Australian Sparkling Ale",
         "beer_abv": 6,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6674915_8b50b_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A love letter to an Australian icon. The Red delivers a hazy golden pour, a fruity, estery nose, and a dry, biscuity finish that made this style a legend. Fermented with the Dinkum yeast strain from Mogwai Labs and can-conditioned with high carbonation. Roll gently before pouring to achieve the signature cloudy appearance.",
+        "rating_score": 3.84298,
+        "rating_count": 57,
+        "brewery_name": "Slow Lane Brewing"
       },
       {
         "beer_id": 6342252,
@@ -6884,7 +6890,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6342252_348c5_sm.jpeg",
         "beer_style": "Belgian Dubbel",
         "beer_abv": 7.5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6342252_348c5_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Rich yet restrained, Twofold is a true-to-style Belgian Dubbel that balances deep malt complexity with expressive fermentation character. Pouring a dark brown colour, it reveals layered notes of dried fruit, toasted caramel, and subtle spice.",
+        "rating_score": 3.9428,
+        "rating_count": 132,
+        "brewery_name": "Slow Lane Brewing"
       }
     ],
     "source": "heuristic",
