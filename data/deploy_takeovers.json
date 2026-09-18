@@ -6771,10 +6771,10 @@
     "breweries": [
       "Slow Lane Brewing"
     ],
-    "checkins": 24,
-    "unique_beers": 9,
-    "total_checkins_that_week": 25,
-    "share_pct": 96.0,
+    "checkins": 25,
+    "unique_beers": 10,
+    "total_checkins_that_week": 26,
+    "share_pct": 96.2,
     "beers": [
       "Clean Lines",
       "Conditioned",
@@ -6784,7 +6784,8 @@
       "Ruminator - Rum Barrel Aged Doppelbock",
       "Simplicity",
       "The Red",
-      "Twofold"
+      "Twofold",
+      "Whiter Shade of Ale"
     ],
     "beer_details": [
       {
@@ -6912,6 +6913,20 @@
         "rating_score": 3.9428,
         "rating_count": 132,
         "brewery_name": "Slow Lane Brewing"
+      },
+      {
+        "beer_id": 5110267,
+        "beer_name": "Whiter Shade of Ale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5110267_12c67_sm.jpeg",
+        "beer_style": "Wheat Beer - Witbier / Blanche",
+        "beer_abv": 5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5110267_e771b_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Witbier, meaning ‘white beer’ in Flemish, is a medieval style of beer from Belgium that was revived in the 1960’s. This pale, hazy wheat beer is brewed with coriander and orange peel. Whiter Shade of Ale has a full bodied mouthfeel from the large amount of wheat and oats used. Yet still highly refreshing with its high carbonation, a dry finish, and low bitterness.",
+        "rating_score": 3.51433,
+        "rating_count": 890,
+        "brewery_name": "Slow Lane Brewing"
       }
     ],
     "source": "heuristic",
@@ -6921,8 +6936,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 9,
-        "pct": 33.3,
+        "total": 10,
+        "pct": 30.0,
         "day_counts": [
           0,
           3,
@@ -6936,7 +6951,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6951,7 +6966,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6966,7 +6981,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6981,7 +6996,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6996,7 +7011,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7011,7 +7026,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,

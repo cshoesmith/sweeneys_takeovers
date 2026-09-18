@@ -3361,5 +3361,18 @@
     "rating_score": 3.9428,
     "rating_count": 132,
     "brewery_name": "Slow Lane Brewing"
+  },
+  "5110267": {
+    "beer_id": 5110267,
+    "beer_name": "Whiter Shade of Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5110267_12c67_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5110267_e771b_hd.jpeg",
+    "beer_style": "Wheat Beer - Witbier / Blanche",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "Witbier, meaning ‘white beer’ in Flemish, is a medieval style of beer from Belgium that was revived in the 1960’s. This pale, hazy wheat beer is brewed with coriander and orange peel. Whiter Shade of Ale has a full bodied mouthfeel from the large amount of wheat and oats used. Yet still highly refreshing with its high carbonation, a dry finish, and low bitterness.",
+    "rating_score": 3.51433,
+    "rating_count": 890,
+    "brewery_name": "Slow Lane Brewing"
   }
 }
