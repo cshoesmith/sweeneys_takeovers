@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1602166578,
+      "created_at": "Fri, 18 Sep 2026 08:20:42 +0000",
+      "user": "drew_draper",
+      "checkin_comment": "Super bready pils. Quality",
+      "beer_name": "Jagged Little Pils",
+      "beer_id": 5748273,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5748273_bc74f_sm.jpeg",
+      "beer_style": "Pilsner - German",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1602166543,
+      "created_at": "Fri, 18 Sep 2026 08:19:19 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Ruminator - Rum Barrel Aged Doppelbock",
+      "beer_id": 6745997,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745997_bd4cf_sm.jpeg",
+      "beer_style": "Bock - Doppelbock",
+      "beer_abv": 9.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1602164807,
       "created_at": "Fri, 18 Sep 2026 07:21:07 +0000",
       "user": "Sampele",

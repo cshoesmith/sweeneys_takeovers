@@ -3271,6 +3271,19 @@
     "rating_count": 749,
     "brewery_name": "Slow Lane Brewing"
   },
+  "5748273": {
+    "beer_id": 5748273,
+    "beer_name": "Jagged Little Pils",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5748273_bc74f_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5748273_3525a_hd.jpeg",
+    "beer_style": "Pilsner - German",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "German Pils are the German adaptation of the original Pilsners from Pilsen in the Czech Republic. Brewed using pilsner malt and noble hops, both sourced from Germany, Jagged Little Pils spent five weeks lagering in our horizontal tanks. This is a pale, dry and bitter beer with an extra crisp finish.",
+    "rating_score": 3.70919,
+    "rating_count": 185,
+    "brewery_name": "Slow Lane Brewing"
+  },
   "4506339": {
     "beer_id": 4506339,
     "beer_name": "Liquid Bread",
