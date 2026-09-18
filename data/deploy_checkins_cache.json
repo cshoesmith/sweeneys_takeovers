@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1602177434,
+      "created_at": "Fri, 18 Sep 2026 11:24:35 +0000",
+      "user": "dgarberg",
+      "checkin_comment": "So dark you can hardly see it 🤣🤣🍻",
+      "beer_name": "Ruminator - Rum Barrel Aged Doppelbock",
+      "beer_id": 6745997,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745997_bd4cf_sm.jpeg",
+      "beer_style": "Bock - Doppelbock",
+      "beer_abv": 9.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 0
+    },
+    {
       "checkin_id": 1602174746,
       "created_at": "Fri, 18 Sep 2026 10:57:05 +0000",
       "user": "dgarberg",
