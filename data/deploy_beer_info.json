@@ -3323,6 +3323,19 @@
     "rating_count": 53,
     "brewery_name": "Slow Lane Brewing"
   },
+  "4711878": {
+    "beer_id": 4711878,
+    "beer_name": "Simplicity",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4711878_d7c0a_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4711878_f9251_hd.jpeg",
+    "beer_style": "Lager - Helles",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "Simplicity is an unfiltered Helles, a pale lager style produced predominately in Southern Germany. Medium bodied and malt focused with only a touch of bitterness from the spicy German hops. Perfect for reminding you that the simple things in life are often the best!",
+    "rating_score": 3.75216,
+    "rating_count": 139,
+    "brewery_name": "Slow Lane Brewing"
+  },
   "6674915": {
     "beer_id": 6674915,
     "beer_name": "The Red",
