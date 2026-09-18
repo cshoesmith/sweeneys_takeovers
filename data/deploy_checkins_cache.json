@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1602158968,
+      "created_at": "Fri, 18 Sep 2026 04:08:28 +0000",
+      "user": "Ggeers",
+      "checkin_comment": "Picked up a lot of colour from the barrel. Rich with dried fruit notes. Good stuff!",
+      "beer_name": "Ruminator - Rum Barrel Aged Doppelbock",
+      "beer_id": 6745997,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745997_bd4cf_sm.jpeg",
+      "beer_style": "Bock - Doppelbock",
+      "beer_abv": 9.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 4.1
+    },
+    {
+      "checkin_id": 1602157602,
+      "created_at": "Fri, 18 Sep 2026 03:44:09 +0000",
+      "user": "Ggeers",
+      "checkin_comment": "On style. Unusual to see an amber version outside Northern France.",
+      "beer_name": "Long Shadow",
+      "beer_id": 6828024,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6828024_b867f_sm.jpeg",
+      "beer_style": "Farmhouse Ale - Bière de Garde",
+      "beer_abv": 7.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 4
+    },
+    {
       "checkin_id": 1602156279,
       "created_at": "Fri, 18 Sep 2026 03:22:15 +0000",
       "user": "barrman",
