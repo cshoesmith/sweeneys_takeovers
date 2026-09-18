@@ -6771,10 +6771,10 @@
     "breweries": [
       "Slow Lane Brewing"
     ],
-    "checkins": 20,
+    "checkins": 24,
     "unique_beers": 9,
-    "total_checkins_that_week": 21,
-    "share_pct": 95.2,
+    "total_checkins_that_week": 25,
+    "share_pct": 96.0,
     "beers": [
       "Clean Lines",
       "Conditioned",
@@ -6920,12 +6920,12 @@
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 1,
+        "checked": 3,
         "total": 9,
-        "pct": 11.1,
+        "pct": 33.3,
         "day_counts": [
           0,
-          1,
+          3,
           0,
           0
         ],
