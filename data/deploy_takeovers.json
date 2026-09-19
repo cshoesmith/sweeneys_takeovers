@@ -6771,10 +6771,10 @@
     "breweries": [
       "Slow Lane Brewing"
     ],
-    "checkins": 37,
+    "checkins": 39,
     "unique_beers": 12,
-    "total_checkins_that_week": 43,
-    "share_pct": 86.0,
+    "total_checkins_that_week": 46,
+    "share_pct": 84.8,
     "beers": [
       "Clean Lines",
       "Conditioned",
@@ -6992,6 +6992,21 @@
         "rank": 2
       },
       {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 2,
+        "total": 12,
+        "pct": 16.7,
+        "day_counts": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "rank": 3
+      },
+      {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
@@ -7004,7 +7019,7 @@
           1,
           0
         ],
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "hiriser",
@@ -7019,27 +7034,12 @@
           0,
           0
         ],
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 0,
-        "total": 12,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "rank": 5
-      },
-      {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
         "total": 12,
         "pct": 0.0,
