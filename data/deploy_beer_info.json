@@ -3362,6 +3362,19 @@
     "rating_count": 57,
     "brewery_name": "Slow Lane Brewing"
   },
+  "4227242": {
+    "beer_id": 4227242,
+    "beer_name": "Threefold",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4227242_7b40c_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4227242_d559e_hd.jpeg",
+    "beer_style": "Belgian Tripel",
+    "beer_abv": 8.4,
+    "beer_ibu": 0,
+    "beer_description": "Our version of the famous strong pale Tripel beers from Belgium. Threefold has complex yeast derived flavours from an initial open fermentation and a second fermentation in the can.",
+    "rating_score": 3.87389,
+    "rating_count": 651,
+    "brewery_name": "Slow Lane Brewing"
+  },
   "6342252": {
     "beer_id": 6342252,
     "beer_name": "Twofold",

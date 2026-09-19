@@ -6771,10 +6771,10 @@
     "breweries": [
       "Slow Lane Brewing"
     ],
-    "checkins": 35,
-    "unique_beers": 11,
-    "total_checkins_that_week": 39,
-    "share_pct": 89.7,
+    "checkins": 36,
+    "unique_beers": 12,
+    "total_checkins_that_week": 40,
+    "share_pct": 90.0,
     "beers": [
       "Clean Lines",
       "Conditioned",
@@ -6785,6 +6785,7 @@
       "Ruminator - Rum Barrel Aged Doppelbock",
       "Simplicity",
       "The Red",
+      "Threefold",
       "Twofold",
       "Whiter Shade of Ale"
     ],
@@ -6916,6 +6917,20 @@
         "brewery_name": "Slow Lane Brewing"
       },
       {
+        "beer_id": 4227242,
+        "beer_name": "Threefold",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4227242_7b40c_sm.jpeg",
+        "beer_style": "Belgian Tripel",
+        "beer_abv": 8.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4227242_d559e_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Our version of the famous strong pale Tripel beers from Belgium. Threefold has complex yeast derived flavours from an initial open fermentation and a second fermentation in the can.",
+        "rating_score": 3.87389,
+        "rating_count": 651,
+        "brewery_name": "Slow Lane Brewing"
+      },
+      {
         "beer_id": 6342252,
         "beer_name": "Twofold",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6342252_348c5_sm.jpeg",
@@ -6950,13 +6965,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 4,
-        "total": 11,
-        "pct": 36.4,
+        "checked": 5,
+        "total": 12,
+        "pct": 41.7,
         "day_counts": [
           0,
           0,
-          4,
+          5,
           0
         ],
         "rank": 1
@@ -6966,8 +6981,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 11,
-        "pct": 27.3,
+        "total": 12,
+        "pct": 25.0,
         "day_counts": [
           0,
           3,
@@ -6981,7 +6996,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -6996,7 +7011,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7011,7 +7026,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7026,7 +7041,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7041,7 +7056,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,

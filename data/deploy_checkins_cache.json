@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1602495309,
+      "created_at": "Sat, 19 Sep 2026 04:52:32 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Threefold",
+      "beer_id": 4227242,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4227242_7b40c_sm.jpeg",
+      "beer_style": "Belgian Tripel",
+      "beer_abv": 8.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 3.9
+    },
+    {
       "checkin_id": 1602493494,
       "created_at": "Sat, 19 Sep 2026 04:23:57 +0000",
       "user": "dapitz",
