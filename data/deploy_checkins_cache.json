@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1602488853,
+      "created_at": "Sat, 19 Sep 2026 03:29:24 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Long Shadow",
+      "beer_id": 6828024,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6828024_b867f_sm.jpeg",
+      "beer_style": "Farmhouse Ale - Bière de Garde",
+      "beer_abv": 7.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1602487731,
+      "created_at": "Sat, 19 Sep 2026 03:18:57 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Redline Cypher",
+      "beer_id": 6789762,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6789762_ae840_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "KAIJU! Beer",
+      "brewery_id": 43267,
+      "rating": 4
+    },
+    {
       "checkin_id": 1602177434,
       "created_at": "Fri, 18 Sep 2026 11:24:35 +0000",
       "user": "dgarberg",

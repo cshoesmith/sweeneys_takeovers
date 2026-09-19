@@ -6771,10 +6771,10 @@
     "breweries": [
       "Slow Lane Brewing"
     ],
-    "checkins": 31,
+    "checkins": 32,
     "unique_beers": 11,
-    "total_checkins_that_week": 32,
-    "share_pct": 96.9,
+    "total_checkins_that_week": 34,
+    "share_pct": 94.1,
     "beers": [
       "Clean Lines",
       "Conditioned",
@@ -6965,13 +6965,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
+        "checked": 1,
         "total": 11,
-        "pct": 0.0,
+        "pct": 9.1,
         "day_counts": [
           0,
           0,
-          0,
+          1,
           0
         ],
         "rank": 2
