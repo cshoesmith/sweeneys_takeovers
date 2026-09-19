@@ -6771,10 +6771,10 @@
     "breweries": [
       "Slow Lane Brewing"
     ],
-    "checkins": 32,
+    "checkins": 35,
     "unique_beers": 11,
-    "total_checkins_that_week": 34,
-    "share_pct": 94.1,
+    "total_checkins_that_week": 39,
+    "share_pct": 89.7,
     "beers": [
       "Clean Lines",
       "Conditioned",
@@ -6947,6 +6947,21 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 4,
+        "total": 11,
+        "pct": 36.4,
+        "day_counts": [
+          0,
+          0,
+          4,
+          0
+        ],
+        "rank": 1
+      },
+      {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
@@ -6957,21 +6972,6 @@
           0,
           3,
           0,
-          0
-        ],
-        "rank": 1
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 1,
-        "total": 11,
-        "pct": 9.1,
-        "day_counts": [
-          0,
-          0,
-          1,
           0
         ],
         "rank": 2
