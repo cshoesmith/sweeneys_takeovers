@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1602561692,
+      "created_at": "Sat, 19 Sep 2026 13:47:35 +0000",
+      "user": "craigmoro",
+      "checkin_comment": "",
+      "beer_name": "Dick Tracy",
+      "beer_id": 704580,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-704580_2d6f6_sm.jpeg",
+      "beer_style": "Brown Ale - American",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 3.9
+    },
+    {
+      "checkin_id": 1602553616,
+      "created_at": "Sat, 19 Sep 2026 13:24:06 +0000",
+      "user": "craigmoro",
+      "checkin_comment": "",
+      "beer_name": "Whiter Shade of Ale",
+      "beer_id": 5110267,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5110267_12c67_sm.jpeg",
+      "beer_style": "Wheat Beer - Witbier / Blanche",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 3.8
+    },
+    {
       "checkin_id": 1602547165,
       "created_at": "Sat, 19 Sep 2026 13:03:29 +0000",
       "user": "craigmoro",
