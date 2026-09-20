@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1602943219,
+      "created_at": "Sun, 20 Sep 2026 06:12:58 +0000",
+      "user": "SeamusH",
+      "checkin_comment": "",
+      "beer_name": "Ruminator - Rum Barrel Aged Doppelbock",
+      "beer_id": 6745997,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745997_bd4cf_sm.jpeg",
+      "beer_style": "Bock - Doppelbock",
+      "beer_abv": 9.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1602942245,
+      "created_at": "Sun, 20 Sep 2026 05:47:48 +0000",
+      "user": "gazzabot",
+      "checkin_comment": "",
+      "beer_name": "Redline Cypher",
+      "beer_id": 6789762,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6789762_ae840_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "KAIJU! Beer",
+      "brewery_id": 43267,
+      "rating": 4.2
+    },
+    {
       "checkin_id": 1602940945,
       "created_at": "Sun, 20 Sep 2026 05:15:00 +0000",
       "user": "PlinyDownUnder",
