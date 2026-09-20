@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1602971113,
+      "created_at": "Sun, 20 Sep 2026 12:15:48 +0000",
+      "user": "Arnemann02",
+      "checkin_comment": "Bar 5. vart billiard, karadn mot jendetn. \nEin ærlig mann ska innrømma eit tap. Heder og ære ti Drammensarane🙇‍♂️",
+      "beer_name": "New",
+      "beer_id": 5922,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5922_9c1b5_sm.jpeg",
+      "beer_style": "Lager - Pale",
+      "beer_abv": 4.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Tooheys Brewing",
+      "brewery_id": 13905,
+      "rating": 2.75
+    },
+    {
       "checkin_id": 1602945148,
       "created_at": "Sun, 20 Sep 2026 06:56:21 +0000",
       "user": "SeamusH",
