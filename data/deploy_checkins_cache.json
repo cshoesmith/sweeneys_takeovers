@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1602937414,
+      "created_at": "Sun, 20 Sep 2026 04:10:36 +0000",
+      "user": "gazzabot",
+      "checkin_comment": "This is bloody delicious!",
+      "beer_name": "The Red",
+      "beer_id": 6674915,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6674915_8b50b_sm.jpeg",
+      "beer_style": "Australian Sparkling Ale",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 4.8
+    },
+    {
       "checkin_id": 1602561692,
       "created_at": "Sat, 19 Sep 2026 13:47:35 +0000",
       "user": "craigmoro",
