@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1603185884,
+      "created_at": "Mon, 21 Sep 2026 10:03:49 +0000",
+      "user": "Kashing_6",
+      "checkin_comment": "",
+      "beer_name": "Long Shadow",
+      "beer_id": 6828024,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6828024_b867f_sm.jpeg",
+      "beer_style": "Farmhouse Ale - Bière de Garde",
+      "beer_abv": 7.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1603185223,
+      "created_at": "Mon, 21 Sep 2026 09:47:56 +0000",
+      "user": "krise1",
+      "checkin_comment": "",
+      "beer_name": "Long Shadow",
+      "beer_id": 6828024,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6828024_b867f_sm.jpeg",
+      "beer_style": "Farmhouse Ale - Bière de Garde",
+      "beer_abv": 7.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1603183455,
       "created_at": "Mon, 21 Sep 2026 08:43:24 +0000",
       "user": "ale_n",
