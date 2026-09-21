@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1603181765,
+      "created_at": "Mon, 21 Sep 2026 07:25:20 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "GET BACK",
+      "beer_id": 6790310,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6790310_ca00b_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 7.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1602971113,
       "created_at": "Sun, 20 Sep 2026 12:15:48 +0000",
       "user": "Arnemann02",
