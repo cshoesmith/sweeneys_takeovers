@@ -3468,6 +3468,19 @@
     "rating_count": 202,
     "brewery_name": "Chuck and Son's Brewing Co."
   },
+  "6161541": {
+    "beer_id": 6161541,
+    "beer_name": "Old-World Lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6161541_3dab0_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6161541_3dab0_hd.jpeg",
+    "beer_style": "Historical Beer - Pre-Prohibition Lager",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "Take yourself back to pre-prohibition USA with this beer that’s been inspired by the full-flavoured lagers of the time. Using old-world hops, we see a bouquet of bitterness that will delight true beer connoisseurs, while providing surprising refreshment. Sitting dark, the Old-World Lager’s appearance provides you with a glimpse of the bold malt and flavour that’s to come, climbing out of the glass. At 5% ABV, let’s hope the OWL is climbing out of that glass and straight onto your eagerly awaiting tastebuds.",
+    "rating_score": 3.615,
+    "rating_count": 140,
+    "brewery_name": "Chuck and Son's Brewing Co."
+  },
   "6264944": {
     "beer_id": 6264944,
     "beer_name": "Superdelic Stout",
