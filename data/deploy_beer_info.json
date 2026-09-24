@@ -3415,6 +3415,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/chuck-and-son-s-brewing-co-alpine-hazy-ipa/5888186"
   },
+  "6154102": {
+    "beer_id": 6154102,
+    "beer_name": "Amarillo XPA",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-559450_1d5c5.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Pale Ale - XPA (Extra Pale)",
+    "beer_abv": 4.2,
+    "beer_ibu": 0,
+    "beer_description": "This delightfully sessionable extra pale ale featured our favourite American hop- Amarillo- in both the whirlpool and in dry hopping. The result is a chilled green mango on the nose, building with spiced apricot and grapefruit on the palate, finishing with a cloudy, soft mouth feel that echoes the slight haze of this crafted XPA.",
+    "rating_score": 3.61582,
+    "rating_count": 158,
+    "brewery_name": "Chuck and Son's Brewing Co."
+  },
   "5826548": {
     "beer_id": 5826548,
     "beer_name": "American Amber",
@@ -3454,6 +3467,20 @@
     "rating_score": 3.68614,
     "rating_count": 202,
     "brewery_name": "Chuck and Son's Brewing Co."
+  },
+  "6264944": {
+    "beer_id": 6264944,
+    "beer_name": "Superdelic Stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4757528_e41c7_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Stout - American",
+    "beer_abv": 6.3,
+    "beer_ibu": 0,
+    "rating_score": 3.77754,
+    "rating_count": 138,
+    "brewery_name": "Chuck and Son's Brewing Co.",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/chuck-and-son-s-brewing-co-superdelic-stout/6264944"
   },
   "5827166": {
     "beer_id": 5827166,
