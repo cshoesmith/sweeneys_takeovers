@@ -7067,5 +7067,202 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-09-24",
+    "brewery": "Chuck and Son's Brewing Co.",
+    "breweries": [
+      "Chuck and Son's Brewing Co."
+    ],
+    "checkins": 6,
+    "unique_beers": 6,
+    "total_checkins_that_week": 8,
+    "share_pct": 75.0,
+    "beers": [
+      "Alpine Hazy IPA",
+      "American Amber",
+      "Botanical IPA",
+      "Hefeweizen",
+      "Two-World Pale",
+      "West Coast Heritage IPA"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 5888186,
+        "beer_name": "Alpine Hazy IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6000483_6c820_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 5.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 3.66886,
+        "rating_count": 334,
+        "brewery_name": "Chuck and Son's Brewing Co.",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/chuck-and-son-s-brewing-co-alpine-hazy-ipa/5888186"
+      },
+      {
+        "beer_id": 5826548,
+        "beer_name": "American Amber",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5826548_a3664_sm.jpeg",
+        "beer_style": "Red Ale - American Amber / Red",
+        "beer_abv": 5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5826548_a8a56_hd.jpeg",
+        "beer_ibu": 37,
+        "beer_description": "The appearance of this toffee-like brew invites a highly sessionable amber. With a medium malt body, kettle hopping with American hops provides both pleasant spiced and pine-filled flavours, while dry hopping creates slight citrus notes. Pair with a rich, fresh beef ragu and lifelong friends around the fire.",
+        "rating_score": 3.54526,
+        "rating_count": 327,
+        "brewery_name": "Chuck and Son's Brewing Co."
+      },
+      {
+        "beer_id": 6920381,
+        "beer_name": "Botanical IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6630172_9f043_sm.jpeg",
+        "beer_style": "IPA - Australian",
+        "beer_abv": 0,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Chuck and Son's Brewing Co.",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/chuck-and-son-s-brewing-co-botanical-ipa/6920381"
+      },
+      {
+        "beer_id": 5832422,
+        "beer_name": "Hefeweizen",
+        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_style": "Wheat Beer - Hefeweizen",
+        "beer_abv": 5,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 5827166,
+        "beer_name": "Two-World Pale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5827166_30e28_sm.jpeg",
+        "beer_style": "Pale Ale - Other",
+        "beer_abv": 4.6,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 5834365,
+        "beer_name": "West Coast Heritage IPA",
+        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_style": "IPA - American",
+        "beer_abv": 6.4,
+        "beer_auth_rating": null
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]

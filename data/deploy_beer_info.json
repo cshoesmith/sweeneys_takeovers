@@ -3400,5 +3400,46 @@
     "rating_score": 3.51433,
     "rating_count": 890,
     "brewery_name": "Slow Lane Brewing"
+  },
+  "5888186": {
+    "beer_id": 5888186,
+    "beer_name": "Alpine Hazy IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6000483_6c820_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 5.5,
+    "beer_ibu": 0,
+    "rating_score": 3.66886,
+    "rating_count": 334,
+    "brewery_name": "Chuck and Son's Brewing Co.",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/chuck-and-son-s-brewing-co-alpine-hazy-ipa/5888186"
+  },
+  "5826548": {
+    "beer_id": 5826548,
+    "beer_name": "American Amber",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5826548_a3664_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5826548_a8a56_hd.jpeg",
+    "beer_style": "Red Ale - American Amber / Red",
+    "beer_abv": 5,
+    "beer_ibu": 37,
+    "beer_description": "The appearance of this toffee-like brew invites a highly sessionable amber. With a medium malt body, kettle hopping with American hops provides both pleasant spiced and pine-filled flavours, while dry hopping creates slight citrus notes. Pair with a rich, fresh beef ragu and lifelong friends around the fire.",
+    "rating_score": 3.54526,
+    "rating_count": 327,
+    "brewery_name": "Chuck and Son's Brewing Co."
+  },
+  "6920381": {
+    "beer_id": 6920381,
+    "beer_name": "Botanical IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6630172_9f043_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - Australian",
+    "beer_abv": 0,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 0,
+    "brewery_name": "Chuck and Son's Brewing Co.",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/chuck-and-son-s-brewing-co-botanical-ipa/6920381"
   }
 }
