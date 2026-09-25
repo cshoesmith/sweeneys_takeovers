@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1603785501,
+      "created_at": "Fri, 25 Sep 2026 05:16:06 +0000",
+      "user": "bizzle14",
+      "checkin_comment": "",
+      "beer_name": "Two-World Pale",
+      "beer_id": 5827166,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5827166_30e28_sm.jpeg",
+      "beer_style": "Pale Ale - Other",
+      "beer_abv": 4.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Chuck and Son's Brewing Co.",
+      "brewery_id": 559450,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1603782940,
       "created_at": "Fri, 25 Sep 2026 04:04:28 +0000",
       "user": "barrman",
