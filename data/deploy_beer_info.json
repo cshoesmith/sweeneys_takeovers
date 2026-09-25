@@ -3468,6 +3468,19 @@
     "rating_count": 202,
     "brewery_name": "Chuck and Son's Brewing Co."
   },
+  "5923559": {
+    "beer_id": 5923559,
+    "beer_name": "Lo-Cal Lager",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-559450_1d5c5.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Lager - Pale",
+    "beer_abv": 4.4,
+    "beer_ibu": 0,
+    "beer_description": "Only pale malted barley, light kettle hopping, extended mash cooking and a fermentation process are used to create this very easy drinking lager with reduced calories. Gentle hopping with Ella hops from Victoria result in a light, grapefruit floral finish.",
+    "rating_score": 3.57308,
+    "rating_count": 52,
+    "brewery_name": "Chuck and Son's Brewing Co."
+  },
   "6161541": {
     "beer_id": 6161541,
     "beer_name": "Old-World Lager",

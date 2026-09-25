@@ -7074,16 +7074,17 @@
     "breweries": [
       "Chuck and Son's Brewing Co."
     ],
-    "checkins": 15,
-    "unique_beers": 9,
-    "total_checkins_that_week": 19,
-    "share_pct": 78.9,
+    "checkins": 17,
+    "unique_beers": 10,
+    "total_checkins_that_week": 21,
+    "share_pct": 81.0,
     "beers": [
       "Alpine Hazy IPA",
       "Amarillo XPA",
       "American Amber",
       "Botanical IPA",
       "Hefeweizen",
+      "Lo-Cal Lager",
       "Old-World Lager",
       "Superdelic Stout",
       "Two-World Pale",
@@ -7163,6 +7164,20 @@
         "brewery_name": "Chuck and Son's Brewing Co."
       },
       {
+        "beer_id": 5923559,
+        "beer_name": "Lo-Cal Lager",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-559450_1d5c5.jpeg",
+        "beer_style": "Lager - Pale",
+        "beer_abv": 4.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "Only pale malted barley, light kettle hopping, extended mash cooking and a fermentation process are used to create this very easy drinking lager with reduced calories. Gentle hopping with Ella hops from Victoria result in a light, grapefruit floral finish.",
+        "rating_score": 3.57308,
+        "rating_count": 52,
+        "brewery_name": "Chuck and Son's Brewing Co."
+      },
+      {
         "beer_id": 6161541,
         "beer_name": "Old-World Lager",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6161541_3dab0_sm.jpeg",
@@ -7228,7 +7243,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7243,7 +7258,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7258,7 +7273,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7273,7 +7288,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7288,7 +7303,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7303,7 +7318,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7318,7 +7333,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 9,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
