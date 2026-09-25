@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1603812058,
+      "created_at": "Fri, 25 Sep 2026 13:05:30 +0000",
+      "user": "mw1414",
+      "checkin_comment": "",
+      "beer_name": "Golden Curse",
+      "beer_id": 6774136,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6774136_3a645_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 3.9
+    },
+    {
+      "checkin_id": 1603811990,
+      "created_at": "Fri, 25 Sep 2026 13:05:00 +0000",
+      "user": "Ishmagel",
+      "checkin_comment": "",
+      "beer_name": "Golden Curse",
+      "beer_id": 6774136,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6774136_3a645_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4
+    },
+    {
       "checkin_id": 1603807563,
       "created_at": "Fri, 25 Sep 2026 12:25:54 +0000",
       "user": "mw1414",
