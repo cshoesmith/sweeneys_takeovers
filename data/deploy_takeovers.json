@@ -7070,24 +7070,28 @@
   },
   {
     "date": "2026-09-24",
-    "brewery": "Chuck and Son's Brewing Co.",
+    "brewery": "Chuck and Son's Brewing Co. & Slow Lane Brewing",
     "breweries": [
-      "Chuck and Son's Brewing Co."
+      "Chuck and Son's Brewing Co.",
+      "Slow Lane Brewing"
     ],
-    "checkins": 46,
-    "unique_beers": 12,
-    "total_checkins_that_week": 54,
-    "share_pct": 85.2,
+    "checkins": 52,
+    "unique_beers": 15,
+    "total_checkins_that_week": 59,
+    "share_pct": 88.1,
     "beers": [
       "Alpine Hazy IPA",
       "Amarillo XPA",
       "American Amber",
       "Botanical IPA",
       "Hefeweizen",
+      "Liquid Bread",
       "Lo-Cal Lager",
       "Old-World Lager",
       "Original Pilsner",
+      "Ruminator - Rum Barrel Aged Doppelbock",
       "Superdelic Stout",
+      "Threefold",
       "Touring Radler",
       "Two-World Pale",
       "West Coast Heritage IPA"
@@ -7166,6 +7170,20 @@
         "brewery_name": "Chuck and Son's Brewing Co."
       },
       {
+        "beer_id": 4506339,
+        "beer_name": "Liquid Bread",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4506339_418ac_sm.jpeg",
+        "beer_style": "Bock - Doppelbock",
+        "beer_abv": 8.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4506339_deece_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Doppelbocks are a strong, rich and malty lager originally brewed by Bavarian monks in the 17th century. Designed to sustain the monks while they abstain from solid foods during the 40 day Lent period, doppelbocks earned the nickname ‘Liquid Bread’. Disclaimer: We do not condone 40 day beer-only diets.",
+        "rating_score": 3.92985,
+        "rating_count": 583,
+        "brewery_name": "Slow Lane Brewing"
+      },
+      {
         "beer_id": 5923559,
         "beer_name": "Lo-Cal Lager",
         "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-559450_1d5c5.jpeg",
@@ -7208,6 +7226,20 @@
         "brewery_name": "Chuck and Son's Brewing Co."
       },
       {
+        "beer_id": 6745997,
+        "beer_name": "Ruminator - Rum Barrel Aged Doppelbock",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6745997_bd4cf_sm.jpeg",
+        "beer_style": "Bock - Doppelbock",
+        "beer_abv": 9.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6745997_bd4cf_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Our Liquid Bread Doppelbock aged eight months in rum barrels, then blended with fresh Doppelbock to round out the finish. Rich, dark and contemplative. Traditional Doppelbock malt depth meeting the warmth and complexity of rum. Expect toasted bread crust, caramelised malt and dark fruit, with oak, molasses, vanilla and a lingering spirit warmth.",
+        "rating_score": 4.09057,
+        "rating_count": 53,
+        "brewery_name": "Slow Lane Brewing"
+      },
+      {
         "beer_id": 6264944,
         "beer_name": "Superdelic Stout",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4757528_e41c7_sm.jpeg",
@@ -7221,6 +7253,20 @@
         "brewery_name": "Chuck and Son's Brewing Co.",
         "brewery_country": "Australia",
         "beer_page_url": "https://untappd.com/b/chuck-and-son-s-brewing-co-superdelic-stout/6264944"
+      },
+      {
+        "beer_id": 4227242,
+        "beer_name": "Threefold",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4227242_7b40c_sm.jpeg",
+        "beer_style": "Belgian Tripel",
+        "beer_abv": 8.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4227242_d559e_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Our version of the famous strong pale Tripel beers from Belgium. Threefold has complex yeast derived flavours from an initial open fermentation and a second fermentation in the can.",
+        "rating_score": 3.87389,
+        "rating_count": 651,
+        "brewery_name": "Slow Lane Brewing"
       },
       {
         "beer_id": 5827171,
@@ -7273,8 +7319,8 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 5,
-        "total": 12,
-        "pct": 41.7,
+        "total": 15,
+        "pct": 33.3,
         "day_counts": [
           0,
           5,
@@ -7284,26 +7330,26 @@
         "rank": 1
       },
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 12,
-        "pct": 0.0,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 2,
+        "total": 15,
+        "pct": 13.3,
         "day_counts": [
           0,
-          0,
+          2,
           0,
           0
         ],
         "rank": 2
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 15,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7314,11 +7360,11 @@
         "rank": 3
       },
       {
-        "username": "hiriser",
-        "display_name": "Willy",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 15,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7329,11 +7375,11 @@
         "rank": 4
       },
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 12,
+        "total": 15,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7344,11 +7390,11 @@
         "rank": 5
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 15,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7363,7 +7409,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 15,
         "pct": 0.0,
         "day_counts": [
           0,
