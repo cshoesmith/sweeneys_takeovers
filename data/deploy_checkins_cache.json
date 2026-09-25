@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1603782940,
+      "created_at": "Fri, 25 Sep 2026 04:04:28 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Superdelic Stout",
+      "beer_id": 6264944,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Stout - American",
+      "beer_abv": 6.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Chuck and Son's Brewing Co.",
+      "brewery_id": 559450,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1603781333,
+      "created_at": "Fri, 25 Sep 2026 03:34:13 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Original Pilsner",
+      "beer_id": 5818663,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5818663_0ebea_sm.jpeg",
+      "beer_style": "Pilsner - German",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Chuck and Son's Brewing Co.",
+      "brewery_id": 559450,
+      "rating": 4
+    },
+    {
       "checkin_id": 1603779977,
       "created_at": "Fri, 25 Sep 2026 03:13:02 +0000",
       "user": "barrman",
