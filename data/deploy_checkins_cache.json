@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1604113998,
+      "created_at": "Sat, 26 Sep 2026 03:24:16 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Old-World Lager",
+      "beer_id": 6161541,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6161541_3dab0_sm.jpeg",
+      "beer_style": "Historical Beer - Pre-Prohibition Lager",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Chuck and Son's Brewing Co.",
+      "brewery_id": 559450,
+      "rating": 3.6
+    },
+    {
+      "checkin_id": 1604113017,
+      "created_at": "Sat, 26 Sep 2026 03:15:29 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Hefeweizen",
+      "beer_id": 5832422,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Wheat Beer - Hefeweizen",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Chuck and Son's Brewing Co.",
+      "brewery_id": 559450,
+      "rating": 3.8
+    },
+    {
       "checkin_id": 1603818637,
       "created_at": "Fri, 25 Sep 2026 13:49:30 +0000",
       "user": "Ishmagel",
