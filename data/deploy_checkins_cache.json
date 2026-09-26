@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1604122504,
+      "created_at": "Sat, 26 Sep 2026 05:16:37 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Threefold",
+      "beer_id": 4227242,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4227242_7b40c_sm.jpeg",
+      "beer_style": "Belgian Tripel",
+      "beer_abv": 8.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1604121439,
+      "created_at": "Sat, 26 Sep 2026 04:56:39 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Amarillo XPA",
+      "beer_id": 6154102,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 4.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Chuck and Son's Brewing Co.",
+      "brewery_id": 559450,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1604119467,
       "created_at": "Sat, 26 Sep 2026 04:24:58 +0000",
       "user": "dapitz",
