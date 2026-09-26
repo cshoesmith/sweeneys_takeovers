@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1604148518,
+      "created_at": "Sat, 26 Sep 2026 11:19:52 +0000",
+      "user": "cameron759",
+      "checkin_comment": "",
+      "beer_name": "Super Dry Japanese Lager",
+      "beer_id": 6394790,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6394790_9b83f_sm.jpeg",
+      "beer_style": "Lager - Japanese Rice",
+      "beer_abv": 4.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "White Bay Brewery",
+      "brewery_id": 452017,
+      "rating": 4
+    },
+    {
       "checkin_id": 1604124825,
       "created_at": "Sat, 26 Sep 2026 06:05:30 +0000",
       "user": "LeanneAndChris",
