@@ -7075,10 +7075,10 @@
       "Chuck and Son's Brewing Co.",
       "Slow Lane Brewing"
     ],
-    "checkins": 63,
+    "checkins": 68,
     "unique_beers": 15,
-    "total_checkins_that_week": 74,
-    "share_pct": 85.1,
+    "total_checkins_that_week": 79,
+    "share_pct": 86.1,
     "beers": [
       "Alpine Hazy IPA",
       "Amarillo XPA",
@@ -7315,6 +7315,21 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 7,
+        "total": 15,
+        "pct": 46.7,
+        "day_counts": [
+          0,
+          0,
+          7,
+          0
+        ],
+        "rank": 1
+      },
+      {
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
@@ -7327,7 +7342,7 @@
           0,
           0
         ],
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "jimmy-swings",
@@ -7340,21 +7355,6 @@
           0,
           5,
           0,
-          0
-        ],
-        "rank": 2
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 2,
-        "total": 15,
-        "pct": 13.3,
-        "day_counts": [
-          0,
-          0,
-          2,
           0
         ],
         "rank": 3
