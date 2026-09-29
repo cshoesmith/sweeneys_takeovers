@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1604918427,
+      "created_at": "Tue, 29 Sep 2026 08:50:22 +0000",
+      "user": "courtneywilk",
+      "checkin_comment": "",
+      "beer_name": "EVENT HORIZON",
+      "beer_id": 6826974,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6826974_37264_sm.jpeg",
+      "beer_style": "Sour - Other",
+      "beer_abv": 6.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1604918012,
       "created_at": "Tue, 29 Sep 2026 08:32:32 +0000",
       "user": "ale_n",
