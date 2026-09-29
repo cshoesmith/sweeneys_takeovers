@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1604918012,
+      "created_at": "Tue, 29 Sep 2026 08:32:32 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Wolfsblut Marzen",
+      "beer_id": 6450767,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6450767_54134_sm.jpeg",
+      "beer_style": "Märzen",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Wolf Of The Willows",
+      "brewery_id": 166150,
+      "rating": 3.25
+    },
+    {
+      "checkin_id": 1604917566,
+      "created_at": "Tue, 29 Sep 2026 08:10:03 +0000",
+      "user": "nayla_gabriele",
+      "checkin_comment": "",
+      "beer_name": "Tandem",
+      "beer_id": 6762343,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Sour - Other",
+      "beer_abv": 4.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 4
+    },
+    {
       "checkin_id": 1604916664,
       "created_at": "Tue, 29 Sep 2026 07:22:16 +0000",
       "user": "ale_n",
