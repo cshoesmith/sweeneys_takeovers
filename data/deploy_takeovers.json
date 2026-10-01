@@ -7486,7 +7486,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5849373_281dd_sm.jpeg",
         "beer_style": "Lager - Tmavé (Czech Dark)",
         "beer_abv": 5.2,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5849373_281dd_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Czech style dark lager, malt forward and hopped with traditional Saaz.",
+        "rating_score": 3.90483,
+        "rating_count": 145,
+        "brewery_name": "Sunday Road Brewing"
       }
     ],
     "source": "heuristic",
