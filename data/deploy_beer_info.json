@@ -3626,6 +3626,19 @@
     "rating_count": 428,
     "brewery_name": "Sunday Road Brewing"
   },
+  "3670076": {
+    "beer_id": 3670076,
+    "beer_name": "Cryotherapy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3670076_d2fbf_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3670076_403a0_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.1,
+    "beer_ibu": 22,
+    "beer_description": "CryoTherapy Hazy IPA is our new brew that will treat your tastebuds to Cryogenic lupulin powder from whole hop flowers. It's lively, juicy and pure deliciousness. ",
+    "rating_score": 3.8397,
+    "rating_count": 1451,
+    "brewery_name": "Sunday Road Brewing"
+  },
   "5527992": {
     "beer_id": 5527992,
     "beer_name": "German Pilsener",

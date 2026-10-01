@@ -7427,16 +7427,17 @@
     "breweries": [
       "Sunday Road Brewing"
     ],
-    "checkins": 23,
-    "unique_beers": 10,
-    "total_checkins_that_week": 24,
-    "share_pct": 95.8,
+    "checkins": 30,
+    "unique_beers": 11,
+    "total_checkins_that_week": 32,
+    "share_pct": 93.8,
     "beers": [
       "Affogato Stout",
       "Apres Ski",
       "Blackwoods Pale",
       "Brightside IPA",
       "Coast Track Lager",
+      "Cryotherapy",
       "German Pilsener",
       "Ginger BeEra",
       "Golden Hour",
@@ -7512,6 +7513,20 @@
         "beer_description": "Coast Track Lager - Named after our favourite hike right on our doorstep. The Coast Track is a  26 KM hike in the Royal National Park filled with wild swim spots, clifftop lookouts, and native shrub. Load some in your pack for its pure malts, noble hops and our step mashing and lagering methods. A rewarding beer that's perfect at the end of a day well spent.",
         "rating_score": 3.43002,
         "rating_count": 428,
+        "brewery_name": "Sunday Road Brewing"
+      },
+      {
+        "beer_id": 3670076,
+        "beer_name": "Cryotherapy",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3670076_d2fbf_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 6.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3670076_403a0_hd.jpeg",
+        "beer_ibu": 22,
+        "beer_description": "CryoTherapy Hazy IPA is our new brew that will treat your tastebuds to Cryogenic lupulin powder from whole hop flowers. It's lively, juicy and pure deliciousness. ",
+        "rating_score": 3.8397,
+        "rating_count": 1451,
         "brewery_name": "Sunday Road Brewing"
       },
       {
@@ -7592,7 +7607,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7607,7 +7622,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7622,7 +7637,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7637,7 +7652,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7652,7 +7667,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7667,7 +7682,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7682,7 +7697,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
