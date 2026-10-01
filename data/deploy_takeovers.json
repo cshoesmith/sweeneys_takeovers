@@ -7427,10 +7427,10 @@
     "breweries": [
       "Sunday Road Brewing"
     ],
-    "checkins": 15,
+    "checkins": 23,
     "unique_beers": 10,
-    "total_checkins_that_week": 15,
-    "share_pct": 100.0,
+    "total_checkins_that_week": 24,
+    "share_pct": 95.8,
     "beers": [
       "Affogato Stout",
       "Apres Ski",
@@ -7520,7 +7520,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5527992_7b05b_sm.jpeg",
         "beer_style": "Pilsner - German",
         "beer_abv": 5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5527992_7ce80_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Brewed with Pale Pilsner and Carapils Malted barley, for a light body with a dense white foam head. Hopped with the traditional German Noble hop Hallertau Mittlefrau, and the modern German Hop Hallertau Blanc, bringing some subtle citrus and white wine (Riesling like) character to the beer, creating our modern take on a world classic beer style.",
+        "rating_score": 3.77952,
+        "rating_count": 166,
+        "brewery_name": "Sunday Road Brewing"
       },
       {
         "beer_id": 6559509,
