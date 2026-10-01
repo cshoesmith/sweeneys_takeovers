@@ -7427,19 +7427,65 @@
     "breweries": [
       "Sunday Road Brewing"
     ],
-    "checkins": 6,
-    "unique_beers": 6,
-    "total_checkins_that_week": 6,
+    "checkins": 15,
+    "unique_beers": 10,
+    "total_checkins_that_week": 15,
     "share_pct": 100.0,
     "beers": [
+      "Affogato Stout",
+      "Apres Ski",
+      "Blackwoods Pale",
       "Brightside IPA",
       "Coast Track Lager",
+      "German Pilsener",
       "Ginger BeEra",
       "Golden Hour",
       "Over the Bridge",
       "SR-14"
     ],
     "beer_details": [
+      {
+        "beer_id": 6289345,
+        "beer_name": "Affogato Stout",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6289345_9ff26_sm.jpeg",
+        "beer_style": "Stout - Coffee",
+        "beer_abv": 7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6289345_9ff26_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Inspired by the classic Italian Affogato, this decadent brew balances roasted coffee notes with a little vanilla sweetness, all within a smooth dessert-like stout perfect for sipping by the fire as the weather cools down.",
+        "rating_score": 4.08765,
+        "rating_count": 170,
+        "brewery_name": "Sunday Road Brewing"
+      },
+      {
+        "beer_id": 5885146,
+        "beer_name": "Apres Ski",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5885146_7ccdb_sm.jpeg",
+        "beer_style": "Wheat Beer - Hefeweizen",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5885146_7ccdb_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A cloudy pale Hefe, with a balance of Banana and Clove to retain the high drinkability of this beer style.",
+        "rating_score": 3.75578,
+        "rating_count": 225,
+        "brewery_name": "Sunday Road Brewing"
+      },
+      {
+        "beer_id": 3135428,
+        "beer_name": "Blackwoods Pale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3135428_f9788_sm.jpeg",
+        "beer_style": "Pale Ale - American",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3135428_f9788_hd.jpeg",
+        "beer_ibu": 33,
+        "beer_description": "Blackwoods Pale - Blackwoods beach is a hidden stretch of sand and a local favourite.  Like the beach our Pale Ale is worth seeking out.  This beer is all about the ingredients. By using heritage malts, and multiple hop additions throughout the brewing process, we've created a beer with the perfect balance  of flavour, bitterness, ABV and drinkability. Brewed and canned in Kirrawee, Sydney",
+        "rating_score": 3.58437,
+        "rating_count": 822,
+        "brewery_name": "Sunday Road Brewing"
+      },
       {
         "beer_id": 6833649,
         "beer_name": "Brightside IPA",
@@ -7467,6 +7513,14 @@
         "rating_score": 3.43002,
         "rating_count": 428,
         "brewery_name": "Sunday Road Brewing"
+      },
+      {
+        "beer_id": 5527992,
+        "beer_name": "German Pilsener",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5527992_7b05b_sm.jpeg",
+        "beer_style": "Pilsner - German",
+        "beer_abv": 5,
+        "beer_auth_rating": null
       },
       {
         "beer_id": 6559509,
@@ -7532,7 +7586,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7547,7 +7601,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7562,7 +7616,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 6,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7577,7 +7631,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7592,7 +7646,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7607,7 +7661,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7622,7 +7676,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 10,
         "pct": 0.0,
         "day_counts": [
           0,
