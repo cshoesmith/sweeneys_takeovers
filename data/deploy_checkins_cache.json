@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1605381749,
+      "created_at": "Fri, 02 Oct 2026 06:06:50 +0000",
+      "user": "jimmy-swings",
+      "checkin_comment": "Friday afternoon at Sweeney’s and I’m seeing the bright side of things. A few more of these and I’ll be seeing two bright sides. Proper bitterness, tropical goodness and absolutely no interest in Sunday arriving.",
+      "beer_name": "Brightside IPA",
+      "beer_id": 6833649,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6833649_779e5_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 7.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sunday Road Brewing",
+      "brewery_id": 268171,
+      "rating": 3.8
+    },
+    {
       "checkin_id": 1605380026,
       "created_at": "Fri, 02 Oct 2026 05:09:33 +0000",
       "user": "docta",
