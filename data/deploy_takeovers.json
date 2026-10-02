@@ -7427,10 +7427,10 @@
     "breweries": [
       "Sunday Road Brewing"
     ],
-    "checkins": 40,
-    "unique_beers": 11,
-    "total_checkins_that_week": 42,
-    "share_pct": 95.2,
+    "checkins": 43,
+    "unique_beers": 12,
+    "total_checkins_that_week": 45,
+    "share_pct": 95.6,
     "beers": [
       "Affogato Stout",
       "Apres Ski",
@@ -7441,6 +7441,7 @@
       "German Pilsener",
       "Ginger BeEra",
       "Golden Hour",
+      "Mexican Lager",
       "Over the Bridge",
       "SR-14"
     ],
@@ -7572,6 +7573,20 @@
         "brewery_name": "Sunday Road Brewing"
       },
       {
+        "beer_id": 5599161,
+        "beer_name": "Mexican Lager",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5599161_75840_sm.jpeg",
+        "beer_style": "Lager - Mexican",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5599161_9befc_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "In working with Lorena Gaxiola, we at Sunday Road Brewing wanted to create a Mexican inspired brew, paying homage to Lorena's heritage and beloved homeland. A taste of Mexico you can enjoy anywhere.\r\nArriba Mexico Cabrones!",
+        "rating_score": 3.55545,
+        "rating_count": 220,
+        "brewery_name": "Sunday Road Brewing"
+      },
+      {
         "beer_id": 4079714,
         "beer_name": "Over the Bridge",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4079714_966c6_sm.jpeg",
@@ -7603,26 +7618,26 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 11,
-        "pct": 0.0,
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 1,
+        "total": 12,
+        "pct": 8.3,
         "day_counts": [
           0,
-          0,
+          1,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7637,7 +7652,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7652,7 +7667,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7667,7 +7682,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7682,7 +7697,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7697,7 +7712,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,

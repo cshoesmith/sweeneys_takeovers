@@ -3678,6 +3678,19 @@
     "rating_count": 81,
     "brewery_name": "Sunday Road Brewing"
   },
+  "5599161": {
+    "beer_id": 5599161,
+    "beer_name": "Mexican Lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5599161_75840_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5599161_9befc_hd.jpeg",
+    "beer_style": "Lager - Mexican",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "In working with Lorena Gaxiola, we at Sunday Road Brewing wanted to create a Mexican inspired brew, paying homage to Lorena's heritage and beloved homeland. A taste of Mexico you can enjoy anywhere.\r\nArriba Mexico Cabrones!",
+    "rating_score": 3.55545,
+    "rating_count": 220,
+    "brewery_name": "Sunday Road Brewing"
+  },
   "4079714": {
     "beer_id": 4079714,
     "beer_name": "Over the Bridge",
