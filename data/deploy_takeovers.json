@@ -7427,10 +7427,10 @@
     "breweries": [
       "Sunday Road Brewing"
     ],
-    "checkins": 58,
+    "checkins": 64,
     "unique_beers": 12,
-    "total_checkins_that_week": 60,
-    "share_pct": 96.7,
+    "total_checkins_that_week": 66,
+    "share_pct": 97.0,
     "beers": [
       "Affogato Stout",
       "Apres Ski",
@@ -7648,6 +7648,21 @@
         "rank": 2
       },
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 2,
+        "total": 12,
+        "pct": 16.7,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
@@ -7660,42 +7675,27 @@
           0,
           0
         ],
-        "rank": 3
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 12,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
         "rank": 4
       },
       {
-        "username": "hiriser",
-        "display_name": "Willy",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
-        "checked": 0,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 1,
         "total": 12,
-        "pct": 0.0,
+        "pct": 8.3,
         "day_counts": [
           0,
-          0,
+          1,
           0,
           0
         ],
         "rank": 5
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
         "total": 12,
         "pct": 0.0,
