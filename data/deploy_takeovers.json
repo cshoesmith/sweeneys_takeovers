@@ -7427,10 +7427,10 @@
     "breweries": [
       "Sunday Road Brewing"
     ],
-    "checkins": 43,
+    "checkins": 48,
     "unique_beers": 12,
-    "total_checkins_that_week": 45,
-    "share_pct": 95.6,
+    "total_checkins_that_week": 50,
+    "share_pct": 96.0,
     "beers": [
       "Affogato Stout",
       "Apres Ski",
@@ -7621,12 +7621,12 @@
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 1,
+        "checked": 3,
         "total": 12,
-        "pct": 8.3,
+        "pct": 25.0,
         "day_counts": [
           0,
-          1,
+          3,
           0,
           0
         ],
