@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1605380026,
+      "created_at": "Fri, 02 Oct 2026 05:09:33 +0000",
+      "user": "docta",
+      "checkin_comment": "",
+      "beer_name": "Affogato Stout",
+      "beer_id": 6289345,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6289345_9ff26_sm.jpeg",
+      "beer_style": "Stout - Coffee",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sunday Road Brewing",
+      "brewery_id": 268171,
+      "rating": 4.5
+    },
+    {
+      "checkin_id": 1605379856,
+      "created_at": "Fri, 02 Oct 2026 05:04:10 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Affogato Stout",
+      "beer_id": 6289345,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6289345_9ff26_sm.jpeg",
+      "beer_style": "Stout - Coffee",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sunday Road Brewing",
+      "brewery_id": 268171,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1605378388,
       "created_at": "Fri, 02 Oct 2026 04:25:37 +0000",
       "user": "SeamusH",
