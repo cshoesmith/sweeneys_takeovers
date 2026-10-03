@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1605716408,
+      "created_at": "Sat, 03 Oct 2026 07:59:20 +0000",
+      "user": "turbovan",
+      "checkin_comment": "",
+      "beer_name": "Best Bitter",
+      "beer_id": 7766,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7766_fc0d9_sm.jpeg",
+      "beer_style": "Bitter - Best",
+      "beer_abv": 3.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Theakston",
+      "brewery_id": 2070,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1605703742,
       "created_at": "Sat, 03 Oct 2026 04:00:10 +0000",
       "user": "mas0",
