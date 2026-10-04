@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1606146342,
+      "created_at": "Sun, 04 Oct 2026 06:25:17 +0000",
+      "user": "denism",
+      "checkin_comment": "",
+      "beer_name": "Affogato Stout",
+      "beer_id": 6289345,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6289345_9ff26_sm.jpeg",
+      "beer_style": "Stout - Coffee",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sunday Road Brewing",
+      "brewery_id": 268171,
+      "rating": 0
+    },
+    {
+      "checkin_id": 1606144908,
+      "created_at": "Sun, 04 Oct 2026 05:50:52 +0000",
+      "user": "denism",
+      "checkin_comment": "",
+      "beer_name": "Golden Hour",
+      "beer_id": 6393075,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6393075_611c9_sm.jpeg",
+      "beer_style": "Belgian Blonde",
+      "beer_abv": 6.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sunday Road Brewing",
+      "brewery_id": 268171,
+      "rating": 0
+    },
+    {
       "checkin_id": 1606139134,
       "created_at": "Sun, 04 Oct 2026 04:05:41 +0000",
       "user": "YYILUN",
