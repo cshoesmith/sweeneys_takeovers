@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1606377238,
+      "created_at": "Mon, 05 Oct 2026 02:15:52 +0000",
+      "user": "YYILUN",
+      "checkin_comment": "黑生",
+      "beer_name": "SR-14",
+      "beer_id": 5849373,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5849373_281dd_sm.jpeg",
+      "beer_style": "Lager - Tmavé (Czech Dark)",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sunday Road Brewing",
+      "brewery_id": 268171,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1606377208,
+      "created_at": "Mon, 05 Oct 2026 02:15:25 +0000",
+      "user": "YYILUN",
+      "checkin_comment": "小艾薇儿",
+      "beer_name": "Brightside IPA",
+      "beer_id": 6833649,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6833649_779e5_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 7.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sunday Road Brewing",
+      "brewery_id": 268171,
+      "rating": 4
+    },
+    {
       "checkin_id": 1606146342,
       "created_at": "Sun, 04 Oct 2026 06:25:17 +0000",
       "user": "denism",
