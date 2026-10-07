@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1606631669,
+      "created_at": "Wed, 07 Oct 2026 05:57:51 +0000",
+      "user": "Snellie99",
+      "checkin_comment": "",
+      "beer_name": "U-Boat",
+      "beer_id": 697226,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-697226_1275d_sm.jpeg",
+      "beer_style": "Lager - Pale",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badlands Brewery",
+      "brewery_id": 4322,
+      "rating": 3
+    },
+    {
       "checkin_id": 1606377238,
       "created_at": "Mon, 05 Oct 2026 02:15:52 +0000",
       "user": "YYILUN",
