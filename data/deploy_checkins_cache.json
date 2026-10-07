@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1606635352,
+      "created_at": "Wed, 07 Oct 2026 09:09:10 +0000",
+      "user": "Junginjae93",
+      "checkin_comment": "",
+      "beer_name": "Brightside IPA",
+      "beer_id": 6833649,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6833649_779e5_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 7.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Sunday Road Brewing",
+      "brewery_id": 268171,
+      "rating": 0
+    },
+    {
       "checkin_id": 1606631669,
       "created_at": "Wed, 07 Oct 2026 05:57:51 +0000",
       "user": "Snellie99",
