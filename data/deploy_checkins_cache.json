@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1606639443,
+      "created_at": "Wed, 07 Oct 2026 10:59:51 +0000",
+      "user": "Skorulis",
+      "checkin_comment": "",
+      "beer_name": "Pale Ale",
+      "beer_id": 16407,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-16407_ea306_sm.jpeg",
+      "beer_style": "Pale Ale - American",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "4 Pines Brewing Company",
+      "brewery_id": 4254,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1606635352,
       "created_at": "Wed, 07 Oct 2026 09:09:10 +0000",
       "user": "Junginjae93",
