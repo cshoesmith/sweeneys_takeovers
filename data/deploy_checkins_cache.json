@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1606776585,
+      "created_at": "Thu, 08 Oct 2026 04:20:54 +0000",
+      "user": "Josho567",
+      "checkin_comment": "German beer just hits different.",
+      "beer_name": "Bayreuther Hell",
+      "beer_id": 116296,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-116296_2dfe1_sm.jpeg",
+      "beer_style": "Lager - Helles",
+      "beer_abv": 4.9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bayreuther Bierbrauerei",
+      "brewery_id": 11687,
+      "rating": 3.7
+    },
+    {
+      "checkin_id": 1606775006,
+      "created_at": "Thu, 08 Oct 2026 03:39:41 +0000",
+      "user": "Josho567",
+      "checkin_comment": "This is so good. Awesome malt taste, clean as finish. Lovely drop. Prost.",
+      "beer_name": "Andechser Spezial Hell ",
+      "beer_id": 55933,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-SpezialHell_55933.jpeg",
+      "beer_style": "Festbier",
+      "beer_abv": 5.9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Klosterbrauerei Andechs",
+      "brewery_id": 5758,
+      "rating": 4
+    },
+    {
       "checkin_id": 1606772580,
       "created_at": "Thu, 08 Oct 2026 02:51:01 +0000",
       "user": "Josho567",
