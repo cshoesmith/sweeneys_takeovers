@@ -3795,5 +3795,18 @@
     "rating_score": 3.55133,
     "rating_count": 243066,
     "brewery_name": "Staatliches Hofbräuhaus München"
+  },
+  "7834": {
+    "beer_id": 7834,
+    "beer_name": "Münchner Weisse",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7834_5bc3b_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7834_e35a0_hd.jpeg",
+    "beer_style": "Wheat Beer - Hefeweizen",
+    "beer_abv": 5.1,
+    "beer_ibu": 14,
+    "beer_description": "Once upon a time, Weissbier could only be brewed by ducal privilege. Hofbräuhaus enjoyed this exclusive right for nearly 200 years, thus holding a monopoly on Weissbier in Bavaria.\r\n\r\nBut even without a monopoly, Münchner Weisse is a really special kind of beer. What could be more pleasurable than quenching your thirst with a deliciously yeasty Weissbier, and savouring the tingling, fizzy sensation in your mouth? With an alcoholic content of around 5,1% volume, it's pure, refreshing enjoyment.",
+    "rating_score": 3.69883,
+    "rating_count": 130860,
+    "brewery_name": "Staatliches Hofbräuhaus München"
   }
 }
