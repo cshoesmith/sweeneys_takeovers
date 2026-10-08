@@ -7723,5 +7723,211 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-10-08",
+    "brewery": "Staatliches Hofbräuhaus München & Bayreuther Bierbrauerei",
+    "breweries": [
+      "Staatliches Hofbräuhaus München",
+      "Bayreuther Bierbrauerei"
+    ],
+    "checkins": 7,
+    "unique_beers": 7,
+    "total_checkins_that_week": 14,
+    "share_pct": 50.0,
+    "beers": [
+      "Aktien Original 1857",
+      "Aktien Zwick'l Kellerbier",
+      "Bayreuther Hell",
+      "Hofbräu Maibock",
+      "Hofbräu Oktoberfestbier",
+      "Hofbräu Original",
+      "Münchner Weisse"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 97996,
+        "beer_name": "Aktien Original 1857",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-97996_c6d34_sm.jpeg",
+        "beer_style": "Lager - Dortmunder / Export",
+        "beer_abv": 5.3,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-97996_cd4bd_hd.jpeg",
+        "beer_ibu": 18.0,
+        "rating_score": 3.34515,
+        "rating_count": 18427,
+        "brewery_name": "Bayreuther Bierbrauerei",
+        "brewery_country": "Germany",
+        "beer_page_url": "https://untappd.com/b/bayreuther-bierbrauerei-aktien-original-1857/97996"
+      },
+      {
+        "beer_id": 63263,
+        "beer_name": "Aktien Zwick'l Kellerbier",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-63263_9c44b_sm.jpeg",
+        "beer_style": "Kellerbier / Zwickelbier",
+        "beer_abv": 5.3,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-63263_289f5_hd.jpeg",
+        "beer_ibu": 18,
+        "beer_description": "AKTIEN Zwick’l Kellerbier is a specialty beer with a light delicate reddish color. It is unfiltered and therefore slightly opaque. Because of this, the natural ingredients such as protein, brewer's yeast and other flavor enhancers are fully retained and manifest themselves in a full-bodied spicy flavor with finely balanced nuances of malt and bitters.",
+        "rating_score": 3.49414,
+        "rating_count": 68202,
+        "brewery_name": "Bayreuther Bierbrauerei"
+      },
+      {
+        "beer_id": 116296,
+        "beer_name": "Bayreuther Hell",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-116296_2dfe1_sm.jpeg",
+        "beer_style": "Lager - Helles",
+        "beer_abv": 4.9,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-116296_db17b_hd.jpeg",
+        "beer_ibu": 17,
+        "beer_description": "Unser echt bayerisches Hell ist ehrlich, frisch und würzig.\r\n\r\nDer frisch-würzige Geschmack und der süffige Biergenuss sind charakteristisch für die traditionell bayerische Bierspezialität. Bayreuther Hell bekommt durch die sorgsam ausgewogene Balance aus feinsten hellen Gerstenmalzen und eine dezente Hopfennote seinen unverkennbaren Charakter. Gebraut wird es mit viel Liebe und Herzblut nach überliefertem Rezept und nach den Regeln bester bayerischer Braukunst.\r\n\r\nBayreuther Hell strahlt im Glas mit seiner leuchtend goldenen Farbe und einer stattlichen Schaumkrone. Die Nase umspielen frische, florale Noten mit einem leichten Hauch von Honig und Zitrone. Im Mund zeigt sich ein leichtes, wunderbar würziges und süffiges Bier mit feinster Spritzigkeit: eine tolle Komposition aus Honig, Karamell und blumigen Hopfennoten mit einem Hauch von Getreide. Ein ehrliches und schmackhaftes Helles, wie es in Bayern schon seit Jahrhunderten gebraut und geliebt wird.",
+        "rating_score": 3.52214,
+        "rating_count": 114201,
+        "brewery_name": "Bayreuther Bierbrauerei"
+      },
+      {
+        "beer_id": 20290,
+        "beer_name": "Hofbräu Maibock",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-20290_3d6f8_sm.jpeg",
+        "beer_style": "Bock - Hell / Maibock / Lentebock",
+        "beer_abv": 7.2,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 40139,
+        "beer_name": "Hofbräu Oktoberfestbier",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-40139_2d691_sm.jpeg",
+        "beer_style": "Festbier",
+        "beer_abv": 6.3,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 38001,
+        "beer_name": "Hofbräu Original",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-38001_ef2b9_sm.jpeg",
+        "beer_style": "Lager - Helles",
+        "beer_abv": 5.1,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 7834,
+        "beer_name": "Münchner Weisse",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7834_5bc3b_sm.jpeg",
+        "beer_style": "Wheat Beer - Hefeweizen",
+        "beer_abv": 5.1,
+        "beer_auth_rating": null
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 7,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 7,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 7,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 7,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 7,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 7,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 7,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]

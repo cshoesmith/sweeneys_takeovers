@@ -3716,5 +3716,45 @@
     "rating_score": 3.90483,
     "rating_count": 145,
     "brewery_name": "Sunday Road Brewing"
+  },
+  "97996": {
+    "beer_id": 97996,
+    "beer_name": "Aktien Original 1857",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-97996_c6d34_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-97996_cd4bd_hd.jpeg",
+    "beer_style": "Lager - Dortmunder / Export",
+    "beer_abv": 5.3,
+    "beer_ibu": 18.0,
+    "rating_score": 3.34515,
+    "rating_count": 18427,
+    "brewery_name": "Bayreuther Bierbrauerei",
+    "brewery_country": "Germany",
+    "beer_page_url": "https://untappd.com/b/bayreuther-bierbrauerei-aktien-original-1857/97996"
+  },
+  "63263": {
+    "beer_id": 63263,
+    "beer_name": "Aktien Zwick'l Kellerbier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-63263_9c44b_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-63263_289f5_hd.jpeg",
+    "beer_style": "Kellerbier / Zwickelbier",
+    "beer_abv": 5.3,
+    "beer_ibu": 18,
+    "beer_description": "AKTIEN Zwick’l Kellerbier is a specialty beer with a light delicate reddish color. It is unfiltered and therefore slightly opaque. Because of this, the natural ingredients such as protein, brewer's yeast and other flavor enhancers are fully retained and manifest themselves in a full-bodied spicy flavor with finely balanced nuances of malt and bitters.",
+    "rating_score": 3.49414,
+    "rating_count": 68202,
+    "brewery_name": "Bayreuther Bierbrauerei"
+  },
+  "116296": {
+    "beer_id": 116296,
+    "beer_name": "Bayreuther Hell",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-116296_2dfe1_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-116296_db17b_hd.jpeg",
+    "beer_style": "Lager - Helles",
+    "beer_abv": 4.9,
+    "beer_ibu": 17,
+    "beer_description": "Unser echt bayerisches Hell ist ehrlich, frisch und würzig.\r\n\r\nDer frisch-würzige Geschmack und der süffige Biergenuss sind charakteristisch für die traditionell bayerische Bierspezialität. Bayreuther Hell bekommt durch die sorgsam ausgewogene Balance aus feinsten hellen Gerstenmalzen und eine dezente Hopfennote seinen unverkennbaren Charakter. Gebraut wird es mit viel Liebe und Herzblut nach überliefertem Rezept und nach den Regeln bester bayerischer Braukunst.\r\n\r\nBayreuther Hell strahlt im Glas mit seiner leuchtend goldenen Farbe und einer stattlichen Schaumkrone. Die Nase umspielen frische, florale Noten mit einem leichten Hauch von Honig und Zitrone. Im Mund zeigt sich ein leichtes, wunderbar würziges und süffiges Bier mit feinster Spritzigkeit: eine tolle Komposition aus Honig, Karamell und blumigen Hopfennoten mit einem Hauch von Getreide. Ein ehrliches und schmackhaftes Helles, wie es in Bayern schon seit Jahrhunderten gebraut und geliebt wird.",
+    "rating_score": 3.52214,
+    "rating_count": 114201,
+    "brewery_name": "Bayreuther Bierbrauerei"
   }
 }
