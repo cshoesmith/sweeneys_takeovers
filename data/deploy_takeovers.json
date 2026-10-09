@@ -7726,15 +7726,15 @@
   },
   {
     "date": "2026-10-08",
-    "brewery": "Staatliches Hofbräuhaus München & Bayreuther Bierbrauerei",
+    "brewery": "Bayreuther Bierbrauerei & Staatliches Hofbräuhaus München",
     "breweries": [
-      "Staatliches Hofbräuhaus München",
-      "Bayreuther Bierbrauerei"
+      "Bayreuther Bierbrauerei",
+      "Staatliches Hofbräuhaus München"
     ],
-    "checkins": 7,
+    "checkins": 8,
     "unique_beers": 7,
-    "total_checkins_that_week": 14,
-    "share_pct": 50.0,
+    "total_checkins_that_week": 15,
+    "share_pct": 53.3,
     "beers": [
       "Aktien Original 1857",
       "Aktien Zwick'l Kellerbier",
