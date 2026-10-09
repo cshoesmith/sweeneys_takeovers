@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1606943937,
+      "created_at": "Fri, 09 Oct 2026 01:23:39 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Bayreuther Hell",
+      "beer_id": 116296,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-116296_2dfe1_sm.jpeg",
+      "beer_style": "Lager - Helles",
+      "beer_abv": 4.9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bayreuther Bierbrauerei",
+      "brewery_id": 11687,
+      "rating": 4
+    },
+    {
       "checkin_id": 1606941588,
       "created_at": "Fri, 09 Oct 2026 01:07:59 +0000",
       "user": "EHdrive",
