@@ -7726,15 +7726,15 @@
   },
   {
     "date": "2026-10-08",
-    "brewery": "Bayreuther Bierbrauerei & Staatliches Hofbräuhaus München",
+    "brewery": "Staatliches Hofbräuhaus München & Bayreuther Bierbrauerei",
     "breweries": [
-      "Bayreuther Bierbrauerei",
-      "Staatliches Hofbräuhaus München"
+      "Staatliches Hofbräuhaus München",
+      "Bayreuther Bierbrauerei"
     ],
-    "checkins": 17,
+    "checkins": 18,
     "unique_beers": 8,
-    "total_checkins_that_week": 28,
-    "share_pct": 60.7,
+    "total_checkins_that_week": 31,
+    "share_pct": 58.1,
     "beers": [
       "Aktien Original 1857",
       "Aktien Zwick'l Kellerbier",
@@ -7863,24 +7863,24 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 1,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 2,
         "total": 8,
-        "pct": 12.5,
+        "pct": 25.0,
         "day_counts": [
           0,
-          1,
+          2,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 1,
         "total": 8,
         "pct": 12.5,
