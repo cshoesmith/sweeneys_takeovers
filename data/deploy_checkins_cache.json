@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1606957011,
+      "created_at": "Fri, 09 Oct 2026 03:36:44 +0000",
+      "user": "docta",
+      "checkin_comment": "",
+      "beer_name": "Andechser Spezial Hell ",
+      "beer_id": 55933,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-SpezialHell_55933.jpeg",
+      "beer_style": "Festbier",
+      "beer_abv": 5.9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Klosterbrauerei Andechs",
+      "brewery_id": 5758,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1606953285,
+      "created_at": "Fri, 09 Oct 2026 02:46:06 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Aktien Original 1857",
+      "beer_id": 97996,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-97996_c6d34_sm.jpeg",
+      "beer_style": "Lager - Dortmunder / Export",
+      "beer_abv": 5.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bayreuther Bierbrauerei",
+      "brewery_id": 11687,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1606951057,
       "created_at": "Fri, 09 Oct 2026 02:22:14 +0000",
       "user": "shiftdecimal",
