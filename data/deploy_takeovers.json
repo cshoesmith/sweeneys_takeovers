@@ -7726,19 +7726,20 @@
   },
   {
     "date": "2026-10-08",
-    "brewery": "Bayreuther Bierbrauerei & Staatliches Hofbräuhaus München",
+    "brewery": "Staatliches Hofbräuhaus München & Bayreuther Bierbrauerei",
     "breweries": [
-      "Bayreuther Bierbrauerei",
-      "Staatliches Hofbräuhaus München"
+      "Staatliches Hofbräuhaus München",
+      "Bayreuther Bierbrauerei"
     ],
-    "checkins": 9,
-    "unique_beers": 7,
-    "total_checkins_that_week": 16,
-    "share_pct": 56.2,
+    "checkins": 11,
+    "unique_beers": 8,
+    "total_checkins_that_week": 18,
+    "share_pct": 61.1,
     "beers": [
       "Aktien Original 1857",
       "Aktien Zwick'l Kellerbier",
       "Bayreuther Hell",
+      "Hofbräu Dunkel / Dunkel Gold",
       "Hofbräu Maibock",
       "Hofbräu Oktoberfestbier",
       "Hofbräu Original",
@@ -7787,6 +7788,20 @@
         "rating_score": 3.52214,
         "rating_count": 114201,
         "brewery_name": "Bayreuther Bierbrauerei"
+      },
+      {
+        "beer_id": 8314,
+        "beer_name": "Hofbräu Dunkel / Dunkel Gold",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8314_1d208_sm.jpeg",
+        "beer_style": "Lager - Munich Dunkel",
+        "beer_abv": 5.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-8314_c0cd2_hd.jpeg",
+        "beer_ibu": 23,
+        "beer_description": "Dark beer existed in Bavaria long before light beer. This was the first type of beer to be brewed at Hofbräuhaus when it was founded. Today, when beer-lovers all over the world talk about dark beer, they usually mean a Munich style beer. Today, Hofbräu Dunkel - the archetypal Bavarian beer - is still as popular as ever. With its alcoholic content of around 5.5% volume and its spicy taste, it’s a refreshing beer that suits all kinds of occasions. A beer in the traditional Munich style!",
+        "rating_score": 3.70354,
+        "rating_count": 135232,
+        "brewery_name": "Staatliches Hofbräuhaus München"
       },
       {
         "beer_id": 20290,
@@ -7852,7 +7867,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7867,7 +7882,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7882,7 +7897,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7897,7 +7912,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7912,7 +7927,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7927,7 +7942,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -7942,7 +7957,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,

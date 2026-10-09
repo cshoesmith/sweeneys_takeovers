@@ -3757,6 +3757,19 @@
     "rating_count": 114201,
     "brewery_name": "Bayreuther Bierbrauerei"
   },
+  "8314": {
+    "beer_id": 8314,
+    "beer_name": "Hofbräu Dunkel / Dunkel Gold",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8314_1d208_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-8314_c0cd2_hd.jpeg",
+    "beer_style": "Lager - Munich Dunkel",
+    "beer_abv": 5.5,
+    "beer_ibu": 23,
+    "beer_description": "Dark beer existed in Bavaria long before light beer. This was the first type of beer to be brewed at Hofbräuhaus when it was founded. Today, when beer-lovers all over the world talk about dark beer, they usually mean a Munich style beer. Today, Hofbräu Dunkel - the archetypal Bavarian beer - is still as popular as ever. With its alcoholic content of around 5.5% volume and its spicy taste, it’s a refreshing beer that suits all kinds of occasions. A beer in the traditional Munich style!",
+    "rating_score": 3.70354,
+    "rating_count": 135232,
+    "brewery_name": "Staatliches Hofbräuhaus München"
+  },
   "20290": {
     "beer_id": 20290,
     "beer_name": "Hofbräu Maibock",
