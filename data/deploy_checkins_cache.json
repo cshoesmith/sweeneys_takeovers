@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1606971201,
+      "created_at": "Fri, 09 Oct 2026 10:14:11 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "Hits the spot",
+      "beer_name": "Aktien Original 1857",
+      "beer_id": 97996,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-97996_c6d34_sm.jpeg",
+      "beer_style": "Lager - Dortmunder / Export",
+      "beer_abv": 5.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bayreuther Bierbrauerei",
+      "brewery_id": 11687,
+      "rating": 3.9
+    },
+    {
+      "checkin_id": 1606970719,
+      "created_at": "Fri, 09 Oct 2026 10:05:22 +0000",
+      "user": "virtualpete",
+      "checkin_comment": "",
+      "beer_name": "Hofbräu Maibock",
+      "beer_id": 20290,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-20290_3d6f8_sm.jpeg",
+      "beer_style": "Bock - Hell / Maibock / Lentebock",
+      "beer_abv": 7.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Staatliches Hofbräuhaus München",
+      "brewery_id": 5566,
+      "rating": 3.8
+    },
+    {
       "checkin_id": 1606967867,
       "created_at": "Fri, 09 Oct 2026 09:00:46 +0000",
       "user": "LightBeerking",

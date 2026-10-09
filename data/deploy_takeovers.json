@@ -7731,10 +7731,10 @@
       "Staatliches Hofbräuhaus München",
       "Bayreuther Bierbrauerei"
     ],
-    "checkins": 22,
+    "checkins": 24,
     "unique_beers": 8,
-    "total_checkins_that_week": 41,
-    "share_pct": 53.7,
+    "total_checkins_that_week": 43,
+    "share_pct": 55.8,
     "beers": [
       "Aktien Original 1857",
       "Aktien Zwick'l Kellerbier",
@@ -7866,12 +7866,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 3,
+        "checked": 4,
         "total": 8,
-        "pct": 37.5,
+        "pct": 50.0,
         "day_counts": [
           0,
-          3,
+          4,
           0,
           0
         ],
