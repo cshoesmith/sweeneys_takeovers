@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1607302787,
+      "created_at": "Sat, 10 Oct 2026 08:15:32 +0000",
+      "user": "PeterZaluzny",
+      "checkin_comment": "",
+      "beer_name": "Aktien Original 1857",
+      "beer_id": 97996,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-97996_c6d34_sm.jpeg",
+      "beer_style": "Lager - Dortmunder / Export",
+      "beer_abv": 5.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bayreuther Bierbrauerei",
+      "brewery_id": 11687,
+      "rating": 3
+    },
+    {
+      "checkin_id": 1607302755,
+      "created_at": "Sat, 10 Oct 2026 08:14:53 +0000",
+      "user": "PeterZaluzny",
+      "checkin_comment": "",
+      "beer_name": "Hofbräu Dunkel / Dunkel Gold",
+      "beer_id": 8314,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8314_1d208_sm.jpeg",
+      "beer_style": "Lager - Munich Dunkel",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Staatliches Hofbräuhaus München",
+      "brewery_id": 5566,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1607299709,
       "created_at": "Sat, 10 Oct 2026 07:15:43 +0000",
       "user": "PeterZaluzny",
