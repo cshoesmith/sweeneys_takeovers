@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1607297278,
+      "created_at": "Sat, 10 Oct 2026 06:25:55 +0000",
+      "user": "Matt-mateo",
+      "checkin_comment": "",
+      "beer_name": "Gold Rush, Imperial Pastry Stout",
+      "beer_id": 5955800,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5955800_d062c_sm.jpeg",
+      "beer_style": "Stout - Imperial / Double Pastry",
+      "beer_abv": 9.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Duncan's Brewing",
+      "brewery_id": 150054,
+      "rating": 4.2
+    },
+    {
       "checkin_id": 1606980551,
       "created_at": "Fri, 09 Oct 2026 12:16:33 +0000",
       "user": "Ishmagel",
