@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1607332955,
+      "created_at": "Sat, 10 Oct 2026 12:20:22 +0000",
+      "user": "craigmoro",
+      "checkin_comment": "",
+      "beer_name": "Hofbräu Dunkel / Dunkel Gold",
+      "beer_id": 8314,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8314_1d208_sm.jpeg",
+      "beer_style": "Lager - Munich Dunkel",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Staatliches Hofbräuhaus München",
+      "brewery_id": 5566,
+      "rating": 4.3
+    },
+    {
+      "checkin_id": 1607326761,
+      "created_at": "Sat, 10 Oct 2026 11:52:48 +0000",
+      "user": "Kashing_6",
+      "checkin_comment": "",
+      "beer_name": "Münchner Weisse",
+      "beer_id": 7834,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7834_5bc3b_sm.jpeg",
+      "beer_style": "Wheat Beer - Hefeweizen",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Staatliches Hofbräuhaus München",
+      "brewery_id": 5566,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1607317483,
       "created_at": "Sat, 10 Oct 2026 11:04:57 +0000",
       "user": "Kashing_6",
