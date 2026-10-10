@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1607299709,
+      "created_at": "Sat, 10 Oct 2026 07:15:43 +0000",
+      "user": "PeterZaluzny",
+      "checkin_comment": "",
+      "beer_name": "Spezial Festbier / Barock Hell",
+      "beer_id": 5965,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5965_53fec_sm.jpeg",
+      "beer_style": "Festbier",
+      "beer_abv": 5.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Klosterbrauerei Weltenburg",
+      "brewery_id": 9454,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1607297278,
       "created_at": "Sat, 10 Oct 2026 06:25:55 +0000",
       "user": "Matt-mateo",
