@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1608007372,
+      "created_at": "Mon, 12 Oct 2026 02:25:13 +0000",
+      "user": "sjfitzgerald60",
+      "checkin_comment": "",
+      "beer_name": "Pale Ale",
+      "beer_id": 5350453,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5350453_9aad1_sm.jpeg",
+      "beer_style": "Pale Ale - American",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Boxer Brewing Co.",
+      "brewery_id": 541128,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1608007010,
+      "created_at": "Mon, 12 Oct 2026 02:21:00 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Aktien Original 1857",
+      "beer_id": 97996,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-97996_c6d34_sm.jpeg",
+      "beer_style": "Lager - Dortmunder / Export",
+      "beer_abv": 5.3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bayreuther Bierbrauerei",
+      "brewery_id": 11687,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1607761477,
       "created_at": "Sun, 11 Oct 2026 09:21:30 +0000",
       "user": "EHdrive",
