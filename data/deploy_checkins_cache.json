@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1608153884,
+      "created_at": "Tue, 13 Oct 2026 08:09:36 +0000",
+      "user": "denniscato",
+      "checkin_comment": "Delicious, flat from the pump, notes or liquorice on the afternote.",
+      "beer_name": "Best Bitter",
+      "beer_id": 7766,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7766_fc0d9_sm.jpeg",
+      "beer_style": "Bitter - Best",
+      "beer_abv": 3.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Theakston",
+      "brewery_id": 2070,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1608018420,
       "created_at": "Mon, 12 Oct 2026 07:03:20 +0000",
       "user": "BelfieldBrewer",
