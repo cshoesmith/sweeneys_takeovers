@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1608289345,
+      "created_at": "Wed, 14 Oct 2026 09:49:46 +0000",
+      "user": "melischer",
+      "checkin_comment": "",
+      "beer_name": "Hofbräu Maibock",
+      "beer_id": 20290,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-20290_3d6f8_sm.jpeg",
+      "beer_style": "Bock - Hell / Maibock / Lentebock",
+      "beer_abv": 7.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Staatliches Hofbräuhaus München",
+      "brewery_id": 5566,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1608288898,
+      "created_at": "Wed, 14 Oct 2026 09:35:12 +0000",
+      "user": "Frankthecrank11",
+      "checkin_comment": "",
+      "beer_name": "Rothaus Pils / Tannen Zäpfle",
+      "beer_id": 2395,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2395_6a68d_sm.jpeg",
+      "beer_style": "Pilsner - German",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badische Staatsbrauerei Rothaus",
+      "brewery_id": 1077,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1608288722,
       "created_at": "Wed, 14 Oct 2026 09:29:22 +0000",
       "user": "martin_constantinides_3096",
