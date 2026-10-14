@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1608285177,
+      "created_at": "Wed, 14 Oct 2026 06:37:32 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Whisky Barrel Aged - Black Barleywine (2026)",
+      "beer_id": 6678165,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6678165_37828_sm.jpeg",
+      "beer_style": "Barleywine - Other",
+      "beer_abv": 12.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hawkers Beer",
+      "brewery_id": 184662,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1608153884,
       "created_at": "Tue, 13 Oct 2026 08:09:36 +0000",
       "user": "denniscato",
