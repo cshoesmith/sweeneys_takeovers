@@ -7976,10 +7976,10 @@
       "Beaver Brewery",
       "Alice Springs Brewing Co."
     ],
-    "checkins": 31,
+    "checkins": 32,
     "unique_beers": 7,
-    "total_checkins_that_week": 67,
-    "share_pct": 46.3,
+    "total_checkins_that_week": 70,
+    "share_pct": 45.7,
     "beers": [
       "Batch #37 Pale",
       "Dougy",
@@ -8097,12 +8097,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 2,
+        "checked": 3,
         "total": 7,
-        "pct": 28.6,
+        "pct": 42.9,
         "day_counts": [
           0,
-          2,
+          3,
           0,
           0
         ],
