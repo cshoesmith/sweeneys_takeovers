@@ -3835,6 +3835,19 @@
     "rating_count": 626,
     "brewery_name": "Alice Springs Brewing Co."
   },
+  "3048017": {
+    "beer_id": 3048017,
+    "beer_name": "Dougy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3048017_5af73_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3048017_55e48_hd.jpeg",
+    "beer_style": "Brown Ale - American",
+    "beer_abv": 4,
+    "beer_ibu": 0,
+    "beer_description": "Our take on the American Brown Ale, an easy drinking beer with just enough American hops to keep you wanting more. This beer was first refined and brewed under the banner of Captain Bligh’s Brewery in Hobart, Tasmania.\r\n\r\nNamed after the one and only legend Dougy Brown, father, father in-law and grandfather to our little family. Back in his prime he had a flowing grey beard, It was his signature. It wasn’t until recently after radiation treatment that he now can’t grow the beard, thus our ode to the legend.",
+    "rating_score": 3.60318,
+    "rating_count": 220,
+    "brewery_name": "Beaver Brewery"
+  },
   "4132516": {
     "beer_id": 4132516,
     "beer_name": "Oh Ginger",
@@ -3848,6 +3861,19 @@
     "brewery_name": "Alice Springs Brewing Co.",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/alice-springs-brewing-co-oh-ginger/4132516"
+  },
+  "4373001": {
+    "beer_id": 4373001,
+    "beer_name": "Silvertail Ale",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-415337_397ac.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Cream Ale",
+    "beer_abv": 4.6,
+    "beer_ibu": 0,
+    "beer_description": "An easy to drink cream ale with aslight bitterness to quench your thirst.",
+    "rating_score": 3.39861,
+    "rating_count": 108,
+    "brewery_name": "Beaver Brewery"
   },
   "5244605": {
     "beer_id": 5244605,
@@ -3874,5 +3900,19 @@
     "rating_score": 3.71285,
     "rating_count": 288,
     "brewery_name": "Alice Springs Brewing Co."
+  },
+  "7582719": {
+    "beer_id": 7582719,
+    "beer_name": "WOK IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7582719_9a247_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7582719_59449_hd.jpeg",
+    "beer_style": "IPA - Fruited",
+    "beer_abv": 6.0,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 0,
+    "brewery_name": "Beaver Brewery",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/beaver-brewery-wok-ipa/7582719"
   }
 }
