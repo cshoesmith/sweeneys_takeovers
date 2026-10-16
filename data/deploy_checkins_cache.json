@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1608658479,
+      "created_at": "Fri, 16 Oct 2026 12:57:15 +0000",
+      "user": "lachst0ck",
+      "checkin_comment": "",
+      "beer_name": "Yakima Charge",
+      "beer_id": 6762292,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 5
+    },
+    {
       "checkin_id": 1608646226,
       "created_at": "Fri, 16 Oct 2026 11:09:54 +0000",
       "user": "LightBeerking",
