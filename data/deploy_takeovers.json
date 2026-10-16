@@ -7968,5 +7968,183 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-10-15",
+    "brewery": "Alice Springs Brewing Co.",
+    "breweries": [
+      "Alice Springs Brewing Co."
+    ],
+    "checkins": 5,
+    "unique_beers": 4,
+    "total_checkins_that_week": 23,
+    "share_pct": 21.7,
+    "beers": [
+      "Batch #37 Pale",
+      "Oh Ginger",
+      "Smashing Mango Sour",
+      "That's Not A Knife"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 3500196,
+        "beer_name": "Batch #37 Pale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3500196_e6f50_sm.jpeg",
+        "beer_style": "Pale Ale - American",
+        "beer_abv": 5.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3500196_db8ee_hd.jpeg",
+        "beer_ibu": 55,
+        "beer_description": "First up we have our commemorative beer “Batch #37 Pale”. We aren’t really commemorating anything in particular we just couldn’t think of a good name...  The mild flavour of tropical fruits help make this an enjoyable and refreshing beer.\r\n\r\nA hop forward pale ale with a dry finish to really allow the hop aromas to shine. The sweet aromas of citrus and pineapple entice you in and the refreshing malt flavours will have you back for more.\r\n",
+        "rating_score": 3.59265,
+        "rating_count": 626,
+        "brewery_name": "Alice Springs Brewing Co."
+      },
+      {
+        "beer_id": 4132516,
+        "beer_name": "Oh Ginger",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4132516_5547e_sm.jpeg",
+        "beer_style": "Hard Ginger Beer",
+        "beer_abv": 3.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4132516_3369a_hd.jpeg",
+        "beer_ibu": 0,
+        "rating_score": 3.74691,
+        "rating_count": 178,
+        "brewery_name": "Alice Springs Brewing Co.",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/alice-springs-brewing-co-oh-ginger/4132516"
+      },
+      {
+        "beer_id": 5244605,
+        "beer_name": "Smashing Mango Sour",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5244605_ec19f_sm.jpeg",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": 3.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5244605_0229a_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "We took our favourite Weissbier sour base and added a sprinkle...wait no, smashing of mango to bring you our latest summer treat!  \r\nBe invited in by the mango aroma, delight in the effervescent carbonation, and let the sour finish...prepare you for another sip.  \r\nGet in quick, these won't hang about.  \r\n3.5% ABV  ~ 4 IBU ~ 5 EBC",
+        "rating_score": 3.73209,
+        "rating_count": 134,
+        "brewery_name": "Alice Springs Brewing Co."
+      },
+      {
+        "beer_id": 5160583,
+        "beer_name": "That's Not A Knife",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5160583_7ba6c_sm.jpeg",
+        "beer_style": "IPA - American",
+        "beer_abv": 6.5,
+        "beer_auth_rating": null
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]
