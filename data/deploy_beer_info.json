@@ -3861,5 +3861,18 @@
     "rating_score": 3.73209,
     "rating_count": 134,
     "brewery_name": "Alice Springs Brewing Co."
+  },
+  "5160583": {
+    "beer_id": 5160583,
+    "beer_name": "That's Not A Knife",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5160583_7ba6c_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5160583_a78f8_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6.5,
+    "beer_ibu": 65,
+    "beer_description": "We love our West Coast IPA's here at ASBC - but how to make one with an Australian edge? (Mind the pun...).  Simple.  The all-Australian hop charge (Galaxy x Vic Secret x Enigma) impart a medley of tropical aromas reminiscent of the NT's top end, not to mention a bitterness that cut's through like a...knife?  But don't get ahead of yourself now, That's Not A Knife.",
+    "rating_score": 3.71285,
+    "rating_count": 288,
+    "brewery_name": "Alice Springs Brewing Co."
   }
 }
