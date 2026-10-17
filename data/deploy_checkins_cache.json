@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1608990079,
+      "created_at": "Sat, 17 Oct 2026 09:09:48 +0000",
+      "user": "OzBeer_MD",
+      "checkin_comment": "",
+      "beer_name": "Doble Dubbel",
+      "beer_id": 7610255,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Belgian Dubbel",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Slow Lane Brewing",
+      "brewery_id": 464524,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1608988202,
+      "created_at": "Sat, 17 Oct 2026 08:42:15 +0000",
+      "user": "OzBeer_MD",
+      "checkin_comment": "Very nice. Brewed to style. Nice one WA home brewers!",
+      "beer_name": "WA Confidential",
+      "beer_id": 6961143,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961143_b0904_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4
+    },
+    {
       "checkin_id": 1608986687,
       "created_at": "Sat, 17 Oct 2026 08:20:18 +0000",
       "user": "OzBeer_MD",
