@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1608959076,
+      "created_at": "Sat, 17 Oct 2026 02:28:32 +0000",
+      "user": "mw1414",
+      "checkin_comment": "Oh yum! Not one of my fave styles but love this one",
+      "beer_name": "Schwarzbier",
+      "beer_id": 7610256,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Schwarzbier",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Dad & Dave's Brewing",
+      "brewery_id": 34849,
+      "rating": 4.1
+    },
+    {
+      "checkin_id": 1608957321,
+      "created_at": "Sat, 17 Oct 2026 02:18:52 +0000",
+      "user": "mw1414",
+      "checkin_comment": "Nice toasty taste and smashable on a hot day",
+      "beer_name": "No Doubt",
+      "beer_id": 7610251,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Lager - Dark",
+      "beer_abv": 4.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bracket Brewing",
+      "brewery_id": 474651,
+      "rating": 3.7
+    },
+    {
       "checkin_id": 1608943244,
       "created_at": "Sat, 17 Oct 2026 01:08:25 +0000",
       "user": "Longm8",
