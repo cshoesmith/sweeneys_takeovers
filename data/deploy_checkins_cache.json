@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1609432583,
+      "created_at": "Sun, 18 Oct 2026 07:03:11 +0000",
+      "user": "coreymch",
+      "checkin_comment": "",
+      "beer_name": "The Spot (Sydney Beer Week Pro-AM)",
+      "beer_id": 7608799,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7608799_39bb0_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Coastal Brewing Company",
+      "brewery_id": 315697,
+      "rating": 3.2
+    },
+    {
       "checkin_id": 1609430755,
       "created_at": "Sun, 18 Oct 2026 06:23:24 +0000",
       "user": "coreymch",
