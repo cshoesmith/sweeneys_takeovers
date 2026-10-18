@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1609434851,
+      "created_at": "Sun, 18 Oct 2026 07:52:35 +0000",
+      "user": "pierstomin",
+      "checkin_comment": "",
+      "beer_name": "Red Dead Rye-demption IPA",
+      "beer_id": 6697411,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Rye",
+      "beer_abv": 5.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Spice Trade Brewing Company",
+      "brewery_id": 1689,
+      "rating": 0
+    },
+    {
+      "checkin_id": 1609434129,
+      "created_at": "Sun, 18 Oct 2026 07:38:28 +0000",
+      "user": "pierstomin",
+      "checkin_comment": "",
+      "beer_name": "WA Confidential",
+      "beer_id": 6961143,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961143_b0904_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 0
+    },
+    {
       "checkin_id": 1609432583,
       "created_at": "Sun, 18 Oct 2026 07:03:11 +0000",
       "user": "coreymch",
