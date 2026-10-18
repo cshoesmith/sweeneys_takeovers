@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1609427032,
+      "created_at": "Sun, 18 Oct 2026 05:06:28 +0000",
+      "user": "OzRazDaz",
+      "checkin_comment": "",
+      "beer_name": "Red Dead Rye-Demption",
+      "beer_id": 7610269,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Rye",
+      "beer_abv": 6.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Social Brewers",
+      "brewery_id": 511705,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1609426945,
+      "created_at": "Sun, 18 Oct 2026 05:04:43 +0000",
+      "user": "drareg66",
+      "checkin_comment": "",
+      "beer_name": "Red Dead Rye-Demption",
+      "beer_id": 7610269,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Rye",
+      "beer_abv": 6.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "The Social Brewers",
+      "brewery_id": 511705,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1609046664,
       "created_at": "Sat, 17 Oct 2026 13:51:04 +0000",
       "user": "Binnifer",
