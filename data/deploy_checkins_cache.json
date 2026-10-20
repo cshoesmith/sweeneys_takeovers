@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1609805230,
+      "created_at": "Tue, 20 Oct 2026 11:27:40 +0000",
+      "user": "nomobondi",
+      "checkin_comment": "A classic English style. Malty, less hoppy, clean and a moderate bitterness.",
+      "beer_name": "Mischievous Kea",
+      "beer_id": 497638,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-497638_af889_sm.jpeg",
+      "beer_style": "IPA - English",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Altitude Brewing",
+      "brewery_id": 89782,
+      "rating": 3.7
+    },
+    {
       "checkin_id": 1609805055,
       "created_at": "Tue, 20 Oct 2026 11:24:45 +0000",
       "user": "nomobondi",
