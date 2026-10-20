@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1609797265,
+      "created_at": "Tue, 20 Oct 2026 06:34:02 +0000",
+      "user": "mw1414",
+      "checkin_comment": "Nicely smashable for a 6er",
+      "beer_name": "Free Fall",
+      "beer_id": 6850905,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6850905_1df0d_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Altitude Brewing",
+      "brewery_id": 89782,
+      "rating": 3.9
+    },
+    {
+      "checkin_id": 1609797257,
+      "created_at": "Tue, 20 Oct 2026 06:33:45 +0000",
+      "user": "Ma50n",
+      "checkin_comment": "",
+      "beer_name": "Mischievous Kea",
+      "beer_id": 497638,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-497638_af889_sm.jpeg",
+      "beer_style": "IPA - English",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Altitude Brewing",
+      "brewery_id": 89782,
+      "rating": 4
+    },
+    {
       "checkin_id": 1609789755,
       "created_at": "Tue, 20 Oct 2026 02:23:16 +0000",
       "user": "barrman",
