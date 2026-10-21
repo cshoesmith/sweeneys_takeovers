@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1609919845,
+      "created_at": "Wed, 21 Oct 2026 01:11:46 +0000",
+      "user": "robmc0",
+      "checkin_comment": "",
+      "beer_name": "SON OF MISCHIEF",
+      "beer_id": 6630785,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6630785_0385f_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1609919733,
+      "created_at": "Wed, 21 Oct 2026 01:10:39 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "SON OF MISCHIEF",
+      "beer_id": 6630785,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6630785_0385f_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1609805230,
       "created_at": "Tue, 20 Oct 2026 11:27:40 +0000",
       "user": "nomobondi",
