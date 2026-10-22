@@ -8199,5 +8199,184 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-10-22",
+    "brewery": "Hop Nation Brewing Co & KAIJU! Beer",
+    "breweries": [
+      "Hop Nation Brewing Co",
+      "KAIJU! Beer"
+    ],
+    "checkins": 7,
+    "unique_beers": 4,
+    "total_checkins_that_week": 7,
+    "share_pct": 100.0,
+    "beers": [
+      "MP#0022 - Imperatrix Hoppy Pils",
+      "Next Season Hazy IPA",
+      "Seed & Destroy",
+      "The Ghost Hazy Pale"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6623400,
+        "beer_name": "MP#0022 - Imperatrix Hoppy Pils",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-43267_c758a.jpeg",
+        "beer_style": "Pilsner - New Zealand",
+        "beer_abv": 5.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "This is a New Zealand–style Hoppy Pilsner designed to farewell the warmer weather and usher in a new hop-focused season. Built around a powerhouse trio of Riwaka, Motueka and Nelson Sauvin hops. Delivering bright aromatics, high-oil intensity and a crisp, confident structure. Classic pilsner drinkability with a modern, expressive twist.\r\n\r\nThink: fresh growth, new beginnings and serious drinking appeal",
+        "rating_score": 3.70696,
+        "rating_count": 158,
+        "brewery_name": "KAIJU! Beer"
+      },
+      {
+        "beer_id": 6861559,
+        "beer_name": "Next Season Hazy IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6861559_4a07f_sm.jpeg",
+        "beer_style": "IPA - Other",
+        "beer_abv": 6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6861559_602b7_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This hop forward hazy boasts a silky mouthfeel, rounded malt foundation and smooth lasting bitterness.\r\n\r\nLeaning heavily into new world hop varietals, Citra & Motueka shape the backbone followed by a punchy Nelson Sauvin, Peacharine & Nectaron Dry Hop.\r\n\r\nA slightly colder fermentation preserves a softer ester profile and showcases the bright citrus, grapefruit and stonefruit hop characters.",
+        "rating_score": 3.86597,
+        "rating_count": 72,
+        "brewery_name": "Hop Nation Brewing Co"
+      },
+      {
+        "beer_id": 6845806,
+        "beer_name": "Seed & Destroy",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5446280_12a06_sm.jpeg",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": 5.7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 9,
+        "brewery_name": "KAIJU! Beer",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/kaiju-beer-seed-and-destroy/6845806"
+      },
+      {
+        "beer_id": 6909828,
+        "beer_name": "The Ghost Hazy Pale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6909828_5cde9_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 4,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]
