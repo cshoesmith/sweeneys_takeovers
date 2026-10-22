@@ -4036,6 +4036,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/kaiju-beer-seed-and-destroy/6845806"
   },
+  "4855569": {
+    "beer_id": 4855569,
+    "beer_name": "Sustainable Pale Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4855569_aa0c4_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4855569_a5e9c_hd.jpeg",
+    "beer_style": "Pale Ale - Australian",
+    "beer_abv": 4.7,
+    "beer_ibu": 0,
+    "beer_description": "Easy drinking with passionfruit, citrus and pineapple flavours, this Sustainable Pale Ale was made in Victoria from 100% Victorian ingredients.\r\n \r\nMalt was sourced from a small independent producer in Ballarat; Galaxy and Vic Secret hops were grown in HPAs Victorian hop farms; and it includes a yeast strain local to Melbourne, commonly used in the early 1900s.\r\n \r\nBrewed exclusively for Beer Deluxe at Hop Nation’s solar-powered Mornington site.  Spent grains were distributed to local farmers for livestock feed.\r\n\r\nLaunched on World Environment Day to celebrate Beer Deluxe Fed Square's sustainability, including introducing organic waste separation, diverting over 50% of waste from landfill, and energy efficient lighting alternatives.",
+    "rating_score": 3.41452,
+    "rating_count": 62,
+    "brewery_name": "Hop Nation Brewing Co"
+  },
   "6909828": {
     "beer_id": 6909828,
     "beer_name": "The Ghost Hazy Pale",

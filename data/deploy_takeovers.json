@@ -8207,10 +8207,10 @@
       "Hop Nation Brewing Co",
       "KAIJU! Beer"
     ],
-    "checkins": 28,
-    "unique_beers": 11,
-    "total_checkins_that_week": 32,
-    "share_pct": 87.5,
+    "checkins": 29,
+    "unique_beers": 12,
+    "total_checkins_that_week": 33,
+    "share_pct": 87.9,
     "beers": [
       "Beyond the Black River (Mutation Program #006)",
       "Foudre Beer With Australian Blueberries And Organic Vanilla",
@@ -8221,6 +8221,7 @@
       "SITE FP Single Foedre Sour Blonde",
       "SUP Hazy IPA",
       "Seed & Destroy",
+      "Sustainable Pale Ale",
       "The Ghost Hazy Pale",
       "The Kalash 2023"
     ],
@@ -8356,6 +8357,20 @@
         "beer_page_url": "https://untappd.com/b/kaiju-beer-seed-and-destroy/6845806"
       },
       {
+        "beer_id": 4855569,
+        "beer_name": "Sustainable Pale Ale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4855569_aa0c4_sm.jpeg",
+        "beer_style": "Pale Ale - Australian",
+        "beer_abv": 4.7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4855569_a5e9c_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Easy drinking with passionfruit, citrus and pineapple flavours, this Sustainable Pale Ale was made in Victoria from 100% Victorian ingredients.\r\n \r\nMalt was sourced from a small independent producer in Ballarat; Galaxy and Vic Secret hops were grown in HPAs Victorian hop farms; and it includes a yeast strain local to Melbourne, commonly used in the early 1900s.\r\n \r\nBrewed exclusively for Beer Deluxe at Hop Nation’s solar-powered Mornington site.  Spent grains were distributed to local farmers for livestock feed.\r\n\r\nLaunched on World Environment Day to celebrate Beer Deluxe Fed Square's sustainability, including introducing organic waste separation, diverting over 50% of waste from landfill, and energy efficient lighting alternatives.",
+        "rating_score": 3.41452,
+        "rating_count": 62,
+        "brewery_name": "Hop Nation Brewing Co"
+      },
+      {
         "beer_id": 6909828,
         "beer_name": "The Ghost Hazy Pale",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6909828_5cde9_sm.jpeg",
@@ -8391,7 +8406,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8406,7 +8421,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8421,7 +8436,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8436,7 +8451,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8451,7 +8466,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8466,7 +8481,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8481,7 +8496,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 12,
         "pct": 0.0,
         "day_counts": [
           0,
