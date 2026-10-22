@@ -3928,6 +3928,20 @@
     "rating_count": 540,
     "brewery_name": "KAIJU! Beer"
   },
+  "6847500": {
+    "beer_id": 6847500,
+    "beer_name": "Foudre Beer With Australian Blueberries And Organic Vanilla",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5446280_12a06_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Sour - Fruited",
+    "beer_abv": 5.5,
+    "beer_ibu": 0,
+    "rating_score": 3.80909,
+    "rating_count": 11,
+    "brewery_name": "Hop Nation Brewing Co",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-foudre-beer-with-australian-blueberries-and-organic-vanilla/6847500"
+  },
   "7628144": {
     "beer_id": 7628144,
     "beer_name": "Hop Nation Foedre Sour",
@@ -3981,6 +3995,20 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-pirate-spiced-rum-imperial-stout/7610586"
   },
+  "3975982": {
+    "beer_id": 3975982,
+    "beer_name": "SITE FP Single Foedre Sour Blonde",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3975982_372b5_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3975982_372b5_hd.jpeg",
+    "beer_style": "Sour - Other",
+    "beer_abv": 5.5,
+    "beer_ibu": 0,
+    "rating_score": 3.83927,
+    "rating_count": 354,
+    "brewery_name": "Hop Nation Brewing Co",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-site-fp-single-foedre-sour-blonde/3975982"
+  },
   "6845806": {
     "beer_id": 6845806,
     "beer_name": "Seed & Destroy",
@@ -3994,5 +4022,18 @@
     "brewery_name": "KAIJU! Beer",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/kaiju-beer-seed-and-destroy/6845806"
+  },
+  "6909828": {
+    "beer_id": 6909828,
+    "beer_name": "The Ghost Hazy Pale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6909828_5cde9_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6909828_cc2db_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 4.2,
+    "beer_ibu": 0,
+    "beer_description": "Approachably drinkable, The Ghost Hazy Pale has a soft, rounded mouthfeel and is loaded with hops for full flavour.",
+    "rating_score": 3.40385,
+    "rating_count": 13,
+    "brewery_name": "Hop Nation Brewing Co"
   }
 }
