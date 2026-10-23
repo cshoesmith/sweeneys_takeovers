@@ -8202,21 +8202,26 @@
   },
   {
     "date": "2026-10-22",
-    "brewery": "Hop Nation Brewing Co & KAIJU! Beer",
+    "brewery": "Hop Nation Brewing Co & KAIJU! Beer & Aether Brewing",
     "breweries": [
       "Hop Nation Brewing Co",
-      "KAIJU! Beer"
+      "KAIJU! Beer",
+      "Aether Brewing"
     ],
-    "checkins": 30,
-    "unique_beers": 12,
-    "total_checkins_that_week": 37,
-    "share_pct": 81.1,
+    "checkins": 35,
+    "unique_beers": 16,
+    "total_checkins_that_week": 44,
+    "share_pct": 79.5,
     "beers": [
+      "Afternoon Delight Green Tea IPA",
+      "Beach Bum",
+      "Berry Beasty",
       "Beyond the Black River (Mutation Program #006)",
       "Foudre Beer With Australian Blueberries And Organic Vanilla",
       "Hop Nation Foedre Sour",
       "MP#0022 - Imperatrix Hoppy Pils",
       "Next Season Hazy IPA",
+      "Oaked Black IPA",
       "Pirate Spiced Rum Imperial Stout",
       "SITE FP Single Foedre Sour Blonde",
       "SUP Hazy IPA",
@@ -8226,6 +8231,51 @@
       "The Kalash 2023"
     ],
     "beer_details": [
+      {
+        "beer_id": 6762195,
+        "beer_name": "Afternoon Delight Green Tea IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6762195_08280_sm.jpeg",
+        "beer_style": "IPA - Other",
+        "beer_abv": 6.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6762195_e2ce0_hd.jpeg",
+        "beer_ibu": 0,
+        "rating_score": 3.75932,
+        "rating_count": 59,
+        "brewery_name": "Aether Brewing",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/aether-brewing-afternoon-delight-green-tea-ipa/6762195"
+      },
+      {
+        "beer_id": 7630665,
+        "beer_name": "Beach Bum",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6799490_62397_sm.jpeg",
+        "beer_style": "IPA - Other",
+        "beer_abv": 6.0,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Aether Brewing",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/aether-brewing-beach-bum/7630665"
+      },
+      {
+        "beer_id": 7630677,
+        "beer_name": "Berry Beasty",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6799490_62397_sm.jpeg",
+        "beer_style": "IPA - Other",
+        "beer_abv": 6.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Aether Brewing",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/aether-brewing-berry-beasty/7630677"
+      },
       {
         "beer_id": 4498040,
         "beer_name": "Beyond the Black River (Mutation Program #006)",
@@ -8296,6 +8346,14 @@
         "rating_score": 3.86597,
         "rating_count": 72,
         "brewery_name": "Hop Nation Brewing Co"
+      },
+      {
+        "beer_id": 6331250,
+        "beer_name": "Oaked Black IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6331250_2d174_sm.jpeg",
+        "beer_style": "IPA - Black / Cascadian Dark Ale",
+        "beer_abv": 6.7,
+        "beer_auth_rating": null
       },
       {
         "beer_id": 7610586,
@@ -8402,26 +8460,26 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 12,
-        "pct": 0.0,
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 2,
+        "total": 16,
+        "pct": 12.5,
         "day_counts": [
           0,
-          0,
+          2,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 16,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8436,7 +8494,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 12,
+        "total": 16,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8451,7 +8509,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 16,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8466,7 +8524,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 16,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8481,7 +8539,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 16,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8496,7 +8554,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 16,
         "pct": 0.0,
         "day_counts": [
           0,
