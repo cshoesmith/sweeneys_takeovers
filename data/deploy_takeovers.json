@@ -8202,16 +8202,16 @@
   },
   {
     "date": "2026-10-22",
-    "brewery": "Hop Nation Brewing Co & Aether Brewing & KAIJU! Beer",
+    "brewery": "Aether Brewing & Hop Nation Brewing Co & KAIJU! Beer",
     "breweries": [
-      "Hop Nation Brewing Co",
       "Aether Brewing",
+      "Hop Nation Brewing Co",
       "KAIJU! Beer"
     ],
-    "checkins": 52,
+    "checkins": 53,
     "unique_beers": 21,
-    "total_checkins_that_week": 77,
-    "share_pct": 67.5,
+    "total_checkins_that_week": 81,
+    "share_pct": 65.4,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "All Australian Pale Ale",
@@ -8558,24 +8558,24 @@
         "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 2,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 3,
         "total": 21,
-        "pct": 9.5,
+        "pct": 14.3,
         "day_counts": [
           0,
-          2,
+          3,
           0,
           0
         ],
         "rank": 2
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
         "total": 21,
         "pct": 9.5,
