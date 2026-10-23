@@ -3983,6 +3983,19 @@
     "rating_count": 540,
     "brewery_name": "KAIJU! Beer"
   },
+  "5452642": {
+    "beer_id": 5452642,
+    "beer_name": "Black XPA LTD. Release #178",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5452642_5b551_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5452642_5b551_hd.jpeg",
+    "beer_style": "Pale Ale - XPA (Extra Pale)",
+    "beer_abv": 5.2,
+    "beer_ibu": 0,
+    "beer_description": "Introducing Limited Release 178, our Black XPA! With this brew, we’ve thrown rules out the window and balanced a smooth Dark Ale with a supremely juicy XPA.\r\n\r\nThe result is undeniably delicious! Intensely hop-forward with aromas of citrus, pear, melon and passionfruit, the juiciness is perfectly wrapped together with chocolatey biscuit flavours from the malt. Pouring dark black with a copper tint around the edges, this marvel is only lightly bittered and stays smooth to the finish.\r\n\r\nDive into the depths of this Black XPA; it's not just a drink, it's a symphony for the senses!\r\n\r\nFeaturing 'Little Devil' by Shelley Long",
+    "rating_score": 3.79807,
+    "rating_count": 621,
+    "brewery_name": "Aether Brewing"
+  },
   "6847500": {
     "beer_id": 6847500,
     "beer_name": "Foudre Beer With Australian Blueberries And Organic Vanilla",
@@ -4022,6 +4035,19 @@
     "rating_score": 3.70696,
     "rating_count": 158,
     "brewery_name": "KAIJU! Beer"
+  },
+  "5088775": {
+    "beer_id": 5088775,
+    "beer_name": "Mexican Lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5088775_d93d0_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5088775_d93d0_hd.jpeg",
+    "beer_style": "Lager - Mexican",
+    "beer_abv": 4.2,
+    "beer_ibu": 25,
+    "beer_description": "Still the boss of drinkability, our crisp new-world Mexican lager, brewed with barley malt, corn and agave makes for the perfect refreshment, any day. Pouring a clear straw-yellow with delicate fruity aromas, a touch of earthiness and a twist of lime thanks to the addition of Taiheke hops. This full-strength lager carries a sweet, slightly grainy taste from the corn while a clean rounded mouthfeel finishes out the beer until the next sip.\r\nVegan friendly & all natural - free of preservatives and additives.\r\n\r\n\r\nOriginal art by: FELICITY MARSHALL “Prickly Pear Field Sunbury” - Oil on Canvas",
+    "rating_score": 3.39614,
+    "rating_count": 648,
+    "brewery_name": "Aether Brewing"
   },
   "7631130": {
     "beer_id": 7631130,
