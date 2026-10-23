@@ -8208,10 +8208,10 @@
       "Aether Brewing",
       "KAIJU! Beer"
     ],
-    "checkins": 45,
-    "unique_beers": 20,
-    "total_checkins_that_week": 64,
-    "share_pct": 70.3,
+    "checkins": 51,
+    "unique_beers": 21,
+    "total_checkins_that_week": 72,
+    "share_pct": 70.8,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "All Australian Pale Ale",
@@ -8224,6 +8224,7 @@
       "MP#0022 - Imperatrix Hoppy Pils",
       "Mexican Lager",
       "Might Night Sun",
+      "Morning Glory Coffee Stout",
       "Next Season Hazy IPA",
       "Oaked Black IPA",
       "Pirate Spiced Rum Imperial Stout",
@@ -8395,6 +8396,21 @@
         "beer_page_url": "https://untappd.com/b/aether-brewing-might-night-sun/7631130"
       },
       {
+        "beer_id": 6762194,
+        "beer_name": "Morning Glory Coffee Stout",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6762194_863ec_sm.jpeg",
+        "beer_style": "Stout - Coffee",
+        "beer_abv": 8.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6762194_863ec_hd.jpeg",
+        "beer_ibu": 0,
+        "rating_score": 4.08684,
+        "rating_count": 57,
+        "brewery_name": "Aether Brewing",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/aether-brewing-morning-glory-coffee-stout/6762194"
+      },
+      {
         "beer_id": 6861559,
         "beer_name": "Next Season Hazy IPA",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6861559_4a07f_sm.jpeg",
@@ -8530,12 +8546,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 3,
-        "total": 20,
-        "pct": 15.0,
+        "checked": 5,
+        "total": 21,
+        "pct": 23.8,
         "day_counts": [
           0,
-          3,
+          5,
           0,
           0
         ],
@@ -8546,8 +8562,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
-        "total": 20,
-        "pct": 10.0,
+        "total": 21,
+        "pct": 9.5,
         "day_counts": [
           0,
           2,
@@ -8557,26 +8573,26 @@
         "rank": 2
       },
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 20,
-        "pct": 0.0,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 2,
+        "total": 21,
+        "pct": 9.5,
         "day_counts": [
           0,
-          0,
+          2,
           0,
           0
         ],
         "rank": 3
       },
       {
-        "username": "hiriser",
-        "display_name": "Willy",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8587,11 +8603,11 @@
         "rank": 4
       },
       {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8602,11 +8618,11 @@
         "rank": 5
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8621,7 +8637,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
