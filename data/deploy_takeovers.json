@@ -8208,10 +8208,10 @@
       "Aether Brewing",
       "KAIJU! Beer"
     ],
-    "checkins": 51,
+    "checkins": 52,
     "unique_beers": 21,
-    "total_checkins_that_week": 74,
-    "share_pct": 68.9,
+    "total_checkins_that_week": 77,
+    "share_pct": 67.5,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "All Australian Pale Ale",
@@ -8546,12 +8546,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 5,
+        "checked": 6,
         "total": 21,
-        "pct": 23.8,
+        "pct": 28.6,
         "day_counts": [
           0,
-          5,
+          6,
           0,
           0
         ],
