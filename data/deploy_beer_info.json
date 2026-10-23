@@ -4023,6 +4023,19 @@
     "rating_count": 72,
     "brewery_name": "Hop Nation Brewing Co"
   },
+  "6331250": {
+    "beer_id": 6331250,
+    "beer_name": "Oaked Black IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6331250_2d174_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6331250_3b514_hd.jpeg",
+    "beer_style": "IPA - Black / Cascadian Dark Ale",
+    "beer_abv": 6.7,
+    "beer_ibu": 55,
+    "beer_description": "This Oaked Black IPA pours deep and dark with a subtle brown tinge, hinting at the rich complexity within. Aromas of bold pine and bright citrus leap from the glass, layered with toasted oak and a delicate touch of vanilla.\r\n\r\nOn the palate, it’s a smooth yet vibrant experience. Semi-sweet malt notes and light roast character lay the foundation, while spicy mango, zesty citrus, and resinous pine bring a lively hop punch. Medium-high bitterness is balanced by a slightly dry finish, with oak aging adding a gentle earthy warmth and refined smoothness.\r\n\r\nWhether you’re drawn to the dark, the bitter, or somewhere in between, this one hits the sweet spot. A unique, layered brew that bridges the gap between stout richness and IPA brightness.\r\n\r\nMalt: Pale, Chit, Chocolate, & Dehusked Roast Malt\r\n\r\nHops: Krush, Simcoe, Mosaic, & Azacca\r\n\r\nOriginal Art by: Daniel Bibby",
+    "rating_score": 3.86776,
+    "rating_count": 107,
+    "brewery_name": "Aether Brewing"
+  },
   "7610586": {
     "beer_id": 7610586,
     "beer_name": "Pirate Spiced Rum Imperial Stout",
