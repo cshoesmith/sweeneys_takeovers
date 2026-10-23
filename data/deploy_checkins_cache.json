@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1610285511,
+      "created_at": "Fri, 23 Oct 2026 09:12:11 +0000",
+      "user": "mw1414",
+      "checkin_comment": "edit-me",
+      "beer_name": "Two Shores Bright IPA X Aether",
+      "beer_id": 6900100,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6900100_79b41_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Canyon Brewing",
+      "brewery_id": 396285,
+      "rating": 0
+    },
+    {
+      "checkin_id": 1610284709,
+      "created_at": "Fri, 23 Oct 2026 08:50:37 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "strong hops.  like a 7/11 meat pie. Depends where you are. Still pretty good.",
+      "beer_name": "Defying Gravity",
+      "beer_id": 6726442,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6726442_52625_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Mason Brewing Co",
+      "brewery_id": 557504,
+      "rating": 3.9
+    },
+    {
       "checkin_id": 1610283841,
       "created_at": "Fri, 23 Oct 2026 08:26:32 +0000",
       "user": "mw1414",
