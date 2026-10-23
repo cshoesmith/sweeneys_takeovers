@@ -8208,10 +8208,10 @@
       "Aether Brewing",
       "KAIJU! Beer"
     ],
-    "checkins": 44,
+    "checkins": 45,
     "unique_beers": 20,
-    "total_checkins_that_week": 60,
-    "share_pct": 73.3,
+    "total_checkins_that_week": 64,
+    "share_pct": 70.3,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "All Australian Pale Ale",
@@ -8527,24 +8527,24 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 2,
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 3,
         "total": 20,
-        "pct": 10.0,
+        "pct": 15.0,
         "day_counts": [
           0,
-          2,
+          3,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
         "total": 20,
         "pct": 10.0,
