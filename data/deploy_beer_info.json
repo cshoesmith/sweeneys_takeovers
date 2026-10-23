@@ -4023,6 +4023,20 @@
     "rating_count": 158,
     "brewery_name": "KAIJU! Beer"
   },
+  "7631130": {
+    "beer_id": 7631130,
+    "beer_name": "Might Night Sun",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6799490_62397_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - Other",
+    "beer_abv": 6.7,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 0,
+    "brewery_name": "Aether Brewing",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/aether-brewing-might-night-sun/7631130"
+  },
   "6861559": {
     "beer_id": 6861559,
     "beer_name": "Next Season Hazy IPA",
