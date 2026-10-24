@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1610630316,
+      "created_at": "Sat, 24 Oct 2026 09:15:05 +0000",
+      "user": "MattDT",
+      "checkin_comment": "Smell is green tea, taste is ver much bitter taste like over due tea.",
+      "beer_name": "Afternoon Delight Green Tea IPA",
+      "beer_id": 6762195,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6762195_08280_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Aether Brewing",
+      "brewery_id": 296776,
+      "rating": 2
+    },
+    {
+      "checkin_id": 1610629163,
+      "created_at": "Sat, 24 Oct 2026 09:01:25 +0000",
+      "user": "MattDT",
+      "checkin_comment": "Decent",
+      "beer_name": "Beach Bum",
+      "beer_id": 7630665,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Other",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Aether Brewing",
+      "brewery_id": 296776,
+      "rating": 2.75
+    },
+    {
       "checkin_id": 1610623879,
       "created_at": "Sat, 24 Oct 2026 07:24:30 +0000",
       "user": "MattDT",
