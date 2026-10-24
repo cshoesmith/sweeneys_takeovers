@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1610623879,
+      "created_at": "Sat, 24 Oct 2026 07:24:30 +0000",
+      "user": "MattDT",
+      "checkin_comment": "Sharp bit piney bitterness. Clean but a lingering is bitter which should be for a proper xpa",
+      "beer_name": "Two Shores Bright IPA X Aether",
+      "beer_id": 6900100,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6900100_79b41_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Canyon Brewing",
+      "brewery_id": 396285,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1610620765,
       "created_at": "Sat, 24 Oct 2026 06:25:01 +0000",
       "user": "C1985",
