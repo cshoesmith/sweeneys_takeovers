@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1610637517,
+      "created_at": "Sat, 24 Oct 2026 10:18:29 +0000",
+      "user": "MattDT",
+      "checkin_comment": "",
+      "beer_name": "Kushy Bushy",
+      "beer_id": 6771348,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6771348_b72b1_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 3
+    },
+    {
       "checkin_id": 1610630316,
       "created_at": "Sat, 24 Oct 2026 09:15:05 +0000",
       "user": "MattDT",
