@@ -8208,10 +8208,10 @@
       "Hop Nation Brewing Co",
       "KAIJU! Beer"
     ],
-    "checkins": 56,
+    "checkins": 59,
     "unique_beers": 21,
-    "total_checkins_that_week": 88,
-    "share_pct": 63.6,
+    "total_checkins_that_week": 93,
+    "share_pct": 63.4,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "All Australian Pale Ale",
@@ -8558,6 +8558,21 @@
         "rank": 1
       },
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 3,
+        "total": 21,
+        "pct": 14.3,
+        "day_counts": [
+          0,
+          0,
+          3,
+          0
+        ],
+        "rank": 2
+      },
+      {
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
@@ -8568,21 +8583,6 @@
           0,
           3,
           0,
-          0
-        ],
-        "rank": 2
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 2,
-        "total": 21,
-        "pct": 9.5,
-        "day_counts": [
-          0,
-          0,
-          2,
           0
         ],
         "rank": 3
