@@ -4023,6 +4023,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-foudre-beer-with-australian-blueberries-and-organic-vanilla/6847500"
   },
+  "4514285": {
+    "beer_id": 4514285,
+    "beer_name": "GFB Draught",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4514285_9e96c_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4514285_10da5_hd.jpeg",
+    "beer_style": "Lager - Pale",
+    "beer_abv": 4.2,
+    "beer_ibu": 0,
+    "beer_description": "Paying homage to the Classic Aussie beer taste, GFB Draught gluten free beer is a clean, crisp and refreshing easy-drinking beer. Full strength, full taste – Just Great Beer! ",
+    "rating_score": 3.05121,
+    "rating_count": 414,
+    "brewery_name": "TWØBAYS"
+  },
   "7322936": {
     "beer_id": 7322936,
     "beer_name": "Helles Lager",
@@ -4117,6 +4130,19 @@
     "rating_count": 72,
     "brewery_name": "Hop Nation Brewing Co"
   },
+  "4250005": {
+    "beer_id": 4250005,
+    "beer_name": "No Doubt Stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4250005_7e37d_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4250005_3608b_hd.jpeg",
+    "beer_style": "Stout - Other",
+    "beer_abv": 6.2,
+    "beer_ibu": 80,
+    "beer_description": "No Doubt Stout is TWØBAYS' first dark beer release, featuring chocolate and almond aromas, rich coffee and caramel flavours, with a smooth, lingering finish. Perfect winter drinking for consumers avoiding gluten.",
+    "rating_score": 3.61083,
+    "rating_count": 471,
+    "brewery_name": "TWØBAYS"
+  },
   "6331250": {
     "beer_id": 6331250,
     "beer_name": "Oaked Black IPA",
@@ -4197,6 +4223,20 @@
     "rating_score": 3.29538,
     "rating_count": 314,
     "brewery_name": "TWØBAYS"
+  },
+  "7637103": {
+    "beer_id": 7637103,
+    "beer_name": "Session IPA W Phantasm",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6058240_7fbf1_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - Session",
+    "beer_abv": 5.2,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 0,
+    "brewery_name": "TWØBAYS",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/twobays-session-ipa-w-phantasm/7637103"
   },
   "4855569": {
     "beer_id": 4855569,

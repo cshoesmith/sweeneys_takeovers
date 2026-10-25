@@ -8209,10 +8209,10 @@
       "TWØBAYS",
       "KAIJU! Beer"
     ],
-    "checkins": 77,
-    "unique_beers": 29,
-    "total_checkins_that_week": 125,
-    "share_pct": 61.6,
+    "checkins": 82,
+    "unique_beers": 33,
+    "total_checkins_that_week": 130,
+    "share_pct": 63.1,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "All Australian Pale Ale",
@@ -8222,6 +8222,7 @@
       "Black XPA LTD. Release #178",
       "ESB",
       "Foudre Beer With Australian Blueberries And Organic Vanilla",
+      "GFB Draught",
       "Helles Lager",
       "Hop Nation Foedre Sour",
       "IPA",
@@ -8233,13 +8234,16 @@
       "Might Night Sun",
       "Morning Glory Coffee Stout",
       "Next Season Hazy IPA",
+      "No Doubt Stout",
       "Oaked Black IPA",
       "Pacific Ale",
+      "Pale Ale",
       "Pirate Spiced Rum Imperial Stout",
       "SITE FP Single Foedre Sour Blonde",
       "SUP Hazy IPA",
       "Seed & Destroy",
       "Session Ale Mid Strength",
+      "Session IPA W Phantasm",
       "Sustainable Pale Ale",
       "The Ghost Hazy Pale",
       "The Kalash 2023"
@@ -8360,6 +8364,20 @@
         "brewery_name": "Hop Nation Brewing Co",
         "brewery_country": "Australia",
         "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-foudre-beer-with-australian-blueberries-and-organic-vanilla/6847500"
+      },
+      {
+        "beer_id": 4514285,
+        "beer_name": "GFB Draught",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4514285_9e96c_sm.jpeg",
+        "beer_style": "Lager - Pale",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4514285_10da5_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Paying homage to the Classic Aussie beer taste, GFB Draught gluten free beer is a clean, crisp and refreshing easy-drinking beer. Full strength, full taste – Just Great Beer! ",
+        "rating_score": 3.05121,
+        "rating_count": 414,
+        "brewery_name": "TWØBAYS"
       },
       {
         "beer_id": 7322936,
@@ -8519,6 +8537,20 @@
         "brewery_name": "Hop Nation Brewing Co"
       },
       {
+        "beer_id": 4250005,
+        "beer_name": "No Doubt Stout",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4250005_7e37d_sm.jpeg",
+        "beer_style": "Stout - Other",
+        "beer_abv": 6.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4250005_3608b_hd.jpeg",
+        "beer_ibu": 80,
+        "beer_description": "No Doubt Stout is TWØBAYS' first dark beer release, featuring chocolate and almond aromas, rich coffee and caramel flavours, with a smooth, lingering finish. Perfect winter drinking for consumers avoiding gluten.",
+        "rating_score": 3.61083,
+        "rating_count": 471,
+        "brewery_name": "TWØBAYS"
+      },
+      {
         "beer_id": 6331250,
         "beer_name": "Oaked Black IPA",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6331250_2d174_sm.jpeg",
@@ -8544,6 +8576,20 @@
         "beer_description": "The World's Best GF Beer - World Beer Cup Gold 2025\r\n\r\nNew to the core range, Pacific Ale has dethroned our very own Session Ale as the World's best GF beer at the World Beer Cup 2025. It is packed with Australian and NZ hops. Low bitterness with a big, fruity hop profile makes this an easy drinking and sessionable beer. Expect hoppy notes of pine, pineapple and citrus.\r\n\r\nIf you are looking for a flavourful beer experience at a sessionable ABV and without the gluten, this might be the perfect beer for you. All TWØBAYS core range beers are endorsed by Coeliac Australia.\r\n\r\nYEAST: US05\r\nMALTS: Vienna Millet, Yellow Corn, Cara Millet\r\nHOPS: Galaxy, Nelson Sauvin",
         "rating_score": 3.42455,
         "rating_count": 55,
+        "brewery_name": "TWØBAYS"
+      },
+      {
+        "beer_id": 2978227,
+        "beer_name": "Pale Ale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2978227_b5577_sm.jpeg",
+        "beer_style": "Gluten-Free",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2978227_12b4a_hd.jpeg",
+        "beer_ibu": 20,
+        "beer_description": "Easy drinking American hopped ale with fruity palate and citrus aromas",
+        "rating_score": 3.30063,
+        "rating_count": 2131,
         "brewery_name": "TWØBAYS"
       },
       {
@@ -8620,6 +8666,21 @@
         "brewery_name": "TWØBAYS"
       },
       {
+        "beer_id": 7637103,
+        "beer_name": "Session IPA W Phantasm",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6058240_7fbf1_sm.jpeg",
+        "beer_style": "IPA - Session",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "TWØBAYS",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/twobays-session-ipa-w-phantasm/7637103"
+      },
+      {
         "beer_id": 4855569,
         "beer_name": "Sustainable Pale Ale",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4855569_aa0c4_sm.jpeg",
@@ -8669,8 +8730,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 6,
-        "total": 29,
-        "pct": 20.7,
+        "total": 33,
+        "pct": 18.2,
         "day_counts": [
           0,
           6,
@@ -8684,8 +8745,8 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 4,
-        "total": 29,
-        "pct": 13.8,
+        "total": 33,
+        "pct": 12.1,
         "day_counts": [
           0,
           0,
@@ -8699,8 +8760,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 3,
-        "total": 29,
-        "pct": 10.3,
+        "total": 33,
+        "pct": 9.1,
         "day_counts": [
           0,
           3,
@@ -8714,8 +8775,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
-        "total": 29,
-        "pct": 6.9,
+        "total": 33,
+        "pct": 6.1,
         "day_counts": [
           0,
           2,
@@ -8729,7 +8790,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 29,
+        "total": 33,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8744,7 +8805,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 29,
+        "total": 33,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8759,7 +8820,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 29,
+        "total": 33,
         "pct": 0.0,
         "day_counts": [
           0,
