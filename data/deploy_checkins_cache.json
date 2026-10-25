@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611068984,
+      "created_at": "Sun, 25 Oct 2026 03:11:31 +0000",
+      "user": "LeanneAndChris",
+      "checkin_comment": "",
+      "beer_name": "Mexi-Can Cerveza",
+      "beer_id": 6169060,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6169060_52f63_sm.jpeg",
+      "beer_style": "Lager - Mexican",
+      "beer_abv": 4.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "TWØBAYS",
+      "brewery_id": 414821,
+      "rating": 3
+    },
+    {
+      "checkin_id": 1611068054,
+      "created_at": "Sun, 25 Oct 2026 03:03:37 +0000",
+      "user": "LeanneAndChris",
+      "checkin_comment": "",
+      "beer_name": "Japanese Rice Lager",
+      "beer_id": 5727516,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5727516_e4db3_sm.jpeg",
+      "beer_style": "Lager - Japanese Rice",
+      "beer_abv": 4.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "TWØBAYS",
+      "brewery_id": 414821,
+      "rating": 4
+    },
+    {
       "checkin_id": 1611062103,
       "created_at": "Sun, 25 Oct 2026 02:21:09 +0000",
       "user": "LeanneAndChris",
