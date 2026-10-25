@@ -8202,16 +8202,17 @@
   },
   {
     "date": "2026-10-22",
-    "brewery": "Aether Brewing & Hop Nation Brewing Co & KAIJU! Beer",
+    "brewery": "Aether Brewing & Hop Nation Brewing Co & KAIJU! Beer & TWØBAYS",
     "breweries": [
       "Aether Brewing",
       "Hop Nation Brewing Co",
-      "KAIJU! Beer"
+      "KAIJU! Beer",
+      "TWØBAYS"
     ],
-    "checkins": 69,
-    "unique_beers": 21,
-    "total_checkins_that_week": 117,
-    "share_pct": 59.0,
+    "checkins": 74,
+    "unique_beers": 26,
+    "total_checkins_that_week": 122,
+    "share_pct": 60.7,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "All Australian Pale Ale",
@@ -8219,9 +8220,14 @@
       "Berry Beasty",
       "Beyond the Black River (Mutation Program #006)",
       "Black XPA LTD. Release #178",
+      "ESB",
       "Foudre Beer With Australian Blueberries And Organic Vanilla",
+      "Helles Lager",
       "Hop Nation Foedre Sour",
+      "IPA",
+      "Japanese Rice Lager",
       "MP#0022 - Imperatrix Hoppy Pils",
+      "Mexi-Can Cerveza",
       "Mexican Lager",
       "Might Night Sun",
       "Morning Glory Coffee Stout",
@@ -8324,6 +8330,20 @@
         "brewery_name": "Aether Brewing"
       },
       {
+        "beer_id": 5275009,
+        "beer_name": "ESB",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5275009_cb6cf_sm.jpeg",
+        "beer_style": "Bitter - Extra Special / Strong (ESB)",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5275009_cb6cf_hd.jpeg",
+        "beer_ibu": 25,
+        "beer_description": "ESB or “Extra Special Bitter” is known for its balance and the interplay between malts and hops. Expect malty, toffee notes upfront, giving way to marmalade like English-variety hop character of East Kent Goldings, and finishing with lingering roasted hazelnuts. Extra special, extra tasty!",
+        "rating_score": 3.57768,
+        "rating_count": 56,
+        "brewery_name": "TWØBAYS"
+      },
+      {
         "beer_id": 6847500,
         "beer_name": "Foudre Beer With Australian Blueberries And Organic Vanilla",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5446280_12a06_sm.jpeg",
@@ -8337,6 +8357,21 @@
         "brewery_name": "Hop Nation Brewing Co",
         "brewery_country": "Australia",
         "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-foudre-beer-with-australian-blueberries-and-organic-vanilla/6847500"
+      },
+      {
+        "beer_id": 7322936,
+        "beer_name": "Helles Lager",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2928151_9aaec_sm.jpeg",
+        "beer_style": "Lager - Helles",
+        "beer_abv": 5.0,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 4,
+        "brewery_name": "TWØBAYS",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/twobays-helles-lager/7322936"
       },
       {
         "beer_id": 7628144,
@@ -8353,6 +8388,34 @@
         "brewery_name": "Hop Nation Brewing Co"
       },
       {
+        "beer_id": 3128526,
+        "beer_name": "IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3128526_3a6c7_sm.jpeg",
+        "beer_style": "Gluten-Free",
+        "beer_abv": 6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3128526_0afad_hd.jpeg",
+        "beer_ibu": 40,
+        "beer_description": "Our IPA is bursting with flavour and bite, giving off pine and fruity aromatics. A beautifully-hopped IPA brewed with millet and buckwheat; showcasing Galaxy and Mosaic hops. Gold medal winner at both the INDIES and AIBAs. It's also endorsed by Coeliac Australia!\r\n\r\nYEAST: US05\r\nMALTS: Pale Millet Malt, Vienna Millet Malt, Goldfinch Millet Malt, Cara Millet Malt\r\nHOPS: Galaxy, Mosaic, Amarillo, Magnum",
+        "rating_score": 3.44169,
+        "rating_count": 1023,
+        "brewery_name": "TWØBAYS"
+      },
+      {
+        "beer_id": 5727516,
+        "beer_name": "Japanese Rice Lager",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5727516_e4db3_sm.jpeg",
+        "beer_style": "Gluten-Free",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5727516_e4db3_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Toriaezu, biiru! (First and foremost, a beer!). Rice has been a staple ingredient in Japanese brewing for millennia, giving beers a lighter colour, taste and body, making them refreshing with low bitterness. Lightly hopped, this ultra dry, super crisp lager is an easy drinker that will keep you coming back for another glass. Kanpai!\r\n\r\nFull size serve, full strength, but without the carbs.\r\n\r\nJapanese Rice Lager is lower in carbohydrate and lower in bitterness. This easy drinking, full strength beer is a perfect thirst quencher for the carb conscious beer lover. \r\n\r\nYEAST: 34/70\r\nMALTS: Malted Millet, Malted Rice, Raw Rice\r\nHOPS: Saphir, Mosaic, Incognito",
+        "rating_score": 3.25144,
+        "rating_count": 174,
+        "brewery_name": "TWØBAYS"
+      },
+      {
         "beer_id": 6623400,
         "beer_name": "MP#0022 - Imperatrix Hoppy Pils",
         "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-43267_c758a.jpeg",
@@ -8365,6 +8428,20 @@
         "rating_score": 3.70696,
         "rating_count": 158,
         "brewery_name": "KAIJU! Beer"
+      },
+      {
+        "beer_id": 6169060,
+        "beer_name": "Mexi-Can Cerveza",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6169060_52f63_sm.jpeg",
+        "beer_style": "Gluten-Free",
+        "beer_abv": 4.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6169060_52f63_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Corn chips and dips have a best friend, and it’s called Cerveza! And just like corn chips, there’s a good dose of corn in this brew too. This Mexican style lager is cool, crisp and easy drinking - if it were in a bottle, you’d have a wedge of lime in it for sure.",
+        "rating_score": 3.40581,
+        "rating_count": 43,
+        "brewery_name": "TWØBAYS"
       },
       {
         "beer_id": 5088775,
@@ -8547,8 +8624,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 6,
-        "total": 21,
-        "pct": 28.6,
+        "total": 26,
+        "pct": 23.1,
         "day_counts": [
           0,
           6,
@@ -8562,8 +8639,8 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 4,
-        "total": 21,
-        "pct": 19.0,
+        "total": 26,
+        "pct": 15.4,
         "day_counts": [
           0,
           0,
@@ -8577,8 +8654,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 3,
-        "total": 21,
-        "pct": 14.3,
+        "total": 26,
+        "pct": 11.5,
         "day_counts": [
           0,
           3,
@@ -8592,8 +8669,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
-        "total": 21,
-        "pct": 9.5,
+        "total": 26,
+        "pct": 7.7,
         "day_counts": [
           0,
           2,
@@ -8607,7 +8684,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 21,
+        "total": 26,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8622,7 +8699,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 21,
+        "total": 26,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8637,7 +8714,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 21,
+        "total": 26,
         "pct": 0.0,
         "day_counts": [
           0,

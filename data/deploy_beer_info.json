@@ -3996,6 +3996,19 @@
     "rating_count": 621,
     "brewery_name": "Aether Brewing"
   },
+  "5275009": {
+    "beer_id": 5275009,
+    "beer_name": "ESB",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5275009_cb6cf_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5275009_cb6cf_hd.jpeg",
+    "beer_style": "Bitter - Extra Special / Strong (ESB)",
+    "beer_abv": 5.2,
+    "beer_ibu": 25,
+    "beer_description": "ESB or “Extra Special Bitter” is known for its balance and the interplay between malts and hops. Expect malty, toffee notes upfront, giving way to marmalade like English-variety hop character of East Kent Goldings, and finishing with lingering roasted hazelnuts. Extra special, extra tasty!",
+    "rating_score": 3.57768,
+    "rating_count": 56,
+    "brewery_name": "TWØBAYS"
+  },
   "6847500": {
     "beer_id": 6847500,
     "beer_name": "Foudre Beer With Australian Blueberries And Organic Vanilla",
@@ -4009,6 +4022,20 @@
     "brewery_name": "Hop Nation Brewing Co",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-foudre-beer-with-australian-blueberries-and-organic-vanilla/6847500"
+  },
+  "7322936": {
+    "beer_id": 7322936,
+    "beer_name": "Helles Lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2928151_9aaec_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Lager - Helles",
+    "beer_abv": 5.0,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 4,
+    "brewery_name": "TWØBAYS",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/twobays-helles-lager/7322936"
   },
   "7628144": {
     "beer_id": 7628144,
