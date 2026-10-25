@@ -4117,6 +4117,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/aether-brewing-morning-glory-coffee-stout/6762194"
   },
+  "5047625": {
+    "beer_id": 5047625,
+    "beer_name": "Munich Helles",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-414821_db3b1.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Lager - Helles",
+    "beer_abv": 4.8,
+    "beer_ibu": 0,
+    "beer_description": "A clean, malt forward lager, inspired by the traditional Bavarian Munich Helles, an Oktoberfest classic. Brewed with Vienna Millet malt and Dark Munich Millet, corn and rice.",
+    "rating_score": 2.78947,
+    "rating_count": 19,
+    "brewery_name": "TWØBAYS"
+  },
   "6861559": {
     "beer_id": 6861559,
     "beer_name": "Next Season Hazy IPA",

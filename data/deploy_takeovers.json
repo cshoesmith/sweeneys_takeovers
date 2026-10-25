@@ -8209,10 +8209,10 @@
       "TWØBAYS",
       "KAIJU! Beer"
     ],
-    "checkins": 84,
-    "unique_beers": 33,
-    "total_checkins_that_week": 132,
-    "share_pct": 63.6,
+    "checkins": 86,
+    "unique_beers": 34,
+    "total_checkins_that_week": 135,
+    "share_pct": 63.7,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "All Australian Pale Ale",
@@ -8233,6 +8233,7 @@
       "Mexican Lager",
       "Might Night Sun",
       "Morning Glory Coffee Stout",
+      "Munich Helles",
       "Next Season Hazy IPA",
       "No Doubt Stout",
       "Oaked Black IPA",
@@ -8523,6 +8524,20 @@
         "beer_page_url": "https://untappd.com/b/aether-brewing-morning-glory-coffee-stout/6762194"
       },
       {
+        "beer_id": 5047625,
+        "beer_name": "Munich Helles",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-414821_db3b1.jpeg",
+        "beer_style": "Lager - Helles",
+        "beer_abv": 4.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "A clean, malt forward lager, inspired by the traditional Bavarian Munich Helles, an Oktoberfest classic. Brewed with Vienna Millet malt and Dark Munich Millet, corn and rice.",
+        "rating_score": 2.78947,
+        "rating_count": 19,
+        "brewery_name": "TWØBAYS"
+      },
+      {
         "beer_id": 6861559,
         "beer_name": "Next Season Hazy IPA",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6861559_4a07f_sm.jpeg",
@@ -8730,8 +8745,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 6,
-        "total": 33,
-        "pct": 18.2,
+        "total": 34,
+        "pct": 17.6,
         "day_counts": [
           0,
           6,
@@ -8745,8 +8760,8 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 4,
-        "total": 33,
-        "pct": 12.1,
+        "total": 34,
+        "pct": 11.8,
         "day_counts": [
           0,
           0,
@@ -8760,8 +8775,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 3,
-        "total": 33,
-        "pct": 9.1,
+        "total": 34,
+        "pct": 8.8,
         "day_counts": [
           0,
           3,
@@ -8775,8 +8790,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
-        "total": 33,
-        "pct": 6.1,
+        "total": 34,
+        "pct": 5.9,
         "day_counts": [
           0,
           2,
@@ -8790,7 +8805,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 33,
+        "total": 34,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8805,7 +8820,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 33,
+        "total": 34,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8820,7 +8835,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 33,
+        "total": 34,
         "pct": 0.0,
         "day_counts": [
           0,
