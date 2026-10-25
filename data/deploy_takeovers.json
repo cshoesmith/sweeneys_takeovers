@@ -8202,17 +8202,17 @@
   },
   {
     "date": "2026-10-22",
-    "brewery": "Aether Brewing & Hop Nation Brewing Co & KAIJU! Beer & TWØBAYS",
+    "brewery": "Aether Brewing & Hop Nation Brewing Co & TWØBAYS & KAIJU! Beer",
     "breweries": [
       "Aether Brewing",
       "Hop Nation Brewing Co",
-      "KAIJU! Beer",
-      "TWØBAYS"
+      "TWØBAYS",
+      "KAIJU! Beer"
     ],
-    "checkins": 74,
-    "unique_beers": 26,
-    "total_checkins_that_week": 122,
-    "share_pct": 60.7,
+    "checkins": 77,
+    "unique_beers": 29,
+    "total_checkins_that_week": 125,
+    "share_pct": 61.6,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "All Australian Pale Ale",
@@ -8226,6 +8226,7 @@
       "Hop Nation Foedre Sour",
       "IPA",
       "Japanese Rice Lager",
+      "Lager",
       "MP#0022 - Imperatrix Hoppy Pils",
       "Mexi-Can Cerveza",
       "Mexican Lager",
@@ -8233,10 +8234,12 @@
       "Morning Glory Coffee Stout",
       "Next Season Hazy IPA",
       "Oaked Black IPA",
+      "Pacific Ale",
       "Pirate Spiced Rum Imperial Stout",
       "SITE FP Single Foedre Sour Blonde",
       "SUP Hazy IPA",
       "Seed & Destroy",
+      "Session Ale Mid Strength",
       "Sustainable Pale Ale",
       "The Ghost Hazy Pale",
       "The Kalash 2023"
@@ -8416,6 +8419,20 @@
         "brewery_name": "TWØBAYS"
       },
       {
+        "beer_id": 4307357,
+        "beer_name": "Lager",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4307357_0b21a_sm.jpeg",
+        "beer_style": "Gluten-Free",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4307357_0b21a_hd.jpeg",
+        "beer_ibu": 30,
+        "beer_description": "A clean, fruitful lager, showcasing Vienna Millet Malt, brewed as an easy-drinking, light pale straw-coloured version of a German Pilsner. TWØBAYS fourth core beer features tangerine and citrus aromas, with a smooth, crisp palate, hints of delicate grains and a sharp refreshing finish.",
+        "rating_score": 3.16973,
+        "rating_count": 261,
+        "brewery_name": "TWØBAYS"
+      },
+      {
         "beer_id": 6623400,
         "beer_name": "MP#0022 - Imperatrix Hoppy Pils",
         "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-43267_c758a.jpeg",
@@ -8516,6 +8533,20 @@
         "brewery_name": "Aether Brewing"
       },
       {
+        "beer_id": 6189857,
+        "beer_name": "Pacific Ale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6189857_a6cc4_sm.jpeg",
+        "beer_style": "Gluten-Free",
+        "beer_abv": 4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6189857_a6cc4_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "The World's Best GF Beer - World Beer Cup Gold 2025\r\n\r\nNew to the core range, Pacific Ale has dethroned our very own Session Ale as the World's best GF beer at the World Beer Cup 2025. It is packed with Australian and NZ hops. Low bitterness with a big, fruity hop profile makes this an easy drinking and sessionable beer. Expect hoppy notes of pine, pineapple and citrus.\r\n\r\nIf you are looking for a flavourful beer experience at a sessionable ABV and without the gluten, this might be the perfect beer for you. All TWØBAYS core range beers are endorsed by Coeliac Australia.\r\n\r\nYEAST: US05\r\nMALTS: Vienna Millet, Yellow Corn, Cara Millet\r\nHOPS: Galaxy, Nelson Sauvin",
+        "rating_score": 3.42455,
+        "rating_count": 55,
+        "brewery_name": "TWØBAYS"
+      },
+      {
         "beer_id": 7610586,
         "beer_name": "Pirate Spiced Rum Imperial Stout",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4890816_98651_sm.jpeg",
@@ -8575,6 +8606,20 @@
         "beer_page_url": "https://untappd.com/b/kaiju-beer-seed-and-destroy/6845806"
       },
       {
+        "beer_id": 4609587,
+        "beer_name": "Session Ale Mid Strength",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4609587_47ceb_sm.jpeg",
+        "beer_style": "Pale Ale - Other",
+        "beer_abv": 3.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4609587_35f44_hd.jpeg",
+        "beer_ibu": 25,
+        "beer_description": "World Beer Cup Gold 2024. A beautifully sessionable mid-strength pale ale, TWØBAYS fifth core gluten free beer combines the best of southern and northern hemisphere hops, featuring mango, stone fruit and berry aromas, with a smooth, crisp palate, hints of delicate grains and a refreshing finish.",
+        "rating_score": 3.29538,
+        "rating_count": 314,
+        "brewery_name": "TWØBAYS"
+      },
+      {
         "beer_id": 4855569,
         "beer_name": "Sustainable Pale Ale",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4855569_aa0c4_sm.jpeg",
@@ -8624,8 +8669,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 6,
-        "total": 26,
-        "pct": 23.1,
+        "total": 29,
+        "pct": 20.7,
         "day_counts": [
           0,
           6,
@@ -8639,8 +8684,8 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 4,
-        "total": 26,
-        "pct": 15.4,
+        "total": 29,
+        "pct": 13.8,
         "day_counts": [
           0,
           0,
@@ -8654,8 +8699,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 3,
-        "total": 26,
-        "pct": 11.5,
+        "total": 29,
+        "pct": 10.3,
         "day_counts": [
           0,
           3,
@@ -8669,8 +8714,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
-        "total": 26,
-        "pct": 7.7,
+        "total": 29,
+        "pct": 6.9,
         "day_counts": [
           0,
           2,
@@ -8684,7 +8729,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 26,
+        "total": 29,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8699,7 +8744,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 26,
+        "total": 29,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8714,7 +8759,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 26,
+        "total": 29,
         "pct": 0.0,
         "day_counts": [
           0,

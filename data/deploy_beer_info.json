@@ -4185,6 +4185,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/kaiju-beer-seed-and-destroy/6845806"
   },
+  "4609587": {
+    "beer_id": 4609587,
+    "beer_name": "Session Ale Mid Strength",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4609587_47ceb_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4609587_35f44_hd.jpeg",
+    "beer_style": "Pale Ale - Other",
+    "beer_abv": 3.5,
+    "beer_ibu": 25,
+    "beer_description": "World Beer Cup Gold 2024. A beautifully sessionable mid-strength pale ale, TWØBAYS fifth core gluten free beer combines the best of southern and northern hemisphere hops, featuring mango, stone fruit and berry aromas, with a smooth, crisp palate, hints of delicate grains and a refreshing finish.",
+    "rating_score": 3.29538,
+    "rating_count": 314,
+    "brewery_name": "TWØBAYS"
+  },
   "4855569": {
     "beer_id": 4855569,
     "beer_name": "Sustainable Pale Ale",
