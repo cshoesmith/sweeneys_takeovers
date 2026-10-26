@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611319885,
+      "created_at": "Mon, 26 Oct 2026 07:11:35 +0000",
+      "user": "coreymch",
+      "checkin_comment": "",
+      "beer_name": "Session IPA W Phantasm",
+      "beer_id": 7637103,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Session",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "TWØBAYS",
+      "brewery_id": 414821,
+      "rating": 0
+    },
+    {
+      "checkin_id": 1611319871,
+      "created_at": "Mon, 26 Oct 2026 07:10:42 +0000",
+      "user": "coreymch",
+      "checkin_comment": "",
+      "beer_name": "Pacific Ale",
+      "beer_id": 6189857,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6189857_a6cc4_sm.jpeg",
+      "beer_style": "Pale Ale - Australian",
+      "beer_abv": 4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "TWØBAYS",
+      "brewery_id": 414821,
+      "rating": 3.3
+    },
+    {
       "checkin_id": 1611317243,
       "created_at": "Mon, 26 Oct 2026 05:01:34 +0000",
       "user": "slindsay91",
