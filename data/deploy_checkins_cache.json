@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611428727,
+      "created_at": "Tue, 27 Oct 2026 03:36:42 +0000",
+      "user": "carboni",
+      "checkin_comment": "",
+      "beer_name": "Pale Ale",
+      "beer_id": 2978227,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2978227_b5577_sm.jpeg",
+      "beer_style": "Pale Ale - American",
+      "beer_abv": 4.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "TWØBAYS",
+      "brewery_id": 414821,
+      "rating": 0
+    },
+    {
       "checkin_id": 1611319885,
       "created_at": "Mon, 26 Oct 2026 07:11:35 +0000",
       "user": "coreymch",
