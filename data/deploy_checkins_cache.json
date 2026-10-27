@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611435489,
+      "created_at": "Tue, 27 Oct 2026 09:19:54 +0000",
+      "user": "greennick",
+      "checkin_comment": "",
+      "beer_name": "Session IPA W Phantasm",
+      "beer_id": 7637103,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Session",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "TWØBAYS",
+      "brewery_id": 414821,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1611428727,
       "created_at": "Tue, 27 Oct 2026 03:36:42 +0000",
       "user": "carboni",
