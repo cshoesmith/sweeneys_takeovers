@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611436617,
+      "created_at": "Tue, 27 Oct 2026 10:08:34 +0000",
+      "user": "greennick",
+      "checkin_comment": "",
+      "beer_name": "IPA",
+      "beer_id": 3128526,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3128526_3a6c7_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "TWØBAYS",
+      "brewery_id": 414821,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1611435489,
       "created_at": "Tue, 27 Oct 2026 09:19:54 +0000",
       "user": "greennick",
