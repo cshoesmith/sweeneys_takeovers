@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611564723,
+      "created_at": "Wed, 28 Oct 2026 10:07:58 +0000",
+      "user": "shanobeertravels",
+      "checkin_comment": "Tangy, crisp and kinda fruity, bit like an xpa, it's reasonable",
+      "beer_name": "Powder Day",
+      "beer_id": 1601334,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1601334_9f6b1_sm.jpeg",
+      "beer_style": "Pilsner - New Zealand",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Altitude Brewing",
+      "brewery_id": 89782,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1611549736,
       "created_at": "Wed, 28 Oct 2026 01:50:46 +0000",
       "user": "fogal",
