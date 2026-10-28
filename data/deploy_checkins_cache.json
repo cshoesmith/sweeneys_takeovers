@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611566106,
+      "created_at": "Wed, 28 Oct 2026 10:53:23 +0000",
+      "user": "shanobeertravels",
+      "checkin_comment": "Been some time since my last, creamy, bitter with a honey tang, I've had so many better real ales in England and in comparison this is bland, but it's fine",
+      "beer_name": "Fursty Ferret",
+      "beer_id": 8932,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8932_ae742_sm.jpeg",
+      "beer_style": "Bitter - Session / Ordinary",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badger and Outland Beers (Hall & Woodhouse)",
+      "brewery_id": 1752,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1611565468,
+      "created_at": "Wed, 28 Oct 2026 10:33:08 +0000",
+      "user": "shanobeertravels",
+      "checkin_comment": "Smooth, chocolatey, tastes cakey with an icing vibe, maybe a mild berry flavour in there, the can tells me it's actually cacao, this is excellent",
+      "beer_name": "Red Velvet, Imperial Pastry Stout",
+      "beer_id": 5829088,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5829088_30a30_sm.jpeg",
+      "beer_style": "Stout - Imperial / Double Pastry",
+      "beer_abv": 10.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Duncan's Brewing",
+      "brewery_id": 150054,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1611564723,
       "created_at": "Wed, 28 Oct 2026 10:07:58 +0000",
       "user": "shanobeertravels",
