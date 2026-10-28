@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611549736,
+      "created_at": "Wed, 28 Oct 2026 01:50:46 +0000",
+      "user": "fogal",
+      "checkin_comment": "Pretty good",
+      "beer_name": "Sled Dog",
+      "beer_id": 3773405,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3773405_89bdd_sm.jpeg",
+      "beer_style": "IPA - Session New England / Hazy",
+      "beer_abv": 4.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Altitude Brewing",
+      "brewery_id": 89782,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1611443719,
       "created_at": "Tue, 27 Oct 2026 13:01:32 +0000",
       "user": "greennick",
