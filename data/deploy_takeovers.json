@@ -8846,5 +8846,174 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-10-29",
+    "brewery": "TWØBAYS",
+    "breweries": [
+      "TWØBAYS"
+    ],
+    "checkins": 3,
+    "unique_beers": 3,
+    "total_checkins_that_week": 7,
+    "share_pct": 42.9,
+    "beers": [
+      "ESB",
+      "GFB Draught",
+      "Session IPA W Phantasm"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 5275009,
+        "beer_name": "ESB",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5275009_cb6cf_sm.jpeg",
+        "beer_style": "Bitter - Extra Special / Strong (ESB)",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5275009_cb6cf_hd.jpeg",
+        "beer_ibu": 25,
+        "beer_description": "ESB or “Extra Special Bitter” is known for its balance and the interplay between malts and hops. Expect malty, toffee notes upfront, giving way to marmalade like English-variety hop character of East Kent Goldings, and finishing with lingering roasted hazelnuts. Extra special, extra tasty!",
+        "rating_score": 3.57768,
+        "rating_count": 56,
+        "brewery_name": "TWØBAYS"
+      },
+      {
+        "beer_id": 4514285,
+        "beer_name": "GFB Draught",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4514285_9e96c_sm.jpeg",
+        "beer_style": "Lager - Pale",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-4514285_10da5_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Paying homage to the Classic Aussie beer taste, GFB Draught gluten free beer is a clean, crisp and refreshing easy-drinking beer. Full strength, full taste – Just Great Beer! ",
+        "rating_score": 3.05121,
+        "rating_count": 414,
+        "brewery_name": "TWØBAYS"
+      },
+      {
+        "beer_id": 7637103,
+        "beer_name": "Session IPA W Phantasm",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6058240_7fbf1_sm.jpeg",
+        "beer_style": "IPA - Session",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "TWØBAYS",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/twobays-session-ipa-w-phantasm/7637103"
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]
