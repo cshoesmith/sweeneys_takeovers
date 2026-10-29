@@ -8849,20 +8849,68 @@
   },
   {
     "date": "2026-10-29",
-    "brewery": "TWØBAYS",
+    "brewery": "Aether Brewing & TWØBAYS",
     "breweries": [
+      "Aether Brewing",
       "TWØBAYS"
     ],
-    "checkins": 3,
-    "unique_beers": 3,
-    "total_checkins_that_week": 7,
-    "share_pct": 42.9,
+    "checkins": 6,
+    "unique_beers": 6,
+    "total_checkins_that_week": 8,
+    "share_pct": 75.0,
     "beers": [
+      "Afternoon Delight Green Tea IPA",
+      "Beach Bum",
+      "Black XPA LTD. Release #178",
       "ESB",
       "GFB Draught",
       "Session IPA W Phantasm"
     ],
     "beer_details": [
+      {
+        "beer_id": 6762195,
+        "beer_name": "Afternoon Delight Green Tea IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6762195_08280_sm.jpeg",
+        "beer_style": "IPA - Other",
+        "beer_abv": 6.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6762195_e2ce0_hd.jpeg",
+        "beer_ibu": 0,
+        "rating_score": 3.75932,
+        "rating_count": 59,
+        "brewery_name": "Aether Brewing",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/aether-brewing-afternoon-delight-green-tea-ipa/6762195"
+      },
+      {
+        "beer_id": 7630665,
+        "beer_name": "Beach Bum",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6799490_62397_sm.jpeg",
+        "beer_style": "IPA - Other",
+        "beer_abv": 6.0,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Aether Brewing",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/aether-brewing-beach-bum/7630665"
+      },
+      {
+        "beer_id": 5452642,
+        "beer_name": "Black XPA LTD. Release #178",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5452642_5b551_sm.jpeg",
+        "beer_style": "Pale Ale - XPA (Extra Pale)",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5452642_5b551_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Introducing Limited Release 178, our Black XPA! With this brew, we’ve thrown rules out the window and balanced a smooth Dark Ale with a supremely juicy XPA.\r\n\r\nThe result is undeniably delicious! Intensely hop-forward with aromas of citrus, pear, melon and passionfruit, the juiciness is perfectly wrapped together with chocolatey biscuit flavours from the malt. Pouring dark black with a copper tint around the edges, this marvel is only lightly bittered and stays smooth to the finish.\r\n\r\nDive into the depths of this Black XPA; it's not just a drink, it's a symphony for the senses!\r\n\r\nFeaturing 'Little Devil' by Shelley Long",
+        "rating_score": 3.79807,
+        "rating_count": 621,
+        "brewery_name": "Aether Brewing"
+      },
       {
         "beer_id": 5275009,
         "beer_name": "ESB",
@@ -8914,7 +8962,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8929,7 +8977,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8944,7 +8992,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8959,7 +9007,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8974,7 +9022,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -8989,7 +9037,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9004,7 +9052,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 3,
+        "total": 6,
         "pct": 0.0,
         "day_counts": [
           0,
