@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611873532,
+      "created_at": "Fri, 30 Oct 2026 05:10:16 +0000",
+      "user": "aditya_pujari",
+      "checkin_comment": "",
+      "beer_name": "River Crossing",
+      "beer_id": 7628211,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7628211_98272_sm.jpeg",
+      "beer_style": "IPA - Triple",
+      "beer_abv": 10,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hiker Brewing Co",
+      "brewery_id": 533878,
+      "rating": 0
+    },
+    {
+      "checkin_id": 1611873470,
+      "created_at": "Fri, 30 Oct 2026 05:08:25 +0000",
+      "user": "bscampbell1972",
+      "checkin_comment": "Fuck that's the goods! Big, bitter and dank!! Cheers!! 🍻\n\nEDIT: after half the schooner, revising to a 4.5, awesome beer!",
+      "beer_name": "Kushy Bushy",
+      "beer_id": 6771348,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6771348_b72b1_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1611871813,
       "created_at": "Fri, 30 Oct 2026 04:22:31 +0000",
       "user": "StinkyQueen",
