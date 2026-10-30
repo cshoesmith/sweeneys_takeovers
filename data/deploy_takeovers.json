@@ -8854,10 +8854,10 @@
       "Aether Brewing",
       "TWØBAYS"
     ],
-    "checkins": 8,
+    "checkins": 10,
     "unique_beers": 7,
-    "total_checkins_that_week": 13,
-    "share_pct": 61.5,
+    "total_checkins_that_week": 18,
+    "share_pct": 55.6,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "Beach Bum",
@@ -8974,6 +8974,21 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 1,
+        "total": 7,
+        "pct": 14.3,
+        "day_counts": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
@@ -8986,7 +9001,7 @@
           0,
           0
         ],
-        "rank": 1
+        "rank": 2
       },
       {
         "username": "docta",
@@ -9001,7 +9016,7 @@
           0,
           0
         ],
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "hiriser",
@@ -9016,7 +9031,7 @@
           0,
           0
         ],
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "jimmy-swings",
@@ -9031,27 +9046,12 @@
           0,
           0
         ],
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 0,
-        "total": 7,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "rank": 5
-      },
-      {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
         "total": 7,
         "pct": 0.0,
