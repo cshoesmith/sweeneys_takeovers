@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1611871813,
+      "created_at": "Fri, 30 Oct 2026 04:22:31 +0000",
+      "user": "StinkyQueen",
+      "checkin_comment": "",
+      "beer_name": "Berry Beasty",
+      "beer_id": 7630677,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Other",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Aether Brewing",
+      "brewery_id": 296776,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1611864520,
       "created_at": "Fri, 30 Oct 2026 02:24:11 +0000",
       "user": "dmtnny",
