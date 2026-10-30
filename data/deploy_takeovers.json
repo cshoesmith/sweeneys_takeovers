@@ -8849,15 +8849,15 @@
   },
   {
     "date": "2026-10-29",
-    "brewery": "Aether Brewing & TWØBAYS",
+    "brewery": "TWØBAYS & Aether Brewing",
     "breweries": [
-      "Aether Brewing",
-      "TWØBAYS"
+      "TWØBAYS",
+      "Aether Brewing"
     ],
-    "checkins": 6,
+    "checkins": 7,
     "unique_beers": 6,
-    "total_checkins_that_week": 8,
-    "share_pct": 75.0,
+    "total_checkins_that_week": 9,
+    "share_pct": 77.8,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "Beach Bum",
