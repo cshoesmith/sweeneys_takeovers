@@ -8849,26 +8849,30 @@
   },
   {
     "date": "2026-10-29",
-    "brewery": "Rocky Ridge Brewing Co. & Aether Brewing & TWØBAYS",
+    "brewery": "Rocky Ridge Brewing Co. & Aether Brewing & TWØBAYS & KAIJU! Beer",
     "breweries": [
       "Rocky Ridge Brewing Co.",
       "Aether Brewing",
-      "TWØBAYS"
+      "TWØBAYS",
+      "KAIJU! Beer"
     ],
-    "checkins": 24,
-    "unique_beers": 11,
-    "total_checkins_that_week": 50,
-    "share_pct": 48.0,
+    "checkins": 27,
+    "unique_beers": 14,
+    "total_checkins_that_week": 52,
+    "share_pct": 51.9,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "Beach Bum",
       "Berry Beasty",
       "Black XPA LTD. Release #178",
+      "Crusp NZ Pilsner - Mutation Program #0010",
       "ESB",
       "Farmers Table 2021",
       "GFB Draught",
       "Jindong Balling",
+      "KAIJU! Cerveza",
       "Kushy Bushy",
+      "MP#0022 - Imperatrix Hoppy Pils",
       "SON OF MISCHIEF",
       "Session IPA W Phantasm"
     ],
@@ -8933,6 +8937,20 @@
         "brewery_name": "Aether Brewing"
       },
       {
+        "beer_id": 5142720,
+        "beer_name": "Crusp NZ Pilsner - Mutation Program #0010",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5142720_bae79_sm.jpeg",
+        "beer_style": "Pilsner - New Zealand",
+        "beer_abv": 5.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5142720_94984_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Aromas of lime, Sauvignon Blanc, gooseberry, and grassy notes take flight from the glass. Boasting a crisp and refreshing zesty palate.",
+        "rating_score": 3.70813,
+        "rating_count": 166,
+        "brewery_name": "KAIJU! Beer"
+      },
+      {
         "beer_id": 5275009,
         "beer_name": "ESB",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5275009_cb6cf_sm.jpeg",
@@ -8989,6 +9007,20 @@
         "brewery_name": "Rocky Ridge Brewing Co."
       },
       {
+        "beer_id": 5517230,
+        "beer_name": "KAIJU! Cerveza",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5517230_5ba92_sm.jpeg",
+        "beer_style": "Lager - Mexican",
+        "beer_abv": 4.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5517230_bb779_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Crisp Mexican Lager",
+        "rating_score": 3.31659,
+        "rating_count": 850,
+        "brewery_name": "KAIJU! Beer"
+      },
+      {
         "beer_id": 6771348,
         "beer_name": "Kushy Bushy",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6771348_b72b1_sm.jpeg",
@@ -9001,6 +9033,20 @@
         "rating_score": 4.00276,
         "rating_count": 127,
         "brewery_name": "Rocky Ridge Brewing Co."
+      },
+      {
+        "beer_id": 6623400,
+        "beer_name": "MP#0022 - Imperatrix Hoppy Pils",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-43267_c758a.jpeg",
+        "beer_style": "Pilsner - New Zealand",
+        "beer_abv": 5.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "This is a New Zealand–style Hoppy Pilsner designed to farewell the warmer weather and usher in a new hop-focused season. Built around a powerhouse trio of Riwaka, Motueka and Nelson Sauvin hops. Delivering bright aromatics, high-oil intensity and a crisp, confident structure. Classic pilsner drinkability with a modern, expressive twist.\r\n\r\nThink: fresh growth, new beginnings and serious drinking appeal",
+        "rating_score": 3.70696,
+        "rating_count": 158,
+        "brewery_name": "KAIJU! Beer"
       },
       {
         "beer_id": 6630785,
@@ -9038,13 +9084,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 5,
-        "total": 11,
-        "pct": 45.5,
+        "checked": 6,
+        "total": 14,
+        "pct": 42.9,
         "day_counts": [
           0,
           0,
-          5,
+          6,
           0
         ],
         "rank": 1
@@ -9054,8 +9100,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 2,
-        "total": 11,
-        "pct": 18.2,
+        "total": 14,
+        "pct": 14.3,
         "day_counts": [
           0,
           2,
@@ -9069,8 +9115,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 2,
-        "total": 11,
-        "pct": 18.2,
+        "total": 14,
+        "pct": 14.3,
         "day_counts": [
           0,
           2,
@@ -9084,7 +9130,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9099,7 +9145,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 11,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9114,7 +9160,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9129,7 +9175,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,

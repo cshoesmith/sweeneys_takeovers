@@ -4290,6 +4290,19 @@
     "rating_count": 284,
     "brewery_name": "Hop Nation Brewing Co"
   },
+  "5142720": {
+    "beer_id": 5142720,
+    "beer_name": "Crusp NZ Pilsner - Mutation Program #0010",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5142720_bae79_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5142720_94984_hd.jpeg",
+    "beer_style": "Pilsner - New Zealand",
+    "beer_abv": 5.1,
+    "beer_ibu": 0,
+    "beer_description": "Aromas of lime, Sauvignon Blanc, gooseberry, and grassy notes take flight from the glass. Boasting a crisp and refreshing zesty palate.",
+    "rating_score": 3.70813,
+    "rating_count": 166,
+    "brewery_name": "KAIJU! Beer"
+  },
   "5209042": {
     "beer_id": 5209042,
     "beer_name": "Farmers Table 2021",
@@ -4315,6 +4328,19 @@
     "rating_score": 4.05062,
     "rating_count": 81,
     "brewery_name": "Rocky Ridge Brewing Co."
+  },
+  "5517230": {
+    "beer_id": 5517230,
+    "beer_name": "KAIJU! Cerveza",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5517230_5ba92_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5517230_bb779_hd.jpeg",
+    "beer_style": "Lager - Mexican",
+    "beer_abv": 4.4,
+    "beer_ibu": 0,
+    "beer_description": "Crisp Mexican Lager",
+    "rating_score": 3.31659,
+    "rating_count": 850,
+    "brewery_name": "KAIJU! Beer"
   },
   "6771348": {
     "beer_id": 6771348,

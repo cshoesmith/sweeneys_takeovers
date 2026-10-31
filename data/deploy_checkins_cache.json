@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612205001,
+      "created_at": "Sat, 31 Oct 2026 10:08:56 +0000",
+      "user": "PulpFreeOrange",
+      "checkin_comment": "mom said it is delicious",
+      "beer_name": "Sequential Art",
+      "beer_id": 6674281,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6674281_83a2b_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "RaR Brewing",
+      "brewery_id": 68522,
+      "rating": 4.25
+    },
+    {
+      "checkin_id": 1612203374,
+      "created_at": "Sat, 31 Oct 2026 09:38:25 +0000",
+      "user": "jingsong",
+      "checkin_comment": "",
+      "beer_name": "Crusp NZ Pilsner - Mutation Program #0010",
+      "beer_id": 5142720,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5142720_bae79_sm.jpeg",
+      "beer_style": "Pilsner - New Zealand",
+      "beer_abv": 5.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "KAIJU! Beer",
+      "brewery_id": 43267,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1612198550,
       "created_at": "Sat, 31 Oct 2026 07:54:58 +0000",
       "user": "ilovehops420",
