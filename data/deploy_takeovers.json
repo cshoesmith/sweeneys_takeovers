@@ -8857,10 +8857,10 @@
       "TWØBAYS",
       "KAIJU! Beer"
     ],
-    "checkins": 32,
-    "unique_beers": 17,
-    "total_checkins_that_week": 55,
-    "share_pct": 58.2,
+    "checkins": 33,
+    "unique_beers": 18,
+    "total_checkins_that_week": 57,
+    "share_pct": 57.9,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "Beach Bum",
@@ -8877,6 +8877,7 @@
       "Kushy Bushy",
       "MP#0022 - Imperatrix Hoppy Pils",
       "Persistent High",
+      "Rock Candy",
       "SON OF MISCHIEF",
       "Session IPA W Phantasm"
     ],
@@ -9095,6 +9096,20 @@
         "brewery_name": "Altitude Brewing"
       },
       {
+        "beer_id": 5105234,
+        "beer_name": "Rock Candy",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5105234_54d11_sm.jpeg",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": 5.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5105234_54d11_hd.jpeg",
+        "beer_ibu": 10,
+        "beer_description": "Presenting in the glass with a light pink hue, Rock Candy is a full flavoured, acid forward adventure. Strawberry, Kiwi Fruit and Passionfruit create a playful fruit party on the palate with a zippy, sherbet like finish. Refreshing and vibrant, Rock Candy will leave you wanting more after each sip. Pour some out and taste the fruit rainbow!\r\n\r\nSee: Hazy, light pink, thin white head\r\nSmell: Passionfruit, strawberry, kiwi, light grain\r\nTaste: Tart, zippy, fruit salad, refreshing and acidic finish\r\n",
+        "rating_score": 3.81799,
+        "rating_count": 1531,
+        "brewery_name": "Rocky Ridge Brewing Co."
+      },
+      {
         "beer_id": 6630785,
         "beer_name": "SON OF MISCHIEF",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6630785_0385f_sm.jpeg",
@@ -9131,8 +9146,8 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 6,
-        "total": 17,
-        "pct": 35.3,
+        "total": 18,
+        "pct": 33.3,
         "day_counts": [
           0,
           0,
@@ -9146,8 +9161,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 3,
-        "total": 17,
-        "pct": 17.6,
+        "total": 18,
+        "pct": 16.7,
         "day_counts": [
           0,
           3,
@@ -9161,8 +9176,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 2,
-        "total": 17,
-        "pct": 11.8,
+        "total": 18,
+        "pct": 11.1,
         "day_counts": [
           0,
           2,
@@ -9176,7 +9191,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 17,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9191,7 +9206,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 17,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9206,7 +9221,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 17,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9221,7 +9236,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 17,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,

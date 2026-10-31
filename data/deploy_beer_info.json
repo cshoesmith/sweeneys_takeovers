@@ -4394,6 +4394,19 @@
     "rating_count": 1322,
     "brewery_name": "Altitude Brewing"
   },
+  "5105234": {
+    "beer_id": 5105234,
+    "beer_name": "Rock Candy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5105234_54d11_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5105234_54d11_hd.jpeg",
+    "beer_style": "Sour - Fruited",
+    "beer_abv": 5.5,
+    "beer_ibu": 10,
+    "beer_description": "Presenting in the glass with a light pink hue, Rock Candy is a full flavoured, acid forward adventure. Strawberry, Kiwi Fruit and Passionfruit create a playful fruit party on the palate with a zippy, sherbet like finish. Refreshing and vibrant, Rock Candy will leave you wanting more after each sip. Pour some out and taste the fruit rainbow!\r\n\r\nSee: Hazy, light pink, thin white head\r\nSmell: Passionfruit, strawberry, kiwi, light grain\r\nTaste: Tart, zippy, fruit salad, refreshing and acidic finish\r\n",
+    "rating_score": 3.81799,
+    "rating_count": 1531,
+    "brewery_name": "Rocky Ridge Brewing Co."
+  },
   "6630785": {
     "beer_id": 6630785,
     "beer_name": "SON OF MISCHIEF",
