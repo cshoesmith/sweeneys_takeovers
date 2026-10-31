@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612198550,
+      "created_at": "Sat, 31 Oct 2026 07:54:58 +0000",
+      "user": "ilovehops420",
+      "checkin_comment": "Its a me Mario",
+      "beer_name": "Japanese Green Tea IPA (2021)",
+      "beer_id": 4577936,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - American",
+      "beer_abv": 10.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Stone Brewing",
+      "brewery_id": 1204,
+      "rating": 3.25
+    },
+    {
+      "checkin_id": 1612197991,
+      "created_at": "Sat, 31 Oct 2026 07:42:11 +0000",
+      "user": "ilovehops420",
+      "checkin_comment": "First check in with the new phone",
+      "beer_name": "MP#0022 - Imperatrix Hoppy Pils",
+      "beer_id": 6623400,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Pilsner - New Zealand",
+      "beer_abv": 5.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "KAIJU! Beer",
+      "brewery_id": 43267,
+      "rating": 0
+    },
+    {
       "checkin_id": 1612195131,
       "created_at": "Sat, 31 Oct 2026 06:31:55 +0000",
       "user": "coreymch",
