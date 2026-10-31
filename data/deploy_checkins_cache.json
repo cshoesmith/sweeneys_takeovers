@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612187486,
+      "created_at": "Sat, 31 Oct 2026 04:02:15 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Dougy",
+      "beer_id": 3048017,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3048017_5af73_sm.jpeg",
+      "beer_style": "Brown Ale - American",
+      "beer_abv": 4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Beaver Brewery",
+      "brewery_id": 415337,
+      "rating": 3.6
+    },
+    {
+      "checkin_id": 1612184964,
+      "created_at": "Sat, 31 Oct 2026 03:32:44 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Farmers Table 2021",
+      "beer_id": 5209042,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5209042_961a2_sm.jpeg",
+      "beer_style": "Table Beer",
+      "beer_abv": 3,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 3.4
+    },
+    {
       "checkin_id": 1612181388,
       "created_at": "Sat, 31 Oct 2026 03:01:00 +0000",
       "user": "dapitz",
