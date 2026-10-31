@@ -8855,10 +8855,10 @@
       "Aether Brewing",
       "TWØBAYS"
     ],
-    "checkins": 19,
-    "unique_beers": 10,
-    "total_checkins_that_week": 39,
-    "share_pct": 48.7,
+    "checkins": 22,
+    "unique_beers": 11,
+    "total_checkins_that_week": 43,
+    "share_pct": 51.2,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "Beach Bum",
@@ -8867,6 +8867,7 @@
       "ESB",
       "Farmers Table 2021",
       "GFB Draught",
+      "Jindong Balling",
       "Kushy Bushy",
       "SON OF MISCHIEF",
       "Session IPA W Phantasm"
@@ -8974,6 +8975,20 @@
         "brewery_name": "TWØBAYS"
       },
       {
+        "beer_id": 5428742,
+        "beer_name": "Jindong Balling",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5428742_3ba10_sm.jpeg",
+        "beer_style": "Barleywine - Other",
+        "beer_abv": 11,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5428742_7665a_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Prepare for a flavour explosion with Jindong Balling, a monumental collaboration between Against the Grain and Cellarbrations Baldivis. Crafted with unyielding passion and artistry, this beer demands to be savoured and celebrated.\r\nAged for 18 months, Jindong Balling has been maturing in Pedro Ximénez and Heaven Hill barrels, infusing it with unrivalled depth and complexity.",
+        "rating_score": 4.05062,
+        "rating_count": 81,
+        "brewery_name": "Rocky Ridge Brewing Co."
+      },
+      {
         "beer_id": 6771348,
         "beer_name": "Kushy Bushy",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6771348_b72b1_sm.jpeg",
@@ -9020,27 +9035,27 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 2,
-        "total": 10,
-        "pct": 20.0,
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 4,
+        "total": 11,
+        "pct": 36.4,
         "day_counts": [
           0,
-          2,
           0,
+          4,
           0
         ],
         "rank": 1
       },
       {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 2,
-        "total": 10,
-        "pct": 20.0,
+        "total": 11,
+        "pct": 18.2,
         "day_counts": [
           0,
           2,
@@ -9050,16 +9065,16 @@
         "rank": 2
       },
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 1,
-        "total": 10,
-        "pct": 10.0,
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 2,
+        "total": 11,
+        "pct": 18.2,
         "day_counts": [
           0,
+          2,
           0,
-          1,
           0
         ],
         "rank": 3
@@ -9069,7 +9084,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9084,7 +9099,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9099,7 +9114,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9114,7 +9129,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
