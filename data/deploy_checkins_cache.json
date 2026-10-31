@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612357020,
+      "created_at": "Sat, 31 Oct 2026 18:22:26 +0000",
+      "user": "Leachio",
+      "checkin_comment": "",
+      "beer_name": "Afternoon Delight Green Tea IPA",
+      "beer_id": 6762195,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6762195_08280_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Aether Brewing",
+      "brewery_id": 296776,
+      "rating": 4
+    },
+    {
       "checkin_id": 1612211052,
       "created_at": "Sat, 31 Oct 2026 11:22:27 +0000",
       "user": "Jbiscuit105",
