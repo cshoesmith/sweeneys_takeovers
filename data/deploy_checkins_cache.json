@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612191477,
+      "created_at": "Sat, 31 Oct 2026 05:04:51 +0000",
+      "user": "Meneer_Tapijt",
+      "checkin_comment": "",
+      "beer_name": "Carlton Dry 3.5",
+      "beer_id": 993682,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-993682_d5d18_sm.jpeg",
+      "beer_style": "Lager - Pale",
+      "beer_abv": 3.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Carlton & United Breweries",
+      "brewery_id": 4045,
+      "rating": 3
+    },
+    {
       "checkin_id": 1612187486,
       "created_at": "Sat, 31 Oct 2026 04:02:15 +0000",
       "user": "dapitz",
