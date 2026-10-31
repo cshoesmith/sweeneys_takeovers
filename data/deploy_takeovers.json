@@ -8855,10 +8855,10 @@
       "Aether Brewing",
       "TWØBAYS"
     ],
-    "checkins": 18,
+    "checkins": 19,
     "unique_beers": 10,
-    "total_checkins_that_week": 37,
-    "share_pct": 48.6,
+    "total_checkins_that_week": 39,
+    "share_pct": 48.7,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "Beach Bum",
@@ -9053,13 +9053,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
+        "checked": 1,
         "total": 10,
-        "pct": 0.0,
+        "pct": 10.0,
         "day_counts": [
           0,
           0,
-          0,
+          1,
           0
         ],
         "rank": 3

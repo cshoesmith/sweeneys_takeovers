@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612175022,
+      "created_at": "Sat, 31 Oct 2026 02:16:10 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Berry Beasty",
+      "beer_id": 7630677,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Other",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Aether Brewing",
+      "brewery_id": 296776,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1612173063,
+      "created_at": "Sat, 31 Oct 2026 02:04:16 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "KAIJU! Cerveza",
+      "beer_id": 5517230,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5517230_5ba92_sm.jpeg",
+      "beer_style": "Lager - Mexican",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "KAIJU! Beer",
+      "brewery_id": 43267,
+      "rating": 3
+    },
+    {
       "checkin_id": 1611887339,
       "created_at": "Fri, 30 Oct 2026 08:28:00 +0000",
       "user": "virtualpete",
