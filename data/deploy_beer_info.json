@@ -4290,6 +4290,19 @@
     "rating_count": 284,
     "brewery_name": "Hop Nation Brewing Co"
   },
+  "6717583": {
+    "beer_id": 6717583,
+    "beer_name": "Built for Speed",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6717583_233ee_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6717583_233ee_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6.7,
+    "beer_ibu": 0,
+    "beer_description": "Inspired by modern classics like Zeus Skis in Jeans, we set out to brew another ultra-modern “San Diego style” West Coast IPA. Taking cues from our friend Mike Hunsaker, the mind behind Grains of Wrath and one of the world’s finest brewers of the style, we created our own Built for Speed. Saturated with bright citrus, tropical punch and sticky pine over a lean malt base, this beer delivers everything we love about modern WCIPA. Crisp, dry, bitter, fruity, crystal clear - and gone fast.",
+    "rating_score": 3.99254,
+    "rating_count": 248,
+    "brewery_name": "Altitude Brewing"
+  },
   "5142720": {
     "beer_id": 5142720,
     "beer_name": "Crusp NZ Pilsner - Mutation Program #0010",
@@ -4315,6 +4328,19 @@
     "rating_score": 3.65283,
     "rating_count": 53,
     "brewery_name": "Rocky Ridge Brewing Co."
+  },
+  "6850905": {
+    "beer_id": 6850905,
+    "beer_name": "Free Fall",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6850905_1df0d_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6850905_c0def_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.5,
+    "beer_ibu": 0,
+    "beer_description": "Kem and his Eggers Hops family are shaping what expressive NZ hops are all about. pESH is a variety of theirs that stood out to us at harvest selection and we've been hanging out to use it. Paired with Nelson in the dry hop to amplify the zing, this beer is intensely tropical, with an edge of green feijoa and pineapple skin to brighten the experience. Pillowy soft, with sherberty flavours of citrus and grape rounding out the flight plan.\r\n",
+    "rating_score": 3.95536,
+    "rating_count": 56,
+    "brewery_name": "Altitude Brewing"
   },
   "5428742": {
     "beer_id": 5428742,
@@ -4354,6 +4380,19 @@
     "rating_score": 4.00276,
     "rating_count": 127,
     "brewery_name": "Rocky Ridge Brewing Co."
+  },
+  "1308452": {
+    "beer_id": 1308452,
+    "beer_name": "Persistent High",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1308452_8d43d_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1308452_15e39_hd.jpeg",
+    "beer_style": "Wheat Beer - Hefeweizen",
+    "beer_abv": 4.9,
+    "beer_ibu": 9,
+    "beer_description": "One of our most awarded beers and currently the top Wheat beer in the NZ! This beer was inspired by a trip to the continent of wheat driven styles. \r\nThis is fundamentally a traditional Bavarian wheat beer but our take, whilst being true to its origins, has our own twist with a mix of local and imported ingredients. This mix stacks the beer with that distinct Euro flavour and delivers that authentic frothy head. The finished beer is un-fined and un-filtered so roll bottles gently for your cloudy drinking pleasure.",
+    "rating_score": 3.59119,
+    "rating_count": 1322,
+    "brewery_name": "Altitude Brewing"
   },
   "6630785": {
     "beer_id": 6630785,
