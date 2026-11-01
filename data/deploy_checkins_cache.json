@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612580339,
+      "created_at": "Sun, 01 Nov 2026 03:10:26 +0000",
+      "user": "JThasaBeerDependency",
+      "checkin_comment": "",
+      "beer_name": "River Crossing",
+      "beer_id": 7628211,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7628211_98272_sm.jpeg",
+      "beer_style": "IPA - Triple",
+      "beer_abv": 10,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hiker Brewing Co",
+      "brewery_id": 533878,
+      "rating": 4
+    },
+    {
       "checkin_id": 1612570133,
       "created_at": "Sun, 01 Nov 2026 02:01:52 +0000",
       "user": "C1985",
