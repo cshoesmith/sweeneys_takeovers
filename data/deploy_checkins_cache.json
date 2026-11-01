@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612592387,
+      "created_at": "Sun, 01 Nov 2026 05:58:59 +0000",
+      "user": "hereforthehops",
+      "checkin_comment": "",
+      "beer_name": "Pallet Wrecker",
+      "beer_id": 6833732,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Behemoth Brewing Company",
+      "brewery_id": 73616,
+      "rating": 4.1
+    },
+    {
+      "checkin_id": 1612591126,
+      "created_at": "Sun, 01 Nov 2026 05:29:55 +0000",
+      "user": "lunchbox55",
+      "checkin_comment": "",
+      "beer_name": "Pallet Wrecker",
+      "beer_id": 6833732,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Behemoth Brewing Company",
+      "brewery_id": 73616,
+      "rating": 4
+    },
+    {
       "checkin_id": 1612589989,
       "created_at": "Sun, 01 Nov 2026 05:06:33 +0000",
       "user": "jimmy-swings",
