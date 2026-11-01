@@ -8849,18 +8849,19 @@
   },
   {
     "date": "2026-10-29",
-    "brewery": "Rocky Ridge Brewing Co. & Aether Brewing & Altitude Brewing & TWØBAYS & KAIJU! Beer",
+    "brewery": "Rocky Ridge Brewing Co. & Aether Brewing & Hop Nation Brewing Co & Altitude Brewing & TWØBAYS & KAIJU! Beer",
     "breweries": [
       "Rocky Ridge Brewing Co.",
       "Aether Brewing",
+      "Hop Nation Brewing Co",
       "Altitude Brewing",
       "TWØBAYS",
       "KAIJU! Beer"
     ],
-    "checkins": 34,
-    "unique_beers": 18,
-    "total_checkins_that_week": 58,
-    "share_pct": 58.6,
+    "checkins": 41,
+    "unique_beers": 21,
+    "total_checkins_that_week": 59,
+    "share_pct": 69.5,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "Beach Bum",
@@ -8879,7 +8880,10 @@
       "Persistent High",
       "Rock Candy",
       "SON OF MISCHIEF",
-      "Session IPA W Phantasm"
+      "Session IPA W Phantasm",
+      "The Ghost",
+      "The Kalash 2018",
+      "The Kalash 2023"
     ],
     "beer_details": [
       {
@@ -9137,6 +9141,49 @@
         "brewery_name": "TWØBAYS",
         "brewery_country": "Australia",
         "beer_page_url": "https://untappd.com/b/twobays-session-ipa-w-phantasm/7637103"
+      },
+      {
+        "beer_id": 6836412,
+        "beer_name": "The Ghost",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6515633_e349a_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 3.53065,
+        "rating_count": 31,
+        "brewery_name": "Hop Nation Brewing Co",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/hop-nation-brewing-co-the-ghost/6836412"
+      },
+      {
+        "beer_id": 2690176,
+        "beer_name": "The Kalash 2018",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2690176_bc510_sm.jpeg",
+        "beer_style": "Stout - Russian Imperial",
+        "beer_abv": 9.7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2690176_48004_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "The 2018 Kalash was partially aged in seasoned Bourbon barrels for 4 months before blending. A subtle oak and Bourbon character integrated with dark chocolate, tar and spice.",
+        "rating_score": 4.06354,
+        "rating_count": 410,
+        "brewery_name": "Hop Nation Brewing Co"
+      },
+      {
+        "beer_id": 5392377,
+        "beer_name": "The Kalash 2023",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5392377_64041_sm.jpeg",
+        "beer_style": "Stout - Imperial / Double",
+        "beer_abv": 10.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5392377_c265e_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Welcome to the eighth year of The Kalash! The 2023 edition was aged in seasoned Bourbon barrels for four months before blending. A subtle oak and Bourbon character integrates with dark chocolate, tar and spice. This rich, brooding beast will take you to your dark side.",
+        "rating_score": 4.13838,
+        "rating_count": 284,
+        "brewery_name": "Hop Nation Brewing Co"
       }
     ],
     "source": "heuristic",
@@ -9145,13 +9192,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 6,
-        "total": 18,
+        "checked": 7,
+        "total": 21,
         "pct": 33.3,
         "day_counts": [
           0,
           0,
-          6,
+          7,
           0
         ],
         "rank": 1
@@ -9160,12 +9207,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 3,
-        "total": 18,
-        "pct": 16.7,
+        "checked": 4,
+        "total": 21,
+        "pct": 19.0,
         "day_counts": [
           0,
-          3,
+          4,
           0,
           0
         ],
@@ -9176,8 +9223,8 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 2,
-        "total": 18,
-        "pct": 11.1,
+        "total": 21,
+        "pct": 9.5,
         "day_counts": [
           0,
           2,
@@ -9191,7 +9238,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 18,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9206,7 +9253,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 18,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9221,7 +9268,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 18,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9236,7 +9283,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 18,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
