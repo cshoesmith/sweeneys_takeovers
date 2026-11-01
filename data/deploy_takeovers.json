@@ -8849,19 +8849,19 @@
   },
   {
     "date": "2026-10-29",
-    "brewery": "Rocky Ridge Brewing Co. & Aether Brewing & Hop Nation Brewing Co & Altitude Brewing & TWØBAYS & KAIJU! Beer",
+    "brewery": "Rocky Ridge Brewing Co. & Aether Brewing & Hop Nation Brewing Co & TWØBAYS & KAIJU! Beer & Altitude Brewing",
     "breweries": [
       "Rocky Ridge Brewing Co.",
       "Aether Brewing",
       "Hop Nation Brewing Co",
-      "Altitude Brewing",
       "TWØBAYS",
-      "KAIJU! Beer"
+      "KAIJU! Beer",
+      "Altitude Brewing"
     ],
-    "checkins": 44,
+    "checkins": 47,
     "unique_beers": 22,
-    "total_checkins_that_week": 64,
-    "share_pct": 68.8,
+    "total_checkins_that_week": 67,
+    "share_pct": 70.1,
     "beers": [
       "Afternoon Delight Green Tea IPA",
       "Beach Bum",
@@ -9250,6 +9250,21 @@
         "rank": 3
       },
       {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 1,
+        "total": 22,
+        "pct": 4.5,
+        "day_counts": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "rank": 4
+      },
+      {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
@@ -9262,27 +9277,12 @@
           0,
           0
         ],
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
-        "checked": 0,
-        "total": 22,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "rank": 5
-      },
-      {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
         "total": 22,
         "pct": 0.0,
