@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612601165,
+      "created_at": "Sun, 01 Nov 2026 09:38:28 +0000",
+      "user": "Meneer_Tapijt",
+      "checkin_comment": "",
+      "beer_name": "The Kalash 2018",
+      "beer_id": 2690176,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2690176_bc510_sm.jpeg",
+      "beer_style": "Stout - Russian Imperial",
+      "beer_abv": 9.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Hop Nation Brewing Co",
+      "brewery_id": 205876,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1612592387,
       "created_at": "Sun, 01 Nov 2026 05:58:59 +0000",
       "user": "hereforthehops",
