@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612805223,
+      "created_at": "Mon, 02 Nov 2026 06:25:11 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "No Doubt",
+      "beer_id": 7628269,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7628269_69e6a_sm.jpeg",
+      "beer_style": "Lager - Tmavé (Czech Dark)",
+      "beer_abv": 4.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bracket Brewing",
+      "brewery_id": 474651,
+      "rating": 4
+    },
+    {
       "checkin_id": 1612601165,
       "created_at": "Sun, 01 Nov 2026 09:38:28 +0000",
       "user": "Meneer_Tapijt",
