@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612898315,
+      "created_at": "Tue, 03 Nov 2026 02:19:04 +0000",
+      "user": "Piekarz",
+      "checkin_comment": "",
+      "beer_name": "Yakima Charge",
+      "beer_id": 6762292,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "BentSpoke Brewing Co",
+      "brewery_id": 134857,
+      "rating": 3.25
+    },
+    {
+      "checkin_id": 1612893823,
+      "created_at": "Tue, 03 Nov 2026 01:27:32 +0000",
+      "user": "Piekarz",
+      "checkin_comment": "",
+      "beer_name": "Choice Brew",
+      "beer_id": 6880273,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - New Zealand",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Capital Brewing Co",
+      "brewery_id": 266075,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1612809413,
       "created_at": "Mon, 02 Nov 2026 09:38:24 +0000",
       "user": "Meneer_Tapijt",
