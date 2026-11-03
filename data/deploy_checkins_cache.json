@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612900499,
+      "created_at": "Tue, 03 Nov 2026 02:50:11 +0000",
+      "user": "Piekarz",
+      "checkin_comment": "",
+      "beer_name": "Free Fall",
+      "beer_id": 6850905,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6850905_1df0d_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Altitude Brewing",
+      "brewery_id": 89782,
+      "rating": 4.25
+    },
+    {
+      "checkin_id": 1612900210,
+      "created_at": "Tue, 03 Nov 2026 02:45:37 +0000",
+      "user": "Piekarz",
+      "checkin_comment": "Very acidic",
+      "beer_name": "Rock Candy",
+      "beer_id": 5105234,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5105234_54d11_sm.jpeg",
+      "beer_style": "Sour - Fruited",
+      "beer_abv": 5.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 2.75
+    },
+    {
       "checkin_id": 1612898315,
       "created_at": "Tue, 03 Nov 2026 02:19:04 +0000",
       "user": "Piekarz",
