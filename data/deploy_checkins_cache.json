@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1612909371,
+      "created_at": "Tue, 03 Nov 2026 06:52:12 +0000",
+      "user": "coreymch",
+      "checkin_comment": "Pretty darn good!",
+      "beer_name": "KERBSIDE PROPHET",
+      "beer_id": 6536109,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6536109_e9fdd_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4.4
+    },
+    {
       "checkin_id": 1612900499,
       "created_at": "Tue, 03 Nov 2026 02:50:11 +0000",
       "user": "Piekarz",
