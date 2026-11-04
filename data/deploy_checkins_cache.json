@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1613027683,
+      "created_at": "Wed, 04 Nov 2026 07:35:43 +0000",
+      "user": "tawny_frogmouth",
+      "checkin_comment": "Defying ABV",
+      "beer_name": "Defying Gravity",
+      "beer_id": 6726442,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6726442_52625_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Mason Brewing Co",
+      "brewery_id": 557504,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1613027256,
       "created_at": "Wed, 04 Nov 2026 07:17:52 +0000",
       "user": "slindsay91",
