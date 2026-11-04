@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1613009680,
+      "created_at": "Wed, 04 Nov 2026 01:19:02 +0000",
+      "user": "docta",
+      "checkin_comment": "",
+      "beer_name": "Seed & Destroy",
+      "beer_id": 6845806,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Sour - Fruited",
+      "beer_abv": 5.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "KAIJU! Beer",
+      "brewery_id": 43267,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1612909371,
       "created_at": "Tue, 03 Nov 2026 06:52:12 +0000",
       "user": "coreymch",
