@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1613033652,
+      "created_at": "Wed, 04 Nov 2026 11:50:21 +0000",
+      "user": "fogal",
+      "checkin_comment": "Pretty good",
+      "beer_name": "KERBSIDE PROPHET",
+      "beer_id": 6536109,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6536109_e9fdd_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4.25
+    },
+    {
+      "checkin_id": 1613032243,
+      "created_at": "Wed, 04 Nov 2026 11:09:05 +0000",
+      "user": "fogal",
+      "checkin_comment": "Hmmmm it's ok",
+      "beer_name": "PIVOT",
+      "beer_id": 6858963,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6858963_31222_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 7.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 3.25
+    },
+    {
       "checkin_id": 1613027683,
       "created_at": "Wed, 04 Nov 2026 07:35:43 +0000",
       "user": "tawny_frogmouth",
