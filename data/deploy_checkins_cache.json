@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1613025837,
+      "created_at": "Wed, 04 Nov 2026 06:09:42 +0000",
+      "user": "Papicool",
+      "checkin_comment": "Something different",
+      "beer_name": "Berry Beasty",
+      "beer_id": 7630677,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - Sour",
+      "beer_abv": 6.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Aether Brewing",
+      "brewery_id": 296776,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1613025414,
+      "created_at": "Wed, 04 Nov 2026 05:50:49 +0000",
+      "user": "Papicool",
+      "checkin_comment": "Back from a good lunch",
+      "beer_name": "Black XPA LTD. Release #178",
+      "beer_id": 5452642,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5452642_5b551_sm.jpeg",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Aether Brewing",
+      "brewery_id": 296776,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1613022592,
       "created_at": "Wed, 04 Nov 2026 04:17:45 +0000",
       "user": "VLoveBrew",
