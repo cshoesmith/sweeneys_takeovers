@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1613014135,
+      "created_at": "Wed, 04 Nov 2026 02:04:12 +0000",
+      "user": "docta",
+      "checkin_comment": "",
+      "beer_name": "No Doubt Stout",
+      "beer_id": 4250005,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4250005_7e37d_sm.jpeg",
+      "beer_style": "Stout - Other",
+      "beer_abv": 6.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "TWØBAYS",
+      "brewery_id": 414821,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1613013925,
+      "created_at": "Wed, 04 Nov 2026 02:01:40 +0000",
+      "user": "docta",
+      "checkin_comment": "",
+      "beer_name": "Hear Me Out",
+      "beer_id": 6961129,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961129_2494f_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4
+    },
+    {
       "checkin_id": 1613009680,
       "created_at": "Wed, 04 Nov 2026 01:19:02 +0000",
       "user": "docta",
