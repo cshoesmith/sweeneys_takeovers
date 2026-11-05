@@ -4525,6 +4525,32 @@
     "rating_count": 53,
     "brewery_name": "One Drop Brewing Co"
   },
+  "6960909": {
+    "beer_id": 6960909,
+    "beer_name": "GET YOUR WALK ON",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960909_0d475_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6960909_fe0a7_hd.jpeg",
+    "beer_style": "Sour - Smoothie / Pastry",
+    "beer_abv": 6.5,
+    "beer_ibu": 0,
+    "beer_description": "Great big handfuls of juicy strawberry come tumbling into a thick, lush Pastry Sour loaded with creamy vanilla ice cream and all that buttery, crumbly, cakey shortcake goodness, creating one outrageously decadent little dessert number that’s sweet, tangy, creamy and packed tighter than your Nan’s Christmas trifle.\r\nIt’s strawberries and cream getting properly acquainted with cake, ice cream getting involved where it probably shouldn’t. ",
+    "rating_score": 0,
+    "rating_count": 7,
+    "brewery_name": "One Drop Brewing Co"
+  },
+  "3556840": {
+    "beer_id": 3556840,
+    "beer_name": "HAZY PALE ALE",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3556840_cd49b_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3556840_fca47_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "A full bodied Hazy Pale Ale that's soft, juicy, full of flavour, and made at a crushable. Built off a Tri-Hop combination of tropical goodness and a malt bill packed full of delicious oats. This full flavoured experience will no doubt take you to you where the good vibes flow.",
+    "rating_score": 3.75021,
+    "rating_count": 1666,
+    "brewery_name": "One Drop Brewing Co"
+  },
   "6918440": {
     "beer_id": 6918440,
     "beer_name": "HIGHER STATE",
@@ -4562,6 +4588,19 @@
     "beer_description": "We’ve dug deep for this one, teaming up with our mates at Mule Coffee Roasters out of Marrickville to load a big, black Pastry Stout with enough freshly roasted coffee to wake the bloody dead. Together we wrapped their La Bomba Single Origin Coffee goodness around layers of dark chocolate, sticky malt and thick dessert decadence until we had something rich enough to raise a few spirits of its own.\r\nBig coffee aromatics come swinging out of the grave, followed by waves of chocolatey malt, roasted goodness and a long, luscious finish darker than whatever is currently scratching at your bedroom window.",
     "rating_score": 4.14737,
     "rating_count": 19,
+    "brewery_name": "One Drop Brewing Co"
+  },
+  "6332701": {
+    "beer_id": 6332701,
+    "beer_name": "NO SURRENDER*",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6332701_2bba9_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6332701_2bba9_hd.jpeg",
+    "beer_style": "Sour - Smoothie / Pastry",
+    "beer_abv": 5.9,
+    "beer_ibu": 0,
+    "beer_description": "Stand your ground with No Surrender. This doozy here is an unapologetic double dose of tropical indulgence. We’ve piled in double mango, double coconut and double vanilla ice cream for a colossal cream kaboom in every can. Smooth, rich and bursting with pure fruit power, it’s a dessert sour that refuses to back down. For those who remember Iced, well, it's Iced to meet you again. Duh!",
+    "rating_score": 4.44149,
+    "rating_count": 329,
     "brewery_name": "One Drop Brewing Co"
   },
   "6960908": {
