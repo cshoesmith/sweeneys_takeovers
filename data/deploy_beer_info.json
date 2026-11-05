@@ -4473,6 +4473,19 @@
     "rating_count": 11,
     "brewery_name": "One Drop Brewing Co"
   },
+  "6790310": {
+    "beer_id": 6790310,
+    "beer_name": "GET BACK",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6790310_ca00b_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6790310_ca00b_hd.jpeg",
+    "beer_style": "IPA - Other",
+    "beer_abv": 7.1,
+    "beer_ibu": 0,
+    "beer_description": "Back to basics. Back to balance. Back to beer.\r\nGet Back takes everything we love about a Cali IPA - a lean, clean malt bill that lets the exceptional NZ hop character do what it does best - and we built it around standout selections of 2026 Eggers Nelson Sauvin and a blend of 2026 Eggers Special hops from New Zealand.  Layered with notes of white grape, citrus zest and fresh tropical fruit before finishing bright, dry and refreshingly crisp.\r\nClean. Bright. Hop-forward.",
+    "rating_score": 3.9283,
+    "rating_count": 53,
+    "brewery_name": "One Drop Brewing Co"
+  },
   "6918440": {
     "beer_id": 6918440,
     "beer_name": "HIGHER STATE",
@@ -4523,6 +4536,32 @@
     "beer_description": "Pirates Anthem is a full-send Pulp Sour loaded to the gunwales with guava, mango and a filthy dose of ripe plum, all crashing together in thick, juicy waves before a squeeze of lime comes slicing through to sharpen the edges and keep the whole thing bright and tart for easy drinking.It pours loud and purple, with big tropical fruit up front, dark jammy plum rolling underneath and that unmistakable OD pulp bringing the weight, texture and general fruit-based bad behaviour.\r\nTake the loot, raise the flag and make some noise.",
     "rating_score": 3.875,
     "rating_count": 10,
+    "brewery_name": "One Drop Brewing Co"
+  },
+  "6850020": {
+    "beer_id": 6850020,
+    "beer_name": "SAID WHO",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6850020_e22eb_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6850020_e22eb_hd.jpeg",
+    "beer_style": "Sour - Smoothie / Pastry",
+    "beer_abv": 7.2,
+    "beer_ibu": 0,
+    "beer_description": "Said who you can’t chuck lychee, blackcurrant, coconut cream and a little jasmine into the same damn thing?\r\nCertainly wasn’t us.\r\nThis milky purple Cream Smoothie Sour is stacked with juicy lychee and dark, jammy blackcurrant, then smothered in silky coconut cream with a sneaky lick of jasmine floating around in the background.\r\n\r\nRules are boring anyway.",
+    "rating_score": 4.14623,
+    "rating_count": 53,
+    "brewery_name": "One Drop Brewing Co"
+  },
+  "6825878": {
+    "beer_id": 6825878,
+    "beer_name": "SKANKY*",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6825878_4d4d3_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6825878_4d4d3_hd.jpeg",
+    "beer_style": "Sour - Smoothie / Pastry",
+    "beer_abv": 6.2,
+    "beer_ibu": 0,
+    "beer_description": "\"We're back in the groove with another full-send smoothie number.\r\nBuilt on a thick Mango & Guava base, we've gone and cranked the dial with monstrous lashings of blackcurrant and boysenberry, then softened the edges with creamy tahitian vanilla all finished off with a silky lick of lactose. Thick? You bet. Juicy? To the brim. \r\nThe whole thing lands somewhere between a dripping berry shake and a spoonful of jam straight from the jar.  Plush, decadent this one's sure to get you grinding.\"",
+    "rating_score": 4.26951,
+    "rating_count": 82,
     "brewery_name": "One Drop Brewing Co"
   }
 }

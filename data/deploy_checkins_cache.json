@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1613152347,
+      "created_at": "Thu, 05 Nov 2026 04:00:35 +0000",
+      "user": "hereforthehops",
+      "checkin_comment": "",
+      "beer_name": "GET BACK",
+      "beer_id": 6790310,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6790310_ca00b_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 7.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1613151149,
+      "created_at": "Thu, 05 Nov 2026 03:35:56 +0000",
+      "user": "hereforthehops",
+      "checkin_comment": "",
+      "beer_name": "GET BACK",
+      "beer_id": 6790310,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6790310_ca00b_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 7.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4
+    },
+    {
       "checkin_id": 1613149423,
       "created_at": "Thu, 05 Nov 2026 03:08:36 +0000",
       "user": "noxowl",
