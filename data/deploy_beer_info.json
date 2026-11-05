@@ -4446,5 +4446,44 @@
     "rating_score": 4.06354,
     "rating_count": 410,
     "brewery_name": "Hop Nation Brewing Co"
+  },
+  "6960905": {
+    "beer_id": 6960905,
+    "beer_name": "CUZZY IT",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960905_34f38_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6960905_34f38_hd.jpeg",
+    "beer_style": "Sour - Smoothie / Pastry",
+    "beer_abv": 6.8,
+    "beer_ibu": 0,
+    "beer_description": "We’ve taken great heaving handfuls of ripe, juicy mango and sent them straight into the abyss with lashings of silky coconut cream and an ungodly amount of smooth, caramelised white chocolate goodness, conjuring up a thick, tropical, dessert-soaked monster that’s equal parts mango smoothie, melted Caramilk and something you probably shouldn’t be drinking after midnight.\r\nSweet mango up front, creamy coconut rolling through the middle and that rich caramel-choc business lurking underneath the whole damn thing.\r\nNo priest required. This possession is staying put.\r\nBig spooky love to all you Cuzzies. ???",
+    "rating_score": 3.84138,
+    "rating_count": 29,
+    "brewery_name": "One Drop Brewing Co"
+  },
+  "6918443": {
+    "beer_id": 6918443,
+    "beer_name": "EVERYBODY JOOGIN*",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6918443_355e5_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6918443_355e5_hd.jpeg",
+    "beer_style": "Sour - Fruited",
+    "beer_abv": 6.8,
+    "beer_ibu": 0,
+    "beer_description": "Everybody joogin. Nobody standing still.\r\nWe’ve absolutely rammed this one with a reckless stack of mango, banana, apple purée and boysenberry for maximum pulp behaviour. Thick tropical mango and thick banana come crashing through first, apple keeps the whole thing juicy and bright, while boysenberry drags a dark, jammy little tart streak through the lot.\r\nBig fruit. Big pulp. Sweet, sour, sticky and completely unnecessary in all the right ways.\r\nGet in there. Everybody joogin.",
+    "rating_score": 3.95455,
+    "rating_count": 11,
+    "brewery_name": "One Drop Brewing Co"
+  },
+  "6918440": {
+    "beer_id": 6918440,
+    "beer_name": "HIGHER STATE",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6918440_5a88a_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6918440_5a88a_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 5.6,
+    "beer_ibu": 0,
+    "beer_description": "Go higher. Stay hazy.\r\nWe’ve taken this one all the way up with a triple dry hop of Peacharine, Superdelic and Motueka Cryo, stacking layer upon layer of saturated hop goodness. Expect a full-blown tropical peach mojito moment - juicy stone fruit, crushed lime, sweet citrus and a little fresh green zip - all floating on a pillowy, velvety mouthfeel that just keeps rolling.\r\nElevate accordingly.",
+    "rating_score": 4.01538,
+    "rating_count": 39,
+    "brewery_name": "One Drop Brewing Co"
   }
 }
