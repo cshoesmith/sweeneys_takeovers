@@ -9317,14 +9317,19 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 38,
-    "unique_beers": 12,
-    "total_checkins_that_week": 38,
+    "checkins": 57,
+    "unique_beers": 18,
+    "total_checkins_that_week": 57,
     "share_pct": 100.0,
     "beers": [
+      "AROUND THE CORNER",
+      "BRING THE SPEAKERS",
       "CUZZY IT",
+      "EVENT HORIZON",
       "EVERYBODY JOOGIN*",
       "GET BACK",
+      "GET YOUR WALK ON",
+      "HAZY PALE ALE",
       "HIGHER STATE",
       "NATURAL MYSTIC",
       "NIGHTMARE BEFORE COFFEE",
@@ -9333,9 +9338,38 @@
       "SKANKY*",
       "TAKE THAT",
       "THE COUNT",
+      "THEY GONNA WATCH*",
       "WALKTHROUGH"
     ],
     "beer_details": [
+      {
+        "beer_id": 6910137,
+        "beer_name": "AROUND THE CORNER",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6910137_327eb_sm.jpeg",
+        "beer_style": "Sour - Smoothie / Pastry",
+        "beer_abv": 6.9,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6910137_327eb_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Funny what you find around the corner when you don’t know where you’re going.Just Around the Corner is an Ice Cream Sour twisting together thicc banana, soft serve ice cream and a big ol’ slice of key lime pie, with a touch of lactose keeping things creamy and smooth.  We have gone and kicked it all off with sharp, zesty lime before melting everything back into our dreamy ice cream sour base.",
+        "rating_score": 4.13194,
+        "rating_count": 36,
+        "brewery_name": "One Drop Brewing Co"
+      },
+      {
+        "beer_id": 6850042,
+        "beer_name": "BRING THE SPEAKERS",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6850042_739b6_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double",
+        "beer_abv": 8.9,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6850042_739b6_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": " ¿quién trae las cornetas? Who’s bringing the speakers? It’s the first thing anyone says before a beach day or backyard gathering. No music, no bash.\r\nWe figured we’d bring the beer too. Double hazy IPA, double dry hopped with Nectaron, Nelson and Motueka. Tropical, juicy, hazy on purpose. No beer, no bash.\r\nSalud!",
+        "rating_score": 3.79804,
+        "rating_count": 51,
+        "brewery_name": "One Drop Brewing Co"
+      },
       {
         "beer_id": 6960905,
         "beer_name": "CUZZY IT",
@@ -9348,6 +9382,20 @@
         "beer_description": "We’ve taken great heaving handfuls of ripe, juicy mango and sent them straight into the abyss with lashings of silky coconut cream and an ungodly amount of smooth, caramelised white chocolate goodness, conjuring up a thick, tropical, dessert-soaked monster that’s equal parts mango smoothie, melted Caramilk and something you probably shouldn’t be drinking after midnight.\r\nSweet mango up front, creamy coconut rolling through the middle and that rich caramel-choc business lurking underneath the whole damn thing.\r\nNo priest required. This possession is staying put.\r\nBig spooky love to all you Cuzzies. ???",
         "rating_score": 3.84138,
         "rating_count": 29,
+        "brewery_name": "One Drop Brewing Co"
+      },
+      {
+        "beer_id": 6826974,
+        "beer_name": "EVENT HORIZON",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6826974_37264_sm.jpeg",
+        "beer_style": "Sour - Other",
+        "beer_abv": 6.3,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6826974_37264_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This obsidian Pulp Sour pulls you into a singularity of luscious pear, ripe cherry and sweet strawberry, collapsing together into an impossibly smooth, fruit-saturated pour. A generous touch of black sesame adds a subtle roasted nuttiness and velvety depth, while a whisper of lactose softens the edges into a rich, creamy finish. Dark, mysterious and bursting with over 650g/L of fruit, this is a gravity-defying trip into the unknown.",
+        "rating_score": 3.91418,
+        "rating_count": 67,
         "brewery_name": "One Drop Brewing Co"
       },
       {
@@ -9377,6 +9425,22 @@
         "rating_score": 3.9283,
         "rating_count": 53,
         "brewery_name": "One Drop Brewing Co"
+      },
+      {
+        "beer_id": 6960909,
+        "beer_name": "GET YOUR WALK ON",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960909_0d475_sm.jpeg",
+        "beer_style": "Sour - Smoothie / Pastry",
+        "beer_abv": 6.5,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 3556840,
+        "beer_name": "HAZY PALE ALE",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3556840_cd49b_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null
       },
       {
         "beer_id": 6918440,
@@ -9491,6 +9555,14 @@
         "brewery_name": "One Drop Brewing Co"
       },
       {
+        "beer_id": 7647736,
+        "beer_name": "THEY GONNA WATCH*",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7647736_8cc96_sm.jpeg",
+        "beer_style": "Sour - Smoothie / Pastry",
+        "beer_abv": 6.4,
+        "beer_auth_rating": null
+      },
+      {
         "beer_id": 6791042,
         "beer_name": "WALKTHROUGH",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6791042_557e2_sm.jpeg",
@@ -9512,7 +9584,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9527,7 +9599,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9542,7 +9614,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 12,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9557,7 +9629,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9572,7 +9644,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9587,7 +9659,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9602,7 +9674,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 12,
+        "total": 18,
         "pct": 0.0,
         "day_counts": [
           0,
