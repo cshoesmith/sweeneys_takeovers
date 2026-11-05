@@ -9317,17 +9317,21 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 8,
-    "unique_beers": 7,
-    "total_checkins_that_week": 8,
+    "checkins": 12,
+    "unique_beers": 11,
+    "total_checkins_that_week": 12,
     "share_pct": 100.0,
     "beers": [
       "CUZZY IT",
       "EVERYBODY JOOGIN*",
       "HIGHER STATE",
       "NATURAL MYSTIC",
+      "NIGHTMARE BEFORE COFFEE",
       "PIRATES ANTHEM",
       "SAID WHO",
+      "SKANKY*",
+      "TAKE THAT",
+      "THE COUNT",
       "WALKTHROUGH"
     ],
     "beer_details": [
@@ -9379,7 +9383,27 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6918441_92c31_sm.jpeg",
         "beer_style": "IPA - Imperial / Double",
         "beer_abv": 7.8,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6918441_92c31_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "There’s something in the air.\r\nBuilt around an exceptionally rare lot of Eggers Hops, the New Moon Harvest 2026, and specifically brewed under the september Harvest Moon of 2026, it is layered further with Simcoe Cryo, Citra Cryo and Citra HyperBoost. We’ve laid it all over a slightly dialled-back version of our super-saturated hoppy grist and water profile, letting the hops float right out front.\r\nExpect waves of ripe citrus, sticky tropical fruit, sweet resin and fresh crushed green, wrapped in that soft, saturated mouthfeel we chase so hard.\r\nRare hops with mystical New Moon energy.\r\nThis one was written in the stars.",
+        "rating_score": 4.1163,
+        "rating_count": 46,
+        "brewery_name": "One Drop Brewing Co"
+      },
+      {
+        "beer_id": 6961857,
+        "beer_name": "NIGHTMARE BEFORE COFFEE",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961857_d005d_sm.jpeg",
+        "beer_style": "Stout - Pastry",
+        "beer_abv": 11.9,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6961857_01f15_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "We’ve dug deep for this one, teaming up with our mates at Mule Coffee Roasters out of Marrickville to load a big, black Pastry Stout with enough freshly roasted coffee to wake the bloody dead. Together we wrapped their La Bomba Single Origin Coffee goodness around layers of dark chocolate, sticky malt and thick dessert decadence until we had something rich enough to raise a few spirits of its own.\r\nBig coffee aromatics come swinging out of the grave, followed by waves of chocolatey malt, roasted goodness and a long, luscious finish darker than whatever is currently scratching at your bedroom window.",
+        "rating_score": 4.14737,
+        "rating_count": 19,
+        "brewery_name": "One Drop Brewing Co"
       },
       {
         "beer_id": 6960908,
@@ -9387,7 +9411,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960908_a1f5d_sm.jpeg",
         "beer_style": "Sour - Fruited",
         "beer_abv": 7,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6960908_a1f5d_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Pirates Anthem is a full-send Pulp Sour loaded to the gunwales with guava, mango and a filthy dose of ripe plum, all crashing together in thick, juicy waves before a squeeze of lime comes slicing through to sharpen the edges and keep the whole thing bright and tart for easy drinking.It pours loud and purple, with big tropical fruit up front, dark jammy plum rolling underneath and that unmistakable OD pulp bringing the weight, texture and general fruit-based bad behaviour.\r\nTake the loot, raise the flag and make some noise.",
+        "rating_score": 3.875,
+        "rating_count": 10,
+        "brewery_name": "One Drop Brewing Co"
       },
       {
         "beer_id": 6850020,
@@ -9395,6 +9425,30 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6850020_e22eb_sm.jpeg",
         "beer_style": "Sour - Smoothie / Pastry",
         "beer_abv": 7.2,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6825878,
+        "beer_name": "SKANKY*",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6825878_4d4d3_sm.jpeg",
+        "beer_style": "Sour - Smoothie / Pastry",
+        "beer_abv": 6.2,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6960910,
+        "beer_name": "TAKE THAT",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960910_88572_sm.jpeg",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": 5.8,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6960907,
+        "beer_name": "THE COUNT",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960907_c71ed_sm.jpeg",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": 6.7,
         "beer_auth_rating": null
       },
       {
@@ -9419,7 +9473,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9434,7 +9488,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9449,7 +9503,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 7,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9464,7 +9518,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9479,7 +9533,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9494,7 +9548,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9509,7 +9563,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
