@@ -4667,5 +4667,18 @@
     "rating_score": 4.3,
     "rating_count": 41,
     "brewery_name": "One Drop Brewing Co"
+  },
+  "7647736": {
+    "beer_id": 7647736,
+    "beer_name": "THEY GONNA WATCH*",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7647736_8cc96_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7647736_8cc96_hd.jpeg",
+    "beer_style": "Sour - Smoothie / Pastry",
+    "beer_abv": 6.4,
+    "beer_ibu": 0,
+    "beer_description": "A peach cobbler-inspired Pastry Sour loaded with ripe peach and creamy banana, layered with smooth vanilla and a sweet biscuity crumble that pushes the whole thing deep into fresh-from-the-oven dessert territory.\r\nJuicy peach comes in thick and lush, banana builds that big creamy body, while vanilla and biscuit roll through underneath with all the buttery, cakey goodness of the bit everyone digs for at the bottom.\r\nGet stuck in while we watch.",
+    "rating_score": 0,
+    "rating_count": 1,
+    "brewery_name": "One Drop Brewing Co"
   }
 }

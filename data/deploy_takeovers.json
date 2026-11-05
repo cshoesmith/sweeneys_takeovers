@@ -9317,9 +9317,9 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 71,
+    "checkins": 80,
     "unique_beers": 19,
-    "total_checkins_that_week": 71,
+    "total_checkins_that_week": 80,
     "share_pct": 100.0,
     "beers": [
       "AROUND THE CORNER",
@@ -9587,7 +9587,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7647736_8cc96_sm.jpeg",
         "beer_style": "Sour - Smoothie / Pastry",
         "beer_abv": 6.4,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7647736_8cc96_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A peach cobbler-inspired Pastry Sour loaded with ripe peach and creamy banana, layered with smooth vanilla and a sweet biscuity crumble that pushes the whole thing deep into fresh-from-the-oven dessert territory.\r\nJuicy peach comes in thick and lush, banana builds that big creamy body, while vanilla and biscuit roll through underneath with all the buttery, cakey goodness of the bit everyone digs for at the bottom.\r\nGet stuck in while we watch.",
+        "rating_score": 0,
+        "rating_count": 1,
+        "brewery_name": "One Drop Brewing Co"
       },
       {
         "beer_id": 6791042,
