@@ -4564,6 +4564,20 @@
     "rating_count": 39,
     "brewery_name": "One Drop Brewing Co"
   },
+  "7660320": {
+    "beer_id": 7660320,
+    "beer_name": "Misty",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6543778_418c6_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.1,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 0,
+    "brewery_name": "One Drop Brewing Co",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/one-drop-brewing-co-misty/7660320"
+  },
   "6918441": {
     "beer_id": 6918441,
     "beer_name": "NATURAL MYSTIC",

@@ -9317,10 +9317,10 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 101,
-    "unique_beers": 19,
-    "total_checkins_that_week": 102,
-    "share_pct": 99.0,
+    "checkins": 105,
+    "unique_beers": 20,
+    "total_checkins_that_week": 106,
+    "share_pct": 99.1,
     "beers": [
       "AROUND THE CORNER",
       "BRING THE SPEAKERS",
@@ -9331,6 +9331,7 @@
       "GET YOUR WALK ON",
       "HAZY PALE ALE",
       "HIGHER STATE",
+      "Misty",
       "NATURAL MYSTIC",
       "NIGHTMARE BEFORE COFFEE",
       "NO SURRENDER*",
@@ -9468,6 +9469,21 @@
         "rating_score": 4.01538,
         "rating_count": 39,
         "brewery_name": "One Drop Brewing Co"
+      },
+      {
+        "beer_id": 7660320,
+        "beer_name": "Misty",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6543778_418c6_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 6.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "One Drop Brewing Co",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/one-drop-brewing-co-misty/7660320"
       },
       {
         "beer_id": 6918441,
@@ -9617,7 +9633,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9632,7 +9648,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9647,7 +9663,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9662,7 +9678,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9677,7 +9693,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9692,7 +9708,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9707,7 +9723,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
