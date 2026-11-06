@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1613335922,
+      "created_at": "Fri, 06 Nov 2026 12:28:56 +0000",
+      "user": "Plebc",
+      "checkin_comment": "",
+      "beer_name": "THE COUNT",
+      "beer_id": 6960907,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960907_c71ed_sm.jpeg",
+      "beer_style": "Sour - Fruited",
+      "beer_abv": 6.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1613332101,
       "created_at": "Fri, 06 Nov 2026 11:26:58 +0000",
       "user": "PulpFreeOrange",
