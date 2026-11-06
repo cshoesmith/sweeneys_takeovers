@@ -4630,6 +4630,19 @@
     "rating_count": 10,
     "brewery_name": "One Drop Brewing Co"
   },
+  "5697757": {
+    "beer_id": 5697757,
+    "beer_name": "Plzeň Czech Pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5697757_05de9_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5697757_05de9_hd.jpeg",
+    "beer_style": "Pilsner - Czech / Bohemian",
+    "beer_abv": 5.2,
+    "beer_ibu": 0,
+    "beer_description": "A Czech Pilsener brewed to the traditional method with noble hops, Boho malted barley, and a traditional Czech yeast. We’ve built our brewing water up from scratch to mimic the physical and spiritual home of the pilsener - Plzeň - from Czech Republic. Giving it a perfectly clean base for the herbaceous noble hop spice, soft bready maltiness, and crisp refreshing finish after extended cold conditioning.\r\nNa zdraví !",
+    "rating_score": 3.64646,
+    "rating_count": 127,
+    "brewery_name": "One Drop Brewing Co"
+  },
   "6850020": {
     "beer_id": 6850020,
     "beer_name": "SAID WHO",

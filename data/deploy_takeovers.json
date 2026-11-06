@@ -9317,9 +9317,9 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 106,
-    "unique_beers": 20,
-    "total_checkins_that_week": 107,
+    "checkins": 114,
+    "unique_beers": 21,
+    "total_checkins_that_week": 115,
     "share_pct": 99.1,
     "beers": [
       "AROUND THE CORNER",
@@ -9336,6 +9336,7 @@
       "NIGHTMARE BEFORE COFFEE",
       "NO SURRENDER*",
       "PIRATES ANTHEM",
+      "Plzeň Czech Pilsner",
       "SAID WHO",
       "SKANKY*",
       "TAKE THAT",
@@ -9542,6 +9543,20 @@
         "brewery_name": "One Drop Brewing Co"
       },
       {
+        "beer_id": 5697757,
+        "beer_name": "Plzeň Czech Pilsner",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5697757_05de9_sm.jpeg",
+        "beer_style": "Pilsner - Czech / Bohemian",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5697757_05de9_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A Czech Pilsener brewed to the traditional method with noble hops, Boho malted barley, and a traditional Czech yeast. We’ve built our brewing water up from scratch to mimic the physical and spiritual home of the pilsener - Plzeň - from Czech Republic. Giving it a perfectly clean base for the herbaceous noble hop spice, soft bready maltiness, and crisp refreshing finish after extended cold conditioning.\r\nNa zdraví !",
+        "rating_score": 3.64646,
+        "rating_count": 127,
+        "brewery_name": "One Drop Brewing Co"
+      },
+      {
         "beer_id": 6850020,
         "beer_name": "SAID WHO",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6850020_e22eb_sm.jpeg",
@@ -9629,26 +9644,26 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 20,
-        "pct": 0.0,
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 3,
+        "total": 21,
+        "pct": 14.3,
         "day_counts": [
           0,
-          0,
+          3,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9659,11 +9674,11 @@
         "rank": 2
       },
       {
-        "username": "hiriser",
-        "display_name": "Willy",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9674,11 +9689,11 @@
         "rank": 3
       },
       {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9693,7 +9708,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9708,7 +9723,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9723,7 +9738,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 21,
         "pct": 0.0,
         "day_counts": [
           0,
