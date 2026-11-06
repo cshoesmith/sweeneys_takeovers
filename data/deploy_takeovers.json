@@ -9317,20 +9317,22 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 149,
-    "unique_beers": 22,
-    "total_checkins_that_week": 150,
-    "share_pct": 99.3,
+    "checkins": 158,
+    "unique_beers": 24,
+    "total_checkins_that_week": 159,
+    "share_pct": 99.4,
     "beers": [
       "AROUND THE CORNER",
       "BRING THE SPEAKERS",
       "CUZZY IT",
+      "Double Fruited Mango Sour",
       "EVENT HORIZON",
       "EVERYBODY JOOGIN*",
       "GET BACK",
       "GET YOUR WALK ON",
       "HAZY PALE ALE",
       "HIGHER STATE",
+      "MANGO SOUR",
       "Misty",
       "NATURAL MYSTIC",
       "NIGHTMARE BEFORE COFFEE",
@@ -9387,6 +9389,21 @@
         "rating_score": 3.84138,
         "rating_count": 29,
         "brewery_name": "One Drop Brewing Co"
+      },
+      {
+        "beer_id": 7661995,
+        "beer_name": "Double Fruited Mango Sour",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5446280_12a06_sm.jpeg",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "One Drop Brewing Co",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/one-drop-brewing-co-double-fruited-mango-sour/7661995"
       },
       {
         "beer_id": 6826974,
@@ -9470,6 +9487,20 @@
         "beer_description": "Go higher. Stay hazy.\r\nWe’ve taken this one all the way up with a triple dry hop of Peacharine, Superdelic and Motueka Cryo, stacking layer upon layer of saturated hop goodness. Expect a full-blown tropical peach mojito moment - juicy stone fruit, crushed lime, sweet citrus and a little fresh green zip - all floating on a pillowy, velvety mouthfeel that just keeps rolling.\r\nElevate accordingly.",
         "rating_score": 4.01538,
         "rating_count": 39,
+        "brewery_name": "One Drop Brewing Co"
+      },
+      {
+        "beer_id": 6091141,
+        "beer_name": "MANGO SOUR",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6091141_ebdfb_sm.jpeg",
+        "beer_style": "Sour - Fruited",
+        "beer_abv": 4.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6091141_ebdfb_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "An OG One Drop Berliner Weisse base with a novel blend of 2 different bacteria, a unique yeast strain, and a big dose of Aussie QLD Mangoes. Expect a tropical fruity hit and a gentle citrus-lacto tartness backed up with a sweet, full, fresh mango flesh finish. Simple. Elegant. Yummo. ",
+        "rating_score": 3.97889,
+        "rating_count": 386,
         "brewery_name": "One Drop Brewing Co"
       },
       {
@@ -9662,12 +9693,12 @@
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 4,
-        "total": 22,
-        "pct": 18.2,
+        "checked": 5,
+        "total": 24,
+        "pct": 20.8,
         "day_counts": [
           0,
-          4,
+          5,
           0,
           0
         ],
@@ -9678,7 +9709,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 22,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9693,7 +9724,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 22,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9708,7 +9739,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 22,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9723,7 +9754,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 22,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9738,7 +9769,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 22,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9753,7 +9784,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 22,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,

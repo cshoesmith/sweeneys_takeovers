@@ -4486,6 +4486,20 @@
     "rating_count": 29,
     "brewery_name": "One Drop Brewing Co"
   },
+  "7661995": {
+    "beer_id": 7661995,
+    "beer_name": "Double Fruited Mango Sour",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5446280_12a06_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Sour - Fruited",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 0,
+    "brewery_name": "One Drop Brewing Co",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/one-drop-brewing-co-double-fruited-mango-sour/7661995"
+  },
   "6826974": {
     "beer_id": 6826974,
     "beer_name": "EVENT HORIZON",
@@ -4562,6 +4576,19 @@
     "beer_description": "Go higher. Stay hazy.\r\nWe’ve taken this one all the way up with a triple dry hop of Peacharine, Superdelic and Motueka Cryo, stacking layer upon layer of saturated hop goodness. Expect a full-blown tropical peach mojito moment - juicy stone fruit, crushed lime, sweet citrus and a little fresh green zip - all floating on a pillowy, velvety mouthfeel that just keeps rolling.\r\nElevate accordingly.",
     "rating_score": 4.01538,
     "rating_count": 39,
+    "brewery_name": "One Drop Brewing Co"
+  },
+  "6091141": {
+    "beer_id": 6091141,
+    "beer_name": "MANGO SOUR",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6091141_ebdfb_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6091141_ebdfb_hd.jpeg",
+    "beer_style": "Sour - Fruited",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "An OG One Drop Berliner Weisse base with a novel blend of 2 different bacteria, a unique yeast strain, and a big dose of Aussie QLD Mangoes. Expect a tropical fruity hit and a gentle citrus-lacto tartness backed up with a sweet, full, fresh mango flesh finish. Simple. Elegant. Yummo. ",
+    "rating_score": 3.97889,
+    "rating_count": 386,
     "brewery_name": "One Drop Brewing Co"
   },
   "7660320": {
