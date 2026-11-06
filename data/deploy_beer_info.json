@@ -4682,6 +4682,19 @@
     "rating_count": 4,
     "brewery_name": "One Drop Brewing Co"
   },
+  "6811342": {
+    "beer_id": 6811342,
+    "beer_name": "THE BIG DEAL",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6811342_f13d7_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6811342_f13d7_hd.jpeg",
+    "beer_style": "IPA - Triple",
+    "beer_abv": 9.5,
+    "beer_ibu": 0,
+    "beer_description": "\"This one's been brewing for a while.\r\nSix months in the making alongside our mates at PINTA in Poland, this Triple IPA began with one monster brew day and two long, slow mashes packed to the guts with oats, creating an amazingly soft mouthfeel, built to carry an outrageous hop load.\r\nThen we triple dry hopped with Motueka, Krush, a lick of Citra and a splash of juicy Dolcita, then supercharged with Yakima Chief's HyperBoost® Krush and Freestyle's SubZero Hop Kief™ Motueka.",
+    "rating_score": 4.12532,
+    "rating_count": 77,
+    "brewery_name": "One Drop Brewing Co"
+  },
   "6960907": {
     "beer_id": 6960907,
     "beer_name": "THE COUNT",

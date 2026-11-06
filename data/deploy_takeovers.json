@@ -9317,10 +9317,10 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 114,
-    "unique_beers": 21,
-    "total_checkins_that_week": 115,
-    "share_pct": 99.1,
+    "checkins": 144,
+    "unique_beers": 22,
+    "total_checkins_that_week": 145,
+    "share_pct": 99.3,
     "beers": [
       "AROUND THE CORNER",
       "BRING THE SPEAKERS",
@@ -9340,6 +9340,7 @@
       "SAID WHO",
       "SKANKY*",
       "TAKE THAT",
+      "THE BIG DEAL",
       "THE COUNT",
       "THEY GONNA WATCH*",
       "WALKTHROUGH"
@@ -9599,6 +9600,20 @@
         "brewery_name": "One Drop Brewing Co"
       },
       {
+        "beer_id": 6811342,
+        "beer_name": "THE BIG DEAL",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6811342_f13d7_sm.jpeg",
+        "beer_style": "IPA - Triple",
+        "beer_abv": 9.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6811342_f13d7_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "\"This one's been brewing for a while.\r\nSix months in the making alongside our mates at PINTA in Poland, this Triple IPA began with one monster brew day and two long, slow mashes packed to the guts with oats, creating an amazingly soft mouthfeel, built to carry an outrageous hop load.\r\nThen we triple dry hopped with Motueka, Krush, a lick of Citra and a splash of juicy Dolcita, then supercharged with Yakima Chief's HyperBoost® Krush and Freestyle's SubZero Hop Kief™ Motueka.",
+        "rating_score": 4.12532,
+        "rating_count": 77,
+        "brewery_name": "One Drop Brewing Co"
+      },
+      {
         "beer_id": 6960907,
         "beer_name": "THE COUNT",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960907_c71ed_sm.jpeg",
@@ -9647,12 +9662,12 @@
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 3,
-        "total": 21,
-        "pct": 14.3,
+        "checked": 4,
+        "total": 22,
+        "pct": 18.2,
         "day_counts": [
           0,
-          3,
+          4,
           0,
           0
         ],
@@ -9663,7 +9678,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 21,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9678,7 +9693,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 21,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9693,7 +9708,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 21,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9708,7 +9723,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 21,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9723,7 +9738,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 21,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -9738,7 +9753,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 21,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
