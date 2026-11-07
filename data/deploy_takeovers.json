@@ -9317,9 +9317,9 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 168,
+    "checkins": 173,
     "unique_beers": 24,
-    "total_checkins_that_week": 169,
+    "total_checkins_that_week": 174,
     "share_pct": 99.4,
     "beers": [
       "AROUND THE CORNER",
@@ -9708,13 +9708,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
+        "checked": 3,
         "total": 24,
-        "pct": 0.0,
+        "pct": 12.5,
         "day_counts": [
           0,
           0,
-          0,
+          3,
           0
         ],
         "rank": 2
