@@ -9317,10 +9317,10 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 173,
+    "checkins": 181,
     "unique_beers": 24,
-    "total_checkins_that_week": 174,
-    "share_pct": 99.4,
+    "total_checkins_that_week": 182,
+    "share_pct": 99.5,
     "beers": [
       "AROUND THE CORNER",
       "BRING THE SPEAKERS",
@@ -9690,6 +9690,21 @@
     "source": "heuristic",
     "member_results": [
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 8,
+        "total": 24,
+        "pct": 33.3,
+        "day_counts": [
+          0,
+          0,
+          8,
+          0
+        ],
+        "rank": 1
+      },
+      {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
@@ -9700,21 +9715,6 @@
           0,
           5,
           0,
-          0
-        ],
-        "rank": 1
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 3,
-        "total": 24,
-        "pct": 12.5,
-        "day_counts": [
-          0,
-          0,
-          3,
           0
         ],
         "rank": 2
