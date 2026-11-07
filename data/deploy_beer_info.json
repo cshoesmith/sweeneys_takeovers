@@ -4578,6 +4578,19 @@
     "rating_count": 39,
     "brewery_name": "One Drop Brewing Co"
   },
+  "5972852": {
+    "beer_id": 5972852,
+    "beer_name": "LAID BACK",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5972852_b73c8_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5972852_b73c8_hd.jpeg",
+    "beer_style": "Sour - Fruited Berliner Weisse",
+    "beer_abv": 4.9,
+    "beer_ibu": 0,
+    "beer_description": "A traditional Berliner Weisse base with a novel blend of 2 different bacteria, a unique yeast strain, and a big dose of Aussie and Kiwi blueberries. Expect gentle berry and citrus tartness backed up with a sweet, full, fresh blueberry finish. Yummo",
+    "rating_score": 4.07715,
+    "rating_count": 337,
+    "brewery_name": "One Drop Brewing Co"
+  },
   "6091141": {
     "beer_id": 6091141,
     "beer_name": "MANGO SOUR",
