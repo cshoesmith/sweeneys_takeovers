@@ -9317,10 +9317,10 @@
     "breweries": [
       "One Drop Brewing Co"
     ],
-    "checkins": 217,
+    "checkins": 221,
     "unique_beers": 25,
-    "total_checkins_that_week": 225,
-    "share_pct": 96.4,
+    "total_checkins_that_week": 230,
+    "share_pct": 96.1,
     "beers": [
       "AROUND THE CORNER",
       "BRING THE SPEAKERS",
@@ -9735,6 +9735,21 @@
         "rank": 2
       },
       {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 3,
+        "total": 25,
+        "pct": 12.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "rank": 3
+      },
+      {
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
@@ -9747,7 +9762,7 @@
           0,
           0
         ],
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "hiriser",
@@ -9762,27 +9777,12 @@
           0,
           0
         ],
-        "rank": 4
+        "rank": 5
       },
       {
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 0,
-        "total": 25,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "rank": 5
-      },
-      {
-        "username": "mw1414",
-        "display_name": "Wardy",
-        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
         "total": 25,
         "pct": 0.0,
