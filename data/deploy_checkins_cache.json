@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1614032716,
+      "created_at": "Sun, 08 Nov 2026 03:38:02 +0000",
+      "user": "ClintLloyd",
+      "checkin_comment": "Really nicely done. Citrus, rockmelon and papaya lead the way along with gorgeous sweet malt. Too easy drinking to be honest. Strata influence, sweetness and gentle mouth feel gives it a real Mountain Culture feeling. Great beer!",
+      "beer_name": "Never Enough - Hazy Double IPA",
+      "beer_id": 4452167,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4452167_d5f2d_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Behemoth Brewing Company",
+      "brewery_id": 73616,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1614029585,
       "created_at": "Sun, 08 Nov 2026 03:15:57 +0000",
       "user": "JThasaBeerDependency",
