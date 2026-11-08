@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1614046927,
+      "created_at": "Sun, 08 Nov 2026 07:13:42 +0000",
+      "user": "Dmozza95",
+      "checkin_comment": "",
+      "beer_name": "LAID BACK",
+      "beer_id": 5972852,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5972852_b73c8_sm.jpeg",
+      "beer_style": "Sour - Fruited Berliner Weisse",
+      "beer_abv": 4.9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4.75
+    },
+    {
       "checkin_id": 1614032716,
       "created_at": "Sun, 08 Nov 2026 03:38:02 +0000",
       "user": "ClintLloyd",
