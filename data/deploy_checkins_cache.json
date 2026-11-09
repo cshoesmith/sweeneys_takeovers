@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1614263425,
+      "created_at": "Mon, 09 Nov 2026 06:43:04 +0000",
+      "user": "oneiamfor",
+      "checkin_comment": "",
+      "beer_name": "GET YOUR WALK ON",
+      "beer_id": 6960909,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960909_0d475_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4.75
+    },
+    {
+      "checkin_id": 1614263357,
+      "created_at": "Mon, 09 Nov 2026 06:39:36 +0000",
+      "user": "oneiamfor",
+      "checkin_comment": "",
+      "beer_name": "PIRATES ANTHEM",
+      "beer_id": 6960908,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6960908_a1f5d_sm.jpeg",
+      "beer_style": "Sour - Fruited",
+      "beer_abv": 7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1614263259,
       "created_at": "Mon, 09 Nov 2026 06:35:54 +0000",
       "user": "oneiamfor",
