@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1614367289,
+      "created_at": "Tue, 10 Nov 2026 08:19:06 +0000",
+      "user": "Daan0180",
+      "checkin_comment": "Prima maar minder dan Corona",
+      "beer_name": "Cerveza",
+      "beer_id": 4963376,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4963376_e7b3b_sm.jpeg",
+      "beer_style": "Lager - Mexican",
+      "beer_abv": 4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Balter Brewing Company",
+      "brewery_id": 256779,
+      "rating": 2.75
+    },
+    {
       "checkin_id": 1614363593,
       "created_at": "Tue, 10 Nov 2026 05:10:27 +0000",
       "user": "RikBos",
