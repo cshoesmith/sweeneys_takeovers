@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1614486033,
+      "created_at": "Wed, 11 Nov 2026 06:48:05 +0000",
+      "user": "LiskaSiska",
+      "checkin_comment": "",
+      "beer_name": "AROUND THE CORNER",
+      "beer_id": 6910137,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6910137_327eb_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 6.9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 4.75
+    },
+    {
+      "checkin_id": 1614485562,
+      "created_at": "Wed, 11 Nov 2026 06:28:49 +0000",
+      "user": "LiskaSiska",
+      "checkin_comment": "",
+      "beer_name": "SAID WHO",
+      "beer_id": 6850020,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6850020_e22eb_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 7.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "One Drop Brewing Co",
+      "brewery_id": 418812,
+      "rating": 5
+    },
+    {
       "checkin_id": 1614485478,
       "created_at": "Wed, 11 Nov 2026 06:25:15 +0000",
       "user": "tawny_frogmouth",
