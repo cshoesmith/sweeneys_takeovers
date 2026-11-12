@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1614610667,
+      "created_at": "Thu, 12 Nov 2026 01:07:04 +0000",
+      "user": "ale_n",
+      "checkin_comment": "Doesn’t get much better than this!",
+      "beer_name": "Monkey Magic",
+      "beer_id": 6851797,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6851797_ff46c_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.8,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1614486033,
       "created_at": "Wed, 11 Nov 2026 06:48:05 +0000",
       "user": "LiskaSiska",
