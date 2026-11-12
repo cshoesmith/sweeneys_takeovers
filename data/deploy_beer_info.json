@@ -4774,6 +4774,19 @@
     "rating_count": 26,
     "brewery_name": "Future Brewing"
   },
+  "6842439": {
+    "beer_id": 6842439,
+    "beer_name": "Drift",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6842439_3f78d_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6842439_3f78d_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 5.2,
+    "beer_ibu": 0,
+    "beer_description": "Bursting with passionfruit and tropical citrus, this juicy DDH Hazy Pale brings big Motueka and Riwaka hop character with a soft, pillowy mouthfeel. Bright and vibrant up front, with a lush and smooth finish.",
+    "rating_score": 3.99276,
+    "rating_count": 76,
+    "brewery_name": "Future Brewing"
+  },
   "6385198": {
     "beer_id": 6385198,
     "beer_name": "Edgy AF",
@@ -4785,6 +4798,19 @@
     "beer_description": "This pastry stout is loaded with whole bean coffee from the legends at Sample coffee and maple syrup. Breakfast in a glass!",
     "rating_score": 4.16424,
     "rating_count": 172,
+    "brewery_name": "Future Brewing"
+  },
+  "6851795": {
+    "beer_id": 6851795,
+    "beer_name": "Grey Giant",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6851795_0c2f7_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6851795_0c2f7_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6.5,
+    "beer_ibu": 0,
+    "beer_description": "A bright, hop-saturated California IPA, triple dry hopped with Mosaic, Krush, & Nelson. Bursting with juicy mango, ripe peach, passionfruit and fresh orange, with layers of citrus zest, white grape and a subtle dank, resinous edge.",
+    "rating_score": 3.87112,
+    "rating_count": 116,
     "brewery_name": "Future Brewing"
   },
   "6961815": {
@@ -4824,6 +4850,19 @@
     "beer_description": "A juicy double dry hopped Hazy IPA loaded with Nelson, Citra & Galaxy. Expect an explosive hit of ripe passionfruit, mango and citrus, layered with juicy stone fruit and tropical sweetness. Soft, pillowy and seriously hazy, with a smooth finish.",
     "rating_score": 4.03292,
     "rating_count": 161,
+    "brewery_name": "Future Brewing"
+  },
+  "6774134": {
+    "beer_id": 6774134,
+    "beer_name": "Silver Tongue",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6774134_ad455_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6774134_ad455_hd.jpeg",
+    "beer_style": "Pilsner - Other",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "A crisp hop forward West Coast Pilsner with bright citrus, tropical fruit and a hint of white grape from a generous dry hop of Krush and Nelson.",
+    "rating_score": 3.98355,
+    "rating_count": 76,
     "brewery_name": "Future Brewing"
   },
   "6807981": {
