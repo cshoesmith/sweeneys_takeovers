@@ -9817,16 +9817,18 @@
     "breweries": [
       "Future Brewing"
     ],
-    "checkins": 45,
-    "unique_beers": 17,
-    "total_checkins_that_week": 47,
-    "share_pct": 95.7,
+    "checkins": 50,
+    "unique_beers": 19,
+    "total_checkins_that_week": 52,
+    "share_pct": 96.2,
     "beers": [
       "Arvo Haze",
+      "Cake Files",
       "Drift",
       "Edgy AF",
       "Golden Curse",
       "Grey Giant",
+      "Kiwi Dreams",
       "Kiwi Dreams 2026",
       "Lush Ones",
       "Monkey Magic",
@@ -9853,6 +9855,20 @@
         "beer_description": "A juicy, hop saturated DDH NZ Hazy IPA with the finest NZ hops from 3 different hop farms! Peacharine and Nelson from Freestyle Hops, Motueka from Garston Hops and Riwaka from Eggers Hops. ",
         "rating_score": 4.22115,
         "rating_count": 26,
+        "brewery_name": "Future Brewing"
+      },
+      {
+        "beer_id": 7646791,
+        "beer_name": "Cake Files",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7646791_d2e66_sm.jpeg",
+        "beer_style": "Stout - Imperial / Double Pastry",
+        "beer_abv": 13,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7646791_d2e66_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This Imperial Pastry Stout was loaded with massive amounts of real Pecans, Cocoa Nibs & Vanilla Beans. Dark Chocolate, Fudgy Brownie, Roasted Pecan, Sweet Vanilla. Drink the Chocolate Pecan Cake! ",
+        "rating_score": 4.23214,
+        "rating_count": 14,
         "brewery_name": "Future Brewing"
       },
       {
@@ -9909,6 +9925,20 @@
         "beer_description": "A bright, hop-saturated California IPA, triple dry hopped with Mosaic, Krush, & Nelson. Bursting with juicy mango, ripe peach, passionfruit and fresh orange, with layers of citrus zest, white grape and a subtle dank, resinous edge.",
         "rating_score": 3.87112,
         "rating_count": 116,
+        "brewery_name": "Future Brewing"
+      },
+      {
+        "beer_id": 6004782,
+        "beer_name": "Kiwi Dreams",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6004782_fea78_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double New England / Hazy",
+        "beer_abv": 8.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6004782_fea78_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Brewed in collaboration with our good mates from Bracket Brewing. This DDH Hazy DIPA was doubled dry hopped with Peacharine, Nelson and Motueka. Notes of Peach, Nectarine, Lemon and Lime.",
+        "rating_score": 4.23913,
+        "rating_count": 207,
         "brewery_name": "Future Brewing"
       },
       {
@@ -10057,7 +10087,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7646801_bad60_sm.jpeg",
         "beer_style": "IPA - American",
         "beer_abv": 6,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7646801_bad60_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A punchy TDH Cali IPA delivering a classic West Coast bite with a fresh NZ twist. Mosaic and Citra bring waves of juicy citrus, ripe mango and dank tropical fruit, while Nelson and NZ Cascade add white grape, bright grapefruit and zesty lime. ",
+        "rating_score": 3.87059,
+        "rating_count": 17,
+        "brewery_name": "Future Brewing"
       },
       {
         "beer_id": 6961813,
@@ -10081,7 +10117,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 17,
+        "total": 19,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10096,7 +10132,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 17,
+        "total": 19,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10111,7 +10147,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 17,
+        "total": 19,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10126,7 +10162,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 17,
+        "total": 19,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10141,7 +10177,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 17,
+        "total": 19,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10156,7 +10192,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 17,
+        "total": 19,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10171,7 +10207,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 17,
+        "total": 19,
         "pct": 0.0,
         "day_counts": [
           0,

@@ -4774,6 +4774,19 @@
     "rating_count": 26,
     "brewery_name": "Future Brewing"
   },
+  "7646791": {
+    "beer_id": 7646791,
+    "beer_name": "Cake Files",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7646791_d2e66_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7646791_d2e66_hd.jpeg",
+    "beer_style": "Stout - Imperial / Double Pastry",
+    "beer_abv": 13,
+    "beer_ibu": 0,
+    "beer_description": "This Imperial Pastry Stout was loaded with massive amounts of real Pecans, Cocoa Nibs & Vanilla Beans. Dark Chocolate, Fudgy Brownie, Roasted Pecan, Sweet Vanilla. Drink the Chocolate Pecan Cake! ",
+    "rating_score": 4.23214,
+    "rating_count": 14,
+    "brewery_name": "Future Brewing"
+  },
   "6842439": {
     "beer_id": 6842439,
     "beer_name": "Drift",
@@ -4811,6 +4824,19 @@
     "beer_description": "A bright, hop-saturated California IPA, triple dry hopped with Mosaic, Krush, & Nelson. Bursting with juicy mango, ripe peach, passionfruit and fresh orange, with layers of citrus zest, white grape and a subtle dank, resinous edge.",
     "rating_score": 3.87112,
     "rating_count": 116,
+    "brewery_name": "Future Brewing"
+  },
+  "6004782": {
+    "beer_id": 6004782,
+    "beer_name": "Kiwi Dreams",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6004782_fea78_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6004782_fea78_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double New England / Hazy",
+    "beer_abv": 8.5,
+    "beer_ibu": 0,
+    "beer_description": "Brewed in collaboration with our good mates from Bracket Brewing. This DDH Hazy DIPA was doubled dry hopped with Peacharine, Nelson and Motueka. Notes of Peach, Nectarine, Lemon and Lime.",
+    "rating_score": 4.23913,
+    "rating_count": 207,
     "brewery_name": "Future Brewing"
   },
   "6961815": {
@@ -4941,6 +4967,19 @@
     "beer_description": "A bold, hop forward Red IPA bringing together rich caramel malts and a punchy blend of US and NZ hops. Expect bursts of grapefruit, orange zest and tropical fruit, balanced by toasty malt sweetness, subtle pine and a firm bitterness.",
     "rating_score": 3.96538,
     "rating_count": 13,
+    "brewery_name": "Future Brewing"
+  },
+  "7646801": {
+    "beer_id": 7646801,
+    "beer_name": "West Coast Drive",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7646801_bad60_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7646801_bad60_hd.jpeg",
+    "beer_style": "IPA - American",
+    "beer_abv": 6,
+    "beer_ibu": 0,
+    "beer_description": "A punchy TDH Cali IPA delivering a classic West Coast bite with a fresh NZ twist. Mosaic and Citra bring waves of juicy citrus, ripe mango and dank tropical fruit, while Nelson and NZ Cascade add white grape, bright grapefruit and zesty lime. ",
+    "rating_score": 3.87059,
+    "rating_count": 17,
     "brewery_name": "Future Brewing"
   },
   "6961813": {
