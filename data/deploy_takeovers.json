@@ -9810,5 +9810,200 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-11-12",
+    "brewery": "Future Brewing",
+    "breweries": [
+      "Future Brewing"
+    ],
+    "checkins": 7,
+    "unique_beers": 6,
+    "total_checkins_that_week": 8,
+    "share_pct": 87.5,
+    "beers": [
+      "Kiwi Dreams 2026",
+      "Monkey Magic",
+      "Skaze",
+      "Splash",
+      "Strike",
+      "That Glow"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6961815,
+        "beer_name": "Kiwi Dreams 2026",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961815_76769_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double New England / Hazy",
+        "beer_abv": 8.1,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6961815_76769_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Brewed with our inner west pals, Bracket! We brewed this beer way back in 2024 and it was a hit! This time we added some Cashmere into the mix from Bracket plus the usual NZ suspects we both love - Nelson, Peacharine and Motueka. An absolute fruit bomb! ",
+        "rating_score": 4.27155,
+        "rating_count": 116,
+        "brewery_name": "Future Brewing"
+      },
+      {
+        "beer_id": 6851797,
+        "beer_name": "Monkey Magic",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6851797_ff46c_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 6.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6851797_ff46c_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A juicy double dry hopped Hazy IPA loaded with Nelson, Citra & Galaxy. Expect an explosive hit of ripe passionfruit, mango and citrus, layered with juicy stone fruit and tropical sweetness. Soft, pillowy and seriously hazy, with a smooth finish.",
+        "rating_score": 4.03292,
+        "rating_count": 161,
+        "brewery_name": "Future Brewing"
+      },
+      {
+        "beer_id": 6807981,
+        "beer_name": "Skaze",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807981_7a3a9_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double New England / Hazy",
+        "beer_abv": 8.9,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6807981_7a3a9_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This Hazy DIPA was triple dry hopped with Citra, Nelson, Nectaron & Riwaka. Expect explosive aromas of tropical fruit, citrus, ripe nectarine, followed by flavours of pineapple, mango, peach and candied lime. A creamy driven body balances the elevated ABV, delivering a smooth, juicy finish.",
+        "rating_score": 4.3486,
+        "rating_count": 178,
+        "brewery_name": "Future Brewing"
+      },
+      {
+        "beer_id": 6807975,
+        "beer_name": "Splash",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807975_cdae8_sm.jpeg",
+        "beer_style": "Sour - Smoothie / Pastry",
+        "beer_abv": 5.4,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6807980,
+        "beer_name": "Strike",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807980_bfc4e_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double",
+        "beer_abv": 7.8,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 7646809,
+        "beer_name": "That Glow",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7646809_7ea19_sm.jpeg",
+        "beer_style": "IPA - Red",
+        "beer_abv": 6.5,
+        "beer_auth_rating": null
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 6,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]

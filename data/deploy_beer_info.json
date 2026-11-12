@@ -4760,5 +4760,44 @@
     "rating_score": 0,
     "rating_count": 1,
     "brewery_name": "One Drop Brewing Co"
+  },
+  "6961815": {
+    "beer_id": 6961815,
+    "beer_name": "Kiwi Dreams 2026",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961815_76769_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6961815_76769_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double New England / Hazy",
+    "beer_abv": 8.1,
+    "beer_ibu": 0,
+    "beer_description": "Brewed with our inner west pals, Bracket! We brewed this beer way back in 2024 and it was a hit! This time we added some Cashmere into the mix from Bracket plus the usual NZ suspects we both love - Nelson, Peacharine and Motueka. An absolute fruit bomb! ",
+    "rating_score": 4.27155,
+    "rating_count": 116,
+    "brewery_name": "Future Brewing"
+  },
+  "6851797": {
+    "beer_id": 6851797,
+    "beer_name": "Monkey Magic",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6851797_ff46c_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6851797_ff46c_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.8,
+    "beer_ibu": 0,
+    "beer_description": "A juicy double dry hopped Hazy IPA loaded with Nelson, Citra & Galaxy. Expect an explosive hit of ripe passionfruit, mango and citrus, layered with juicy stone fruit and tropical sweetness. Soft, pillowy and seriously hazy, with a smooth finish.",
+    "rating_score": 4.03292,
+    "rating_count": 161,
+    "brewery_name": "Future Brewing"
+  },
+  "6807981": {
+    "beer_id": 6807981,
+    "beer_name": "Skaze",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807981_7a3a9_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6807981_7a3a9_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double New England / Hazy",
+    "beer_abv": 8.9,
+    "beer_ibu": 0,
+    "beer_description": "This Hazy DIPA was triple dry hopped with Citra, Nelson, Nectaron & Riwaka. Expect explosive aromas of tropical fruit, citrus, ripe nectarine, followed by flavours of pineapple, mango, peach and candied lime. A creamy driven body balances the elevated ABV, delivering a smooth, juicy finish.",
+    "rating_score": 4.3486,
+    "rating_count": 178,
+    "brewery_name": "Future Brewing"
   }
 }
