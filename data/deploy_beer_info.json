@@ -4877,5 +4877,44 @@
     "rating_score": 4.13103,
     "rating_count": 145,
     "brewery_name": "Future Brewing"
+  },
+  "6807978": {
+    "beer_id": 6807978,
+    "beer_name": "Surge",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807978_454a9_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6807978_454a9_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.9,
+    "beer_ibu": 0,
+    "beer_description": "This Hazy IPA was triple dry hopped with Nelson, Rakau, Southern Cross, Manilita, Nectaron & NZ Cascade. Bursting with juicy pineapple, passionfruit, ripe peach and mango, layered with white grape, citrus zest and subtle pine. Soft, pillowy mouthfeel and a saturated hop finish.",
+    "rating_score": 4.21474,
+    "rating_count": 156,
+    "brewery_name": "Future Brewing"
+  },
+  "7646809": {
+    "beer_id": 7646809,
+    "beer_name": "That Glow",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7646809_7ea19_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7646809_7ea19_hd.jpeg",
+    "beer_style": "IPA - Red",
+    "beer_abv": 6.5,
+    "beer_ibu": 0,
+    "beer_description": "A bold, hop forward Red IPA bringing together rich caramel malts and a punchy blend of US and NZ hops. Expect bursts of grapefruit, orange zest and tropical fruit, balanced by toasty malt sweetness, subtle pine and a firm bitterness.",
+    "rating_score": 3.96538,
+    "rating_count": 13,
+    "brewery_name": "Future Brewing"
+  },
+  "6961813": {
+    "beer_id": 6961813,
+    "beer_name": "Wizard Soak",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961813_461bf_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6961813_461bf_hd.jpeg",
+    "beer_style": "IPA - Quadruple",
+    "beer_abv": 12,
+    "beer_ibu": 0,
+    "beer_description": "We layered this monster with every hop product available to us! The result is the haziest and hoppiest beer we have ever made! Saturated almost to the brink of too much! This beer is intense. Citra, Riwaka, Nelson & Nectaron bring all the jooose!",
+    "rating_score": 4.51795,
+    "rating_count": 156,
+    "brewery_name": "Future Brewing"
   }
 }

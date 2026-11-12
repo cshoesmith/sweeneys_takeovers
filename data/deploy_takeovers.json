@@ -9817,10 +9817,10 @@
     "breweries": [
       "Future Brewing"
     ],
-    "checkins": 19,
+    "checkins": 23,
     "unique_beers": 13,
-    "total_checkins_that_week": 21,
-    "share_pct": 90.5,
+    "total_checkins_that_week": 25,
+    "share_pct": 92.0,
     "beers": [
       "Arvo Haze",
       "Edgy AF",
@@ -9983,7 +9983,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807978_454a9_sm.jpeg",
         "beer_style": "IPA - New England / Hazy",
         "beer_abv": 6.9,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6807978_454a9_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This Hazy IPA was triple dry hopped with Nelson, Rakau, Southern Cross, Manilita, Nectaron & NZ Cascade. Bursting with juicy pineapple, passionfruit, ripe peach and mango, layered with white grape, citrus zest and subtle pine. Soft, pillowy mouthfeel and a saturated hop finish.",
+        "rating_score": 4.21474,
+        "rating_count": 156,
+        "brewery_name": "Future Brewing"
       },
       {
         "beer_id": 7646809,
@@ -9991,7 +9997,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7646809_7ea19_sm.jpeg",
         "beer_style": "IPA - Red",
         "beer_abv": 6.5,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7646809_7ea19_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A bold, hop forward Red IPA bringing together rich caramel malts and a punchy blend of US and NZ hops. Expect bursts of grapefruit, orange zest and tropical fruit, balanced by toasty malt sweetness, subtle pine and a firm bitterness.",
+        "rating_score": 3.96538,
+        "rating_count": 13,
+        "brewery_name": "Future Brewing"
       },
       {
         "beer_id": 6961813,
@@ -9999,7 +10011,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961813_461bf_sm.jpeg",
         "beer_style": "IPA - Quadruple",
         "beer_abv": 12,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6961813_461bf_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "We layered this monster with every hop product available to us! The result is the haziest and hoppiest beer we have ever made! Saturated almost to the brink of too much! This beer is intense. Citra, Riwaka, Nelson & Nectaron bring all the jooose!",
+        "rating_score": 4.51795,
+        "rating_count": 156,
+        "brewery_name": "Future Brewing"
       }
     ],
     "source": "heuristic",
