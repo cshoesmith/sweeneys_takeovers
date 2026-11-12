@@ -4800,6 +4800,19 @@
     "rating_count": 116,
     "brewery_name": "Future Brewing"
   },
+  "6961816": {
+    "beer_id": 6961816,
+    "beer_name": "Lush Ones",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961816_f9e97_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6961816_f9e97_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.5,
+    "beer_ibu": 0,
+    "beer_description": "Brewed with our great mates from Brisbane, This Hazy IPA was double dry hopped with some of our favourite hops - Citra, Nelson & Peacharine. Ultra hazy and milky with ripe peach, tropical fruit, vibrant citrus & stonefruit. ",
+    "rating_score": 4.16287,
+    "rating_count": 167,
+    "brewery_name": "Future Brewing"
+  },
   "6851797": {
     "beer_id": 6851797,
     "beer_name": "Monkey Magic",
@@ -4837,6 +4850,32 @@
     "beer_description": "This vibrant blue Smoothie Sour blends generous banana purée with rich coconut cream and vanilla for a thick, tropical, dessert-like experience. Sweet, creamy and refreshingly tart, it's equal parts beach holiday and blue milkshake. ***Vegan - Lactose free***",
     "rating_score": 3.87423,
     "rating_count": 130,
+    "brewery_name": "Future Brewing"
+  },
+  "6774173": {
+    "beer_id": 6774173,
+    "beer_name": "Split the F",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-548669_49afd.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Stout - Irish Dry",
+    "beer_abv": 6,
+    "beer_ibu": 0,
+    "beer_description": "Dry Nitro Stout! Yum!",
+    "rating_score": 3.93382,
+    "rating_count": 34,
+    "brewery_name": "Future Brewing"
+  },
+  "6807980": {
+    "beer_id": 6807980,
+    "beer_name": "Strike",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807980_bfc4e_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6807980_bfc4e_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 7.8,
+    "beer_ibu": 0,
+    "beer_description": "Crisp, clean and unapologetically hop-forward. Triple dry hopped with Krush, Nelson, Strata and Mosaic, delivering explosive aromas of passionfruit, ripe mango, grapefruit and white grape, layered with dank cannabis, pine resin and bright citrus zest. Firm bitterness and a dry finish keep every sip dry and refreshing.",
+    "rating_score": 4.13103,
+    "rating_count": 145,
     "brewery_name": "Future Brewing"
   }
 }
