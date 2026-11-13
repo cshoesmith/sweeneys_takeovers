@@ -9817,9 +9817,9 @@
     "breweries": [
       "Future Brewing"
     ],
-    "checkins": 108,
+    "checkins": 109,
     "unique_beers": 21,
-    "total_checkins_that_week": 110,
+    "total_checkins_that_week": 111,
     "share_pct": 98.2,
     "beers": [
       "Arvo Haze",
@@ -10176,12 +10176,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 2,
+        "checked": 3,
         "total": 21,
-        "pct": 9.5,
+        "pct": 14.3,
         "day_counts": [
           0,
-          2,
+          3,
           0,
           0
         ],

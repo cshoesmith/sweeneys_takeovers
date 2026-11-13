@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1614810200,
+      "created_at": "Fri, 13 Nov 2026 11:19:28 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "",
+      "beer_name": "Skaze",
+      "beer_id": 6807981,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807981_7a3a9_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8.9,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4.3
+    },
+    {
       "checkin_id": 1614806599,
       "created_at": "Fri, 13 Nov 2026 09:55:20 +0000",
       "user": "tinkles17",
