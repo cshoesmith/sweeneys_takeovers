@@ -9817,10 +9817,10 @@
     "breweries": [
       "Future Brewing"
     ],
-    "checkins": 71,
+    "checkins": 76,
     "unique_beers": 19,
-    "total_checkins_that_week": 73,
-    "share_pct": 97.3,
+    "total_checkins_that_week": 78,
+    "share_pct": 97.4,
     "beers": [
       "Arvo Haze",
       "Cake Files",
@@ -10116,16 +10116,31 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 4,
+        "checked": 5,
         "total": 19,
-        "pct": 21.1,
+        "pct": 26.3,
         "day_counts": [
           0,
-          4,
+          5,
           0,
           0
         ],
         "rank": 1
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 2,
+        "total": 19,
+        "pct": 10.5,
+        "day_counts": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "rank": 2
       },
       {
         "username": "dapitz",
@@ -10140,7 +10155,7 @@
           0,
           0
         ],
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "docta",
@@ -10155,27 +10170,12 @@
           0,
           0
         ],
-        "rank": 3
+        "rank": 4
       },
       {
         "username": "hiriser",
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
-        "checked": 0,
-        "total": 19,
-        "pct": 0.0,
-        "day_counts": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "rank": 4
-      },
-      {
-        "username": "jimmy-swings",
-        "display_name": "Jimmy Swings",
-        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
         "total": 19,
         "pct": 0.0,
