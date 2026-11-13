@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1614810263,
+      "created_at": "Fri, 13 Nov 2026 11:20:28 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "was a really great nitro",
+      "beer_name": "Split the F",
+      "beer_id": 6774173,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Stout - Irish Dry",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 3.8
+    },
+    {
       "checkin_id": 1614810200,
       "created_at": "Fri, 13 Nov 2026 11:19:28 +0000",
       "user": "LightBeerking",
