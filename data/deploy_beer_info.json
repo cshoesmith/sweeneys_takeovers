@@ -5007,5 +5007,18 @@
     "rating_score": 4.51795,
     "rating_count": 156,
     "brewery_name": "Future Brewing"
+  },
+  "6920475": {
+    "beer_id": 6920475,
+    "beer_name": "Zuno",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6920475_2d6b3_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6920475_2d6b3_hd.jpeg",
+    "beer_style": "IPA - Session",
+    "beer_abv": 5.2,
+    "beer_ibu": 25,
+    "beer_description": "Our first ever Session IPA. We’ve applied the hopping techniques from our bigger Hazy IPAs to a lighter base for maximum crushability. Citra, Nelson, Nectaron\r\n",
+    "rating_score": 3.70192,
+    "rating_count": 78,
+    "brewery_name": "Future Brewing"
   }
 }
