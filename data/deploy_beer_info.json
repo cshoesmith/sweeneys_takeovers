@@ -4852,6 +4852,19 @@
     "rating_count": 116,
     "brewery_name": "Future Brewing"
   },
+  "6842447": {
+    "beer_id": 6842447,
+    "beer_name": "Love Thy Neighbour",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6842447_2f8b1_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6842447_2f8b1_hd.jpeg",
+    "beer_style": "Pilsner - Other",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "Crisp and refreshing with a snappy, dry finish. Bright aromas of lime and stonefruit, followed by subtle pine character. Light-bodied with a firm bitterness, making this an easy drinking yet flavour packed pilsner.",
+    "rating_score": 3.94784,
+    "rating_count": 116,
+    "brewery_name": "Future Brewing"
+  },
   "6961816": {
     "beer_id": 6961816,
     "beer_name": "Lush Ones",

@@ -9817,10 +9817,10 @@
     "breweries": [
       "Future Brewing"
     ],
-    "checkins": 76,
-    "unique_beers": 19,
-    "total_checkins_that_week": 78,
-    "share_pct": 97.4,
+    "checkins": 87,
+    "unique_beers": 20,
+    "total_checkins_that_week": 89,
+    "share_pct": 97.8,
     "beers": [
       "Arvo Haze",
       "Cake Files",
@@ -9830,6 +9830,7 @@
       "Grey Giant",
       "Kiwi Dreams",
       "Kiwi Dreams 2026",
+      "Love Thy Neighbour",
       "Lush Ones",
       "Monkey Magic",
       "Silver Tongue",
@@ -9952,6 +9953,20 @@
         "beer_ibu": 0,
         "beer_description": "Brewed with our inner west pals, Bracket! We brewed this beer way back in 2024 and it was a hit! This time we added some Cashmere into the mix from Bracket plus the usual NZ suspects we both love - Nelson, Peacharine and Motueka. An absolute fruit bomb! ",
         "rating_score": 4.27155,
+        "rating_count": 116,
+        "brewery_name": "Future Brewing"
+      },
+      {
+        "beer_id": 6842447,
+        "beer_name": "Love Thy Neighbour",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6842447_2f8b1_sm.jpeg",
+        "beer_style": "Pilsner - Other",
+        "beer_abv": 5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6842447_2f8b1_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Crisp and refreshing with a snappy, dry finish. Bright aromas of lime and stonefruit, followed by subtle pine character. Light-bodied with a firm bitterness, making this an easy drinking yet flavour packed pilsner.",
+        "rating_score": 3.94784,
         "rating_count": 116,
         "brewery_name": "Future Brewing"
       },
@@ -10116,12 +10131,12 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 5,
-        "total": 19,
-        "pct": 26.3,
+        "checked": 8,
+        "total": 20,
+        "pct": 40.0,
         "day_counts": [
           0,
-          5,
+          8,
           0,
           0
         ],
@@ -10131,12 +10146,12 @@
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 2,
-        "total": 19,
-        "pct": 10.5,
+        "checked": 5,
+        "total": 20,
+        "pct": 25.0,
         "day_counts": [
           0,
-          2,
+          5,
           0,
           0
         ],
@@ -10147,7 +10162,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10162,7 +10177,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10177,7 +10192,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10192,7 +10207,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10207,7 +10222,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
