@@ -9817,10 +9817,10 @@
     "breweries": [
       "Future Brewing"
     ],
-    "checkins": 99,
+    "checkins": 102,
     "unique_beers": 20,
-    "total_checkins_that_week": 101,
-    "share_pct": 98.0,
+    "total_checkins_that_week": 104,
+    "share_pct": 98.1,
     "beers": [
       "Arvo Haze",
       "Cake Files",
@@ -10131,12 +10131,12 @@
         "username": "mw1414",
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
-        "checked": 9,
+        "checked": 10,
         "total": 20,
-        "pct": 45.0,
+        "pct": 50.0,
         "day_counts": [
           0,
-          9,
+          10,
           0,
           0
         ],
