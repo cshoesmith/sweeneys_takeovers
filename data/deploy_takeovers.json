@@ -9817,10 +9817,10 @@
     "breweries": [
       "Future Brewing"
     ],
-    "checkins": 110,
+    "checkins": 113,
     "unique_beers": 21,
-    "total_checkins_that_week": 112,
-    "share_pct": 98.2,
+    "total_checkins_that_week": 115,
+    "share_pct": 98.3,
     "beers": [
       "Arvo Haze",
       "Cake Files",
@@ -10191,13 +10191,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
+        "checked": 3,
         "total": 21,
-        "pct": 0.0,
+        "pct": 14.3,
         "day_counts": [
           0,
           0,
-          0,
+          3,
           0
         ],
         "rank": 4
