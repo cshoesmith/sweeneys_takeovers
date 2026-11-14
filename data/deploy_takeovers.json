@@ -9817,9 +9817,9 @@
     "breweries": [
       "Future Brewing"
     ],
-    "checkins": 116,
+    "checkins": 119,
     "unique_beers": 21,
-    "total_checkins_that_week": 118,
+    "total_checkins_that_week": 121,
     "share_pct": 98.3,
     "beers": [
       "Arvo Haze",
@@ -10161,13 +10161,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 6,
+        "checked": 8,
         "total": 21,
-        "pct": 28.6,
+        "pct": 38.1,
         "day_counts": [
           0,
           0,
-          6,
+          8,
           0
         ],
         "rank": 2
