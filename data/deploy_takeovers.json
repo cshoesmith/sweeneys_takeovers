@@ -9817,9 +9817,9 @@
     "breweries": [
       "Future Brewing"
     ],
-    "checkins": 113,
+    "checkins": 116,
     "unique_beers": 21,
-    "total_checkins_that_week": 115,
+    "total_checkins_that_week": 118,
     "share_pct": 98.3,
     "beers": [
       "Arvo Haze",
@@ -10158,6 +10158,21 @@
         "rank": 1
       },
       {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 6,
+        "total": 21,
+        "pct": 28.6,
+        "day_counts": [
+          0,
+          0,
+          6,
+          0
+        ],
+        "rank": 2
+      },
+      {
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
@@ -10170,7 +10185,7 @@
           0,
           0
         ],
-        "rank": 2
+        "rank": 3
       },
       {
         "username": "lightbeerking",
@@ -10183,21 +10198,6 @@
           0,
           4,
           0,
-          0
-        ],
-        "rank": 3
-      },
-      {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 3,
-        "total": 21,
-        "pct": 14.3,
-        "day_counts": [
-          0,
-          0,
-          3,
           0
         ],
         "rank": 4
