@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1615162218,
+      "created_at": "Sat, 14 Nov 2026 09:30:54 +0000",
+      "user": "Beerant",
+      "checkin_comment": "",
+      "beer_name": "Wizard Soak",
+      "beer_id": 6961813,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961813_461bf_sm.jpeg",
+      "beer_style": "IPA - Quadruple",
+      "beer_abv": 12,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1615159828,
       "created_at": "Sat, 14 Nov 2026 08:55:02 +0000",
       "user": "sam_sarvaiya_3506",
