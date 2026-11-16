@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1615824274,
+      "created_at": "Mon, 16 Nov 2026 05:16:33 +0000",
+      "user": "Jordytapslut",
+      "checkin_comment": "I think i defaulted asking for a pint, forgetting im not in SA\nDeep, dark and chocolatey \nIt is good, however",
+      "beer_name": "Split the F",
+      "beer_id": 6774173,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Stout - Irish Dry",
+      "beer_abv": 6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4
+    },
+    {
       "checkin_id": 1615822353,
       "created_at": "Mon, 16 Nov 2026 04:21:00 +0000",
       "user": "Jordytapslut",
