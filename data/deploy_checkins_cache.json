@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1615826753,
+      "created_at": "Mon, 16 Nov 2026 07:00:32 +0000",
+      "user": "OzRazDaz",
+      "checkin_comment": "",
+      "beer_name": "Drift",
+      "beer_id": 6842439,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6842439_3f78d_sm.jpeg",
+      "beer_style": "Pale Ale - New England / Hazy",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4
+    },
+    {
       "checkin_id": 1615824274,
       "created_at": "Mon, 16 Nov 2026 05:16:33 +0000",
       "user": "Jordytapslut",
