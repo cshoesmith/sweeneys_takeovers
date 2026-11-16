@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1615822353,
+      "created_at": "Mon, 16 Nov 2026 04:21:00 +0000",
+      "user": "Jordytapslut",
+      "checkin_comment": "Damn, thats tatsy \nHuge haze, big stone fruit and enough hop to keep it going\nDispointing ammout of detectable kiwi, but oh well, cant win em all",
+      "beer_name": "Kiwi Dreams",
+      "beer_id": 6004782,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6004782_fea78_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4
+    },
+    {
       "checkin_id": 1615816122,
       "created_at": "Mon, 16 Nov 2026 02:35:47 +0000",
       "user": "ale_n",
