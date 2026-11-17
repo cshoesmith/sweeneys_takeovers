@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1615931157,
+      "created_at": "Tue, 17 Nov 2026 11:30:02 +0000",
+      "user": "rickyabedi",
+      "checkin_comment": "",
+      "beer_name": "Kiwi Dreams 2026",
+      "beer_id": 6961815,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961815_76769_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 2.5
+    },
+    {
       "checkin_id": 1615930686,
       "created_at": "Tue, 17 Nov 2026 11:15:03 +0000",
       "user": "rickyabedi",
