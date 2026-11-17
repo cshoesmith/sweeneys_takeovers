@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1615927058,
+      "created_at": "Tue, 17 Nov 2026 08:22:07 +0000",
+      "user": "nayla_gabriele",
+      "checkin_comment": "",
+      "beer_name": "Splash",
+      "beer_id": 6807975,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6807975_cdae8_sm.jpeg",
+      "beer_style": "Sour - Smoothie / Pastry",
+      "beer_abv": 5.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1615926425,
+      "created_at": "Tue, 17 Nov 2026 07:46:21 +0000",
+      "user": "subhamp17",
+      "checkin_comment": "",
+      "beer_name": "That Glow",
+      "beer_id": 7646809,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7646809_7ea19_sm.jpeg",
+      "beer_style": "IPA - Red",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 3
+    },
+    {
       "checkin_id": 1615925668,
       "created_at": "Tue, 17 Nov 2026 07:08:47 +0000",
       "user": "subhamp17",
