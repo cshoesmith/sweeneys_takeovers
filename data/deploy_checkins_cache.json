@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1616039689,
+      "created_at": "Wed, 18 Nov 2026 08:16:01 +0000",
+      "user": "Buckets20",
+      "checkin_comment": "",
+      "beer_name": "Lush Ones",
+      "beer_id": 6961816,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961816_f9e97_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1616036284,
       "created_at": "Wed, 18 Nov 2026 05:35:48 +0000",
       "user": "wingman247",
