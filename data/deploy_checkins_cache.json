@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1616019943,
+      "created_at": "Wed, 18 Nov 2026 01:11:55 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Zuno",
+      "beer_id": 6920475,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6920475_2d6b3_sm.jpeg",
+      "beer_style": "IPA - Session",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4
+    },
+    {
       "checkin_id": 1615931157,
       "created_at": "Tue, 17 Nov 2026 11:30:02 +0000",
       "user": "rickyabedi",
