@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1616161807,
+      "created_at": "Thu, 19 Nov 2026 05:26:46 +0000",
+      "user": "Boflanagan",
+      "checkin_comment": "Very smooth. Slightly smokey and a bit chocolatey.",
+      "beer_name": "Darkness London Porter",
+      "beer_id": 53026,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-53026_fc7ba_sm.jpeg",
+      "beer_style": "Porter - English",
+      "beer_abv": 4.7,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badlands Brewery",
+      "brewery_id": 4322,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1616161628,
+      "created_at": "Thu, 19 Nov 2026 05:21:09 +0000",
+      "user": "Boflanagan",
+      "checkin_comment": "Sessionable, dry and decently hoppy",
+      "beer_name": "Boa XPA",
+      "beer_id": 5281075,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5281075_01949_sm.jpeg",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 4.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badlands Brewery",
+      "brewery_id": 4322,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1616160433,
       "created_at": "Thu, 19 Nov 2026 04:43:00 +0000",
       "user": "Smh06",

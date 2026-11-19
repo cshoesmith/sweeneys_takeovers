@@ -5020,5 +5020,44 @@
     "rating_score": 3.70192,
     "rating_count": 78,
     "brewery_name": "Future Brewing"
+  },
+  "5281075": {
+    "beer_id": 5281075,
+    "beer_name": "Boa XPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5281075_01949_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5281075_75a82_hd.jpeg",
+    "beer_style": "Pale Ale - XPA (Extra Pale)",
+    "beer_abv": 4.6,
+    "beer_ibu": 27,
+    "beer_description": "Soft, Sessionable and Uber refreshing - Beer Of Awesomeness has bright tropical and citrus notes from the all-Aussie hop combo, imparting mandarin, melon and lychee flavours. The perfect thirst quencher when you come off the trails. SEND IT! (named after new 8km gravity mtb trail in Orange \"Trail of Awesomeness\" Ride the Trail, drink the beer, that's a whole lot of awesomeness!)",
+    "rating_score": 3.52659,
+    "rating_count": 252,
+    "brewery_name": "Badlands Brewery"
+  },
+  "53026": {
+    "beer_id": 53026,
+    "beer_name": "Darkness London Porter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-53026_fc7ba_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-53026_7a3e5_hd.jpeg",
+    "beer_style": "Porter - English",
+    "beer_abv": 4.7,
+    "beer_ibu": 0,
+    "beer_description": "Plunge the deep dark depths of this highly sessionable porter &\r\nsurface refreshed & ready for another. A spectrum of unusual roasted malts give a\r\ndeep, rich charcter of rum, raisin\r\n& chocolate.",
+    "rating_score": 3.61601,
+    "rating_count": 1558,
+    "brewery_name": "Badlands Brewery"
+  },
+  "7650626": {
+    "beer_id": 7650626,
+    "beer_name": "Next NEIPA",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-4322_48361.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.6,
+    "beer_ibu": 0,
+    "beer_description": "Hoppy. Juicy. Hazy. You know the drill.",
+    "rating_score": 0,
+    "rating_count": 9,
+    "brewery_name": "Badlands Brewery"
   }
 }
