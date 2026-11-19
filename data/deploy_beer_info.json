@@ -5047,6 +5047,20 @@
     "rating_count": 1558,
     "brewery_name": "Badlands Brewery"
   },
+  "7218044": {
+    "beer_id": 7218044,
+    "beer_name": "Harald’s Hef",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4167852_95978_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Wheat Beer - Hefeweizen",
+    "beer_abv": 5.2,
+    "beer_ibu": 0,
+    "rating_score": 3.72,
+    "rating_count": 10,
+    "brewery_name": "Badlands Brewery",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/badlands-brewery-harald-s-hef/7218044"
+  },
   "7650626": {
     "beer_id": 7650626,
     "beer_name": "Next NEIPA",
@@ -5059,5 +5073,33 @@
     "rating_score": 0,
     "rating_count": 9,
     "brewery_name": "Badlands Brewery"
+  },
+  "6676854": {
+    "beer_id": 6676854,
+    "beer_name": "Pay Dirt",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5794989_ee3e6_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Historical Beer - Pre-Prohibition Lager",
+    "beer_abv": 4.7,
+    "beer_ibu": 0,
+    "rating_score": 3.39412,
+    "rating_count": 17,
+    "brewery_name": "Badlands Brewery",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/badlands-brewery-pay-dirt/6676854"
+  },
+  "1543786": {
+    "beer_id": 1543786,
+    "beer_name": "Scottish Cask Ale",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-4322_48361.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Scottish Ale",
+    "beer_abv": 5.0,
+    "beer_ibu": 0,
+    "rating_score": 3.57143,
+    "rating_count": 21,
+    "brewery_name": "Badlands Brewery",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/badlands-brewery-scottish-cask-ale/1543786"
   }
 }
