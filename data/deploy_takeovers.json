@@ -10255,10 +10255,10 @@
     "breweries": [
       "Badlands Brewery"
     ],
-    "checkins": 13,
+    "checkins": 14,
     "unique_beers": 7,
-    "total_checkins_that_week": 15,
-    "share_pct": 86.7,
+    "total_checkins_that_week": 16,
+    "share_pct": 87.5,
     "beers": [
       "Boa XPA",
       "Darkness London Porter",
@@ -10377,12 +10377,12 @@
         "username": "docta",
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 1,
+        "checked": 2,
         "total": 7,
-        "pct": 14.3,
+        "pct": 28.6,
         "day_counts": [
           0,
-          1,
+          2,
           0,
           0
         ],

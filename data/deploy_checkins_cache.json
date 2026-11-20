@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1616303980,
+      "created_at": "Fri, 20 Nov 2026 02:30:23 +0000",
+      "user": "docta",
+      "checkin_comment": "",
+      "beer_name": "Next NEIPA",
+      "beer_id": 7650626,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badlands Brewery",
+      "brewery_id": 4322,
+      "rating": 3.75
+    },
+    {
       "checkin_id": 1616293973,
       "created_at": "Fri, 20 Nov 2026 01:17:21 +0000",
       "user": "docta",
