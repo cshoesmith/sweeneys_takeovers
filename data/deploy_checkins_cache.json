@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1616325577,
+      "created_at": "Fri, 20 Nov 2026 10:21:10 +0000",
+      "user": "PlinyDownUnder",
+      "checkin_comment": "",
+      "beer_name": "House Cider",
+      "beer_id": 5616596,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Cider - Dry",
+      "beer_abv": 4.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badlands Brewery",
+      "brewery_id": 4322,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1616323983,
       "created_at": "Fri, 20 Nov 2026 09:30:27 +0000",
       "user": "LightBeerking",

@@ -10255,15 +10255,16 @@
     "breweries": [
       "Badlands Brewery"
     ],
-    "checkins": 42,
-    "unique_beers": 10,
-    "total_checkins_that_week": 50,
-    "share_pct": 84.0,
+    "checkins": 43,
+    "unique_beers": 11,
+    "total_checkins_that_week": 51,
+    "share_pct": 84.3,
     "beers": [
       "Boa XPA",
       "Darkness London Porter",
       "Harald’s Hef",
       "Heaps Hoppy",
+      "House Cider",
       "Jaxon Red IPA",
       "Kilt",
       "Next NEIPA",
@@ -10328,6 +10329,21 @@
         "rating_score": 3.46336,
         "rating_count": 651,
         "brewery_name": "Badlands Brewery"
+      },
+      {
+        "beer_id": 5616596,
+        "beer_name": "House Cider",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6204714_65bc6_sm.jpeg",
+        "beer_style": "Cider - Dry",
+        "beer_abv": 4.6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 3.48333,
+        "rating_count": 12,
+        "brewery_name": "Badlands Brewery",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/badlands-brewery-house-cider/5616596"
       },
       {
         "beer_id": 2961957,
@@ -10423,8 +10439,8 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 6,
-        "total": 10,
-        "pct": 60.0,
+        "total": 11,
+        "pct": 54.5,
         "day_counts": [
           0,
           6,
@@ -10438,8 +10454,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 10,
-        "pct": 30.0,
+        "total": 11,
+        "pct": 27.3,
         "day_counts": [
           0,
           3,
@@ -10453,8 +10469,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 3,
-        "total": 10,
-        "pct": 30.0,
+        "total": 11,
+        "pct": 27.3,
         "day_counts": [
           0,
           3,
@@ -10468,7 +10484,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10483,7 +10499,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10498,7 +10514,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10513,7 +10529,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 10,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
