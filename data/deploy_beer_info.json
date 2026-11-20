@@ -5074,6 +5074,32 @@
     "rating_count": 651,
     "brewery_name": "Badlands Brewery"
   },
+  "2961957": {
+    "beer_id": 2961957,
+    "beer_name": "Jaxon Red IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2961957_411b3_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2961957_50d4f_hd.jpeg",
+    "beer_style": "IPA - Red",
+    "beer_abv": 5.9,
+    "beer_ibu": 50,
+    "beer_description": "Turn ‘n’ loosen your coat & calm your fever with Jaxon. A red IPA in the Badlands tradition — complex, smooth, layered malt flavours exploded with new world hops. Two hops from our U.S. cousins & two home grown. Contact the brewery if you need a keg to dance on.",
+    "rating_score": 3.71953,
+    "rating_count": 1380,
+    "brewery_name": "Badlands Brewery"
+  },
+  "825305": {
+    "beer_id": 825305,
+    "beer_name": "Kilt",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-825305_b54e1_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-825305_8cc22_hd.jpeg",
+    "beer_style": "Scottish Ale",
+    "beer_abv": 5,
+    "beer_ibu": 28,
+    "beer_description": "For an “uplifting” experience wrap your sporran around this malty number. Dark amber colour with rich, malty flavours, a rounded palette & at 5% - dangerously drinkable. A truly independant Scott. Slainte Mhath!",
+    "rating_score": 3.54297,
+    "rating_count": 1635,
+    "brewery_name": "Badlands Brewery"
+  },
   "7650626": {
     "beer_id": 7650626,
     "beer_name": "Next NEIPA",
