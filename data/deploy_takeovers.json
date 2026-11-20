@@ -10255,10 +10255,10 @@
     "breweries": [
       "Badlands Brewery"
     ],
-    "checkins": 14,
-    "unique_beers": 7,
-    "total_checkins_that_week": 16,
-    "share_pct": 87.5,
+    "checkins": 16,
+    "unique_beers": 8,
+    "total_checkins_that_week": 18,
+    "share_pct": 88.9,
     "beers": [
       "Boa XPA",
       "Darkness London Porter",
@@ -10266,7 +10266,8 @@
       "Heaps Hoppy",
       "Next NEIPA",
       "Pay Dirt",
-      "Scottish Cask Ale"
+      "Scottish Cask Ale",
+      "U-Boat"
     ],
     "beer_details": [
       {
@@ -10369,6 +10370,20 @@
         "brewery_name": "Badlands Brewery",
         "brewery_country": "Australia",
         "beer_page_url": "https://untappd.com/b/badlands-brewery-scottish-cask-ale/1543786"
+      },
+      {
+        "beer_id": 697226,
+        "beer_name": "U-Boat",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-697226_1275d_sm.jpeg",
+        "beer_style": "Lager - Pale",
+        "beer_abv": 5.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-697226_b8170_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "This malty German lager has been brewed with German malt, hops & yeast. Rich malt flavours combine with a smooth mouth feel. Cool fermented & cold conditioned\r\nfor a traditional German lager.",
+        "rating_score": 3.39479,
+        "rating_count": 681,
+        "brewery_name": "Badlands Brewery"
       }
     ],
     "source": "heuristic",
@@ -10378,8 +10393,8 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 2,
-        "total": 7,
-        "pct": 28.6,
+        "total": 8,
+        "pct": 25.0,
         "day_counts": [
           0,
           2,
@@ -10393,7 +10408,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10408,7 +10423,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10423,7 +10438,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10438,7 +10453,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10453,7 +10468,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10468,7 +10483,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 7,
+        "total": 8,
         "pct": 0.0,
         "day_counts": [
           0,

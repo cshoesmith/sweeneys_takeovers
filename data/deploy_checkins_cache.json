@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1616312219,
+      "created_at": "Fri, 20 Nov 2026 04:02:15 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Next NEIPA",
+      "beer_id": 7650626,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badlands Brewery",
+      "brewery_id": 4322,
+      "rating": 4
+    },
+    {
+      "checkin_id": 1616311998,
+      "created_at": "Fri, 20 Nov 2026 03:58:57 +0000",
+      "user": "Byangum",
+      "checkin_comment": "",
+      "beer_name": "U-Boat",
+      "beer_id": 697226,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-697226_1275d_sm.jpeg",
+      "beer_style": "Lager - Pale",
+      "beer_abv": 5.2,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Badlands Brewery",
+      "brewery_id": 4322,
+      "rating": 0
+    },
+    {
       "checkin_id": 1616303980,
       "created_at": "Fri, 20 Nov 2026 02:30:23 +0000",
       "user": "docta",
