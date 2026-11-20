@@ -10255,10 +10255,10 @@
     "breweries": [
       "Badlands Brewery"
     ],
-    "checkins": 37,
+    "checkins": 40,
     "unique_beers": 10,
-    "total_checkins_that_week": 40,
-    "share_pct": 92.5,
+    "total_checkins_that_week": 47,
+    "share_pct": 85.1,
     "beers": [
       "Boa XPA",
       "Darkness London Porter",
@@ -10422,12 +10422,12 @@
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 4,
+        "checked": 6,
         "total": 10,
-        "pct": 40.0,
+        "pct": 60.0,
         "day_counts": [
           0,
-          4,
+          6,
           0,
           0
         ],
