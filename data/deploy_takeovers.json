@@ -10255,14 +10255,15 @@
     "breweries": [
       "Badlands Brewery"
     ],
-    "checkins": 11,
-    "unique_beers": 6,
-    "total_checkins_that_week": 13,
-    "share_pct": 84.6,
+    "checkins": 13,
+    "unique_beers": 7,
+    "total_checkins_that_week": 15,
+    "share_pct": 86.7,
     "beers": [
       "Boa XPA",
       "Darkness London Porter",
       "Harald’s Hef",
+      "Heaps Hoppy",
       "Next NEIPA",
       "Pay Dirt",
       "Scottish Cask Ale"
@@ -10312,6 +10313,20 @@
         "beer_page_url": "https://untappd.com/b/badlands-brewery-harald-s-hef/7218044"
       },
       {
+        "beer_id": 1520271,
+        "beer_name": "Heaps Hoppy",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1520271_0671a_sm.jpeg",
+        "beer_style": "Pale Ale - New Zealand",
+        "beer_abv": 4.2,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1520271_e8d40_hd.jpeg",
+        "beer_ibu": 37,
+        "beer_description": "Golden Pale Ale with 'Heaps' of NZ hops. NZ hops are prized for their fragrant, clean, fruity aromas and their disease free & therefore chemical free cultivation. In this beer Badlands is showcasing four NZ hops. Can you pick them? A smooth fragrant, hoppy beer with extreme sessionalbility. Get your rocks hot for the hang, plenty of ice in the chilly bin & invite your choicest crew 'round for a few.\r\n",
+        "rating_score": 3.46336,
+        "rating_count": 651,
+        "brewery_name": "Badlands Brewery"
+      },
+      {
         "beer_id": 7650626,
         "beer_name": "Next NEIPA",
         "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-4322_48361.jpeg",
@@ -10359,26 +10374,26 @@
     "source": "heuristic",
     "member_results": [
       {
-        "username": "dapitz",
-        "display_name": "Darren Apitz",
-        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
-        "total": 6,
-        "pct": 0.0,
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 1,
+        "total": 7,
+        "pct": 14.3,
         "day_counts": [
           0,
-          0,
+          1,
           0,
           0
         ],
         "rank": 1
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10393,7 +10408,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10408,7 +10423,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10423,7 +10438,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10438,7 +10453,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10453,7 +10468,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 7,
         "pct": 0.0,
         "day_counts": [
           0,

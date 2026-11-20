@@ -5061,6 +5061,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/badlands-brewery-harald-s-hef/7218044"
   },
+  "1520271": {
+    "beer_id": 1520271,
+    "beer_name": "Heaps Hoppy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1520271_0671a_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1520271_e8d40_hd.jpeg",
+    "beer_style": "Pale Ale - New Zealand",
+    "beer_abv": 4.2,
+    "beer_ibu": 37,
+    "beer_description": "Golden Pale Ale with 'Heaps' of NZ hops. NZ hops are prized for their fragrant, clean, fruity aromas and their disease free & therefore chemical free cultivation. In this beer Badlands is showcasing four NZ hops. Can you pick them? A smooth fragrant, hoppy beer with extreme sessionalbility. Get your rocks hot for the hang, plenty of ice in the chilly bin & invite your choicest crew 'round for a few.\r\n",
+    "rating_score": 3.46336,
+    "rating_count": 651,
+    "brewery_name": "Badlands Brewery"
+  },
   "7650626": {
     "beer_id": 7650626,
     "beer_name": "Next NEIPA",
