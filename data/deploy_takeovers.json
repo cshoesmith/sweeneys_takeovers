@@ -10255,10 +10255,10 @@
     "breweries": [
       "Badlands Brewery"
     ],
-    "checkins": 43,
+    "checkins": 45,
     "unique_beers": 11,
-    "total_checkins_that_week": 51,
-    "share_pct": 84.3,
+    "total_checkins_that_week": 55,
+    "share_pct": 81.8,
     "beers": [
       "Boa XPA",
       "Darkness London Porter",
@@ -10483,13 +10483,13 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 0,
+        "checked": 2,
         "total": 11,
-        "pct": 0.0,
+        "pct": 18.2,
         "day_counts": [
           0,
           0,
-          0,
+          2,
           0
         ],
         "rank": 4
