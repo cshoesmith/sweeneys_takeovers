@@ -10251,24 +10251,28 @@
   },
   {
     "date": "2026-11-19",
-    "brewery": "Badlands Brewery",
+    "brewery": "Badlands Brewery & Rocky Ridge Brewing Co.",
     "breweries": [
-      "Badlands Brewery"
+      "Badlands Brewery",
+      "Rocky Ridge Brewing Co."
     ],
-    "checkins": 57,
-    "unique_beers": 11,
-    "total_checkins_that_week": 74,
-    "share_pct": 77.0,
+    "checkins": 77,
+    "unique_beers": 14,
+    "total_checkins_that_week": 84,
+    "share_pct": 91.7,
     "beers": [
       "Boa XPA",
       "Darkness London Porter",
       "Harald’s Hef",
       "Heaps Hoppy",
+      "Hear Me Out",
       "House Cider",
       "Jaxon Red IPA",
       "Kilt",
       "Next NEIPA",
       "Pay Dirt",
+      "Rock Juice",
+      "Rock Juice V15",
       "Scottish Cask Ale",
       "U-Boat"
     ],
@@ -10329,6 +10333,20 @@
         "rating_score": 3.46336,
         "rating_count": 651,
         "brewery_name": "Badlands Brewery"
+      },
+      {
+        "beer_id": 6961129,
+        "beer_name": "Hear Me Out",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961129_2494f_sm.jpeg",
+        "beer_style": "Sour - Smoothie / Pastry",
+        "beer_abv": 7,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6961129_2494f_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "HEAR ME OUT | 7% | STRAWBERRY SOFT SERVE SMOOTHIE SOUR\r\n\r\nOkay, hear me out. A soft serve cone dunked in a bucket of fresh strawberries, turned into a 7% Smoothie Sour. Kettle-soured Pilsner and oats, then litres of strawberry, real vanilla, lactose and actual soft serve powder. Thick, pink, opaque, and it drinks like a strawberry sundae with a sour snap. Far more beer than it looks. Told you.",
+        "rating_score": 3.75755,
+        "rating_count": 53,
+        "brewery_name": "Rocky Ridge Brewing Co."
       },
       {
         "beer_id": 5616596,
@@ -10403,6 +10421,34 @@
         "beer_page_url": "https://untappd.com/b/badlands-brewery-pay-dirt/6676854"
       },
       {
+        "beer_id": 2170000,
+        "beer_name": "Rock Juice",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2170000_52280_sm.jpeg",
+        "beer_style": "IPA - Triple New England / Hazy",
+        "beer_abv": 10.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2170000_52280_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Expect an opaque lupulin mist swirling in the glass, from which tropical fruit juice – mango, pineapple and orange - aromas rise. Such fruitiness continues through the full, almost creamy mouthfeel to the last sip, followed by a lasting alcohol warmth.",
+        "rating_score": 4.11375,
+        "rating_count": 1440,
+        "brewery_name": "Rocky Ridge Brewing Co."
+      },
+      {
+        "beer_id": 6350783,
+        "beer_name": "Rock Juice V15",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6350783_c4dc7_sm.jpeg",
+        "beer_style": "IPA - Triple New England / Hazy",
+        "beer_abv": 10,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6350783_c4dc7_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Let’s talk hops — because if you’ve read this far lets face it that's why you're here. \r\n\r\nEclipse. Idaho 7 Dynaboost. El Dorado Salvo. Cryopop. Vic Secret. Amarillo Cryo. Motueka. Rakau. Krush Hyperboost. Nelson SubZero Hop Kief. Rakau SubZero Hop Kief.\r\nHypercharged citrus. Stonefruit resin. Lush tropical overload. Dank edges wrapped in a velvet haze. It’s bright. It’s complex. It’s stupidly drinkable! \r\n\r\nBuilt on a soft, layered malt base of Sustainable Pilsner, Cadiz Tritordeum, Triticale, Oats, Wheat and Chit, its juice with purpose, power and poise. This is top-shelf, peak-performance, unapologetically ridiculous IIIPA craft at its absolute best. ",
+        "rating_score": 4.18125,
+        "rating_count": 272,
+        "brewery_name": "Rocky Ridge Brewing Co."
+      },
+      {
         "beer_id": 1543786,
         "beer_name": "Scottish Cask Ale",
         "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-4322_48361.jpeg",
@@ -10438,12 +10484,12 @@
         "username": "jimmy-swings",
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
-        "checked": 6,
-        "total": 11,
-        "pct": 54.5,
+        "checked": 7,
+        "total": 14,
+        "pct": 50.0,
         "day_counts": [
           0,
-          6,
+          7,
           0,
           0
         ],
@@ -10453,39 +10499,39 @@
         "username": "dapitz",
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
-        "checked": 3,
-        "total": 11,
-        "pct": 27.3,
+        "checked": 4,
+        "total": 14,
+        "pct": 28.6,
         "day_counts": [
           0,
           0,
-          3,
+          4,
           0
         ],
         "rank": 2
       },
       {
-        "username": "docta",
-        "display_name": "Doc",
-        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
-        "checked": 3,
-        "total": 11,
-        "pct": 27.3,
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 4,
+        "total": 14,
+        "pct": 28.6,
         "day_counts": [
           0,
-          3,
+          4,
           0,
           0
         ],
         "rank": 3
       },
       {
-        "username": "lightbeerking",
-        "display_name": "Chris S",
-        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 3,
-        "total": 11,
-        "pct": 27.3,
+        "total": 14,
+        "pct": 21.4,
         "day_counts": [
           0,
           3,
@@ -10499,7 +10545,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 11,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10514,7 +10560,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10529,7 +10575,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 11,
+        "total": 14,
         "pct": 0.0,
         "day_counts": [
           0,

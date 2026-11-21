@@ -5074,6 +5074,19 @@
     "rating_count": 651,
     "brewery_name": "Badlands Brewery"
   },
+  "6961129": {
+    "beer_id": 6961129,
+    "beer_name": "Hear Me Out",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6961129_2494f_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6961129_2494f_hd.jpeg",
+    "beer_style": "Sour - Smoothie / Pastry",
+    "beer_abv": 7,
+    "beer_ibu": 0,
+    "beer_description": "HEAR ME OUT | 7% | STRAWBERRY SOFT SERVE SMOOTHIE SOUR\r\n\r\nOkay, hear me out. A soft serve cone dunked in a bucket of fresh strawberries, turned into a 7% Smoothie Sour. Kettle-soured Pilsner and oats, then litres of strawberry, real vanilla, lactose and actual soft serve powder. Thick, pink, opaque, and it drinks like a strawberry sundae with a sour snap. Far more beer than it looks. Told you.",
+    "rating_score": 3.75755,
+    "rating_count": 53,
+    "brewery_name": "Rocky Ridge Brewing Co."
+  },
   "5616596": {
     "beer_id": 5616596,
     "beer_name": "House Cider",
@@ -5140,6 +5153,32 @@
     "brewery_name": "Badlands Brewery",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/badlands-brewery-pay-dirt/6676854"
+  },
+  "2170000": {
+    "beer_id": 2170000,
+    "beer_name": "Rock Juice",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2170000_52280_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-2170000_52280_hd.jpeg",
+    "beer_style": "IPA - Triple New England / Hazy",
+    "beer_abv": 10.5,
+    "beer_ibu": 0,
+    "beer_description": "Expect an opaque lupulin mist swirling in the glass, from which tropical fruit juice – mango, pineapple and orange - aromas rise. Such fruitiness continues through the full, almost creamy mouthfeel to the last sip, followed by a lasting alcohol warmth.",
+    "rating_score": 4.11375,
+    "rating_count": 1440,
+    "brewery_name": "Rocky Ridge Brewing Co."
+  },
+  "6350783": {
+    "beer_id": 6350783,
+    "beer_name": "Rock Juice V15",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6350783_c4dc7_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6350783_c4dc7_hd.jpeg",
+    "beer_style": "IPA - Triple New England / Hazy",
+    "beer_abv": 10,
+    "beer_ibu": 0,
+    "beer_description": "Let’s talk hops — because if you’ve read this far lets face it that's why you're here. \r\n\r\nEclipse. Idaho 7 Dynaboost. El Dorado Salvo. Cryopop. Vic Secret. Amarillo Cryo. Motueka. Rakau. Krush Hyperboost. Nelson SubZero Hop Kief. Rakau SubZero Hop Kief.\r\nHypercharged citrus. Stonefruit resin. Lush tropical overload. Dank edges wrapped in a velvet haze. It’s bright. It’s complex. It’s stupidly drinkable! \r\n\r\nBuilt on a soft, layered malt base of Sustainable Pilsner, Cadiz Tritordeum, Triticale, Oats, Wheat and Chit, its juice with purpose, power and poise. This is top-shelf, peak-performance, unapologetically ridiculous IIIPA craft at its absolute best. ",
+    "rating_score": 4.18125,
+    "rating_count": 272,
+    "brewery_name": "Rocky Ridge Brewing Co."
   },
   "1543786": {
     "beer_id": 1543786,
