@@ -5140,6 +5140,19 @@
     "rating_count": 9,
     "brewery_name": "Badlands Brewery"
   },
+  "6858963": {
+    "beer_id": 6858963,
+    "beer_name": "PIVOT",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6858963_31222_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6858963_31222_hd.jpeg",
+    "beer_style": "IPA - Other",
+    "beer_abv": 7.4,
+    "beer_ibu": 0,
+    "beer_description": "PIVOT | 7.4% | EDHBEXYHIIPA | Dunsy Cellars & Grain Cru\r\n\r\nSometimes we surprise ourselves.\r\nRock Juice V16 is the best Juice we can remember making, and it'd want to be: 80.45 grams of hops per litre. Not a typo. Roughly a billion times* hoppier than any Juice before it. Beyond excessive, and we stand by every gram.\r\nHere's the ridiculous part. A hop bill that greedy should have drunk half the tank on its way out. Instead, where we'd budgeted a paltry 4,000 litres, we pulled 5,000. A full thousand litres of Juice we had no right to.\r\nThe 10% original wasn't going anywhere. But the surplus? Ours to ruin. So we did the thing consultants charge six figures to recommend: we pivoted. A healthy dose of Sinamar (all-natural black malt extract from de-bittered Carafa Special: all of the midnight, none of the roast bite) and a slight reduction to a thoroughly sessionable 7.4%.\r\nThe result: Pivot. Probably Ill-advised. Very Overhopped. Tasty. And because the consultants taught us that everything must be an acronym, the style is an EDHBEXYHIIPA (Excessive Dry Hop Black Extra Yield Hazy Imperial India Pale Ale). The daftest, most ingenious thing we've ever packaged.\r\n\r\n*unconfirmed exaggeration\r\n\r\nPour: Deep black with a hazy, impenetrable pour and a creamy tan head.\r\nSmell: Huge tropical and citrus hop aromatics with dank resin, grapefruit and dark fruit.\r\nTaste: Juicy mango and passionfruit up front, backed by grapefruit, pine and a hefty hit of hop character.\r\nFinish: Lingering bitterness, dan",
+    "rating_score": 3.69884,
+    "rating_count": 43,
+    "brewery_name": "Rocky Ridge Brewing Co."
+  },
   "6676854": {
     "beer_id": 6676854,
     "beer_name": "Pay Dirt",
