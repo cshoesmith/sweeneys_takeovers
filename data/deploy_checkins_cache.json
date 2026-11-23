@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617202468,
+      "created_at": "Mon, 23 Nov 2026 03:08:11 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Rock Juice V15",
+      "beer_id": 6350783,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6350783_c4dc7_sm.jpeg",
+      "beer_style": "IPA - Triple New England / Hazy",
+      "beer_abv": 10,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1617001155,
       "created_at": "Sun, 22 Nov 2026 05:46:14 +0000",
       "user": "coreymch",
