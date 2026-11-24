@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617293954,
+      "created_at": "Tue, 24 Nov 2026 01:08:21 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "PIVOT",
+      "beer_id": 6858963,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6858963_31222_sm.jpeg",
+      "beer_style": "IPA - Other",
+      "beer_abv": 7.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Rocky Ridge Brewing Co.",
+      "brewery_id": 324919,
+      "rating": 4
+    },
+    {
       "checkin_id": 1617202468,
       "created_at": "Mon, 23 Nov 2026 03:08:11 +0000",
       "user": "ale_n",
