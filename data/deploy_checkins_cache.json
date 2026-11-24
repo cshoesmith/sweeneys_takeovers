@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617297316,
+      "created_at": "Tue, 24 Nov 2026 01:41:56 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Bark To the Future",
+      "beer_id": 6774138,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6774138_9681a_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8.1,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Future Brewing",
+      "brewery_id": 548669,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1617293954,
       "created_at": "Tue, 24 Nov 2026 01:08:21 +0000",
       "user": "ale_n",
