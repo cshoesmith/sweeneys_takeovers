@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617420400,
+      "created_at": "Wed, 25 Nov 2026 02:14:19 +0000",
+      "user": "ale_n",
+      "checkin_comment": "",
+      "beer_name": "Giant Hop Panda",
+      "beer_id": 5788894,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5788894_5d4eb_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double New England / Hazy",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Behemoth Brewing Company",
+      "brewery_id": 73616,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1617318293,
       "created_at": "Tue, 24 Nov 2026 12:20:26 +0000",
       "user": "hiriser",
