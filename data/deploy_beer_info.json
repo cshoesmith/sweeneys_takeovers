@@ -5220,6 +5220,32 @@
     "rating_count": 681,
     "brewery_name": "Badlands Brewery"
   },
+  "6736759": {
+    "beer_id": 6736759,
+    "beer_name": "B2 Bomber Mach 16.0",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6736759_0f875_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6736759_e44e5_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double Black",
+    "beer_abv": 11.4,
+    "beer_ibu": 0,
+    "beer_description": "Brewed annually since our 5th birthday, B2 Bomber Mach 16.0 celebrates 21 years of Bridge Road Brewers.\r\n\r\nThe Brew\r\nThis year’s iteration takes our legendary Belgian-inspired ale and pushes it into the stratosphere. \r\n\r\nLayers of rich, speciality malts, expressive yeasts and punchy hops, work in harmony to create a complex yet moreish Black Belgian Imperial IPA.\r\n\r\nIt features the all the learnings of another year of brewing and showcasing some of our favourite hops - El Dorado T90, Mosaic T90 and Galaxy T90 then powerfully amplified by Citra Hyperboost, Mosaic Hyperboost, Prysma Mosaic and Prysma Citra. The result is a decadent, deeply expressive homage to our origins.\r\n\r\nDrink fresh to enjoy the hops or allow to age as it develops character.",
+    "rating_score": 4.06196,
+    "rating_count": 138,
+    "brewery_name": "Bridge Road Brewers"
+  },
+  "13978": {
+    "beer_id": 13978,
+    "beer_name": "Chestnut Pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-13978_2c0b2_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-13978_b05f2_hd.jpeg",
+    "beer_style": "Pilsner - Other",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "A unique Australian Pilsner, brewed in Beechworth from Chestnuts grown locally in the Beechworth and Stanley hills. The Chestnut Pilsner also uses Galaxy hops from the Rostrevor Hop Garden in the nearby Ovens Valley. As with any of the worlds best pilsner the most important ingredients is time, and we have allowed this beer plenty of it, with each batch aged for around 3 months before release. Bridge Road Brewers have created a gem of a beer through experimenting with local produce, a truly local brew!\r\n\r\nThis unique lager is very pale and presents a crisp ‘pilsner’ like profile combined with a distinct nutty character owing to the use of Chestnuts in the mash. The crisp clean profile of this beer lends itself to the summer months and can be paired with seafood or lighter dishes.",
+    "rating_score": 3.36432,
+    "rating_count": 3000,
+    "brewery_name": "Bridge Road Brewers"
+  },
   "6514484": {
     "beer_id": 6514484,
     "beer_name": "Echo XPA",
@@ -5233,6 +5259,19 @@
     "brewery_name": "Bridge Road Brewers",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/bridge-road-brewers-echo-xpa/6514484"
+  },
+  "7674411": {
+    "beer_id": 7674411,
+    "beer_name": "Punters Bitter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7674411_be38b_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7674411_be38b_hd.jpeg",
+    "beer_style": "Lager - Pale",
+    "beer_abv": 4.5,
+    "beer_ibu": 0,
+    "beer_description": "We have teamed up with Punters Politics to produce a classic Aussie bitter for Punters. It gets an All-Australian Guernsey with pure High-Country water and premium Voyager malt.\r\n\r\nPours with beautiful transparency for a bright future!",
+    "rating_score": 0,
+    "rating_count": 6,
+    "brewery_name": "Bridge Road Brewers"
   },
   "6808184": {
     "beer_id": 6808184,
