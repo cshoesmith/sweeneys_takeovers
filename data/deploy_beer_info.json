@@ -5233,6 +5233,33 @@
     "rating_count": 138,
     "brewery_name": "Bridge Road Brewers"
   },
+  "7697193": {
+    "beer_id": 7697193,
+    "beer_name": "Belgian Saison",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4711093_d4410_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Farmhouse Ale - Saison",
+    "beer_abv": 5.0,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 0,
+    "brewery_name": "Bridge Road Brewers",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/bridge-road-brewers-belgian-saison/7697193"
+  },
+  "3362162": {
+    "beer_id": 3362162,
+    "beer_name": "Bling Bling Imperial IPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3362162_b3a41_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3362162_b3a41_hd.jpeg",
+    "beer_style": "IPA - Imperial / Double",
+    "beer_abv": 8.5,
+    "beer_ibu": 0,
+    "beer_description": "Bling Bling is one of Australia's OG Imperial IPA hop bombs! A nod to the big, bold West Coast IIPAs of the mid-2000s. This notorious ale dials up the hop aromas to 11 and brings them home with an old school, bitter finish. Drink fresh",
+    "rating_score": 3.91602,
+    "rating_count": 3271,
+    "brewery_name": "Bridge Road Brewers"
+  },
   "13978": {
     "beer_id": 13978,
     "beer_name": "Chestnut Pilsner",
@@ -5259,6 +5286,20 @@
     "brewery_name": "Bridge Road Brewers",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/bridge-road-brewers-echo-xpa/6514484"
+  },
+  "7666131": {
+    "beer_id": 7666131,
+    "beer_name": "Hive Shaker",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3216115_1610d_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Wheat Beer - Witbier / Blanche",
+    "beer_abv": 4.6,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 5,
+    "brewery_name": "Bridge Road Brewers",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/bridge-road-brewers-hive-shaker/7666131"
   },
   "7674411": {
     "beer_id": 7674411,

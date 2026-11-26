@@ -10608,14 +10608,19 @@
     "breweries": [
       "Bridge Road Brewers"
     ],
-    "checkins": 9,
-    "unique_beers": 6,
-    "total_checkins_that_week": 9,
+    "checkins": 19,
+    "unique_beers": 11,
+    "total_checkins_that_week": 19,
     "share_pct": 100.0,
     "beers": [
       "B2 Bomber Mach 16.0",
+      "Belgian Saison",
+      "Bling Bling Imperial IPA",
       "Chestnut Pilsner",
       "Echo XPA",
+      "Hive Shaker",
+      "Nitro Coffee Stout",
+      "Posse Spring 2026 Yuzu and Tangerine IPA",
       "Punters Bitter",
       "Strata DDH Hazy",
       "Trip Hop Hazy Pale"
@@ -10633,6 +10638,35 @@
         "beer_description": "Brewed annually since our 5th birthday, B2 Bomber Mach 16.0 celebrates 21 years of Bridge Road Brewers.\r\n\r\nThe Brew\r\nThis year’s iteration takes our legendary Belgian-inspired ale and pushes it into the stratosphere. \r\n\r\nLayers of rich, speciality malts, expressive yeasts and punchy hops, work in harmony to create a complex yet moreish Black Belgian Imperial IPA.\r\n\r\nIt features the all the learnings of another year of brewing and showcasing some of our favourite hops - El Dorado T90, Mosaic T90 and Galaxy T90 then powerfully amplified by Citra Hyperboost, Mosaic Hyperboost, Prysma Mosaic and Prysma Citra. The result is a decadent, deeply expressive homage to our origins.\r\n\r\nDrink fresh to enjoy the hops or allow to age as it develops character.",
         "rating_score": 4.06196,
         "rating_count": 138,
+        "brewery_name": "Bridge Road Brewers"
+      },
+      {
+        "beer_id": 7697193,
+        "beer_name": "Belgian Saison",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4711093_d4410_sm.jpeg",
+        "beer_style": "Farmhouse Ale - Saison",
+        "beer_abv": 5.0,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 0,
+        "brewery_name": "Bridge Road Brewers",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/bridge-road-brewers-belgian-saison/7697193"
+      },
+      {
+        "beer_id": 3362162,
+        "beer_name": "Bling Bling Imperial IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3362162_b3a41_sm.jpeg",
+        "beer_style": "IPA - Imperial / Double",
+        "beer_abv": 8.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-3362162_b3a41_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Bling Bling is one of Australia's OG Imperial IPA hop bombs! A nod to the big, bold West Coast IIPAs of the mid-2000s. This notorious ale dials up the hop aromas to 11 and brings them home with an old school, bitter finish. Drink fresh",
+        "rating_score": 3.91602,
+        "rating_count": 3271,
         "brewery_name": "Bridge Road Brewers"
       },
       {
@@ -10663,6 +10697,37 @@
         "brewery_name": "Bridge Road Brewers",
         "brewery_country": "Australia",
         "beer_page_url": "https://untappd.com/b/bridge-road-brewers-echo-xpa/6514484"
+      },
+      {
+        "beer_id": 7666131,
+        "beer_name": "Hive Shaker",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3216115_1610d_sm.jpeg",
+        "beer_style": "Wheat Beer - Witbier / Blanche",
+        "beer_abv": 4.6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "rating_score": 0,
+        "rating_count": 5,
+        "brewery_name": "Bridge Road Brewers",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/bridge-road-brewers-hive-shaker/7666131"
+      },
+      {
+        "beer_id": 6915782,
+        "beer_name": "Nitro Coffee Stout",
+        "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_style": "Stout - Coffee",
+        "beer_abv": 5.1,
+        "beer_auth_rating": null
+      },
+      {
+        "beer_id": 6832550,
+        "beer_name": "Posse Spring 2026 Yuzu and Tangerine IPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6830593_3d133_sm.jpeg",
+        "beer_style": "IPA - Fruited",
+        "beer_abv": 5.8,
+        "beer_auth_rating": null
       },
       {
         "beer_id": 7674411,
@@ -10714,7 +10779,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10729,7 +10794,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10744,7 +10809,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10759,7 +10824,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10774,7 +10839,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10789,7 +10854,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10804,7 +10869,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 6,
+        "total": 11,
         "pct": 0.0,
         "day_counts": [
           0,
