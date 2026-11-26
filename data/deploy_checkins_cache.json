@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617626571,
+      "created_at": "Thu, 26 Nov 2026 12:42:40 +0000",
+      "user": "Josho567",
+      "checkin_comment": "Sweet witbier. Nice.",
+      "beer_name": "Hive Shaker",
+      "beer_id": 7666131,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Wheat Beer - Witbier / Blanche",
+      "beer_abv": 4.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 3.5
+    },
+    {
       "checkin_id": 1617625054,
       "created_at": "Thu, 26 Nov 2026 12:08:55 +0000",
       "user": "craigmoro",
