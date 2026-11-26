@@ -5421,6 +5421,19 @@
     "rating_count": 6,
     "brewery_name": "Bridge Road Brewers"
   },
+  "27978": {
+    "beer_id": 27978,
+    "beer_name": "Robust Porter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-27978_927e0_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-27978_927e0_hd.jpeg",
+    "beer_style": "Porter - Other",
+    "beer_abv": 5.1,
+    "beer_ibu": 21,
+    "beer_description": "Big chocolate, roasted and mocha notes are the key to this style. A wise country football coach once said “theres no point half doing something”. And in making this porter we’ve taken his advice on board, our Robust Porter uses plenty of roast barley and chocolate malt to give you a big porter that wont leave you asking for more.\r\n\r\nTry this one with dark chocolate and liquorice. Bridge Roads Porter, like many of its beers, pulls no punches. Make no mistake, the Robust Porter is big and bold, yet its smooth raosty texture makes it one to convert the non-dark drinker. Match it with rich chocolate deserts, cold winter nights or freshly shucked oysters.",
+    "rating_score": 3.74904,
+    "rating_count": 5803,
+    "brewery_name": "Bridge Road Brewers"
+  },
   "6808184": {
     "beer_id": 6808184,
     "beer_name": "Strata DDH Hazy",
