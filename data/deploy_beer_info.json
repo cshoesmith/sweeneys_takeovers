@@ -5233,6 +5233,19 @@
     "rating_count": 138,
     "brewery_name": "Bridge Road Brewers"
   },
+  "6919475": {
+    "beer_id": 6919475,
+    "beer_name": "Beechworth Pale Mid",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6919475_16986_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6919475_731dd_hd.jpeg",
+    "beer_style": "Pale Ale - Australian",
+    "beer_abv": 3.4,
+    "beer_ibu": 0,
+    "beer_description": "The classic Australian Pale Ale. Full flavour. Easy-drinking. Brewed at mid-strength. Perfect for a session.\r\n\r\n\"The idea is to give up nothing. You're taking out some of the alcohol, so you need to replace it with something else to carry the body and the mouthfeel. Same hops, same malts. We just boost the malt profile a little and you get the same experience of drinking Beechworth Pale Ale.\"\r\n— James Dittko, Head Brewer\r\n\r\n\r\nABV : 3.4%\r\n\r\nHops : Cascade, Nelson Sauvin, EKG, Simcoe, Galaxy, Amarillo, Centennial, Cascade & Vic Secret\r\n\r\nMalt : Gladfield Ale, Carapils, Wheat Malt, Light Crystal",
+    "rating_score": 3.11176,
+    "rating_count": 17,
+    "brewery_name": "Bridge Road Brewers"
+  },
   "7697193": {
     "beer_id": 7697193,
     "beer_name": "Belgian Saison",
@@ -5300,6 +5313,34 @@
     "brewery_name": "Bridge Road Brewers",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/bridge-road-brewers-hive-shaker/7666131"
+  },
+  "7610260": {
+    "beer_id": 7610260,
+    "beer_name": "NSW Pro Am American Pale Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4786887_b3d1a_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Pale Ale - American",
+    "beer_abv": 5.9,
+    "beer_ibu": 0,
+    "rating_score": 0,
+    "rating_count": 4,
+    "brewery_name": "Bridge Road Brewers",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/bridge-road-brewers-nsw-pro-am-american-pale-ale/7610260"
+  },
+  "6915782": {
+    "beer_id": 6915782,
+    "beer_name": "Nitro Coffee Stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4592041_789fe_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Stout - Coffee",
+    "beer_abv": 5.1,
+    "beer_ibu": 0,
+    "rating_score": 3.6,
+    "rating_count": 10,
+    "brewery_name": "Bridge Road Brewers",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/bridge-road-brewers-nitro-coffee-stout/6915782"
   },
   "7674411": {
     "beer_id": 7674411,
