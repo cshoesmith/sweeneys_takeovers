@@ -10608,10 +10608,10 @@
     "breweries": [
       "Bridge Road Brewers"
     ],
-    "checkins": 28,
+    "checkins": 30,
     "unique_beers": 15,
-    "total_checkins_that_week": 28,
-    "share_pct": 100.0,
+    "total_checkins_that_week": 32,
+    "share_pct": 93.8,
     "beers": [
       "B2 Bomber Mach 16.0",
       "Beechworth Pale Mid",
@@ -10767,7 +10767,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5703444_165b4_sm.jpeg",
         "beer_style": "Sour - Fruited Gose",
         "beer_abv": 4.3,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5703444_12c54_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A light-bodied fruited sour, brewed in the style of a traditional German gose.\r\n\r\nA high mineral content balances the acidity and makes for a dry and refreshing finish.\r\n\r\nWe used a literal mountain of passionfruit, orange and guava, resulting in a perky, bright beer - perfect for all seasons.",
+        "rating_score": 3.75956,
+        "rating_count": 183,
+        "brewery_name": "Bridge Road Brewers"
       },
       {
         "beer_id": 6832550,
@@ -10775,7 +10781,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6830593_3d133_sm.jpeg",
         "beer_style": "IPA - Fruited",
         "beer_abv": 5.8,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6830593_f2e55_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Yuzu and tangerine ipa. We've blended yuzu and tangerine citrus fruits in a juicy IPA. Bursting with vibrant citrus aromatics  soft bitterness and a refreshing finish",
+        "rating_score": 3.82656,
+        "rating_count": 64,
+        "brewery_name": "Bridge Road Brewers"
       },
       {
         "beer_id": 7674411,
@@ -10811,7 +10823,13 @@
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6919465_8b3f9_sm.jpeg",
         "beer_style": "IPA - American",
         "beer_abv": 6.6,
-        "beer_auth_rating": null
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6919465_8b3f9_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "SUPERDELIC CALIFORNIA is a clean IPA emanating with a cocktail of vibrant tropical hops. \r\n\r\nAdditions of the trio Superdelic (T90), Krush (Hyperboost) and Eldorado (T90) give big mango, peach and pineapple notes over a crisp, dry finish with moderate citrus bitterness. A choice IPA to bring in the warmer weather ahead.",
+        "rating_score": 3.71087,
+        "rating_count": 69,
+        "brewery_name": "Bridge Road Brewers"
       },
       {
         "beer_id": 7674362,
