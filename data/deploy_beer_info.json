@@ -5286,6 +5286,20 @@
     "rating_count": 3000,
     "brewery_name": "Bridge Road Brewers"
   },
+  "6035187": {
+    "beer_id": 6035187,
+    "beer_name": "Dave's Red Ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6035187_ab21f_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6035187_ab21f_hd.jpeg",
+    "beer_style": "Red Ale - American Amber / Red",
+    "beer_abv": 5.1,
+    "beer_ibu": 0,
+    "rating_score": 3.69479,
+    "rating_count": 48,
+    "brewery_name": "Bridge Road Brewers",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/bridge-road-brewers-dave-s-red-ale/6035187"
+  },
   "6514484": {
     "beer_id": 6514484,
     "beer_name": "Echo XPA",
@@ -5300,6 +5314,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/bridge-road-brewers-echo-xpa/6514484"
   },
+  "6577217": {
+    "beer_id": 6577217,
+    "beer_name": "Helles Lager",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-3174_333a2.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "Lager - Helles",
+    "beer_abv": 4.6,
+    "beer_ibu": 0,
+    "beer_description": "Brunswick brewed",
+    "rating_score": 0,
+    "rating_count": 2,
+    "brewery_name": "Bridge Road Brewers"
+  },
   "7666131": {
     "beer_id": 7666131,
     "beer_name": "Hive Shaker",
@@ -5313,6 +5340,19 @@
     "brewery_name": "Bridge Road Brewers",
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/bridge-road-brewers-hive-shaker/7666131"
+  },
+  "1352227": {
+    "beer_id": 1352227,
+    "beer_name": "Magical Christmas Unicorn",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1352227_c7ac8_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-1352227_34ae6_hd.jpeg",
+    "beer_style": "Cream Ale - Imperial / Double",
+    "beer_abv": 6.5,
+    "beer_ibu": 0,
+    "beer_description": "Inspired by the magical pillars of the universe; Unicorns, Christmas and Ice Cream, Bridge Road Brewers bring you the element that binds them all, beer!",
+    "rating_score": 3.62169,
+    "rating_count": 3537,
+    "brewery_name": "Bridge Road Brewers"
   },
   "7610260": {
     "beer_id": 7610260,
