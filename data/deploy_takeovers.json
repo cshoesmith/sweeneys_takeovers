@@ -10601,5 +10601,174 @@
         "rank": 7
       }
     ]
+  },
+  {
+    "date": "2026-11-26",
+    "brewery": "Bridge Road Brewers",
+    "breweries": [
+      "Bridge Road Brewers"
+    ],
+    "checkins": 3,
+    "unique_beers": 3,
+    "total_checkins_that_week": 3,
+    "share_pct": 100.0,
+    "beers": [
+      "Echo XPA",
+      "Strata DDH Hazy",
+      "Trip Hop Hazy Pale"
+    ],
+    "beer_details": [
+      {
+        "beer_id": 6514484,
+        "beer_name": "Echo XPA",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6514484_0ae01_sm.jpeg",
+        "beer_style": "Pale Ale - XPA (Extra Pale)",
+        "beer_abv": 4.4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6514484_0ae01_hd.jpeg",
+        "beer_ibu": 0,
+        "rating_score": 3.55588,
+        "rating_count": 85,
+        "brewery_name": "Bridge Road Brewers",
+        "brewery_country": "Australia",
+        "beer_page_url": "https://untappd.com/b/bridge-road-brewers-echo-xpa/6514484"
+      },
+      {
+        "beer_id": 6808184,
+        "beer_name": "Strata DDH Hazy",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6808184_b4372_sm.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 6.6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6808184_b4372_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Made for the haze heads, this double dry-hopped IPA is a signature tropical punch, layering vibrant passionfruit and fresh citrus. It hits the palate with a plush mouthfeel, polite bitterness and a subtle dank resin.",
+        "rating_score": 3.96124,
+        "rating_count": 89,
+        "brewery_name": "Bridge Road Brewers"
+      },
+      {
+        "beer_id": 7674362,
+        "beer_name": "Trip Hop Hazy Pale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7674362_4a4c3_sm.jpeg",
+        "beer_style": "Pale Ale - New England / Hazy",
+        "beer_abv": 4.6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7674362_4a4c3_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "A hop forward hazy pale showcasing El Dorado, Enigma and Amarillo hops that bring layers of tropical fruit aroma with juicy citrus and stone fruit on the palate in a soft pillowy body giving a luscious mouthfeel. ",
+        "rating_score": 0,
+        "rating_count": 2,
+        "brewery_name": "Bridge Road Brewers"
+      }
+    ],
+    "source": "heuristic",
+    "member_results": [
+      {
+        "username": "dapitz",
+        "display_name": "Darren Apitz",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "username": "docta",
+        "display_name": "Doc",
+        "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "username": "hiriser",
+        "display_name": "Willy",
+        "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "username": "jimmy-swings",
+        "display_name": "Jimmy Swings",
+        "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "username": "lightbeerking",
+        "display_name": "Chris S",
+        "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "username": "mw1414",
+        "display_name": "Wardy",
+        "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "username": "pivo_king",
+        "display_name": "Alen Pivo",
+        "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
+        "checked": 0,
+        "total": 3,
+        "pct": 0.0,
+        "day_counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      }
+    ]
   }
 ]

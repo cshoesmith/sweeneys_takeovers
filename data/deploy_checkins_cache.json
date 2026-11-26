@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617599523,
+      "created_at": "Thu, 26 Nov 2026 02:56:53 +0000",
+      "user": "PATE",
+      "checkin_comment": "",
+      "beer_name": "Echo XPA",
+      "beer_id": 6514484,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6514484_0ae01_sm.jpeg",
+      "beer_style": "Pale Ale - XPA (Extra Pale)",
+      "beer_abv": 4.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 3.5
+    },
+    {
+      "checkin_id": 1617595429,
+      "created_at": "Thu, 26 Nov 2026 02:30:41 +0000",
+      "user": "barrman",
+      "checkin_comment": "",
+      "beer_name": "Strata DDH Hazy",
+      "beer_id": 6808184,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6808184_b4372_sm.jpeg",
+      "beer_style": "IPA - New England / Hazy",
+      "beer_abv": 6.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1617592247,
       "created_at": "Thu, 26 Nov 2026 02:13:09 +0000",
       "user": "romiranda",

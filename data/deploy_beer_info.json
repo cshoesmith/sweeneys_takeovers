@@ -5219,5 +5219,45 @@
     "rating_score": 3.39479,
     "rating_count": 681,
     "brewery_name": "Badlands Brewery"
+  },
+  "6514484": {
+    "beer_id": 6514484,
+    "beer_name": "Echo XPA",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6514484_0ae01_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6514484_0ae01_hd.jpeg",
+    "beer_style": "Pale Ale - XPA (Extra Pale)",
+    "beer_abv": 4.4,
+    "beer_ibu": 0,
+    "rating_score": 3.55588,
+    "rating_count": 85,
+    "brewery_name": "Bridge Road Brewers",
+    "brewery_country": "Australia",
+    "beer_page_url": "https://untappd.com/b/bridge-road-brewers-echo-xpa/6514484"
+  },
+  "6808184": {
+    "beer_id": 6808184,
+    "beer_name": "Strata DDH Hazy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6808184_b4372_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-6808184_b4372_hd.jpeg",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.6,
+    "beer_ibu": 0,
+    "beer_description": "Made for the haze heads, this double dry-hopped IPA is a signature tropical punch, layering vibrant passionfruit and fresh citrus. It hits the palate with a plush mouthfeel, polite bitterness and a subtle dank resin.",
+    "rating_score": 3.96124,
+    "rating_count": 89,
+    "brewery_name": "Bridge Road Brewers"
+  },
+  "7674362": {
+    "beer_id": 7674362,
+    "beer_name": "Trip Hop Hazy Pale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7674362_4a4c3_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-7674362_4a4c3_hd.jpeg",
+    "beer_style": "Pale Ale - New England / Hazy",
+    "beer_abv": 4.6,
+    "beer_ibu": 0,
+    "beer_description": "A hop forward hazy pale showcasing El Dorado, Enigma and Amarillo hops that bring layers of tropical fruit aroma with juicy citrus and stone fruit on the palate in a soft pillowy body giving a luscious mouthfeel. ",
+    "rating_score": 0,
+    "rating_count": 2,
+    "brewery_name": "Bridge Road Brewers"
   }
 }
