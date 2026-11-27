@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617822048,
+      "created_at": "Fri, 27 Nov 2026 12:04:49 +0000",
+      "user": "PhilBrau",
+      "checkin_comment": "",
+      "beer_name": "Magical Christmas Unicorn",
+      "beer_id": 1352227,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1352227_c7ac8_sm.jpeg",
+      "beer_style": "Cream Ale - Imperial / Double",
+      "beer_abv": 6.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1617821992,
+      "created_at": "Fri, 27 Nov 2026 12:03:57 +0000",
+      "user": "PhilBrau",
+      "checkin_comment": "",
+      "beer_name": "B2 Bomber Mach 16.0",
+      "beer_id": 6736759,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6736759_0f875_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double Black",
+      "beer_abv": 11.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4.25
+    },
+    {
       "checkin_id": 1617816779,
       "created_at": "Fri, 27 Nov 2026 10:05:35 +0000",
       "user": "Ishmagel",
