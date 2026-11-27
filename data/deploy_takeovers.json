@@ -10608,10 +10608,10 @@
     "breweries": [
       "Bridge Road Brewers"
     ],
-    "checkins": 63,
-    "unique_beers": 20,
-    "total_checkins_that_week": 65,
-    "share_pct": 96.9,
+    "checkins": 68,
+    "unique_beers": 22,
+    "total_checkins_that_week": 70,
+    "share_pct": 97.1,
     "beers": [
       "B2 Bomber Mach 16.0",
       "Beechworth Pale Mid",
@@ -10620,7 +10620,9 @@
       "Chestnut Pilsner",
       "Dave's Red Ale",
       "Echo XPA",
+      "Fat Man Red Suit Big Sack",
       "Ginger Beer",
+      "Hat Trick Hazy IPA",
       "Helles Lager",
       "Hive Shaker",
       "Magical Christmas Unicorn",
@@ -10737,6 +10739,20 @@
         "beer_page_url": "https://untappd.com/b/bridge-road-brewers-echo-xpa/6514484"
       },
       {
+        "beer_id": 717680,
+        "beer_name": "Fat Man Red Suit Big Sack",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-717680_5c3a2_sm.jpeg",
+        "beer_style": "IPA - Red",
+        "beer_abv": 6.5,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-717680_ad7c1_hd.jpeg",
+        "beer_ibu": 65,
+        "beer_description": "The ‘Fat Man’ has been created as an Australian Christmas Ale, that combines the rich toffee malt flavours with the big hop aroma and flavour.\r\nOriginally brewed for export to Canada this red IPA showcases some of our Aussie Hops. Galaxy, Topaz and Enigma.",
+        "rating_score": 3.71501,
+        "rating_count": 5442,
+        "brewery_name": "Bridge Road Brewers"
+      },
+      {
         "beer_id": 5128430,
         "beer_name": "Ginger Beer",
         "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5128430_4e174_sm.jpeg",
@@ -10748,6 +10764,20 @@
         "beer_description": "Brewed with balance and enjoyment in mind, heat and sweet meld seamlessly into an off-dry finish making this a genuinely delicious ginger beer.",
         "rating_score": 3.17201,
         "rating_count": 293,
+        "brewery_name": "Bridge Road Brewers"
+      },
+      {
+        "beer_id": 6914654,
+        "beer_name": "Hat Trick Hazy IPA",
+        "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-3174_333a2.jpeg",
+        "beer_style": "IPA - New England / Hazy",
+        "beer_abv": 6.6,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+        "beer_ibu": 0,
+        "beer_description": "Bridge Road Brewers Brunswick’s Third Birthday Beer. ",
+        "rating_score": 3.91458,
+        "rating_count": 24,
         "brewery_name": "Bridge Road Brewers"
       },
       {
@@ -10929,8 +10959,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 3,
-        "total": 20,
-        "pct": 15.0,
+        "total": 22,
+        "pct": 13.6,
         "day_counts": [
           0,
           3,
@@ -10944,7 +10974,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10959,7 +10989,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10974,7 +11004,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 20,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10989,7 +11019,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -11004,7 +11034,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -11019,7 +11049,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 20,
+        "total": 22,
         "pct": 0.0,
         "day_counts": [
           0,

@@ -5314,6 +5314,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/bridge-road-brewers-echo-xpa/6514484"
   },
+  "717680": {
+    "beer_id": 717680,
+    "beer_name": "Fat Man Red Suit Big Sack",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-717680_5c3a2_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-717680_ad7c1_hd.jpeg",
+    "beer_style": "IPA - Red",
+    "beer_abv": 6.5,
+    "beer_ibu": 65,
+    "beer_description": "The ‘Fat Man’ has been created as an Australian Christmas Ale, that combines the rich toffee malt flavours with the big hop aroma and flavour.\r\nOriginally brewed for export to Canada this red IPA showcases some of our Aussie Hops. Galaxy, Topaz and Enigma.",
+    "rating_score": 3.71501,
+    "rating_count": 5442,
+    "brewery_name": "Bridge Road Brewers"
+  },
   "5128430": {
     "beer_id": 5128430,
     "beer_name": "Ginger Beer",
@@ -5325,6 +5338,19 @@
     "beer_description": "Brewed with balance and enjoyment in mind, heat and sweet meld seamlessly into an off-dry finish making this a genuinely delicious ginger beer.",
     "rating_score": 3.17201,
     "rating_count": 293,
+    "brewery_name": "Bridge Road Brewers"
+  },
+  "6914654": {
+    "beer_id": 6914654,
+    "beer_name": "Hat Trick Hazy IPA",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-3174_333a2.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+    "beer_style": "IPA - New England / Hazy",
+    "beer_abv": 6.6,
+    "beer_ibu": 0,
+    "beer_description": "Bridge Road Brewers Brunswick’s Third Birthday Beer. ",
+    "rating_score": 3.91458,
+    "rating_count": 24,
     "brewery_name": "Bridge Road Brewers"
   },
   "6577217": {
