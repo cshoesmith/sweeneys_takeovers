@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617816779,
+      "created_at": "Fri, 27 Nov 2026 10:05:35 +0000",
+      "user": "Ishmagel",
+      "checkin_comment": "",
+      "beer_name": "Superdelic California IPA",
+      "beer_id": 6919465,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6919465_8b3f9_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 0
+    },
+    {
+      "checkin_id": 1617816524,
+      "created_at": "Fri, 27 Nov 2026 09:56:24 +0000",
+      "user": "PhilBrau",
+      "checkin_comment": "",
+      "beer_name": "Bling Bling Imperial IPA",
+      "beer_id": 3362162,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3362162_b3a41_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double",
+      "beer_abv": 8.5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4.5
+    },
+    {
       "checkin_id": 1617814879,
       "created_at": "Fri, 27 Nov 2026 08:55:13 +0000",
       "user": "PhilBrau",
