@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617812247,
+      "created_at": "Fri, 27 Nov 2026 07:21:59 +0000",
+      "user": "barrman",
+      "checkin_comment": "this would go well with your Christmas pudding @robmc0",
+      "beer_name": "B2 Bomber Mach 16.0",
+      "beer_id": 6736759,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6736759_0f875_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double Black",
+      "beer_abv": 11.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4.5
+    },
+    {
+      "checkin_id": 1617811363,
+      "created_at": "Fri, 27 Nov 2026 06:50:13 +0000",
+      "user": "LightBeerking",
+      "checkin_comment": "",
+      "beer_name": "Superdelic California IPA",
+      "beer_id": 6919465,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6919465_8b3f9_sm.jpeg",
+      "beer_style": "IPA - American",
+      "beer_abv": 6.6,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4.3
+    },
+    {
       "checkin_id": 1617810741,
       "created_at": "Fri, 27 Nov 2026 06:29:41 +0000",
       "user": "LightBeerking",

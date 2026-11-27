@@ -10608,10 +10608,10 @@
     "breweries": [
       "Bridge Road Brewers"
     ],
-    "checkins": 57,
+    "checkins": 59,
     "unique_beers": 20,
-    "total_checkins_that_week": 59,
-    "share_pct": 96.6,
+    "total_checkins_that_week": 61,
+    "share_pct": 96.7,
     "beers": [
       "B2 Bomber Mach 16.0",
       "Beechworth Pale Mid",
@@ -10928,12 +10928,12 @@
         "username": "lightbeerking",
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
-        "checked": 1,
+        "checked": 2,
         "total": 20,
-        "pct": 5.0,
+        "pct": 10.0,
         "day_counts": [
           0,
-          1,
+          2,
           0,
           0
         ],
