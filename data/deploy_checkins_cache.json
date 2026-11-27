@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1617793037,
+      "created_at": "Fri, 27 Nov 2026 02:10:10 +0000",
+      "user": "Ggeers",
+      "checkin_comment": "Nice mouthfeel. Coffee notes. Good stuff!",
+      "beer_name": "B2 Bomber Mach 16.0",
+      "beer_id": 6736759,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6736759_0f875_sm.jpeg",
+      "beer_style": "IPA - Imperial / Double Black",
+      "beer_abv": 11.4,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4
+    },
+    {
       "checkin_id": 1617783662,
       "created_at": "Fri, 27 Nov 2026 01:01:24 +0000",
       "user": "ale_n",
