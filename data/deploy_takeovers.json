@@ -10608,10 +10608,10 @@
     "breweries": [
       "Bridge Road Brewers"
     ],
-    "checkins": 49,
-    "unique_beers": 19,
-    "total_checkins_that_week": 51,
-    "share_pct": 96.1,
+    "checkins": 54,
+    "unique_beers": 20,
+    "total_checkins_that_week": 56,
+    "share_pct": 96.4,
     "beers": [
       "B2 Bomber Mach 16.0",
       "Beechworth Pale Mid",
@@ -10620,6 +10620,7 @@
       "Chestnut Pilsner",
       "Dave's Red Ale",
       "Echo XPA",
+      "Ginger Beer",
       "Helles Lager",
       "Hive Shaker",
       "Magical Christmas Unicorn",
@@ -10734,6 +10735,20 @@
         "brewery_name": "Bridge Road Brewers",
         "brewery_country": "Australia",
         "beer_page_url": "https://untappd.com/b/bridge-road-brewers-echo-xpa/6514484"
+      },
+      {
+        "beer_id": 5128430,
+        "beer_name": "Ginger Beer",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5128430_4e174_sm.jpeg",
+        "beer_style": "Hard Ginger Beer",
+        "beer_abv": 4,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5128430_5d7f8_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Brewed with balance and enjoyment in mind, heat and sweet meld seamlessly into an off-dry finish making this a genuinely delicious ginger beer.",
+        "rating_score": 3.17201,
+        "rating_count": 293,
+        "brewery_name": "Bridge Road Brewers"
       },
       {
         "beer_id": 6577217,
@@ -10914,7 +10929,7 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10929,7 +10944,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10944,7 +10959,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10959,7 +10974,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10974,7 +10989,7 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -10989,7 +11004,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -11004,7 +11019,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 19,
+        "total": 20,
         "pct": 0.0,
         "day_counts": [
           0,
