@@ -5434,6 +5434,19 @@
     "brewery_country": "Australia",
     "beer_page_url": "https://untappd.com/b/bridge-road-brewers-nitro-coffee-stout/6915782"
   },
+  "83026": {
+    "beer_id": 83026,
+    "beer_name": "Oktoberfest Märzen",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-83026_a18df_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-83026_187bb_hd.jpeg",
+    "beer_style": "Märzen",
+    "beer_abv": 4.2,
+    "beer_ibu": 0,
+    "beer_description": "An Oktoberfest Marzen brewed for our brewery's Oktoberfest celebration",
+    "rating_score": 3.28501,
+    "rating_count": 617,
+    "brewery_name": "Bridge Road Brewers"
+  },
   "5703444": {
     "beer_id": 5703444,
     "beer_name": "Pass-O-Guava Sour",
