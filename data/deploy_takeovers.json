@@ -10608,15 +10608,16 @@
     "breweries": [
       "Bridge Road Brewers"
     ],
-    "checkins": 82,
-    "unique_beers": 23,
-    "total_checkins_that_week": 84,
-    "share_pct": 97.6,
+    "checkins": 88,
+    "unique_beers": 24,
+    "total_checkins_that_week": 90,
+    "share_pct": 97.8,
     "beers": [
       "B2 Bomber Mach 16.0",
       "Beechworth Pale Mid",
       "Belgian Saison",
       "Bling Bling Imperial IPA",
+      "Bling India Pale Ale",
       "Chestnut Pilsner",
       "Dave's Red Ale",
       "Echo XPA",
@@ -10693,6 +10694,20 @@
         "beer_description": "Bling Bling is one of Australia's OG Imperial IPA hop bombs! A nod to the big, bold West Coast IIPAs of the mid-2000s. This notorious ale dials up the hop aromas to 11 and brings them home with an old school, bitter finish. Drink fresh",
         "rating_score": 3.91602,
         "rating_count": 3271,
+        "brewery_name": "Bridge Road Brewers"
+      },
+      {
+        "beer_id": 20844,
+        "beer_name": "Bling India Pale Ale",
+        "beer_label": "https://assets.untappd.com/site/beer_logos/beer-20844_36848_sm.jpeg",
+        "beer_style": "IPA - English",
+        "beer_abv": 5.8,
+        "beer_auth_rating": null,
+        "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-20844_ba822_hd.jpeg",
+        "beer_ibu": 0,
+        "beer_description": "Bridge Road Brewers have created their own take on a more traditional beer style – India Pale Ale, originally a heavily hopped beer developed for the long haul from England to India by boat.\r\n\r\nFresh hops were added to the barrel and the alcohol was bolstered to ensure the beer went the distance on the high seas. Bling, is a huge beer, with all the bells and whistles. This ale is armed to the teeth with hops and studded with 24 carrot modified malts. At Bridge Road we've gone all out to make an IPA that screams hops and malt but still keeps balance in mind. Try matching this beer it with anything spicy or enjoy this malt and hop mouth full on its own. We love it, and hope you can too.",
+        "rating_score": 3.67219,
+        "rating_count": 8419,
         "brewery_name": "Bridge Road Brewers"
       },
       {
@@ -10974,8 +10989,8 @@
         "display_name": "Darren Apitz",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/dedcbb386e1153ea9c46341ee1a0aa32_thumb.jpg",
         "checked": 6,
-        "total": 23,
-        "pct": 26.1,
+        "total": 24,
+        "pct": 25.0,
         "day_counts": [
           0,
           0,
@@ -10989,8 +11004,8 @@
         "display_name": "Chris S",
         "avatar_url": "https://assets.untappd.com/profile/9f6572f935833e212595d33af5d8e0bc_300x300.jpg",
         "checked": 3,
-        "total": 23,
-        "pct": 13.0,
+        "total": 24,
+        "pct": 12.5,
         "day_counts": [
           0,
           3,
@@ -11004,7 +11019,7 @@
         "display_name": "Doc",
         "avatar_url": "https://assets.untappd.com/profile/12ac9bed5bacc11729f5f1cc1e14025c_300x300.jpg",
         "checked": 0,
-        "total": 23,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -11019,7 +11034,7 @@
         "display_name": "Willy",
         "avatar_url": "https://untappd.s3.amazonaws.com/profile/69653f0b5f18fb5dc9818ab7fc7d62c3_thumb.JPG",
         "checked": 0,
-        "total": 23,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -11034,7 +11049,7 @@
         "display_name": "Jimmy Swings",
         "avatar_url": "https://assets.untappd.com/profile/2aebee39cee3d45b495150c44eb6dd97_300x300.jpg",
         "checked": 0,
-        "total": 23,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -11049,7 +11064,7 @@
         "display_name": "Wardy",
         "avatar_url": "https://assets.untappd.com/profile/2caea8705d6907872756375e01ff15bb_300x300.jpg",
         "checked": 0,
-        "total": 23,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
@@ -11064,7 +11079,7 @@
         "display_name": "Alen Pivo",
         "avatar_url": "https://assets.untappd.com/profile/137e84f4ad15bde4679712262e367639_300x300.jpg",
         "checked": 0,
-        "total": 23,
+        "total": 24,
         "pct": 0.0,
         "day_counts": [
           0,
