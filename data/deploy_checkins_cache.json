@@ -2,6 +2,22 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1618146475,
+      "created_at": "Sat, 28 Nov 2026 04:18:06 +0000",
+      "user": "LG_Brews",
+      "checkin_comment": "An easy to drink pilsner. Slightly piney and sweet. Clean, crisp finish. A nice summery brew.",
+      "beer_name": "Village Pils",
+      "beer_id": 5534062,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5534062_75b9c_sm.jpeg",
+      "beer_style": "Pilsner - Other",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 4
+    },
+    {
       "checkin_id": 1618139547,
       "created_at": "Sat, 28 Nov 2026 03:17:08 +0000",
       "user": "SeamusH",
