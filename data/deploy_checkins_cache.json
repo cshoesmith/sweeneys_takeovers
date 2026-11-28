@@ -2,6 +2,38 @@
   "venue_id": 107565,
   "checkins": [
     {
+      "checkin_id": 1618129977,
+      "created_at": "Sat, 28 Nov 2026 02:20:01 +0000",
+      "user": "SeamusH",
+      "checkin_comment": "",
+      "beer_name": "Belgian Saison",
+      "beer_id": 7697193,
+      "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "beer_style": "Farmhouse Ale - Saison",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 3.75
+    },
+    {
+      "checkin_id": 1618129708,
+      "created_at": "Sat, 28 Nov 2026 02:18:35 +0000",
+      "user": "dapitz",
+      "checkin_comment": "",
+      "beer_name": "Village Pils",
+      "beer_id": 5534062,
+      "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5534062_75b9c_sm.jpeg",
+      "beer_style": "Pilsner - Other",
+      "beer_abv": 5,
+      "beer_auth_rating": null,
+      "beer_active": 1,
+      "brewery_name": "Bridge Road Brewers",
+      "brewery_id": 3174,
+      "rating": 3.6
+    },
+    {
       "checkin_id": 1617822048,
       "created_at": "Fri, 27 Nov 2026 12:04:49 +0000",
       "user": "PhilBrau",

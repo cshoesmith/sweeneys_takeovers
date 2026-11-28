@@ -5511,5 +5511,18 @@
     "rating_score": 0,
     "rating_count": 2,
     "brewery_name": "Bridge Road Brewers"
+  },
+  "5534062": {
+    "beer_id": 5534062,
+    "beer_name": "Village Pils",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5534062_75b9c_sm.jpeg",
+    "beer_label_hd": "https://assets.untappd.com/site/beer_logos_hd/beer-5534062_75b9c_hd.jpeg",
+    "beer_style": "Pilsner - Other",
+    "beer_abv": 5,
+    "beer_ibu": 0,
+    "beer_description": "The perfect beer to usher in the spring sunshine; an uncomplicated, thirst-quenching tropical lager.",
+    "rating_score": 3.48745,
+    "rating_count": 247,
+    "brewery_name": "Bridge Road Brewers"
   }
 }
